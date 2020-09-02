@@ -113,6 +113,7 @@
 	var/sex = "Unknown"
 	var/fingerprint = "Unknown"
 	var/physical_status = "Active"
+	var/triage_status = "None"
 	var/mental_status = "Stable"
 	var/species = "Unknown"
 	var/citizenship = "Unknown"

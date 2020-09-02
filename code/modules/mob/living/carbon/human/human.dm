@@ -739,6 +739,38 @@
 			if(!modified)
 				to_chat(usr, SPAN_WARNING("Unable to locate a data core entry for this person."))
 
+	if (href_list["triage"])
+		if(hasHUD(usr,"medical"))
+			var/perpname = "wot"
+			var/modified = 0
+
+			if(wear_id)
+				if(istype(wear_id,/obj/item/card/id))
+					perpname = wear_id:registered_name
+				else if(istype(wear_id,/obj/item/device/pda))
+					var/obj/item/device/pda/tempPda = wear_id
+					perpname = tempPda.owner
+			else
+				perpname = src.name
+			var/datum/record/general/R = SSrecords.find_record("name", perpname)
+			if(istype(R))
+				var/settriage = input(usr, "Specify a new triage acuity for this person.", "Medical HUD", R.triage_status) in list("*L1-RED*", "*L2-ORANGE*", "L3-Yellow", "L4-Green", "L5-Blue", "Clear", "Cancel")
+			
+				if(hasHUD(usr,"medical"))
+					if(settriage != "Cancel")
+						R.triage_status = settriage
+						modified = 1
+
+						spawn()
+							if(istype(usr,/mob/living/carbon/human))
+								var/mob/living/carbon/human/U = usr
+								U.handle_regular_hud_updates()
+							if(istype(usr,/mob/living/silicon/robot))
+								var/mob/living/silicon/robot/U = usr
+								U.handle_regular_hud_updates()
+			if(!modified)
+				to_chat(usr, SPAN_WARNING("Unable to locate a data core entry for this person."))
+
 	if (href_list["medrecord"])
 		if(hasHUD(usr,"medical"))
 			var/perpname = "wot"

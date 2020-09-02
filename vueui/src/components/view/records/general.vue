@@ -17,6 +17,13 @@
           </select>
         </view-records-field>
       </vui-group-item>
+      <vui-group-item label="Triage Status:">
+       <view-records-field :editable="(editable & 1) > 0" path="active.triage_status">
+         <select v-model="$root.$data.state.editingvalue">
+           <option v-for="i in choices.triage_status" :key="i" :value="i">{{ i }}</option>
+         </select>
+       </view-records-field>
+      </vui-group-item>
       <vui-group-item label="Mental Status:">
         <view-records-field :editable="(editable & 1) > 0" path="active.mental_status">
           <select v-model="$root.$data.state.editingvalue">

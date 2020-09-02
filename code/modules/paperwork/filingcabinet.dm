@@ -143,6 +143,7 @@ Age: [R.age]<BR>
 Fingerprint: [R.fingerprint]<BR>
 Physical Status: [R.physical_status]<BR>
 Mental Status: [R.mental_status]<BR>
+Triage Status: [R.triage_status]<BR>
 <BR>
 <CENTER><B>Medical Data</B></CENTER><BR>
 Blood Type: [R.medical.blood_type]<BR>

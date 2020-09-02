@@ -56,6 +56,7 @@
 		"sex" = "Sex",
 		"fingerprint" = "Fingerprint",
 		"physical_status" = "Physical Status",
+		"triage_status" = "Triage Status,",
 		"mental_status" = "Mental Status",
 		"species" = "Species",
 		"citizenship" = "Citizenship",

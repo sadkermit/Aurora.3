@@ -186,7 +186,7 @@
 	center_of_mass = list("x" = 15,"y" = 9)
 	matter = list(MATERIAL_GLASS = 250)
 	volume = 30
-	amount_per_transfer_from_this = 10
+	amount_per_transfer_from_this = 5
 	possible_transfer_amounts = list(5,10,15,25)
 	flags = OPENCONTAINER
 	fragile = 1

@@ -906,9 +906,10 @@
 
 /datum/chemical_reaction/emp_pulse/on_reaction(var/datum/reagents/holder, var/created_volume)
 	var/location = get_turf(holder.my_atom)
-	// 100 created volume = ~1 heavy range & ~2 light range.
-	// 200 created volume = ~2 heavy range & ~4 light range.
-	empulse(location, round(created_volume / 6), round(created_volume / 3), 1)
+	// 120 created volume (2x small beakers) = ~4 heavy range & ~8 light range.
+	// 240 created volume (2x large beakers) = ~8 heavy range & ~16 light range.
+	// amounts over 240 have no stronger effect to prevent pulses which effect entire Z-levels.	
+	empulse(location, Clamp(round(created_volume / 30), 0, 8), Clamp(round(created_volume / 15), 0, 16), 1)
 	holder.clear_reagents()
 	return
 

@@ -172,3 +172,88 @@
 //Check to use when seeing if the person has the minimum dose of the reagent. Useful for stopping minimum transfer rate IV drips from applying chem effects
 /singleton/reagent/proc/check_min_dose(var/mob/living/carbon/M, var/min_dose = 1)
 	return (REAGENT_VOLUME(M.reagents, type) >= min_dose)
+
+//Randomchem stuff
+/singleton/reagent/random
+	name = "Strange Compound"
+	description = "A strange compound with unknown properties."
+	ingest_mul = 1
+	breath_mul = 1
+	fallback_specific_heat = 1
+
+	random_propeties = list()
+
+/singleton/reagent/random/affect_chem_effect(var/mob/living/carbon/M, var/alien, var/removed)
+	return
+
+	//if [property] is in [random_propeties]:
+		//translate [property] into the required CE_CHEMEFFECTS
+
+	//ie. if RC_PROPERTY_PAINKILLER_WEAK in PROPERTIES:
+		//M.add_chemical_effect(CE_PAINKILLER, RC_PAINKILLER_WEAK) //RC_PAINKILLER_WEAK is a defined constant with the value 20.
+
+	//repeat the above example for basically every possible property, which might get a bit mucky.
+
+/singleton/reagent/proc/randomise()
+	var/num = rand(100,999)
+	name = "Compound #[num]"
+	color = RANDOM_RGB
+
+	reagent_state = pick(SOLID, LIQUID, GAS)
+
+	taste_description = pick("sour", "sweet", "bitter", "eggy", "metallic", "rotten", "salty", "acidic", "minty", "peppery", "absolutely revolting", "really delicious")
+	taste_mult = pick(RC_STRONG_TASTE, RC_AVERAGE_TASTE, RC_WEAK_TASTE)
+
+	overdose = pick(RC_HIGH_OVERDOSE, RC_AVERAGE_OVERDOSE, RC_LOW_OVERDOSE)
+	od_minimum_dose = rand(1,5)
+
+	var/chosen_metabolism = pick(RC_FAST_METABOLISM, RC_AVERAGE_METABOLISM, RC_SLOW_METABOLISM)
+	metabolism = chosen_metabolism
+	ingest_met = chosen_metabolism
+	breath_met = chosen_metabolism
+	ingest_mul = 1
+	breath_mul = 1
+	switch(rand(1,5))
+		if(1) //no longer works orally
+			ingest_met = 0
+			ingest_mul = 0
+		if(2) //no longer works inhaled
+			breath_met = 0
+			breath_mul = 0
+		if(3) //lasts longer/more effective orally
+			ingest_met = ingest_met/2
+		if(4) //lasts longer/more effective inhaled
+			breath_met = breath_met/2
+		if(5) //IV chem
+			metabolism = 1.5
+			overdose = 5
+			od_minimum_dose = 10
+			ingest_mul = 0
+			breath_mul = 0
+
+	fallback_specific_heat = rand(10,99)/100
+
+	germ_adjust = pick(RC_WEAK_DISINFEECTANT, RC_MILD_DISINFECTANT, RC_STRONG_DISINFECTANT)
+
+	description = "A strange compound with unknown properties."
+
+	switch(taste_description)
+	 if("eggy")
+	 	description += "It has an eggy aroma."
+	if("rotten")
+		description += "It smells awful, like rotting flesh."
+	if("acidic"||"sour")
+		description += "It smells quite sharp."
+	if("minty")
+		description += "It smells minty and refreshing."
+	if("peppery")
+		description += "It smells peppery."
+	if("absolutely revolting")
+		description += "It smells absolutely disgusting."
+	if("really delicious")
+		description += "It smells like candy floss."
+	else
+		description += "It doesn't have that much of an odor."
+
+
+

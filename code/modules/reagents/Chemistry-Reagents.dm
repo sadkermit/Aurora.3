@@ -174,26 +174,6 @@
 	return (REAGENT_VOLUME(M.reagents, type) >= min_dose)
 
 //Randomchem stuff
-/singleton/reagent/random
-	name = "Strange Compound"
-	description = "A strange compound with unknown properties."
-	ingest_mul = 1
-	breath_mul = 1
-	fallback_specific_heat = 1
-
-	random_propeties = list()
-
-/singleton/reagent/random/affect_chem_effect(var/mob/living/carbon/M, var/alien, var/removed)
-	return
-
-	//if [property] is in [random_propeties]:
-		//translate [property] into the required CE_CHEMEFFECTS
-
-	//ie. if RC_PROPERTY_PAINKILLER_WEAK in PROPERTIES:
-		//M.add_chemical_effect(CE_PAINKILLER, RC_PAINKILLER_WEAK) //RC_PAINKILLER_WEAK is a defined constant with the value 20.
-
-	//repeat the above example for basically every possible property, which might get a bit mucky.
-
 /singleton/reagent/proc/randomise()
 	var/num = rand(100,999)
 	name = "Compound #[num]"
@@ -255,5 +235,14 @@
 	else
 		description += "It doesn't have that much of an odor."
 
+	if(prob(70))
+		random_property_primary = pick(RC_PROPERTIES_BENEFICIAL)
+	else
+		random_property_primary = pick(RC_PROPERTIES_TOXIC)
 
+	if(prob(70))
+		random_property_overdose = pick(RC_PROPERTIES_TOXIC)
+	else
+		random_property_overdose= pick(RC_PROPERTIES_BENEFICIAL)
 
+	random_property_sideeffect = pick(RC_PROPERTIES_SIDEEFFECT)

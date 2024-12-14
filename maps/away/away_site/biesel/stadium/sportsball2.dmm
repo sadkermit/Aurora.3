@@ -76,15 +76,6 @@
 	},
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/space)
-"bX" = (
-/obj/structure/table/stone/marble,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "Cafe Shutters";
-	id = "dock_cafe"
-	},
-/turf/simulated/floor/lino/diamond,
-/area/space)
 "bZ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -162,14 +153,9 @@
 	},
 /turf/simulated/floor/sidewalk/blocks,
 /area/space)
-"eM" = (
-/obj/structure/window/urban/framed{
-	dir = 4
-	},
-/obj/machinery/vending/dinnerware/plastic{
-	pixel_y = 22
-	},
-/turf/simulated/floor/lino/diamond,
+"ev" = (
+/obj/structure/stairs/north,
+/turf/simulated/floor/wood,
 /area/space)
 "eU" = (
 /obj/machinery/door/urban/glass_sliding/double,
@@ -398,6 +384,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"lx" = (
+/obj/machinery/chem_heater,
+/turf/simulated/floor/lino/diamond,
+/area/space)
 "lA" = (
 /obj/structure/table/rack/retail_shelf,
 /obj/item/storage/box/produce{
@@ -502,6 +492,15 @@
 /obj/item/reagent_containers/food/drinks/carton/milk,
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
+/area/space)
+"nL" = (
+/obj/machinery/button/remote/blast_door{
+	id = "dock_cafe";
+	name = "Cafe Shutters";
+	req_one_access = list(35,25,26,28);
+	pixel_y = -20
+	},
+/turf/simulated/floor/lino/diamond,
 /area/space)
 "nO" = (
 /obj/effect/floor_decal/spline/plain/white{
@@ -945,13 +944,6 @@
 /obj/structure/bed/stool/chair,
 /turf/simulated/floor/tiled,
 /area/space)
-"zV" = (
-/obj/structure/window/urban/framed{
-	dir = 4
-	},
-/obj/machinery/chem_heater,
-/turf/simulated/floor/lino/diamond,
-/area/space)
 "Af" = (
 /obj/structure/lattice/catwalk/indoor/urban,
 /turf/simulated/floor/exoplanet/water/shallow,
@@ -982,15 +974,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/lino,
-/area/space)
-"AW" = (
-/obj/structure/table/stone/marble,
-/obj/machinery/door/blast/shutters{
-	dir = 4;
-	name = "Cafe Shutters";
-	id = "dock_cafe"
-	},
-/turf/simulated/floor/wood,
 /area/space)
 "AX" = (
 /obj/structure/rod_railing{
@@ -1092,17 +1075,6 @@
 /obj/machinery/smartfridge/foodheater/buffet,
 /turf/simulated/floor/lino,
 /area/space)
-"DS" = (
-/obj/machinery/button/remote/blast_door{
-	dir = 4;
-	id = "dock_cafe";
-	name = "Cafe Shutters";
-	pixel_x = 23;
-	pixel_y = -24;
-	req_one_access = list(35,25,26,28)
-	},
-/turf/simulated/floor/lino/diamond,
-/area/space)
 "DV" = (
 /obj/machinery/door/urban/glass_sliding/double{
 	dir = 1
@@ -1121,6 +1093,15 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
+/area/space)
+"Ep" = (
+/obj/structure/table/stone/marble,
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	name = "Cafe Shutters";
+	id = "dock_cafe"
+	},
+/turf/simulated/floor/lino/diamond,
 /area/space)
 "ED" = (
 /obj/structure/railing/fence{
@@ -1449,6 +1430,12 @@
 	dir = 9
 	},
 /turf/simulated/floor/wood,
+/area/space)
+"Ko" = (
+/obj/machinery/vending/dinnerware/plastic{
+	pixel_y = 22
+	},
+/turf/simulated/floor/lino/diamond,
 /area/space)
 "Ks" = (
 /obj/structure/rod_railing{
@@ -1947,12 +1934,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/full,
-/area/space)
-"YA" = (
-/obj/structure/window/urban/framed{
-	dir = 4
-	},
-/turf/simulated/floor/lino/diamond,
 /area/space)
 "YJ" = (
 /obj/effect/floor_decal/spline/plain/white{
@@ -31777,9 +31758,9 @@ fA
 Fl
 qr
 Jp
-YR
-AW
-AW
+Jp
+Jp
+Jp
 Jp
 Jp
 Jp
@@ -31979,11 +31960,11 @@ fA
 Fl
 qr
 Jp
-MG
-ms
-ms
-SK
-ms
+qr
+qr
+Jp
+ev
+qr
 qr
 qr
 Jp
@@ -32181,11 +32162,11 @@ fA
 Fl
 qr
 Jp
-Cm
-ms
-ms
-bX
-ms
+qr
+qr
+qr
+qr
+qr
 qr
 qr
 Jp
@@ -32383,11 +32364,11 @@ fA
 Fl
 qr
 Jp
-Ij
-ms
-ms
-bX
-ms
+qr
+qr
+Sg
+Sg
+qr
 qr
 qr
 TT
@@ -32585,11 +32566,11 @@ fA
 Fl
 qr
 Jp
-Dl
-ms
-DS
-bX
-ms
+qr
+qr
+qr
+qr
+qr
 qr
 qr
 DV
@@ -32787,11 +32768,11 @@ fA
 Fl
 qr
 Jp
-eM
-YA
-zV
-Jp
-ms
+qr
+qr
+qr
+qr
+qr
 qr
 qr
 YR
@@ -32992,7 +32973,7 @@ TT
 qr
 qr
 qr
-qr
+Sg
 qr
 qr
 qr
@@ -33595,10 +33576,10 @@ fA
 Fl
 qr
 Jp
-qr
-qr
-qr
-qr
+Ep
+Ep
+Ep
+Jp
 qr
 qr
 qr
@@ -33797,13 +33778,13 @@ fA
 Fl
 qr
 Jp
+Ko
+ms
+nL
+Jp
+Sg
 qr
-qr
-qr
-qr
-qr
-qr
-qr
+Sg
 Jp
 qr
 sO
@@ -33999,10 +33980,10 @@ fA
 Fl
 qr
 Jp
-qr
-qr
-qr
-qr
+MG
+ms
+ms
+Jp
 qr
 qr
 qr
@@ -34201,10 +34182,10 @@ fA
 Fl
 qr
 Jp
-qr
-qr
-qr
-qr
+Cm
+ms
+ms
+SK
 qr
 qr
 qr
@@ -34403,12 +34384,12 @@ fA
 Fl
 qr
 Jp
+Ij
+ms
+ms
+Jp
 qr
-qr
-qr
-qr
-qr
-qr
+Sg
 qr
 Jp
 qr
@@ -34605,12 +34586,12 @@ fA
 Fl
 qr
 Jp
+Dl
+ms
+lx
+Jp
 qr
-qr
-qr
-qr
-qr
-qr
+Sg
 qr
 Jp
 qr

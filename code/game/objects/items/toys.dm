@@ -1553,7 +1553,7 @@
 		return
 
 	if(!(user?.a_intent == I_HELP))
-		shiftClick()
+		src.ShiftClick(user)
 
 	user.visible_message(SPAN_NOTICE("[user] kicks \the [src]."))
 	throw_at(get_edge_target_turf(user, get_dir(user, src)), 2, 1)

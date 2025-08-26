@@ -63,9 +63,7 @@
 		/obj/item/device/laser_assembly             = TRADER_BLACKLIST_ALL, // Not a weapons trader
 		/obj/item/device/ano_scanner                = TRADER_BLACKLIST, // Xenoarch
 		/obj/item/device/core_sampler               = TRADER_BLACKLIST, // Xenoarch
-		/obj/item/device/depth_scanner              = TRADER_BLACKLIST, // Xenoarch
-		/obj/item/device/beacon_locator             = TRADER_BLACKLIST, // Telescience
-		/obj/item/device/telepad_beacon             = TRADER_BLACKLIST, // Telescience
+		/obj/item/device/depth_scanner              = TRADER_BLACKLIST // Xenoarch
 	)
 
 	possible_trading_items = list(

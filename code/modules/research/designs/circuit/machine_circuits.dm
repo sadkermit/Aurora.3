@@ -217,11 +217,6 @@
 	req_tech = list(TECH_DATA = 2)
 	build_path = /obj/item/circuitboard/slot_machine
 
-/datum/design/circuit/machine/telepad
-	name = "Telepad"
-	req_tech = list(TECH_DATA = 4, TECH_BLUESPACE = 4, TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
-	build_path = /obj/item/circuitboard/telesci_pad
-
 /datum/design/circuit/machine/cargo_trolley
 	name = "Cargo Trolley"
 	req_tech = list(TECH_DATA = 1, TECH_ENGINEERING = 1)

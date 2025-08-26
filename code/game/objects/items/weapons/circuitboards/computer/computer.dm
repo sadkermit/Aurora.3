@@ -105,11 +105,6 @@
 	build_path = /obj/machinery/computer/area_atmos
 	origin_tech = list(TECH_DATA = 2)
 
-/obj/item/circuitboard/telesci_console
-	name = T_BOARD("Telescience Console")
-	build_path = /obj/machinery/computer/telescience
-	origin_tech = list(TECH_DATA = 3, TECH_BLUESPACE = 2)
-
 /obj/item/circuitboard/slot_machine
 	name = T_BOARD("Slot Machine")
 	build_path = /obj/machinery/computer/slot_machine

@@ -70,10 +70,6 @@
 	name = "Solar Control Console"
 	build_path = /obj/item/circuitboard/solar_control
 
-/datum/design/circuit/computer/telesci_console
-	name = "Telepad Control Console"
-	build_path = /obj/item/circuitboard/telesci_console
-
 /datum/design/circuit/computer/helm
 	name = "Helm Control Console"
 	req_tech = list(TECH_ENGINEERING = 3)

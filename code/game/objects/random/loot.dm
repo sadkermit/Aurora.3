@@ -3,7 +3,6 @@
 	desc = "Stuff for the maint-dwellers."
 	icon_state = "gasmask"
 	problist = list(
-		/obj/item/bluespace_crystal/artificial = 0.1,
 		/obj/item/bodybag = 0.7,
 		/obj/item/clothing/accessory/storage/knifeharness = 0.3,
 		/obj/item/clothing/accessory/storage/webbing = 0.6,
@@ -201,7 +200,6 @@
 //Can be good loot for away sites as well as a guaranteed valuable for a merchant.
 /obj/random/highvalue/no_weapon
 	problist = list(
-		/obj/item/bluespace_crystal = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/vintage_wine = 0.1,
 		/obj/item/clothing/glasses/thermal = 0.5,
 		/obj/item/anomaly_core = 0.5,

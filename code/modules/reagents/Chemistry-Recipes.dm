@@ -1203,22 +1203,6 @@
 		do_teleport(AM, target)
 		AM.visible_message("\The [AM] phases in!")
 
-/datum/chemical_reaction/slime/bluespace_crystal
-	name = "Slime Bluespace Crystal"
-	id = "slime_bscrystal"
-	required_reagents = list(/singleton/reagent/carbon = 10, /singleton/reagent/silver = 10)
-	result_amount = 1
-	required = /obj/item/slime_extract/green
-
-/datum/chemical_reaction/slime/bluespace_crystal/on_reaction(var/datum/reagents/holder)
-	var/turf/location = get_turf(holder.my_atom)
-	playsound(location, 'sound/effects/phasein.ogg', 100, 1)
-	for(var/mob/living/M in viewers(world.view, location))
-		M.flash_act()
-
-	new /obj/item/bluespace_crystal(get_turf(holder.my_atom))
-	..()
-
 //Metal
 /datum/chemical_reaction/slime/metal
 	name = "Slime Metal"

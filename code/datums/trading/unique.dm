@@ -144,20 +144,13 @@
 	origin = "Bluespace Emporium"
 
 	possible_wanted_items = list(
-		/obj/item/bluespace_crystal                   = TRADER_ALL,
 		/obj/machinery/bluespacerelay                 = TRADER_ALL,
 		/obj/item/stack/telecrystal                   = TRADER_THIS_TYPE,
 		/obj/item/organ/internal/brain/golem                   = TRADER_THIS_TYPE,
 		/obj/item/device/soulstone                    = TRADER_THIS_TYPE,
-		/obj/item/circuitboard/telesci_console = TRADER_THIS_TYPE,
-		/obj/item/circuitboard/telesci_pad     = TRADER_THIS_TYPE,
 		/obj/item/phylactery                          = TRADER_THIS_TYPE,
 		/obj/item/blueprints                          = TRADER_THIS_TYPE,
 		/obj/item/storage/backpack/holding     = TRADER_THIS_TYPE
-	)
-
-	possible_trading_items = list(
-		/obj/item/bluespace_crystal			                 = TRADER_THIS_TYPE
 	)
 
 	speech = list(

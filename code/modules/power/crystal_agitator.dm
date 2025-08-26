@@ -22,7 +22,6 @@
 		/obj/item/stack/cable_coil{amount = 5},
 		/obj/item/stock_parts/capacitor,
 		/obj/item/stock_parts/manipulator,
-		/obj/item/bluespace_crystal,
 		/obj/item/circuitboard/crystal_agitator
 	)
 

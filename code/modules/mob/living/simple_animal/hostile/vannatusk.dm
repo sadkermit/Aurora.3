@@ -69,22 +69,6 @@
 	icon = 'icons/mob/npc/vannatusk.dmi'
 	icon_state = "bonedart"
 
-/mob/living/simple_animal/hostile/vannatusk/attackby(obj/item/attacking_item, mob/user)
-	if(stat != DEAD)
-		return ..()
-	if(istype(attacking_item, /obj/item/surgery/scalpel))
-		if(crystal_harvested)
-			to_chat(user, SPAN_WARNING("\The [src]'s crystal has already been harvested!"))
-			return
-
-		visible_message(SPAN_NOTICE("[user] recovers a bluespace crystal from [src]'s remains!"))
-		var/obj/item/bluespace_crystal/C = new(get_turf(src))
-		user.put_in_any_hand_if_possible(C)
-		crystal_harvested = TRUE
-		return
-
-	return..()
-
 /mob/living/simple_animal/hostile/vannatusk/dead/Initialize()
 	. = ..()
 	death()

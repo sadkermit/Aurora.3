@@ -66,12 +66,6 @@
 	materials = list(DEFAULT_WALL_MATERIAL = 7500, MATERIAL_GLASS = 2500)
 	build_path = /obj/item/storage/backpack/cell
 
-/datum/design/item/tool/bluespace_crystal
-	desc = "An artificially made bluespace crystal."
-	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6)
-	materials = list(MATERIAL_GOLD = 1500, MATERIAL_DIAMOND = 1500, MATERIAL_PHORON = 1500)
-	build_path = /obj/item/bluespace_crystal/artificial
-
 /datum/design/item/tool/binaryencrypt
 	desc = "Allows for deciphering the stationbound binary channel on-the-fly."
 	req_tech = list(TECH_ILLEGAL = 2)

@@ -655,7 +655,6 @@
 		/obj/item/stock_parts/subspace/amplifier,
 		/obj/item/stock_parts/manipulator/pico = 4,
 		/obj/item/stock_parts/scanning_module/phasic = 3,
-		/obj/item/bluespace_crystal,
 		/obj/item/stack/cable_coil = 30
 	)
 

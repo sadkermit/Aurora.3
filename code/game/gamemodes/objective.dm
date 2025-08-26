@@ -426,7 +426,6 @@ GLOBAL_LIST_EMPTY(process_objectives)
 	possible_items = list(
 		"the captain's antique laser gun" = /obj/item/gun/energy/captain,
 		"a hand teleporter" = /obj/item/hand_tele,
-		"a RFD C-Class" = /obj/item/rfd/construction,
 		"a jetpack" = /obj/item/tank/jetpack,
 		"a captain's jumpsuit" = /obj/item/clothing/under/rank/captain,
 		"a functional AI" = /obj/item/aicard,

@@ -603,16 +603,3 @@
 	. = ..()
 	amount = max_amount
 	update_icon()
-
-/obj/item/stack/material/supermatter
-	name = "stable supermatter cluster"
-	icon_state = "sheet-supermatter"
-	max_amount = 5
-	default_type = MATERIAL_SUPERMATTER
-	color = COLOR_YELLOW
-	icon_has_variants = TRUE
-
-/obj/item/stack/material/supermatter/full/Initialize()
-	. = ..()
-	amount = max_amount
-	update_icon()

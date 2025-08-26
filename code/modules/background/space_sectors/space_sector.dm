@@ -155,8 +155,7 @@
 		/obj/effect/meteor/emp=20,\
 		/obj/effect/meteor/irradiated=10,\
 		/obj/effect/meteor/golden=10,\
-		/obj/effect/meteor/silver=10,\
-		/obj/effect/meteor/supermatter=1\
+		/obj/effect/meteor/silver=10\
 		)
 
 /// When SSAtlas chooses us as the current sector, this function is called, which will set us up to start processing

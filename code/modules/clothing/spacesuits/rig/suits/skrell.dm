@@ -77,7 +77,6 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/chem_dispenser/injector,
 		/obj/item/rig_module/device/drill,
-		/obj/item/rig_module/device/rfd_c,
 		/obj/item/rig_module/datajack,
 		/obj/item/rig_module/actuators/combat,
 		/obj/item/rig_module/teleporter/skrell,
@@ -123,7 +122,6 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/chem_dispenser/injector,
 		/obj/item/rig_module/device/drill,
-		/obj/item/rig_module/device/rfd_c,
 		/obj/item/rig_module/datajack,
 		/obj/item/rig_module/actuators/combat,
 		/obj/item/rig_module/teleporter/skrell

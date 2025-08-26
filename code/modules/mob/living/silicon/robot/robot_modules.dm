@@ -367,8 +367,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 /obj/item/robot_module/engineering/construction/Initialize()
 	. = ..()
 	modules += new /obj/item/powerdrill(src)
-	modules += new /obj/item/rfd/construction/borg(src)
-	modules += new /obj/item/rfd/piping/borg(src)
 	modules += new /obj/item/screwdriver/robotic(src)
 	modules += new /obj/item/wrench/robotic(src)
 	modules += new /obj/item/weldingtool/experimental(src)
@@ -388,7 +386,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/crowbar/robotic(src) // Base crowbar that all 'borgs should have access to.
 	modules += new /obj/item/pen/robopen(src) // Pen for renaming doors
 	emag = new /obj/item/gun/energy/plasmacutter/mounted(src)
-	malf_AI_module += new /obj/item/rfd/transformer(src)
 
 	var/datum/matter_synth/metal = new /datum/matter_synth/metal(80000)
 	var/datum/matter_synth/plasteel = new /datum/matter_synth/plasteel(40000)
@@ -437,7 +434,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/wrench/robotic(src)
 	modules += new /obj/item/wirecutters/robotic(src)
 	modules += new /obj/item/device/multitool/robotic(src)
-	modules += new /obj/item/rfd/piping/borg(src)
 	modules += new /obj/item/device/t_scanner(src)
 	modules += new /obj/item/device/analyzer(src)
 	modules += new /obj/item/gripper(src)
@@ -453,7 +449,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/crowbar/robotic(src) // Base crowbar that all 'borgs should have access to.
 	modules += new /obj/item/pen/robopen(src) // Pen for renaming doors
 	emag = new /obj/item/melee/baton/robot/arm(src)
-	malf_AI_module += new /obj/item/rfd/transformer(src)
 
 	var/datum/matter_synth/metal = new /datum/matter_synth/metal(60000)
 	var/datum/matter_synth/glass = new /datum/matter_synth/glass(40000)
@@ -681,10 +676,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/device/flash(src) // Non-lethal tool that prevents any 'borg from going lethal on Crew so long as it's an option according to laws.
 	modules += new /obj/item/crowbar/robotic(src) // Base crowbar that all 'borgs should have access to.
 
-	var/obj/item/rfd/service/M = new /obj/item/rfd/service(src)
-	M.stored_matter = 30
-	modules += M
-
 	modules += new /obj/item/reagent_containers/dropper/cyborg_pipette(src)
 
 	var/obj/item/flame/lighter/zippo/L = new /obj/item/flame/lighter/zippo(src)
@@ -761,7 +752,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/pickaxe/borgdrill(src)
 	modules += new /obj/item/storage/bag/sheetsnatcher/borg(src)
 	modules += new /obj/item/gripper/miner(src)
-	modules += new /obj/item/rfd/mining(src)
 	modules += new /obj/item/ore_detector(src)
 	modules += new /obj/item/mining_scanner(src)
 	modules += new /obj/item/ore_radar(src)
@@ -1051,7 +1041,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 
 	modules += new /obj/item/tank/jetpack/carbondioxide/synthetic(src)
 	modules += new /obj/item/inflatable_dispenser(src)
-	modules += new /obj/item/rfd/piping/borg(src) // putting this here so it's next to the RFD-C on construction drones
 
 /obj/item/robot_module/drone/respawn_consumable(var/mob/living/silicon/robot/R, var/amount)
 	var/obj/item/device/lightreplacer/LR = locate() in src.modules
@@ -1073,7 +1062,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 
 /obj/item/robot_module/drone/construction/Initialize()
 	. = ..()
-	modules += new /obj/item/rfd/construction/borg(src)
 	modules += new /obj/item/pickaxe/drill(src)
 
 /obj/item/robot_module/drone/construction/matriarch
@@ -1110,7 +1098,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/mining_scanner(src)
 	modules += new /obj/item/device/gps/mining(src)
 	modules += new /obj/item/tank/jetpack/carbondioxide(src)
-	modules += new /obj/item/rfd/mining(src)
 	modules += new /obj/item/tethering_device(src)
 	modules += new /obj/item/ore_detector(src)
 
@@ -1174,7 +1161,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	. = ..()
 	modules += new /obj/item/device/flash(src)
 	modules += new /obj/item/borg/sight/meson(src)
-	modules += new /obj/item/rfd/construction/borg/infinite(src)
 	modules += new /obj/item/extinguisher(src)
 	modules += new /obj/item/weldingtool/largetank(src)
 	modules += new /obj/item/screwdriver/robotic(src)

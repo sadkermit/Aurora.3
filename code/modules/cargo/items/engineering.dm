@@ -754,20 +754,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/supermattercore
-	category = "engineering"
-	name = "supermatter crystal"
-	supplier = "hephaestus"
-	description = "An unstable, radioactive crystal that forms the power source of several experimental ships and stations. Extremely dangerous."
-	price = 18500
-	items = list(
-		/obj/machinery/power/supermatter
-	)
-	access = ACCESS_CAPTAIN
-	container_type = "box"
-	groupable = FALSE
-	spawn_amount = 1
-
 /singleton/cargo_item/thermoelectricgenerator
 	category = "engineering"
 	name = "thermoelectric generator kit"

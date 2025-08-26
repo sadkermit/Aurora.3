@@ -375,28 +375,7 @@
 			to_chat(affected_mob, SPAN_DANGER("Space completely warps around you, turning your body into something that a mind can barely comprehend..."))
 			qdel(affected_mob)
 
-	//Discharge to all the coils (flavored as warper receivers)
-	var/coils_discharged_to = 0
-	for(var/obj/machinery/power/tesla_coil/coil in orange(4, src))
-		if(!coil.anchored)
-			continue
-
-		src.Beam(coil, icon_state="lightning[rand(1,12)]", icon = 'icons/effects/effects.dmi', time= 2 SECONDS)
-		coils_discharged_to++
-
-	//If it's less than the expected amount of coils, it failed, purge the charge and do not move the ship,
-	//otherwise it succeeded, move the ship
-	if(coils_discharged_to < 4)
-		//Play the sound if at least one coil got the discharge
-		if(coils_discharged_to)
-			playsound(src, 'sound/magic/lightningbolt.ogg', 40, TRUE)
-
-		visible_message(SPAN_DANGER("\The [src] fails to warp completely, not finding all the warper receivers!"))
-		purge_charge(forced = TRUE)
-
-	else
-		move_ship()
-
+	move_ship()
 	exit_bluespace()
 
 

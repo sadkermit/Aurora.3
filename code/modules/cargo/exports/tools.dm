@@ -88,14 +88,3 @@
 	cost = 5
 	unit_name = "radio"
 	export_types = list(/obj/item/device/radio)
-
-
-/datum/export/rfd_construction
-	cost = 100
-	unit_name = "Rapid-Fabrication-Device C-Class"
-	export_types = list(/obj/item/rfd/construction)
-
-/datum/export/rfd_ammo
-	cost = 60
-	unit_name = "compressed matter cartridge"
-	export_types = list(/obj/item/rfd_ammo)

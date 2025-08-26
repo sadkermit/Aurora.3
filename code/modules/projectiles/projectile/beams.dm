@@ -485,11 +485,6 @@
 	tracer_type = /obj/effect/projectile/tracer/tesla
 	impact_type = /obj/effect/projectile/impact/tesla
 
-/obj/projectile/beam/tesla/on_hit(atom/target, blocked, def_zone)
-	. = ..()
-	if(isliving(target))
-		tesla_zap(target, 5, 5000)
-
 /obj/projectile/beam/freezer
 	name = "freezing ray"
 	icon_state = "bluelaser"

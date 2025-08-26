@@ -921,8 +921,6 @@
 
 	playsound(src, 'sound/magic/LightningShock.ogg', 75, 1)
 
-	tesla_zap(src, 7, 1500)
-
 	last_special = world.time + 50
 
 /mob/living/carbon/human/proc/consume_material()

@@ -434,8 +434,6 @@
 
 /**********************Miner Carts***********************/
 
-// RRF refactored into RFD-M, found in RFD.dm
-
 /obj/structure/track
 	name = "mine track"
 	desc = "Just like your grandpappy used to lay 'em in 1862."

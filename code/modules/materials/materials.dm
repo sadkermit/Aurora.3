@@ -375,20 +375,6 @@
 	drop_sound = 'sound/items/drop/glass.ogg'
 	pickup_sound = 'sound/items/pickup/glass.ogg'
 
-/material/phoron/supermatter
-	name = MATERIAL_SUPERMATTER
-	icon_colour = "#ffff00"
-	radioactivity = 20
-	conductivity = 100
-	integrity = 10
-	luminescence = 3
-	hardness = 10
-	weight = 1000
-	sheet_singular_name = "cluster"
-	sheet_plural_name = "clusters"
-	stack_origin_tech = list(TECH_BLUESPACE = 2, TECH_MATERIAL = 6, TECH_PHORON = 4)
-	stack_type = null
-
 /material/stone
 	name = MATERIAL_SANDSTONE
 	stack_type = /obj/item/stack/material/sandstone

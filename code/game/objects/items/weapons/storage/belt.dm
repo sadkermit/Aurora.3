@@ -552,7 +552,6 @@
 		/obj/item/ore,
 		/obj/item/reagent_containers/food/drinks,
 		/obj/item/storage/bag/plants,
-		/obj/item/rfd/mining,
 		/obj/item/device/orbital_dropper,
 		/obj/item/ore_detector,
 		/obj/item/device/spaceflare,

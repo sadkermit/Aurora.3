@@ -54,7 +54,7 @@
 		qdel(src)
 		return
 
-	var/outcomes = pick("remains", "xenoarch", "highvalue", "supermatter", "artifact", "beyond")
+	var/outcomes = pick("remains", "xenoarch", "highvalue", "artifact", "beyond")
 	switch(outcomes)
 		if("remains")
 			new /obj/effect/decal/remains/xeno (get_turf(src))
@@ -62,8 +62,6 @@
 			new /obj/item/archaeological_find (get_turf(src))
 		if("highvalue")
 			new /obj/random/highvalue (get_turf(src))
-		if("supermatter")
-			new /obj/machinery/power/supermatter/shard (get_turf(src))
 		if("artifact")
 			new /obj/machinery/artifact (get_turf(src))
 		if("beyond")

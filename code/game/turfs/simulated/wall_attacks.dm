@@ -369,7 +369,7 @@
 		F.try_build(src, user)
 		return
 
-	else if(!istype(attacking_item,/obj/item/rfd/construction) && !istype(attacking_item, /obj/item/reagent_containers))
+	else if(!istype(attacking_item, /obj/item/reagent_containers))
 		if(user.a_intent != I_HURT || !attacking_item.force)
 			return
 

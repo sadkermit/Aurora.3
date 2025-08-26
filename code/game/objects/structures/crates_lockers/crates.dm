@@ -294,19 +294,6 @@
 	desc = "A medical crate."
 	icon_state = "medical_crate"
 
-/obj/structure/closet/crate/rfd
-	name = "\improper RFD C-Class crate"
-	desc = "A crate with a Rapid-Fabrication-Device C-Class."
-	icon_state = "eng_tool"
-	icon_door_override = TRUE
-	icon_door = "eng"
-
-/obj/structure/closet/crate/rfd/fill()
-	new /obj/item/rfd_ammo(src)
-	new /obj/item/rfd_ammo(src)
-	new /obj/item/rfd_ammo(src)
-	new /obj/item/rfd/construction(src)
-
 /obj/structure/closet/crate/solar
 	name = "solar pack crate"
 	icon_state = "eng_elec"

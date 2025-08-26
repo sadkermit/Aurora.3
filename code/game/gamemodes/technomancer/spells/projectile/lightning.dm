@@ -41,7 +41,3 @@
 
 	power = 1000
 
-
-/obj/projectile/beam/lightning/on_hit(atom/target, blocked, def_zone)
-	. = ..()
-	tesla_zap(target, 3, power)

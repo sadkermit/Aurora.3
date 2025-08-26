@@ -220,8 +220,6 @@
 				h_l_shoulder = /obj/item/mecha_equipment/crisis_drone
 			else
 				h_back = /obj/item/mecha_equipment/sleeper
-		if(MECH_SOFTWARE_ENGINEERING in head.software.installed_software)
-			h_r_hand = /obj/item/mecha_equipment/mounted_system/rfd
 		if(MECH_SOFTWARE_WEAPONS in head.software.installed_software)
 			h_back = /obj/item/mecha_equipment/shield
 	..()

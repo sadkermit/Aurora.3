@@ -222,20 +222,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/rpd
-	category = "atmos"
-	name = "Rapid Fabrication Device P-Class"
-	supplier = "hephaestus"
-	description = "A heavily modified RFD, modified to construct pipes and piping accessories."
-	price = 45
-	items = list(
-		/obj/item/rfd/piping
-	)
-	access = ACCESS_ENGINE
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/atmosvoidsuit
 	category = "atmos"
 	name = "atmospherics voidsuit"

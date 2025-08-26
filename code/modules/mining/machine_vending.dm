@@ -21,7 +21,6 @@ GLOBAL_LIST_INIT(minevendor_list, list(
 	new /datum/data/mining_equipment(/obj/item/device/flashlight/lantern,						10,					75),
 	new /datum/data/mining_equipment(/obj/item/shovel,											15,					100),
 	new /datum/data/mining_equipment(/obj/item/pickaxe,											10,					100),
-	new /datum/data/mining_equipment(/obj/item/rfd_ammo,										50,					100),
 	new /datum/data/mining_equipment(/obj/structure/ore_box,									-1,					150,	1),
 	new /datum/data/mining_equipment(/obj/item/deployable_kit, 									-1,					150,	1),
 	new /datum/data/mining_equipment(/obj/item/clothing/mask/smokable/cigarette/cigar/havana, 	30,					150),

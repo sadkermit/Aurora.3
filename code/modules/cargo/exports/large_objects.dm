@@ -84,12 +84,6 @@
 	unit_name = "pipe dispenser"
 	export_types = list(/obj/machinery/pipedispenser)
 
-/datum/export/large/supermatter
-	cost = 9000
-	unit_name = "supermatter shard"
-	export_types = list(/obj/machinery/power/supermatter)
-
-
 /datum/export/large/iv
 	cost = 50
 	unit_name = "iv drip"

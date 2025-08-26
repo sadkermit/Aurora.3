@@ -881,14 +881,6 @@ GLOBAL_LIST_INIT(localhost_addresses, list(
 		if(autofire_aiming_at[1])
 			autofire_aiming_at[1] = over_object
 			autofire_aiming_at[2] = params
-		var/mob/living/M = mob
-
-		if(istype(M) && !M.incapacitated())
-			var/obj/item/I = M.get_active_hand()
-			if(istype(I, /obj/item/rfd/mining) && isturf(over_object))
-				var/proximity = M.Adjacent(over_object)
-				var/obj/item/rfd/mining/RFDM = I
-				RFDM.afterattack(over_object, M, proximity, params, FALSE)
 
 	CHECK_TICK
 

@@ -178,9 +178,6 @@
 		else
 			to_chat(user, SPAN_NOTICE("\The [src] doesn't have a cell installed."))
 
-	else if(istype(attacking_item, /obj/item/rfd))
-		attacking_item.attackby(src, user)
-
 	else
 		..()
 
@@ -290,89 +287,3 @@
 		return
 	else
 		..()
-
-/*////////////////////
-//	RFD Crossbow	//
-*/////////////////////
-/obj/item/arrow/RFD
-	name = "flashforged bolt"
-	desc = "The ultimate ghetto deconstruction implement."
-	throwforce = 10
-
-/obj/item/gun/launcher/crossbow/RFD
-	name = "Rapid-Fabrication-Device Crossbow"
-	desc = "A hacked together RFD turns an innocent tool into the penultimate destruction tool. Flashforges bolts using matter units when the string is drawn back."
-	icon = 'icons/obj/guns/rxb.dmi'
-	icon_state = "rxb"
-	item_state = "rxb"
-	slot_flags = null
-	draw_time = 10
-	has_safety = FALSE
-	var/stored_matter = 0
-	var/max_stored_matter = 40
-	var/boltcost = 10
-
-/obj/item/gun/launcher/crossbow/RFD/proc/genBolt(var/mob/user)
-	if(stored_matter >= boltcost && !bolt)
-		bolt = new/obj/item/arrow/RFD(src)
-		stored_matter -= boltcost
-		to_chat(user, SPAN_NOTICE("The RFD flashforges a new bolt!"))
-		playsound(loc, 'sound/weapons/kinetic_reload.ogg', 50, FALSE)
-		update_icon()
-	else
-		to_chat(user, SPAN_WARNING("The \'Low Ammo\' light on the device blinks yellow."))
-		playsound(loc, 'sound/items/rfd_empty.ogg', 50, FALSE)
-		flick("[icon_state]-empty", src)
-
-/obj/item/gun/launcher/crossbow/RFD/unique_action(mob/living/user as mob)
-	if(tension)
-		user.visible_message("<b>[user]</b> relaxes the tension on \the [src]'s string.", SPAN_NOTICE("You relax the tension on \the [src]'s string."))
-		playsound(loc, 'sound/weapons/holster/tactiholsterout.ogg', 50, FALSE)
-		tension = 0
-		update_icon()
-	else
-		genBolt(user)
-		draw(user)
-
-/obj/item/gun/launcher/crossbow/RFD/attackby(obj/item/attacking_item, mob/user)
-	if(istype(attacking_item, /obj/item/rfd_ammo))
-		if((stored_matter + 10) > max_stored_matter)
-			to_chat(user, SPAN_NOTICE("The RFD can't hold that many additional matter-units."))
-			return
-		stored_matter += 10
-		qdel(attacking_item)
-		playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
-		to_chat(user, SPAN_NOTICE("The RFD now holds <b>[stored_matter]/[max_stored_matter]</b> matter-units."))
-		update_icon()
-		return
-	if(istype(attacking_item, /obj/item/arrow/RFD))
-		var/obj/item/arrow/RFD/A = attacking_item
-		if((stored_matter + 5) > max_stored_matter)
-			to_chat(user, SPAN_NOTICE("Unable to reclaim flashforged bolt. The RFD can't hold that many additional matter-units."))
-			return
-		stored_matter += 5
-		qdel(A)
-		playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
-		to_chat(user, SPAN_NOTICE("Flashforged bolt reclaimed. The RXD now holds <b>[stored_matter]/[max_stored_matter]</b> matter-units."))
-		update_icon()
-		return
-
-/obj/item/gun/launcher/crossbow/RFD/update_icon()
-	overlays.Cut()
-	if(bolt)
-		overlays += "rxb-bolt"
-	var/ratio = 0
-	if(stored_matter < boltcost)
-		ratio = 0
-	else
-		ratio = stored_matter / max_stored_matter
-		ratio = max(round(ratio, 0.25) * 100, 25)
-	overlays += "rxb-[ratio]"
-	if(tension > 1)
-		icon_state = "rxb-drawn"
-	else
-		icon_state = "rxb"
-
-/obj/item/gun/launcher/crossbow/RFD/get_examine_text(mob/user, distance, is_adjacent, infix, suffix)
-	. = ..()
-	. += "It currently holds <b>[stored_matter]/[max_stored_matter]</b> matter-units."

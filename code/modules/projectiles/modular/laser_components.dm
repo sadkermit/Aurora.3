@@ -72,19 +72,6 @@
 	shots = 15
 	reliability = 55
 
-/obj/item/laser_components/capacitor/teranium/small_fail(var/mob/user, var/obj/item/gun/energy/laser/prototype/prototype)
-	tesla_zap(prototype, 3, 1000*(prototype.criticality+1))
-	return
-
-/obj/item/laser_components/capacitor/teranium/medium_fail(var/mob/user, var/obj/item/gun/energy/laser/prototype/prototype)
-	tesla_zap(prototype, round((prototype.criticality+1)*2), 2000*(prototype.criticality+1))
-	return
-
-/obj/item/laser_components/capacitor/teranium/critical_fail(var/mob/user, var/obj/item/gun/energy/laser/prototype/prototype)
-	for (var/i = 0 to round((prototype.criticality+1)))
-		tesla_zap(prototype, round((prototype.criticality+1)*2,1), 4000*(prototype.criticality+1))
-	..()
-
 /obj/item/laser_components/capacitor/phoron
 	name = "phoron-enriched capacitor"
 	desc = "A capacitor built from phoron enriched materials."

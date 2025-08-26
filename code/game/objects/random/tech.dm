@@ -107,7 +107,6 @@
 		/obj/item/rig_module/chem_dispenser/combat = 1,
 		/obj/item/rig_module/chem_dispenser/injector = 1,
 		/obj/item/rig_module/device/emag_hand = 1,
-		/obj/item/rig_module/device/rfd_c = 1,
 		/obj/item/rig_module/electrowarfare_suite = 0.5,
 		/obj/item/rig_module/emp_shielding = 0.5,
 		/obj/item/rig_module/fabricator/energy_net = 1,

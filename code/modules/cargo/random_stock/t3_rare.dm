@@ -85,7 +85,6 @@ STOCK_ITEM_RARE(exogear, 1.5)
 		/obj/item/mecha_equipment/clamp = 1,
 		/obj/item/mecha_equipment/drill = 1,
 		/obj/item/mecha_equipment/mounted_system/extinguisher = 1,
-		/obj/item/mecha_equipment/mounted_system/rfd = 0.08,
 		/obj/item/mecha_equipment/mounted_system/plasmacutter = 0.5,
 		/obj/item/mecha_equipment/catapult = 0.8,
 		/obj/item/mecha_equipment/sleeper = 0.9
@@ -106,11 +105,6 @@ STOCK_ITEM_RARE(ipctags, 0.5)
 		new /obj/item/ipc_tag_scanner(L)
 	else
 		new /obj/item/implanter/ipc_tag(L)
-
-STOCK_ITEM_RARE(rfd, 0.75)
-	var/obj/item/rfd/rfd_spawn = pick(/obj/item/rfd/construction, /obj/item/rfd/mining, /obj/item/rfd/piping)
-	new rfd_spawn(L)
-	new /obj/item/rfd_ammo(L)
 
 STOCK_ITEM_RARE(xbow, 0.5)
 	if(prob(95))

@@ -80,13 +80,6 @@
 	materials = list(DEFAULT_WALL_MATERIAL = 55000, MATERIAL_GLASS = 2250, MATERIAL_SILVER = 5250, MATERIAL_DIAMOND = 3750)
 	build_path = /obj/item/rig_module/device/drill
 
-/datum/design/hardsuitmodules/rfd_c_module
-	name = "RFD-C Mount"
-	desc = "A cell-powered Rapid-Fabrication-Device C-Class for a hardsuit."
-	req_tech = list(TECH_ENGINEERING = 6, TECH_MATERIAL = 5, TECH_POWER = 5, TECH_BLUESPACE = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 30000, MATERIAL_PHORON = 12500, MATERIAL_SILVER = 10000, MATERIAL_GOLD = 10000)
-	build_path = /obj/item/rig_module/device/rfd_c
-
 /datum/design/hardsuitmodules/actuators_module
 	name = "Leg Actuators"
 	desc = "A set of electromechanical actuators, for safe traversal of multilevelled areas."

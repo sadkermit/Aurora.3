@@ -72,26 +72,6 @@
 /obj/machinery/atmospherics/pipe/singularity_pull()
 	return
 
-/obj/machinery/power/supermatter/shard/singularity_act()
-	src.loc = null
-	qdel(src)
-	return 5000
-
-/obj/machinery/power/supermatter/singularity_act()
-	if(!src.loc)
-		return
-
-	var/prints = ""
-	if(src.fingerprintshidden)
-		prints = ", all touchers : " + src.fingerprintshidden
-
-	SetUniversalState(/datum/universal_state/supermatter_cascade)
-	log_admin("New super singularity made by eating a SM crystal [prints]. Last touched by [src.fingerprintslast].")
-	message_admins("New super singularity made by eating a SM crystal [prints]. Last touched by [src.fingerprintslast].")
-	src.loc = null
-	qdel(src)
-	return 50000
-
 /obj/projectile/beam/emitter/singularity_pull()
 	return
 

@@ -240,23 +240,6 @@
 	meteordrop = list(/obj/item/archaeological_find)
 	dropamt = 1
 
-/obj/effect/meteor/supermatter
-	name = "supermatter shard"
-	icon = 'icons/obj/supermatter.dmi'
-	icon_state = "darkmatter_meteor"
-
-/obj/effect/meteor/supermatter/New()
-	..()
-	if(prob(5))
-		meteordrop = list(/obj/machinery/power/supermatter/shard)
-		dropamt = 1
-
-/obj/effect/meteor/supermatter/meteor_effect()
-	explosion(src.loc, 1, 2, 3, 4, 0)
-	for(var/obj/machinery/power/apc/A in range(rand(12, 20), src))
-		A.energy_fail(round(10 * rand(8, 12)))
-	msg_admin_attack("Meteor exploded at coords (<a href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
-
 /obj/effect/meteor/meaty
 	name = "meaty ore"
 	icon_state = "meateor"

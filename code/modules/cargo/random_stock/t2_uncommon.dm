@@ -196,9 +196,6 @@ STOCK_ITEM_UNCOMMON(riotshield, 2)
 STOCK_ITEM_UNCOMMON(fireaxe, 1)
 	new /obj/item/material/twohanded/fireaxe(L)
 
-STOCK_ITEM_UNCOMMON(service, 2)
-	new /obj/item/rfd/service(L)
-
 STOCK_ITEM_UNCOMMON(robot, 2)
 	var/list/bots = list(
 		/mob/living/bot/cleanbot = 2,

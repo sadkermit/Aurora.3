@@ -96,7 +96,7 @@
 	chest_type = /obj/item/clothing/suit/space/rig/industrial
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/medium
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/pickaxe,/obj/item/material/twohanded/fireaxe,/obj/item/gun/energy/vaurca/thermaldrill,/obj/item/storage/backpack/cell,/obj/item/rfd/mining)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/pickaxe,/obj/item/material/twohanded/fireaxe,/obj/item/gun/energy/vaurca/thermaldrill,/obj/item/storage/backpack/cell)
 
 	req_access = list()
 	req_one_access = list()
@@ -112,7 +112,6 @@
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/device/drill,
 		/obj/item/rig_module/device/orescanner,
-		/obj/item/rig_module/device/rfd_c,
 		/obj/item/rig_module/actuators
 		)
 
@@ -139,7 +138,6 @@
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/device/drill,
 		/obj/item/rig_module/device/orescanner,
-		/obj/item/rig_module/device/rfd_c,
 		/obj/item/rig_module/actuators,
 		/obj/item/rig_module/maneuvering_jets
 	)
@@ -166,7 +164,7 @@
 	helm_type = /obj/item/clothing/head/helmet/space/rig/eva
 	glove_type = /obj/item/clothing/gloves/rig/eva
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/inflatable,/obj/item/device/t_scanner,/obj/item/rfd/construction,/obj/item/material/twohanded/fireaxe,/obj/item/storage/backpack/cell)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/inflatable,/obj/item/device/t_scanner,/obj/item/material/twohanded/fireaxe,/obj/item/storage/backpack/cell)
 
 	req_access = list()
 	req_one_access = list()
@@ -179,8 +177,7 @@
 
 	initial_modules = list(
 		/obj/item/rig_module/device/basicdrill,
-		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/device/rfd_c
+		/obj/item/rig_module/maneuvering_jets
 		)
 
 /obj/item/clothing/gloves/rig/eva
@@ -247,7 +244,7 @@
 	glove_type = /obj/item/clothing/gloves/rig/ce
 	boot_type = /obj/item/clothing/shoes/magboots/rig/advanced
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/device/t_scanner,/obj/item/pickaxe,/obj/item/material/twohanded/fireaxe,/obj/item/rfd/construction,/obj/item/storage/backpack/cell,/obj/item/storage/toolbox,/obj/item/storage/bag/inflatable)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/device/t_scanner,/obj/item/pickaxe,/obj/item/material/twohanded/fireaxe,/obj/item/storage/backpack/cell,/obj/item/storage/toolbox,/obj/item/storage/bag/inflatable)
 
 	req_access = list()
 	req_one_access = list()
@@ -262,7 +259,6 @@
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/drill,
-		/obj/item/rig_module/device/rfd_c,
 		/obj/item/rig_module/cooling_unit,
 		/obj/item/rig_module/actuators
 		)
@@ -420,7 +416,7 @@
 	offline_vision_restriction = TINT_HEAVY
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/chonk
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/inflatable,/obj/item/device/t_scanner,/obj/item/rfd/construction)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/inflatable,/obj/item/device/t_scanner)
 
 	req_access = list()
 	req_one_access = list()

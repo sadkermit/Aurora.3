@@ -16,7 +16,6 @@
 	//Alpha and beta lists are in their respective procs.
 	var/list/unique_gamma = list(
 		/obj/item/hand_tele,
-		/obj/item/rfd/construction,
 		/obj/item/reagent_containers/hypospray/cmo,
 		/obj/item/gun/projectile/improvised_handgun/loaded,
 		/obj/item/gun/launcher/crossbow,

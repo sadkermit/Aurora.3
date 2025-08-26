@@ -35,12 +35,6 @@
 
 // UTILITY //
 
-/datum/uplink_item/item/exosuit_equipment/mounted_tool
-	name = "Mounted RFD-C"
-	desc = "A RFD, modified to construct walls and floors. This one can be mounted on an exosuit."
-	telecrystal_cost = 5
-	path = /obj/item/mecha_equipment/mounted_system/rfd
-
 /datum/uplink_item/item/exosuit_equipment/mounted_tool/clamp
 	name = "Mounted Clamp"
 	desc = "A large, heavy industrial cargo loading clamp."

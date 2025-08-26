@@ -120,7 +120,6 @@
 		/obj/item/ore = TRADER_ALL
 	)
 	possible_trading_items = list(
-		/obj/machinery/power/supermatter                = TRADER_ALL,
 		/obj/item/aiModule                       = TRADER_SUBTYPES_ONLY
 	)
 

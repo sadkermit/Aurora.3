@@ -338,8 +338,6 @@ Sells devices, odds and ends, and medical stuff
 		/obj/item/pickaxe/borgdrill               = TRADER_BLACKLIST,
 		/obj/item/shovel                          = TRADER_THIS_TYPE,
 		/obj/item/stack/flag                             = TRADER_SUBTYPES_ONLY,
-		/obj/item/rfd_ammo                        = TRADER_THIS_TYPE,
-		/obj/item/rfd/mining                      = TRADER_THIS_TYPE,
 		/obj/item/ore_radar                       = TRADER_THIS_TYPE,
 		/obj/item/autochisel                      = TRADER_ALL,
 		/obj/structure/sculpting_block                   = TRADER_ALL,

@@ -406,7 +406,6 @@
 
 	H.visible_message(SPAN_DANGER("\The [H] crackles with energy!"))
 	playsound(H, 'sound/magic/LightningShock.ogg', 75, 1)
-	tesla_zap(H, 5, 5000)
 	return TRUE
 
 /obj/item/rig_module/mounted/skrell_gun

@@ -40,7 +40,6 @@
 	if(is_broken())
 		owner.visible_message(SPAN_DANGER("\The [owner] crackles with energy!"))
 		playsound(owner, 'sound/magic/LightningShock.ogg', 75, 1)
-		tesla_zap(owner, 7, 1500)
 
 /obj/item/organ/internal/augment/tesla/advanced
 	name = "advanced tesla spine"
@@ -59,7 +58,6 @@
 
 	owner.visible_message(SPAN_DANGER("\The [owner] crackles with energy!"))
 	playsound(owner, 'sound/magic/LightningShock.ogg', 75, 1)
-	tesla_zap(owner, 7, 1500)
 
 /obj/item/organ/internal/augment/tesla/massive
 	name = "massive tesla spine"

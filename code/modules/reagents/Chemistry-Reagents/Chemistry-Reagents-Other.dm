@@ -868,10 +868,6 @@
 	fallback_specific_heat = 10
 	unaffected_species = IS_MACHINE
 
-/singleton/reagent/bottle_lightning/affect_blood(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(prob(25))
-		tesla_zap(M, 6, 1500)
-
 /singleton/reagent/stone_dust
 	name = "Stone Dust"
 	description = "Crystalline silica dust, harmful when inhaled."

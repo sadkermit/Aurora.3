@@ -19,12 +19,6 @@ GLOBAL_LIST_INIT_TYPED(supply_drop, /datum/supply_drop_loot, null)
 	for(var/content in contents())
 		new content(C)
 
-/datum/supply_drop_loot/supermatter
-	name = "Supermatter"
-/datum/supply_drop_loot/supermatter/New()
-	..()
-	contents = list(/obj/machinery/power/supermatter)
-
 /datum/supply_drop_loot/lasers
 	name = "Lasers"
 	container = /obj/structure/largecrate

@@ -152,7 +152,6 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/chem_dispenser/injector,
 		/obj/item/rig_module/device/drill,
-		/obj/item/rig_module/device/rfd_c,
 		/obj/item/rig_module/datajack,
 		/obj/item/rig_module/actuators/combat,
 		/obj/item/rig_module/recharger
@@ -195,7 +194,6 @@
 		/obj/item/melee/energy/sword,
 		/obj/item/handcuffs,
 		/obj/item/material/twohanded/fireaxe,
-		/obj/item/rfd/construction,
 		/obj/item/material/twohanded/pike/flag
 	)
 
@@ -571,7 +569,6 @@
 		/obj/item/melee/energy/sword,
 		/obj/item/handcuffs,
 		/obj/item/material/twohanded/fireaxe,
-		/obj/item/rfd/construction,
 		/obj/item/material/twohanded/pike/flag
 	)
 

@@ -3,7 +3,6 @@
  * /obj/item/rig_module/device/healthscanner
  * /obj/item/rig_module/device/drill
  * /obj/item/rig_module/device/orescanner
- * /obj/item/rig_module/device/rfd_c
  * /obj/item/rig_module/device/anomaly_scanner
  * /obj/item/rig_module/maneuvering_jets
  * /obj/item/rig_module/foam_sprayer
@@ -117,30 +116,6 @@
 	device_type = /obj/item/mining_scanner
 
 	category = MODULE_UTILITY
-
-/obj/item/rig_module/device/rfd_c
-	name = "RFD-C mount"
-	desc = "A cell-powered rapid construction device for a hardsuit."
-	icon_state = "rcd"
-	interface_name = "mounted RFD-C"
-	interface_desc = "A device for building or removing walls. Cell-powered."
-	usable = TRUE
-	engage_string = "Configure RFD-C"
-	construction_cost = list(DEFAULT_WALL_MATERIAL = 30000, MATERIAL_PHORON = 12500, MATERIAL_SILVER = 10000, MATERIAL_GOLD = 10000)
-	construction_time = 1000
-
-	device_type = /obj/item/rfd/construction/mounted
-
-	category = MODULE_UTILITY
-
-/obj/item/rig_module/device/rfd_c/handle_device_engage(atom/target, mob/user)
-	var/resolved = target.attackby(device, user)
-	if(!resolved && device && target)
-		if(device.afterattack(target, user, TRUE))
-			return TRUE
-		else
-			return FALSE
-	return TRUE
 
 /obj/item/rig_module/device/Initialize()
 	. = ..()

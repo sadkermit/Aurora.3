@@ -377,8 +377,6 @@
 
 /obj/item/reagent_containers/food/snacks/jelliedtoast/cherry/reagents_to_add = list(/singleton/reagent/nutriment/cherryjelly = 5)
 
-/obj/item/reagent_containers/food/snacks/jelliedtoast/slime/reagents_to_add = list(/singleton/reagent/slimejelly = 5)
-
 /obj/item/reagent_containers/food/snacks/pbtoast
 	name = "peanut butter toast"
 	desc = "A slice of bread covered with appetizing peanut butter."
@@ -566,7 +564,6 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("bread" = 2))
 	bitesize = 3
 
-/obj/item/reagent_containers/food/snacks/jellysandwich/slime/reagents_to_add = list(/singleton/reagent/slimejelly = 5)
 
 /obj/item/reagent_containers/food/snacks/jellysandwich/cherry/reagents_to_add = list(/singleton/reagent/nutriment/cherryjelly = 5)
 

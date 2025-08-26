@@ -240,7 +240,6 @@ STOCK_ITEM_COMMON(scanners, 3.2)
 		/obj/item/device/analyzer = 0.5,
 		/obj/item/device/mass_spectrometer = 0.5,
 		/obj/item/device/mass_spectrometer/adv = 0.5,
-		/obj/item/device/slime_scanner = 1,
 		/obj/item/autopsy_scanner = 1,
 		/obj/item/device/robotanalyzer = 4,
 		/obj/item/mining_scanner = 1,

@@ -179,18 +179,6 @@
 					admin_attack_log(user, target_mob, "was stunned by this mob with [src] [intent]", "stunned this mob with [src] [intent]", "stunned with [src]")
 					if(!sheathed)
 						H.electrocute_act(force * 2, src, ground_zero = target_zone)
-		if(isslime(target_mob))
-			var/mob/living/carbon/slime/S =  target_mob
-			if(!status)
-				target_mob.visible_message(SPAN_WARNING("[S] has been prodded with \the [src] by [user]. Too bad it was off."))
-				return TRUE
-			else
-				target_mob.visible_message(SPAN_DANGER("[S] has been prodded with \the [src] by [user]!"))
-
-			S.discipline++
-			if(prob(1))
-				S.discipline = 0
-				S.rabid = TRUE // heres that "or piss them off part"
 
 		else
 			if(!status)

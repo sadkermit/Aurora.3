@@ -11,12 +11,6 @@
 	reagents = list(/singleton/reagent/blood = 30)
 	result = /obj/item/reagent_containers/food/snacks/soup/blood
 
-/singleton/recipe/slimesoup
-	appliance = SAUCEPAN | POT | MICROWAVE
-	reagents = list(/singleton/reagent/water = 10, /singleton/reagent/slimejelly = 5)
-	items = list()
-	result = /obj/item/reagent_containers/food/snacks/soup/slime
-
 /singleton/recipe/vegetablesoup
 	appliance = SAUCEPAN | POT | MICROWAVE
 	fruit = list("carrot" = 1, "potato" = 1, "corn" = 1, "eggplant" = 1)

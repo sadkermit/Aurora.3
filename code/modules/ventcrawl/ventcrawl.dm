@@ -23,12 +23,6 @@ GLOBAL_LIST_INIT(can_enter_vent_with, list(
 /mob/living/proc/can_ventcrawl()
 	return 0
 
-/mob/living/carbon/slime/can_ventcrawl()
-	if(victim)
-		to_chat(src, SPAN_WARNING("You cannot ventcrawl while feeding."))
-		return FALSE
-	return TRUE
-
 /mob/living/proc/is_allowed_vent_crawl_item(var/obj/item/carried_item)
 	if(is_type_in_list(carried_item, GLOB.can_enter_vent_with))
 		return !get_inventory_slot(carried_item)

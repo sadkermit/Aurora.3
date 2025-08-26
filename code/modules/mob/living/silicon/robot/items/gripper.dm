@@ -282,8 +282,6 @@
 		/obj/item/organ/internal/brain, // to insert into MMIs,
 		/obj/item/stack/cable_coil, // again, for borg building,
 		/obj/item/circuitboard,
-		/obj/item/slime_extract,
-		/obj/item/device/slime_scanner,
 		/obj/item/reagent_containers/glass,
 		/obj/item/reagent_containers/food/snacks/monkeycube,
 		/obj/item/seeds, // To be able to plant things for Xenobotany
@@ -294,10 +292,6 @@
 		/obj/item/device/analyzer/plant_analyzer,//For farmbot construction
 		/obj/item/material/minihoe, // Farmbots and xenoflora
 		/obj/item/computer_hardware,
-		/obj/item/slimesteroid,
-		/obj/item/extract_enhancer,
-		/obj/item/docility_serum,
-		/obj/item/advanced_docility_serum,
 		/obj/item/remote_mecha,
 		/obj/item/smallDelivery,
 		/obj/item/gift,

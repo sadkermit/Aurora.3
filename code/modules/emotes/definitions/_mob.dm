@@ -190,21 +190,3 @@
 		/singleton/emote/audible/synth/confirm,
 		/singleton/emote/audible/synth/deny,
 		)
-
-/mob/living/carbon/slime
-	default_emotes = list(
-		/singleton/emote/audible/moan,
-		/singleton/emote/visible/twitch,
-		/singleton/emote/visible/sway,
-		/singleton/emote/visible/shiver,
-		/singleton/emote/visible/bounce,
-		/singleton/emote/visible/jiggle,
-		/singleton/emote/visible/lightup,
-		/singleton/emote/visible/vibrate,
-		/singleton/emote/slime,
-		/singleton/emote/slime/pout,
-		/singleton/emote/slime/sad,
-		/singleton/emote/slime/angry,
-		/singleton/emote/slime/frown,
-		/singleton/emote/slime/smile
-		)

@@ -8,7 +8,7 @@ SUBSYSTEM_DEF(codex)
 	var/list/cooking_codex_data = list()
 
 	var/list/chemistry_codex_data = list()
-	var/list/chemistry_codex_ignored_reaction_path = list(/datum/chemical_reaction/slime)
+	var/list/chemistry_codex_ignored_reaction_path = list()
 	var/list/chemistry_codex_ignored_result_path = list(/singleton/reagent/drink, /singleton/reagent/alcohol)
 
 /datum/controller/subsystem/codex/Initialize()

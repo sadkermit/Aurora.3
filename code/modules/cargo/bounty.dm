@@ -194,10 +194,10 @@
 		var/datum/bounty/subtype = pick(security_and_engineering_bounties)
 		try_add_bounty(new subtype)
 
-	var/list/prototype_weapon_and_slime_bounties = subtypesof(/datum/bounty/weapon_prototype) + subtypesof(/datum/bounty/item/slime)
+	var/list/prototype_weapon_bounties = subtypesof(/datum/bounty/weapon_prototype)
 	for(var/i = 0; i < BOUNTY_NUM_LOW; i++)
 		CHECK_TICK
-		var/datum/bounty/subtype = pick(prototype_weapon_and_slime_bounties)
+		var/datum/bounty/subtype = pick(prototype_weapon_bounties)
 		try_add_bounty(new subtype)
 
 	//add one of each reagent, then another one picked at random

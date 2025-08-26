@@ -276,10 +276,8 @@
 			reagents.add_reagent(/singleton/reagent/nutriment/sprinkles, 3)
 		if(5)
 			reagents.add_reagent(/singleton/reagent/toxin/phoron, 3)
-		if(6)
+		if(6 to 7)
 			reagents.add_reagent(/singleton/reagent/nutriment/coco, 3)
-		if(7)
-			reagents.add_reagent(/singleton/reagent/slimejelly, 3)
 		if(8)
 			reagents.add_reagent(/singleton/reagent/drink/banana, 3)
 		if(9)
@@ -309,16 +307,6 @@
 		src.overlay_state = "box-donut2"
 		src.name = "Frosted Jelly Donut"
 		reagents.add_reagent(/singleton/reagent/nutriment/sprinkles, 2)
-
-/obj/item/reagent_containers/food/snacks/donut/slimejelly
-	name = "jelly donut"
-	desc = "You jelly?"
-	icon = 'icons/obj/item/reagent_containers/food/fryer.dmi'
-	icon_state = "jdonut1"
-	filling_color = "#ED1169"
-	reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/nutriment/sprinkles = 1, /singleton/reagent/slimejelly = 5)
-	reagent_data = list(/singleton/reagent/nutriment = list("sweetness" = 1, "donut" = 2))
-	bitesize = 5
 
 /obj/item/reagent_containers/food/snacks/donut/slimejelly/Initialize()
 	. = ..()

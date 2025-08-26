@@ -523,51 +523,6 @@ BREATH ANALYZER
 	details = 1
 	origin_tech = list(TECH_MAGNET = 4, TECH_BIO = 2)
 
-/obj/item/device/slime_scanner
-	name = "slime scanner"
-	icon = 'icons/obj/item/device/slime_scanner.dmi'
-	icon_state = "slime_scanner"
-	item_state = "analyzer"
-	origin_tech = list(TECH_BIO = 1)
-	w_class = WEIGHT_CLASS_SMALL
-	obj_flags = OBJ_FLAG_CONDUCTABLE
-	throwforce = 0
-	throw_speed = 3
-	throw_range = 7
-	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_GLASS = 20)
-
-/obj/item/device/slime_scanner/attack(mob/living/target_mob, mob/living/user, target_zone)
-	if(!isslime(target_mob))
-		to_chat(user, SPAN_WARNING("This device can only scan slimes!"))
-		return
-
-	var/mob/living/carbon/slime/T = target_mob
-	to_chat(user, SPAN_NOTICE("**************************"))
-	to_chat(user, SPAN_NOTICE("Slime scan results:"))
-	to_chat(user, SPAN_NOTICE(capitalize_first_letters("[T.colour] [T.is_adult ? "adult" : "baby"] slime")))
-	to_chat(user, SPAN_NOTICE("Health: [T.health]"))
-	to_chat(user, SPAN_NOTICE("Nutrition: [T.nutrition]/[T.get_max_nutrition()]"))
-	if(T.nutrition < T.get_starve_nutrition())
-		to_chat(user, SPAN_ALERT("Warning: slime is starving!"))
-	else if (T.nutrition < T.get_hunger_nutrition())
-		to_chat(user, SPAN_WARNING("Warning: slime is hungry!"))
-	to_chat(user, SPAN_NOTICE("Electric charge strength: [T.powerlevel]"))
-	to_chat(user, SPAN_NOTICE("Growth progress: [T.amount_grown]/10"))
-	if(T.cores > 1)
-		to_chat(user, SPAN_WARNING("Anomalous number of slime cores detected."))
-	else if(!T.cores)
-		to_chat(user, SPAN_WARNING("No slime cores detected."))
-	to_chat(user, SPAN_NOTICE("Genetic Information:"))
-	if(T.slime_mutation[4] == T.colour)
-		to_chat(user, SPAN_WARNING("This slime cannot evolve any further."))
-	else
-		var/list/poss_mutations = uniquelist(T.slime_mutation)
-		var/mutation_message = capitalize(english_list(poss_mutations))
-		to_chat(user, SPAN_NOTICE(mutation_message))
-		var/mut_chance = T.mutation_chance / (poss_mutations.len > 2 ? 1 : 2)
-		to_chat(user, SPAN_NOTICE("Instability: [mut_chance]% chance of mutation upon reproduction."))
-		to_chat(user, SPAN_NOTICE("**************************"))
-
 /obj/item/device/price_scanner
 	name = "price scanner"
 	desc = "Using an up-to-date database of various costs and prices, this device estimates the market price of an item up to 0.001% accuracy."

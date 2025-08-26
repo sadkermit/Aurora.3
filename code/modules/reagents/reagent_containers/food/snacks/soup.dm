@@ -19,13 +19,6 @@
 
 	reagents_to_add = list(/singleton/reagent/nutriment/protein = 8, /singleton/reagent/water = 5)
 
-/obj/item/reagent_containers/food/snacks/soup/slime
-	name = "slime soup"
-	desc = "If no water is available, you may substitute tears."
-	filling_color = "#C4DBA0"
-
-	reagents_to_add = list(/singleton/reagent/slimejelly = 5, /singleton/reagent/water = 10)
-
 /obj/item/reagent_containers/food/snacks/soup/blood
 	name = "tomato soup"
 	desc = "Smells like copper."
@@ -91,12 +84,9 @@
 		if(5)
 			reagents.add_reagent(/singleton/reagent/nutriment, 2)
 			reagents.add_reagent(/singleton/reagent/drink/banana, 10)
-		if(6)
+		if(6 to 7)
 			reagents.add_reagent(/singleton/reagent/nutriment, 6)
 			reagents.add_reagent(/singleton/reagent/blood, 10)
-		if(7)
-			reagents.add_reagent(/singleton/reagent/slimejelly, 10)
-			reagents.add_reagent(/singleton/reagent/water, 10)
 		if(8)
 			reagents.add_reagent(/singleton/reagent/carbon, 10)
 			reagents.add_reagent(/singleton/reagent/toxin, 10)

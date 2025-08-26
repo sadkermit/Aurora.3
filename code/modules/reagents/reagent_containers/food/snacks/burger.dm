@@ -169,8 +169,6 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("buns" = 3))
 	bitesize = 2
 
-/obj/item/reagent_containers/food/snacks/burger/jelly/slime/reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/slimejelly = 5)
-
 /obj/item/reagent_containers/food/snacks/burger/jelly/cherry/reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/nutriment/cherryjelly = 5)
 
 /obj/item/reagent_containers/food/snacks/burger/superbite

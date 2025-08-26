@@ -105,9 +105,6 @@ default behaviour is:
 			for(var/obj/item/grab/G in list(tmob.l_hand, tmob.r_hand))
 				G.affecting.forceMove(tmob.loc)
 			now_pushing = FALSE
-			for(var/mob/living/carbon/slime/slime in view(2, tmob))
-				if(slime.victim == tmob)
-					slime.UpdateFeed()
 			return
 
 		if(!can_move_mob(tmob, 0, 0))
@@ -665,10 +662,6 @@ default behaviour is:
 
 	if (s_active && !s_active.Adjacent(src))	//check !( s_active in contents ) first so we hopefully don't have to call get_turf() so much.
 		s_active.close(src)
-
-	if(update_slimes)
-		for(var/mob/living/carbon/slime/M in view(1,src))
-			M.UpdateFeed(src)
 
 /mob/living/verb/resist()
 	set name = "Resist"

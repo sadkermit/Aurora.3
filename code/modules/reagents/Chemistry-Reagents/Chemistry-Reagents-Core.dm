@@ -176,26 +176,6 @@
 	if(istype(M) && !istype(M, /mob/abstract))
 		M.color = initial(M.color)
 
-/singleton/reagent/water/affect_touch(var/mob/living/carbon/slime/S, var/alien, var/removed, var/datum/reagents/holder)
-	if(istype(S))
-		S.adjustToxLoss( REAGENT_VOLUME(holder, type) * (removed/REM) * 0.23 )
-		if(!S.client)
-			if(S.target) // Like cats
-				S.target = null
-				++S.discipline
-		if(S.chem_doses[type] == removed)
-			S.visible_message(SPAN_WARNING("[S]'s flesh sizzles where the water touches it!"), SPAN_DANGER("Your flesh burns in the water!"))
-
-
-/singleton/reagent/water/affect_blood(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(istype(M, /mob/living/carbon/slime))
-		var/mob/living/carbon/slime/S = M
-		S.adjustToxLoss(12 * removed) // A slime having water forced down its throat would cause much more damage then being splashed on it
-		if(!S.client && S.target)
-			S.target = null
-			++S.discipline
-
-
 /singleton/reagent/fuel
 	name = "Welding Fuel"
 	description = "Required for welders. Flammable."

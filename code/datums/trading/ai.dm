@@ -38,7 +38,6 @@
 		/obj/item/device/modkit                     = TRADER_BLACKLIST_ALL, // No to modkits
 		/obj/item/device/pin_extractor              = TRADER_BLACKLIST, // RD's tech
 		/obj/item/device/powersink                  = TRADER_BLACKLIST, // Traitor stuff
-		/obj/item/device/slime_scanner              = TRADER_BLACKLIST, //If it was doing slime stuff, it already had this
 		/obj/item/device/spy_bug                    = TRADER_BLACKLIST, // Traitor stuff
 		/obj/item/device/spy_monitor                = TRADER_BLACKLIST, // Traitor stuff
 		/obj/item/device/suit_cooling_unit          = TRADER_BLACKLIST, // Not on Aurora

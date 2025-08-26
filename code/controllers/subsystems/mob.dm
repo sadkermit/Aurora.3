@@ -27,7 +27,6 @@ SUBSYSTEM_DEF(mobs)
 	var/list/mtl_weird = list(
 		/mob/living/simple_animal/construct,
 		/mob/living/simple_animal/shade,
-		/mob/living/simple_animal/slime,
 		/mob/living/simple_animal/hostile/faithless
 	)
 
@@ -58,12 +57,8 @@ SUBSYSTEM_DEF(mobs)
 		/mob/living/simple_animal/spiderbot = TRUE
 	)
 
-	mtl_weird = typecacheof(mtl_weird) + list(
-		/mob/living/simple_animal/adultslime = TRUE
-	)
-
+	mtl_weird = typecacheof(mtl_weird)
 	mtl_humanoid = typecacheof(mtl_humanoid)
-
 	mtl_incorporeal = typecacheof(mtl_incorporeal)
 
 	return SS_INIT_SUCCESS

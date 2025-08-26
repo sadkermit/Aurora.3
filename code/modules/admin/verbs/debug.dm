@@ -99,22 +99,6 @@
 	spawn(10)
 		M.Animalize()
 
-
-/client/proc/cmd_admin_slimeize(var/mob/M in GLOB.mob_list)
-	set category = "Fun"
-	set name = "Make slime"
-
-	if(!ROUND_IS_STARTED)
-		alert("Wait until the game starts")
-		return
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		log_and_message_admins("has slimeized [key_name(H)].", user = usr)
-		H.slimeize()
-		feedback_add_details("admin_verb","MKMET") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	else
-		alert("Invalid mob")
-
 //TODO: merge the vievars version into this or something maybe mayhaps
 /client/proc/cmd_debug_del_all()
 	set category = "Debug"

@@ -40,13 +40,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/burger/tofu
 
-/singleton/recipe/slimeburger
-	reagents = list(/singleton/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/bun
-	)
-	result = /obj/item/reagent_containers/food/snacks/burger/jelly/slime
-
 /singleton/recipe/jellyburger
 	reagents = list(/singleton/reagent/nutriment/cherryjelly = 5)
 	items = list(

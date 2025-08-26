@@ -254,10 +254,6 @@
 								SPAN_NOTICE("You start putting [L] into [src]."), range = 3)
 
 		if(do_mob(user, L, 30, needhand = 0))
-			for(var/mob/living/carbon/slime/M in range(1, L))
-				if(M.victim == L)
-					to_chat(user, SPAN_WARNING("[L] will not fit into the cryo because they have a slime latched onto their head."))
-					return TRUE
 			if(put_mob(L))
 				user.visible_message(SPAN_NOTICE("[user] puts [L] into [src]."),
 										SPAN_NOTICE("You put [L] into [src]."), range = 3)
@@ -279,10 +275,6 @@
 	if(!ismob(dropped))
 		return
 	var/mob/living/L = dropped
-	for(var/mob/living/carbon/slime/M in range(1,L))
-		if(M.victim == L)
-			to_chat(usr, SPAN_WARNING("[L.name] will not fit into the cryo because they have a slime latched onto their head."))
-			return
 
 	var/bucklestatus = L.bucklecheck(user)
 	if (!bucklestatus)
@@ -451,10 +443,7 @@
 	set name = "Move Inside"
 	set category = "Object"
 	set src in oview(1)
-	for(var/mob/living/carbon/slime/M in range(1,usr))
-		if(M.victim == usr)
-			to_chat(usr, SPAN_WARNING("You cannot do this while a slime is latched onto you!"))
-			return
+
 	if (usr.stat != 0)
 		return
 	usr.visible_message(SPAN_NOTICE("[usr] climbs into [src]."),

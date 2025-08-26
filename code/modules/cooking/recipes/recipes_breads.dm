@@ -227,22 +227,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/twobread
 
-/singleton/recipe/slimetoast_alt
-	appliance = MIX
-	reagents = list(/singleton/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/toast
-	)
-	result = /obj/item/reagent_containers/food/snacks/jelliedtoast/slime
-
-/singleton/recipe/jelliedtoast_alt
-	appliance = MIX
-	reagents = list(/singleton/reagent/nutriment/cherryjelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/toast
-	)
-	result = /obj/item/reagent_containers/food/snacks/jelliedtoast/cherry
-
 /singleton/recipe/pbtoast_alt
 	appliance = MIX
 	reagents = list(/singleton/reagent/nutriment/peanutbutter = 5)
@@ -258,14 +242,6 @@
 		/obj/item/reagent_containers/food/snacks/breadslice
 	)
 	result = /obj/item/reagent_containers/food/snacks/ntella_bread
-
-/singleton/recipe/slimetoast
-	appliance = SKILLET | MICROWAVE
-	reagents = list(/singleton/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/breadslice
-	)
-	result = /obj/item/reagent_containers/food/snacks/jelliedtoast/slime
 
 /singleton/recipe/jelliedtoast
 	appliance = SKILLET | MICROWAVE
@@ -395,14 +371,6 @@
 	)
 	reagent_mix = RECIPE_REAGENT_MIN
 	result = /obj/item/reagent_containers/food/snacks/reubensandwich
-
-/singleton/recipe/slimesandwich
-	reagents = list(/singleton/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/breadslice,
-		/obj/item/reagent_containers/food/snacks/breadslice
-	)
-	result = /obj/item/reagent_containers/food/snacks/jellysandwich/slime
 
 /singleton/recipe/cherrysandwich
 	reagents = list(/singleton/reagent/nutriment/cherryjelly = 5)

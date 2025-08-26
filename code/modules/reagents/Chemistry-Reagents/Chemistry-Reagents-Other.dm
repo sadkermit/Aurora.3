@@ -354,16 +354,6 @@
 			return
 	M.clean_blood()
 
-	if(istype(M,/mob/living/carbon/slime))
-		var/mob/living/carbon/slime/S = M
-		S.adjustToxLoss( REAGENT_VOLUME(holder, type) * (removed/REM) * 0.5 )
-		if(!S.client)
-			if(S.target) // Like cats
-				S.target = null
-				++S.discipline
-		if(M.chem_doses[type] == removed)
-			S.visible_message(SPAN_WARNING("[S]'s flesh sizzles where the space cleaner touches it!"), SPAN_DANGER("Your flesh burns in the space cleaner!"))
-
 /singleton/reagent/spacecleaner/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
 	if(REAGENT_VOLUME(holder, type) > 15)
 		M.add_chemical_effect(CE_EMETIC, 5)

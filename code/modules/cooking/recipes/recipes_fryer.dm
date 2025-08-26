@@ -148,10 +148,6 @@
 	result = /obj/item/reagent_containers/food/snacks/donut/jelly
 	result_quantity = 2
 
-/singleton/recipe/jellydonut/slime
-	reagents = list(/singleton/reagent/slimejelly = 10, /singleton/reagent/sugar = 10)
-	result = /obj/item/reagent_containers/food/snacks/donut/slimejelly
-
 /singleton/recipe/jellydonut/cherry
 	reagents = list(/singleton/reagent/nutriment/cherryjelly = 10, /singleton/reagent/sugar = 10)
 	result = /obj/item/reagent_containers/food/snacks/donut/cherryjelly

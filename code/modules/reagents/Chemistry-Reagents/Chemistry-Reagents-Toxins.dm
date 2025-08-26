@@ -429,16 +429,6 @@
 		L.ExtinguishMob(3* needed) // Foam is 3 times more efficient at extinguishing
 		remove_self(needed, holder)
 
-/singleton/reagent/toxin/fertilizer/monoammoniumphosphate/affect_touch(var/mob/living/carbon/slime/S, var/alien, var/removed, var/datum/reagents/holder)
-	if(istype(S))
-		S.adjustToxLoss( REAGENT_VOLUME(holder, type) * (removed/REM) * 0.23 )
-		if(!S.client)
-			if(S.target) // Like cats
-				S.target = null
-				++S.discipline
-		if(S.chem_doses[type] == removed)
-			S.visible_message(SPAN_WARNING("[S]'s flesh sizzles where the foam touches it!"), SPAN_DANGER("Your flesh burns in the foam!"))
-
 /singleton/reagent/toxin/fertilizer/monoammoniumphosphate/touch_obj(var/obj/O, var/amount, var/datum/reagents/holder)
 	if(istype(O, /obj/structure/bonfire))
 		var/obj/structure/bonfire/B = O
@@ -517,11 +507,6 @@
 		affect_blood(M, alien, removed, holder)
 
 /singleton/reagent/mutagen/affect_blood(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(isslime(M)) // destabilize slime mutation by adding unstable mutagen
-		var/mob/living/carbon/slime/slime = M
-		slime.mutation_chance = min(slime.mutation_chance + removed, 100)
-		return
-
 	var/mob/living/carbon/human/H = M
 	if(istype(H) && (H.species.flags & NO_SCAN))
 		return
@@ -536,30 +521,6 @@
 			domutcheck(M, null)
 			M.UpdateAppearance()
 	M.apply_damage(10 * removed, DAMAGE_RADIATION, damage_flags = DAMAGE_FLAG_DISPERSED)
-
-/singleton/reagent/slimejelly
-	name = "Slime Jelly"
-	description = "A gooey semi-liquid produced from one of the deadliest lifeforms in existence. SO REAL."
-	reagent_state = LIQUID
-	color = "#801E28"
-	taste_description = "slime"
-	taste_mult = 1.3
-	value = 1.2
-
-/singleton/reagent/slimejelly/affect_blood(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(isslime(M)) // stabilize slime mutation by reintroducing slime jelly into the slime
-		var/mob/living/carbon/slime/slime = M
-		slime.mutation_chance = max(slime.mutation_chance - removed, 0)
-		return
-
-	var/mob/living/carbon/human/H = M
-	if(istype(H) && (H.species.flags & NO_BLOOD))
-		return
-
-	if(check_min_dose(M, 0.5))
-		M.adjustCloneLoss(10*removed)
-		M.add_chemical_effect(CE_OXYGENATED, 2) //strength of dexalin plus
-		M.heal_organ_damage(8 * removed, 8 * removed) //strength of butazoline/dermaline
 
 /singleton/reagent/soporific
 	name = "Soporific"

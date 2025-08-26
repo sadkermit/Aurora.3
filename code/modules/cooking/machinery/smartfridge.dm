@@ -141,17 +141,6 @@
 	contents_path = null
 	accepted_items = list(/obj/item/seeds)
 
-/obj/machinery/smartfridge/secure/extract
-	name = "\improper Slime Extract Storage"
-	desc = "A refrigerated storage unit for slime extracts"
-	contents_path = "-slime"
-	req_access = list(ACCESS_RESEARCH)
-	accepted_items = list(/obj/item/slime_extract)
-
-/obj/machinery/smartfridge/secure/extract/Initialize()
-	. = ..()
-	new/obj/item/storage/slimes(src)
-
 /obj/machinery/smartfridge/secure/medbay
 	name = "\improper Refrigerated Chemical Storage"
 	desc = "A refrigerated storage unit for storing medicine and chemicals."
@@ -320,10 +309,6 @@
 
 				if("MegaSeed Storage")
 					new /obj/machinery/smartfridge/seeds(loc)
-					qdel(src)
-
-				if("Slime Extract Storage")
-					new /obj/machinery/smartfridge/secure/extract(loc)
 					qdel(src)
 
 				if("Refrigerated Chemical Storage")

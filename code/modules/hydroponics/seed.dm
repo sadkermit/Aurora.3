@@ -532,7 +532,6 @@
 			/singleton/reagent/radium,
 			/singleton/reagent/rezadone,
 			/singleton/reagent/ryetalyn,
-			/singleton/reagent/slimejelly,
 			/singleton/reagent/drugs/mms,
 			/singleton/reagent/soporific,
 			/singleton/reagent/sugar,

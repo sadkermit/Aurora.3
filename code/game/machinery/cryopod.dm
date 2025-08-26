@@ -434,12 +434,6 @@
 	if(M.stat == DEAD)
 		to_chat(user, SPAN_WARNING("Dead people can not be put into \the [src]."))
 		return
-	for(var/mob/living/carbon/slime/S in range(1, M))
-		if(S.victim == M)
-			to_chat(usr, SPAN_WARNING("[M.name] will not fit into \the [src] because they have a slime latched onto their head!"))
-		if(S.victim == user)
-			to_chat(usr, SPAN_WARNING("You cannot fit into \the [src] do this while a slime is latched onto your head!"))
-			return
 	if(!willing && M.client)
 		var/original_loc = M.loc
 		if(alert(M, "Would you like to enter [on_store_location]?", , "Yes", "No") == "Yes")

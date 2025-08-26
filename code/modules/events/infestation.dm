@@ -106,27 +106,6 @@
 			for(var/i = 1, i < rand(8,24),i++)
 				chosen_mob_types += pickweight(rat_breeds)
 
-		if(INFESTATION_SLIMES)
-			event_name = "Xenobiology Containment Breach"
-			chosen_verb = "have leaked into"
-			var/list/slime_types = list(
-				/mob/living/carbon/slime,
-				/mob/living/carbon/slime/purple,
-				/mob/living/carbon/slime/metal,
-				/mob/living/carbon/slime/orange,
-				/mob/living/carbon/slime/blue,
-				/mob/living/carbon/slime/dark_blue,
-				/mob/living/carbon/slime/dark_purple,
-				/mob/living/carbon/slime/yellow,
-				/mob/living/carbon/slime/silver,
-				/mob/living/carbon/slime/pink,
-				/mob/living/carbon/slime/red,
-				/mob/living/carbon/slime/green,
-				/mob/living/carbon/slime/oil
-			)
-			var/chosen_slime_type = pick(slime_types)
-			for(var/i = 1, i < rand(5,8),i++)
-				chosen_mob_types += chosen_slime_type
 		if(INFESTATION_SPIDERLINGS)
 			event_name = "Greimorian Infestation"
 			chosen_verb = "have burrowed into"

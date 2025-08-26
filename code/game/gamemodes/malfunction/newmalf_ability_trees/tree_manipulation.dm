@@ -19,7 +19,7 @@
 /datum/malf_research_ability/manipulation/hack_camera
 	ability = /datum/game_mode/malfunction/verb/hack_camera
 	price = 1200
-	next = /datum/malf_research_ability/manipulation/emergency_forcefield
+	next = /datum/game_mode/malfunction/verb/gravity_malfunction
 	name = "Hack Camera"
 
 /datum/malf_research_ability/manipulation/gravity_malfunction

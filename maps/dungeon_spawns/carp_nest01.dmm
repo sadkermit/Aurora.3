@@ -50,10 +50,6 @@
 /obj/effect/decal/remains,
 /turf/simulated/floor/exoplanet/asteroid/ash/rocky,
 /area/mine/unexplored)
-"n" = (
-/obj/item/pickaxe/gold,
-/turf/simulated/floor/exoplanet/asteroid/ash/rocky,
-/area/mine/unexplored)
 "o" = (
 /obj/random/medical,
 /turf/simulated/floor/exoplanet/asteroid/ash/rocky,
@@ -600,7 +596,7 @@ b
 b
 m
 b
-n
+b
 b
 b
 b

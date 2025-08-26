@@ -57,11 +57,6 @@
 /obj/effect/landmark/clear,
 /turf/template_noop,
 /area/exoplanet/barren/asteroid)
-"n" = (
-/obj/item/pickaxe/gold,
-/obj/effect/landmark/clear,
-/turf/template_noop,
-/area/exoplanet/barren/asteroid)
 "o" = (
 /obj/random/medical,
 /obj/effect/landmark/clear,
@@ -615,7 +610,7 @@ b
 b
 m
 b
-n
+b
 b
 b
 b

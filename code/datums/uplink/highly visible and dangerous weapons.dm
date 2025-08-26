@@ -159,11 +159,6 @@
 	telecrystal_cost = 2
 	path = /obj/item/gun/projectile/silenced
 
-/datum/uplink_item/item/visible_weapons/custom_ka
-	name = "Kinetic Laser Assembly"
-	telecrystal_cost = 3
-	path = /obj/item/gun/custom_ka/frame01/illegal
-
 /datum/uplink_item/item/visible_weapons/teslagauntlet
 	name = "Tesla Glove"
 	telecrystal_cost = 6

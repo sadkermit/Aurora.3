@@ -101,9 +101,6 @@ STOCK_ITEM_RARE(teleporter, 1)
 STOCK_ITEM_RARE(voice, 1.5)
 	new /obj/item/clothing/mask/gas/voice(L)
 
-STOCK_ITEM_RARE(prebuilt_ka, 0.5)
-	new /obj/random/prebuilt_ka(L)
-
 STOCK_ITEM_RARE(ipctags, 0.5)
 	if(prob(50))
 		new /obj/item/ipc_tag_scanner(L)

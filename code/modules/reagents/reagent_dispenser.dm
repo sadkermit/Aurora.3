@@ -206,7 +206,7 @@
 			log_and_message_admins("shot a welding tank", hitting_projectile.firer)
 			log_game("[key_name(hitting_projectile.firer)] shot fueltank at [loc.loc.name] ([loc.x],[loc.y],[loc.z]).")
 
-		if(!istype(hitting_projectile ,/obj/projectile/beam/laser_tag) && !istype(hitting_projectile ,/obj/projectile/beam/practice) && !istype(hitting_projectile ,/obj/projectile/kinetic))
+		if(!istype(hitting_projectile ,/obj/projectile/beam/laser_tag) && !istype(hitting_projectile ,/obj/projectile/beam/practice))
 			ex_act(2.0)
 
 /obj/structure/reagent_dispensers/fueltank/ex_act(var/severity = 3.0)

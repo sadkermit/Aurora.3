@@ -341,16 +341,9 @@ Sells devices, odds and ends, and medical stuff
 		/obj/item/rfd_ammo                        = TRADER_THIS_TYPE,
 		/obj/item/rfd/mining                      = TRADER_THIS_TYPE,
 		/obj/item/ore_radar                       = TRADER_THIS_TYPE,
-		/obj/item/device/wormhole_jaunter                = TRADER_THIS_TYPE,
-		/obj/item/resonator                       = TRADER_ALL,
 		/obj/item/autochisel                      = TRADER_ALL,
 		/obj/structure/sculpting_block                   = TRADER_ALL,
 		/obj/item/plastique/seismic               = TRADER_THIS_TYPE,
-		/obj/item/gun/custom_ka/frame01/prebuilt  = TRADER_THIS_TYPE,
-		/obj/item/gun/custom_ka/frame02/prebuilt  = TRADER_THIS_TYPE,
-		/obj/item/gun/custom_ka/frame03/prebuilt  = TRADER_THIS_TYPE,
-		/obj/item/gun/custom_ka/frame04/prebuilt  = TRADER_THIS_TYPE,
-		/obj/item/gun/custom_ka/frame05/prebuilt  = TRADER_THIS_TYPE,
 		/obj/item/gun/energy/plasmacutter         = TRADER_THIS_TYPE,
 		/obj/item/clothing/head/helmet/space/void/mining = TRADER_THIS_TYPE,
 		/obj/item/clothing/suit/space/void/mining        = TRADER_THIS_TYPE,
@@ -358,10 +351,7 @@ Sells devices, odds and ends, and medical stuff
 		/obj/item/clothing/suit/space/void/mining/fluff        = TRADER_BLACKLIST, //No custom items
 		/obj/machinery/mining/drill                      = TRADER_THIS_TYPE,
 		/obj/machinery/mining/brace                      = TRADER_THIS_TYPE,
-		/mob/living/heavy_vehicle/premade/ripley                      = TRADER_THIS_TYPE,
-		/obj/item/custom_ka_upgrade/upgrade_chips        = TRADER_SUBTYPES_ONLY,
-		/obj/item/custom_ka_upgrade/barrels              = TRADER_SUBTYPES_ONLY,
-		/obj/item/custom_ka_upgrade/cells                = TRADER_SUBTYPES_ONLY
+		/mob/living/heavy_vehicle/premade/ripley                      = TRADER_THIS_TYPE
 	)
 
 	speech = list(

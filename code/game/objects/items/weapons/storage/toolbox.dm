@@ -93,18 +93,6 @@
 		/obj/item/device/orbital_dropper/drill = 1
 	)
 
-/obj/item/storage/toolbox/ka
-	name = "kinetic accelerator kit"
-	desc = "A kit supplied to shaft miners, containing a few upgrades to standard issue kinetic accelerators."
-	icon_state = "miningbox"
-	item_state = "miningbox"
-	contained_sprite = TRUE
-	starts_with = list(
-		/obj/item/crowbar = 1,
-		/obj/item/wrench = 1,
-		/obj/item/custom_ka_upgrade/barrels/barrel02 = 1
-	)
-
 /obj/item/storage/toolbox/syndicate
 	name = "suspicious looking toolbox"
 	icon_state = "syndicate"

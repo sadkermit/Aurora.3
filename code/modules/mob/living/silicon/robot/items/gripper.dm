@@ -236,9 +236,6 @@
 	can_hold = list(
 		/obj/item/cell,
 		/obj/item/stock_parts,
-		/obj/item/custom_ka_upgrade,
-		/obj/item/warp_core,
-		/obj/item/extraction_pack,
 		/obj/item/smallDelivery,
 		/obj/item/gift,
 		/obj/item/device/mine_bot_upgrade

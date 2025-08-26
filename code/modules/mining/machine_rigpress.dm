@@ -14,7 +14,6 @@
 	/obj/item/mining_scanner = /obj/item/rig_module/device/orescanner,
 	/obj/item/pickaxe/drill = /obj/item/rig_module/device/basicdrill,
 	/obj/item/gun/energy/plasmacutter = /obj/item/rig_module/mounted/plasmacutter,
-	/obj/item/pickaxe/diamond = /obj/item/rig_module/device/drill,
 	/obj/item/gun/energy/vaurca/thermaldrill = /obj/item/rig_module/mounted/thermalldrill
 	)
 

@@ -205,11 +205,9 @@
 		/obj/item/gun/energy/rifle,
 		/obj/item/gun/energy/rifle/laser,
 		/obj/item/gun/energy/gun,
-		/obj/item/gun/custom_ka/frame04/illegal,
 		/obj/item/gun/projectile/automatic/lebman,
 		/obj/item/gun/projectile/pistol/super_heavy,
 		/obj/item/gun/projectile/deagle,
-		/obj/item/gun/custom_ka/frame01/illegal,
 		/obj/item/gun/projectile/automatic/rifle/konyang/pirate_rifle,
 		/obj/item/gun/projectile/automatic/konyang_pirate
 	)
@@ -220,13 +218,6 @@
 	icon = 'icons/obj/guns/caplaser.dmi'
 	icon_state = "caplaser"
 	spawnlist = list(
-		/obj/item/gun/custom_ka/frameA/prebuilt = 1,
-		/obj/item/gun/custom_ka/frameB/prebuilt = 0.5,
-		/obj/item/gun/custom_ka/frameC/prebuilt = 0.25,
-		/obj/item/gun/custom_ka/frameD/prebuilt = 0.125,
-		/obj/item/gun/custom_ka/frameF/prebuilt01 = 0.03125,
-		/obj/item/gun/custom_ka/frameF/prebuilt02 = 0.03125,
-		/obj/item/gun/custom_ka/frameE/prebuilt = 0.03125,
 		/obj/item/gun/energy/captain/xenoarch = 0.5,
 		/obj/item/gun/energy/laser/xenoarch = 0.5,
 		/obj/item/gun/energy/laser/practice/xenoarch = 0.25,
@@ -236,10 +227,6 @@
 
 /obj/random/vault_weapon/post_spawn(var/obj/item/gun/spawned)
 	spawned.name = "prototype [spawned.name]"
-	if(istype(spawned,/obj/item/gun/custom_ka/))
-		var/obj/item/gun/custom_ka/KA = spawned
-		KA.can_disassemble_barrel = FALSE
-		KA.can_disassemble_cell = FALSE
 
 	if(istype(spawned,/obj/item/gun/energy/))
 		var/obj/item/gun/energy/E = spawned

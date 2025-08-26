@@ -9,7 +9,6 @@
 	density = TRUE
 	build_amt = 10
 	var/last_update = 0
-	var/obj/item/warp_core/warp_core // to set up the bluespace network
 	var/list/stored_ore = list()
 
 /obj/structure/ore_box/mechanics_hints(mob/user, distance, is_adjacent)
@@ -22,9 +21,6 @@
 		return
 
 	add_fingerprint(user)
-
-	if(warp_core)
-		. +=  FONT_SMALL(SPAN_NOTICE("It has a <b>warp extraction beacon signaller</b> attached to it."))
 
 	if(!length(contents))
 		. += SPAN_NOTICE("It is empty.")
@@ -42,15 +38,6 @@
 	if(istype(attacking_item, /obj/item/ore))
 		user.drop_from_inventory(attacking_item, src)
 	else if(istype(attacking_item, /obj/item/storage))
-		if(istype(attacking_item, /obj/item/storage/bag/ore))
-			var/obj/item/storage/bag/ore/satchel = attacking_item
-			if(satchel.linked_beacon)
-				if(!warp_core)
-					to_chat(user, SPAN_WARNING("\The [src] doesn't have a warp beacon!"))
-					return
-				satchel.linked_box = src
-				to_chat(user, SPAN_NOTICE("You link \the [satchel] to \the [src]."))
-				return
 		var/obj/item/storage/S = attacking_item
 		S.hide_from(user)
 		for(var/obj/item/ore/O in S.contents)
@@ -58,35 +45,9 @@
 			CHECK_TICK
 		S.post_remove_from_storage_deferred(loc, user)
 		to_chat(user, SPAN_NOTICE("You empty the satchel into the box."))
-	else if(istype(attacking_item, /obj/item/warp_core))
-		if(warp_core)
-			to_chat(user, SPAN_WARNING("\The [src] already has a warp core attached!"))
-			return
-		user.drop_from_inventory(attacking_item, src)
-		warp_core = attacking_item
-		to_chat(user, SPAN_NOTICE("You carefully attach \the [attacking_item] to \the [src], connecting it to the bluespace network."))
-	else if(istype(attacking_item, /obj/item/gripper/miner)) // myazaki's gonna be so mad at me
-		var/obj/item/gripper/miner/GM = attacking_item
-		if(!warp_core)
-			to_chat(user, SPAN_WARNING("\The [src] has no warp core to detach."))
-			return
-		// we don't need to check if it has a held item because the gripper code attacks with the held item if it has one, not the gripper itself
-		warp_core.forceMove(get_turf(src))
-		GM.grip_item(warp_core, user, FALSE)
-		to_chat(user, SPAN_NOTICE("You detach \the [warp_core] from \the [src], disconnecting it from the bluespace network."))
-		warp_core = null
 
 	update_ore_count()
 	return
-
-/obj/structure/ore_box/attack_hand(mob/user)
-	if(warp_core)
-		warp_core.forceMove(get_turf(user))
-		user.put_in_hands(warp_core)
-		to_chat(user, SPAN_NOTICE("You detach \the [warp_core] from \the [src], disconnecting it from the bluespace network."))
-		warp_core = null
-	else
-		..()
 
 /obj/structure/ore_box/proc/update_ore_count()
 	stored_ore = list()

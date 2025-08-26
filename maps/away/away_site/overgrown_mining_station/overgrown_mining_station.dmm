@@ -200,10 +200,6 @@
 /obj/item/trash/cigbutt/roll,
 /turf/simulated/floor/tiled/airless,
 /area/overgrown_mining_station)
-"dX" = (
-/obj/item/pickaxe/silver,
-/turf/simulated/floor/exoplanet/asteroid/ash,
-/area/overgrown_mining_station)
 "eb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner_wide/lime{
@@ -1052,10 +1048,6 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood/airless,
-/area/overgrown_mining_station)
-"wN" = (
-/obj/item/pickaxe/diamond,
-/turf/simulated/floor/diona/airless,
 /area/overgrown_mining_station)
 "wU" = (
 /obj/structure/ore_box,
@@ -25346,7 +25338,7 @@ SZ
 SZ
 SZ
 SZ
-dX
+SZ
 SZ
 IG
 IG
@@ -38171,7 +38163,7 @@ wv
 wv
 RS
 wv
-wN
+wv
 Eh
 Eh
 AC

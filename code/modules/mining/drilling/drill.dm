@@ -301,12 +301,6 @@
 		if(attached_satchel)
 			to_chat(user, SPAN_WARNING("\The [src] already has a satchel attached to it!"))
 			return
-		if(!S.linked_beacon)
-			to_chat(user, SPAN_WARNING("\The [S] doesn't have an extraction pack in it!"))
-			return
-		if(!S.linked_box)
-			to_chat(user, SPAN_WARNING("\The [S] doesn't have a linked ore box!"))
-			return
 		user.drop_from_inventory(S, src)
 		attached_satchel = S
 		to_chat(user, SPAN_NOTICE("You attach \the [S] to \the [src]."))

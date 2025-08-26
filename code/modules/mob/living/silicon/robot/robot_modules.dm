@@ -767,7 +767,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	modules += new /obj/item/ore_radar(src)
 	modules += new /obj/item/gripper/paperwork(src) // for Yield Declarations
 	modules += new /obj/item/device/gps/mining(src) // for locating itself in the deep space
-	modules += new /obj/item/gun/custom_ka/cyborg(src)
 	modules += new /obj/item/taperoll/engineering(src) // To enable 'borgs to telegraph danger visually.
 	modules += new /obj/item/inflatable_dispenser(src) // To enable 'borgs to protect Crew from danger in direct hazards.
 	modules += new /obj/item/device/gps(src) // For being located while disabled and coordinating with life sensor consoles.
@@ -1132,15 +1131,6 @@ GLOBAL_LIST_INIT(robot_modules, list(
 /obj/item/robot_module/mining_drone/drill/set_up_default(mob/living/silicon/robot/R)
 	..(R, FALSE)
 	modules += new /obj/item/pickaxe/jackhammer(src)
-
-/obj/item/robot_module/mining_drone/ka/set_up_default(mob/living/silicon/robot/R)
-	..(R)
-	modules += new /obj/item/gun/custom_ka/cyborg(src)
-
-/obj/item/robot_module/mining_drone/drillandka/set_up_default(mob/living/silicon/robot/R)
-	..(R, FALSE)
-	modules += new /obj/item/pickaxe/jackhammer(src)
-	modules += new /obj/item/gun/custom_ka/cyborg(src)
 
 /obj/item/robot_module/bluespace
 	name = "bluespace robot module"

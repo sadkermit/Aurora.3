@@ -151,10 +151,8 @@
 	M.mod_type = initial(M.mod_type)
 	M.uneq_all()
 	QDEL_NULL(M.module)
-	if(M.ranged_upgrade)
-		M.module = new /obj/item/robot_module/mining_drone/drillandka(M, M)
-	else
-		M.module = new /obj/item/robot_module/mining_drone/drill(M, M)
+
+	M.module = new /obj/item/robot_module/mining_drone/drill(M, M)
 	M.drill_upgrade = TRUE
 	M.module.rebuild()
 	M.recalculate_synth_capacities()
@@ -175,26 +173,6 @@
 			var/datum/robot_component/C = M.components[V]
 			C.max_damage = 30
 	M.health_upgrade = TRUE
-	to_chat(user, SPAN_NOTICE("You successfully install \the [src] into \the [M]."))
-	qdel(src)
-
-/obj/item/device/mine_bot_upgrade/ka
-	name = "minebot kinetic accelerator upgrade"
-
-/obj/item/device/mine_bot_upgrade/ka/upgrade_bot(var/mob/living/silicon/robot/drone/mining/M, mob/user)
-	if(M.ranged_upgrade)
-		to_chat(user, "[src] already has a KA upgrade installed!")
-		return
-	M.mod_type = initial(M.mod_type)
-	M.uneq_all()
-	QDEL_NULL(M.module)
-	if(M.drill_upgrade)
-		M.module = new /obj/item/robot_module/mining_drone/drillandka(M, M)
-	else
-		M.module = new /obj/item/robot_module/mining_drone/ka(M, M)
-	M.ranged_upgrade = TRUE
-	M.module.rebuild()
-	M.recalculate_synth_capacities()
 	to_chat(user, SPAN_NOTICE("You successfully install \the [src] into \the [M]."))
 	qdel(src)
 

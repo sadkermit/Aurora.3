@@ -515,9 +515,6 @@ STOCK_ITEM_COMMON(paicard, 2)
 STOCK_ITEM_COMMON(hide, 1)
 	new /obj/item/stack/material/animalhide(L, rand(5,50))
 
-STOCK_ITEM_COMMON(custom_ka, 1)
-	new /obj/random/custom_ka(L)
-
 STOCK_ITEM_COMMON(towel, 1)
 	new /obj/item/towel(L)
 

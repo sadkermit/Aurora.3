@@ -96,7 +96,7 @@
 	chest_type = /obj/item/clothing/suit/space/rig/industrial
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/medium
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/pickaxe, /obj/item/gun/custom_ka,/obj/item/material/twohanded/fireaxe,/obj/item/gun/energy/vaurca/thermaldrill,/obj/item/storage/backpack/cell,/obj/item/rfd/mining)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/pickaxe,/obj/item/material/twohanded/fireaxe,/obj/item/gun/energy/vaurca/thermaldrill,/obj/item/storage/backpack/cell,/obj/item/rfd/mining)
 
 	req_access = list()
 	req_one_access = list()

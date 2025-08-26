@@ -354,10 +354,7 @@ STOCK_ITEM_UNCOMMON(pickaxes, 1)
 	var/list/pickaxe_type = list(
 		/obj/item/pickaxe = 10,
 		/obj/item/pickaxe/hammer = 1,
-		/obj/item/pickaxe/silver = 2,
 		/obj/item/pickaxe/drill = 5,
-		/obj/item/pickaxe/gold = 0.5,
-		/obj/item/pickaxe/diamond = 0.25,
 		/obj/item/pickaxe/brush = 1,
 		/obj/item/pickaxe/hand = 2
 		)

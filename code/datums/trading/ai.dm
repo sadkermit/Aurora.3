@@ -49,7 +49,6 @@
 		/obj/item/device/announcer                  = TRADER_BLACKLIST, // Rev item
 		/obj/item/device/special_uplink             = TRADER_BLACKLIST,
 		/obj/item/device/onetankbomb                = TRADER_BLACKLIST, // Not weapons trader
-		/obj/item/device/kinetic_analyzer           = TRADER_BLACKLIST, // Not KA trader
 		/obj/item/device/camera                     = TRADER_BLACKLIST_SUB, // a lot of ai/drone/cyborg/fluff items
 		/obj/item/device/uv_light                   = TRADER_BLACKLIST, // CSI item
 		/obj/item/device/eftpos                     = TRADER_BLACKLIST,

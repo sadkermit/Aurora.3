@@ -808,8 +808,6 @@
 		var/obj/machinery/porta_turret/T = target_mob
 		if(T.health > 0)
 			return FALSE
-	else if(istype(target_mob, /obj/effect/energy_field))
-		return FALSE
 
 	return TRUE
 

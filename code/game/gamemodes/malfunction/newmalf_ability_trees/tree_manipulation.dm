@@ -22,13 +22,6 @@
 	next = /datum/malf_research_ability/manipulation/emergency_forcefield
 	name = "Hack Camera"
 
-
-/datum/malf_research_ability/manipulation/emergency_forcefield
-	ability = /datum/game_mode/malfunction/verb/emergency_forcefield
-	price = 1750
-	next = /datum/malf_research_ability/manipulation/gravity_malfunction
-	name = "Emergency Forcefield"
-
 /datum/malf_research_ability/manipulation/gravity_malfunction
 	ability = /datum/game_mode/malfunction/verb/gravity_malfunction
 	price = 2500
@@ -128,27 +121,6 @@
 	else
 		to_chat(user, "Please pick a suitable camera.")
 
-
-/datum/game_mode/malfunction/verb/emergency_forcefield(var/turf/T in world)
-	set name = "Emergency Forcefield"
-	set desc = "275 CPU - Uses station's emergency shielding system to create temporary barrier which lasts for few minutes, but won't resist gunfire."
-	set category = "Software"
-	var/price = 275
-
-	var/mob/living/silicon/ai/user = usr
-	if(!T || !istype(T))
-		return
-	if(!ability_prechecks(user, price) || !ability_pay(user, price))
-		return
-
-	to_chat(user, "Emergency forcefield projection completed.")
-	new/obj/machinery/shield/malfai(T)
-	user.hacking = 1
-	log_ability_use(user, "emergency forcefield", T)
-	sleep(20)
-	user.hacking = 0
-
-
 /datum/game_mode/malfunction/verb/machine_overload(obj/machinery/M in SSmachinery.machinery)
 	set name = "Machine Overload"
 	set desc = "400 CPU - Causes cyclic short-circuit in machine, resulting in weak explosion after some time."
@@ -157,10 +129,6 @@
 
 	var/mob/living/silicon/ai/user = usr
 	if(!ability_prechecks(user, price))
-		return
-
-	if(istype(M, /obj/machinery/shield))
-		to_chat(user, SPAN_WARNING("ERROR: Generated shields cannot be overloaded!"))
 		return
 
 	var/obj/machinery/power/N = M

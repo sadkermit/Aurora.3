@@ -1977,9 +1977,6 @@ About the new airlock wires panel:
 	health -= crush_damage
 	healthcheck()
 
-/obj/effect/energy_field/airlock_crush(var/crush_damage)
-	Stress(crush_damage)
-
 /obj/structure/closet/airlock_crush(var/crush_damage)
 	..()
 	damage(crush_damage)

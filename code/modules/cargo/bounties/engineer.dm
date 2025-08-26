@@ -32,14 +32,6 @@
 	random_count = 2
 	wanted_types = list(/obj/item/solar_assembly, /obj/item/tracker_electronics)
 
-/datum/bounty/item/engineer/eshield
-	name = "Emergency Shields"
-	description = "Another station is requesting emergency energy shields. Apparently there was a baby carp migration and they want to set up a safe play area for them. Treat this as urgent."
-	reward_low = 750
-	reward_high = 900
-	required_count = 2
-	wanted_types = list(/obj/machinery/shield)
-
 /datum/bounty/item/engineer/firesuit
 	name = "Firesuits"
 	description = "I'm about to drop my mixtape in our next meeting. Send some suits to protect management from this straight FIRE. - %PERSONNAME"

@@ -24,7 +24,6 @@
 		/obj/item/device/vending_refill/hydro = 2,
 		/obj/item/device/vending_refill/cutlery = 2,
 		/obj/item/device/vending_refill/robo = 2,
-		/obj/item/device/vending_refill/battlemonsters = 2,
 		/obj/item/device/vending_refill/encryption = 2
 	)
 	random_itemcount = 0
@@ -40,6 +39,5 @@
 		/obj/item/device/vending_refill/hydro = 1,
 		/obj/item/device/vending_refill/cutlery = 1,
 		/obj/item/device/vending_refill/robo = 1,
-		/obj/item/device/vending_refill/battlemonsters = 1,
 		/obj/item/device/vending_refill/encryption = 1
 	)

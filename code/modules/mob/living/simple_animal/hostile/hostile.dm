@@ -408,9 +408,6 @@ ABSTRACT_TYPE(/mob/living/simple_animal/hostile)
 			var/mob/M = V
 			if((M.faction == faction) || (M in friends))
 				return FALSE
-		if(validator_e_field(V, null))
-			target_hit = TRUE
-
 	return target_hit
 
 /mob/living/simple_animal/hostile/proc/shoot_wrapper(atom/target, location, user)
@@ -435,17 +432,6 @@ ABSTRACT_TYPE(/mob/living/simple_animal/hostile)
 		for(var/card_dir in GLOB.cardinals) // North, South, East, West
 			var/turf/target_turf = get_step(src, card_dir)
 			var/obj/found_obj = null
-
-			found_obj = locate(/obj/effect/energy_field) in target_turf
-			if(found_obj && !found_obj.invisibility && found_obj.density)
-				var/obj/effect/energy_field/e = found_obj
-				e.Stress(rand(0.5, 1.5))
-				visible_message(SPAN_DANGER("[capitalize_first_letters(src.name)] [attacktext] \the [e]!"))
-				src.do_attack_animation(e)
-				set_last_found_target(e)
-				change_stance(HOSTILE_STANCE_ATTACKING)
-				hostile_last_attack = world.time
-				return TRUE
 
 			found_obj = locate(/obj/structure/window) in target_turf
 			if(found_obj)
@@ -585,15 +571,6 @@ ABSTRACT_TYPE(/mob/living/simple_animal/hostile)
 	if(isliving(current)) // We prefer mobs over anything else
 		return FALSE
 	return !(T.health <= 0)
-
-/mob/living/simple_animal/hostile/proc/validator_e_field(var/obj/effect/energy_field/E, var/atom/current)
-	if(isliving(current)) // We prefer mobs over anything else
-		return FALSE
-	if(get_dist(src, E) < get_dist(src, current))
-		return TRUE
-	else
-		return FALSE
-
 
 /*######################################
 	START LAST_FOUND_TARGET HANDLING

@@ -9,13 +9,6 @@
 	var/turf/T = get_turf(src)
 	for(var/mob/living/L in get_hearers_in_view(7, src))
 		bang(T, L)
-
-	// Damage blobs.
-	for(var/obj/effect/blob/B in get_hear(8,get_turf(src)))
-		var/damage = round(30/(get_dist(B,get_turf(src))+1))
-		B.health -= damage
-		B.update_icon()
-
 	single_spark(T)
 	new /obj/effect/smoke/illumination(T, brightness=15)
 	qdel(src)

@@ -35,49 +35,6 @@
 	light_color = COLOR_BLUE_GRAY
 	manufacturer = "scc"
 
-/obj/machinery/vending/battlemonsters
-	name = "\improper Battlemonsters vendor"
-	desc = "A good place to dump all your rent money."
-	icon_state = "battlemonsters"
-	icon_vend = "battlemonsters-vend"
-	vend_id = "battlemonsters"
-	products = list(
-		/obj/item/book/manual/wiki/battlemonsters = 10,
-		/obj/item/battle_monsters/wrapped/basic = 20,
-		/obj/item/battle_monsters/wrapped = 20,
-		/obj/item/battle_monsters/wrapped/pro = 20,
-		/obj/item/battle_monsters/wrapped/species = 10, //Human monsters
-		/obj/item/battle_monsters/wrapped/species/lizard = 10, //Reptile Monsters
-		/obj/item/battle_monsters/wrapped/species/cat = 10, //Feline Monsters
-		/obj/item/battle_monsters/wrapped/species/ant = 10, //Ant Monsters
-		/obj/item/battle_monsters/wrapped/rare = 10
-	)
-	prices = list(
-		/obj/item/book/manual/wiki/battlemonsters = 15.00,
-		/obj/item/battle_monsters/wrapped = 25.00,
-		/obj/item/battle_monsters/wrapped/pro = 20.00,
-		/obj/item/battle_monsters/wrapped/species = 15.00,
-		/obj/item/battle_monsters/wrapped/species/lizard = 15.00,
-		/obj/item/battle_monsters/wrapped/species/cat = 15.00,
-		/obj/item/battle_monsters/wrapped/species/ant = 15.00,
-		/obj/item/battle_monsters/wrapped/rare = 35.00
-	)
-	contraband = list(
-		/obj/item/battle_monsters/wrapped/legendary = 5
-	)
-	premium = list(
-		/obj/item/coin/battlemonsters = 10
-	)
-	restock_items = FALSE
-	random_itemcount = FALSE
-	light_color = COLOR_BABY_BLUE
-
-/obj/item/device/vending_refill/battlemonsters
-	name = "Battlemonsters resupply canister"
-	vend_id = "battlemonsters"
-	charges = 40
-
-
 /obj/machinery/vending/overloaders
 	name = "GwokBuzz Vendor"
 	desc = "An entertainment software machine supplied by Gwok Software, a member of the Gwok Group."

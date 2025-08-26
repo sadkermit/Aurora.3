@@ -428,20 +428,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/battlemonstersresupplycanister
-	category = "operations"
-	name = "battlemonsters resupply canister"
-	supplier = "nanotrasen"
-	description = "A vending machine restock cart."
-	price = 2250
-	items = list(
-		/obj/item/device/vending_refill/battlemonsters
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/boozeresupplycanister
 	category = "operations"
 	name = "booze resupply canister"

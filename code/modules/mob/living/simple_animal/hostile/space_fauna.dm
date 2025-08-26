@@ -71,30 +71,16 @@
 
 /mob/living/simple_animal/hostile/carp/MoveToTarget()
 	stop_automated_movement = 1
-	if(istype(last_found_target, /obj/effect/energy_field) && !QDELETED(last_found_target) && (last_found_target in targets))
-		change_stance(HOSTILE_STANCE_ATTACKING)
-		GLOB.move_manager.move_to(src, last_found_target, 1, speed)
-		return 1
 	..()
 
 /mob/living/simple_animal/hostile/carp/AttackTarget()
 	stop_automated_movement = 1
-	if(istype(last_found_target, /obj/effect/energy_field) && !QDELETED(last_found_target) && (get_dist(src, last_found_target) <= 1))
-		AttackingTarget()
-		attacked_times += 1
-		return 1
 	return ..()
 
 /mob/living/simple_animal/hostile/carp/AttackingTarget()
 	. = ..()
 	if(.)
 		return
-	if(istype(last_found_target, /obj/effect/energy_field))
-		var/obj/effect/energy_field/e = last_found_target
-		e.Stress(rand(1,2))
-		visible_message(SPAN_DANGER("\the [src] bites \the [e]!"))
-		src.do_attack_animation(e)
-		return e
 
 /mob/living/simple_animal/hostile/carp/DestroySurroundings(var/bypass_prob = FALSE)
 	if(stance != HOSTILE_STANCE_ATTACKING || ON_ATTACK_COOLDOWN(src))

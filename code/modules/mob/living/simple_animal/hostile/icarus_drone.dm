@@ -144,11 +144,6 @@
 		return FALSE
 	return TRUE
 
-/mob/living/simple_animal/hostile/icarus_drone/validator_e_field(var/obj/effect/energy_field/E, var/atom/current)
-	if(malfunctioning)
-		return ..()
-	return FALSE
-
 /mob/living/simple_animal/hostile/icarus_drone/isSynthetic()
 	return TRUE
 

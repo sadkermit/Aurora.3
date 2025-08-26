@@ -136,48 +136,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/circuitboard_bubbleshield
-	category = "engineering"
-	name = "circuit board (bubble shield generator)"
-	supplier = "hephaestus"
-	description = "Looks like a circuit. Probably is."
-	price = 250
-	items = list(
-		/obj/item/circuitboard/shield_gen
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/circuitboard_hullshield
-	category = "engineering"
-	name = "circuit board (hull shield generator)"
-	supplier = "hephaestus"
-	description = "Looks like a circuit. Probably is."
-	price = 250
-	items = list(
-		/obj/item/circuitboard/shield_gen_ex
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/circuitboard_shieldcapacitor
-	category = "engineering"
-	name = "circuit board (shield capacitor)"
-	supplier = "hephaestus"
-	description = "Looks like a circuit. Probably is."
-	price = 250
-	items = list(
-		/obj/item/circuitboard/shield_cap
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/circuitboard_solarcontrol
 	category = "engineering"
 	name = "circuit board (solar control console)"

@@ -356,10 +356,6 @@ GLOBAL_LIST_INIT(severity_to_string, list(EVENT_LEVEL_MUNDANE = "Mundane", EVENT
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Nothing", /datum/event/nothing,
 			135),
 
-		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Blob", /datum/event/blob,
-			5, list(ASSIGNMENT_ENGINEER = 10), TRUE, minimum_job_requirement_list = list(ASSIGNMENT_ENGINEER = 2),
-			pop_needed = 10),
-
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Electrical Storm", /datum/event/electrical_storm,
 			10, list(ASSIGNMENT_AI = 10, ASSIGNMENT_ENGINEER = 10, ASSIGNMENT_JANITOR = 10)),
 

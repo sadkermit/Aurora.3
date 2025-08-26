@@ -28,15 +28,6 @@ STOCK_ITEM_LARGE(oxycanister, 3)
 STOCK_ITEM_LARGE(oxydispenser, 5)
 	new /obj/structure/dispenser/oxygen(L)
 
-STOCK_ITEM_LARGE(bubbleshield, 0.5)
-	var/obj/O = new /obj/machinery/shield_gen(L)
-	var/turf/T = get_turf(O)
-	for (var/turf/U in range(O,1))
-		if (turf_clear(U))
-			T = U
-			break
-	new /obj/machinery/shield_capacitor(T)
-
 STOCK_ITEM_LARGE(watertank, 2)
 	new /obj/structure/reagent_dispensers/watertank(L)
 

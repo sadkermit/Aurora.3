@@ -112,20 +112,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/shieldgenerator
-	category = "security"
-	name = "Shield Generator"
-	supplier = "nanotrasen"
-	description = "A shield generator."
-	price = 550
-	items = list(
-		/obj/machinery/shieldwallgen
-	)
-	access = ACCESS_ENGINE
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/pepperspraygrenades_box
 	category = "security"
 	name = "box of pepperspray grenades"

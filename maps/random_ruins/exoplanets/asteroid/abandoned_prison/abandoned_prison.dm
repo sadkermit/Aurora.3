@@ -3,9 +3,6 @@
 	id = "abandoned_prison"
 	description = "An abandoned penal mining colony."
 
-	sectors = list(ALL_COALITION_SECTORS)
-	sectors_blacklist = list(SECTOR_HANEUNIM)
-
 	prefix = "asteroid/abandoned_prison/"
 	suffix = "abandoned_prison.dmm"
 

@@ -3,8 +3,6 @@
 	id = "miningsite"
 	description = "An abandoned mining site. Some tools and materials were left behind."
 
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, ALL_COALITION_SECTORS)
-
 	prefix = "asteroid/mining_base/"
 	suffix = "mining_base.dmm"
 
@@ -17,8 +15,6 @@
 	name = "Carp Nest"
 	id = "carp_nest"
 	description = "A nest of deadly space carps."
-
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/carp_nest/"
 	suffix = "carp_nest.dmm"
@@ -35,7 +31,6 @@
 
 	spawn_weight = 0.5
 	spawn_cost = 2
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/hideout/"
 	suffix = "hideout.dmm"
@@ -49,8 +44,6 @@
 	name = "Crashed Shuttle"
 	id = "crashedshuttle01"
 	description = "A crashed shuttle, with some gear left behind."
-
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/crashed_shuttle/"
 	suffix = "crashed_shuttle_01.dmm"
@@ -70,7 +63,6 @@
 
 	spawn_weight = 0.5
 	spawn_cost = 2
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, SECTOR_WEEPING_STARS, SECTOR_UUEOAESA)
 
 	prefix = "asteroid/sol_ship/"
 	suffix = "sol_ship_unique.dmm"
@@ -87,7 +79,6 @@
 
 	spawn_weight = 0.5
 	spawn_cost = 3
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, SECTOR_UUEOAESA)
 
 	prefix = "asteroid/skrell_ship/"
 	suffix = "skrell_crash_unique.dmm"
@@ -104,7 +95,6 @@
 
 	spawn_weight = 0.5
 	spawn_cost = 3
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/mystery_ship/"
 	suffix = "mystery_ship_unique.dmm"
@@ -118,8 +108,6 @@
 	name = "Crashed Satellite"
 	id = "crashed_satelite"
 	description = "A crashed satelite."
-
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, SECTOR_TABITI, SECTOR_AEMAQ, SECTOR_SRANDMARR, SECTOR_NRRAHRAHUL, SECTOR_GAKAL, SECTOR_UUEOAESA, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/satellite_crash/"
 	suffix = "satellite_crash_unique.dmm"
@@ -136,7 +124,6 @@
 
 	spawn_weight = 0.5
 	spawn_cost = 1
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, SECTOR_TABITI, SECTOR_AEMAQ, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/escape_pod/"
 	suffix = "escape_pod_unique.dmm"
@@ -153,7 +140,6 @@
 
 	spawn_weight = 1
 	spawn_cost = 1
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, SECTOR_TABITI, SECTOR_AEMAQ, ALL_COALITION_SECTORS, SECTOR_UUEOAESA)
 
 	prefix = "asteroid/digsite/"
 	suffix = "digsite_unique.dmm"
@@ -170,7 +156,6 @@
 
 	spawn_weight = 1
 	spawn_cost = 0.5
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, SECTOR_TABITI, SECTOR_AEMAQ, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/crashed_pod/"
 	suffix = "crashed_pod_unique.dmm"
@@ -187,7 +172,6 @@
 
 	spawn_weight = 0.5
 	spawn_cost = 3
-	sectors = list(SECTOR_TAU_CETI, SECTOR_ROMANOVICH, SECTOR_CORP_ZONE, SECTOR_VALLEY_HALE, SECTOR_BADLANDS, ALL_COALITION_SECTORS)
 
 	prefix = "asteroid/coc_ship/"
 	suffix = "coc_ship_unique.dmm"

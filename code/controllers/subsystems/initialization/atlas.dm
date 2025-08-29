@@ -215,8 +215,8 @@ SUBSYSTEM_DEF(atlas)
 		if(using_sector_config)
 			log_config("[chosen_sector] used in the config file is not a valid space sector")
 			log_subsystem_atlas("[chosen_sector] used in the config file is not a valid space sector")
-		current_sector = new /datum/space_sector/tau_ceti //if all fails, we go with tau ceti
-		log_subsystem_atlas("Unable to select [chosen_sector] as a valid space sector. Tau Ceti will be used instead.")
+		current_sector = new /datum/space_sector/generic //if all fails, go generic
+		log_subsystem_atlas("Unable to select [chosen_sector] as a valid space sector. Generic Sector will be used instead.")
 	else
 		current_sector = selected_sector
 

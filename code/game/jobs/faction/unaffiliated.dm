@@ -9,6 +9,6 @@
 	that Tau Ceti reports to have.
 	</p>"}
 	departments = {"Civilian"}
-//	allowed_role_types = INDEP_ROLES
+//kermit anchor	allowed_role_types = INDEP_ROLES
 
 	title_suffix = "INDEP"

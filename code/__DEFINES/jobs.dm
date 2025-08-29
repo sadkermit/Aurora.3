@@ -3,7 +3,7 @@
 //
 
 // Singular Roles
-//kermit #define OFF_DUTY_CREW_MEMBER_ROLE /datum/job/visitor
+//kermit anchor #define OFF_DUTY_CREW_MEMBER_ROLE /datum/job/visitor
 ///#define REPRESENTATIVE_ROLE /datum/job/representative
 //#define CONSULAR_ROLE /datum/job/consular
 //#define JOURNALIST_ROLE /datum/job/journalist

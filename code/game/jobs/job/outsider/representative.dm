@@ -100,13 +100,13 @@
 	aide_job = "Corporate Aide"
 
 /datum/job/representative/after_spawn(mob/living/carbon/human/H)
-	var/datum/faction/faction = SSjobs.GetFaction(H)
-	LAZYREMOVE(faction.allowed_role_types, REPRESENTATIVE_ROLE)
+//kermit anchor	var/datum/faction/faction = SSjobs.GetFaction(H)
+//kermit anchor	LAZYREMOVE(faction.allowed_role_types, REPRESENTATIVE_ROLE)
 	add_verb(H, /mob/living/carbon/human/proc/summon_aide)
 
 /datum/job/representative/on_despawn(mob/living/carbon/human/H)
-	var/datum/faction/faction = SSjobs.GetFaction(H)
-	LAZYDISTINCTADD(faction.allowed_role_types, REPRESENTATIVE_ROLE)
+//kermit anchor	var/datum/faction/faction = SSjobs.GetFaction(H)
+//kermit anchor	LAZYDISTINCTADD(faction.allowed_role_types, REPRESENTATIVE_ROLE)
 
 	// Handle the removal of aide blacklists and the slot.
 	var/datum/job/J = SSjobs.GetJob(aide_job)

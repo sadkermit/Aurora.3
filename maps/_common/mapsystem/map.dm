@@ -150,8 +150,8 @@
 
 	if(!allowed_jobs)
 		allowed_jobs = subtypesof(/datum/job)
-		for(var/thing in EVENT_ROLES) //ideally this should prevent event roles from being open on the horizon
-			allowed_jobs.Remove(thing)
+//		for(var/thing in EVENT_ROLES) //ideally this should prevent event roles from being open on the horizon
+//			allowed_jobs.Remove(thing)
 	if (!spawn_types)
 		spawn_types = subtypesof(/datum/spawnpoint)
 	if(!LAZYLEN(planet_size))

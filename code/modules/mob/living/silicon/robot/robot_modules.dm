@@ -212,7 +212,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 		"Cooler Master" =  list(ROBOT_CHASSIS = "coolermaster_medi", ROBOT_PANEL = "coolermaster_medi", ROBOT_EYES = "coolermaster"),
 		"Phage" =          list(ROBOT_CHASSIS = "phage_medi", ROBOT_PANEL = "phage_medi", ROBOT_EYES = "phage")
 	)
-	specialized_access_types = list(/datum/job/doctor, /datum/job/surgeon)
+	specialized_access_types = list()
 
 /obj/item/robot_module/medical/general/Initialize()
 	. = ..()
@@ -274,7 +274,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 
 /obj/item/robot_module/medical/rescue
 	name = "rescue robot module"
-	specialized_access_types = list(/datum/job/med_tech)
+	specialized_access_types = list()
 // If anyone wants to make custom rescue robot sprites, be my guest.
 
 /obj/item/robot_module/medical/rescue/Initialize()
@@ -358,7 +358,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 		"Cooler Master" =  list(ROBOT_CHASSIS = "coolermaster_engi", ROBOT_PANEL = "coolermaster", ROBOT_EYES = "coolermaster"),
 		"Phage" =          list(ROBOT_CHASSIS = "phage_engi", ROBOT_PANEL = "phage", ROBOT_EYES = "phage")
 	)
-	specialized_access_types = list(/datum/job/engineer, /datum/job/atmos)
+	specialized_access_types = list()
 
 /obj/item/robot_module/engineering/construction
 	name = "construction robot module"
@@ -552,7 +552,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	)
 
 	var/mopping = FALSE
-	specialized_access_types = list(/datum/job/janitor)
+	specialized_access_types = list()
 
 /obj/item/robot_module/janitor/Initialize()
 	. = ..()
@@ -648,7 +648,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 		"Phage" =          list(ROBOT_CHASSIS = "phage_serv", ROBOT_PANEL = "phage", ROBOT_EYES = "phage")
 	)
 
-	specialized_access_types = list(/datum/job/bartender, /datum/job/chef, /datum/job/hydro)
+	specialized_access_types = list()
 
 /obj/item/robot_module/service/butler/Initialize()
 	. = ..()
@@ -696,7 +696,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	name = "clerical robot module"
 	channels = list(CHANNEL_SUPPLY = TRUE, CHANNEL_COMMAND = TRUE)
 	networks = list(NETWORK_MINE)
-	specialized_access_types = list(/datum/job/janitor) // Janitor is a nice general access without specifics
+	specialized_access_types = list() // Janitor is a nice general access without specifics
 
 /obj/item/robot_module/service/clerical/Initialize()
 	. = ..()
@@ -744,7 +744,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	)
 
 	supported_upgrades = list(/obj/item/robot_parts/robot_component/jetpack)
-	specialized_access_types = list(/datum/job/mining)
+	specialized_access_types = list()
 
 /obj/item/robot_module/miner/Initialize()
 	. = ..()
@@ -808,7 +808,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 		"Cooler Master" =  list(ROBOT_CHASSIS = "coolermaster_sci", ROBOT_PANEL = "coolermaster", ROBOT_EYES = "coolermaster"),
 		"Phage" =          list(ROBOT_CHASSIS = "phage_sci", ROBOT_PANEL = "phage", ROBOT_EYES = "phage")
 	)
-	specialized_access_types = list(/datum/job/scientist, /datum/job/xenobiologist, /datum/job/xenobotanist, /datum/job/machinist)
+	specialized_access_types = list()
 
 /obj/item/robot_module/research/Initialize()
 	. = ..()

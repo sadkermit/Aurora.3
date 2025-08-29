@@ -18,7 +18,7 @@
 	max_count = 4
 
 	//Vars related to human mobs
-	outfit = /obj/outfit/admin/nt/odinsec
+	outfit = /obj/outfit
 	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_IPC)
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
@@ -28,135 +28,6 @@
 
 	mob_name = null
 	mob_name_prefix = "Spec. "
-	mob_name_pick_message = "Pick a callsign or last-name."
-
-/datum/ghostspawner/human/admin/odindoc
-	short_name = "odindoc"
-	name = "Odin Medical Doctor"
-	desc = "Provide medical assistance for those arriving on the Odin."
-
-	enabled = FALSE
-	spawnpoints = list("OdinDoctor")
-	req_perms = null
-	req_perms_edit = R_CCIAA
-	max_count = 4
-
-	//Vars related to human mobs
-	outfit = /obj/outfit/admin/nt/odindoc
-	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_TAJARA,SPECIES_UNATHI,SPECIES_IPC)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
-
-	assigned_role = "Odin Medical Doctor"
-	special_role = "Odin Medical Doctor"
-	respawn_flag = null
-
-	mob_name = null
-
-/datum/ghostspawner/human/admin/odinpharm
-	short_name = "odinpharm"
-	name = "Odin Pharmacist"
-	desc = "Provide medication for the Doctors on the Odin and those in need."
-
-	enabled = FALSE
-	spawnpoints = list("OdinPharm")
-	req_perms = null
-	req_perms_edit = R_CCIAA
-	max_count = 1
-
-	outfit = /obj/outfit/admin/nt/odinpharm
-	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_TAJARA,SPECIES_UNATHI,SPECIES_IPC)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
-
-	assigned_role = "Odin Pharmacist"
-	special_role = "Odin Pharmacist"
-	respawn_flag = null
-
-	mob_name = null
-
-/datum/ghostspawner/human/admin/odinchef
-	short_name = "odinchef"
-	name = "Odin Chef"
-	desc = "Feed starving crew members on the Odin."
-
-	enabled = FALSE
-	spawnpoints = list("OdinChef")
-	req_perms = null
-	req_perms_edit = R_CCIAA
-	max_count = 2
-
-	outfit = /obj/outfit/admin/nt/odinchef
-	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_TAJARA,SPECIES_UNATHI,SPECIES_IPC)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
-
-	assigned_role = "Odin Chef"
-	special_role = "Odin Chef"
-	respawn_flag = null
-
-	mob_name = null
-
-/datum/ghostspawner/human/admin/odinbartender
-	short_name = "odinbartender"
-	name = "Odin Bartender"
-	desc = "Ensure enough drinks are available to the crew on the Odin."
-
-	enabled = FALSE
-	spawnpoints = list("OdinBartender")
-	req_perms = null
-	req_perms_edit = R_CCIAA
-	max_count = 1
-
-	outfit = /obj/outfit/admin/nt/odinbartender
-	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_TAJARA,SPECIES_UNATHI,SPECIES_IPC)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
-
-	assigned_role = "Odin Bartender"
-	special_role = "Odin Bartender"
-	respawn_flag = null
-
-	mob_name = null
-
-/datum/ghostspawner/human/admin/odinjanitor
-	short_name = "odinjanitor"
-	name = "Odin Sanitation Specialist"
-	desc = "You are a expert in your field. A true authority. The crew looks to you when they get into a sticky situation. You are a janitor on the Odin."
-
-	enabled = FALSE
-	spawnpoints = list("OdinJanitor")
-	req_perms = null
-	max_count = 1
-
-	outfit = /obj/outfit/admin/nt/odinjanitor
-	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_TAJARA,SPECIES_UNATHI,SPECIES_IPC)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
-
-	assigned_role = "Sanitation Specialist"
-	special_role = "Sanitation Specialist"
-	respawn_flag = null
-
-	mob_name = null
-	mob_name_prefix = "Spec. "
-	mob_name_pick_message = "Pick a callsign or last-name."
-
-/datum/ghostspawner/human/admin/tcflsentinel
-	short_name = "tcflsentinel"
-	name = "TCFL Sentinel"
-	desc = "Secure BLV The Tower from any would-be interlopers, provide assistance to returning personnel and/or evacuees."
-
-	enabled = FALSE
-	spawnpoints = list("TCFLSentinel")
-	req_perms = null
-	req_perms_edit = R_CCIAA
-	max_count = 4
-
-	possible_species = list(SPECIES_HUMAN, SPECIES_TAJARA, SPECIES_TAJARA_MSAI, SPECIES_TAJARA_ZHAN, SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_UNATHI, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_ATTENDANT, SPECIES_VAURCA_WORKER, SPECIES_IPC, SPECIES_DIONA)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
-
-	assigned_role = "TCFL Sentinel"
-	special_role = "TCFL Sentinel"
-	respawn_flag = null
-
-	mob_name = null
-	mob_name_prefix = "Sent. "
 	mob_name_pick_message = "Pick a callsign or last-name."
 
 /client/proc/despawn()

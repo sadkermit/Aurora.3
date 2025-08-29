@@ -42,10 +42,7 @@
 	nutrition_loss_factor = 0.7
 	hydration_loss_factor = 0.7
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/adhomian/zhan,
-		/singleton/origin_item/culture/offworld_tajara/zhan
-	)
+	possible_cultures = list()
 
 /datum/species/tajaran/m_sai
 	name = SPECIES_TAJARA_MSAI
@@ -88,10 +85,7 @@
 	nutrition_loss_factor = 0.9
 	hydration_loss_factor = 0.9
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/adhomian/msai,
-		/singleton/origin_item/culture/offworld_tajara/msai
-	)
+	possible_cultures = list()
 
 /datum/species/tajaran/tesla_body
 	name = SPECIES_TAJARA_TESLA_BODY

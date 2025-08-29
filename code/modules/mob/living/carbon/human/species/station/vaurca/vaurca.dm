@@ -138,11 +138,7 @@
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/zora,
-		/singleton/origin_item/culture/klax,
-		/singleton/origin_item/culture/cthur
-	)
+	possible_cultures = list()
 
 
 	alterable_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_STOMACH, BP_APPENDIX)

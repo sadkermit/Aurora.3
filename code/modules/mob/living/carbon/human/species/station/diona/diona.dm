@@ -123,20 +123,6 @@ They are very slow, reasonably strong, and quite durable. They also require ligh
 
 	max_hydration_factor = -1
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/hieroaetheria,
-		/singleton/origin_item/culture/xrim,
-		/singleton/origin_item/culture/narrows,
-		/singleton/origin_item/culture/diona_biesel,
-		/singleton/origin_item/culture/diona_sol,
-		/singleton/origin_item/culture/diona_eridani,
-		/singleton/origin_item/culture/dionae_moghes,
-		/singleton/origin_item/culture/dionae_nralakk,
-		/singleton/origin_item/culture/diona_coalition,
-		/singleton/origin_item/culture/deep_space,
-		/singleton/origin_item/culture/diona_voidtamer
-	)
-
 	alterable_internal_organs = list()
 	psi_deaf = TRUE
 

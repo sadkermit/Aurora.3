@@ -47,13 +47,7 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/tie_hair)
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/biesellite,
-		/singleton/origin_item/culture/solarian,
-		/singleton/origin_item/culture/dominia,
-		/singleton/origin_item/culture/coalition,
-		/singleton/origin_item/culture/elyran
-	)
+	possible_cultures = list()
 
 	zombie_type = SPECIES_ZOMBIE
 	base_color = "#25032"

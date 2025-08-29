@@ -145,59 +145,6 @@
 	display_name = "tacticool turtleneck"
 	path = /obj/item/clothing/under/syndicate/tacticool
 
-/datum/gear/uniform/dominia
-	display_name = "dominian suit selection"
-	description = "A selection of Dominian suits."
-	path = /obj/item/clothing/under/dominia
-	flags = GEAR_HAS_DESC_SELECTION
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi)
-
-/datum/gear/uniform/dominia/New()
-	..()
-	var/list/suit = list()
-	suit["dominian suit, red"] = /obj/item/clothing/under/dominia/imperial_suit
-	suit["dominian suit, black"] = /obj/item/clothing/under/dominia/imperial_suit/black
-	suit["strelitz dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/strelitz
-	suit["volvalaad dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/volvalaad
-	suit["kazhkz dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/kazhkz
-	suit["han'san dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/hansan
-	suit["caladius dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/caladius
-	suit["zhao dominian suit"] = /obj/item/clothing/under/dominia/imperial_suit/zhao
-	suit["lyodsuit"] = /obj/item/clothing/under/dominia/lyodsuit
-	suit["hoodied lyodsuit"] = /obj/item/clothing/under/dominia/lyodsuit/hoodie
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
-/datum/gear/uniform/dominia_dress
-	display_name = "dominian dress selection"
-	description = "A selection of Dominian dresses."
-	path = /obj/item/clothing/under/dominia/dress
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi)
-
-/datum/gear/uniform/dominia_dress/New()
-	..()
-	var/list/suit = list()
-	for(var/dress in typesof(/obj/item/clothing/under/dominia/dress/noble))
-		var/obj/item/clothing/under/dominia/dress/noble/D = new dress
-		suit["[D.name]"] = D.type
-	suit["dominia noble greatdress"] = /obj/item/clothing/under/dominia/dress
-	for(var/dress in typesof(/obj/item/clothing/under/dominia/dress/fancy))
-		var/obj/item/clothing/under/dominia/dress/D = new dress //I'm not typing all this shit manually. Jesus christ.
-		suit["[D.name]"] = D.type
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
-/datum/gear/uniform/fisanduhian_sweater
-	display_name = "fisanduhian sweater"
-	path = /obj/item/clothing/under/dominia/sweater
-	flags = GEAR_HAS_DESC_SELECTION
-	culture_restriction = list(/singleton/origin_item/culture/dominia, /singleton/origin_item/culture/dominian_unathi)
-
-/datum/gear/uniform/vysoka
-	display_name = "vysokan temperwear"
-	description = "A loose outfit of thinned and shredded ohdker fur."
-	path = /obj/item/clothing/under/vysoka
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/vysoka, /singleton/origin_item/origin/ipc_vysoka)
-
 /datum/gear/uniform/elyra_holo
 	display_name = "elyran holographic suit selection"
 	description = "A marvel of Elyran technology, uses hardlight fabric and masks to transform a skin-tight, cozy suit into cultural apparel of your choosing. Has a dial for Midenean, Aemaqii and Persepolis clothes respectively."
@@ -284,12 +231,6 @@
 	path = /obj/item/clothing/under/zhongshan
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
 
-/datum/gear/uniform/gadpathur
-	display_name = "gadpathurian fatigues"
-	path = /obj/item/clothing/under/uniform/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/gadpathur)
-
 /datum/gear/uniform/miscellaneous/qipao
 	display_name = "qipao"
 	path = /obj/item/clothing/under/qipao
@@ -314,13 +255,6 @@
 	fetil_dress["fetil dress, red flairs"] = /obj/item/clothing/under/antillean
 	fetil_dress["fetil dress, gold flairs"] = /obj/item/clothing/under/antillean/goldflair
 	gear_tweaks += new /datum/gear_tweak/path(fetil_dress)
-
-/datum/gear/uniform/miscellaneous/galatea_uniform
-	display_name = "galatean uniform"
-	description = "A work uniform often worn by citizens of the Federal Technology of Galatea."
-	path = /obj/item/clothing/under/galatea
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 
 /datum/gear/uniform/miscellaneous/dress_colorable
 	display_name = "dress selection (colorable)"

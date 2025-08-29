@@ -337,35 +337,6 @@ ABSTRACT_TYPE(/datum/gear/accessory)
 	path = /obj/item/clothing/accessory/whalebone
 	flags = GEAR_HAS_DESC_SELECTION
 
-/datum/gear/accessory/gadpathur
-	display_name = "gadpathurian cadre brassard selection"
-	description = "A selection of cadre brassards from Gadpathur."
-	path = /obj/item/clothing/accessory/armband/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/gadpathur)
-
-/datum/gear/accessory/gadpathur/New()
-	..()
-	var/list/gadpathur = list()
-	gadpathur["cadre brassard"] = /obj/item/clothing/accessory/armband/gadpathur
-	gadpathur["industrial cadre brassard"] = /obj/item/clothing/accessory/armband/gadpathur/ind
-	gadpathur["medical cadre brassard"] = /obj/item/clothing/accessory/armband/gadpathur/med
-	gear_tweaks += new /datum/gear_tweak/path(gadpathur)
-
-/datum/gear/accessory/gadpathur_leader
-	display_name = "gadpathurian section leader badge"
-	description = "A small metal badge worn by Gadpathurian Section Leaders."
-	path = /obj/item/clothing/accessory/gadpathurian_leader
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/gadpathur)
-
-/datum/gear/accessory/gadpathur_dogtags
-	display_name = "gadpathurian dogtags"
-	description = "Dogtags issued to Gadpathurians."
-	path = /obj/item/clothing/accessory/dogtags/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/gadpathur)
-
 /datum/gear/accessory/sash_coloured
 	display_name = "sash (colourable)"
 	path = /obj/item/clothing/accessory/sash/colourable
@@ -561,7 +532,6 @@ ABSTRACT_TYPE(/datum/gear/accessory)
 	description = "A long, split tunic worn over trousers. Traditional on New Hai Phong."
 	path = /obj/item/clothing/accessory/aodai
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/earth, /singleton/origin_item/origin/new_hai_phong)
 
 /datum/gear/accessory/aodai/New()
 	..()

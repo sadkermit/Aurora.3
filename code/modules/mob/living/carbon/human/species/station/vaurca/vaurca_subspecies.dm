@@ -167,11 +167,7 @@
 
 	flags =  NO_SLIP | NO_ARTERIES | PHORON_IMMUNE | NO_COLD_SLOWDOWN
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/zora_breeder,
-		/singleton/origin_item/culture/klax_breeder,
-		/singleton/origin_item/culture/cthur_breeder
-	)
+	possible_cultures = list()
 
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/bugbite,

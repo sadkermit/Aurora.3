@@ -97,10 +97,7 @@
 
 	default_h_style = "Tajaran Ears"
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/adhomian,
-		/singleton/origin_item/culture/offworld_tajara
-	)
+	possible_cultures = list()
 
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/tie_hair)

@@ -124,15 +124,7 @@
 
 	bodyfall_sound = /singleton/sound_category/bodyfall_machine_sound
 
-	possible_cultures = list(
-		/singleton/origin_item/culture/ipc_sol,
-		/singleton/origin_item/culture/ipc_elyra,
-		/singleton/origin_item/culture/ipc_coalition,
-		/singleton/origin_item/culture/ipc_tau_ceti,
-		/singleton/origin_item/culture/golden_deep,
-		/singleton/origin_item/culture/megacorporate,
-		/singleton/origin_item/culture/scrapper
-	)
+	possible_cultures = list()
 
 	alterable_internal_organs = list()
 	possible_speech_bubble_types = list("robot", "default")

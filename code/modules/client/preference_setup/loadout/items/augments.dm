@@ -303,7 +303,6 @@
 	display_name = "Auxiliary Heart"
 	description = "Primarily intended for soldiers and the elderly, the auxiliary heart is a small secondary heart implanted below the original. Should the original heart shut down, the secondary heart will activate, keeping the user alive until the original can be restarted or replaced."
 	path = /obj/item/organ/internal/augment/bioaug/auxiliary_heart
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 	cost = 2
 
@@ -311,7 +310,6 @@
 	display_name = "Boosted Heart"
 	description = "Intended for athletes, some workers, and soldiers, this improved heart increases blood flow and circulation. It provides an improvement to blood oxygenation and stamina, at the cost of requiring more food and water. Outside of Galatea, this augment is popular among professional athletes."
 	path = /obj/item/organ/internal/heart/boosted_heart
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 	cost = 3
 
@@ -319,7 +317,6 @@
 	display_name = "Boosted Liver"
 	description = "Designed primarily for diplomats or Galateans abroad, the boosted liver improves toxin filtering, giving a resistance to toxin damage. As a consequence, it makes it impossible for the user to get drunk."
 	path = /obj/item/organ/internal/liver/boosted_liver
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 	cost = 2
 
@@ -327,7 +324,6 @@
 	display_name = "Galatean Mind Blanker"
 	description = "A small, discrete organ attached near the base of the brainstem. Any attempt to read the mind of an individual with this augment installed will fail, as will attempts at psychic brainwashing."
 	path = /obj/item/organ/internal/augment/bioaug/mind_blanker
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 	cost = 2
 
@@ -335,7 +331,6 @@
 	display_name = "Galatean Mind Blanker (Lethal)"
 	description = "Available only to higher-up MfAS agents and members of the Galatean government. This enhanced variant of a mind blanker introduces a psionic trap which inflicts severe neural damage on anyone attempting to read the user's mind."
 	path = /obj/item/organ/internal/augment/bioaug/mind_blanker_lethal
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 	cost = 4
 	allowed_roles = list("Consular Officer")
@@ -345,7 +340,6 @@
 	description = "A fluff based bioaug that can be renamed/redescribed to appear as something else for RP purposes."
 	path = /obj/item/organ/internal/augment/bioaug/head_fluff
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 
 /datum/gear/augment/bio_chest_fluff
@@ -353,7 +347,6 @@
 	description = "A fluff based bioaug that can be renamed/redescribed to appear as something else for RP purposes."
 	path = /obj/item/organ/internal/augment/bioaug/head_fluff/chest_fluff
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 
 /datum/gear/augment/bio_rhand_fluff
@@ -361,7 +354,6 @@
 	description = "A fluff based bioaug that can be renamed/redescribed to appear as something else for RP purposes."
 	path = /obj/item/organ/internal/augment/bioaug/head_fluff/rhand_fluff
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 
 /datum/gear/augment/bio_lhand_fluff
@@ -369,5 +361,4 @@
 	description = "A fluff based bioaug that can be renamed/redescribed to appear as something else for RP purposes."
 	path = /obj/item/organ/internal/augment/bioaug/head_fluff/lhand_fluff
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-	origin_restriction = list(/singleton/origin_item/origin/galatea)
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)

@@ -202,20 +202,6 @@
 	can_be_unanchored = FALSE
 	var/outside_window = FALSE
 
-//merchant shuttle
-
-/turf/simulated/wall/shuttle/unique/merchant
-	icon = 'icons/turf/shuttles_unique/merchant_shuttle.dmi'
-	icon_state = "5,4"
-
-/obj/structure/shuttle_part/merchant
-	icon = 'icons/turf/shuttles_unique/merchant_shuttle.dmi'
-	icon_state = "4,1"
-
-/obj/structure/window/shuttle/unique/merchant
-	icon = 'icons/turf/shuttles_unique/merchant_shuttle.dmi'
-	icon_state = "6,2"
-
 //cargo shuttle
 
 /turf/simulated/wall/shuttle/unique/cargo

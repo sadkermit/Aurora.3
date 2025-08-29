@@ -1,6 +1,5 @@
 /**
  *	Booze-O-Mat
- *		Merchant Station
  *		Abandoned
  *		Low Supply
  */
@@ -107,28 +106,6 @@
 	data["width_override"] = 900
 	data["height_override"] = 600
 	return data
-
-/obj/machinery/vending/boozeomat/merchant
-	// boozeomat variant used on the merchant station
-	products = list(
-		/obj/item/reagent_containers/food/drinks/drinkingglass = 12,
-		/obj/item/reagent_containers/food/drinks/ice = 12,
-		/obj/item/reagent_containers/food/drinks/bottle/whiskey = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/tequila = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/champagne = 2,
-		/obj/item/reagent_containers/food/drinks/bottle/vodka = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/rum = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/wine = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/cognac = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/victorygin = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/boukha = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/small/beer = 12,
-		/obj/item/reagent_containers/food/drinks/bottle/absinthe = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/brandy = 6,
-		/obj/item/reagent_containers/food/drinks/bottle/sarezhiwine = 6)
-	random_itemcount = 1
-	req_access = list()
-	restock_items = TRUE
 
 /obj/machinery/vending/boozeomat/abandoned
 	// badly stocked, with trash, junk, etc

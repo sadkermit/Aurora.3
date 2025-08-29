@@ -419,7 +419,6 @@ GLOBAL_LIST_EMPTY(gamemode_cache)
 	var/sun_target_z = 7
 
 	var/cargo_load_items_from = "json"
-	var/merchant_chance = 20 //Chance, in percentage, of the merchant job slot being open at round start
 
 	var/show_game_type_odd = 1 // If the check gamemode probability verb is enabled or not
 
@@ -995,9 +994,6 @@ GENERAL_PROTECT_DATUM(/datum/configuration)
 				if("fastboot")
 					fastboot = TRUE
 					LOG_DEBUG("Fastboot is ENABLED.")
-
-				if("merchant_chance")
-					GLOB.config.merchant_chance = text2num(value)
 
 				if("time_to_call_emergency_shuttle")
 					GLOB.config.time_to_call_emergency_shuttle = text2num(value)

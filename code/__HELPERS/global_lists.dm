@@ -31,7 +31,7 @@ GLOBAL_LIST_EMPTY_TYPED(landmarks_list, /obj/effect/landmark)
 GLOBAL_LIST_EMPTY_TYPED(ruin_landmarks, /obj/effect/landmark/ruin)
 /// Assoc list of force spawnpoints for event maps.
 GLOBAL_LIST_EMPTY(force_spawnpoints)
-/// List of all jobstypes, minus borg, merchant and AI.
+/// List of all jobstypes, minus borg, and AI.
 GLOBAL_LIST_EMPTY(joblist)
 /// List of all brig secure_closets. Used by brig timers.
 GLOBAL_LIST_EMPTY(brig_closets)
@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(backbagcolors, list("None", "Blue", "Green", "Navy", "Tan", "Kh
 /// List of possible backpack straps for the loadout.
 GLOBAL_LIST_INIT(backbagstrap, list("Hidden", "Thin", "Normal", "Thick"))
 /// Jobs that are not "internal" to the game map.
-GLOBAL_LIST_INIT(exclude_jobs, list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant))
+GLOBAL_LIST_INIT(exclude_jobs, list(/datum/job/ai, /datum/job/cyborg))
 
 /// PDA loadout choices.
 GLOBAL_LIST_INIT(pdalist, list("Nothing", "Standard PDA", "Classic PDA", "Rugged PDA", "Slate PDA", "Smart PDA", "Tablet", "Wristbound"))

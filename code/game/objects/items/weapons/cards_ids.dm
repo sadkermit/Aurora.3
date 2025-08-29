@@ -434,13 +434,6 @@
 	access = get_all_station_access()
 	..()
 
-/obj/item/card/id/merchant
-	name = "merchant identification card"
-	desc = "An identification card issued to SCC-sanctioned merchants, indicating their right to sell and buy goods."
-	icon_state = "centcom"
-	overlay_state = "centcom"
-	access = list(ACCESS_MERCHANT)
-
 /obj/item/card/id/synthetic
 	name = "\improper SCC equipment identification card"
 	desc = "Access module for SCC equipment."

@@ -339,9 +339,6 @@ STARLIGHT 0
 ## If defined, starlight applies to open space turfs as well. Causes a significant number of lighting updates at round-start, may increase server's memory usage.
 #OPENTURF_STARLIGHT
 
-## Chance, in percentage, of the merchant job slot being open at round start
-MERCHANT_CHANCE 20
-
 ## How long before the crew can call the emergency shuttle. One hour by default.
 TIME_TO_CALL_EMERGENCY_SHUTTLE 36000
 

@@ -307,38 +307,6 @@ AURORA_ESCAPE_POD(4)
 	docking_controller = "cargo_bay"
 	landmark_flags = SLANDMARK_FLAG_AUTOSET
 
-//-// Merchant Shuttle //-//
-
-/datum/shuttle/autodock/ferry/merchant_aurora
-	name = "ICV Enterprise"
-	location = 1
-	warmup_time = 10
-	shuttle_area = /area/shuttle/merchant
-	move_time = 20
-	dock_target = "merchant_shuttle"
-	waypoint_station = "nav_merchant_dock"
-	landmark_transition = "nav_merchant_interim"
-	waypoint_offsite = "nav_merchant_start"
-
-/obj/effect/shuttle_landmark/merchant/start
-	name = "Merchant Shuttle Base"
-	landmark_tag = "nav_merchant_start"
-	docking_controller = "merchant_station"
-	base_turf = /turf/space/dynamic
-	base_area = /area/template_noop
-
-/obj/effect/shuttle_landmark/merchant/interim
-	name = "In Transit"
-	landmark_tag = "nav_merchant_interim"
-	base_turf = /turf/space/transit/bluespace/west
-
-/obj/effect/shuttle_landmark/merchant/dock
-	name = "Second Deck Starboard Dock 1"
-	landmark_tag = "nav_merchant_dock"
-	docking_controller = "merchant_shuttle_dock"
-	base_turf = /turf/space
-	base_area = /area/space
-
 //-// CCIA Shuttle //-//
 
 /datum/shuttle/autodock/ferry/autoreturn/ccia
@@ -575,7 +543,6 @@ AURORA_ESCAPE_POD(4)
 	destination_tags = list(
 		"nav_mercelite_start",
 		"nav_mercelite_command",
-		"nav_mercelite_merchant",
 		"nav_mercelite_yellow",
 		"nav_mercelite_green"
 		)
@@ -591,13 +558,6 @@ AURORA_ESCAPE_POD(4)
 	name = "Command Surface - Maintenance"
 	landmark_tag = "nav_mercelite_command"
 	docking_controller = "command_surface_airlock"
-	landmark_flags = SLANDMARK_FLAG_AUTOSET
-
-/obj/effect/shuttle_landmark/merc_elite/merchant
-	name = "Merchant Dock"
-	landmark_tag = "nav_mercelite_merchant"
-	docking_controller = "merchant_shuttle_dock"
-	special_dock_targets = list("Merc Elite" = "elite_shuttle_port")
 	landmark_flags = SLANDMARK_FLAG_AUTOSET
 
 /obj/effect/shuttle_landmark/merc_elite/yellow
@@ -626,7 +586,6 @@ AURORA_ESCAPE_POD(4)
 	destination_tags = list(
 		"nav_legion_start",
 		"nav_legion_green",
-		"nav_legion_merchant",
 		"nav_legion_medical"
 		)
 
@@ -646,13 +605,6 @@ AURORA_ESCAPE_POD(4)
 	name = "Third Deck Port Dock 1"
 	landmark_tag = "nav_legion_green"
 	docking_controller = "legion_shuttle_dock"
-	landmark_flags = SLANDMARK_FLAG_AUTOSET
-
-/obj/effect/shuttle_landmark/legion/merchant
-	name = "Merchant Dock"
-	landmark_tag = "nav_legion_merchant"
-	docking_controller = "merchant_shuttle_dock"
-	special_dock_targets = list("Legion Shuttle" = "legion_shuttle_aft_airlock")
 	landmark_flags = SLANDMARK_FLAG_AUTOSET
 
 /obj/effect/shuttle_landmark/legion/medical

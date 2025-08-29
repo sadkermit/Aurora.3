@@ -1,7 +1,6 @@
 /*
  *	Cigarette machine
  *		Low Supply
- *		Merchant Station
  *		Hacked
  */
 
@@ -121,19 +120,6 @@
 		/obj/item/clothing/mask/smokable/ecig/simple = 1,
 		/obj/item/reagent_containers/ecig_cartridge/med_nicotine = 2,
 		/obj/item/reagent_containers/ecig_cartridge/grape = 1
-	)
-
-/obj/machinery/vending/cigarette/merchant
-	// Mapped in merchant station
-	premium = list()
-	prices = list()
-	products = list(
-		/obj/item/storage/box/fancy/cigarettes = 10,
-		/obj/item/storage/box/fancy/cigarettes/oracle = 10,
-		/obj/item/storage/box/fancy/matches = 10,
-		/obj/item/flame/lighter/random = 4,
-		/obj/item/storage/box/fancy/cigarettes/cigar = 5,
-		/obj/item/storage/box/fancy/cigarettes/acmeco = 5
 	)
 
 /obj/machinery/vending/cigarette/hacked

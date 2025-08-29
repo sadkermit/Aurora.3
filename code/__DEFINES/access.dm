@@ -543,12 +543,6 @@
 	desc = "Code Gold"
 	access_type = ACCESS_TYPE_CENTCOM
 
-#define ACCESS_MERCHANT 110//merchant access
-/datum/access/merchant
-	id = ACCESS_MERCHANT
-	desc = "Merchant Access"
-	access_type = ACCESS_TYPE_CENTCOM
-
 #define ACCESS_LEGION 111//tau ceti foreign legion access
 /datum/access/legion
 	id = ACCESS_LEGION

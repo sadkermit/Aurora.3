@@ -33,7 +33,7 @@
 #define ENGINEERING_ROLES list(/datum/job/engineer, /datum/job/atmos, /datum/job/intern_eng, /datum/job/eventeng)
 #define SERVICE_ROLES list(/datum/job/chaplain, /datum/job/bartender, /datum/job/chef, /datum/job/hydro, /datum/job/janitor, /datum/job/librarian, /datum/job/eventsrv)
 #define CIVILIAN_ROLES list(/datum/job/assistant, /datum/job/visitor, /datum/job/journalist)
-#define NON_CREW_CIVILIAN_ROLES list(/datum/job/passenger, /datum/job/merchant)
+#define NON_CREW_CIVILIAN_ROLES list(/datum/job/passenger)
 #define SECURITY_ROLES list(/datum/job/warden, /datum/job/investigator, /datum/job/officer, /datum/job/intern_sec, /datum/job/eventsec)
 #define OPERATIONS_ROLES list(/datum/job/hangar_tech, /datum/job/mining, /datum/job/machinist, /datum/job/eventops)
 #define EQUIPMENT_ROLES list(/datum/job/ai, /datum/job/cyborg)

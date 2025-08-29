@@ -197,7 +197,7 @@
 		/obj/item/reagent_containers/food/drinks/bottle/vintage_wine = 0.1
 	)
 
-//Can be good loot for away sites as well as a guaranteed valuable for a merchant.
+//Can be good loot for away sites
 /obj/random/highvalue/no_weapon
 	problist = list(
 		/obj/item/reagent_containers/food/drinks/bottle/vintage_wine = 0.1,

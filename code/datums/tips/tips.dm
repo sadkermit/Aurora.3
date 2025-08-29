@@ -386,8 +386,7 @@ GLOBAL_LIST_EMPTY(tips_by_category)
 	category = CATEGORY_GHOSTSPAWN
 	messages = list(
 		"As an Emergency Response character, your most powerful weapons are your team mates. Your second most powerful weapon is your bigass gun.",
-		"Emergency Response Teams are still expected to roleplay and progress the round. Try not to wordlessly gun down everyone you see.",
-		"As a merchant, you offer goods and services in exchange for credits."
+		"Emergency Response Teams are still expected to roleplay and progress the round. Try not to wordlessly gun down everyone you see."
 	)
 
 

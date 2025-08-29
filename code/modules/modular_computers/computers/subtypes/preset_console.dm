@@ -165,17 +165,6 @@
 	ai_slot = new /obj/item/computer_hardware/ai_slot(src)
 	card_slot = new /obj/item/computer_hardware/card_slot(src)
 
-
-// Merchant
-/obj/item/modular_computer/console/preset/merchant
-	_app_preset_type = /datum/modular_computer_app_presets/merchant
-	enrolled = DEVICE_PRIVATE
-
-/obj/item/modular_computer/console/preset/merchant/install_default_hardware()
-	..()
-	ai_slot = new/obj/item/computer_hardware/ai_slot(src)
-	card_slot = new/obj/item/computer_hardware/card_slot(src)
-
 // AI
 /obj/item/modular_computer/console/preset/ai
 	_app_preset_type = /datum/modular_computer_app_presets/ai

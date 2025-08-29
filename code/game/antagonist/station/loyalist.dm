@@ -27,7 +27,7 @@ GLOBAL_DATUM(loyalists, /datum/antagonist/loyalists)
 	faction_indicator = "fellowship"
 	faction_invisible = FALSE
 
-	restricted_jobs = list("AI", "Cyborg", "Merchant")
+	restricted_jobs = list("AI", "Cyborg")
 	protected_jobs = list("Research Intern", "Medical Intern", "Engineering Apprentice", "Assistant", "Security Cadet")
 	required_age = 31
 

@@ -104,11 +104,6 @@
 	new /obj/item/device/flashlight/lantern(src)
 	new /obj/item/sleeping_bag/mining(src)
 
-// Merchant
-/obj/structure/closet/secure_closet/merchant
-	name = "merchant's locker"
-	req_access = list(ACCESS_MERCHANT)
-
 // Package Courier
 /obj/structure/closet/secure_closet/package_courier
 	name = "courier's locker"

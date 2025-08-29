@@ -138,7 +138,6 @@
 		/datum/shuttle/autodock/overmap/mining,
 		/datum/shuttle/autodock/overmap/canary,
 		/datum/shuttle/autodock/overmap/quark,
-		/datum/shuttle/autodock/ferry/merchant_aurora,
 		/datum/shuttle/autodock/ferry/autoreturn/ccia,
 		/datum/shuttle/autodock/overmap/orion_express_shuttle,
 		/datum/shuttle/autodock/overmap/sfa_shuttle,

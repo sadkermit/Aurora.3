@@ -56,7 +56,6 @@ var/const/LAWYER			=(1<<9)
 var/const/CHAPLAIN			=(1<<10)
 var/const/VISITOR			=(1<<11)
 var/const/CONSULAR			=(1<<12)
-var/const/MERCHANT			=(1<<13)
 var/const/JOURNALIST		=(1<<14)
 var/const/ASSISTANT			=(1<<15)
 GLOBAL_VAR_CONST(DIPLOMAT_AIDE, 1<<16)
@@ -146,7 +145,6 @@ var/list/civilian_positions = list(
 	"Assistant",
 	"Off-Duty Crew Member",
 	"Passenger",
-	"Merchant",
 	"Corporate Reporter"
 )
 

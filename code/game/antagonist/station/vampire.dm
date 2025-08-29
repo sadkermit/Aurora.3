@@ -6,7 +6,7 @@ GLOBAL_DATUM(vamp, /datum/antagonist/vampire)
 	role_text_plural = "Vampires"
 	bantype = "vampires"
 	feedback_tag = "vampire_objective"
-	restricted_jobs = list("AI", "Cyborg", "Chaplain", "Head of Security", "Captain", "Chief Engineer", "Research Director", "Chief Medical Officer", "Executive Officer", "Operations Manager", "Merchant")
+	restricted_jobs = list("AI", "Cyborg", "Chaplain", "Head of Security", "Captain", "Chief Engineer", "Research Director", "Chief Medical Officer", "Executive Officer", "Operations Manager")
 
 	protected_jobs = list("Security Officer", "Security Cadet", "Warden", "Investigator")
 	restricted_species = list(

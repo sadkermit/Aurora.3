@@ -10,7 +10,6 @@
 	r_pocket = /obj/item/tank/emergency_oxygen/double
 	l_pocket = /obj/item/crowbar/red
 	suit_accessory = /obj/item/clothing/accessory/dominia
-	id = /obj/item/card/id/imperial_fleet
 	l_ear = /obj/item/device/radio/headset/distress
 	mask = /obj/item/clothing/mask/gas
 	accessory = /obj/item/clothing/accessory/holster/hip

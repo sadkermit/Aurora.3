@@ -37,9 +37,6 @@
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 	uses_species_whitelist = FALSE
 	species_outfits = list(
-		SPECIES_HUMAN = /obj/outfit/admin/cyclops_crew,
-		SPECIES_SKRELL = /obj/outfit/admin/cyclops_crew,
-		SPECIES_SKRELL_AXIORI = /obj/outfit/admin/cyclops_crew,
 		SPECIES_UNATHI = /obj/outfit/admin/moghes_heph_miner
 	)
 

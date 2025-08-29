@@ -49,7 +49,6 @@
 
 /obj/effect/landmark/corpse/unathi_pirate
 	name = "Unathi Pirate"
-	corpseuniform = /obj/item/clothing/under/unathi/izharshan
 	corpsesuit = /obj/item/clothing/suit/space/void/unathi_pirate
 	corpseshoes = /obj/item/clothing/shoes/magboots
 	corpsehelmet = /obj/item/clothing/head/helmet/space/void/unathi_pirate

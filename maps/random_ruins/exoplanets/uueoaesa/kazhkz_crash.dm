@@ -62,7 +62,6 @@
 
 /obj/effect/landmark/corpse/kazhkz_crash
 	name = "Dead Kazhkz Warrior"
-	corpseuniform = /obj/item/clothing/under/unathi/hiskyn
 	corpseshoes = /obj/item/clothing/shoes/magboots
 	corpsesuit = /obj/item/clothing/suit/space/unathi_ruin
 	corpsehelmet = /obj/item/clothing/head/helmet/space/unathi_ruin

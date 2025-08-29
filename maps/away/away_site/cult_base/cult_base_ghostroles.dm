@@ -96,8 +96,7 @@
 		/obj/item/clothing/under/color/brown,
 		/obj/item/clothing/under/service_overalls,
 		/obj/item/clothing/under/overalls,
-		/obj/item/clothing/under/suit_jacket/charcoal,
-		/obj/item/clothing/under/offworlder/drab,
+		/obj/item/clothing/under/suit_jacket/charcoal
 	)
 	suit = list(
 		/obj/item/clothing/suit/cultrobes/alt,
@@ -250,8 +249,7 @@
 		/obj/item/clothing/under/color/brown,
 		/obj/item/clothing/under/service_overalls,
 		/obj/item/clothing/under/overalls,
-		/obj/item/clothing/under/suit_jacket/charcoal,
-		/obj/item/clothing/under/offworlder/drab,
+		/obj/item/clothing/under/suit_jacket/charcoal
 	)
 	suit = list(
 		/obj/item/clothing/suit/cultrobes/alt,

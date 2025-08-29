@@ -110,7 +110,6 @@
 
 /obj/effect/landmark/corpse/izharshan
 	name = "Izharshan Pirate"
-	corpseuniform = /obj/item/clothing/under/unathi/izharshan
 	corpseshoes = /obj/item/clothing/shoes/sandals/caligae
 	corpsesuit = /obj/item/clothing/suit/space/void/unathi_pirate
 	corpsehelmet = /obj/item/clothing/head/helmet/space/void/unathi_pirate

@@ -77,7 +77,6 @@
 /obj/outfit/admin/moghes_skakh
 	name = "Sk'akh Acolyte"
 	uniform = /obj/item/clothing/under/unathi/skakh
-	shoes = /obj/item/clothing/shoes/sandal
 	id = null
 	l_ear = null
 	back = /obj/item/storage/backpack/satchel/leather

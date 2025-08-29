@@ -30,7 +30,6 @@
 	spawnpoints = list("moghes_guild_miner")
 	max_count = 3
 
-	outfit = /obj/outfit/admin/miners_guild
 	possible_species = list(SPECIES_UNATHI)
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 

@@ -138,15 +138,7 @@
 		/datum/shuttle/autodock/overmap/mining,
 		/datum/shuttle/autodock/overmap/canary,
 		/datum/shuttle/autodock/overmap/quark,
-		/datum/shuttle/autodock/ferry/autoreturn/ccia,
-		/datum/shuttle/autodock/overmap/orion_express_shuttle,
-		/datum/shuttle/autodock/overmap/sfa_shuttle,
-		/datum/shuttle/autodock/overmap/tcfl_shuttle,
-		/datum/shuttle/autodock/overmap/ee_shuttle,
-		/datum/shuttle/autodock/overmap/fsf_shuttle,
-		/datum/shuttle/autodock/overmap/freighter_shuttle,
-		/datum/shuttle/autodock/overmap/kataphract_transport,
-		/datum/shuttle/autodock/overmap/iac_shuttle
+		/datum/shuttle/autodock/ferry/autoreturn/ccia
 	)
 
 	evac_controller_type = /datum/evacuation_controller/starship

@@ -38,7 +38,6 @@
 	possible_species = list(SPECIES_UNATHI)
 	extra_languages = list(LANGUAGE_UNATHI, LANGUAGE_AZAZIBA)
 	uses_species_whitelist = FALSE
-	outfit = /obj/outfit/admin/izweski
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 	assigned_role = "Izweski Hegemony Soldier"
 	special_role = "Izweski Hegemony Soldier"
@@ -53,4 +52,3 @@
 	assigned_role = "Izweski Hegemony Commander"
 	special_role = "Izweski Hegemony Commander"
 	uses_species_whitelist = TRUE
-	outfit = /obj/outfit/admin/izweski/captain

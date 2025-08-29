@@ -51,13 +51,6 @@
 	place_near_main = list(1,0)
 	var/landing_area
 
-/obj/effect/overmap/visitable/sector/exoplanet/konyang/Initialize()
-	. = ..()
-	var/area/overmap/map = GLOB.map_overmap
-	for(var/obj/effect/overmap/visitable/sector/point_verdant/P in map)
-		P.x = x
-		P.y = y
-
 /obj/effect/overmap/visitable/sector/exoplanet/konyang/generate_habitability()
 	return HABITABILITY_IDEAL
 

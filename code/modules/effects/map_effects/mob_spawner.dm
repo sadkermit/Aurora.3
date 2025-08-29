@@ -93,15 +93,5 @@
 			S.start_spawning()
 
 //Make your subtypes here
-/obj/effect/fauna_spawner/phoron_deposit
-	name = "Phoron Deposit Spawner"
-	mob_choices = list(
-		list(type = /mob/living/simple_animal/hostile/carp/shark/reaver/eel/phoron_deposit, speed = 5), //Speed refers only to the speed that the mobs will move to the waypoint at. Lower values = faster
-		list(type = /mob/living/simple_animal/hostile/carp/shark/phoron_deposit, speed = 4),
-		list(type = /mob/living/simple_animal/hostile/carp/shark/reaver/phoron_deposit, speed = 5),
-		list(type = /mob/living/simple_animal/hostile/gnat/phoron_deposit, speed = 1),
-		list(type = /mob/living/simple_animal/hostile/carp, speed = 2)
-	)
-
 /obj/effect/landmark/mob_waypoint
 	name = "mob waypoint"

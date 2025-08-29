@@ -164,7 +164,6 @@ var/list/worths = list(
 					/obj/item/coin/phoron = 20,
 					/obj/item/coin/uranium = 125,
 					/obj/item/coin/gold = 5,
-					/obj/item/coin/casino = 25,
 					/obj/item/coin/silver = 25,
 					/obj/item/coin/iron = 5,
 					/obj/item/coin = 3,

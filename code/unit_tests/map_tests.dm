@@ -418,9 +418,7 @@
 /datum/unit_test/map_test/no_map_spawn_guaranteed_flag
 	name = "MAP: Check for Spawn Guaranteed flag"
 	/// Away sites that are allowed to always populate. Usually sector-specific locations only.
-	var/list/do_not_check_site_types = list(
-		/datum/map_template/ruin/away_site/hegemony_waypoint
-	)
+	var/list/do_not_check_site_types = list()
 
 /datum/unit_test/map_test/no_map_spawn_guaranteed_flag/start_test()
 	var/test_status = UNIT_TEST_PASSED

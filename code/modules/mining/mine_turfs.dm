@@ -701,10 +701,6 @@ GLOBAL_LIST_INIT(mineral_can_smooth_with, list(
 	color = "#444444"
 	mined_turf = /turf/simulated/floor/exoplanet/basalt
 
-/turf/simulated/mineral/lava/tret
-	color = "#444455"
-	mined_turf = /turf/simulated/floor/exoplanet/basalt/tret
-
 /**********************Asteroid**************************/
 
 // Setting icon/icon_state initially will use these values when the turf is built on/replaced.

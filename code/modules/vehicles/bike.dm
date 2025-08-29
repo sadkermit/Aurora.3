@@ -405,43 +405,6 @@
 /obj/item/storage/toolbox/bike_storage/monowheel
 	name = "monowheel storage"
 
-/obj/vehicle/bike/casino
-	name = "retrofitted snowmobile"
-	desc = "A modified snowmobile. There is a coin slot on the panel."
-	icon_state = "snow_on"
-
-	bike_icon = "snow"
-	land_speed = 4
-	protection_percent = 10
-	can_hover = FALSE
-	var/paid = FALSE
-
-/obj/vehicle/bike/casino/Move(var/turf/destination)
-	if(!paid)
-		return
-
-	. = ..()
-
-/obj/vehicle/bike/casino/attackby(obj/item/attacking_item, mob/user)
-	if(istype(attacking_item, /obj/item/coin/casino))
-		if(!paid)
-			paid = TRUE
-			to_chat(user, SPAN_NOTICE("Payment confirmed, enjoy two minutes of unlimited snowmobile use."))
-			addtimer(CALLBACK(src, PROC_REF(rearm)), 2 MINUTES)
-		return
-	..()
-
-/obj/vehicle/bike/casino/proc/rearm()
-	visible_message(SPAN_NOTICE("\The [src] beeps lowly, asking for another chip to continue."))
-	paid = FALSE
-
-/obj/vehicle/bike/casino/check_destination(var/turf/destination)
-	var/static/list/types = typecacheof(list(/turf/space))
-	if((is_type_in_typecache(destination,types) && !locate(/obj/structure/lattice))  || pulledby)
-		return TRUE
-	else
-		return FALSE
-
 /obj/vehicle/bike/snow
 	name = "snowmobile"
 	desc = "A vehicle adapted to travel on snow."

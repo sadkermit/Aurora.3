@@ -8,9 +8,6 @@
 /singleton/biome/mountain
 	turf_type = /turf/simulated/mineral
 
-/singleton/biome/mountain/adhomai
-	turf_type = /turf/simulated/mineral/adhomai
-
 /singleton/biome/mountain/basalt
 	turf_type = /turf/simulated/mineral/lava
 

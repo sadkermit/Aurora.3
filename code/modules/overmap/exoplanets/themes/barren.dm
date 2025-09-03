@@ -23,18 +23,6 @@
 /datum/exoplanet_theme/barren/mountain
 	mountain_threshold = 0.0
 
-/datum/exoplanet_theme/barren/raskara
-	name = "Raskara"
-	surface_turfs = list(
-		/turf/simulated/mineral/planet,
-		/turf/simulated/floor/exoplanet/barren/raskara
-	)
-	possible_biomes = list(
-		BIOME_POLAR = list(
-			BIOME_ARID = /singleton/biome/barren/raskara
-			)
-	)
-
 /datum/exoplanet_theme/barren/asteroid
 	name = "Asteroid"
 	mountain_threshold = 0.5
@@ -96,14 +84,6 @@
 			ORE_HYDROGEN = list(1, 3),
 			ORE_PHORON = list(0, 2)
 		)
-	)
-
-/datum/exoplanet_theme/barren/pid
-	name = "Pid"
-	possible_biomes = list(
-		BIOME_POLAR = list(
-			BIOME_ARID = /singleton/biome/barren/pid
-			)
 	)
 
 /datum/exoplanet_theme/barren/asteroid/chanterel

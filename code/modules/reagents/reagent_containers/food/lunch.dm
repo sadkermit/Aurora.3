@@ -27,8 +27,6 @@ GLOBAL_LIST_INIT(lunchables_lunches_, list(
 	/obj/item/reagent_containers/food/snacks/blt,
 	/obj/item/reagent_containers/food/snacks/pbjsandwich,
 	/obj/item/reagent_containers/food/snacks/pita/falafel,
-	/obj/item/reagent_containers/food/snacks/stokkebab,
-	/obj/item/reagent_containers/food/snacks/batwings,
 	/obj/item/reagent_containers/food/snacks/pepperoniroll
 ))
 
@@ -74,7 +72,6 @@ GLOBAL_LIST_INIT(lunchables_snacks_, list(
 	/obj/item/reagent_containers/food/snacks/bananabreadslice/filled,
 	/obj/item/reagent_containers/food/snacks/croissant,
 	/obj/item/reagent_containers/food/snacks/honeybun,
-	/obj/item/reagent_containers/food/snacks/stuffed_meatball,
 	/obj/item/reagent_containers/food/snacks/grilled_peppers,
 	/obj/item/reagent_containers/food/snacks/salmiak
 ))

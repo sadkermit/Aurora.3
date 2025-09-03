@@ -163,7 +163,6 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/variable/kebab,
 			/obj/item/reagent_containers/food/snacks/monkeykabob,
 			/obj/item/reagent_containers/food/snacks/neaerakabob,
-			/obj/item/reagent_containers/food/snacks/stokkebab,
 			/obj/item/reagent_containers/food/snacks/tofukabob,
 			/obj/item/reagent_containers/food/snacks/koiskebab3,
 			/obj/item/reagent_containers/food/snacks/donerkebab)
@@ -222,35 +221,6 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/meatbun,
 			/obj/item/reagent_containers/food/snacks/chickenmomo,
 			/obj/item/reagent_containers/food/snacks/veggiemomo)
-
-/datum/bounty/item/chef/unathi
-	name = "Unathi Delicacies"
-	description = "We're holding a luncheon with some Hegemony representatives; send some traditional Unathi dishes!"
-	reward_low = 150
-	reward_high = 250
-	required_count = 3
-	random_count = 1
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/aghrasshcake,
-			/obj/item/reagent_containers/food/snacks/bacon_stick,
-			/obj/item/reagent_containers/food/snacks/batwings,
-			/obj/item/reagent_containers/food/snacks/chilied_eggs,
-			/obj/item/reagent_containers/food/snacks/egg_pancake,
-			/obj/item/reagent_containers/food/snacks/father_breakfast,
-			/obj/item/reagent_containers/food/snacks/gukhefish,
-			/obj/item/reagent_containers/food/snacks/hatchbowl,
-			/obj/item/reagent_containers/food/snacks/hatchling_suprise,
-			/obj/item/reagent_containers/food/snacks/jellystew,
-			/obj/item/reagent_containers/food/snacks/razirnoodles,
-			/obj/item/reagent_containers/food/snacks/red_sun_special,
-			/obj/item/reagent_containers/food/snacks/riztizkzi_sea,
-			/obj/item/reagent_containers/food/snacks/sintapudding,
-			/obj/item/reagent_containers/food/snacks/sliceable/eyebowl,
-			/obj/item/reagent_containers/food/snacks/sliceable/grilled_carp,
-			/obj/item/reagent_containers/food/snacks/sliceable/sushi_roll,
-			/obj/item/reagent_containers/food/snacks/stokkebab,
-			/obj/item/reagent_containers/food/snacks/stuffed_meatball,
-			/obj/item/reagent_containers/food/snacks/stuffedcarp,
-			/obj/item/reagent_containers/food/snacks/stuffedfish)
 
 /datum/bounty/item/chef/skrell
 	name = "Federation Delicacies"

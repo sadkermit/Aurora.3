@@ -21,8 +21,7 @@
 		/obj/item/storage/box/fancy/mre/menu7 = 2,
 		/obj/item/storage/box/fancy/mre/menu8 = 2,
 		/obj/item/storage/box/fancy/mre/menu9 = 10,
-		/obj/item/storage/box/fancy/mre/menu10 = 10,
-		/obj/item/storage/box/fancy/mre/menu12 = 5
+		/obj/item/storage/box/fancy/mre/menu10 = 10
 	)
 	prices = list(
 		/obj/item/storage/box/fancy/mre = 12.00,
@@ -34,8 +33,7 @@
 		/obj/item/storage/box/fancy/mre/menu7 = 12.00,
 		/obj/item/storage/box/fancy/mre/menu8 = 12.00,
 		/obj/item/storage/box/fancy/mre/menu9 = 12.00,
-		/obj/item/storage/box/fancy/mre/menu10 = 12.00,
-		/obj/item/storage/box/fancy/mre/menu12 = 12.00
+		/obj/item/storage/box/fancy/mre/menu10 = 12.00
 	)
 	contraband = list(
 		/obj/item/storage/box/fancy/mre/menu11 = 5, // memes.
@@ -50,8 +48,7 @@
 		/obj/item/storage/box/fancy/mre/menu2 = 1,
 		/obj/item/storage/box/fancy/mre/menu4 = 1,
 		/obj/item/storage/box/fancy/mre/menu9 = 4,
-		/obj/item/storage/box/fancy/mre/menu10 = 5,
-		/obj/item/storage/box/fancy/mre/menu12 = 3
+		/obj/item/storage/box/fancy/mre/menu10 = 5
 	)
 
 /obj/machinery/vending/ramen

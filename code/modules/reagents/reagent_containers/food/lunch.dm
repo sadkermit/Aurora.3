@@ -107,25 +107,6 @@ GLOBAL_LIST_INIT(lunchables_drinks_, list(
 	/obj/item/reagent_containers/food/drinks/cans/zorasoda/buzz
 ))
 
-GLOBAL_LIST_INIT(lunchables_vaurca_, list(
-	/obj/item/reagent_containers/food/snacks/koiswaffles,
-	/obj/item/reagent_containers/food/snacks/koisburger,
-	/obj/item/reagent_containers/food/snacks/soup/kois,
-	/obj/item/reagent_containers/food/snacks/koissteak
-))
-
-GLOBAL_LIST_INIT(lunchables_vaurca_snack_, list(
-	/obj/item/reagent_containers/food/snacks/donut/kois,
-	/obj/item/reagent_containers/food/snacks/koiskebab3,
-	/obj/item/reagent_containers/food/snacks/friedkois,
-	/obj/item/reagent_containers/food/snacks/koismuffin,
-	/obj/item/reagent_containers/food/snacks/phoroncandy,
-	/obj/item/reagent_containers/food/snacks/koisbar,
-	/obj/item/reagent_containers/food/snacks/koisbar_clean,
-	/obj/item/storage/box/fancy/vkrexitaffy,
-	/obj/item/reagent_containers/food/snacks/koisrouladeslice/filled
-))
-
 GLOBAL_LIST_INIT(lunchables_utensil_, list(
 	/obj/item/material/kitchen/utensil/fork/chopsticks,
 	/obj/item/material/kitchen/utensil/fork/chopsticks/bamboo,
@@ -166,16 +147,6 @@ GLOBAL_LIST_INIT(lunchables_alcohol_reagents_, list(
 	if(!(GLOB.lunchables_lunches_[GLOB.lunchables_lunches_[1]]))
 		GLOB.lunchables_lunches_ = init_lunchable_list(GLOB.lunchables_lunches_)
 	return GLOB.lunchables_lunches_
-
-/proc/lunchables_vaurca()
-	if(!(GLOB.lunchables_vaurca_[GLOB.lunchables_vaurca_[1]]))
-		GLOB.lunchables_vaurca_ = init_lunchable_list(GLOB.lunchables_vaurca_)
-	return GLOB.lunchables_vaurca_
-
-/proc/lunchables_vaurca_snack()
-	if(!(GLOB.lunchables_vaurca_snack_[GLOB.lunchables_vaurca_snack_[1]]))
-		GLOB.lunchables_vaurca_snack_ = init_lunchable_list(GLOB.lunchables_vaurca_snack_)
-	return GLOB.lunchables_vaurca_snack_
 
 /proc/lunchables_snacks()
 	if(!(GLOB.lunchables_snacks_[GLOB.lunchables_snacks_[1]]))

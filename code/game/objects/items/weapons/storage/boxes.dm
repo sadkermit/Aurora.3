@@ -873,8 +873,7 @@
 			/obj/item/reagent_containers/food/snacks/tuna,
 			/obj/item/storage/box/fancy/gum,
 			/obj/item/storage/box/fancy/cookiesnack,
-			/obj/item/storage/box/fancy/admints,
-			/obj/item/storage/box/fancy/vkrexitaffy
+			/obj/item/storage/box/fancy/admints
 	)
 	for (var/i = 0,i<7,i++)
 		var/type = pick(snacks)

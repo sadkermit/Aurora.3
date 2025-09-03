@@ -163,7 +163,6 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/variable/kebab,
 			/obj/item/reagent_containers/food/snacks/monkeykabob,
 			/obj/item/reagent_containers/food/snacks/tofukabob,
-			/obj/item/reagent_containers/food/snacks/koiskebab3,
 			/obj/item/reagent_containers/food/snacks/donerkebab)
 
 /datum/bounty/item/chef/poppers
@@ -288,6 +287,5 @@
 	random_count = 1
 	wanted_types = list(
 	/obj/item/reagent_containers/food/snacks/sliceable/chocolateroulade,
-	/obj/item/reagent_containers/food/snacks/sliceable/ylpharoulade,
-	/obj/item/reagent_containers/food/snacks/sliceable/koisroulade
+	/obj/item/reagent_containers/food/snacks/sliceable/ylpharoulade
 	)

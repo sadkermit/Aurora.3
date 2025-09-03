@@ -361,15 +361,6 @@
 	desc = "A freezer, painted in a sickly yellow, with a biohazard sign on the side."
 	icon_state = "freezer_kois"
 
-/obj/structure/closet/crate/freezer/kois/rations
-	name = "emergency k'ois rations"
-	desc = "A crate of emergency k'ois rations and bottles of water. Painted in a sickly yellow, with a biohazard sign on the side."
-
-/obj/structure/closet/crate/freezer/kois/rations/fill()
-	for(var/i=1,i<=6,i++)
-		new /obj/item/storage/box/fancy/mre/menu12(src)
-		new /obj/item/reagent_containers/food/drinks/waterbottle(src)
-
 /obj/structure/closet/crate/bin
 	name = "large bin"
 	desc = "A large bin."

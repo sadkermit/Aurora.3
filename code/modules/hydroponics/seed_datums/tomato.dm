@@ -42,22 +42,6 @@
 /obj/item/seeds/bloodtomatoseed
 	seed_type = "bloodtomato"
 
-/datum/seed/tomato/killer
-	name = "killertomato"
-	seed_name = "killer tomato"
-	display_name = "killer tomato plant"
-	mutants = null
-	can_self_harvest = 1
-	product_type = /mob/living/simple_animal/tomato
-
-/datum/seed/tomato/killer/setup_traits()
-	..()
-	set_trait(TRAIT_YIELD,2)
-	set_trait(TRAIT_PRODUCT_COLOUR,"#A86747")
-
-/obj/item/seeds/killertomatoseed
-	seed_type = "killertomato"
-
 /datum/seed/tomato/blue
 	name = "bluetomato"
 	seed_name = "blue tomato"

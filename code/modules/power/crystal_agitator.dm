@@ -86,8 +86,6 @@
 	if(P)
 		P.become_dense()
 		return
-	if(prob(1) && prob(1))
-		new /mob/living/simple_animal/hostile/phoron_worm/small(selected_turf)
 	else
 		new /obj/structure/reagent_crystal(selected_turf, null, src)
 	last_agitation = world.time

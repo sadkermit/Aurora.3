@@ -323,7 +323,6 @@
 	check_armor = MELEE
 	embed = TRUE
 	sharp = TRUE
-	shrapnel_type = /obj/item/bone_dart/vannatusk
 
 /obj/projectile/bonedart/ling
 	name = "bone dart"

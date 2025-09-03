@@ -251,16 +251,7 @@
 		/obj/structure/largecrate/animal/goat = 3,
 		/obj/structure/largecrate/animal/snake = 3,
 		/obj/structure/largecrate/animal/cat = 2,
-		/obj/structure/largecrate/animal/chick = 4,
-		/obj/structure/largecrate/animal/adhomai = 0.5,
-		/obj/structure/largecrate/animal/adhomai/fatshouter = 0.5,
-		/obj/structure/largecrate/animal/adhomai/rafama = 0.5,
-		/obj/structure/largecrate/animal/adhomai/schlorrgo = 0.2,
-		/obj/structure/largecrate/animal/hakhma = 0.5,
-		/obj/structure/largecrate/animal/moghes = 0.5,
-		/obj/structure/largecrate/animal/moghes/warmount = 0.2,
-		/obj/structure/largecrate/animal/moghes/miervesh = 0.5,
-		/obj/structure/largecrate/animal/moghes/otzek = 0.5
+		/obj/structure/largecrate/animal/chick = 4
 	)
 
 /obj/random/random_flag

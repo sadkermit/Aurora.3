@@ -81,11 +81,6 @@ FOODSTUFFS
 	object = /obj/item/storage/box/fancy/egg_box
 	cost = 300
 
-/singleton/biorecipe/food/tunneler_egg_carton
-	name = "Ice Tunneler Egg Carton"
-	object = /obj/item/storage/box/fancy/egg_box/tunneler
-	cost = 300
-
 /singleton/biorecipe/food/bio_vitamin
 	name = "Flavored Vitamin"
 	object = /obj/item/reagent_containers/pill/bio_vitamin
@@ -114,11 +109,6 @@ FOODSTUFFS
 /singleton/biorecipe/food/egg_carton
 	name = "Chicken Egg Carton"
 	object = /obj/item/storage/box/fancy/egg_box
-	cost = 300
-
-/singleton/biorecipe/food/tunneler_egg_carton
-	name = "Ice Tunneler Egg Carton"
-	object = /obj/item/storage/box/fancy/egg_box/tunneler
 	cost = 300
 
 /singleton/biorecipe/food/enzyme

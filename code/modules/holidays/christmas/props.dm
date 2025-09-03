@@ -184,10 +184,7 @@
 		gift_type = get_gift_type()
 
 	if(ispath(gift_type, /mob/living/simple_animal))
-		if(ispath(gift_type, /mob/living/simple_animal/schlorrgo))
-			icon_state = "strangeschlorrgo"
-		else
-			icon_state = "strangepet"
+		icon_state = "strangepet"
 
 	return
 
@@ -345,10 +342,6 @@
 		/mob/living/simple_animal/cat/kitten,
 		/mob/living/simple_animal/chick,
 		/mob/living/simple_animal/corgi/puppy,
-		/mob/living/simple_animal/mushroom,
-		/mob/living/simple_animal/ice_tunneler,
-		/mob/living/simple_animal/carp/baby,
-		/mob/living/simple_animal/schlorrgo,
 		/mob/living/carbon/human/monkey/nupnup,
 		/obj/item/xmasgift/medium,
 		/obj/item/tank/jetpack,
@@ -365,10 +358,6 @@
 		/obj/item/storage/box/candy)
 
 	return picked_gift_type
-
-/obj/item/xmasgift/schlorrgo
-	gift_type = /mob/living/simple_animal/schlorrgo
-	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/xmasgift/viscerator
 	gift_type = /mob/living/simple_animal/hostile/viscerator

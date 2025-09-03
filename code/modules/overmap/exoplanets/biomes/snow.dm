@@ -85,21 +85,7 @@
 			/obj/effect/floor_decal/snowdrift/random = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 2
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/ice_tunneler = 1,
-			/mob/living/simple_animal/ice_tunneler/male = 1,
-			/mob/living/simple_animal/fatshouter = 1,
-			/mob/living/simple_animal/fatshouter/male = 1,
-			/mob/living/simple_animal/hostile/retaliate/rafama = 1,
-			/mob/living/simple_animal/hostile/retaliate/rafama/male = 1,
-			/mob/living/simple_animal/hostile/retaliate/rafama/baby = 1,
-			/mob/living/simple_animal/hostile/wind_devil = 1,
-			/mob/living/carbon/human/farwa/adhomai = 1,
-			/mob/living/simple_animal/hostile/harron = 1,
-			/mob/living/simple_animal/climber = 1,
-			/mob/living/simple_animal/snow_strider = 1,
-			/mob/living/simple_animal/nosehorn = 1
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/snow/adhomai/eclipse
@@ -118,22 +104,7 @@
 			/obj/effect/floor_decal/snowdrift/random = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/ice_tunneler = 0.5,
-			/mob/living/simple_animal/ice_tunneler/male = 0.5,
-			/mob/living/simple_animal/fatshouter = 0.5,
-			/mob/living/simple_animal/fatshouter/male = 0.5,
-			/mob/living/simple_animal/hostile/retaliate/rafama = 0.5,
-			/mob/living/simple_animal/hostile/retaliate/rafama/male = 0.5,
-			/mob/living/simple_animal/hostile/retaliate/rafama/baby = 0.5,
-			/mob/living/simple_animal/hostile/wind_devil = 2, // Hope you like wind devils
-			/mob/living/carbon/human/farwa/adhomai = 0.5,
-			/mob/living/simple_animal/hostile/harron = 1.5,
-			/mob/living/simple_animal/climber = 0.5,
-			/mob/living/simple_animal/snow_strider = 0.3,
-			/mob/living/simple_animal/nosehorn = 0.1,
-			/mob/living/simple_animal/hostile/cavern_geist = 0.01 // Something stirs in the darkness...
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/snow/forest/adhomai
@@ -151,21 +122,7 @@
 			/obj/effect/floor_decal/snowdrift/random = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 2
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/ice_tunneler = 1,
-			/mob/living/simple_animal/ice_tunneler/male = 1,
-			/mob/living/simple_animal/fatshouter = 1,
-			/mob/living/simple_animal/fatshouter/male = 1,
-			/mob/living/simple_animal/hostile/retaliate/rafama = 1,
-			/mob/living/simple_animal/hostile/retaliate/rafama/male = 1,
-			/mob/living/simple_animal/hostile/retaliate/rafama/baby = 1,
-			/mob/living/simple_animal/hostile/wind_devil = 1,
-			/mob/living/carbon/human/farwa/adhomai = 1,
-			/mob/living/simple_animal/hostile/harron = 1,
-			/mob/living/simple_animal/climber = 1,
-			/mob/living/simple_animal/snow_strider = 1,
-			/mob/living/simple_animal/nosehorn = 1
-		)
+		WILDLIFE = list()
 	)
 
 
@@ -184,22 +141,7 @@
 			/obj/effect/floor_decal/snowdrift/random = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 2
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/ice_tunneler = 0.5,
-			/mob/living/simple_animal/ice_tunneler/male = 0.5,
-			/mob/living/simple_animal/fatshouter = 0.5,
-			/mob/living/simple_animal/fatshouter/male = 0.5,
-			/mob/living/simple_animal/hostile/retaliate/rafama = 0.5,
-			/mob/living/simple_animal/hostile/retaliate/rafama/male = 0.5,
-			/mob/living/simple_animal/hostile/retaliate/rafama/baby = 0.5,
-			/mob/living/simple_animal/hostile/wind_devil = 2,
-			/mob/living/carbon/human/farwa/adhomai = 0.5,
-			/mob/living/simple_animal/hostile/harron = 1.5,
-			/mob/living/simple_animal/climber = 0.5,
-			/mob/living/simple_animal/snow_strider = 0.3,
-			/mob/living/simple_animal/nosehorn = 0.1,
-			/mob/living/simple_animal/hostile/cavern_geist = 0.01 // Something stirs in the darkness...
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/snow/adhomai/polar
@@ -219,12 +161,7 @@
 			/obj/structure/geyser = 1,
 			/obj/effect/floor_decal/snowdrift/random = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/scavenger = 1,
-			/mob/living/simple_animal/ice_catcher = 1,
-			/mob/living/simple_animal/hostile/plasmageist = 1,
-			/mob/living/simple_animal/hostile/wriggler = 1
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/snow/adhomai/polar/eclipse
@@ -244,12 +181,7 @@
 			/obj/structure/geyser = 1,
 			/obj/effect/floor_decal/snowdrift/random = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/scavenger = 0.5,
-			/mob/living/simple_animal/ice_catcher = 0.5,
-			/mob/living/simple_animal/hostile/plasmageist = 1.2,
-			/mob/living/simple_animal/hostile/wriggler = 1.2
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/water/ice/polar

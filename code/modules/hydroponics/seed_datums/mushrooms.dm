@@ -99,45 +99,6 @@
 /obj/item/seeds/brownmold
 	seed_type = "mold"
 
-/datum/seed/mushroom/plump
-	name = "plumphelmet"
-	seed_name = "plump helmet"
-	display_name = "plump helmet mushrooms"
-	mutants = list("towercap")
-	chems = list(/singleton/reagent/nutriment = list(2,10))
-	kitchen_tag = "plumphelmet"
-
-/datum/seed/mushroom/plump/setup_traits()
-	..()
-	set_trait(TRAIT_MATURATION,8)
-	set_trait(TRAIT_YIELD,4)
-	set_trait(TRAIT_POTENCY,0)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom10")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#B57BB0")
-	set_trait(TRAIT_PLANT_COLOUR,"#9E4F9D")
-	set_trait(TRAIT_PLANT_ICON,"mushroom2")
-
-/obj/item/seeds/plumpmycelium
-	seed_type = "plumphelmet"
-
-/datum/seed/mushroom/plump/walking
-	name = "walkingmushroom"
-	seed_name = "walking mushroom"
-	display_name = "walking mushrooms"
-	mutants = null
-	can_self_harvest = 1
-	product_type = /mob/living/simple_animal/mushroom
-
-/datum/seed/mushroom/plump/walking/setup_traits()
-	..()
-	set_trait(TRAIT_MATURATION,5)
-	set_trait(TRAIT_YIELD,1)
-	set_trait(TRAIT_PRODUCT_COLOUR,"#FAC0F2")
-	set_trait(TRAIT_PLANT_COLOUR,"#C4B1C2")
-
-/obj/item/seeds/walkingmushroommycelium
-	seed_type = "walkingmushroom"
-
 /datum/seed/mushroom/hallucinogenic
 	name = "reishi"
 	seed_name = "reishi"

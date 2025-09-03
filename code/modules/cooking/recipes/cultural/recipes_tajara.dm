@@ -127,8 +127,7 @@
 	appliance = SAUCEPAN | POT
 	items = list(
 		/obj/item/reagent_containers/food/snacks/hardbread_slice,
-		/obj/item/reagent_containers/food/snacks/meat/adhomai,
-		/obj/item/reagent_containers/food/snacks/egg/ice_tunnelers
+		/obj/item/reagent_containers/food/snacks/meat/adhomai
 	)
 	reagents = list(/singleton/reagent/spacespice = 1)
 	reagent_mix = RECIPE_REAGENT_REPLACE
@@ -137,8 +136,7 @@
 /singleton/recipe/tunneler_souffle
 	appliance = OVEN
 	items = list(
-		/obj/item/reagent_containers/food/snacks/dip/sarmikhir,
-		/obj/item/reagent_containers/food/snacks/egg/ice_tunnelers
+		/obj/item/reagent_containers/food/snacks/dip/sarmikhir
 	)
 	reagents = list(/singleton/reagent/nutriment/flour/nfrihi = 5)
 	reagent_mix = RECIPE_REAGENT_REPLACE
@@ -375,8 +373,6 @@
 		/obj/item/reagent_containers/food/snacks/meat/adhomai,
 		/obj/item/reagent_containers/food/snacks/meat/adhomai,
 		/obj/item/reagent_containers/food/snacks/meat/adhomai,
-		/obj/item/reagent_containers/food/snacks/egg/ice_tunnelers,
-		/obj/item/reagent_containers/food/snacks/egg/ice_tunnelers,
 		/obj/item/reagent_containers/food/snacks/dip/sarmikhir
 	)
 	reagents = list(/singleton/reagent/nutriment/gelatin = 10, /singleton/reagent/water = 5,  /singleton/reagent/spacespice = 1)

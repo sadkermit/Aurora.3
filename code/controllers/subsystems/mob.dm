@@ -31,11 +31,7 @@ SUBSYSTEM_DEF(mobs)
 	)
 
 	// Actual human mobs are delibrately not in this list as they are handled elsewhere.
-	var/list/mtl_humanoid = list(
-		/mob/living/simple_animal/hostile/pirate,
-		/mob/living/simple_animal/hostile/russian,
-		/mob/living/simple_animal/hostile/syndicate
-	)
+	var/list/mtl_humanoid = list()
 
 	var/list/mtl_incorporeal = list(
 		/mob/living/simple_animal/hostile/carp/holodeck,

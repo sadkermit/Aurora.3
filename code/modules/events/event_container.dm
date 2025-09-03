@@ -227,9 +227,6 @@ GLOBAL_LIST_INIT(severity_to_string, list(EVENT_LEVEL_MUNDANE = "Mundane", EVENT
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Electrical Storm", /datum/event/electrical_storm,
 			5, list(ASSIGNMENT_ENGINEER = 5, ASSIGNMENT_JANITOR = 10)),
 
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Cozmozoan Migration", /datum/event/carp_migration/cozmo,
-			60),
-
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Money Hacker", /datum/event/money_hacker,
 			10),
 

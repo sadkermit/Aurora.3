@@ -31,7 +31,6 @@
 		WILDLIFE = list(
 			/mob/living/simple_animal/yithian = 2,
 			/mob/living/simple_animal/tindalos = 2,
-			/mob/living/simple_animal/cosmozoan = 1,
 		)
 	)
 
@@ -89,7 +88,6 @@
 		WILDLIFE = list(
 			/mob/living/simple_animal/yithian = 2,
 			/mob/living/simple_animal/tindalos = 2,
-			/mob/living/simple_animal/cosmozoan = 1,
 		)
 	)
 
@@ -118,7 +116,6 @@
 		WILDLIFE = list(
 			/mob/living/simple_animal/yithian = 2,
 			/mob/living/simple_animal/tindalos = 2,
-			/mob/living/simple_animal/cosmozoan = 1,
 		)
 	)
 
@@ -149,7 +146,6 @@
 		WILDLIFE = list(
 			/mob/living/simple_animal/yithian = 2,
 			/mob/living/simple_animal/tindalos = 2,
-			/mob/living/simple_animal/cosmozoan = 1,
 		)
 	)
 
@@ -190,7 +186,6 @@
 		WILDLIFE = list(
 			/mob/living/simple_animal/yithian = 2,
 			/mob/living/simple_animal/tindalos = 2,
-			/mob/living/simple_animal/cosmozoan = 1,
 		)
 	)
 
@@ -219,11 +214,7 @@
 		),
 
 		WILDLIFE = list(
-			/mob/living/carbon/human/stok/moghes = 1,
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/hostile/retaliate/hegeranzi = 1,
-			/mob/living/simple_animal/hostile/shrieker = 1,
-			/mob/living/simple_animal/otzek = 1
+			/mob/living/carbon/human/stok/moghes = 1
 			//other mobs when added
 		)
 	)
@@ -255,11 +246,7 @@
 			/obj/structure/flora/grass/junglegrass/rocky/random = 1
 		),
 		WILDLIFE = list(
-			/mob/living/carbon/human/stok/moghes = 1,
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/hostile/retaliate/hegeranzi = 1,
-			/mob/living/simple_animal/hostile/shrieker = 1,
-			/mob/living/simple_animal/otzek = 1
+			/mob/living/carbon/human/stok/moghes = 1
 			//other mobs when added
 		)
 	)
@@ -282,12 +269,7 @@
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
 		WILDLIFE = list(
-			/mob/living/carbon/human/stok/moghes = 1,
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/hostile/retaliate/hegeranzi = 1,
-			/mob/living/simple_animal/hostile/shrieker = 1,
-			/mob/living/simple_animal/aquatic/fish/moghes = 1,
-			/mob/living/simple_animal/otzek = 1
+			/mob/living/carbon/human/stok/moghes = 1
 			//other mobs when added
 		)
 	)
@@ -319,11 +301,7 @@
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
 		WILDLIFE = list(
-			/mob/living/carbon/human/stok/moghes = 1,
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/hostile/retaliate/hegeranzi = 1,
-			/mob/living/simple_animal/hostile/shrieker = 1,
-			/mob/living/simple_animal/otzek = 1
+			/mob/living/carbon/human/stok/moghes = 1
 			//other mobs when added
 		)
 	)
@@ -361,11 +339,7 @@
 			/obj/structure/flora/ausbushes/fernybush = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/otzek = 1,
-			/mob/living/simple_animal/miervesh = 1
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/grass/forest/ouerea
@@ -390,11 +364,7 @@
 			/obj/structure/flora/ausbushes/fernybush = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/otzek = 1,
-			/mob/living/simple_animal/miervesh = 1
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/grass/riverside/ouerea
@@ -414,12 +384,7 @@
 			/obj/structure/flora/ausbushes/stalkybush = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/aquatic/fish/moghes = 1,
-			/mob/living/simple_animal/otzek = 1,
-			/mob/living/simple_animal/miervesh = 1
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/grass/chaparral/ouerea
@@ -449,11 +414,7 @@
 			/obj/structure/flora/ausbushes/fernybush = 1,
 			/obj/effect/landmark/exoplanet_spawn/plant = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/threshbeast = 1,
-			/mob/living/simple_animal/otzek = 1,
-			/mob/living/simple_animal/miervesh = 1
-		)
+		WILDLIFE = list()
 	)
 
 //Xanu Biomes

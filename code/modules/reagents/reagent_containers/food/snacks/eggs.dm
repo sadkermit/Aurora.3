@@ -99,26 +99,6 @@
 	icon_state = "egg-yellow"
 	item_state = "egg-yellow"
 
-/obj/item/reagent_containers/food/snacks/egg/schlorrgo
-	name = "alien egg"
-	desc = "A large mysterious egg."
-	icon_state = "schlorrgo_egg"
-	filling_color = "#e9ffd1"
-	volume = 20
-	reagents_to_add = list(/singleton/reagent/nutriment/protein/egg = 6) // Big egg
-	hatchling = /mob/living/simple_animal/schlorrgo/baby
-
-/// Cursed subtype due to cargo code. A subtype like this will be needed for any cargo orders of eggs that we want to be fertilized.
-/obj/item/reagent_containers/food/snacks/egg/schlorrgo/fertile
-	fertile = TRUE
-
-/obj/item/reagent_containers/food/snacks/egg/ice_tunnelers
-	name = "ice tunneler egg"
-	desc = "An egg laid by an Adhomian animal."
-	icon_state = "tunneler_egg"
-	filling_color = "#eff5e9"
-	hatchling = /mob/living/simple_animal/ice_tunneler/baby
-
 // egg dishes
 /obj/item/reagent_containers/food/snacks/chocolateegg
 	name = "chocolate egg"

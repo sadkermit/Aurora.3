@@ -234,15 +234,6 @@
 	if(!health)
 		return
 
-	if(istype(arrived,/mob/living/simple_animal/rat/king))
-		var/mob/living/simple_animal/rat/king/K = arrived
-		if(!K.health)
-			return
-
-		src.visible_message(SPAN_WARNING("[src] joins the [K.swarm_name] of \the [K]"), \
-							SPAN_NOTICE("We join our brethren in \the [K.swarm_name]. Long live \the [K]."))
-		K.absorb(src)
-
 /mob/living/simple_animal/rat/death()
 	layer = MOB_LAYER
 	if (stat != DEAD && (ckey || prob(50)))

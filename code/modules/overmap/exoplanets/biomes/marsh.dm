@@ -20,8 +20,7 @@
 		),
 		WILDLIFE = list(
 			/mob/living/simple_animal/yithian = 1,
-			/mob/living/simple_animal/tindalos = 1,
-			/mob/living/simple_animal/cosmozoan = 3,
+			/mob/living/simple_animal/tindalos = 1
 		)
 	)
 

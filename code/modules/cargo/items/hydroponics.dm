@@ -124,34 +124,6 @@
 	groupable = FALSE
 	spawn_amount = 1
 
-/singleton/cargo_item/schlorrgoegg
-	category = "hydroponics"
-	name = "schlorrgo egg"
-	supplier = "zharkov"
-	description = "A large egg that will eventually grow into a Schlorrgo."
-	price = 300
-	items = list(
-		/obj/item/reagent_containers/food/snacks/egg/schlorrgo
-	)
-	access = 0
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/fatshouter
-	category = "hydroponics"
-	name = "fatshouter"
-	supplier = "zharkov"
-	description = "A crate containing a fatshouter, an Adhomian animal."
-	price = 1500
-	items = list(
-		/obj/structure/largecrate/animal/adhomai/fatshouter
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/floradiskbox
 	category = "hydroponics"
 	name = "flora disk box"
@@ -180,20 +152,6 @@
 	groupable = FALSE
 	spawn_amount = 1
 
-/singleton/cargo_item/hakhma
-	category = "hydroponics"
-	name = "hakhma"
-	supplier = "molinaris"
-	description = "An oversized insect breed by Scarab colony ships, known for their milk."
-	price = 300
-	items = list(
-		/mob/living/simple_animal/hakhma
-	)
-	access = 0
-	container_type = "box"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/honeyextractor
 	category = "hydroponics"
 	name = "honey extractor"
@@ -216,20 +174,6 @@
 	price = 50
 	items = list(
 		/obj/machinery/portable_atmospherics/hydroponics
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/icetunneler
-	category = "hydroponics"
-	name = "ice tunneler"
-	supplier = "zharkov"
-	description = "A crate containing a ice tunneler."
-	price = 300
-	items = list(
-		/obj/structure/largecrate/animal/adhomai
 	)
 	access = 0
 	container_type = "crate"

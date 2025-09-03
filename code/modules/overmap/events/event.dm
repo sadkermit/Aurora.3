@@ -280,18 +280,6 @@
 	difficulty = EVENT_LEVEL_MAJOR
 	can_be_destroyed = FALSE
 
-/obj/effect/overmap/event/carp
-	name = "carp shoal"
-	events = list(/datum/event/carp_migration/overmap)
-	difficulty = EVENT_LEVEL_MODERATE
-	event_icon_states = list("carp")
-	movable_event_chance = 5
-
-/obj/effect/overmap/event/carp/major
-	name = "carp school"
-	opacity = 1
-	difficulty = EVENT_LEVEL_MAJOR
-
 // see comment at code/modules/events/gravity.dm
 // tl;dr gravity is handled globally, meaning if the horizon loses gravity, everyone does
 // /obj/effect/overmap/event/gravity
@@ -334,20 +322,6 @@
 	count = 8
 	radius = 3
 	hazards = /obj/effect/overmap/event/ion
-
-/datum/overmap_event/carp
-	name = "carp shoal"
-	count = 8
-	radius = 3
-	continuous = FALSE
-	hazards = /obj/effect/overmap/event/carp
-
-/datum/overmap_event/carp/major
-	name = "carp school"
-	count = 5
-	radius = 4
-	opacity = 1
-	hazards = /obj/effect/overmap/event/carp/major
 
 // see comment at code/modules/events/gravity.dm
 // tl;dr gravity is handled globally, meaning if the horizon loses gravity, everyone does

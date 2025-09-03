@@ -189,7 +189,4 @@ var/global/Holiday = null
 		switch(Holiday)			//special holidays
 			if("Easter")
 				Easter_Game_Start()
-			if("Christmas Eve","Christmas")
-				Christmas_Game_Start()
-
 	return

@@ -8,15 +8,7 @@
 	generators = list(
 		WILDLIFE = list(POISSON_SAMPLE, 15)
 	)
-	spawn_types = list(
-		WILDLIFE = list(
-			/mob/living/simple_animal/hostile/gnat = 5,
-			/mob/living/simple_animal/hostile/carp/asteroid = 3,
-			/mob/living/simple_animal/hostile/carp/bloater = 1,
-			/mob/living/simple_animal/hostile/carp/shark/reaver = 1,
-			/mob/living/simple_animal/hostile/carp/shark/reaver/eel = 1
-		)
-	)
+	spawn_types = list()
 
 /singleton/biome/barren/raskara
 	turf_type = /turf/simulated/floor/exoplanet/barren/raskara

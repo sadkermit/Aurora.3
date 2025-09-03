@@ -13,9 +13,7 @@
 			/obj/structure/flora/rock/spire = 1,
 			/obj/structure/flora/tree/crystal = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/cosmozoan = 1
-		)
+		WILDLIFE = list()
 	)
 
 /singleton/biome/crystal/mountain

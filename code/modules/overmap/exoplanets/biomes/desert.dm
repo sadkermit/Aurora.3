@@ -95,9 +95,5 @@
 		LARGE_FLORA = list(
 			/obj/structure/flora/tree/desert/tiny = 1
 		),
-		WILDLIFE = list(
-			/mob/living/simple_animal/hostile/shrieker = 1,
-			/mob/living/carbon/human/stok/moghes = 1,
-			/mob/living/simple_animal/threshbeast = 1
-		)
+		WILDLIFE = list()
 	)

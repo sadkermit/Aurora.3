@@ -31,32 +31,6 @@
 
 /obj/item/reagent_containers/food/snacks/cheesewedge/filled/reagents_to_add = list(/singleton/reagent/nutriment/protein/cheese = 4)
 
-/obj/item/reagent_containers/food/snacks/sliceable/nakarka
-	name = "nakarka cheese wheel"
-	desc = "Nakarka is Vaurcan cheese made of Ne'miik with a sharp, tangy flavor. Nakarka directly translates to mean 'cheese'. It can cause gastric discomfort to some other species in it's raw form. There are ways to prepare it to decrease those effects, however." //basically an in-world reason to feel free to use it in recipes that are meant for humans as well.
-	icon = 'icons/obj/item/reagent_containers/food/ingredients.dmi'
-	icon_state = "nakarka"
-	slice_path = /obj/item/reagent_containers/food/snacks/nakarka_wedge
-	slices_num = 8
-	filling_color = "#7be717"
-	center_of_mass = list("x"=16, "y"=10)
-	bitesize = 2
-
-	reagents_to_add = list(/singleton/reagent/nakarka = 20)
-
-/obj/item/reagent_containers/food/snacks/nakarka_wedge
-	name = "nakarka cheese wedge"
-	desc = "Zzztop calling it Nakarka cheezzze. You sound ridicoulouzzz. Nakarka meanzzz cheezzze. You are literally calling it cheezzze cheezzze."
-	icon = 'icons/obj/item/reagent_containers/food/ingredients.dmi'
-	icon_state = "nakarka_wedge"
-	ingredient_name = "nakarka"
-	filling_color = "#7be717"
-	bitesize = 2
-	center_of_mass = list("x"=16, "y"=10)
-
-/obj/item/reagent_containers/food/snacks/nakarka_wedge/filled/reagents_to_add = list(/singleton/reagent/nakarka = 4)
-
-
 /obj/item/reagent_containers/food/snacks/spreads
 	name = "nutri-spread"
 	desc = "A stick of plant-based nutriments in a semi-solid form. I can't believe it's not margarine!"

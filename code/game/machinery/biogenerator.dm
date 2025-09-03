@@ -329,29 +329,6 @@ CLOTHING
 /*
 MEDICAL
 */
-
-/singleton/biorecipe/cube
-	name = "Monkey Cube"
-	class = BIOGEN_SPECIAL
-	object = /obj/item/reagent_containers/food/snacks/monkeycube/wrapped
-
-/singleton/biorecipe/cube/stok
-	name = "Stok Cube"
-	object = /obj/item/reagent_containers/food/snacks/monkeycube/wrapped/stokcube
-
-/singleton/biorecipe/cube/farwa
-	name = "Farwa Cube"
-	object = /obj/item/reagent_containers/food/snacks/monkeycube/wrapped/farwacube
-
-/singleton/biorecipe/cube/neaera
-	name = "Neaera Cube"
-	object = /obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube
-
-/singleton/biorecipe/cube/cazador
-	name = "V'krexi Cube"
-	object = /obj/item/reagent_containers/food/snacks/monkeycube/wrapped/vkrexicube
-	cost = 500
-
 /singleton/biorecipe/medical
 	name = "Bruise Pack"
 	class = BIOGEN_MEDICAL

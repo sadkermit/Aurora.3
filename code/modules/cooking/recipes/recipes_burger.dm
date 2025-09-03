@@ -19,13 +19,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/burger
 
-/singleton/recipe/xenoburger
-	items = list(
-		/obj/item/reagent_containers/food/snacks/bun,
-		/obj/item/reagent_containers/food/snacks/xenomeat
-	)
-	result = /obj/item/reagent_containers/food/snacks/burger/xeno
-
 /singleton/recipe/fishburger
 	items = list(
 		/obj/item/reagent_containers/food/snacks/bun,
@@ -70,17 +63,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/burger/superbite
 
-/singleton/recipe/ntmuffin
-	appliance = SKILLET
-	items = list(
-		/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit,
-		/obj/item/reagent_containers/food/snacks/sausage,
-		/obj/item/reagent_containers/food/snacks/friedegg,
-		/obj/item/reagent_containers/food/snacks/cheesewedge
-	)
-	reagent_mix = RECIPE_REAGENT_REPLACE
-	result = /obj/item/reagent_containers/food/snacks/burger/nt_muffin
-
 /singleton/recipe/bearburger
 	items = list(
 		/obj/item/reagent_containers/food/snacks/bun,
@@ -123,25 +105,6 @@
 	reagents = list(/singleton/reagent/nutriment/protein = 6 , /singleton/reagent/nutriment/barbecue = 5)
 	reagent_mix = RECIPE_REAGENT_REPLACE
 	result = /obj/item/reagent_containers/food/snacks/sloppyjoe
-
-/singleton/recipe/nakarka_hamburger
-	appliance = SKILLET
-	items = list(
-		/obj/item/reagent_containers/food/snacks/bun,
-		/obj/item/reagent_containers/food/snacks/cutlet,
-		/obj/item/reagent_containers/food/snacks/nakarka_wedge
-	)
-	reagent_mix = RECIPE_REAGENT_REPLACE
-	result = /obj/item/reagent_containers/food/snacks/burger/nakarka_hamburger
-
-/singleton/recipe/nakarka_hamburger_alt
-	appliance = SKILLET
-	items = list(
-		/obj/item/reagent_containers/food/snacks/burger,
-		/obj/item/reagent_containers/food/snacks/nakarka_wedge
-	)
-	reagent_mix = RECIPE_REAGENT_REPLACE
-	result = /obj/item/reagent_containers/food/snacks/burger/nakarka_hamburger
 
 /singleton/recipe/mossburger
 	appliance = SKILLET

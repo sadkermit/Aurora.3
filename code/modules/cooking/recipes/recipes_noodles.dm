@@ -193,18 +193,6 @@
 	reagent_mix = RECIPE_REAGENT_REPLACE
 	result = /obj/item/reagent_containers/food/snacks/ravioli/earthenroot
 
-/singleton/recipe/ravioli_nakarka
-	appliance = SAUCEPAN | POT
-	reagents = list(/singleton/reagent/water = 5, /singleton/reagent/drink/milk/cream = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/doughslice,
-		/obj/item/reagent_containers/food/snacks/doughslice,
-		/obj/item/reagent_containers/food/snacks/doughslice,
-		/obj/item/reagent_containers/food/snacks/nakarka_wedge
-	)
-	reagent_mix = RECIPE_REAGENT_REPLACE
-	result = /obj/item/reagent_containers/food/snacks/ravioli/nakarka
-
 /singleton/recipe/fettuccine_alfredo
 	appliance = SAUCEPAN | POT
 	fruit = list("garlic" = 1)

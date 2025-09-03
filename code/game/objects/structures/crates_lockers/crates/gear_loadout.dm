@@ -1413,9 +1413,6 @@
 	new /obj/item/clothing/accessory/holster/hip(src)
 	new /obj/item/clothing/mask/gas/vaurca/tactical(src)
 	new /obj/item/melee/energy/vaurca(src)
-	new /obj/item/reagent_containers/food/snacks/koisbar(src)
-	new /obj/item/reagent_containers/food/snacks/koisbar(src)
-	new /obj/item/reagent_containers/food/snacks/koisbar(src)
 	new /obj/item/gun/energy/vaurca/blaster(src)
 	new /obj/item/device/augment_implanter/hivenet_warfare(src)
 

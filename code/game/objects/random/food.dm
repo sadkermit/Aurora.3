@@ -71,8 +71,7 @@
 		/obj/item/reagent_containers/food/snacks/cb09,
 		/obj/item/reagent_containers/food/snacks/cb10,
 		/obj/item/reagent_containers/food/snacks/chocolatebar,
-		/obj/item/reagent_containers/food/snacks/donut/cherryjelly,
-		/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit
+		/obj/item/reagent_containers/food/snacks/donut/cherryjelly
 	)
 
 /obj/random/mre/drink

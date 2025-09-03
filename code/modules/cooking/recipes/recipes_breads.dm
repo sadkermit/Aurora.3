@@ -82,21 +82,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
 
-/singleton/recipe/xenomeatbread
-	appliance = OVEN
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/xenomeat,
-		/obj/item/reagent_containers/food/snacks/xenomeat,
-		/obj/item/reagent_containers/food/snacks/xenomeat,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge
-	)
-	result = /obj/item/reagent_containers/food/snacks/sliceable/xenomeatbread
-
 /singleton/recipe/bananabread
 	appliance = OVEN
 	fruit = list("banana" = 1)
@@ -186,17 +171,6 @@
 		/obj/item/reagent_containers/food/snacks/breadslice
 	)
 	result = /obj/item/reagent_containers/food/snacks/stuffing
-
-
-/singleton/recipe/angry_bread
-	appliance = OVEN
-	fruit = list("carrot" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/flatbread,
-		/obj/item/reagent_containers/food/snacks/xenomeat,
-		/obj/item/reagent_containers/food/snacks/cheesewedge
-	)
-	result = /obj/item/reagent_containers/food/snacks/angry_bread
 
 /singleton/recipe/angry_bread/make_food(obj/container) // removing some reagents instead of using RECIPE_REAGENT_REPLACE so anything that's in the original meat you use is still in the final dish (namely whether or not the meat you use has polytrinic acid).
 	. = ..()
@@ -337,18 +311,6 @@
 		/obj/item/reagent_containers/food/snacks/macandcheese
 	)
 	result = /obj/item/reagent_containers/food/snacks/grilled_mac_and_cheese
-
-/singleton/recipe/grilled_triple_cheese_crunch_sandwich
-	appliance = SKILLET | MICROWAVE
-	items = list(
-		/obj/item/reagent_containers/food/snacks/breadslice,
-		/obj/item/reagent_containers/food/snacks/breadslice,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/nakarka_wedge,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers
-	)
-	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify end product
-	result = /obj/item/reagent_containers/food/snacks/grilled_triple_cheese_crunch_sandwich
 
 /singleton/recipe/crab_leg_grilled_cheese_sandwich
 	appliance = SKILLET

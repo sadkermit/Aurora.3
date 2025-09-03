@@ -69,14 +69,6 @@
 	reagents = list(/singleton/reagent/nutriment/soysauce = 5, /singleton/reagent/nutriment/coating/batter = 10)
 	result = /obj/item/reagent_containers/food/snacks/sweet_and_sour
 
-/singleton/recipe/wingfangchu
-	appliance = FRYER
-	reagents = list(/singleton/reagent/nutriment/soysauce = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/xenomeat
-	)
-	result = /obj/item/reagent_containers/food/snacks/wingfangchu
-
 /singleton/recipe/roefritters
 	appliance = FRYER
 	reagents = list(/singleton/reagent/nutriment/coating/batter = 10)

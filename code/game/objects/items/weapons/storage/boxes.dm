@@ -620,36 +620,6 @@
 		/obj/item/clothing/gloves/janitor/vaurca = 1
 	)
 
-/obj/item/storage/box/monkeycubes
-	name = "monkey cube box"
-	desc = "Drymate brand monkey cubes. Just add water!"
-	desc_extended = "The manufacture of a cubed animal produces subjects that are similar but have marked differences compared to their ordinary cousins. Higher brain functions are all but destroyed \
-	and the life expectancy of the cubed animal is greatly reduced, with most expiring only a few days after introduction with water."
-	icon_state = "monkeycubebox"
-	illustration = null
-	can_hold = list(/obj/item/reagent_containers/food/snacks/monkeycube)
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped = 5)
-
-/obj/item/storage/box/monkeycubes/farwacubes
-	name = "farwa cube box"
-	desc = "Drymate brand farwa cubes, shipped from Adhomai. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/farwacube = 5)
-
-/obj/item/storage/box/monkeycubes/stokcubes
-	name = "stok cube box"
-	desc = "Drymate brand stok cubes, shipped from Moghes. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/stokcube = 5)
-
-/obj/item/storage/box/monkeycubes/neaeracubes
-	name = "neaera cube box"
-	desc = "Drymate brand neaera cubes, shipped from Nralakk IV. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube = 5)
-
-/obj/item/storage/box/monkeycubes/vkrexicubes
-	name = "vkrexi cube box"
-	desc = "Drymate brand vkrexi cubes. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/vkrexicube = 5)
-
 /obj/item/storage/box/ids
 	name = "box of spare IDs"
 	desc = "Has so many empty IDs."
@@ -848,9 +818,7 @@
 
 /obj/item/storage/box/snack/fill()
 	var/list/snacks = list(
-			/obj/item/reagent_containers/food/snacks/koisbar_clean,
 			/obj/item/reagent_containers/food/snacks/candy,
-			/obj/item/reagent_containers/food/snacks/candy/koko,
 			/obj/item/reagent_containers/food/snacks/candy_corn,
 			/obj/item/reagent_containers/food/snacks/chips,
 			/obj/item/reagent_containers/food/snacks/chocolatebar,
@@ -865,7 +833,6 @@
 			/obj/item/reagent_containers/food/snacks/poppypretzel,
 			/obj/item/reagent_containers/food/snacks/cracker,
 			/obj/item/reagent_containers/food/snacks/liquidfood,
-			/obj/item/reagent_containers/food/snacks/skrellsnacks,
 			/obj/item/reagent_containers/food/snacks/tastybread,
 			/obj/item/reagent_containers/food/snacks/meatsnack,
 			/obj/item/reagent_containers/food/snacks/maps,

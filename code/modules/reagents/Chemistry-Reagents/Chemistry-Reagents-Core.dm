@@ -157,10 +157,6 @@
 		T.wet_floor(WET_TYPE_WATER,amount)
 
 /singleton/reagent/water/touch_obj(var/obj/O, var/amount, var/datum/reagents/holder)
-	if(istype(O, /obj/item/reagent_containers/food/snacks/monkeycube))
-		var/obj/item/reagent_containers/food/snacks/monkeycube/cube = O
-		if(!cube.wrapped)
-			cube.Expand()
 	if(istype(O, /obj/structure/bonfire))
 		var/obj/structure/bonfire/B = O
 		B.fuel = max(0, B.fuel - (5 * amount))

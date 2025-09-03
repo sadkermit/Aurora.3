@@ -180,17 +180,6 @@
 	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify end product
 	result = /obj/item/reagent_containers/food/snacks/bowl/alfajores
 
-/singleton/recipe/biscuits_and_gravy
-	appliance = SAUCEPAN
-	reagents = list(/singleton/reagent/condiment/gravy = 10)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit,
-		/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit,
-		/obj/item/reagent_containers/food/snacks/sausage
-	)
-	result = /obj/item/reagent_containers/food/snacks/biscuits_and_gravy
-	reagent_mix = RECIPE_REAGENT_REPLACE
-
 /singleton/recipe/mozzarella_sticks
 	appliance = FRYER
 	reagents = list(/singleton/reagent/nutriment/flour = 5, /singleton/reagent/nutriment/protein/egg = 3, /singleton/reagent/sodiumchloride = 1)
@@ -467,18 +456,6 @@
 	result = /obj/item/reagent_containers/food/snacks/pazillo
 	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify and replace so it's not full of juice
 
-//Luna
-/singleton/recipe/traumwurst
-	appliance = SKILLET | SAUCEPAN
-	reagents = list(/singleton/reagent/drink/milk/cream = 5)
-	fruit = list("eggplant" = 1, "plumphelmet" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/sausage,
-		/obj/item/reagent_containers/food/snacks/sausage
-		)
-	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify and replace
-	result = /obj/item/reagent_containers/food/snacks/traumwurst
-
 // Xanu Prime
 
 /singleton/recipe/steakxanu
@@ -534,18 +511,6 @@
 	reagent_mix = RECIPE_REAGENT_REPLACE
 
 // Himeo
-
-/singleton/recipe/minerpie
-	appliance = SKILLET
-	reagents = list(/singleton/reagent/blackpepper = 2, /singleton/reagent/spacespice = 2, /singleton/reagent/drink/milk/cream = 5)
-	fruit = list("onion" = 1, "plumphelmet" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/meat,
-		/obj/item/reagent_containers/food/snacks/dough
-	)
-	result = /obj/item/reagent_containers/food/snacks/minerpie
-	reagent_mix = RECIPE_REAGENT_REPLACE
-
 /singleton/recipe/hakhmaparm
 	appliance = SKILLET
 	fruit = list("tomato" = 1)

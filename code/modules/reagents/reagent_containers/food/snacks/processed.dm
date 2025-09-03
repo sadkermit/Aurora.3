@@ -8,97 +8,6 @@
 	bitesize = 2
 	reagents_to_add = list(/singleton/reagent/toxin = 1, /singleton/reagent/carbon = 3)
 
-/obj/item/reagent_containers/food/snacks/monkeycube
-	name = "monkey cube"
-	desc = "Just add water!"
-	atom_flags = 0
-	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "monkeycube"
-	bitesize = 12
-	filling_color = "#ADAC7F"
-	center_of_mass = list("x"=16, "y"=14)
-	desc_extended = "The manufacture of a cubed animal produces subjects that are similar but have marked differences compared to their ordinary cousins. Higher brain functions are all but destroyed \
-	and the life expectancy of the cubed animal is greatly reduced, with most expiring only a few days after introduction with water."
-
-	var/wrapped = 0
-	var/monkey_type = SPECIES_MONKEY
-
-	reagents_to_add = list(/singleton/reagent/nutriment/protein = 10)
-
-/obj/item/reagent_containers/food/snacks/monkeycube/afterattack(obj/O as obj, var/mob/living/carbon/human/user as mob, proximity)
-	if(!proximity) return
-	if(( istype(O, /obj/structure/reagent_dispensers/watertank) || istype(O,/obj/structure/sink) ) && !wrapped)
-		to_chat(user, "You place \the [name] under a stream of water...")
-		if(istype(user))
-			user.unEquip(src)
-		src.forceMove(get_turf(src))
-		return Expand()
-	..()
-
-/obj/item/reagent_containers/food/snacks/monkeycube/attack_self(mob/user as mob)
-	if(wrapped)
-		Unwrap(user)
-
-/obj/item/reagent_containers/food/snacks/monkeycube/proc/Expand()
-	src.visible_message(SPAN_NOTICE("\The [src] expands!"))
-	if(istype(loc, /obj/item/gripper)) // fixes ghost cube when using syringe
-		var/obj/item/gripper/G = loc
-		G.drop_item()
-	var/mob/living/carbon/human/H = new(get_turf(src))
-	H.set_species(monkey_type)
-	H.real_name = H.species.get_random_name()
-	H.name = H.real_name
-	src.forceMove(null)
-	qdel(src)
-	return 1
-
-/obj/item/reagent_containers/food/snacks/monkeycube/proc/Unwrap(mob/user as mob)
-	icon_state = "monkeycube"
-	desc = "Just add water!"
-	to_chat(user, "You unwrap the cube.")
-	wrapped = 0
-	return
-
-/obj/item/reagent_containers/food/snacks/monkeycube/wrapped
-	desc = "Still wrapped in some paper."
-	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "monkeycubewrap"
-	wrapped = 1
-	desc_extended = "The manufacture of a cubed animal produces subjects that are similar but have marked differences compared to their ordinary cousins. Higher brain functions are all but destroyed \
-	and the life expectancy of the cubed animal is greatly reduced, with most expiring only a few days after introduction with water."
-
-/obj/item/reagent_containers/food/snacks/monkeycube/farwacube
-	name = "farwa cube"
-	monkey_type = SPECIES_MONKEY_TAJARA
-
-/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/farwacube
-	name = "farwa cube"
-	monkey_type = SPECIES_MONKEY_TAJARA
-
-/obj/item/reagent_containers/food/snacks/monkeycube/stokcube
-	name = "stok cube"
-	monkey_type = SPECIES_MONKEY_UNATHI
-
-/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/stokcube
-	name = "stok cube"
-	monkey_type = SPECIES_MONKEY_UNATHI
-
-/obj/item/reagent_containers/food/snacks/monkeycube/neaeracube
-	name = "neaera cube"
-	monkey_type = SPECIES_MONKEY_SKRELL
-
-/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube
-	name = "neaera cube"
-	monkey_type = SPECIES_MONKEY_SKRELL
-
-/obj/item/reagent_containers/food/snacks/monkeycube/vkrexicube
-	name = "v'krexi cube"
-	monkey_type = SPECIES_MONKEY_VAURCA
-
-/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/vkrexicube
-	name = "v'krexi cube"
-	monkey_type = SPECIES_MONKEY_VAURCA
-
 /obj/item/reagent_containers/food/snacks/tuna
 	name = "\improper Tuna Snax"
 	desc = "A packaged fish snack. Guaranteed to not contain space carp."
@@ -111,26 +20,6 @@
 
 	reagents_to_add = list(/singleton/reagent/nutriment/protein/seafood = 4)
 
-/obj/item/reagent_containers/food/snacks/koisbar_clean
-	name = "k'ois bar"
-	desc = "Bland NanoTrasen produced K'ois bars, rich in syrup and injected with extra phoron; it has a label on it warning that it is unsafe for human consumption."
-	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "koisbar"
-	trash = /obj/item/trash/koisbar
-	filling_color = "#dcd9cd"
-	bitesize = 5
-	reagents_to_add = list(/singleton/reagent/kois/clean = 10, /singleton/reagent/toxin/phoron = 15)
-
-/obj/item/reagent_containers/food/snacks/koisbar
-	name = "organic k'ois bar"
-	desc = "100% certified organic NanoTrasen produced K'ois bars, rich in REAL unfiltered kois. No preservatives added!"
-	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "koisbar"
-	trash = /obj/item/trash/koisbar
-	filling_color = "#dcd9cd"
-	bitesize = 5
-	reagents_to_add = list(/singleton/reagent/kois = 10, /singleton/reagent/toxin/phoron = 15)
-
 /obj/item/reagent_containers/food/snacks/candy
 	name = "candy"
 	desc = "Nougat, love it or hate it. Made with real sugar, and no artificial preservatives!"
@@ -142,18 +31,6 @@
 
 	reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/sugar = 3)
 	reagent_data = list(/singleton/reagent/nutriment = list("chocolate" = 2, "nougat" = 1))
-	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/candy/koko
-	name = "koko bar"
-	desc = "A sweet and gritty candy bar cultivated exclusively on the Compact ruled world of Ha'zana. A good pick-me-up for Unathi, but has no effect on other species."
-	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "kokobar"
-	trash = /obj/item/trash/kokobar
-	filling_color = "#7D5F46"
-
-	reagents_to_add = list(/singleton/reagent/nutriment = 4, /singleton/reagent/sugar = 3, /singleton/reagent/mental/kokoreed = 7)
-	reagent_data = list(/singleton/reagent/nutriment = list("koko reed" = 2, "fibers" = 1))
 	bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/proteinbar
@@ -178,19 +55,6 @@
 			reagents.add_reagent(type, round(4 / count, 0.1))
 	else
 		reagents.add_reagent(PB.reagents, 4)
-
-/obj/item/reagent_containers/food/snacks/skrellsnacks
-	name = "\improper SkrellSnax"
-	desc = "Cured eki shipped all the way from Nralakk IV, almost like jerky! Almost."
-	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "skrellsnacks"
-	item_state = "candy"
-	trash = /obj/item/trash/skrellsnacks
-	filling_color = "#A66829"
-	center_of_mass = list("x"=15, "y"=12)
-	reagents_to_add = list(/singleton/reagent/nutriment = 10)
-	reagent_data = list(/singleton/reagent/nutriment = list("alien fungus" = 10))
-	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/tastybread
 	name = "bread tube"

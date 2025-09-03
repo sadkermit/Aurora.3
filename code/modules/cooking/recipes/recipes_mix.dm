@@ -52,16 +52,6 @@
 	fruit = list("goldapple" = 1, "ambrosiadeus" = 1)
 	result = /obj/item/reagent_containers/food/snacks/salad/aesirsalad
 
-/singleton/recipe/validsalad
-	fruit = list("potato" = 1, "ambrosia" = 3)
-	items = list(/obj/item/reagent_containers/food/snacks/meatball)
-	result = /obj/item/reagent_containers/food/snacks/salad/validsalad
-
-/singleton/recipe/validsalad/make_food(var/obj/container as obj)
-	. = ..(container)
-	for (var/obj/item/reagent_containers/food/snacks/salad/validsalad/being_cooked in .)
-		being_cooked.reagents.del_reagent(/singleton/reagent/toxin)
-
 /singleton/recipe/tabboulehsalad
 	fruit = list("mint" = 3, "tomato" = 1, "wheat" = 1, "lemon" = 1)
 	result = /obj/item/reagent_containers/food/snacks/salad/tabboulehsalad

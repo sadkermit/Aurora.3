@@ -136,7 +136,6 @@ MRE Stuff
 	icon_state = "vegmre"
 	main_meal = /obj/item/storage/box/fancy/mrebag/menu9
 	starts_with = list(
-		/obj/item/storage/box/fancy/mrebag/dessert/menu9 = 1,
 		/obj/item/storage/box/fancy/crackers = 1,
 		/obj/random/mre/spread/vegan = 1,
 		/obj/random/mre/drink = 1,
@@ -226,9 +225,6 @@ MRE Stuff
 	open_sound = /singleton/sound_category/rip_sound
 	open_message = "You tear open the bag, breaking the vacuum seal."
 	starts_with = list(/obj/random/mre/dessert = 1)
-
-/obj/item/storage/box/fancy/mrebag/dessert/menu9
-	starts_with = list(/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit = 1)
 
 /obj/item/storage/box/fancy/mrebag/dessert/menu11
 	starts_with = list(/obj/item/pen/crayon/rainbow = 1)

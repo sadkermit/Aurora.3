@@ -458,9 +458,6 @@
 					B.deductcharge(B.hitcost)
 				user.visible_message(SPAN_DANGER("[user] was stunned by \the [attacking_item]!"))
 				return 1
-	// Short of a rewrite, this is necessary to stop monkeycubes being washed.
-	else if(istype(attacking_item, /obj/item/reagent_containers/food/snacks/monkeycube))
-		return
 	else if(istype(attacking_item, /obj/item/mop))
 		attacking_item.reagents.add_reagent(/singleton/reagent/water, 5)
 		to_chat(user, SPAN_NOTICE("You wet \the [attacking_item] in \the [src]."))

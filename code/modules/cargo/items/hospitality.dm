@@ -96,20 +96,6 @@
 	groupable = TRUE
 	spawn_amount = 5
 
-/singleton/cargo_item/wormfillet
-	category = "hospitality"
-	name = "worm fillet (x5)"
-	supplier = "nanotrasen"
-	description = "Exotic meat from a Cavern Dweller. Mildly toxic if prepared improperly."
-	price = 90
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dwellermeat
-	)
-	access = ACCESS_KITCHEN
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 5
-
 /singleton/cargo_item/roesack
 	category = "hospitality"
 	name = "roe sack (x5)"

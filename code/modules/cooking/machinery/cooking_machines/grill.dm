@@ -101,17 +101,6 @@
 					M.Scale(0.5)
 					food.transform = M
 					AddOverlays(food)
-				else if(istype(thing, /obj/item/reagent_containers/food/snacks/xenomeat))
-					var/image/food = overlay_image('icons/obj/machinery/cooking_machines.dmi', "xenomeat")
-					switch(counter)
-						if(1)
-							food.pixel_x -= 5
-						if(3)
-							food.pixel_x += 5
-					var/matrix/M = matrix()
-					M.Scale(0.5)
-					food.transform = M
-					AddOverlays(food)
 				counter++
 	..()
 

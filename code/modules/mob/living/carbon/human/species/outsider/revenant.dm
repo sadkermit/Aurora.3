@@ -109,8 +109,6 @@
 	qdel(H)
 
 /datum/species/revenant/proc/spawn_gore(var/turf/T)
-	var/portal_type = pick(/obj/effect/portal/spawner/silver, /obj/effect/portal/spawner/gold, /obj/effect/portal/spawner/phoron)
-	new portal_type(T)
 	var/obj/effect/decal/cleanable/blood/gibs/G = new /obj/effect/decal/cleanable/blood/gibs(T)
 	G.basecolor = blood_color
 	G.fleshcolor = flesh_color

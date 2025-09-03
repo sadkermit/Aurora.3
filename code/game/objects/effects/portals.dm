@@ -198,68 +198,6 @@
 		visible_message(SPAN_WARNING("\The [src] collapses in on itself!"))
 		qdel(src)
 
-/obj/effect/portal/spawner/metal
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/steel = 10,
-		/obj/item/stack/material/plasteel = 5
-	)
-
-/obj/effect/portal/spawner/rare_metal
-	num_of_spawns = 4
-	spawn_things = list(
-		/obj/item/stack/material/gold = 2,
-		/obj/item/stack/material/silver = 2,
-		/obj/item/stack/material/uranium = 2,
-		/obj/item/stack/material/diamond = 1
-	)
-
-/obj/effect/portal/spawner/silver
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/silver = 3
-	)
-
-/obj/effect/portal/spawner/gold
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/gold = 3
-	)
-
-/obj/effect/portal/spawner/phoron
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/phoron = 3
-	)
-
-/obj/effect/portal/spawner/plasticglass
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/plastic = 5,
-		/obj/item/stack/material/glass = 5
-	)
-
-/obj/effect/portal/spawner/wood
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/wood = 5,
-		/obj/item/stack/material/cardboard = 5,
-		/obj/item/stack/material/cloth = 5
-	)
-
-/obj/effect/portal/spawner/hide
-	num_of_spawns = 3
-	spawn_things = list(
-		/obj/item/stack/material/animalhide = 5,
-		/obj/item/stack/material/leather = 5
-	)
-
-/obj/effect/portal/spawner/monkey_cube
-	num_of_spawns = 1
-	spawn_things = list(
-		/obj/item/reagent_containers/food/snacks/monkeycube = 4
-	)
-
 /obj/effect/portal/spawner/cow // debug but funny so im keeping it
 	num_of_spawns = 1
 	spawn_things = list(

@@ -125,13 +125,3 @@
 		crack_shell(user)
 		return
 	return ..()
-
-// fish?
-/obj/item/reagent_containers/food/snacks/dwellermeat
-	name = "worm fillet"
-	desc = "A fillet of electrifying cavern meat."
-	icon = 'icons/obj/item/reagent_containers/food/meat.dmi'
-	icon_state = "fishfillet"
-	filling_color = "#FFDEFE"
-	bitesize = 6
-	reagents_to_add = list(/singleton/reagent/nutriment/protein/seafood = 6, /singleton/reagent/hyperzine = 15, /singleton/reagent/acid/polyacid = 6)

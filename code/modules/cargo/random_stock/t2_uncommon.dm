@@ -57,17 +57,6 @@ STOCK_ITEM_UNCOMMON(arrest, 1)
 	else
 		new /obj/item/device/holowarrant(L)
 
-STOCK_ITEM_UNCOMMON(monkey, 2)
-	if(prob(40))
-		var/type = pick( \
-			/obj/item/storage/box/monkeycubes/farwacubes, \
-			/obj/item/storage/box/monkeycubes/stokcubes, \
-			/obj/item/storage/box/monkeycubes/neaeracubes \
-		)
-		new type(L)
-	else
-		new /obj/item/storage/box/monkeycubes(L)
-
 STOCK_ITEM_UNCOMMON(specialcrayon, 1.5)
 	if(prob(50))
 		new /obj/item/pen/crayon/mime(L)

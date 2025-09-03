@@ -256,43 +256,6 @@
 	bitesize = 3
 	reagents_to_add = list(/singleton/reagent/nutriment/protein = 12, /singleton/reagent/hyperzine = 5)
 
-/obj/item/reagent_containers/food/snacks/xenomeat
-	name = "meat"
-	desc = "A slab of green meat. Smells like acid."
-	icon = 'icons/obj/item/reagent_containers/food/meat.dmi'
-	icon_state = "xenomeat"
-	filling_color = "#43DE18"
-	bitesize = 6
-
-	reagents_to_add = list(/singleton/reagent/nutriment/protein = 6, /singleton/reagent/acid/polyacid = 6)
-
-/obj/item/reagent_containers/food/snacks/xenomeat/grilled
-	name = "grilled xeno steak"
-	desc = "A piece of grilled xeno meat. The process converts the dangerous acids within into tasty fats, even though the final look might be... upsetting."
-	icon = 'icons/obj/item/reagent_containers/food/meat.dmi'
-	icon_state = "xenosteak"
-
-	trash = /obj/item/trash/plate/steak
-	center_of_mass = list("x"=16, "y"=13)
-	bitesize = 2
-	reagents_to_add = list(/singleton/reagent/nutriment/protein = 6, /singleton/reagent/nutriment/triglyceride = 2, /singleton/reagent/capsaicin = 2)
-
-/obj/item/reagent_containers/food/snacks/xenomeat/grilled/update_icon()
-	var/percent = round((reagents.total_volume / 10) * 100)
-	switch(percent)
-		if(0 to 10)
-			icon_state = "xenosteak_10"
-		if(11 to 25)
-			icon_state = "xenosteak_25"
-		if(26 to 40)
-			icon_state = "xenosteak_40"
-		if(41 to 60)
-			icon_state = "xenosteak_60"
-		if(61 to 75)
-			icon_state = "xenosteak_75"
-		if(76 to INFINITY)
-			icon_state = "xenosteak"
-
 /obj/item/reagent_containers/food/snacks/meatsteak
 	name = "meat steak"
 	desc = "A piece of hot spicy meat."

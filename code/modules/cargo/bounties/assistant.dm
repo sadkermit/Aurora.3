@@ -29,15 +29,6 @@
 	reward_high = 550
 	wanted_types = list(/obj/item/hand_tele)
 
-/datum/bounty/item/assistant/monkey_cubes
-	name = "Monkey Cubes"
-	description = "Due to a recent genetics accident, %BOSSNAME is in serious need of monkeys. Your mission is to ship monkey cubes."
-	reward_low = 180
-	reward_high = 240
-	required_count = 4
-	random_count = 1
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/monkeycube)
-
 /datum/bounty/item/assistant/curtains
 	name = "Curtain"
 	description = "Send us some curtains to help redecorate our offices!"

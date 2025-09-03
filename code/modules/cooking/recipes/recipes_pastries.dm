@@ -313,14 +313,6 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/tofupie
 
-/singleton/recipe/xemeatpie
-	appliance = OVEN
-	items = list(
-		/obj/item/reagent_containers/food/snacks/sliceable/flatdough,
-		/obj/item/reagent_containers/food/snacks/xenomeat
-	)
-	result = /obj/item/reagent_containers/food/snacks/xemeatpie
-
 /singleton/recipe/pie
 	appliance = OVEN
 	fruit = list("banana" = 1)

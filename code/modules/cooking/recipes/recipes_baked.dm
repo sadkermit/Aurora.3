@@ -44,17 +44,6 @@
 	for (var/obj/item/reagent_containers/food/snacks/donkpocket/being_cooked in .)
 		being_cooked?.SetHot()
 
-/singleton/recipe/plumphelmetbiscuit
-	appliance = OVEN | MICROWAVE
-	fruit = list("plumphelmet" = 1)
-	reagents = list(/singleton/reagent/water = 5, /singleton/reagent/nutriment/flour = 5)
-	result = /obj/item/reagent_containers/food/snacks/plumphelmetbiscuit
-
-/singleton/recipe/spacylibertyduff
-	appliance = OVEN | MICROWAVE
-	reagents = list(/singleton/reagent/water = 5, /singleton/reagent/alcohol/vodka = 5, /singleton/reagent/drugs/psilocybin = 5)
-	result = /obj/item/reagent_containers/food/snacks/spacylibertyduff
-
 /singleton/recipe/hotdiggitydonk
 	appliance = OVEN | MICROWAVE | GRILL
 	items = list(

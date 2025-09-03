@@ -9,25 +9,6 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("baked potato" = 3))
 	bitesize = 2
 
-/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit
-	name = "plump helmet biscuit"
-	desc = "This is a finely-prepared plump helmet biscuit. The ingredients are exceptionally minced plump helmet, and well-minced dwarven wheat flour."
-	icon = 'icons/obj/item/reagent_containers/food/baked.dmi'
-	icon_state = "phelmbiscuit"
-	filling_color = "#CFB4C4"
-	center_of_mass = list("x"=16, "y"=13)
-	reagents_to_add = list(/singleton/reagent/nutriment = 5)
-	reagent_data = list(/singleton/reagent/nutriment = list("mushroom" = 4))
-	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit/Initialize()
-	. = ..()
-	if(prob(10))
-		name = "exceptional plump helmet biscuit"
-		desc = "The chef is taken by a fey mood! It has cooked an exceptional plump helmet biscuit!"
-		reagents.add_reagent(/singleton/reagent/nutriment, 8)
-		reagents.add_reagent(/singleton/reagent/tricordrazine, 5)
-
 /obj/item/reagent_containers/food/snacks/ribplate
 	name = "plate of ribs"
 	desc = "A half-rack of ribs, brushed with some sort of honey-glaze. Why are there no napkins on board?"
@@ -186,18 +167,6 @@
 	desc = "A mass produced shelf-stable turnover. The reheatable food of choice for the seasoned salaryman."
 	filling_color = "#8e4619"
 	reagent_data = list(/singleton/reagent/nutriment = list("takoyaki" = 1, "dough" = 2))
-
-/obj/item/reagent_containers/food/snacks/spacylibertyduff
-	name = "spacy liberty duff"
-	desc = "Jello gelatin, from Alfred Hubbard's cookbook."
-	icon = 'icons/obj/item/reagent_containers/food/baked.dmi'
-	icon_state = "spacylibertyduff"
-	trash = /obj/item/trash/snack_bowl
-	filling_color = "#42B873"
-	center_of_mass = list("x"=16, "y"=8)
-	reagents_to_add = list(/singleton/reagent/nutriment = 6, /singleton/reagent/drugs/psilocybin = 6)
-	reagent_data = list(/singleton/reagent/nutriment = list("mushroom" = 6))
-	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/sliceable/meat_lasagna_tray
 	name = "meat lasagna tray"

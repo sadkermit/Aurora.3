@@ -16,7 +16,7 @@
 	var/language
 	var/death_msg = "lets out a waning guttural screech!"
 	var/meat_amount = 0
-	var/meat_type = /obj/item/reagent_containers/food/snacks/xenomeat
+	var/meat_type = /obj/item/reagent_containers/food/snacks/meat
 
 	icon_dead = "la_creatura_dead"
 

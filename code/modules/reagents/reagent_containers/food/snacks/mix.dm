@@ -48,18 +48,6 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("salad" = 2, "tomato" = 2, "carrot" = 2, "apple" = 2))
 	bitesize = 3
 
-/obj/item/reagent_containers/food/snacks/salad/validsalad
-	name = "valid salad"
-	desc = "It's just a salad of questionable 'herbs' with meatballs and fried potato slices. Nothing suspicious about it."
-	icon = 'icons/obj/item/reagent_containers/food/mix.dmi'
-	icon_state = "validsalad"
-	trash = /obj/item/trash/snack_bowl
-	filling_color = "#76B87F"
-	center_of_mass = list("x"=17, "y"=11)
-	reagents_to_add = list(/singleton/reagent/nutriment = 6, /singleton/reagent/nutriment/protein = 2)
-	reagent_data = list(/singleton/reagent/nutriment = list("potato" = 4, "herbs" = 4))
-	bitesize = 3
-
 /obj/item/reagent_containers/food/snacks/hengsharolls
 	name = "hengsha rolls"
 	desc = "Originally created in times of scarcity during New Gibson's settlement as a meal requiring basic, readily available ingredients and no electricity to make, these rolls made of cabbage leaves stuffed with mashed potato, corn and tofu cubes are now considered a cultural Gibsonite staple."

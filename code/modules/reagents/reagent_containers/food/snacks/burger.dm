@@ -18,12 +18,6 @@
 		qdel(attacking_item)
 		qdel(src)
 		return
-	else if(istype(attacking_item, /obj/item/reagent_containers/food/snacks/nakarka_wedge)) // Burger + nakarka wedge = nakarka hamburger. You could make it this way but then it doesn't filter out the chem that upsets human and taj stomaches.
-		new /obj/item/reagent_containers/food/snacks/burger/nakarka_hamburger/ungrilled(src)
-		to_chat(user, "You slap a slice of ungrilled nakarka on the burger.")
-		qdel(attacking_item)
-		qdel(src)
-		return
 	else if(istype(attacking_item, /obj/item/reagent_containers/food/snacks/grown)) // Burger + Moss = A "less authentic" mossburger
 		var/obj/item/reagent_containers/food/snacks/grown/S = attacking_item
 		if(istype(S.seed, /datum/seed/grass/moss))
@@ -38,17 +32,6 @@
 		qdel(src)
 	else
 		..()
-
-/obj/item/reagent_containers/food/snacks/burger/ghost
-	name = "ghost burger"
-	desc = "Spooky! It doesn't look very filling."
-	icon_state = "ghostburger"
-	filling_color = "#FFF2FF"
-	center_of_mass = list("x"=16, "y"=11)
-
-	reagents_to_add = list(/singleton/reagent/nutriment = 3)
-	reagent_data = list(/singleton/reagent/nutriment = list("buns" = 3, "spookiness" = 3))
-	bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/burger/cheese
 	name = "cheeseburger"
@@ -77,61 +60,6 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("bun" = 2))
 	bitesize = 2
 
-/obj/item/reagent_containers/food/snacks/burger/robo
-	name = "roburger"
-	desc = "The lettuce is the only organic component. Beep."
-	icon_state = "roburger"
-	filling_color = "#CCCCCC"
-	center_of_mass = list("x"=16, "y"=11)
-	reagents_to_add = list(/singleton/reagent/nutriment = 3)
-	reagent_data = list(/singleton/reagent/nutriment = list("bun" = 3, "metal" = 3))
-	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/burger/robo/Initialize()
-	. = ..()
-	if(prob(5))
-		reagents.add_reagent(/singleton/reagent/toxin/nanites, 2)
-
-/obj/item/reagent_containers/food/snacks/burger/robobig
-	name = "roburger"
-	desc = "This massive patty looks like poison. Beep."
-	icon_state = "roburger"
-	filling_color = "#CCCCCC"
-	volume = 100
-	center_of_mass = list("x"=16, "y"=11)
-	bitesize = 0.1
-	reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/toxin/nanites = 100)
-
-/obj/item/reagent_containers/food/snacks/burger/xeno
-	name = "xenoburger"
-	desc = "Smells caustic. Tastes like heresy."
-	icon_state = "xburger"
-	filling_color = "#43DE18"
-	center_of_mass = list("x"=16, "y"=11)
-	bitesize = 2
-
-	reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/nutriment/protein = 8)
-
-/obj/item/reagent_containers/food/snacks/burger/clown
-	name = "clown burger"
-	desc = "This tastes funny..."
-	icon_state = "clownburger"
-	filling_color = "#FF00FF"
-	center_of_mass = list("x"=17, "y"=12)
-	reagents_to_add = list(/singleton/reagent/nutriment = 6)
-	reagent_data = list(/singleton/reagent/nutriment = list("bun" = 3, "crayons" = 3))
-	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/burger/mime
-	name = "mime burger"
-	desc = "Its taste defies language."
-	icon_state = "mimeburger"
-	filling_color = "#FFFFFF"
-	center_of_mass = list("x"=16, "y"=11)
-	reagents_to_add = list(/singleton/reagent/nutriment = 6)
-	reagent_data = list(/singleton/reagent/nutriment = list("bun" = 3, "paint" = 3))
-	bitesize = 2
-
 /obj/item/reagent_containers/food/snacks/burger/mouse
 	name = "rat burger"
 	desc = "Squeaky and a little furry. Do you see any cows around here, Detective?"
@@ -140,15 +68,6 @@
 	bitesize = 2
 
 	reagents_to_add = list(/singleton/reagent/nutriment = 3, /singleton/reagent/nutriment/protein = 5)
-
-/obj/item/reagent_containers/food/snacks/burger/spell
-	name = "spell burger"
-	desc = "This is absolutely Ei Nath."
-	icon_state = "spellburger"
-	filling_color = "#D505FF"
-	reagents_to_add = list(/singleton/reagent/nutriment = 6)
-	reagent_data = list(/singleton/reagent/nutriment = list("magic" = 3, "buns" = 3))
-	bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/burger/bigbite
 	name = "big bite burger"
@@ -241,18 +160,6 @@
 	reagents_to_add = list(/singleton/reagent/nutriment = 4, /singleton/reagent/nutriment/protein = 4)
 	reagent_data = list(/singleton/reagent/nutriment = list("barbecue sauce" = 5, "bun" = 5), /singleton/reagent/nutriment/protein = list("ground beef" = 5))
 	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/burger/nakarka_hamburger
-	name = "nakarka hamburger" //wrote "hamburger" in full to set it apart from "nakarkaburger" which is a kois dish
-	desc = "A delicious hamburger with green Nakarka cheese. Grilling the cheese makes it palatable for Humans and Tajara as well. This meal is not to be confused with the K'ois version of the same meal. No. Seriously. DO NOT CONFUSE IT."
-	icon_state = "nakarkaburger"
-	center_of_mass = list("x"=16, "y"=11)
-	reagents_to_add = list(/singleton/reagent/nutriment = 6, /singleton/reagent/nutriment/protein = 3)
-	reagent_data = list(/singleton/reagent/nutriment = list("sharp tangyness" = 4, "bun" = 2), /singleton/reagent/nutriment/protein = list("meat" = 4))
-	bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/burger/nakarka_hamburger/ungrilled
-	reagents_to_add = list(/singleton/reagent/nutriment = 4, /singleton/reagent/nakarka = 2, /singleton/reagent/nutriment/protein = 3)
 
 /obj/item/reagent_containers/food/snacks/burger/moss
 	name = "mossburger"

@@ -44,18 +44,6 @@
 	random_count = 2
 	wanted_types = list(/obj/item/clothing/head/sunflower_crown, /obj/item/clothing/head/lavender_crown, /obj/item/clothing/head/poppy_crown)
 
-/datum/bounty/item/assistant/animal_cubes
-	name = "Xeno Cubes"
-	description = "Monkeys are very limiting for xenostudies research. Please ship some alternative cubes (wrapped) to alleviate a shortage experienced by our other labs."
-	reward_low = 200
-	reward_high = 260
-	required_count = 4
-	random_count = 1
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/farwacube,
-				/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/stokcube,
-				/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube,
-				/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/vkrexicube)
-
 /datum/bounty/item/hydroponicist/produce
 	name = "Produce - Any"
 	description = "%BOSSNAME is in need of a bundle of fresh produce. Send your best!"

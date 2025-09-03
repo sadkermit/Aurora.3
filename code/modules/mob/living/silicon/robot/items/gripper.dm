@@ -283,7 +283,6 @@
 		/obj/item/stack/cable_coil, // again, for borg building,
 		/obj/item/circuitboard,
 		/obj/item/reagent_containers/glass,
-		/obj/item/reagent_containers/food/snacks/monkeycube,
 		/obj/item/seeds, // To be able to plant things for Xenobotany
 		/obj/item/grown, // To be able to plant things for Xenobotany
 		/obj/item/device/assembly, // For building bots and similar complex R&D devices
@@ -305,7 +304,6 @@
 
 	can_hold = list(
 		/obj/item/reagent_containers/glass,
-		/obj/item/reagent_containers/food/snacks/monkeycube,
 		/obj/item/organ,
 		/obj/item/reagent_containers/pill,
 		/obj/item/reagent_containers/spray,

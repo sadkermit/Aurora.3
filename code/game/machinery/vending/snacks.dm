@@ -31,12 +31,9 @@
 		/obj/item/storage/box/fancy/gum = 4,
 		/obj/item/clothing/mask/chewable/candy/lolli = 8,
 		/obj/item/storage/box/fancy/admints = 4,
-		/obj/item/reagent_containers/food/snacks/skrellsnacks = 3,
 		/obj/item/reagent_containers/food/snacks/meatsnack = 2,
 		/obj/item/reagent_containers/food/snacks/maps = 2,
 		/obj/item/reagent_containers/food/snacks/nathisnack = 2,
-		/obj/item/reagent_containers/food/snacks/koisbar_clean = 4,
-		/obj/item/reagent_containers/food/snacks/candy/koko = 5,
 		/obj/item/reagent_containers/food/snacks/tuna = 2,
 		/obj/item/reagent_containers/food/snacks/ricetub = 2,
 		/obj/item/reagent_containers/food/snacks/riceball = 4,
@@ -47,8 +44,7 @@
 		/obj/item/reagent_containers/food/drinks/jyalra/cherry = 5
 	)
 	contraband = list(
-		/obj/item/reagent_containers/food/snacks/syndicake = 6,
-		/obj/item/reagent_containers/food/snacks/koisbar = 4
+		/obj/item/reagent_containers/food/snacks/syndicake = 6
 	)
 	premium = list(
 		/obj/item/reagent_containers/food/snacks/cookie = 6,
@@ -70,12 +66,9 @@
 		/obj/item/storage/box/fancy/gum = 2.50,
 		/obj/item/clothing/mask/chewable/candy/lolli = 1.00,
 		/obj/item/storage/box/fancy/admints = 2.00,
-		/obj/item/reagent_containers/food/snacks/skrellsnacks = 1.50,
 		/obj/item/reagent_containers/food/snacks/meatsnack = 3.00,
 		/obj/item/reagent_containers/food/snacks/maps = 3.25,
 		/obj/item/reagent_containers/food/snacks/nathisnack = 2.00,
-		/obj/item/reagent_containers/food/snacks/koisbar_clean = 4.25,
-		/obj/item/reagent_containers/food/snacks/candy/koko = 3.00,
 		/obj/item/reagent_containers/food/snacks/tuna = 2.50,
 		/obj/item/reagent_containers/food/snacks/ricetub = 4.50,
 		/obj/item/reagent_containers/food/snacks/riceball = 3.00,
@@ -84,8 +77,7 @@
 		/obj/item/reagent_containers/food/drinks/jyalra/cheese = 1.75,
 		/obj/item/reagent_containers/food/drinks/jyalra/apple = 1.75,
 		/obj/item/reagent_containers/food/drinks/jyalra/cherry = 1.75,
-		/obj/item/reagent_containers/food/snacks/syndicake = 3.50,
-		/obj/item/reagent_containers/food/snacks/koisbar = 12.00,
+		/obj/item/reagent_containers/food/snacks/syndicake = 3.50
 	)
 	light_color = COLOR_BABY_BLUE
 	manufacturer = "nanotrasen"
@@ -96,9 +88,7 @@
 		/obj/item/reagent_containers/food/snacks/chips = 1,
 		/obj/item/reagent_containers/food/snacks/sosjerky = 2,
 		/obj/item/reagent_containers/food/snacks/no_raisin = 4,
-		/obj/item/reagent_containers/food/snacks/skrellsnacks = 1,
 		/obj/item/reagent_containers/food/snacks/maps = 1,
-		/obj/item/reagent_containers/food/snacks/koisbar_clean = 1,
 		/obj/item/reagent_containers/food/drinks/jyalra = 1
 	)
 
@@ -118,7 +108,6 @@
 		/obj/item/storage/box/fancy/gum = 4,
 		/obj/item/clothing/mask/chewable/candy/lolli = 8,
 		/obj/item/storage/box/fancy/admints = 4,
-		/obj/item/reagent_containers/food/snacks/skrellsnacks = 3,
 		/obj/item/reagent_containers/food/snacks/meatsnack = 2,
 		/obj/item/reagent_containers/food/snacks/maps = 2,
 		/obj/item/reagent_containers/food/snacks/tuna = 2,

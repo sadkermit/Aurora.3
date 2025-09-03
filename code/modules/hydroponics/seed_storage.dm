@@ -327,7 +327,6 @@
 		/obj/item/seeds/pumpkinseed = 3,
 		/obj/item/seeds/qlortseed = 2,
 		/obj/item/seeds/raspberryseed = 3,
-		/obj/item/seeds/clam/rasval = 15,
 		/obj/item/seeds/reishimycelium = 2,
 		/obj/item/seeds/replicapod = 3,
 		/obj/item/seeds/riceseed = 3,

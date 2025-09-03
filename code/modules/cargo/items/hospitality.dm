@@ -138,34 +138,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/rasvalclams_box
-	category = "hospitality"
-	name = "box of Ras'val clams"
-	supplier = "zharkov"
-	description = "A box filled with clams from the Ras'val sea, imported from Adhomai."
-	price = 85
-	items = list(
-		/obj/item/storage/box/clams
-	)
-	access = 0
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/hmatrrafillet
-	category = "hospitality"
-	name = "Hma'trra fillet"
-	supplier = "zharkov"
-	description = "A fillet of glacier worm meat."
-	price = 45
-	items = list(
-		/obj/item/reagent_containers/food/snacks/hmatrrameat
-	)
-	access = 0
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/producebox
 	category = "hospitality"
 	name = "produce box"

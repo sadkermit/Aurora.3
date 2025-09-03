@@ -44,15 +44,12 @@
 	required_count = 4
 	random_count = 1
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/icecreamsandwich,
-			/obj/item/reagent_containers/food/snacks/icecream,
-			/obj/item/reagent_containers/food/snacks/creamice)
+			/obj/item/reagent_containers/food/snacks/icecream)
 
 /datum/bounty/item/chef/icecream/applies_to(obj/O)
 	if(!..())
 		return FALSE
 	if(istype(O, /obj/item/reagent_containers/food/snacks/icecreamsandwich))
-		return TRUE
-	if(istype(O, /obj/item/reagent_containers/food/snacks/creamice))
 		return TRUE
 	var/obj/item/reagent_containers/food/snacks/icecream/I = O
 	if(I?.ice_creamed)
@@ -71,12 +68,8 @@
 			/obj/item/reagent_containers/food/snacks/xemeatpie,
 			/obj/item/reagent_containers/food/snacks/cherrypie,
 			/obj/item/reagent_containers/food/snacks/applepie,
-			/obj/item/reagent_containers/food/snacks/chocolate_rikazu,
-			/obj/item/reagent_containers/food/snacks/fruit_rikazu,
-			/obj/item/reagent_containers/food/snacks/meat_rikazu,
 			/obj/item/reagent_containers/food/snacks/sliceable/keylimepie,
-			/obj/item/reagent_containers/food/snacks/sliceable/giffypie,
-			/obj/item/reagent_containers/food/snacks/vegetable_rikazu)
+			/obj/item/reagent_containers/food/snacks/sliceable/giffypie)
 
 /datum/bounty/item/chef/salad
 	name = "Salad"
@@ -96,8 +89,7 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/carrotfries,
 				/obj/item/reagent_containers/food/snacks/fries,
 				/obj/item/reagent_containers/food/snacks/chilicheesefries,
-				/obj/item/reagent_containers/food/snacks/cheesyfries,
-				/obj/item/reagent_containers/food/snacks/earthenroot_fries)
+				/obj/item/reagent_containers/food/snacks/cheesyfries)
 
 /datum/bounty/item/chef/superbite
 	name = "Super Bite Burger"
@@ -171,7 +163,6 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/variable/kebab,
 			/obj/item/reagent_containers/food/snacks/monkeykabob,
 			/obj/item/reagent_containers/food/snacks/neaerakabob,
-			/obj/item/reagent_containers/food/snacks/nomadskewer,
 			/obj/item/reagent_containers/food/snacks/stokkebab,
 			/obj/item/reagent_containers/food/snacks/tofukabob,
 			/obj/item/reagent_containers/food/snacks/koiskebab3,
@@ -260,56 +251,6 @@
 			/obj/item/reagent_containers/food/snacks/stuffed_meatball,
 			/obj/item/reagent_containers/food/snacks/stuffedcarp,
 			/obj/item/reagent_containers/food/snacks/stuffedfish)
-
-/datum/bounty/item/chef/tajara
-	name = "Adhomai Delicacies"
-	description = "We're holding a luncheon with some representatives from Adhomai; send some traditional Tajaran dishes!"
-	reward_low = 150
-	reward_high = 250
-	required_count = 3
-	random_count = 1
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/adhomian_porridge,
-			/obj/item/reagent_containers/food/snacks/adhomian_sausage,
-			/obj/item/reagent_containers/food/snacks/avah,
-			/obj/item/reagent_containers/food/snacks/chipplate/crownfurter,
-			/obj/item/reagent_containers/food/snacks/chipplate/miniavah_basket,
-			/obj/item/reagent_containers/food/snacks/chocolate_rikazu,
-			/obj/item/reagent_containers/food/snacks/clam_pasta,
-			/obj/item/reagent_containers/food/snacks/cone_cake,
-			/obj/item/reagent_containers/food/snacks/creamice,
-			/obj/item/reagent_containers/food/snacks/dip/sarmikhir,
-			/obj/item/reagent_containers/food/snacks/dip/tajhummus,
-			/obj/item/reagent_containers/food/snacks/dirt_roast,
-			/obj/item/reagent_containers/food/snacks/earthenroot_fries,
-			/obj/item/reagent_containers/food/snacks/earthenroot_mash,
-			/obj/item/reagent_containers/food/snacks/earthenroot_wedges,
-			/obj/item/reagent_containers/food/snacks/fermented_worm,
-			/obj/item/reagent_containers/food/snacks/fermented_worm_sandwich,
-			/obj/item/reagent_containers/food/snacks/fruit_rikazu,
-			/obj/item/reagent_containers/food/snacks/fruitgello,
-			/obj/item/reagent_containers/food/snacks/hardbread,
-			/obj/item/reagent_containers/food/snacks/hardbread_pudding,
-			/obj/item/reagent_containers/food/snacks/lardwich,
-			/obj/item/reagent_containers/food/snacks/meat_rikazu,
-			/obj/item/reagent_containers/food/snacks/nomadskewer,
-			/obj/item/reagent_containers/food/snacks/salad/earthenroot,
-			/obj/item/reagent_containers/food/snacks/sarmikhir_sandwich,
-			/obj/item/reagent_containers/food/snacks/seafoodmousse,
-			/obj/item/reagent_containers/food/snacks/sliceable/aspicfatshouter,
-			/obj/item/reagent_containers/food/snacks/sliceable/fatshouter_fillet,
-			/obj/item/reagent_containers/food/snacks/sliceable/fatshouterbake,
-			/obj/item/reagent_containers/food/snacks/sliceable/vegello,
-			/obj/item/reagent_containers/food/snacks/sliceable/zkahnkowafull,
-			/obj/item/reagent_containers/food/snacks/soup/earthenroot,
-			/obj/item/reagent_containers/food/snacks/soup/tajfish,
-			/obj/item/reagent_containers/food/snacks/spicy_clams,
-			/obj/item/reagent_containers/food/snacks/stew/tajaran,
-			/obj/item/reagent_containers/food/snacks/stuffed_earthenroot,
-			/obj/item/reagent_containers/food/snacks/tajaran_bread,
-			/obj/item/reagent_containers/food/snacks/tajcandy,
-			/obj/item/reagent_containers/food/snacks/tunneler_meategg,
-			/obj/item/reagent_containers/food/snacks/tunneler_souffle,
-			/obj/item/reagent_containers/food/snacks/vegetable_rikazu)
 
 /datum/bounty/item/chef/skrell
 	name = "Federation Delicacies"

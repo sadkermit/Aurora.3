@@ -39,7 +39,6 @@
 		/obj/item/reagent_containers/food/snacks/koisbar_clean = 4,
 		/obj/item/reagent_containers/food/snacks/candy/koko = 5,
 		/obj/item/reagent_containers/food/snacks/tuna = 2,
-		/obj/item/reagent_containers/food/snacks/adhomian_can = 2,
 		/obj/item/reagent_containers/food/snacks/ricetub = 2,
 		/obj/item/reagent_containers/food/snacks/riceball = 4,
 		/obj/item/reagent_containers/food/snacks/seaweed = 5,
@@ -80,7 +79,6 @@
 		/obj/item/reagent_containers/food/snacks/koisbar_clean = 4.25,
 		/obj/item/reagent_containers/food/snacks/candy/koko = 3.00,
 		/obj/item/reagent_containers/food/snacks/tuna = 2.50,
-		/obj/item/reagent_containers/food/snacks/adhomian_can = 2.00,
 		/obj/item/reagent_containers/food/snacks/ricetub = 4.50,
 		/obj/item/reagent_containers/food/snacks/riceball = 3.00,
 		/obj/item/reagent_containers/food/snacks/seaweed = 2.50,
@@ -104,7 +102,6 @@
 		/obj/item/reagent_containers/food/snacks/skrellsnacks = 1,
 		/obj/item/reagent_containers/food/snacks/maps = 1,
 		/obj/item/reagent_containers/food/snacks/koisbar_clean = 1,
-		/obj/item/reagent_containers/food/snacks/adhomian_can = 1,
 		/obj/item/reagent_containers/food/drinks/jyalra = 1
 	)
 

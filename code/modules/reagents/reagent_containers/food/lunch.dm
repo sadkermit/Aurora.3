@@ -13,8 +13,6 @@ GLOBAL_LIST_INIT(lunchables_lunches_, list(
 	/obj/item/reagent_containers/food/snacks/salad/tossedsalad,
 	/obj/item/reagent_containers/food/snacks/funnelcake,
 	/obj/item/reagent_containers/food/snacks/hotdog,
-	/obj/item/reagent_containers/food/snacks/tajaran_bread,
-	/obj/item/reagent_containers/food/snacks/soup/earthenroot,
 	/obj/item/reagent_containers/food/snacks/redcurry,
 	/obj/item/reagent_containers/food/snacks/greencurry,
 	/obj/item/reagent_containers/food/snacks/yellowcurry,
@@ -31,7 +29,6 @@ GLOBAL_LIST_INIT(lunchables_lunches_, list(
 	/obj/item/reagent_containers/food/snacks/pita/falafel,
 	/obj/item/reagent_containers/food/snacks/stokkebab,
 	/obj/item/reagent_containers/food/snacks/batwings,
-	/obj/item/reagent_containers/food/snacks/salad/earthenroot,
 	/obj/item/reagent_containers/food/snacks/pepperoniroll
 ))
 
@@ -66,8 +63,6 @@ GLOBAL_LIST_INIT(lunchables_snacks_, list(
 	/obj/item/reagent_containers/food/snacks/meatsnack,
 	/obj/item/reagent_containers/food/snacks/maps,
 	/obj/item/reagent_containers/food/snacks/nathisnack,
-	/obj/item/reagent_containers/food/snacks/adhomian_can,
-	/obj/item/reagent_containers/food/snacks/adhomian_sausage,
 	/obj/item/reagent_containers/food/snacks/chocolatebar,
 	/obj/item/reagent_containers/food/drinks/jyalra,
 	/obj/item/reagent_containers/food/drinks/jyalra/cheese,

@@ -147,20 +147,6 @@
 	reagent_mix = RECIPE_REAGENT_REPLACE // simplify and replace
 	result = /obj/item/reagent_containers/food/snacks/sliceable/pizza/deepdish/pepperoni
 
-/singleton/recipe/deepdish_district6
-	appliance = OVEN
-	fruit = list("tomato" = 3, "dirtberries" = 1)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/dough,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/cheesewedge,
-		/obj/item/reagent_containers/food/snacks/earthenroot_chopped
-	)
-	reagent_mix = RECIPE_REAGENT_REPLACE // simplify and replace
-	result = /obj/item/reagent_containers/food/snacks/sliceable/pizza/deepdish/district6
-
 /singleton/recipe/deepdish_mendell
 	appliance = OVEN
 	fruit = list("tomato" = 3, "bellpepper" = 1)

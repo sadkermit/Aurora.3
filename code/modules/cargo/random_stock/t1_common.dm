@@ -430,9 +430,7 @@ STOCK_ITEM_COMMON(snacks, 4)
 		/obj/item/storage/box/donkpockets = 10,
 		/obj/item/storage/box/sinpockets = 5,
 		/obj/item/storage/box/snack = 10,
-		/obj/item/storage/box/produce = 8,
-		/obj/item/storage/field_ration = 3,
-		/obj/item/storage/field_ration/nka = 1
+		/obj/item/storage/box/produce = 8
 	)
 
 	var/type = pickweight(snacks)

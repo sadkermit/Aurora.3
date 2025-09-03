@@ -234,7 +234,6 @@
 	name = "queso dip"
 	desc = "A simple, cheesy dip consisting of tomatos, cheese, and spices."
 	var/nachotrans = /obj/item/reagent_containers/food/snacks/chip/nacho/cheese
-	var/avahtrans = /obj/item/reagent_containers/food/snacks/chip/miniavah/cheese
 	var/chiptrans = /obj/item/reagent_containers/food/snacks/chip/cheese
 	var/pitatrans = /obj/item/reagent_containers/food/snacks/pita
 
@@ -252,8 +251,6 @@
 	var/obj/item/reagent_containers/food/snacks/returningitem
 	if(istype(attacking_item, /obj/item/reagent_containers/food/snacks/chip/nacho) && attacking_item.icon_state == "chip_nacho")
 		returningitem = new nachotrans(src)
-	else if (istype(attacking_item, /obj/item/reagent_containers/food/snacks/chip/miniavah) && attacking_item.icon_state == "avah_full" || attacking_item.icon_state == "avah_half")
-		returningitem = new avahtrans(src)
 	else if (istype(attacking_item, /obj/item/reagent_containers/food/snacks/chip) && (attacking_item.icon_state == "chip" || attacking_item.icon_state == "chip_half"))
 		returningitem = new chiptrans(src)
 	if(returningitem)
@@ -289,7 +286,6 @@
 	name = "salsa dip"
 	desc = "Traditional Sol chunky salsa dip containing tomatos, peppers, and spices."
 	nachotrans = /obj/item/reagent_containers/food/snacks/chip/nacho/salsa
-	avahtrans = /obj/item/reagent_containers/food/snacks/chip/miniavah/salsa
 	chiptrans = /obj/item/reagent_containers/food/snacks/chip/salsa
 	icon_state = "dip_salsa"
 	reagents_to_add = list(/singleton/reagent/nutriment = 20)
@@ -300,7 +296,6 @@
 	name = "guac dip"
 	desc = "A recreation of the ancient Sol 'Guacamole' dip using tofu, limes, and spices. This recreation obviously leaves out mole meat."
 	nachotrans = /obj/item/reagent_containers/food/snacks/chip/nacho/guac
-	avahtrans = /obj/item/reagent_containers/food/snacks/chip/miniavah/guac
 	chiptrans = /obj/item/reagent_containers/food/snacks/chip/guac
 	icon_state = "dip_guac"
 	reagents_to_add = list(/singleton/reagent/nutriment = 20)
@@ -311,7 +306,6 @@
 	name = "hummus"
 	desc = "A tasty spread made from chickpeas and sesame seed paste."
 	nachotrans = /obj/item/reagent_containers/food/snacks/chip/nacho/hummus
-	avahtrans = /obj/item/reagent_containers/food/snacks/chip/miniavah/hummus
 	chiptrans = /obj/item/reagent_containers/food/snacks/chip/hummus
 	pitatrans = /obj/item/reagent_containers/food/snacks/pita/hummus
 	icon_state = "hummus"

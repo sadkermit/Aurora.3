@@ -523,18 +523,6 @@
 	result = /obj/item/reagent_containers/food/snacks/crozets
 	reagent_mix = RECIPE_REAGENT_REPLACE
 
-/singleton/recipe/seafoodplatter
-	appliance = MIX
-	reagents = list(/singleton/reagent/blackpepper = 2, /singleton/reagent/spacespice = 2, /singleton/reagent/alcohol/beer = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/fish/fishfillet,
-		/obj/item/reagent_containers/food/snacks/clam,
-		/obj/item/reagent_containers/food/snacks/crabmeat
-
-	)
-	result = /obj/item/reagent_containers/food/snacks/seafoodplatter
-	reagent_mix = RECIPE_REAGENT_REPLACE
-
 /singleton/recipe/xanuvindaloo
 	appliance = SAUCEPAN | POT
 	fruit = list("tomato" = 1, "chili" = 1)

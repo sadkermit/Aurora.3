@@ -870,7 +870,6 @@
 			/obj/item/reagent_containers/food/snacks/meatsnack,
 			/obj/item/reagent_containers/food/snacks/maps,
 			/obj/item/reagent_containers/food/snacks/nathisnack,
-			/obj/item/reagent_containers/food/snacks/adhomian_can,
 			/obj/item/reagent_containers/food/snacks/tuna,
 			/obj/item/storage/box/fancy/gum,
 			/obj/item/storage/box/fancy/cookiesnack,
@@ -906,11 +905,6 @@
 	item_state = "secbox"
 	illustration = "inhalers"
 	starts_with = list(/obj/item/reagent_containers/inhaler = 8)
-
-/obj/item/storage/box/clams
-	name = "box of Ras'val clam"
-	desc = "A box filled with clams from the Ras'val sea, imported by Njadra'Akhar Enterprises."
-	starts_with = list(/obj/item/reagent_containers/food/snacks/clam = 5)
 
 /obj/item/storage/box/produce
 	name = "produce box"

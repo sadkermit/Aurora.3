@@ -457,14 +457,6 @@
 	access = get_all_station_access()
 	..()
 
-/obj/item/card/id/merchant
-	name = "merchant identification card"
-	desc = "An identification card issued to SCC-sanctioned merchants, indicating their right to sell and buy goods."
-	icon_state = "centcom"
-	overlay_state = "centcom"
-	access = list(ACCESS_MERCHANT)
-	vertical_card = TRUE
-
 /obj/item/card/id/synthetic
 	name = "\improper SCC equipment identification card"
 	desc = "Access module for SCC equipment."
@@ -566,56 +558,6 @@
 
 /obj/item/card/id/distress/New()
 	access = list(ACCESS_DISTRESS, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS)
-	..()
-
-/obj/item/card/id/distress/fsf
-	name = "\improper Free Solarian Fleets identification card"
-	icon_state = "data"
-	assignment = "Free Solarian Fleets Marine"
-
-/obj/item/card/id/distress/kataphract
-	name = "\improper Kataphract identification card"
-	icon_state = "data"
-	assignment = "Kataphract"
-
-/obj/item/card/id/distress/legion
-	name = "\improper Tau Ceti Foreign Legion identification card"
-	desc = "An old-fashioned, practical plastic card. Cheaply produced for Tau Ceti's finest."
-	assignment = "Tau Ceti Foreign Legion Volunteer"
-	icon_state = "legion"
-	vertical_card = TRUE
-
-/obj/item/card/id/distress/legion/New()
-	access = list(ACCESS_LEGION, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_SECURITY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_MEDICAL, ACCESS_RESEARCH, ACCESS_ATMOSPHERICS, ACCESS_MEDICAL_EQUIP)
-	..()
-
-/obj/item/card/id/distress/legion/tcaf
-	name = "\improper Tau Ceti Armed Forces identification card"
-	assignment = "Republican Fleet Legionary"
-
-/obj/item/card/id/distress/ap_eridani
-	name = "\improper Eridani Private Military Contractor identification card"
-	desc = "A high-tech holobadge, identifying the owner as a contractor from one of the many PMCs from the Eridani Corporate Federation."
-	assignment = "EPMC Asset Protection"
-	icon_state = "pmc_card"
-	overlay_state = "pmc_card"
-	vertical_card = TRUE
-
-/obj/item/card/distress/ap_eridani/update_icon()
-	return
-
-/obj/item/card/id/distress/ap_eridani/New()
-	access = get_distress_access()
-	..()
-
-/obj/item/card/id/distress/iac
-	name = "\improper Interstellar Aid Corps identification card"
-	assignment = "Interstellar Aid Corps Responder"
-	icon_state = "centcom"
-	vertical_card = TRUE
-
-/obj/item/card/id/distress/iac/New()
-	access = get_distress_access()
 	..()
 
 /obj/item/card/id/all_access

@@ -31,40 +31,23 @@ var/global/Holiday = null
 		if(1)	//Jan
 			switch(DD)
 				if(1)							Holiday = "New Year's Day"
-				if(2)							Holiday = "Xanan Founding Day"
-				if(9)							Holiday = "Tajaran Coming of Dawn"
-				if(15)							Holiday = "New Kingdom of Adhomai Ice Waltz"
-				if(18)							Holiday = "Red Coalition Secession Day"
-				if (22)
-					if(YY==23)					Holiday = "Lunarian Zhongqiu Jie Festival"
-
 		if(2)	//Feb
 			switch(DD)
-				if(1)							Holiday = "C'thur Independence Day"
-				if(3)							Holiday = "Dominian Feast of Devotion"
-				if(10)
-					if(YY==24)					Holiday = "Lunarian Zhongqiu Jie Festival"
 				if(14)							Holiday = "Valentine's Day"
 				if(29)							Holiday = "Leap Day"
 
 
 		if(3)	//Mar
 			switch(DD)
-				if(4)							Holiday = "People's Republic of Adhomai Victory Day"
-				if(11)							Holiday = "Assunzioni Assumption of the Fading Lights"
 				if(17)							Holiday = "St. Patrick's Day"
-				if(20)							Holiday = "Spring Vernal Equinox"
-				if(28)							Holiday = "All-Xanu Peace Day"
 				if(31)
 					if(YY == 24)  				Holiday = "Easter"
 
 		if(4)	//Apr
 			switch(DD)
 				if(1)							Holiday = "April Fool's Day"
-				if(3)							Holiday = "Dominian Feast of Faith"
 				if(9)
-					Holiday = "Silversun Festival of the Silver Seas"
-					if(YY == 23 && prob(50))				Holiday = "Easter"
+					if(YY == 23)				Holiday = "Easter"
 				if(20)
 					if(YY == 25) 				Holiday = "Easter"
 				if(22)							Holiday = "Earth Day"
@@ -72,81 +55,30 @@ var/global/Holiday = null
 		if(5)	//May
 			switch(DD)
 				if(1)							Holiday = "International Workers' Day"
-				if(5)							Holiday = "Tau Ceti Republic Day"
-				if(6)							Holiday = "Eridani Diversity Day"
-				if(14)							Holiday = "Galatean Graduation Day"
-				if(22)							Holiday = "Dominian Worker's Day"
-				if(30)							Holiday = "People's Republic of Adhomai President's Day"
-
-		if(6)	//Jun
-			switch(DD)
-				if(6)							Holiday = "Mictlani Tago de Eksterterano"
-				if(8)							Holiday = "Northern Wildlands Intervention Day"
-				if(14)
-					Holiday = "New Gibson Remembrance Day"
-					if(prob(50))				Holiday = "Skrell Qu'Qyu-Poxii"
-				if(15)							Holiday = "Colettish Republic Day"
-				if(18)							Holiday = "Callistean Landfall Day"
-				if(22)							Holiday = "Colettish Civil Guard Day"
-				if(26)							Holiday = "Callistean Pigeon Day"
 
 		if(7)	//Jul
 			switch(DD)
-				if(1)							Holiday = "Xanan Election Day"
-				if(4)
-					Holiday = "DPRA Democratic Revolution Day"
-					if(prob(50))				Holiday = "DPRA Liberation Day"
-				if(7)							Holiday = "Dominian Founding Day"
 				if(16)							Holiday = "Lunarian Apollo Day"
-				if(17)							Holiday = "Solarian Reunification Day"
-				if(29)							Holiday = "Dominian Victory Day"
-
-
-		if(8)	//Aug
-			switch(DD)
-				if(1)							Holiday = "Himean Independence Day"
-				if(13)							Holiday = "Xanan Independence Day"
-				if(19)							Holiday = "Damascene Independence Day"
-				if(21)							Holiday = "Venusian Ascension Day"
-				if(27)							Holiday = "Vaurca Hive War Commemoration"
 
 		if(9)	//Sep
 			switch(DD)
-				if(3)							Holiday = "Dominian Feast of Joy"
-				if(5)							Holiday = "Si'akh Final Judgement Day"
-				if(6)							Holiday = "New Gibson Celebration of the Solstice"
 				if(19)							Holiday = "Talk-Like-a-Pirate Day"
-				if(24)							Holiday = "Tau Ceti Heritage Day"
 
 		if(10)	//Oct
 			switch(DD)
-				if(1)							Holiday = "Frontier Victory Day"
-				if(5)							Holiday = "Colettish Colonization Day"
-				if(9)							Holiday = "K'lax Technology Day"
-				if(16)							Holiday = "Galatean Federation Day"
-				if(27)							Holiday = "New Kingdom of Adhomai Day of Rightful Restoration"
 				if(31)
 					Holiday = "Halloween"
-					if(YY == 24)  				Holiday = "Halloween and the day of Shi-rra Arr’Kahata"
 
 		if(11)	//Nov
 			switch(DD)
-				if(1)							Holiday = "Dia de los Muertos"
-				if(17)							Holiday = "Dominian Navy Day"
 				if(18)							Holiday = "Kulkarni Day"
-				if(24)							Holiday = "Konyang Independence Day"
-				if(26)							Holiday = "Tajaran Armistice Day"
 				if(28)							Holiday = "Interstellar Peace Day"
 
 		if(12)	//Dec
 			switch(DD)
-				if(3)							Holiday = "Dominian Feast of Renewal"
-				if(7)							Holiday = "Unathi Keeping of Memories"
-				if(15)							Holiday = "Lunarian Pervoprohodets Day"
 				if(24)							Holiday = "Christmas Eve"
 				if(25)							Holiday = "Christmas"
 				if(26)							Holiday = "Boxing Day"
-				if(27)							Holiday = "New Gibson Unity Day"
 				if(31)							Holiday = "New Year's Eve"
 
 	if(!Holiday)

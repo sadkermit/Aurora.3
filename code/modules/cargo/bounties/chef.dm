@@ -162,7 +162,6 @@
 	random_count = 1
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/variable/kebab,
 			/obj/item/reagent_containers/food/snacks/monkeykabob,
-			/obj/item/reagent_containers/food/snacks/neaerakabob,
 			/obj/item/reagent_containers/food/snacks/tofukabob,
 			/obj/item/reagent_containers/food/snacks/koiskebab3,
 			/obj/item/reagent_containers/food/snacks/donerkebab)
@@ -221,27 +220,6 @@
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/meatbun,
 			/obj/item/reagent_containers/food/snacks/chickenmomo,
 			/obj/item/reagent_containers/food/snacks/veggiemomo)
-
-/datum/bounty/item/chef/skrell
-	name = "Federation Delicacies"
-	description = "We're holding a luncheon with some Nralakk Federation representatives; send some Skrellian dishes!"
-	reward_low = 150
-	reward_high = 250
-	required_count = 3
-	random_count = 1
-	wanted_types = list(/obj/item/reagent_containers/food/snacks/chipplate/neaeracandy,
-			/obj/item/reagent_containers/food/snacks/fjylozynboiled,
-			/obj/item/reagent_containers/food/snacks/gnaqmi,
-			/obj/item/reagent_containers/food/snacks/jyalrafresh,
-			/obj/item/reagent_containers/food/snacks/konaqu,
-			/obj/item/reagent_containers/food/snacks/lortl,
-			/obj/item/reagent_containers/food/snacks/neaerakabob,
-			/obj/item/reagent_containers/food/snacks/neaeraloaf,
-			/obj/item/reagent_containers/food/snacks/qlguabi,
-			/obj/item/reagent_containers/food/snacks/soup/qilvo,
-			/obj/item/reagent_containers/food/snacks/soup/zantiri,
-			/obj/item/reagent_containers/food/snacks/stew/neaera,
-			/obj/item/reagent_containers/food/snacks/xuqqil)
 
 /datum/bounty/item/chef/curry
 	name = "Curry"

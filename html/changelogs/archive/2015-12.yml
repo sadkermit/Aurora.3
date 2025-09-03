@@ -1,4 +1,0 @@
-2015-12-06:
-  Hubblenaut:
-  - bugfix: Welding a broken camera will use the correct icon.
-  - tweak: Camera assemblies remember their tag and network from previous usage.

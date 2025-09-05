@@ -20,13 +20,6 @@
 	reagents = list(/singleton/reagent/water = 5, /singleton/reagent/sugar = 5)
 	result = /obj/item/reagent_containers/food/snacks/candiedapple
 
-
-/singleton/recipe/izuixu
-	reagents = list(/singleton/reagent/drink/milk = 5, /singleton/reagent/drink/ice = 5, /singleton/reagent/alcohol/butanol/xuizijuice= 5)
-	fruit = list("strawberries" = 1)
-	reagent_mix = RECIPE_REAGENT_REPLACE
-	result = /obj/item/reagent_containers/food/snacks/izuixu
-
 /singleton/recipe/triolade
 	appliance = SAUCEPAN
 	items = list(

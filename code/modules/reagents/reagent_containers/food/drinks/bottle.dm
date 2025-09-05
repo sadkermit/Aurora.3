@@ -268,16 +268,6 @@
 	center_of_mass = list("x"=16, "y"=4)
 	reagents_to_add = list(/singleton/reagent/alcohol/gin = 100)
 
-/obj/item/reagent_containers/food/drinks/bottle/victorygin
-	name = "Victory gin"
-	desc = "Pour one out for Al'mari. His gun was on stun, bless his heart."
-	icon_state = "victorygin"
-	center_of_mass = list("x"=16, "y"=4)
-	desc_extended = "Considered the official drink of the People's Republic of Adhomai, Victory Gin was created to celebrate the end of the revolution. It is commonly found in NanoTrasen's \
-	facilities, due to a contract that allows the government to supply the corporation, and in the Tajaran communities of Tau Ceti. The destruction of Victory Gin's bottles and reserves \
-	was widespread when Republican positions and cities were taken by the opposition as the drink is deemed by many as a symbol of the Hadiist regime."
-	reagents_to_add = list(/singleton/reagent/alcohol/victorygin = 100)
-
 /obj/item/reagent_containers/food/drinks/bottle/whiskey
 	name = "Mu Cephei Special Reserve Whiskey"
 	desc = "An okayish single-malt whiskey. This one is produced mainly in New Valletta on Callisto and is fairly famous among Cythereans, too. It's great to get you \
@@ -657,17 +647,6 @@
 	center_of_mass = list("x"=16, "y"=6)
 	reagents_to_add = list(/singleton/reagent/drink/spacemountainwind = 30)
 
-/obj/item/reagent_containers/food/drinks/bottle/hrozamal_soda
-	name = "Hro'zamal Soda"
-	desc = "A bottle of Hro'zamal Soda. Made with Hro'zamal Ras'Nifs powder and bottled in the People's Republic of Adhomai."
-	desc_extended = "Hro'zamal Soda is a soft drink made from the seed's powder of a plant native to Hro'zamal, the sole Hadiist colony. While initially consumed as a herbal tea by the \
-	colonists, it was introduced to Adhomai by the Army Expeditionary Force and transformed into a carbonated drink. The beverage is popular with factory workers and university \
-	students because of its stimulant effect."
-	icon_state = "hrozamal_soda_bottle"
-	empty_icon_state = "soda_empty"
-	center_of_mass = list("x"=16, "y"=5)
-	reagents_to_add = list(/singleton/reagent/drink/hrozamal_soda = 30)
-
 //Small bottles
 /obj/item/reagent_containers/food/drinks/bottle/small
 	name = "small bottle"
@@ -706,15 +685,6 @@
 	icon_state = "alebottle"
 	item_state = "beer"
 	reagents_to_add = list(/singleton/reagent/alcohol/ale = 30)
-
-/obj/item/reagent_containers/food/drinks/bottle/small/midynhr_water
-	name = "midynhr water"
-	desc = "A soft drink made from honey and tree syrup. The label claims it is good as the tap version."
-	icon_state = "midynhrwater"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "A soft drink based on Yve'kha's honey and tree syrups. The drink has a creamy consistency and is served cold from the tap of traditional soda fountains. Native to \
-	Das'nrra, the beverage is now widespread in the Al'mariist territories. Bottled versions exist, but they are considered to be inferior to what is served in bars and restaurants."
-	reagents_to_add = list(/singleton/reagent/drink/midynhr_water = 30)
 
 //aurora's drinks
 
@@ -776,16 +746,6 @@
 	center_of_mass = list("x" = 16,"y" = 6)
 	reagents_to_add = list(/singleton/reagent/alcohol/drambuie = 100)
 
-/obj/item/reagent_containers/food/drinks/bottle/messa_mead
-	name = "messa's mead"
-	desc = "A bottle of Messa's mead. Bottled somewhere in the icy world of Adhomai."
-	icon_state = "messa_mead"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "A fermented alcoholic drink made from earthen-root juice and Messa's tears leaves. It has a relatively low alcohol content and characteristic honey flavor. \
-	Messa's Mead is one of the most popular alcoholic drinks on Adhomai; it is consumed both during celebrations and daily meals. Any proper Adhomian bar will have at least a keg or \
-	some bottles of the mead."
-	reagents_to_add = list(/singleton/reagent/alcohol/messa_mead = 100)
-
 /obj/item/reagent_containers/food/drinks/bottle/sake
 	name = "Shokyodo Sake"
 	desc = "A rice-based alcohol produced and marketed by Nojosuru Foods. While frequently described as rice wine, its production shares more in common with beer."
@@ -827,64 +787,6 @@
 	center_of_mass = list("x"=16, "y"=5)
 	reagents_to_add = list(/singleton/reagent/alcohol/makgeolli = 100)
 
-/obj/item/reagent_containers/food/drinks/bottle/small/khlibnyz
-	name = "khlibnyz"
-	desc = "A bottle traditionally made khlibnyz. Likely prepared in some Hadiist communal farm."
-	icon_state = "khlibnyz"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "A fermented beverage produced from Adhomian bread. Herbs, fruits, and tree sap can be added for flavoring. It is considered a non-alcoholic drink by Adhomian standards \
-	because of its very low alcohol content. Khlibnyz was mainly consumed by peasants during pre-contact times and is still very popular with the Hadiist rural population. Communal farms \
-	will brew their own Khlibnyz and sell it to the government for distribution."
-	reagents_to_add = list(/singleton/reagent/alcohol/khlibnyz = 30)
-
-/obj/item/reagent_containers/food/drinks/bottle/shyyrkirrtyr_wine
-	name = "shyyr kirr'tyr wine"
-	desc = "Tajaran spirit infused with some eel-like Adhomian creature. The animal floating in the liquid appears to be well preserved."
-	icon_state = "shyyrkirrtyrwine"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "An alcoholic made by infusing a whole Shyyr Kirr'tyr in Dirt Berries or Earthen-Root spirit. The Water Snake Devil's poison is neutralized by ethanol, making the \
-	beverage safe to consume. The wine can be deadly if improperly prepared. The drink is native to the Southeast Harr'masir wetlands, where it is as common as Messa's Mead. Other \
-	Tajara consider the wine to be exotic or outright disgusting. The Shyyr Kirr'tyr is usually eaten after the beverage is imbibed."
-	reagents_to_add = list(/singleton/reagent/alcohol/shyyrkirrtyr_wine = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/sugartree_liquor
-	name = "sugar tree liquor"
-	desc = "Also called nm'shaan liquor in native Siik'maas: a strong Adhomian liquor reserved for special occasions. A label on the bottle recommends diluting it with icy water before drinking."
-	icon_state = "sugartreeliquor"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "An alcoholic drink manufactured from the fruit of the Nm'shaan plant. It usually has a high level of alcohol by volume. Nm'shaan liquor was once reserved for the \
-	consumption of the nobility; even today it is considered a decadent drink reserved for fancy occasions."
-	reagents_to_add = list(/singleton/reagent/alcohol/sugartree_liquor = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/veterans_choice
-	name = "veteran's choice"
-	desc = "A home-made bottle of veteran's choice. Shake it carefully before serving."
-	icon_state = "veteranschoice"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "A cocktail consisting of Messa's Mead and gunpowder. Supposedly originated among the ranks of the Liberation Army as an attempt to spice up the mead, the cocktail \
-	became a hit - not because of its taste - with the young Tajara. Drinking the Veteran's Choice is seen as a way to display one's bravado. ALA soldiers are known to consume the cocktail before going into battle believing that it brings luck."
-	reagents_to_add = list(/singleton/reagent/alcohol/veterans_choice = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/treebark_firewater
-	name = "tree-bark firewater"
-	desc = "A jug full of adhomian moonshine. The bottle states dubiously that it is a handmade recipe."
-	icon_state = "treebarkfirewater"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "High-content alcohol distilled from Earthen-Root or Blizzard Ears. Tree bark is commonly added to the drink to give it a distinct flavor. The firewater's origins can \
-	be traced back to the pre-contact times where impoverished peasants would make alcohol out of anything they could find. Homebrewing remains a tradition in the New Kingdom's rural \
-	parts. These traditional spirits are also manufactured by large breweries and sold to the urban population as handcrafted."
-	reagents_to_add = list(/singleton/reagent/alcohol/treebark_firewater = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/darmadhir_brew
-	name = "Darmadhir Brew"
-	desc = "A fancy bottle contained sought-after Darmadhir's nm'shaan liquor. It is more of a collection piece than a beverage."
-	icon_state = "darmadhirbrew"
-	center_of_mass = list("x" = 16,"y" = 5)
-	desc_extended = "A famous variation of the Nm'shaan Liquor; it is described as one of Adhomai's finest spirits. It is produced solely by a small family-owned brewery in Miran'mir. Its \
-	recipe is a secret passed down through the generations of the Darmadhir household since immemorial times. The only living member of the family, Hazyr Darmadhir, is a 68 years old \
-	Tajara. His sole heir and son died in the Second Revolution after being drafted to fight for the royal army. Alcohol collectors stipulate that the brew's price will skyrocket after Hazyr's death."
-	reagents_to_add = list(/singleton/reagent/alcohol/sugartree_liquor/darmadhirbrew = 100)
-
 /obj/item/reagent_containers/food/drinks/bottle/pulque
 	name = "Don Augusto's pulque"
 	desc = "A glass bottle of Mictlanian pulque. The label states that it is still produced by hand."
@@ -909,28 +811,6 @@
 	name = pick("Triesto Pre-Dimming Sangiovese", "New Beirut 2340", "Vysokan Artisans Merlot", "Silver Seas Original Merlot", "Domelkos Morozian Treasure", "Belle Cote Serene Moth 2395",
 			"Malta Sol Nebbiolo", "Ashkhaimi Gardens Shiraz", "Old Cairo 2375", "Artisan Empire 2354")
 
-/obj/item/reagent_containers/food/drinks/bottle/dominian_wine
-	name = "Jadrani Consecrated geneboosted wine"
-	desc = "A bottle of artisanally-crafted, highly sought-after Dominian red wine. Sanctified and exported via House Caladius."
-	desc_extended = "The Dominian mastery of the genome does not stop with the mere human; flora and fauna, too, can be adjusted to better serve the needs of the Empire and Her chosen people. This \
-	wine- the exact fruit juices used are a coveted secret- represents the Goddess in the Aspect of both the Artisan and the Scholar. Each bottle is inspected, tested, and blessed by a Priestess \
-	of the Moroz Holy Tribunal, then packaged and sold across the Empire and various- typically wealthy- foreign markets. The first hundred bottles of every season are given to the Goddess, as thanks for Her providence. \
-	The next thousand or so are sent directly to the Royal Family, as a favored gift to the royal court and their functionaries."
-	icon_state = "sacredwine"
-	center_of_mass = list("x"=16, "y"=5)
-	reagents_to_add = list(/singleton/reagent/alcohol/wine/dominian = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/algae_wine
-	name = "Reacher's Triumph 2423"
-	desc = "A bottle of wine, brewed from algae, made in the traditional style of the Imperial Viceroyalty of Sun Reach, a Dominian frontier-world."
-	desc_extended = "A swampy, humid planet, Sun Reach does not possess ample amounts of land available for agriculture, least of all for hops or wine grapes. Still, where exists a will exists a way, and the \
-	Goddess truly blessed Her faithful with more than enough of both. Produced from certain strains of the omnipresent Reacher algae, with the aid of benefactors in House Caladius, the result is a murky-blue \
-	drink that tastes almost, but entirely not like an absinthe. First presented at the first celebration of the Imperial Annexation, it is now mainly consumed on-world, though large sums are purchased by the \
-	Imperial Fleet as a 'morale improvement' measure. It plays a key part in the after-action rituals of the Imperial Armsmen, as the drink causes bizarre dreams said to bring one closer to the Goddess."
-	icon_state = "algaewinebottle"
-	center_of_mass = list("x"=16, "y"=5)
-	reagents_to_add = list(/singleton/reagent/alcohol/wine/algae = 100)
-
 /obj/item/reagent_containers/food/drinks/bottle/assunzione_wine
 	name = "\improper Assunzioni Sera Stellata di Dalyan wine"
 	desc = "A bottle of velvety smooth red wine from the underground vineyards of Dalyan, Assunzione. The standard liturgical wine of choice for upper-echelon priests and clergy of Luceism, although drinking it outside of holy celebrations is hardly sacrilegious."
@@ -942,35 +822,6 @@
 	icon_state = "assunzionewine"
 	center_of_mass = list("x"=16, "y"=5)
 	reagents_to_add = list(/singleton/reagent/alcohol/wine/assunzione = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/kvass
-	name = "Neubach Original kvass"
-	desc = "A bottle of authentic Fisanduhian kvass, a cereal alcohol."
-	desc_extended = "A traditional drink of the Fisanduh region, originating with the colony ships that brought their people to Moroz, large-scale production \
-	is now all but a hazy memory, owing to the region's bloodstained history. Today it comes from either a lonely factory in Strelitz's \
-	Rest- an initiative, on behalf of His Imperial Majesty, to bring back jobs for the civilian populace- or home brewing on behalf of locals. This particular variety is, in reality, brewed on \
-	Xanu Prime as an outreach effort of the government-in-exile."
-	icon_state = "kvassbottle"
-	center_of_mass = list("x"=16, "y"=5)
-	reagents_to_add = list(/singleton/reagent/alcohol/kvass = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/tarasun
-	name = "Frostdancer Distillery tarasun"
-	desc = "A bottle of Lyodii tarasun, an alcoholic beverage made from tenelote milk."
-	desc_extended = "Tarasun is an incredibly potent alcoholic beverage distilled and fermented from tenelote milk, often enjoyed during tribal festivities among Lyodii. This particular brand is \
-	distilled and distributed by the Frostdancer tribe of the Northern Lyod, with assistance by Zavodskoi Interstellar. Commonly distributed among the Lyodic Rifles of the Imperial military."
-	icon_state = "tarasunbottle"
-	center_of_mass = list("x"=16, "y"=5)
-	reagents_to_add = list(/singleton/reagent/alcohol/tarasun = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/valokki_wine
-	name = "Frostdancer Distillery valokki wine"
-	desc = "A bottle of wine distilled from the Morozi cloudberry."
-	desc_extended = "A smooth, rich wine distilled from the cloudberry fruit found within the taiga bordering the Lyod. \
-	This particular brand is distilled and distributed by the Frostdancer tribe of the Northern Lyod, with assistance by Zavodskoi Interstellar."
-	icon_state = "valokkiwinebottle"
-	center_of_mass = list("x"=16, "y"=5)
-	reagents_to_add = list(/singleton/reagent/alcohol/wine/valokki = 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/twentytwoseventyfive
 	name = "2275 Classic"
@@ -1037,23 +888,6 @@
 	icon_state = "burukutu"
 	reagents_to_add = list(/singleton/reagent/alcohol/burukutu = 30)
 
-// Butanol-based alcoholic drinks
-//=====================================
-//These are mainly for unathi, and have very little (but still some) effect on other species
-
-/obj/item/reagent_containers/food/drinks/bottle/small/xuizijuice
-	name = "Xuizi Juice"
-	desc = "Blended flower buds from the Xuizi cactus. It smells faintly of vanilla. Bottled by the Arizi Guild for over 200 years."
-	icon_state = "xuizibottle"
-	center_of_mass = list("x"=16, "y"=8)
-	reagents_to_add = list(/singleton/reagent/alcohol/butanol/xuizijuice = 30)
-
-/obj/item/reagent_containers/food/drinks/bottle/sarezhiwine
-	name = "Sarezhi Wine"
-	desc = "A premium Moghean wine made from Sareszhi berries. Bottled by the Arizi Guild for over 200 years."
-	icon_state = "sarezhibottle"
-	center_of_mass = list("x" = 16,"y" = 6)
-	reagents_to_add = list(/singleton/reagent/alcohol/butanol/sarezhiwine = 100)
 
 // Synnono Meme (Bottled) Drinks
 //======================================
@@ -1072,45 +906,3 @@
 	icon_state = "whitewinebottle"
 	center_of_mass = list("x"=16, "y"=4)
 	reagents_to_add = list(/singleton/reagent/alcohol/whitewine = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/small/skrellbeerdyn
-	name = "Qel'Zvol Hospitality's Prestige beer"
-	desc = "This beer is made from fermented dyn leaves and mixed with various spices to give it a palatable flavour."
-	desc_extended = "Due to Skrell biology alcohol has a more noticeable effect compared to humans, resulting in alcoholic drinks in the Federation being very light. As a result, breweries in the Federation focus more on flavour profiles than being strong, and mixed drinks that combine flavours or textures are extremely popular."
-	icon_state = "skrellbeerdyn"
-	amount_per_transfer_from_this = 2
-	center_of_mass = list("x"=16, "y"=8)
-
-	reagents_to_add = list(/singleton/reagent/alcohol/small/skrellbeerdyn = 30)
-
-/obj/item/reagent_containers/food/drinks/bottle/skrellwineylpha
-	name = "Federation's Finest ylpha wine"
-	desc = "A popular type of Skrell wine made from fermented ylpha berries. It's quite sweet and is usually consumed along with more savoury foods, or it can be served iced as an after-dinner digestif."
-	desc_extended = "Due to Skrell biology alcohol has a more noticeable effect compared to humans, resulting in alcoholic drinks in the Federation being very light. As a result, breweries in the Federation focus more on flavour profiles than being strong, and mixed drinks that combine flavours or textures are extremely popular."
-	icon_state = "skrellwineylpha"
-	center_of_mass = list("x"=16, "y"=8)
-
-	reagents_to_add = list(/singleton/reagent/alcohol/bottle/skrellwineylpha = 100)
-
-/obj/item/reagent_containers/food/drinks/bottle/nemiik
-	name = "vrozka farms ne'miik"
-	desc = "A bottle of Ne'miik under the label 'Vrozka Farms' from Caprice. It has labels in Basic boasting 'rich in minerals!' and warning that 'consumption by Humans or Tajara may cause negative effects', whatever that means."
-	icon_state = "vrozka_nemiik"
-	center_of_mass = list("x"=16, "y"=11)
-	reagents_to_add = list(/singleton/reagent/drink/milk/nemiik = 80)
-	empty_icon_state = "vrozka_empty"
-
-// Vaurca alcoholic drinks
-//=====================================
-
-/obj/item/reagent_containers/food/drinks/bottle/skyemok
-	name = "bottle of Skye'mok"
-	desc = "Traditional Sedantian drink. Looks like it's inside a pulsating stomach."
-	desc_extended = "A traditional Sedantian brew crafted from a special fungus fed to V'krexi, this unique beverage ferments in the swollen stomachs of these creatures. It is served traditionally on the head of the V'krexi it was prepared in."
-	icon_state = "skyemok"
-	empty_icon_state = "skyemok_empty"
-	drop_sound = 'sound/items/drop/flesh.ogg'
-	pickup_sound = 'sound/items/pickup/flesh.ogg'
-	center_of_mass = list("x"=16, "y"=11)
-	reagents_to_add = list(/singleton/reagent/drink/toothpaste/skyemok= 80)
-

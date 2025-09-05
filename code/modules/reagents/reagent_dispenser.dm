@@ -379,23 +379,11 @@
 	icon_state = "keg_rice"
 	reagents_to_add = list(/singleton/reagent/alcohol/rice_beer = 1000)
 
-/obj/structure/reagent_dispensers/keg/xuizikeg
-	name = "xuizi juice keg"
-	desc = "A keg full of Xuizi juice, blended flower buds from the Moghean Xuizi cactus. The export stamp of the Arizi Guild is imprinted on the side."
-	icon_state = "keg_xuizi"
-	reagents_to_add = list(/singleton/reagent/alcohol/butanol/xuizijuice = 1000)
-
 /obj/structure/reagent_dispensers/keg/kvass
 	name = "\improper Dorshafen kvass keg"
 	desc = "A keg full of Dorshafen Deluxe kvass, a fermented non-alcoholic mushroom drink. It is a common sight across workers homes in Himeo, and even abroad."
 	icon_state = "keg_kvass"
 	reagents_to_add = list(/singleton/reagent/drink/mushroom_kvass = 1000)
-
-/obj/structure/reagent_dispensers/keg/mead
-	name = "mead barrel"
-	desc = "A wooden mead barrel."
-	icon_state = "woodkeg"
-	reagents_to_add = list(/singleton/reagent/alcohol/messa_mead = 1000)
 
 /obj/structure/reagent_dispensers/keg/sake
 	name = "sake barrel"

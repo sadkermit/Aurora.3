@@ -78,13 +78,9 @@
 		/singleton/reagent/drink/tea/coco_chaitea,
 		/singleton/reagent/drink/tea/chaitealatte,
 		/singleton/reagent/drink/tea/bureacratea,
-		/singleton/reagent/drink/tea/desert_tea,
 		/singleton/reagent/drink/tea/hakhma_tea,
 		/singleton/reagent/drink/tea/portsvilleminttea,
-		/singleton/reagent/drink/meatshake,
-		/singleton/reagent/alcohol/butanol/sandgria,
-		/singleton/reagent/alcohol/butanol/cactuscola,
-		/singleton/reagent/alcohol/butanol/trizkizki_tea)
+		/singleton/reagent/drink/meatshake)
 
 	var/singleton/reagent/reagent_type = pick(possible_reagents)
 	wanted_reagent = new reagent_type
@@ -114,14 +110,7 @@
 		/singleton/reagent/alcohol/singulo,
 		/singleton/reagent/alcohol/patron,
 		/singleton/reagent/alcohol/silencer,
-		/singleton/reagent/alcohol/cbsc,
-		/singleton/reagent/alcohol/rixulin_sundae,
-		/singleton/reagent/drink/xrim,
-		/singleton/reagent/drink/tea/securitea,
-		/singleton/reagent/drink/toothpaste/sedantian_firestorm,
-		/singleton/reagent/alcohol/butanol/wastelandheat,
-		/singleton/reagent/alcohol/butanol/contactwine,
-		/singleton/reagent/alcohol/butanol/crocodile_booze)
+		/singleton/reagent/drink/tea/securitea,)
 
 	var/reagent_type = pick(possible_reagents)
 	wanted_reagent = new reagent_type

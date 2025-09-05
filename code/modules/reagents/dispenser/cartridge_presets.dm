@@ -143,9 +143,6 @@
 /obj/item/reagent_containers/chem_disp_cartridge/brownstar
 	spawn_reagent = /singleton/reagent/drink/brownstar
 
-/obj/item/reagent_containers/chem_disp_cartridge/clean_kois
-	spawn_reagent = /singleton/reagent/kois/clean
-
 /obj/item/reagent_containers/chem_disp_cartridge/cola
 	spawn_reagent = /singleton/reagent/drink/space_cola
 
@@ -210,9 +207,6 @@
 
 /obj/item/reagent_containers/chem_disp_cartridge/espresso
 	spawn_reagent = /singleton/reagent/drink/coffee/espresso
-
-/obj/item/reagent_containers/chem_disp_cartridge/fatshouter_milk
-	spawn_reagent = /singleton/reagent/drink/milk/adhomai
 
 /obj/item/reagent_containers/chem_disp_cartridge/greentea
 	spawn_reagent = /singleton/reagent/drink/tea/greentea

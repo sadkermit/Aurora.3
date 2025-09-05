@@ -493,11 +493,9 @@
 		/obj/item/reagent_containers/food/condiment/syrup_raspberry = 0.3,
 		/obj/item/reagent_containers/food/condiment/syrup_blueberry = 0.3,
 		/obj/item/reagent_containers/food/condiment/syrup_blue_raspberry = 0.3,
-		/obj/item/reagent_containers/food/condiment/syrup_ylphaberry = 0.3,
 		/obj/item/reagent_containers/food/condiment/syrup_caramel = 0.5,
 		/obj/item/reagent_containers/food/condiment/syrup_pumpkin = 0.3,
-		/obj/item/reagent_containers/food/condiment/syrup_vanilla = 0.5,
-		/obj/item/reagent_containers/food/condiment/syrup_dirtberry = 0.3
+		/obj/item/reagent_containers/food/condiment/syrup_vanilla = 0.5
 	)
 
 /obj/random/condiment

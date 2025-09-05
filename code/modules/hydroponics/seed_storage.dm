@@ -343,7 +343,6 @@
 /obj/machinery/seed_storage/garden/hydroponics/Initialize()
 	starting_seeds = src.starting_seeds.Copy() + list(
 		/obj/item/seeds/libertymycelium = 2,
-		/obj/item/seeds/koisspore = 3,
 		/obj/item/seeds/glowshroom = 2,
 		/obj/item/seeds/nettleseed = 2
 	)
@@ -359,7 +358,6 @@
 	starting_seeds = src.starting_seeds.Copy() + list(
 		/obj/item/seeds/libertymycelium = 2,
 		/obj/item/seeds/cocaseed = 3,
-		/obj/item/seeds/koisspore = 3,
 		/obj/item/seeds/amanitamycelium = 2,
 		/obj/item/seeds/glowshroom = 2,
 		/obj/item/seeds/nettleseed = 2

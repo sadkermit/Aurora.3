@@ -178,10 +178,8 @@
 		/obj/item/reagent_containers/food/drinks/bottle/bitters,
 		/obj/item/reagent_containers/food/drinks/bottle/champagne,
 		/obj/item/reagent_containers/food/drinks/bottle/mintsyrup,
-		/obj/item/reagent_containers/food/drinks/bottle/sarezhiwine,
 		/obj/item/reagent_containers/food/drinks/bottle/small/beer,
-		/obj/item/reagent_containers/food/drinks/bottle/small/ale,
-		/obj/item/reagent_containers/food/drinks/bottle/small/xuizijuice
+		/obj/item/reagent_containers/food/drinks/bottle/small/ale
 	)
 
 /obj/random/keg
@@ -191,8 +189,6 @@
 	spawnlist = list(
 		/obj/structure/reagent_dispensers/keg/beerkeg = 2,
 		/obj/structure/reagent_dispensers/keg/beerkeg/rice = 0.5,
-		/obj/structure/reagent_dispensers/keg/xuizikeg =  0.5,
-		/obj/structure/reagent_dispensers/keg/mead = 0.5,
 		/obj/structure/reagent_dispensers/keg/sake = 0.5
 	)
 

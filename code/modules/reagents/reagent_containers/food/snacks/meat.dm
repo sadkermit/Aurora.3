@@ -198,12 +198,6 @@
 	reagents_to_add = list(/singleton/reagent/nutriment/protein = 5, /singleton/reagent/nutriment/triglyceride = 2)
 	bitesize = 1.5
 
-/obj/item/reagent_containers/food/snacks/meat/dionanymph
-	name = "diona nymph meat"
-	desc = "A slab of weird green meat."
-	icon_state = "plantmeat"
-	reagents_to_add = list(/singleton/reagent/diona_powder = 10)
-
 /obj/item/reagent_containers/food/snacks/meat/vannatusk
 	desc = "A slab of weird blue meat."
 	icon_state = "vannameat"

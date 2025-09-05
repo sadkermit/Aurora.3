@@ -113,8 +113,7 @@
 			/obj/item/reagent_containers/food/drinks/cans/melon_soda,
 			/obj/item/reagent_containers/food/drinks/cans/himeokvass,
 			/obj/item/reagent_containers/food/drinks/cans/xanuchai,
-			/obj/item/reagent_containers/food/drinks/cans/beetle_milk,
-			/obj/item/reagent_containers/food/drinks/cans/threetowns
+			/obj/item/reagent_containers/food/drinks/cans/beetle_milk
 		)
 
 		var/path = pick(soda_options)
@@ -219,33 +218,10 @@
 /obj/item/storage/box/fancy/yoke/whistlingforest
 	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/beer/whistlingforest = 6)
 
-/obj/item/storage/box/fancy/yoke/threetowns
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/threetowns = 6)
 
 // Energy drinks
 /obj/item/storage/box/fancy/yoke/energy
 	icon_state = "yoke_energy" //energy drinks are 2 pixels taller
-
-/obj/item/storage/box/fancy/yoke/energy/zoracherry
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/cherry = 6)
-
-/obj/item/storage/box/fancy/yoke/energy/zoraphoron
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/phoron = 6)
-
-/obj/item/storage/box/fancy/yoke/energy/zoraklax
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/klax = 6)
-
-/obj/item/storage/box/fancy/yoke/energy/zoracthur
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/cthur = 6)
-
-/obj/item/storage/box/fancy/yoke/energy/zoravenom
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/venomgrass = 6)
-
-/obj/item/storage/box/fancy/yoke/energy/zorahozm
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/hozm = 6)
-
-/obj/item/storage/box/fancy/yoke/energy/zorakois
-	starts_with = list(/obj/item/reagent_containers/food/drinks/cans/zorasoda/kois = 6)
 
 /obj/item/storage/box/fancy/yoke/energy/random
 	starts_with = list()
@@ -253,13 +229,7 @@
 /obj/item/storage/box/fancy/yoke/energy/random/fill()
 	for(var/i = 1 to 6)
 		var/list/energy_options = list(
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/cherry,
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/phoron,
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/klax,
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/cthur,
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/venomgrass,
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/hozm,
-			/obj/item/reagent_containers/food/drinks/cans/zorasoda/kois
+			/obj/item/reagent_containers/food/drinks/cans/thirteenloko
 		)
 		var/path = pick(energy_options)
 		if(starts_with[path])

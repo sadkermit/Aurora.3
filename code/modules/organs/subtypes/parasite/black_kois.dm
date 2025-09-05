@@ -16,8 +16,6 @@
 
 	origin_tech = list(TECH_BIO = 7)
 
-	egg = /singleton/reagent/kois/black
-
 /obj/item/organ/internal/parasite/blackkois/process()
 	..()
 
@@ -41,7 +39,6 @@
 				to_chat(owner, SPAN_WARNING("You feel something squirming inside of you!"))
 			else
 				to_chat(owner, SPAN_GOOD("You feel it, within you. Its presence soothes, a constant companion. There is no need to resist. We are with you. We will not abandon you."))
-			owner.reagents.add_reagent(/singleton/reagent/kois/black, 4)
 
 		else if(prob(5))
 			if(stage < 4)
@@ -96,7 +93,6 @@
 			var/turf/T = get_turf(owner)
 
 			var/datum/reagents/R = new/datum/reagents(20)
-			R.add_reagent(/singleton/reagent/kois/black,5)
 			var/datum/effect/effect/system/smoke_spread/chem/spores/S = new("blackkois")
 
 			S.attach(T)

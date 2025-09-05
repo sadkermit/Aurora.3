@@ -442,20 +442,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/zorasodaresupplycanister
-	category = "operations"
-	name = "zora soda resupply canister"
-	supplier = "zora"
-	description = "A vending machine restock cart."
-	price = 1255
-	items = list(
-		/obj/item/device/vending_refill/zora
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/toolsresupplycanister
 	category = "operations"
 	name = "tools resupply canister"

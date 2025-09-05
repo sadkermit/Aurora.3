@@ -16,7 +16,6 @@
 		/obj/item/device/vending_refill/coffee = 2,
 		/obj/item/device/vending_refill/snack = 2,
 		/obj/item/device/vending_refill/cola = 2,
-		/obj/item/device/vending_refill/zora = 2,
 		/obj/item/device/vending_refill/frontiervend = 2,
 		/obj/item/device/vending_refill/smokes = 2,
 		/obj/item/device/vending_refill/meds = 2,

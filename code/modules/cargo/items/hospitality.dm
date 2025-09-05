@@ -502,20 +502,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/fatshouters
-	category = "hospitality"
-	name = "fatshouters milk carton"
-	supplier = "getmore"
-	description = "Fatty fatshouters milk in a carton."
-	price = 8.50
-	items = list(
-		/obj/item/reagent_containers/food/drinks/carton/fatshouters
-	)
-	access = 0
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/orangejuice
 	category = "hospitality"
 	name = "orange juice carton"
@@ -580,20 +566,6 @@
 	price = 4
 	items = list(
 		/obj/item/reagent_containers/food/drinks/carton/lemonjuice
-	)
-	access = 0
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/dynjuice
-	category = "hospitality"
-	name = "dyn juice carton"
-	supplier = "getmore"
-	description = "Juice from a Skrell medicinal herb. It's supposed to be diluted."
-	price = 4
-	items = list(
-		/obj/item/reagent_containers/food/drinks/carton/dynjuice
 	)
 	access = 0
 	container_type = "freezer"
@@ -697,20 +669,6 @@
 	price = 45
 	items = list(
 		/obj/item/reagent_containers/food/drinks/bottle/patron
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/sarezhiwine
-	category = "hospitality"
-	name = "Sarezhi Wine"
-	supplier = "arizi"
-	description = "A premium Moghean wine made from Sareszhi berries. Bottled by the Arizi Guild for over 200 years."
-	price = 35
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/sarezhiwine
 	)
 	access = 0
 	container_type = "crate"
@@ -828,20 +786,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/xuizijuicekeg
-	category = "hospitality"
-	name = "xuizi juice keg"
-	supplier = "virgo"
-	description = "A keg full of Xuizi juice, blended flower buds from the Moghean Xuizi cactus. The export stamp of the Arizi Guild is imprinted on the side."
-	price = 80
-	items = list(
-		/obj/structure/reagent_dispensers/keg/xuizikeg
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/beerkeg
 	category = "hospitality"
 	name = "beer keg"
@@ -850,20 +794,6 @@
 	price = 220
 	items = list(
 		/obj/structure/reagent_dispensers/keg/beerkeg
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/meadbarrel
-	category = "hospitality"
-	name = "mead barrel"
-	supplier = "virgo"
-	description = "A wooden mead barrel."
-	price = 300
-	items = list(
-		/obj/structure/reagent_dispensers/keg/mead
 	)
 	access = 0
 	container_type = "crate"
@@ -1208,45 +1138,6 @@
 	container_type = "crate"
 	groupable = TRUE
 
-/singleton/cargo_item/skrellbeerdyn
-	category = "hospitality"
-	name = "Qel'Zvol Hospitality's Prestige Dyn Beer (x6)"
-	supplier = "getmore"
-	description = "A half-dozen pack of Qel'Zvol Hospitality's Prestige dyn beers, for cracking open a cold one."
-	price = 21
-	items = list(
-		/obj/item/storage/box/skrellbeerdyn
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-
-/singleton/cargo_item/xuizijuice
-	category = "hospitality"
-	name = "Xuizi Juice (x6)"
-	supplier = "getmore"
-	description = "A half-dozen pack of Xuiji Juice, for cracking open a cold one."
-	price = 14
-	items = list(
-		/obj/item/storage/box/xuizijuice
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-
-/singleton/cargo_item/khlibnyz
-	category = "hospitality"
-	name = "Khlibnyz (x6)"
-	supplier = "getmore"
-	description = "A half-dozen pack of Khlibnyz, for cracking open a cold one."
-	price = 12
-	items = list(
-		/obj/item/storage/box/khlibnyz
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-
 /singleton/cargo_item/cola_bottle
 	category = "hospitality"
 	name = "Comet Cola Bottles (x6)"
@@ -1281,32 +1172,6 @@
 	price = 8
 	items = list(
 		/obj/item/storage/box/space_up
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-
-/singleton/cargo_item/hrozamal_soda
-	category = "hospitality"
-	name = "Hrozamal Soda (x6)"
-	supplier = "getmore"
-	description = "A half-dozen pack of Hrozamal Soda, for cracking open a cold one."
-	price = 12
-	items = list(
-		/obj/item/storage/box/hrozamal_soda
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-
-/singleton/cargo_item/midynhr_water
-	category = "hospitality"
-	name = "Midynhr Water (x6)"
-	supplier = "getmore"
-	description = "A half-dozen pack of Midynhr Water, for cracking open a cold one."
-	price = 18
-	items = list(
-		/obj/item/storage/box/midynhr_water
 	)
 	access = 0
 	container_type = "crate"
@@ -1364,47 +1229,6 @@
 	container_type = "crate"
 	groupable = TRUE
 
-/singleton/cargo_item/vkrexi_organ
-	category = "hospitality"
-	name = "V'krexi Swollen Organ"
-	supplier = "getmore"
-	description = "A traditional Sedantian alcoholic drink, packaged in the stomach it's fermented in."
-	price = 50
-	items = list(
-		/obj/item/storage/box/fancy/vkrexi_swollen_organ
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-
-/singleton/cargo_item/dominian_wine
-	category = "hospitality"
-	name = "Jadrani Consecrated Geneboosted Wine"
-	supplier = "getmore"
-	description = "A bottle of artisanally-crafted, highly sought-after Dominian red wine. Sanctified and exported via House Caladius."
-	price = 50
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/dominian_wine
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/algae_wine
-	category = "hospitality"
-	name = "Reacher's Triumph 2423 Algae Wine"
-	supplier = "getmore"
-	description = "A bottle of wine, brewed from algae, made in the traditional style of the Imperial Viceroyalty of Sun Reach, a Dominian frontier-world."
-	price = 50
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/algae_wine
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/assunzione_wine
 	category = "hospitality"
 	name = "\improper Assunzioni Sera Stellata di Dalyan Wine"
@@ -1419,20 +1243,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/skrellwineylpha
-	category = "hospitality"
-	name = "Federation's Finest Ylpha Wine"
-	supplier = "getmore"
-	description = "A popular type of Skrell wine made from fermented ylpha berries."
-	price = 30
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/skrellwineylpha
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/mushroomvodka
 	category = "hospitality"
 	name = "Inverkeithing Import Mushroom Vodka"
@@ -1441,90 +1251,6 @@
 	price = 35
 	items = list(
 		/obj/item/reagent_containers/food/drinks/bottle/vodka/mushroom
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/victorygin
-	category = "hospitality"
-	name = "Victory Gin"
-	supplier = "getmore"
-	description = "A Tajaran gin considered to be the official drink of the People's Republic of Adhomai."
-	price = 25
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/victorygin
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/sugartree_liquor
-	category = "hospitality"
-	name = "Sugar Tree Liquor"
-	supplier = "getmore"
-	description = "Called Nm'shaan Liquor in native Siik'maas, this strong Adhomian liquor is reserved for special occasions. A label on the bottle recommends diluting it with icy water before drinking."
-	price = 35
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/sugartree_liquor
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/messa_mead
-	category = "hospitality"
-	name = "messa's mead"
-	supplier = "getmore"
-	description = "A bottle of Messa's mead. Bottled somewhere in the icy world of Adhomai."
-	price = 30
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/messa_mead
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/kvass
-	category = "hospitality"
-	name = "Neubach Original Kvass"
-	supplier = "getmore"
-	description = "A bottle of authentic Fisanduhian kvass, a cereal alcohol."
-	price = 20
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/kvass
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/tarasun
-	category = "hospitality"
-	name = "Frostdancer Distillery Tarasun"
-	supplier = "getmore"
-	description = "A bottle of Lyodii tarasun, an alcoholic beverage made from tenelote milk."
-	price = 25
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/tarasun
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/valokki_wine
-	category = "hospitality"
-	name = "Frostdancer Distillery Valokki Wine"
-	supplier = "getmore"
-	description = "A bottle of wine distilled from the Morozi cloudberry."
-	price = 42
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/valokki_wine
 	)
 	access = 0
 	container_type = "crate"
@@ -1553,20 +1279,6 @@
 	price = 40
 	items = list(
 		/obj/item/reagent_containers/food/drinks/bottle/saintjacques
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/nemiik
-	category = "hospitality"
-	name = "Vrozka Farms Ne'miik"
-	supplier = "getmore"
-	description = "A bottle of Ne'miik under the label 'Vrozka Farms' from Caprice. The Vaurcan analogue for milk."
-	price = 12
-	items = list(
-		/obj/item/reagent_containers/food/drinks/bottle/nemiik
 	)
 	access = 0
 	container_type = "crate"

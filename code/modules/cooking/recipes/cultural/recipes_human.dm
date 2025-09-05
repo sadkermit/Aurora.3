@@ -290,7 +290,7 @@
 
 /singleton/recipe/pozole
 	appliance = SAUCEPAN | POT
-	fruit = list("dyn leaf" = 1, "cabbage" = 1, "tomato" = 1)
+	fruit = list("corn" = 1, "cabbage" = 1, "tomato" = 1)
 	reagents = list(/singleton/reagent/water = 10)
 	items = list(/obj/item/reagent_containers/food/snacks/meat)
 	result = /obj/item/reagent_containers/food/snacks/soup/pozole

@@ -56,10 +56,6 @@ GLOBAL_LIST_INIT(lunchables_snacks_, list(
 	/obj/item/reagent_containers/food/snacks/maps,
 	/obj/item/reagent_containers/food/snacks/nathisnack,
 	/obj/item/reagent_containers/food/snacks/chocolatebar,
-	/obj/item/reagent_containers/food/drinks/jyalra,
-	/obj/item/reagent_containers/food/drinks/jyalra/cheese,
-	/obj/item/reagent_containers/food/drinks/jyalra/apple,
-	/obj/item/reagent_containers/food/drinks/jyalra/cherry,
 	/obj/item/reagent_containers/food/snacks/riceball,
 	/obj/item/reagent_containers/food/snacks/bananabreadslice/filled,
 	/obj/item/reagent_containers/food/snacks/croissant,
@@ -82,27 +78,12 @@ GLOBAL_LIST_INIT(lunchables_drinks_, list(
 	/obj/item/reagent_containers/food/drinks/cans/peach_soda,
 	/obj/item/reagent_containers/food/drinks/cans/tonic,
 	/obj/item/reagent_containers/food/drinks/cans/sodawater,
-	/obj/item/reagent_containers/food/drinks/cans/adhomai_milk,
 	/obj/item/reagent_containers/food/drinks/cans/beetle_milk,
-	/obj/item/reagent_containers/food/drinks/cans/hrozamal_soda,
-	/obj/item/reagent_containers/food/drinks/bottle/small/midynhr_water,
-	/obj/item/reagent_containers/food/drinks/bottle/small/khlibnyz,
 	/obj/item/reagent_containers/food/drinks/carton/small/milk,
 	/obj/item/reagent_containers/food/drinks/carton/small/milk/choco,
 	/obj/item/reagent_containers/food/drinks/carton/small/milk/strawberry,
 	/obj/item/reagent_containers/food/drinks/cans/melon_soda,
-	/obj/item/reagent_containers/food/drinks/cans/himeokvass,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/cherry,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/phoron,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/klax,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/cthur,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/venomgrass,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/kois,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/mixedberry,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/lemonlime,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/xuizi,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/dyn,
-	/obj/item/reagent_containers/food/drinks/cans/zorasoda/buzz
+	/obj/item/reagent_containers/food/drinks/cans/himeokvass
 ))
 
 GLOBAL_LIST_INIT(lunchables_utensil_, list(
@@ -137,8 +118,7 @@ GLOBAL_LIST_INIT(lunchables_alcohol_reagents_, list(
 	/singleton/reagent/alcohol/neurotoxin,
 	/singleton/reagent/alcohol/pwine,
 	/singleton/reagent/alcohol/threemileisland,
-	/singleton/reagent/alcohol/toxins_special,
-	/singleton/reagent/alcohol/sugartree_liquor/darmadhirbrew
+	/singleton/reagent/alcohol/toxins_special
 ))
 
 /proc/lunchables_lunches()

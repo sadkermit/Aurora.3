@@ -1411,7 +1411,6 @@
 	var/turf/T = get_turf(src)
 
 	var/datum/reagents/R = new/datum/reagents(20)
-	R.add_reagent(/singleton/reagent/kois/black,5)
 	var/datum/effect/effect/system/smoke_spread/chem/spores/S = new("blackkois")
 
 	S.attach(T)

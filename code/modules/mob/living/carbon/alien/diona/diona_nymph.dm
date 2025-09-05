@@ -22,7 +22,6 @@
 	universal_understand = FALSE
 	universal_speak = FALSE
 	holder_type = /obj/item/holder/diona
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/dionanymph
 	meat_amount = 2
 	maxHealth = 50
 	health = 50

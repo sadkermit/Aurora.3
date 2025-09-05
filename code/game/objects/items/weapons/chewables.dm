@@ -155,8 +155,7 @@
 	name = "dyn chewing tobacco"
 	desc = "A chewy wad of menthol tobacco. Cut in long strands and treated with syrup and menthol so it doesn't taste like an ashtray when you stuff it into your face."
 	reagents_to_add = list(
-		/singleton/reagent/toxin/tobacco/sweet = 1,
-		/singleton/reagent/drink/dynjuice = 1
+		/singleton/reagent/toxin/tobacco/sweet = 1
 	)
 
 /obj/item/clothing/mask/chewable/oracle

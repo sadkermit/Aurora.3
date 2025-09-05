@@ -89,7 +89,6 @@
 			/obj/item/reagent_containers/chem_disp_cartridge/tonic,
 			/obj/item/reagent_containers/chem_disp_cartridge/sodawater,
 			/obj/item/reagent_containers/chem_disp_cartridge/lemon_lime,
-			/obj/item/reagent_containers/chem_disp_cartridge/clean_kois,
 			/obj/item/reagent_containers/chem_disp_cartridge/root_beer
 		)
 
@@ -100,8 +99,7 @@
 			/obj/item/reagent_containers/chem_disp_cartridge/root_beer,
 			/obj/item/reagent_containers/chem_disp_cartridge/tonic,
 			/obj/item/reagent_containers/chem_disp_cartridge/sodawater,
-			/obj/item/reagent_containers/chem_disp_cartridge/lemon_lime,
-			/obj/item/reagent_containers/chem_disp_cartridge/clean_kois,
+			/obj/item/reagent_containers/chem_disp_cartridge/lemon_lime
 		)
 
 /obj/machinery/chemical_dispenser/bar_alc

@@ -436,8 +436,7 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 	desc = "A mentholated cigarette from Nralakk made with processed dyn."
 	reagents_to_add = list(
 		/singleton/reagent/toxin/tobacco/sweet = 5,
-		/singleton/reagent/mental/nicotine = 5,
-		/singleton/reagent/drink/dynjuice = 5
+		/singleton/reagent/mental/nicotine = 5
 	)
 
 /obj/item/clothing/mask/smokable/cigarette/wulu

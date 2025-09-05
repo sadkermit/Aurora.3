@@ -37,11 +37,7 @@
 		/obj/item/reagent_containers/food/snacks/tuna = 2,
 		/obj/item/reagent_containers/food/snacks/ricetub = 2,
 		/obj/item/reagent_containers/food/snacks/riceball = 4,
-		/obj/item/reagent_containers/food/snacks/seaweed = 5,
-		/obj/item/reagent_containers/food/drinks/jyalra = 5,
-		/obj/item/reagent_containers/food/drinks/jyalra/cheese = 5,
-		/obj/item/reagent_containers/food/drinks/jyalra/apple = 5,
-		/obj/item/reagent_containers/food/drinks/jyalra/cherry = 5
+		/obj/item/reagent_containers/food/snacks/seaweed = 5
 	)
 	contraband = list(
 		/obj/item/reagent_containers/food/snacks/syndicake = 6
@@ -73,10 +69,6 @@
 		/obj/item/reagent_containers/food/snacks/ricetub = 4.50,
 		/obj/item/reagent_containers/food/snacks/riceball = 3.00,
 		/obj/item/reagent_containers/food/snacks/seaweed = 2.50,
-		/obj/item/reagent_containers/food/drinks/jyalra = 1.50,
-		/obj/item/reagent_containers/food/drinks/jyalra/cheese = 1.75,
-		/obj/item/reagent_containers/food/drinks/jyalra/apple = 1.75,
-		/obj/item/reagent_containers/food/drinks/jyalra/cherry = 1.75,
 		/obj/item/reagent_containers/food/snacks/syndicake = 3.50
 	)
 	light_color = COLOR_BABY_BLUE
@@ -88,8 +80,7 @@
 		/obj/item/reagent_containers/food/snacks/chips = 1,
 		/obj/item/reagent_containers/food/snacks/sosjerky = 2,
 		/obj/item/reagent_containers/food/snacks/no_raisin = 4,
-		/obj/item/reagent_containers/food/snacks/maps = 1,
-		/obj/item/reagent_containers/food/drinks/jyalra = 1
+		/obj/item/reagent_containers/food/snacks/maps = 1
 	)
 
 /obj/machinery/vending/snack/konyang

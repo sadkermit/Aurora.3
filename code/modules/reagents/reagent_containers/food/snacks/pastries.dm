@@ -101,11 +101,6 @@
 		desc = "A delicious autumn breakfast."
 		icon_state = "pancakes_pumpkin"
 
-	if(reagents.has_reagent(/singleton/reagent/condiment/syrup_ylphaberry))
-		name = "ylpha berry pancakes"
-		desc = "Overwhelmingly sweet with a side of tangy, a delicious way to wake up!"
-		icon_state = "pancakes_ylpha"
-
 	if(reagents.has_any_reagent(list(/singleton/reagent/nutriment/ketchup, /singleton/reagent/nutriment/mayonnaise, /singleton/reagent/antidexafen, /singleton/reagent/carbon))) //Because scrubbers and quirky people exist.
 		name = "ruined pancakes"
 		desc = "Why? Who hurt you?"
@@ -125,11 +120,6 @@
 		name = "blue raspberry pancakes"
 		desc = "Delicious pancakes covered in blue raspberry syrup."
 		icon_state = "pancakes_blue_raspberry"
-
-	if(reagents.has_reagent(/singleton/reagent/condiment/syrup_dirtberry))
-		name = "nifnif pancakes"
-		desc = "Dirtberry pancakes with little bits of roasted nifnif for extra crunch! It may not be traditional adhomian cuisine but it sure is popular there now anyway!"
-		icon_state = "pancakes_nifnif"
 
 /obj/item/reagent_containers/food/snacks/pancakes/berry
 	name = "berry pancakes"
@@ -208,11 +198,6 @@
 		desc = "For that perfect social media breakfast photo on an autumn morning."
 		icon_state = "waffles_lightbrownsauce"
 
-	else if(reagents.has_reagent(/singleton/reagent/condiment/syrup_dirtberry))
-		name = "waffles with dirtberry sauce"
-		desc = "Parrrt of this complete brrreakfast!"
-		icon_state = "waffles_lightbrownsauce"
-
 	else if(reagents.has_reagent(/singleton/reagent/condiment/syrup_blueberry))
 		name = "waffles with blueberry sauce"
 		desc = "You could have had waffles with actual blueberries to maybe get just a little bit of nutrition in there along with the flavor, but no. You chose this."
@@ -226,11 +211,6 @@
 	else if(reagents.has_reagent(/singleton/reagent/condiment/syrup_raspberry))
 		name = "waffles with raspberry sauce"
 		desc = "Glamour waffles."
-		icon_state = "waffles_pinksauce"
-
-	else if(reagents.has_reagent(/singleton/reagent/condiment/syrup_ylphaberry))
-		name = "waffles with ylpha sauce"
-		desc = "How delicious is this? Ylpha-nd out soon enough!" //Hurr hurr
 		icon_state = "waffles_pinksauce"
 
 /obj/item/reagent_containers/food/snacks/soywafers

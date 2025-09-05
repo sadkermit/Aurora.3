@@ -12,8 +12,6 @@
 
 	origin_tech = list(TECH_BIO = 3)
 
-	egg = /singleton/reagent/kois
-
 /obj/item/organ/internal/parasite/kois/process()
 	..()
 
@@ -42,7 +40,6 @@
 		if(prob(10))
 			to_chat(owner, SPAN_WARNING("You feel something squirming inside of you!"))
 			owner.reagents.add_reagent(/singleton/reagent/toxin/phoron, 8)
-			owner.reagents.add_reagent(/singleton/reagent/kois, 5)
 
 	if(stage >= 4)
 		if(prob(10))
@@ -52,7 +49,6 @@
 			var/turf/T = get_turf(owner)
 
 			var/datum/reagents/R = new/datum/reagents(100)
-			R.add_reagent(/singleton/reagent/kois,10)
 			R.add_reagent(/singleton/reagent/toxin/phoron,10)
 			var/datum/effect/effect/system/smoke_spread/chem/spores/S = new("koisspore")
 

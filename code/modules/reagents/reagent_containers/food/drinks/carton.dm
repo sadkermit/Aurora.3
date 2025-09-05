@@ -57,12 +57,6 @@
 	icon_state = "lemonjuice"
 	reagents_to_add = list(/singleton/reagent/drink/lemonjuice = 100)
 
-/obj/item/reagent_containers/food/drinks/carton/dynjuice
-	name = "dyn juice"
-	desc = "Juice from a Skrell medicinal herb. It's supposed to be diluted."
-	icon_state = "dyncarton"
-	reagents_to_add = list(/singleton/reagent/drink/dynjuice = 100)
-
 /obj/item/reagent_containers/food/drinks/carton/applejuice
 	name = "apple juice"
 	desc = "Juice from an apple. Yes."
@@ -80,20 +74,6 @@
 	desc = "Juice from a banana. However that works."
 	icon_state = "bananajuice"
 	reagents_to_add = list(/singleton/reagent/drink/banana = 100)
-
-/obj/item/reagent_containers/food/drinks/carton/fatshouters
-	name = "fatshouters milk carton"
-	desc = "Fatty fatshouters milk in a carton."
-	reagents_to_add = list(/singleton/reagent/drink/milk/adhomai = 100)
-
-/obj/item/reagent_containers/food/drinks/carton/mutthir
-	name = "mutthir carton"
-	icon_state = "mutthir"
-	desc = "A beverage made with Fatshouters' yogurt mixed with Nm'shaan's sugar and sweet herbs."
-	desc_extended = "A beverage made with Fatshouters' yogurt mixed with Nm'shaan's sugar and sweet herbs. Mutthir is usually consumed during meals by both nobles and commoners. \
-	The drink can also be smoked for flavor. Mutthir is believed to have originated from the worldwide appreciated Fatshouters' fermented milk. Rock Nomads living in the Nomadic Host \
-	were quick to adopt the drink to their diet."
-	reagents_to_add = list(/singleton/reagent/drink/milk/adhomai/mutthir = 100)
 
 /obj/item/reagent_containers/food/drinks/carton/eggnog
 	name = "eggnog carton"

@@ -36,7 +36,6 @@
 		/singleton/reagent/wulumunusha = 0.25,
 		/singleton/reagent/nutriment/virusfood = 2,
 		/singleton/reagent/sodiumchloride = 2,
-		/singleton/reagent/drink/zorasoda/venomgrass = 1,
 		/singleton/reagent/nutriment/protein/egg = 2,
 		/singleton/reagent/drugs/serotrotium = 1,
 		/singleton/reagent/drugs/psilocybin = 0.5,

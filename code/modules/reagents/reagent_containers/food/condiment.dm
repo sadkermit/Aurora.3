@@ -83,10 +83,6 @@
 	icon_state = "peppermillsmall"
 	reagents_to_add = list(/singleton/reagent/blackpepper = 20)
 
-/obj/item/reagent_containers/food/condiment/shaker/diona
-	icon_state = "dionaepowder"
-	reagents_to_add = list(/singleton/reagent/diona_powder = 20)
-
 /obj/item/reagent_containers/food/condiment/shaker/spacespice
 	icon_state = "spacespicebottle"
 	volume = 40
@@ -229,12 +225,6 @@
 	name = "blue raspberry syrup"
 	reagents_to_add = list(/singleton/reagent/condiment/syrup_blueberry = 50)
 
-/obj/item/reagent_containers/food/condiment/syrup_ylphaberry
-	icon_state = "syrup_ylpha"
-	fixed_state = TRUE
-	name = "ylpha berry syrup"
-	reagents_to_add = list(/singleton/reagent/condiment/syrup_ylphaberry = 50)
-
 /obj/item/reagent_containers/food/condiment/syrup_caramel
 	icon_state = "syrup_caramel"
 	fixed_state = TRUE
@@ -252,12 +242,6 @@
 	fixed_state = TRUE
 	name = "vanilla syrup"
 	reagents_to_add = list(/singleton/reagent/condiment/syrup_vanilla = 50)
-
-/obj/item/reagent_containers/food/condiment/syrup_dirtberry
-	icon_state = "syrup_dirtberry"
-	fixed_state = TRUE
-	name = "dirtberry syrup"
-	reagents_to_add = list(/singleton/reagent/condiment/syrup_dirtberry = 50)
 
 /obj/item/reagent_containers/food/condiment/gelatin
 	icon_state = "gello"

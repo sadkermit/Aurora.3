@@ -19,7 +19,6 @@
 		/obj/item/reagent_containers/food/drinks/cans/space_mountain_wind = 10,
 		/obj/item/reagent_containers/food/drinks/cans/starkist = 10,
 		/obj/item/reagent_containers/food/drinks/waterbottle = 10,
-		/obj/item/reagent_containers/food/drinks/cans/dyn = 5,
 		/obj/item/reagent_containers/food/drinks/cans/space_up = 10,
 		/obj/item/reagent_containers/food/drinks/cans/iced_tea = 10,
 		/obj/item/reagent_containers/food/drinks/cans/grape_juice = 10,
@@ -32,7 +31,6 @@
 	)
 	contraband = list(
 		/obj/item/reagent_containers/food/drinks/cans/thirteenloko = 5,
-		/obj/item/reagent_containers/food/drinks/cans/koispunch = 3
 	)
 	premium = list(
 		/obj/item/reagent_containers/food/drinks/bottle/cola = 2,
@@ -47,14 +45,11 @@
 		/obj/item/reagent_containers/food/drinks/cans/root_beer = 1.40,
 		/obj/item/reagent_containers/food/drinks/cans/starkist = 1.50,
 		/obj/item/reagent_containers/food/drinks/waterbottle = 1.25,
-		/obj/item/reagent_containers/food/drinks/cans/dyn = 1.80,
 		/obj/item/reagent_containers/food/drinks/cans/space_up = 1.50,
 		/obj/item/reagent_containers/food/drinks/cans/iced_tea = 1.40,
 		/obj/item/reagent_containers/food/drinks/cans/grape_juice = 1.75,
 		/obj/item/reagent_containers/food/drinks/cans/peach_soda = 1.75,
-		/obj/item/reagent_containers/food/drinks/cans/koispunch = 5.00,
 		/obj/item/reagent_containers/food/drinks/cans/beetle_milk = 0.50,
-		/obj/item/reagent_containers/food/drinks/cans/hrozamal_soda = 3.50,
 		/obj/item/reagent_containers/food/drinks/carton/small/milk = 1.80,
 		/obj/item/reagent_containers/food/drinks/carton/small/milk/choco = 1.80,
 		/obj/item/reagent_containers/food/drinks/carton/small/milk/strawberry = 1.80,

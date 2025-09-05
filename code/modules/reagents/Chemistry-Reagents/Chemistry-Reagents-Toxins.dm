@@ -234,17 +234,6 @@
 	if(amount >= 1)
 		for(var/mob/living/carbon/slime/M in T)
 			M.adjustToxLoss(amount*10)
-	if(amount >= 10)
-		for(var/obj/item/reagent_containers/food/snacks/grown/K in T)
-			if((K.plantname == "koisspore" || K.plantname == "blackkois") || (K.name == "kois" || K.name == "black kois"))
-				qdel(K)
-		for(var/obj/machinery/portable_atmospherics/hydroponics/H in T)
-			if(((H.name == "kois" || H.name == "black kois") || H.seed == /datum/seed/koisspore) && !(H.closed_system))
-				H.health = 0 // kill this boi - geeves
-				H.force_update = TRUE // and quick
-				H.process()
-				if(istype(H, /obj/machinery/portable_atmospherics/hydroponics/soil/invisible))
-					qdel(H)
 
 	if(istype(T))
 		var/datum/gas_mixture/environment = T.return_air()

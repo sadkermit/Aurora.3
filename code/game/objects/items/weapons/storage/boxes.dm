@@ -1630,30 +1630,6 @@
 		/obj/item/reagent_containers/food/drinks/bottle/small/beer = 6
 	)
 
-/obj/item/storage/box/skrellbeerdyn
-	name = "pack of dyn beer"
-	desc = "A box containing a six pack of dyn beer."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/skrellbeerdyn = 6
-	)
-
-/obj/item/storage/box/xuizijuice
-	name = "pack of xuizi juice"
-	desc = "A box containing a six pack of xuizi juice."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/xuizijuice = 6
-	)
-
-/obj/item/storage/box/khlibnyz
-	name = "pack of khlibnyz"
-	desc = "A box containing a six pack of khlibnyz."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/khlibnyz = 6
-	)
-
 /obj/item/storage/box/cola
 	name = "pack of cola"
 	desc = "A box containing a six pack of cola."
@@ -1676,22 +1652,6 @@
 	illustration = "soda"
 	starts_with = list(
 		/obj/item/reagent_containers/food/drinks/bottle/space_up = 6
-	)
-
-/obj/item/storage/box/hrozamal_soda
-	name = "pack of hrozamal soda"
-	desc = "A box containing a six pack of hrozamal soda."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/hrozamal_soda = 6
-	)
-
-/obj/item/storage/box/midynhr_water
-	name = "pack of midynhr water"
-	desc = "A box containing a six pack of midynhr water."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/midynhr_water = 6
 	)
 
 /obj/item/storage/box/burukutu

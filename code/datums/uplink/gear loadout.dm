@@ -80,17 +80,6 @@
 	path = /obj/structure/closet/crate/secure/gear_loadout/frontier_cowboys/single
 	telecrystal_cost = 5
 
-/datum/uplink_item/item/gear_loadout/kosmostrelki
-	name = "Kosmostrelki Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits and the hardsuit are only usable by Tajara."
-	path = /obj/structure/closet/crate/secure/gear_loadout/kosmostrelki
-
-/datum/uplink_item/item/gear_loadout/kosmostrelki_single
-	name = "Kosmostrelki Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Tajara."
-	path = /obj/structure/closet/crate/secure/gear_loadout/kosmostrelki/single
-	telecrystal_cost = 10
-
 /datum/uplink_item/item/gear_loadout/legion
 	name = "Tau Ceti Foreign Legion Assets (Group)"
 	desc = "A crate containing gear for a group. The hardsuits are usable by all species except vaurcan bulwarks and breeders."
@@ -111,50 +100,6 @@
 	name = "Einstein Engines Assets (Single)"
 	desc = "A crate containing gear for a single individual. The voidsuit is only usable by humans."
 	path = /obj/structure/closet/crate/gear_loadout/einstein/single
-	telecrystal_cost = 10
-
-/datum/uplink_item/item/gear_loadout/izweski
-	name = "Izweski Hegemony Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits are only usable by Unathi."
-	path = /obj/structure/closet/crate/secure/gear_loadout/hegemony
-
-/datum/uplink_item/item/gear_loadout/izweski_single
-	name = "Izweski Hegemony Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Unathi."
-	path = /obj/structure/closet/crate/secure/gear_loadout/hegemony/single
-	telecrystal_cost = 10
-
-/datum/uplink_item/item/gear_loadout/kataphract
-	name = "Kataphract Knight Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits and hardsuit are only usable by Unathi."
-	path = /obj/structure/closet/crate/secure/gear_loadout/kataphract
-
-/datum/uplink_item/item/gear_loadout/kataphract_single
-	name = "Kataphract Knight Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Unathi."
-	path = /obj/structure/closet/crate/secure/gear_loadout/kataphract/single
-	telecrystal_cost = 10
-
-/datum/uplink_item/item/gear_loadout/unathi_pirate
-	name = "Unathi Pirate Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits are only usable by Unathi."
-	path = /obj/structure/closet/crate/secure/gear_loadout/unathi_pirate
-
-/datum/uplink_item/item/gear_loadout/unathi_pirate_single
-	name = "Unathi Pirate Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Unathi."
-	path = /obj/structure/closet/crate/secure/gear_loadout/unathi_pirate/single
-	telecrystal_cost = 10
-
-/datum/uplink_item/item/gear_loadout/pvsm
-	name = "People's Volunteer Spacer Militia Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits are only usable by Tajara."
-	path = /obj/structure/closet/crate/secure/gear_loadout/pvsm
-
-/datum/uplink_item/item/gear_loadout/pvsm_single
-	name = "People's Volunteer Spacer Militia Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Tajara."
-	path = /obj/structure/closet/crate/secure/gear_loadout/pvsm/single
 	telecrystal_cost = 10
 
 /datum/uplink_item/item/gear_loadout/nanotrasen
@@ -178,17 +123,6 @@
 	name = "Hammertail Smiths Assets (Single)"
 	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Unathi."
 	path = /obj/structure/closet/crate/secure/gear_loadout/hammertail/single
-	telecrystal_cost = 10
-
-/datum/uplink_item/item/gear_loadout/qukala
-	name = "Qukala Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits and hardsuit are only usable by Skrell."
-	path = /obj/structure/closet/crate/gear_loadout/qukala
-
-/datum/uplink_item/item/gear_loadout/qukala_single
-	name = "Qukala Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by Skrell."
-	path = /obj/structure/closet/crate/gear_loadout/qukala/single
 	telecrystal_cost = 10
 
 /datum/uplink_item/item/gear_loadout/imperial_army

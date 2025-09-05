@@ -38,8 +38,6 @@ STOCK_ITEM_RARE(energyshield, 2)
 // It'll come with some screwy electronics, possibly needing reprogramming.
 STOCK_ITEM_RARE(hardsuit, 0.75)
 	var/list/rigs = list(
-		/obj/item/rig/unathi = 2,
-		/obj/item/rig/unathi/fancy = 0.75,
 		/obj/item/rig/combat = 0.1,
 		/obj/item/rig/ert = 0.1,
 		/obj/item/rig/ert/engineer = 0.1,

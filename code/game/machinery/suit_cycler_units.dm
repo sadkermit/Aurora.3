@@ -177,14 +177,6 @@
 	suit = /obj/item/clothing/suit/space/void/dominia/voidsman
 	helmet = /obj/item/clothing/head/helmet/space/void/dominia/voidsman
 
-/obj/machinery/suit_cycler/offship/dpra
-	model_text = "People's Volunteer Spacer Militia"
-	req_access = list(ACCESS_DPRA)
-	departments = list("DPRA")
-	species = list(BODYTYPE_TAJARA)
-	suit = /obj/item/clothing/suit/space/void/dpra
-	helmet = /obj/item/clothing/head/helmet/space/void/dpra
-
 /obj/machinery/suit_cycler/offship/elyra
 	model_text = "Elyran Naval Infantry"
 	req_access = list(ACCESS_ELYRAN_NAVAL_INFANTRY_SHIP)
@@ -192,28 +184,6 @@
 	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	suit = /obj/item/clothing/suit/space/void/valkyrie
 	helmet = /obj/item/clothing/head/helmet/space/void/valkyrie
-
-/obj/machinery/suit_cycler/offship/hegemony
-	model_text = "Izweski Navy"
-	req_access = list(ACCESS_KATAPHRACT)
-	departments = list("Izweski Hegemony")
-	species = list(BODYTYPE_UNATHI)
-	suit = /obj/item/clothing/suit/space/void/hegemony
-	helmet = /obj/item/clothing/head/helmet/space/void/hegemony
-	boots = /obj/item/clothing/shoes/magboots/hegemony
-
-/obj/machinery/suit_cycler/offship/hegemony/specialist
-	suit = /obj/item/clothing/suit/space/void/hegemony/specialist
-	helmet = /obj/item/clothing/head/helmet/space/void/hegemony/specialist
-
-/obj/machinery/suit_cycler/offship/hegemony/priest
-	suit = /obj/item/clothing/suit/space/void/hegemony/priest
-	helmet = /obj/item/clothing/head/helmet/space/void/hegemony/priest
-
-/obj/machinery/suit_cycler/offship/hegemony/captain
-	req_access = list(ACCESS_KATAPHRACT_KNIGHT)
-	suit = /obj/item/clothing/suit/space/void/hegemony/captain
-	helmet = /obj/item/clothing/head/helmet/space/void/hegemony/captain
 
 /obj/machinery/suit_cycler/offship/hephaestus
 	model_text = "Hephaestus Industries"
@@ -223,25 +193,6 @@
 	suit = /obj/item/clothing/suit/space/void/hephaestus
 	helmet = /obj/item/clothing/head/helmet/space/void/hephaestus
 
-/obj/machinery/suit_cycler/offship/kataphract
-	model_text = "Kataphract Guild"
-	req_access = list(ACCESS_KATAPHRACT)
-	departments = list("Kataphract")
-	species = list(BODYTYPE_UNATHI)
-	suit = /obj/item/clothing/suit/space/void/kataphract
-	helmet = /obj/item/clothing/head/helmet/space/void/kataphract
-	boots = /obj/item/clothing/shoes/magboots/hegemony
-
-/obj/machinery/suit_cycler/offship/kataphract/specialist
-	req_access = list(ACCESS_KATAPHRACT_KNIGHT)
-	suit = /obj/item/clothing/suit/space/void/kataphract/spec
-	helmet = /obj/item/clothing/head/helmet/space/void/kataphract/spec
-
-/obj/machinery/suit_cycler/offship/kataphract/lead
-	req_access = list(ACCESS_KATAPHRACT_KNIGHT)
-	suit = /obj/item/clothing/suit/space/void/kataphract/lead
-	helmet = /obj/item/clothing/head/helmet/space/void/kataphract/lead
-
 /obj/machinery/suit_cycler/offship/konyang
 	model_text = "Konyang Aerospace Force"
 	req_access = list(ACCESS_KONYANG_POLICE)
@@ -250,21 +201,6 @@
 	suit = /obj/item/clothing/suit/space/void/sol/konyang
 	helmet = /obj/item/clothing/head/helmet/space/void/sol/konyang
 
-/obj/machinery/suit_cycler/offship/nka
-	model_text = "Her Majesty's Mercantile Flotilla"
-	req_access = list(ACCESS_NKA)
-	departments = list("NKA")
-	species = list(BODYTYPE_TAJARA)
-	suit = /obj/item/clothing/suit/space/void/nka
-	helmet = /obj/item/clothing/head/helmet/space/void/nka
-
-/obj/machinery/suit_cycler/offship/pra
-	model_text = "People's Republic of Adhomai"
-	req_access = list(ACCESS_PRA)
-	departments = list("PRA")
-	species = list(BODYTYPE_TAJARA)
-	suit = /obj/item/clothing/suit/space/void/pra
-	helmet = /obj/item/clothing/head/helmet/space/void/pra
 
 /obj/machinery/suit_cycler/offship/sol
 	model_text = "Sol Alliance"
@@ -307,43 +243,6 @@
 	species = list(BODYTYPE_SKRELL)
 	mask = /obj/item/clothing/mask/breath/skrell
 
-/obj/machinery/suit_cycler/offship/skrell/black
-	suit = /obj/item/clothing/suit/space/void/skrell/black
-	helmet = /obj/item/clothing/head/helmet/space/void/skrell/black
-
-/obj/machinery/suit_cycler/offship/skrell/white
-	suit = /obj/item/clothing/suit/space/void/skrell/white
-	helmet = /obj/item/clothing/head/helmet/space/void/skrell/white
-
-/obj/machinery/suit_cycler/offship/skrell/kala
-	model_text = "Qukala"
-	suit = /obj/item/clothing/suit/space/void/kala
-	helmet = /obj/item/clothing/head/helmet/space/void/kala
-
-/obj/machinery/suit_cycler/offship/skrell/kala/engineering
-	suit = /obj/item/clothing/suit/space/void/kala/engineering
-	helmet = /obj/item/clothing/head/helmet/space/void/kala/engineering
-
-/obj/machinery/suit_cycler/offship/skrell/kala/med
-	suit = /obj/item/clothing/suit/space/void/kala/med
-	helmet = /obj/item/clothing/head/helmet/space/void/kala/med
-
-/obj/machinery/suit_cycler/offship/skrell/kala/leader
-	suit = /obj/item/clothing/suit/space/void/kala/leader
-	helmet = /obj/item/clothing/head/helmet/space/void/kala/leader
-
-/obj/machinery/suit_cycler/offship/tarwa
-	model_text = "Tarwa Conglomerate"
-	req_access = list(ACCESS_UNATHI_PIRATE)
-	departments = list("Tarwa Conglomerate")
-	species = list(BODYTYPE_UNATHI)
-	suit = /obj/item/clothing/suit/space/void/unathi_pirate/tarwa
-	helmet = /obj/item/clothing/head/helmet/space/void/unathi_pirate/tarwa
-
-/obj/machinery/suit_cycler/offship/tarwa/captain
-	suit = /obj/item/clothing/suit/space/void/unathi_pirate/tarwa/captain
-	helmet = /obj/item/clothing/head/helmet/space/void/unathi_pirate/tarwa/captain
-
 // For owned Golden Deep synthetics, Thesians, and other non-combatants.
 /obj/machinery/suit_cycler/offship/golden_deep
 	model_text = "Golden Deep"
@@ -366,18 +265,6 @@
 	req_access = list(ACCESS_GOLDEN_DEEP)
 	suit = /obj/item/clothing/suit/space/void/golden_deep
 	helmet = /obj/item/clothing/head/helmet/space/void/golden_deep
-
-/obj/machinery/suit_cycler/offship/hiskyn
-	model_text = "Hiskyn's Revanchists"
-	req_access = list(ACCESS_UNATHI_PIRATE)
-	departments = list("Hiskyn's Revanchists")
-	species = list(BODYTYPE_UNATHI)
-	suit = /obj/item/clothing/suit/space/void/unathi_pirate/hiskyn
-	helmet = /obj/item/clothing/head/helmet/space/void/unathi_pirate/hiskyn
-
-/obj/machinery/suit_cycler/offship/hiskyn/captain
-	suit = /obj/item/clothing/suit/space/void/unathi_pirate/hiskyn/captain
-	helmet = /obj/item/clothing/head/helmet/space/void/unathi_pirate/hiskyn/captain
 
 // For the Himean Military vessel.
 /obj/machinery/suit_cycler/offship/coalition/himeo

@@ -22,8 +22,6 @@
 		"Crimson Hardsuit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/crimson,
 		"Rhino Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/rhino,
 		"Einstein Paragon Hardsuit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/einstein,
-		"Vaurca Combat Exoskeleton" = /obj/structure/closet/crate/secure/gear_loadout/ninja/vaurca,
-		"Tupkala Infiltration Hardsuit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/skrell,
 		"Ceres Lance Bunker Suit" = /obj/structure/closet/crate/secure/gear_loadout/ninja/bunker
 	)
 	for(var/hardsuit_option in hardsuit_options)

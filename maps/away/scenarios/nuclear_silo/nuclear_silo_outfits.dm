@@ -64,16 +64,10 @@
 		/obj/item/clothing/shoes/workboots,
 	)
 	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi,
-		SPECIES_TAJARA = /obj/item/clothing/gloves/black_leather/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/gloves/black_leather/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/gloves/black_leather/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/workboots/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/workboots/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/workboots/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless
 	)
 
 /obj/outfit/admin/generic/nuclear_silo_crew/upper/villager_business_owner
@@ -105,10 +99,7 @@
 		/obj/item/ammo_magazine/mc10mm/leyon = 2,
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/winter/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/laceup/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/laceup/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/laceup/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/winter/toeless
 	)
 
 //--- Bunker
@@ -153,16 +144,10 @@
 		/obj/item/clothing/shoes/workboots,
 	)
 	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi,
-		SPECIES_TAJARA = /obj/item/clothing/gloves/black_leather/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/gloves/black_leather/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/gloves/black_leather/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/workboots/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/workboots/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/workboots/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless
 	)
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/silo_engineer
 	name = "Nuclear Missile Silo Engineer"
@@ -218,10 +203,7 @@
 		/obj/item/device/gps/engineering = 1,
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/workboots/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/workboots/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/workboots/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless
 	)
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/silo_doctor
 	name = "Nuclear Missile Silo Doctor"
@@ -312,10 +294,7 @@
 		/obj/item/pen/fountain/black = 1,
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/sneakers/hitops/black,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/laceup/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/laceup/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/laceup/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/sneakers/hitops/black
 	)
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/high_sec/silo_guard
 	name = "Nuclear Missile Silo Guard"
@@ -375,16 +354,10 @@
 		/obj/item/clothing/accessory/holster/waist/brown,
 	)
 	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi,
-		SPECIES_TAJARA = /obj/item/clothing/gloves/black_leather/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/gloves/black_leather/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/gloves/black_leather/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/jackboots/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/jackboots/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/jackboots/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless
 	)
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/high_sec/silo_base_commander
 	name = "Nuclear Missile Silo Base Commander"
@@ -421,10 +394,7 @@
 		/obj/item/flame/lighter/zippo = 1,
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/laceup/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/laceup/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/laceup/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless
 	)
 
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/high_sec/silo_military_attache
@@ -463,8 +433,5 @@
 		/obj/item/melee/energy/sword/knife = 1,
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless,
-		SPECIES_TAJARA = /obj/item/clothing/shoes/jackboots/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/jackboots/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/jackboots/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless
 	)

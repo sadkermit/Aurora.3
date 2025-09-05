@@ -225,8 +225,5 @@
 		/obj/item/clothing/shoes/workboots/dark,
 	)
 	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/yellow/specialu,
-		SPECIES_TAJARA = /obj/item/clothing/gloves/yellow/specialt,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/gloves/yellow/specialt,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/gloves/yellow/specialt,
+		SPECIES_UNATHI = /obj/item/clothing/gloves/yellow/specialu
 	)

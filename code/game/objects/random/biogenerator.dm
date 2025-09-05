@@ -50,7 +50,6 @@
 	icon_state = "yellow"
 	spawnlist = list(
 		/obj/item/clothing/gloves/black,
-		/obj/item/clothing/gloves/black/tajara,
 		/obj/item/clothing/gloves/black/unathi,
 )
 
@@ -60,7 +59,6 @@
 	icon_state = "yellow"
 	spawnlist = list(
 		/obj/item/clothing/gloves/black_leather,
-		/obj/item/clothing/gloves/black_leather/tajara,
 		/obj/item/clothing/gloves/black_leather/unathi,
 		/obj/item/clothing/gloves/botanic_leather,
 		/obj/item/clothing/gloves/botanic_leather/tajara,
@@ -70,27 +68,20 @@
 		/obj/item/clothing/gloves/white/tajara,
 		/obj/item/clothing/gloves/white/unathi,
 		/obj/item/clothing/gloves/blue,
-		/obj/item/clothing/gloves/blue/tajara,
 		/obj/item/clothing/gloves/blue/unathi,
 		/obj/item/clothing/gloves/orange,
-		/obj/item/clothing/gloves/orange/tajara,
 		/obj/item/clothing/gloves/orange/unathi,
 		/obj/item/clothing/gloves/purple,
-		/obj/item/clothing/gloves/purple/tajara,
 		/obj/item/clothing/gloves/purple/unathi,
 		/obj/item/clothing/gloves/brown,
-		/obj/item/clothing/gloves/brown/tajara,
 		/obj/item/clothing/gloves/brown/unathi,
 		/obj/item/clothing/gloves/evening,
 		/obj/item/clothing/gloves/evening/unathi,
 		/obj/item/clothing/gloves/fingerless,
 		/obj/item/clothing/gloves/red,
-		/obj/item/clothing/gloves/red/tajara,
 		/obj/item/clothing/gloves/red/unathi,
 		/obj/item/clothing/gloves/green,
-		/obj/item/clothing/gloves/green/tajara,
 		/obj/item/clothing/gloves/green/unathi,
 		/obj/item/clothing/gloves/light_brown,
-		/obj/item/clothing/gloves/light_brown/tajara,
 		/obj/item/clothing/gloves/light_brown/unathi
 	)

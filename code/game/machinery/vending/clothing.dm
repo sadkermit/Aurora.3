@@ -42,8 +42,6 @@
 		// Shoes
 		/obj/item/clothing/shoes/sneakers/black = 8,
 		/obj/item/clothing/shoes/sneakers/brown = 4,
-		/obj/item/clothing/shoes/sneakers/black/tajara = 2,
-		/obj/item/clothing/shoes/vaurca = 2,
 		/obj/item/clothing/shoes/workboots = 8,
 		/obj/item/clothing/shoes/workboots/toeless = 4,
 		/obj/item/clothing/shoes/sandals = 4,

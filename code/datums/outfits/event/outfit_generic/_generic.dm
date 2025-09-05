@@ -63,9 +63,7 @@
 		SPECIES_TAJARA = /obj/item/clothing/shoes/workboots/toeless,
 		SPECIES_TAJARA_MSAI = /obj/item/clothing/shoes/workboots/toeless,
 		SPECIES_TAJARA_ZHAN = /obj/item/clothing/shoes/workboots/toeless,
-		SPECIES_VAURCA_WORKER = /obj/item/clothing/shoes/workboots/toeless,
-		SPECIES_VAURCA_WARRIOR = /obj/item/clothing/shoes/vaurca,
-		SPECIES_VAURCA_ATTENDANT = /obj/item/clothing/shoes/vaurca
+		SPECIES_VAURCA_WORKER = /obj/item/clothing/shoes/workboots/toeless
 	)
 
 /obj/outfit/admin/generic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

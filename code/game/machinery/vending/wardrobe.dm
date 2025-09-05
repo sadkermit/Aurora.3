@@ -543,21 +543,13 @@
 	vend_reply = "Thank you for using ChapelDrobe!"
 	products = list(
 		/obj/item/clothing/under/rank/chaplain = 3,
-		/obj/item/clothing/under/tajaran/matake = 3,
-		/obj/item/clothing/under/unathi/skakh = 2,
-		/obj/item/clothing/under/unathi/skakh/fisher = 2,
-		/obj/item/clothing/under/unathi/skakh/healer = 2,
-		/obj/item/clothing/under/unathi/skakh/warrior = 2,
 		/obj/item/clothing/suit/nun = 3,
 		/obj/item/clothing/head/chaplain_hood = 3,
 		/obj/item/clothing/head/nun_hood = 3,
 		/obj/item/clothing/head/hijab = 3,
 		/obj/item/clothing/head/turban = 3,
 		/obj/item/clothing/head/kippah = 3,
-		/obj/item/clothing/head/unathi/maxtlatl = 3,
 		/obj/item/clothing/mask/trinary_mask = 3,
-		/obj/item/clothing/mask/gas/unathi = 3,
-		/obj/item/clothing/mask/tajara = 3,
 		/obj/item/clothing/shoes/sneakers/black = 3,
 		/obj/item/storage/box/fancy/candle_box = 3,
 		/obj/item/storage/box/fancy/candle_box = 3,
@@ -570,8 +562,7 @@
 	contraband = list(
 		/obj/item/clothing/suit/cultrobes/alt = 2,
 		/obj/item/clothing/head/culthood/alt = 2,
-		/obj/item/clothing/shoes/cult = 2,
-		/obj/item/clothing/head/tajaran/raskara = 2
+		/obj/item/clothing/shoes/cult = 2
 	)
 	premium = list(
 		/obj/item/toy/figure/chaplain = 3
@@ -860,7 +851,6 @@
 		/obj/item/clothing/gloves/black = 3,
 		/obj/item/clothing/gloves/yellow = 3,
 		/obj/item/clothing/gloves/yellow/specialu = 3,
-		/obj/item/clothing/gloves/yellow/specialt = 3,
 		/obj/item/clothing/shoes/sneakers/black = 3,
 		/obj/item/clothing/shoes/workboots/dark = 4,
 		/obj/item/clothing/shoes/workboots/toeless = 2,
@@ -920,7 +910,6 @@
 		/obj/item/clothing/gloves/black = 3,
 		/obj/item/clothing/gloves/yellow = 3,
 		/obj/item/clothing/gloves/yellow/specialu = 3,
-		/obj/item/clothing/gloves/yellow/specialt = 3,
 		/obj/item/clothing/shoes/sneakers/black = 3,
 		/obj/item/clothing/shoes/workboots/dark = 4,
 		/obj/item/clothing/shoes/workboots/toeless = 2,

@@ -345,41 +345,6 @@
 	. += ..()
 	. += SPAN_DANGER("This is an OOC item, don't let anyone see it!")
 
-/obj/item/voidsuit_modkit_multi/unathi_pirate
-	name = "unathi pirate modkit"
-	desc = "A highly complicated device that allows you to convert an Unathi pirate suit into another fleet's counterpart. Practical!"
-	w_class = WEIGHT_CLASS_SMALL
-	suit_options = list(
-		"Izharshan's Raiders" = /obj/item/clothing/suit/space/void/unathi_pirate,
-		"Hiskyn's Revanchists" = /obj/item/clothing/suit/space/void/unathi_pirate/hiskyn,
-		"Kazu's Techraiders" = /obj/item/clothing/suit/space/void/unathi_pirate/kazu,
-		"Tarwa Conglomerate" = /obj/item/clothing/suit/space/void/unathi_pirate/tarwa
-	)
-	helmet_options = list(
-		"Izharshan's Raiders" = /obj/item/clothing/head/helmet/space/void/unathi_pirate,
-		"Hiskyn's Revanchists" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/hiskyn,
-		"Kazu's Techraiders" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/kazu,
-		"Tarwa Conglomerate" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/tarwa
-	)
-
-/obj/item/voidsuit_modkit_multi/unathi_pirate/feedback_hints(mob/user, distance, is_adjacent)
-	. += ..()
-	. += SPAN_DANGER("This is an OOC item, don't let anyone see it!")
-
-/obj/item/voidsuit_modkit_multi/unathi_pirate/captain
-	name = "unathi pirate captain modkit"
-	suit_options = list(
-		"Izharshan's Raiders" = /obj/item/clothing/suit/space/void/unathi_pirate/captain,
-		"Hiskyn's Revanchists" = /obj/item/clothing/suit/space/void/unathi_pirate/hiskyn/captain,
-		"Kazu's Techraiders" = /obj/item/clothing/suit/space/void/unathi_pirate/kazu/captain,
-		"Tarwa Conglomerate" = /obj/item/clothing/suit/space/void/unathi_pirate/tarwa/captain
-	)
-	helmet_options = list(
-		"Izharshan's Raiders" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/captain,
-		"Hiskyn's Revanchists" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/hiskyn/captain,
-		"Kazu's Techraiders" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/kazu/captain,
-		"Tarwa Conglomerate" = /obj/item/clothing/head/helmet/space/void/unathi_pirate/tarwa/captain
-	)
 
 /obj/item/voidsuit_modkit_multi/nanotrasen
 	name = "\improper NanoTrasen hardsuit modkit"
@@ -413,11 +378,6 @@
 		"Galatean Jackdaw" = /obj/item/clothing/head/helmet/space/void/coalition/galatea,
 		"Assunzionii Rook" = /obj/item/clothing/head/helmet/space/void/sci/assunzione
 	)
-
-/obj/item/storage/box/unathi_pirate
-	name = "unathi pirate modkit box"
-	desc = "Contains modkits to convert Unathi pirate voidsuits into fleet variants."
-	starts_with = list(/obj/item/voidsuit_modkit_multi/unathi_pirate = 4)
 
 /obj/item/storage/box/sol_warlord
 	name = "solarian warlord modkit box"

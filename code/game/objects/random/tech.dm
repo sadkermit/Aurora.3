@@ -252,8 +252,7 @@
 		/obj/item/rig/military = 0.3,
 		/obj/item/rig/hazard/equipped = 0.8,
 		/obj/item/rig/retro/equipped = 0.8,
-		/obj/item/rig/ert/security = 0.3,
-		/obj/item/rig/unathi = 0.4
+		/obj/item/rig/ert/security = 0.3
 	)
 
 /obj/random/canister

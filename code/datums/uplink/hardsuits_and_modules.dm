@@ -138,22 +138,9 @@
 	path = /obj/item/rig/merc/einstein/empty
 	desc = "A back mounted control mechanism of an Einstein Engines hardsuit. This model is issued to the leaders of security teams within the corporation. Wearable only by humans, industrial, zeng-hu and bishop IPCs."
 
-/datum/uplink_item/item/hardsuit_modules/suit/qukala
-	name = "Qukala Assault Hardsuit"
-	telecrystal_cost = 8
-	bluecrystal_cost = 8
-	path = /obj/item/rig/skrell
-	desc = "A Nralakk-manufactured combat hardsuit, designed for use by elite operatives of the Qukala. Due to their expense and classified design, these suits are rarely seen outside of Qukala hands. Only wearable by skrell."
-
 /datum/uplink_item/item/hardsuit_modules/suit/bunker
 	name = "Ceres Lance Bunker Suit"
 	telecrystal_cost = 8
 	bluecrystal_cost = 8
 	path = /obj/item/rig/bunker/nerfed
 	desc = "A powerful niche-function hardsuit utilized by Ceres' Lance to apprehend synthetics. This is a lighter version with more standard hardsuit plating. Only wearable by humans."
-
-/datum/uplink_item/item/hardsuit_modules/suit/vaurca
-	name = "Vaurca Combat Exoskeleton"
-	telecrystal_cost = 10
-	path = /obj/item/rig/vaurca/minimal
-	desc = "An ancient piece of equipment from a bygone age, This highly advanced Vaurcan technology rarely sees use outside of a battlefield. Only wearable by vaurca."

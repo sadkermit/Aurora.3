@@ -977,18 +977,6 @@
 	illustration = "paper"
 	starts_with = list(/obj/item/clothing/accessory/badge/tcaf_papers = 6)
 
-/obj/item/storage/box/hadii_card
-	name = "honorary party member card box"
-	desc = "A box full of Hadiist party member cards."
-	illustration = "paper"
-	starts_with = list(/obj/item/clothing/accessory/badge/hadii_card = 6)
-
-/obj/item/storage/box/hadii_manifesto
-	name = "hadiist manifesto box"
-	desc = "A box filled with copies of the Hadiist Manifesto"
-	illustration = "paper"
-	starts_with = list(/obj/item/device/versebook/pra = 6)
-
 /obj/item/storage/box/dpra_manifesto
 	name = "al'mariist manifesto box"
 	desc = "A box filled with copies of 'In Defense of Al'mari's Legacy'."

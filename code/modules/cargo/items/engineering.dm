@@ -516,20 +516,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/tajaranelectricalgloves
-	category = "engineering"
-	name = "tajaran electrical gloves"
-	supplier = "hephaestus"
-	description = "These gloves will protect the wearer from electric shock. Made special for Tajaran use."
-	price = 74
-	items = list(
-		/obj/item/clothing/gloves/yellow/specialt
-	)
-	access = ACCESS_ENGINE
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/unathielectricalgloves
 	category = "engineering"
 	name = "unathi electrical gloves"

@@ -76,7 +76,6 @@ If you want to expand this to more than primarily generic items, I recommend des
 		/obj/item/clothing/under/rank/medical/generic = 6,
 		/obj/item/clothing/under/dominia/imperial_suit = 6,
 		/obj/item/clothing/under/suit_jacket = 6,
-		/obj/item/clothing/under/tajaran = 6,
 
 		// Generic hats.
 		/obj/item/clothing/head/bandana/colorable = 6,

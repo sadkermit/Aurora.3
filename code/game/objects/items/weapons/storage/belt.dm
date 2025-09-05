@@ -120,8 +120,7 @@
 		/obj/item/tape_roll,
 		/obj/item/device/geiger,
 		/obj/item/clothing/gloves/yellow,
-		/obj/item/clothing/gloves/yellow/specialu,
-		/obj/item/clothing/gloves/yellow/specialt
+		/obj/item/clothing/gloves/yellow/specialu
 	)
 	content_overlays = TRUE
 

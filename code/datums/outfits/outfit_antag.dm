@@ -215,17 +215,13 @@
 		/obj/item/clothing/under/dress/offworlder/skirt,
 		/obj/item/clothing/under/suit_jacket/tan,
 		/obj/item/clothing/under/tactical,
-		/obj/item/clothing/under/tajaran,
-		/obj/item/clothing/under/tajaran/nt,
 		/obj/item/clothing/under/rank/engineer/apprentice/heph,
-		/obj/item/clothing/under/unathi,
 		/obj/item/clothing/under/waiter
 		)
 
 	suit = list(
 		/obj/item/clothing/suit/pirate,
 		/obj/item/clothing/suit/storage/toggle/bomber,
-		/obj/item/clothing/accessory/poncho/unathimantle,
 		/obj/item/clothing/accessory/poncho,
 		/obj/item/clothing/accessory/poncho/purple,
 		/obj/item/clothing/accessory/poncho/roles/cloak/captain,
@@ -257,7 +253,6 @@
 		/obj/item/clothing/suit/storage/toggle/leather_jacket/military,
 		/obj/item/clothing/suit/storage/toggle/leather_jacket/military/old,
 		/obj/item/clothing/suit/storage/toggle/leather_jacket/military/tan,
-		/obj/item/clothing/suit/storage/toggle/tajaran,
 		/obj/item/clothing/suit/storage/toggle/trench,
 		/obj/item/clothing/suit/storage/toggle/trench/grey,
 		/obj/item/clothing/suit/storage/toggle/trench/colorable/random
@@ -299,7 +294,6 @@
 		/obj/item/clothing/head/nonla,
 		/obj/item/clothing/head/helmet/bucket,
 		/obj/item/clothing/head/helmet/material/makeshift/plasteel,
-		/obj/item/clothing/head/helmet/kettle,
 		/obj/item/clothing/head/helmet/tank/olive,
 		/obj/item/clothing/head/softcap,
 		/obj/item/clothing/head/softcap/himeo,

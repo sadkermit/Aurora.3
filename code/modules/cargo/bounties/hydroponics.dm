@@ -75,11 +75,7 @@
 				/datum/seed/banana,
 				/datum/seed/watermelon,
 				/datum/seed/citrus,
-				/datum/seed/cherries,
-				/datum/seed/dirtberries,
-				/datum/seed/dyn,
-				/datum/seed/wulumunusha,
-				/datum/seed/sugartree)
+				/datum/seed/cherries)
 
 /datum/bounty/item/hydroponicist/produce/mushroom
 	name = "Produce - Mushrooms"

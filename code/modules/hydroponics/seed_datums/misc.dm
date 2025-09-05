@@ -123,27 +123,3 @@
 
 /obj/item/seeds/kudzuseed
 	seed_type = "kudzu"
-
-/datum/seed/diona
-	name = "diona"
-	seed_name = "diona"
-	seed_noun = "node"
-	display_name = "diona pod"
-	can_self_harvest = 1
-	product_type = /mob/living/carbon/alien/diona
-
-/datum/seed/diona/setup_traits()
-	..()
-	set_trait(TRAIT_IMMUTABLE,1)
-	set_trait(TRAIT_ENDURANCE,8)
-	set_trait(TRAIT_MATURATION,5)
-	set_trait(TRAIT_PRODUCTION,10)
-	set_trait(TRAIT_YIELD,1)
-	set_trait(TRAIT_POTENCY,30)
-	set_trait(TRAIT_PRODUCT_ICON,"diona")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#799957")
-	set_trait(TRAIT_PLANT_COLOUR,"#66804B")
-	set_trait(TRAIT_PLANT_ICON,"alien4")
-
-/obj/item/seeds/replicapod
-	seed_type = "diona"

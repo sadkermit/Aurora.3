@@ -194,20 +194,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/packetofdionanodes
-	category = "hydroponics"
-	name = "packet of diona nodes"
-	supplier = "nanotrasen"
-	description = "It has a picture of diona pods on the front."
-	price = 25
-	items = list(
-		/obj/item/seeds/replicapod
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/packetofkudzuseeds
 	category = "hydroponics"
 	name = "packet of kudzu seeds"
@@ -300,20 +286,6 @@
 	price = 35
 	items = list(
 		/obj/item/seeds/reishimycelium
-	)
-	access = ACCESS_HYDROPONICS
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/wulumunushaseed
-	category = "hydroponics"
-	name = "wulumunusha seed"
-	supplier = "zeng_hu"
-	description = "A Skrellian plant used in religious ceremonies and drinks."
-	price = 45
-	items = list(
-		/obj/item/seeds/wulumunushaseed
 	)
 	access = ACCESS_HYDROPONICS
 	container_type = "crate"

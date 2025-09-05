@@ -203,8 +203,6 @@
 		/obj/item/stack/material/phoron/full = 0.1,
 		/obj/item/stack/material/plasteel/full = 0.8,
 		/obj/random/voidsuit = 1,
-		/obj/item/vaurca/box = 0.1,
-		/obj/item/melee/vaurca/rock = 0.1,
 		/obj/item/device/personal_shield = 0.1,
 		/obj/item/storage/secure/briefcase/money = 0.1
 		)

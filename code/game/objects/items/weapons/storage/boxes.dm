@@ -977,17 +977,6 @@
 	illustration = "paper"
 	starts_with = list(/obj/item/clothing/accessory/badge/tcaf_papers = 6)
 
-/obj/item/storage/box/dpra_manifesto
-	name = "al'mariist manifesto box"
-	desc = "A box filled with copies of 'In Defense of Al'mari's Legacy'."
-	illustration = "paper"
-	starts_with = list(/obj/item/device/versebook/dpra = 6)
-
-/obj/item/storage/box/nka_manifesto
-	name = "royalist manifesto card box"
-	desc = "A box filled with copies of 'The New Kingdom'."
-	illustration = "paper"
-	starts_with = list(/obj/item/device/versebook/nka = 6)
 
 /obj/item/storage/box/suns_flags
 	name = "s'rand'marr Worship flag box"

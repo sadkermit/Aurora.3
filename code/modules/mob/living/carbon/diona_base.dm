@@ -16,17 +16,6 @@
 #define LIMB_REGROW_REQUIREMENT 2500
 
 #define LANGUAGE_POINTS_TO_LEARN	1 //The number of samples of a language required to learn it
-GLOBAL_LIST_INIT(diona_banned_languages, list(
-	/datum/language/cult,
-	/datum/language/cultcommon,
-	/datum/language/corticalborer,
-	/datum/language/binary,
-	/datum/language/binary/drone,
-	/datum/language/bug,
-	/datum/language/ling,
-	/datum/language/revenant,
-	/datum/language/machine,
-	))
 
 #define DIONA_LIGHT_COEFICIENT 0.25
 /mob/living/carbon/proc/diona_handle_light(var/datum/dionastats/DS) //Carbon is the highest common denominator between gestalts and nymphs. They will share light code
@@ -533,21 +522,6 @@ The nymph has a chance to inherit each language. */
 	add_language(species.default_language) //They always have rootsong
 	accent = host.accent //Get the accent of the main gestalt
 
-	for (var/datum/language/L in host.languages)
-		var/chance = 40
-
-		if (istype(L, /datum/language/diona))
-			continue
-
-		if (istype(L, /datum/language/common)) //more likely to keep common
-			chance = 85
-
-
-		if (prob(chance))
-			add_language(L.name)
-		else
-			to_chat(src, SPAN_DANGER("You have forgotten the [L.name] language!"))
-
 /mob/living/carbon/alien/diona/proc/switch_to_gestalt()
 	set name = "Switch to Gestalt"
 	set desc = "Allows you to switch control back to your parent Gestalt."
@@ -674,13 +648,6 @@ Most of these values are calculated from information configured at authortime in
 			//Now we sample their languages!
 			for(var/datum/language/L in H.languages)
 				learned = max(learned, 1)
-				if (!(L in user.languages) && !(L in GLOB.diona_banned_languages))
-					//We don't know this language, and we can learn it!
-					var/current_progress = language_progress[L.name]
-					current_progress += 1
-					language_progress[L.name] = current_progress
-					to_chat(user, SPAN_NOTICE(FONT_LARGE("You come a little closer to learning [L.name]!")))
-					learned = 2
 
 			if(!learned)
 				to_chat(user, SPAN_DANGER("This creature doesn't know any languages at all!"))

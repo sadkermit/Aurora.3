@@ -21,8 +21,6 @@ They are very slow, reasonably strong, and quite durable. They also require ligh
 	deform = 'icons/mob/human_races/diona/r_def_plant.dmi'
 	preview_icon = 'icons/mob/human_races/diona/diona_preview.dmi'
 	bandages_icon = 'icons/mob/bandage.dmi'
-	language = LANGUAGE_ROOTSONG
-	secondary_langs = list(LANGUAGE_SKRELLIAN, LANGUAGE_AZAZIBA, LANGUAGE_UNATHI)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -42,7 +40,6 @@ They are very slow, reasonably strong, and quite durable. They also require ligh
 	eyes = "blank_eyes"
 	show_ssd = "completely quiescent"
 	num_alternate_languages = 2
-	name_language = LANGUAGE_ROOTSONG
 	ethanol_resistance = -1	//Can't get drunk
 	taste_sensitivity = TASTE_NUMB
 	mob_size = 12	//Worker gestalts are 150kg

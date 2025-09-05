@@ -42,20 +42,6 @@
 #define LANGUAGE_TCB "Ceti Basic"
 
 // Species Languages
-#define LANGUAGE_SOL_COMMON "Sol Common"
-#define LANGUAGE_ELYRAN_STANDARD "Elyran Standard"
-#define LANGUAGE_UNATHI "Sinta'unathi"
-#define LANGUAGE_SIIK_MAAS "Siik'maas"
-#define LANGUAGE_SIIK_TAJR "Siik'tajr"
-#define LANGUAGE_SIGN_TAJARA "Nal'rasan"
-#define LANGUAGE_YA_SSA "Ya'ssa"
-#define LANGUAGE_DELVAHII "Delvahhi"
-#define LANGUAGE_SKRELLIAN "Nral'Malic"
-#define LANGUAGE_ROOTSONG "Rootsong"
-#define LANGUAGE_TRADEBAND "Tradeband"
-#define LANGUAGE_GUTTER "Freespeak"
-#define LANGUAGE_VAURCA "Hivenet"
-#define LANGUAGE_AZAZIBA "Sinta'azaziba"
 #define LANGUAGE_SIGN "Sign Language"
 
 // Antag Languages
@@ -67,7 +53,6 @@
 #define LANGUAGE_REVENANT "Revenant"
 #define LANGUAGE_REVENANT_RIFTSPEAK "Riftspeak"
 #define LANGUAGE_TERMINATOR "Hephaestus Darkcomms"	// HKs.
-#define LANGUAGE_LIIDRA "Lii'draic Hivemind" //Lii'dra
 #define LANGUAGE_GREIMORIAN "Greimorian Chattering" //Intelligent Greimorians
 #define LANGUAGE_GREIMORIAN_HIVEMIND "Greimorian Hivemind" //Intelligent Greimorian Hivemind
 #define LANGUAGE_PURPOSE "Encrypted Transmission" //Purpose
@@ -76,10 +61,6 @@
 // Lesser-form Languages
 #define LANGUAGE_GIBBERING "Gibbering"			// alberyk
 #define LANGUAGE_CHIMPANZEE "Chimpanzee"	// human
-#define LANGUAGE_NEAERA "Neaera"			// skrell
-#define LANGUAGE_STOK "Stok"				// unathi
-#define LANGUAGE_FARWA "Farwa"				// tajara
-#define LANGUAGE_BUG "V'krexi"				// vaurca
 
 // Synth Languages
 #define LANGUAGE_ROBOT "Robot Talk"

@@ -39,8 +39,6 @@
 	economic_modifier = 9
 
 	num_alternate_languages = 2
-	secondary_langs = list(LANGUAGE_UNATHI, LANGUAGE_AZAZIBA)
-	name_language = LANGUAGE_UNATHI
 
 	stamina	=	120			  // Unathi have the shortest but fastest sprint of all
 	stamina_recovery = 5

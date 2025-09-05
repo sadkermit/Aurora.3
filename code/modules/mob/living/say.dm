@@ -239,9 +239,6 @@ var/list/channel_to_radio_key = new
 	// This is broadcast to all mobs with the language,
 	// irrespective of distance or anything else.
 	if(speaking && (speaking.flags & HIVEMIND))
-		if(speaking.name == LANGUAGE_VAURCA && within_jamming_range(src))
-			to_chat(src, SPAN_WARNING("Your head buzzes as your message is blocked with jamming signals."))
-			return
 		speaking.broadcast(src,trim(message))
 		return TRUE
 

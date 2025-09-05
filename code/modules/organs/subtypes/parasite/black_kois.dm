@@ -36,10 +36,6 @@
 
 	if(stage >= 3)
 		set_light(-1.5, 6, "#FFFFFF")
-		if(!(GLOB.all_languages[LANGUAGE_VAURCA] in owner.languages))
-			owner.add_language(LANGUAGE_VAURCA)
-			to_chat(owner, SPAN_NOTICE("Your mind expands, and your thoughts join the unity of the Hivenet."))
-
 		if(prob(5))
 			if(stage < 4)
 				to_chat(owner, SPAN_WARNING("You feel something squirming inside of you!"))
@@ -79,9 +75,6 @@
 		if(!removed_langs)
 			for(var/datum/language/L in owner.languages)
 				owner.remove_language(L.name)
-			owner.add_language(LANGUAGE_VAURCA)
-			owner.add_language(LANGUAGE_LIIDRA)
-			owner.set_default_language(LANGUAGE_LIIDRA)
 			removed_langs = TRUE
 
 		owner.set_see_invisible(SEE_INVISIBLE_NOLIGHTING)
@@ -158,11 +151,6 @@
 			SPAN_DANGER("You feel the cold of the knife cutting and cutting, but it is too late. There is nothing left of you but the Lii'dra's will, now. A final cut - and then you are granted the only escape that still remains to you."))
 			to_chat(target, SPAN_GOOD("Your function is fulfilled. We have no further need of you. Releasing control."))
 			target.death(FALSE) //too late, there is no brain left to save
-	if((GLOB.all_languages[LANGUAGE_VAURCA] in target.languages) && stage >= 3 && !isvaurca(target))
-		target.remove_language(LANGUAGE_VAURCA)
-		to_chat(target, SPAN_WARNING("Your mind suddenly grows dark as the unity of the Hive is torn from you."))
-	if((GLOB.all_languages[LANGUAGE_LIIDRA] in target.languages) && stage >= 3)
-		target.remove_language(LANGUAGE_LIIDRA)
 	removed_langs = 0
 	remove_verb(owner, /mob/living/carbon/human/proc/kois_cough)
 	remove_verb(owner, /mob/living/carbon/human/proc/kois_infect)

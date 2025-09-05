@@ -102,60 +102,6 @@
 	key = "rs"
 	flags = RESTRICTED | HIVEMIND
 
-/datum/language/bug/liidra
-	name = LANGUAGE_LIIDRA
-	desc = "The collective intelligence of the Lii'dra Hivemind. Similar to the Hivenet of ordinary Vaurcae, though impossible to understand for any not part of the gestalt consciousness."
-	key = "li"
-	flags = RESTRICTED | HIVEMIND
-
-/datum/language/bug/liidra/broadcast(mob/living/speaker, message, speaker_mask)
-	log_say("[key_name(speaker)] : ([name]) [message]")
-
-	if(!speaker_mask)
-		speaker_mask = speaker.real_name
-
-	var/msg = "<i><span class='game say'>[name], <span class='name'>[speaker_mask]</span>[format_message(message, get_spoken_verb(message), speaker_mask)]</span></i>"
-
-	if(isvaurca(speaker))
-		speaker.custom_emote(VISIBLE_MESSAGE, "[pick("twitches their antennae", "twitches their antennae rhythmically")].")
-		playsound(speaker, 'sound/voice/vaurca_antenna_twitch.ogg', 60, 1)
-
-	if (within_jamming_range(speaker))
-		// The user thinks that the message got through.
-		to_chat(speaker, msg)
-		return
-
-	for(var/mob/player in GLOB.player_list)
-		if(isobserver(player) || check_special_condition(player))
-			if(!within_jamming_range(player))
-				to_chat(player, msg)
-
-/datum/language/bug/liidra/check_special_condition(mob/other)
-	var/mob/living/carbon/human/M = other
-	if(!istype(M))
-		return FALSE
-	if(istype(M, /mob/abstract/new_player))
-		return FALSE
-	if(within_jamming_range(other))
-		return FALSE
-	if(M.internal_organs_by_name[BP_NEURAL_SOCKET] && (GLOB.all_languages[LANGUAGE_LIIDRA] in M.languages)) //replace with Special Liidra Socket later
-		return TRUE
-	if(M.internal_organs_by_name["blackkois"] && (GLOB.all_languages[LANGUAGE_LIIDRA] in M.languages))
-		return TRUE
-	if(isvaurca(M))
-		var/interceptchance = 1 //tiny chance for normal bugs to hear a message
-		if(M.species.name == SPECIES_VAURCA_BREEDER) //ta are better at intercepting transmissions
-			if(HAS_TRAIT(src, TRAIT_ORIGIN_ELECTRONIC_WARFARE)) //electronic warfare specialists
-				interceptchance = 20
-			else
-				interceptchance = 10
-		else
-			if(HAS_TRAIT(src, TRAIT_ORIGIN_ELECTRONIC_WARFARE))
-				interceptchance = 10
-		if(prob(interceptchance))
-			return TRUE
-	return FALSE
-
 /datum/language/greimorian
 	name = LANGUAGE_GREIMORIAN
 	desc = "The method which greimorians use to communicate with one another."

@@ -77,9 +77,6 @@
 		if(translate_binary)
 			var/datum/language/binary = GLOB.all_languages[LANGUAGE_ROBOT]
 			binary.broadcast(M, message)
-		if(translate_hivenet)
-			var/datum/language/bug = GLOB.all_languages[LANGUAGE_VAURCA]
-			bug.broadcast(M, message)
 		return null
 
 	return ..()

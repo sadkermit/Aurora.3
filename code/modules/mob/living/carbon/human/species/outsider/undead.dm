@@ -260,8 +260,6 @@
 	brute_mod = 1.2
 	fall_mod = 0.5
 
-	name_language = LANGUAGE_SIIK_MAAS
-
 	remains_type = /obj/effect/decal/remains/xeno
 	dust_remains_type = /obj/effect/decal/remains/xeno/burned
 
@@ -288,8 +286,6 @@
 	mob_size = 10
 	climb_coeff = 1.35
 
-	name_language = LANGUAGE_UNATHI
-
 	remains_type = /obj/effect/decal/remains/xeno
 	dust_remains_type = /obj/effect/decal/remains/xeno/burned
 
@@ -305,8 +301,6 @@
 	deform = 'icons/mob/human_races/zombie/r_zombie_skrell.dmi'
 
 	grab_mod = 1.25
-
-	name_language = LANGUAGE_SKRELLIAN
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_SOCKS
 

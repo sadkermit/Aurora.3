@@ -10,8 +10,6 @@
 	crime rates."
 	species_height = HEIGHT_CLASS_TALL
 
-	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIIK_TAJR, LANGUAGE_DELVAHII)
-
 	slowdown = -0.8 //As opposed to -1 for Base tajara
 	sprint_speed_factor = 0.55 // As opposed to 0.65
 	standing_jump_range = 2
@@ -76,8 +74,6 @@
 	hearing_sensitivity = HEARING_VERY_SENSITIVE // Species default 1
 
 	default_h_style = "M'sai Ears"
-
-	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIIK_TAJR, LANGUAGE_SIGN_TAJARA)
 
 	max_nutrition_factor = 1.2
 	max_hydration_factor = 1.2

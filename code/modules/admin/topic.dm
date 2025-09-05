@@ -925,9 +925,7 @@
 		if(!isvaurca(H))
 			to_chat(usr, "This can only be used on Vaurca.")
 			return
-		if(!(GLOB.all_languages[LANGUAGE_VAURCA] in H.languages))
-			to_chat(usr, "The person you are trying to contact is incapable of recieving Hivenet transmissions.")
-			return
+
 		var/input = sanitize(input(src.owner, "Please enter a message to reply to [key_name(H)] via the Hivenet.", "Outgoing transmission from the Hive...", ""))
 		if(!input)	return
 		to_chat(src.owner, "You sent [input] to [H] via a secure Hivenet channel.")

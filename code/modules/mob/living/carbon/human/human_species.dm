@@ -268,13 +268,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 
 /mob/living/carbon/human/hunter_killer/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_PURPOSE_HK)
-	add_language(LANGUAGE_SOL_COMMON, 1)
-	add_language(LANGUAGE_ELYRAN_STANDARD, 1)
-	add_language(LANGUAGE_UNATHI, 1)
-	add_language(LANGUAGE_SIIK_MAAS, 1)
-	add_language(LANGUAGE_SKRELLIAN, 1)
-	add_language(LANGUAGE_TRADEBAND, 1)
-	add_language(LANGUAGE_GUTTER, 1)
 	add_language(LANGUAGE_EAL, 1)
 	accent = ACCENT_TTS
 	src.equip_to_slot_or_del(new /obj/item/gun/energy/scythe(src),slot_l_hand)

@@ -97,7 +97,6 @@
 	deform = 'icons/mob/human_races/monkeys/r_farwa.dmi'
 
 	greater_form = SPECIES_TAJARA
-	default_language = LANGUAGE_FARWA
 	flesh_color = "#AFA59E"
 	base_color = "#333333"
 	tail = "farwatail"
@@ -120,7 +119,6 @@
 	deform = 'icons/mob/human_races/monkeys/r_neaera.dmi'
 
 	greater_form = SPECIES_SKRELL
-	default_language = LANGUAGE_NEAERA
 	flesh_color = "#8CD7A3"
 	blood_color = "#1D2CBF"
 	reagent_tag = IS_SKRELL
@@ -141,7 +139,6 @@
 /datum/species/monkey/unathi
 	name = SPECIES_MONKEY_UNATHI
 	short_name = "sto"
-	name_plural = LANGUAGE_STOK
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/moghes
 
 	icobase = 'icons/mob/human_races/monkeys/r_stok.dmi'
@@ -149,7 +146,6 @@
 
 	tail = "stoktail"
 	greater_form = SPECIES_UNATHI
-	default_language = LANGUAGE_STOK
 	flesh_color = "#34AF10"
 	base_color = "#066000"
 	reagent_tag = IS_UNATHI
@@ -174,7 +170,6 @@
 
 	tail = "vkrexitail"
 	greater_form = SPECIES_VAURCA_WORKER
-	default_language = LANGUAGE_BUG
 	blood_color = "#E6E600"
 	flesh_color = "#E6E600"
 	//base_color = "#E6E600"

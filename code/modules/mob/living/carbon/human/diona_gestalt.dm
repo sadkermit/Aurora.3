@@ -26,12 +26,7 @@
 
 		if (mind?.name && mind.name != real_name)
 			add_verb(src, /mob/living/carbon/human/proc/gestalt_set_name)
-			var/datum/language/L = locate(/datum/language/diona) in languages
-			var/newname
-			if (L)
-				newname = L.get_random_name()
-			else
-				newname = "Diona Gestalt ([rand(100,999)])"
+			var/newname = "Diona Gestalt ([rand(100,999)])"
 			real_name = newname
 			name = newname
 			to_chat(src, "<span class=notice>We are named [real_name] for now, but we can choose a new name for our gestalt. (Check the Abilities Tab)</span>")
@@ -178,10 +173,6 @@ Nymphs have 100 health, so without armor there is a small possibility for each n
 	var/newname
 	var/suggestion = ""
 	var/textbox = ""
-	var/datum/language/L = locate(/datum/language/diona) in languages
-	if (L)
-		suggestion = L.get_random_name()
-
 
 	textbox	= "What shall we name our new collective? Type in a name, or leave blank to cancel. We recall that we were once part of a collective named [mind.name] but it is not necessary to return to that"
 

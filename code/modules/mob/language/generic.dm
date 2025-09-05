@@ -34,45 +34,6 @@
 	"pur", "qiu", "que", "ra", "ras", "re", "ri", "rig", "ril", "ro", "roj", "ron", "roso", "rou", "ru", "sa", "san", "sci", "sek", "shi", "shiia", "shiue", "shiwu", "shu", "shui", "si", "siaj", "sku", "so", "som", "sti", "str", "stre", "su", "suno", "ta", "tan", "tas", "te", "tel", "tem",
 	"the", "ti", "tian", "tita", "tiu", "to", "toj", "ton", "tran", "tre", "tri", "trin", "tro", "trus", "un", "undo", "uno ", "uz", "va", "var", "varm", "vas", "ve", "vek", "ven", "ves", "vi", "via", "vin", "vino", "vint", "vir", "von", "vu", "whe", "wu", "yong", "zem", "zo", "zoj", "zon")
 
-// Galactic common languages (systemwide accepted standards).
-/datum/language/trader
-	name = LANGUAGE_TRADEBAND
-	short = "TRADE"
-	desc = "Descended from latin and romance languages of old Earth, Tradeband remains the main tongue of the upper class of humanity. The language sounds elegant and well structured to most ears. It remains in popular use with traders, diplomats, and those seeking to hold onto a piece of a romantic past."
-	speech_verb = list("enunciates")
-	sing_verb = list("performs")
-	colour = "tradeband"
-	written_style = "tradeband"
-	key = "2"
-	flags = TCOMSSIM
-	allow_accents = TRUE
-	syllables = list("a", "acc", "ai", "al", "ali", "am", "ama", "ami", "amo", "an", "ang", "arme", "ave", "ba", "bai", "bar", "bat", "bi", "blie", "bris", "ca", "can", "cant", "car", "care", "ce", "ci", "cis", "cit", "cla", "co", "cul", "cur", "curt", "da", "dam", "dans", "de",
-	"di", "dier", "dim", "dins", "dorm", "du", "duro", "e", "eaux", "ec", "ecto", "ees", "ego", "el", "en", "ent", "er", "ere", "eres", "eri", "ero", "es", "et", "ex", "far", "fi", "fic", "fine", "fol", "foll", "fri", "fro", "gen", "gil", "go", "gran", "hab", "ho", "huc", "ia",
-	"iam", "ibus", "idor", "ie", "iens", "ier", "ieur", "iis", "il", "in", "ine", "int", "ir", "is", "ise", "it", "itt", "jar", "je", "jo", "jor", "la", "lar", "lav", "le", "lees", "ler", "les", "li", "lib", "lie", "lo", "lu", "ma", "man", "manu", "mar", "mari", "mas", "me", "mea",
-	"mee", "mejo", "men", "mes", "meum", "meus", "mi", "mier", "min", "mine", "mit", "mo", "moi", "mon", "mons", "mors", "mou", "mul", "na", "nam", "ne", "nee", "nent", "nes", "ni", "nit", "no", "nom", "nu", "num", "o", "oc", "occ", "oja", "om", "omni", "or", "ori", "oro", "os", "ou",
-	"oub", "pa", "par", "pars", "pas", "plu", "pluv", "po", "pol", "pos", "pou", "pous", "pre", "pu", "pug", "pus", "que", "qui", "re", "ri", "ric", "riga", "rito", "ro", "rom", "sa", "sal", "se", "ser", "sers", "ses", "sim", "sion", "so", "sol", "som", "sou", "sper", "sse", "ste", "su",
-	"suis", "sul", "sur", "ta", "tar", "te", "teau", "tem", "temp", "ten", "tene", "tes", "ti", "tibus", "tien", "tion", "to", "tol", "ton", "tons", "tout", "tra", "trai", "tre", "trou", "tuo", "tus", "tut", "ues", "ui", "ul", "um", "un", "upa", "us", "ut", "ux", "va", "vail", "ve", "ven",
-	"veni", "vi", "viam", "vie", "vo", "xus", "za", "zio")
-
-// Criminal language.
-/datum/language/gutter
-	name = LANGUAGE_GUTTER
-	short = "FREE"
-	desc = "A language of renegades and frontiersmen descending from various languages from Earth like Hindi combined into a multi-rooted jumble that sounds incoherent or even barbarian to non-native speakers. This language is the only common cultural identity for humans in the frontier. Speaking this language in itself boldly declares the speaker a free spirit. Often called 'Gutter' by Alliance citizens."
-	speech_verb = list("says")
-	sing_verb = list("croons")
-	colour = "freespeak"
-	written_style = "freespeak"
-	key = "3"
-	flags = TCOMSSIM
-	allow_accents = TRUE
-	syllables = list("a", "aan", "aas", "ab", "aba", "ad", "aee", "aft", "ag", "ai", "aise", "ak", "akee", "aq", "ar", "ata", "aur", "aus", "ba", "baat", "bach", "bad", "bahe", "band", "be", "ben", "ber", "bhaa", "bhu", "bra", "burt", "cap", "cer", "ch", "cha", "chaar", "chale", "chalo", "chil",
-	"com", "da", "daa", "daaj", "dat", "de", "dee", "dhaa", "di", "die", "dik", "din", "diz", "do", "dos", "dosh", "durch", "eer", "ek", "er", "es", "fal", "fang", "fra", "fun", "ga", "gan", "gao", "gee", "geet", "gern", "gir", "gon", "gren", "gri", "gu", "guda", "ha", "haa", "hai", "hain", "har",
-	"hat", "he", "hee", "heer", "hekt", "heu", "hit", "hn", "ho", "hua", "huk", "hul", "ich", "ig", "in", "isch", "ja", "jaa", "jad", "jan", "jao", "jar", "jas", "jee", "jiao", "jin", "jing ", "un", "ka", "kaha", "kana", "kar", "kara", "karo", "ke ", "kee", "keln", "kha", "khada", "khe", "khi", "ko",
-	"koo", "ky", "la", "laa", "laat", "lad", "lada", "lana", "lane", "le", "lee", "leiden", "leis", "len", "lie", "lo", "maa", "maan", "mod ", "most", "muj", "mujhe", "mukt", "na", "naya", "ne", "nee", "net", "neta", "nir", "nka", "oon", "oop", "pa", "paa", "pet", "phen", "phot", "pi", "plo", "pra",
-	"que", "ra", "raa", "rahe", "raho", "ran", "rana", "rar", "re", "ri", "rie", "rin", "ro", "rona", "rosh", "rtiv", "saa", "saal", "saath", "san", "santu", "sch", "se", "sen", "sh", "sha", "shee", "shi", "shn", "sht", "shuo", "soch", "sol", "soo", "ssa", "ster", "suk", "sur", "ta", "taan", "tak",
-	"taka", "tal", "tan", "tar", "ten", "tend", "th", "tho", "tili", "to", "ton", "tr", "tu", "tum", "tung", "udaa", "ugr", "unge", "ut", "va", "vaa", "vaad", "vaib", "ve", "ven", "ver", "vi", "vis", "vol", "wic", "wu", "wut", "xi", "xiao", "ya", "yah", "yon", "you", "zas", "ze", "zhu", "zi", "zo", "zorn", "zt")
-
 // Sign language
 /datum/language/sign
 	name = LANGUAGE_SIGN

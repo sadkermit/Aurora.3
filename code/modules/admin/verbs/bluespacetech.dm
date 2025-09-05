@@ -92,22 +92,7 @@
 	//Because universal speak doesn't work right.
 
 	bst.add_language(LANGUAGE_TCB)
-	bst.add_language(LANGUAGE_GUTTER)
-	bst.add_language(LANGUAGE_SIGN)
-	bst.add_language(LANGUAGE_TRADEBAND)
-	// Unathi languages
-	bst.add_language(LANGUAGE_UNATHI)
-	bst.add_language(LANGUAGE_AZAZIBA)
-	// Tajara languages
-	bst.add_language(LANGUAGE_SIIK_MAAS)
-	bst.add_language(LANGUAGE_SIIK_TAJR)
-	bst.add_language(LANGUAGE_SIGN_TAJARA)
-	// Other station species' languages
-	bst.add_language(LANGUAGE_SKRELLIAN)
-	bst.add_language(LANGUAGE_SOL_COMMON)
-	bst.add_language(LANGUAGE_ELYRAN_STANDARD)
-	bst.add_language(LANGUAGE_ROOTSONG)
-	bst.add_language(LANGUAGE_VAURCA)
+
 	// Synthetics
 	bst.add_language(LANGUAGE_ROBOT)
 	bst.add_language(LANGUAGE_DRONE)

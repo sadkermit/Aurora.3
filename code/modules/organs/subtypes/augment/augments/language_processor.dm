@@ -35,88 +35,13 @@
 
 	owner.set_default_language(pick(owner.languages))
 
-/obj/item/organ/internal/augment/language/klax
-	name = "K'laxan language processor"
-	augment_languages = list(LANGUAGE_UNATHI)
-	species_restricted = list(
-		SPECIES_VAURCA_BREEDER,
-		SPECIES_VAURCA_BULWARK,
-		SPECIES_VAURCA_WARFORM,
-		SPECIES_VAURCA_WARRIOR,
-		SPECIES_VAURCA_ATTENDANT,
-		SPECIES_VAURCA_WORKER,
-	)
-
-/obj/item/organ/internal/augment/language/cthur
-	name = "C'thur language processor"
-	augment_languages = list(LANGUAGE_SKRELLIAN)
-	species_restricted = list(
-		SPECIES_VAURCA_BREEDER,
-		SPECIES_VAURCA_BULWARK,
-		SPECIES_VAURCA_WARFORM,
-		SPECIES_VAURCA_WARRIOR,
-		SPECIES_VAURCA_ATTENDANT,
-		SPECIES_VAURCA_WORKER,
-	)
-
-
-/obj/item/organ/internal/augment/language/mikuetz
-	name = "Mi'kuetz language processor"
-	augment_languages = list(LANGUAGE_AZAZIBA)
-	species_restricted = list(
-		SPECIES_VAURCA_BREEDER,
-		SPECIES_VAURCA_BULWARK,
-		SPECIES_VAURCA_WARFORM,
-		SPECIES_VAURCA_WARRIOR,
-		SPECIES_VAURCA_ATTENDANT,
-		SPECIES_VAURCA_WORKER,
-	)
-
-
-/obj/item/organ/internal/augment/language/zino
-	name = "Zino language processor"
-	augment_languages = list(LANGUAGE_GUTTER)
-	species_restricted = list(
-		SPECIES_VAURCA_BREEDER,
-		SPECIES_VAURCA_BULWARK,
-		SPECIES_VAURCA_WARFORM,
-		SPECIES_VAURCA_WARRIOR,
-		SPECIES_VAURCA_ATTENDANT,
-		SPECIES_VAURCA_WORKER,
-	)
-
-
-/obj/item/organ/internal/augment/language/tradeband
-	name = "Tradeband language processor"
-	augment_languages = list(LANGUAGE_TRADEBAND)
-	species_restricted = list(
-		SPECIES_VAURCA_BREEDER,
-		SPECIES_VAURCA_BULWARK,
-		SPECIES_VAURCA_WARFORM,
-		SPECIES_VAURCA_WARRIOR,
-		SPECIES_VAURCA_ATTENDANT,
-		SPECIES_VAURCA_WORKER,
-	)
-
-/obj/item/organ/internal/augment/language/zeng
-	name = "Zeng-Hu Nral'malic language processor"
-	augment_languages = list(LANGUAGE_SKRELLIAN)
-	species_restricted = list(
-		SPECIES_VAURCA_BREEDER,
-		SPECIES_VAURCA_BULWARK,
-		SPECIES_VAURCA_WARFORM,
-		SPECIES_VAURCA_WARRIOR,
-		SPECIES_VAURCA_ATTENDANT,
-		SPECIES_VAURCA_WORKER,
-	)
 
 /obj/item/organ/internal/augment/language/vekatak
 	name = "Ve'katak Phalanx Hivenet receiver"
 	icon_state = "phalanx_hivenet"
 	dead_icon = "phalanx_hivenet_broken"
 	on_mob_icon = 'icons/mob/human_races/augments_external.dmi'
-	augment_languages = list(LANGUAGE_VAURCA)
-	granted_verbs = list(/mob/living/carbon/human/proc/hivenet_recieve, /mob/living/carbon/human/proc/phalanx_transmit)
+	granted_verbs = list(/mob/living/carbon/human/proc/phalanx_transmit)
 	var/decryption_key
 	var/banned = FALSE
 	var/muted = FALSE

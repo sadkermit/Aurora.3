@@ -79,39 +79,16 @@
 	var/decryption_key
 
 	var/list/granted_verbs = list(
-		/mob/living/carbon/human/proc/hivenet_recieve,
 		/mob/living/carbon/human/proc/hivenet_manifest
 	)
 
-	var/list/all_hive_verbs = list(
-		/mob/living/carbon/human/proc/hiveban,
-		/mob/living/carbon/human/proc/hiveuntether,
-		/mob/living/carbon/human/proc/hivenet_neuralshock,
-		/mob/living/carbon/human/proc/hivenet_transmit,
-		/mob/living/carbon/human/proc/hivemute,
-		/mob/living/carbon/human/proc/hivenet_recieve,
-		/mob/living/carbon/human/proc/hivenet_encrypt,
-		/mob/living/carbon/human/proc/hivenet_camera,
-		/mob/living/carbon/human/proc/hivenet_lattice,
-		/mob/living/carbon/human/proc/hivenet_decrypt,
-		/mob/living/carbon/human/proc/hivenet_hijack,
-		/mob/living/carbon/human/proc/antag_hiveshock,
-		/mob/living/carbon/human/proc/antag_hivemute
-	)
+	var/list/all_hive_verbs = list()
 
 /obj/item/organ/internal/vaurca/neuralsocket/process()
 	if(!owner)
 		return
 	if(last_action > world.time)
 		last_action--
-	if (is_broken())
-		if (GLOB.all_languages[LANGUAGE_VAURCA] in owner.languages)
-			owner.remove_language(LANGUAGE_VAURCA)
-			to_chat(owner, SPAN_WARNING("Your mind suddenly grows dark as the unity of the Hive is torn from you."))
-	else
-		if (!(GLOB.all_languages[LANGUAGE_VAURCA] in owner.languages) && !banned)
-			owner.add_language(LANGUAGE_VAURCA)
-			to_chat(owner, SPAN_NOTICE(" Your mind expands, and your thoughts join the unity of the Hivenet."))
 	if(disrupted)
 		if(disrupttime > world.time)
 			disrupttime--
@@ -121,16 +98,10 @@
 
 /obj/item/organ/internal/vaurca/neuralsocket/replaced(var/mob/living/carbon/human/target)
 	owner = target
-	if (!(GLOB.all_languages[LANGUAGE_VAURCA] in owner.languages) && !banned)
-		owner.add_language(LANGUAGE_VAURCA)
-		to_chat(owner, SPAN_NOTICE(" Your mind expands, and your thoughts join the unity of the Hivenet."))
 	add_verb(owner, granted_verbs)
 	..()
 
 /obj/item/organ/internal/vaurca/neuralsocket/removed(var/mob/living/carbon/human/target)
-	if(GLOB.all_languages[LANGUAGE_VAURCA] in target.languages)
-		target.remove_language(LANGUAGE_VAURCA)
-		to_chat(target, SPAN_WARNING("Your mind suddenly grows dark as the unity of the Hive is torn from you."))
 	remove_verb(owner, all_hive_verbs)
 	..()
 
@@ -143,31 +114,11 @@
 	adminperms = TRUE
 	var/list/shielded_sockets = list() //sockets that you are currently protecting
 	var/list/shielded_mobs = list() //mobs that you are currently protecting
-	granted_verbs = list(
-		/mob/living/carbon/human/proc/hiveban,
-		/mob/living/carbon/human/proc/hivenet_neuralshock,
-		/mob/living/carbon/human/proc/hiveuntether,
-		/mob/living/carbon/human/proc/hivenet_transmit,
-		/mob/living/carbon/human/proc/hivemute,
-		/mob/living/carbon/human/proc/hivenet_recieve,
-		/mob/living/carbon/human/proc/hivenet_encrypt,
-		/mob/living/carbon/human/proc/hivenet_camera,
-		/mob/living/carbon/human/proc/hivenet_lattice,
-		/mob/living/carbon/human/proc/hivenet_decrypt,
-		/mob/living/carbon/human/proc/hivenet_manifest
-	)
+	granted_verbs = list()
 
 /obj/item/organ/internal/vaurca/neuralsocket/admin/process()
 	if(!owner)
 		return
-	if (is_broken())
-		if (GLOB.all_languages[LANGUAGE_VAURCA] in owner.languages)
-			owner.remove_language(LANGUAGE_VAURCA)
-			to_chat(owner, SPAN_WARNING("Your mind suddenly grows dark as the unity of the Hive is torn from you."))
-	else
-		if (!(GLOB.all_languages[LANGUAGE_VAURCA] in owner.languages) && !banned)
-			owner.add_language(LANGUAGE_VAURCA)
-			to_chat(owner, SPAN_NOTICE("Your mind expands, and your thoughts join the unity of the Hivenet."))
 
 	if(owner.stat == DEAD)
 		if(!remote_cast)
@@ -231,13 +182,7 @@
 	name = "hivenet electronic warfare suite"
 	desc = "An augment often seen among Vaurcae specializing in espionage or cyberwarfare operations, this suite of tools is designed to protect a Vaurca's Hivenet connection against hacking, remote access or sabotage. \
 	It also contains a suite of upgrades enabling it to launch Hivenet-based attacks against other Vaurcae."
-	var/list/added_verbs = list(
-		/mob/living/carbon/human/proc/hivenet_hijack,
-		/mob/living/carbon/human/proc/antag_hiveshock,
-		/mob/living/carbon/human/proc/antag_hivemute,
-		/mob/living/carbon/human/proc/hivenet_encrypt,
-		/mob/living/carbon/human/proc/hivenet_decrypt
-	)
+	var/list/added_verbs = list()
 
 /obj/item/organ/internal/augment/hiveshield/warfare/process()
 	if(!owner)

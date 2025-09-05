@@ -272,15 +272,6 @@
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
 	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD, SPECIES_TAJARA, SPECIES_TAJARA_ZHAN, SPECIES_TAJARA_MSAI, SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_ATTENDANT, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER, SPECIES_UNATHI)
 
-/datum/gear/augment/skrell_language
-	display_name = "Zeng-Hu Nral'malic language processor"
-	description = "An augmentation developed by Zeng-Hu Pharmaceuticals' Nralakk Division to enable the recipient to understand the complex and inaudible tones of Nral'malic."
-	path = /obj/item/organ/internal/augment/language/zeng
-	whitelisted = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
-	faction = "Zeng-Hu Pharmaceuticals"
-	allowed_roles = list("Physician", "Surgeon", "Chief Medical Officer", "Pharmacist", "Paramedic", "Psychiatrist", "Medical Intern", "Corporate Liaison", "Research Director","Scientist", "Xenobiologist", "Xenobotanist", "Xenoarchaeologist", "Research Intern", "Assistant", "Off-Duty Crew Member", "Corporate Reporter", "Captain", "Bridge Crew", "Medical Personnel", "Science Personnel")
-	cost = 3
-
 /datum/gear/augment/phalanx_plate
 	display_name = "phalanx facial plate"
 	description = "This modular face plate accommodates a wide array of cybernetic augmentations, enabling seamless integration with Phalanx's transhumanist doctrine. Enhanced sensory overlays and HUDs offer Phalanx members superior situational awareness and promote a sense of hive-thinking."

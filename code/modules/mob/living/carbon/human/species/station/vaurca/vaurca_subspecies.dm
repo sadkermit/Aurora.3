@@ -1,7 +1,7 @@
 /datum/species/bug/type_b
 	name = SPECIES_VAURCA_WARRIOR
 	name_plural = "Type BA"
-	language = LANGUAGE_VAURCA
+
 	species_height = HEIGHT_CLASS_TALL
 	height_min = 150
 	height_max = 250
@@ -171,15 +171,6 @@
 
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/bugbite,
-		/mob/living/carbon/human/proc/hivenet_neuralshock,
-		/mob/living/carbon/human/proc/hivenet_lattice,
-		/mob/living/carbon/human/proc/hivenet_encrypt,
-		/mob/living/carbon/human/proc/hivenet_recieve,
-		/mob/living/carbon/human/proc/hivenet_decrypt,
-		/mob/living/carbon/human/proc/hivenet_camera,
-		/mob/living/carbon/human/proc/hivemute,
-		/mob/living/carbon/human/proc/hiveban,
-		/mob/living/carbon/human/proc/hiveuntether,
 		/mob/living/carbon/human/proc/hivenet_transmit,
 		/mob/living/carbon/human/proc/hivenet_manifest
 	)
@@ -244,7 +235,6 @@
 	icobase = 'icons/mob/human_races/vaurca/r_vaurcamecha.dmi'
 	deform = 'icons/mob/human_races/vaurca/r_vaurcamecha.dmi'
 	default_language = LANGUAGE_GIBBERING
-	language = LANGUAGE_VAURCA
 	species_height = HEIGHT_NOT_USED
 	icon_x_offset = -8
 	unarmed_types = list(/datum/unarmed_attack/claws/cleave, /datum/unarmed_attack/bite/strong)
@@ -289,7 +279,6 @@
 		/mob/living/carbon/human/proc/devour_head,
 		/mob/living/carbon/human/proc/formic_spray,
 		/mob/living/carbon/human/proc/trample,
-		/mob/living/carbon/human/proc/hivenet_recieve,
 		/mob/living/carbon/human/proc/hivenet_manifest
 		)
 

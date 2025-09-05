@@ -12,14 +12,12 @@
 	default_genders = list(NEUTER)
 	selectable_pronouns = null
 	economic_modifier = 7
-	language = LANGUAGE_VAURCA
 	primitive_form = SPECIES_MONKEY_VAURCA
 	greater_form = SPECIES_VAURCA_WARRIOR
 	icobase = 'icons/mob/human_races/vaurca/r_vaurca.dmi'
 	deform = 'icons/mob/human_races/vaurca/r_vaurca.dmi'
 	preview_icon = 'icons/mob/human_races/vaurca/vaurca_preview.dmi'
 	bandages_icon = 'icons/mob/bandage.dmi'
-	name_language = LANGUAGE_VAURCA
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -129,7 +127,6 @@
 		)
 
 	inherent_verbs = list(
-		/mob/living/carbon/human/proc/hivenet_recieve,
 		/mob/living/carbon/human/proc/hivenet_manifest
 	)
 

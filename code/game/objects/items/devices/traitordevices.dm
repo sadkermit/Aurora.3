@@ -68,14 +68,6 @@ effective or pretty fucking useless.
 	if(!istype(target))
 		to_chat(user, SPAN_NOTICE("[target] is not a valid target!"))
 		return
-	if((GLOB.all_languages[LANGUAGE_LIIDRA] in target.languages) || target.internal_organs_by_name["blackkois"])
-		to_chat(user, SPAN_NOTICE("[target] is already part of the Lii'dra Hivemind!"))
-		return
-	if(isvaurca(target))
-		to_chat(user, SPAN_NOTICE("You connect [target] to the Lii'dra Hivemind!"))
-		to_chat(target, SPAN_NOTICE("You have been connected to the Lii'dra Hivemind!"))
-		target.add_language(LANGUAGE_LIIDRA)
-		qdel(src)
 	else if(!target.isSynthetic())
 		to_chat(user, SPAN_NOTICE("You infest [target] with black k'ois!"))
 		to_chat(target, SPAN_NOTICE("You have been infested with black k'ois!"))

@@ -27,7 +27,6 @@
 	zippolighters["gadpathurian zippo"] = /obj/item/flame/lighter/zippo/gadpathur
 	zippolighters["luceian zippo"] = /obj/item/flame/lighter/zippo/luceian
 	zippolighters["asoral jet lighter"] = /obj/item/flame/lighter/zippo/asoral
-	zippolighters["nralakk zippo"] = /obj/item/flame/lighter/zippo/nralakk
 	zippolighters["callistean lighter"] = /obj/item/flame/lighter/callisto
 	gear_tweaks += new /datum/gear_tweak/path(zippolighters)
 
@@ -54,9 +53,6 @@
 	cigarettes["Laissez-Faires cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/rugged
 	cigarettes["Trans-Stellar Duty Free cigarette packet"] = /obj/item/storage/box/fancy/cigarettes
 	cigarettes["DromedaryCo cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/dromedaryco
-	cigarettes["Nico-Tine cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/nicotine
-	cigarettes["Eriuyushi Sunset cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/federation
-	cigarettes["Xaqixal Dyn Fields cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/dyn
 	cigarettes["Natural Vysokan Soothsayer oracle cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/oracle
 	gear_tweaks += new /datum/gear_tweak/path(cigarettes)
 
@@ -71,10 +67,6 @@
 	..()
 	var/list/chews = list()
 	chews["Rredouane Cuts chewing tobacco"] = /obj/item/storage/chewables/tobacco/bad
-	chews["Mendell Smooth chewing tobacco"] = /obj/item/storage/chewables/tobacco
-	chews["Taba-Kamu chewing tobacco"] = /obj/item/storage/chewables/tobacco/fine
-	chews["Leviathan Chew chewing tobacco"] = /obj/item/storage/chewables/tobacco/federation
-	chews["Weibi's Breeze chewing tobacco"] = /obj/item/storage/chewables/tobacco/dyn
 	chews["box of Nico-Tine gum"] = /obj/item/storage/box/fancy/chewables/tobacco/nico
 	gear_tweaks += new /datum/gear_tweak/path(chews)
 

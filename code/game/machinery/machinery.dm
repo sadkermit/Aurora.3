@@ -563,10 +563,9 @@ Class Procs:
 	if(!istype(H))
 		return
 
-	//for whatever reason, skrell's tentacles have a really long length
 	//horns would not get caught in the machine
 	//vaurca have fine control of their antennae
-	if(isskrell(H) || isunathi(H) || isvaurca(H))
+	if(isunathi(H) || isvaurca(H))
 		return
 
 	var/datum/sprite_accessory/hair/hair_style = GLOB.hair_styles_list[H.h_style]

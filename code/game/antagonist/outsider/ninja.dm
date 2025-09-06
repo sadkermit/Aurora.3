@@ -145,11 +145,8 @@ GLOBAL_DATUM(ninjas, /datum/antagonist/ninja)
 			directive += "Our honor is on the line. Utilize only honorable tactics when dealing with opponents."
 		if(12)
 			directive += "We are currently negotiating with a mercenary leader. Disguise assassinations as suicide or other natural causes."
-		if(13)
+		if(13 to 14)
 			directive += "Some disgruntled [SSatlas.current_map.company_name] employees have been supportive of our operations. Be wary of any mistreatment by command staff."
-		if(14)
-			var/xenorace = pick("Unathi", "Skrell")
-			directive += "A group of [xenorace] radicals have been loyal supporters of the Spider Clan. Favor [xenorace] crew whenever possible."
 		if(15)
 			directive += "The Spider Clan has recently been accused of religious insensitivity. Attempt to speak with the Chaplain and prove these accusations false."
 		if(16)

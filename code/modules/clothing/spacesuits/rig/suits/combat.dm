@@ -25,7 +25,7 @@
 
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT
 
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN)
 
 /obj/item/clothing/head/helmet/space/rig/combat
 	light_overlay = "helmet_light_dual_cyan"
@@ -197,7 +197,7 @@
 		/obj/item/material/twohanded/pike/flag
 	)
 
-	species_restricted = list(BODYTYPE_HUMAN,BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	species_restricted = list(BODYTYPE_HUMAN,BODYTYPE_UNATHI, BODYTYPE_IPC, BODYTYPE_VAURCA)
 
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY
 
@@ -240,7 +240,7 @@
 
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA
 
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/rig/gunslinger/equipped
 	req_access = list(ACCESS_SYNDICATE)
@@ -523,7 +523,7 @@
 	icon = 'icons/obj/item/clothing/rig/nt_ert/commander.dmi'
 	icon_state = "ert_commander_rig"
 	icon_supported_species_tags = list("skr")
-	species_restricted = list(BODYTYPE_SKRELL, BODYTYPE_HUMAN)
+	species_restricted = list(BODYTYPE_HUMAN)
 	armor = list(
 		MELEE = ARMOR_MELEE_MAJOR,
 		BULLET = ARMOR_BALLISTIC_MAJOR,

@@ -22,12 +22,6 @@
 	telecrystal_cost = 1
 	path = /obj/item/martial_manual/gun_kata
 
-/datum/uplink_item/item/martial_arts/skrell
-	name = "Karak Virul"
-	desc = "A manual containing instructions on the Skrellian martial art of Karak Virul. Only usable by Skrell."
-	telecrystal_cost = 2
-	path = /obj/item/martial_manual/skrell
-
 /datum/uplink_item/item/martial_arts/unathi
 	name = "Kis-Khan"
 	desc = "A manual containing instructions on the Unathi martial art of Kis-Khan. Only usable by Unathi."

@@ -196,8 +196,6 @@
 		return
 	var/species_check = brainobj.species.category_name
 	switch(species_check)
-		if("Skrell")
-			braintype = "skrell"
 		if("Vaurca")
 			braintype = "vaurca"
 

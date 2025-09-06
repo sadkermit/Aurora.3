@@ -529,7 +529,6 @@ STOCK_ITEM_COMMON(flagbox, 3)
 		/obj/item/storage/box/flags/elyra,
 		/obj/item/storage/box/flags/diona,
 		/obj/item/storage/box/flags/unathi,
-		/obj/item/storage/box/flags/skrell,
 		/obj/item/storage/box/flags/vaurca,
 		/obj/item/storage/box/flags/goldendeep,
 		/obj/item/storage/box/flags/corporate,

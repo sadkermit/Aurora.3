@@ -30,8 +30,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	/// Which species can use this prosthetic type.
 	var/list/species_can_use = list(
 		SPECIES_HUMAN,
-		SPECIES_SKRELL,
-		SPECIES_SKRELL_AXIORI,
 		SPECIES_UNATHI,
 		SPECIES_VAURCA_WORKER,
 		SPECIES_VAURCA_WARRIOR,

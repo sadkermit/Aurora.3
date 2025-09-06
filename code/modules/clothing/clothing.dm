@@ -170,8 +170,8 @@
 
 	//Set species_restricted list
 	switch(target_species)
-		if(BODYTYPE_HUMAN, BODYTYPE_SKRELL) // Humans and Skrell can share!
-			species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+		if(BODYTYPE_HUMAN) // Humans and Skrell can share!
+			species_restricted = list(BODYTYPE_HUMAN)
 
 		if(BODYTYPE_IPC, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_ZENGHU, BODYTYPE_IPC_INDUSTRIAL) // All non-shell IPCs use Machine refittings.
 			species_restricted = list(BODYTYPE_IPC, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_ZENGHU, BODYTYPE_IPC_INDUSTRIAL)
@@ -222,8 +222,8 @@
 		return
 
 	switch(target_species)
-		if(BODYTYPE_HUMAN, BODYTYPE_SKRELL) //humanoid bodies
-			species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+		if(BODYTYPE_HUMAN) //humanoid bodies
+			species_restricted = list(BODYTYPE_HUMAN)
 
 		if(BODYTYPE_IPC, BODYTYPE_IPC_ZENGHU, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_INDUSTRIAL) // All non-shell IPCs use Machine refittings.
 			species_restricted = list(BODYTYPE_IPC, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_INDUSTRIAL, BODYTYPE_IPC_ZENGHU)

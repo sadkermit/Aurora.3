@@ -1087,10 +1087,3 @@
 	desc = "A Vaurca cloak with storage pockets. This one has the Ve'katak Phalanx logo design. This one is made of a strong T’kuxi silk weave."
 	icon_state = "phalanxcape"
 	item_state = "phalanxcape"
-
-/obj/item/storage/backpack/kala
-	name = "skrell backpack"
-	desc = "A lightly padded, waterproof backpack worn by Skrell."
-	icon_state = "kala_backpack"
-	item_state = "kala_backpack"
-	contained_sprite = TRUE

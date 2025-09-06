@@ -1125,16 +1125,6 @@
 		/obj/item/flag/fishingleague = 2
 	)
 
-/obj/item/storage/box/flags/skrell
-	name = "Skrell flag box"
-	desc = "A box filled to the brim with various waterproof national flags."
-	starts_with = list(
-		/obj/item/flag/nralakk = 8,
-		/obj/item/flag/nralakk/l = 6,
-		/obj/item/flag/traverse = 2,
-		/obj/item/flag/traverse/l = 1
-	)
-
 /obj/item/storage/box/flags/vaurca
 	name = "Vaurca flag box"
 	desc = "A box filled to the brim with various hive flags."

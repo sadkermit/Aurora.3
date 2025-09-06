@@ -10,9 +10,7 @@
 	selection_color = "#6186cf"
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 20,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_HUMAN = 20
 	)
 
 	access = list(ACCESS_JOURNALIST, ACCESS_MAINT_TUNNELS)
@@ -82,9 +80,7 @@
 	economic_modifier = 15
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_HUMAN = 30
 	)
 
 	access = list(ACCESS_LAWYER, ACCESS_MAINT_TUNNELS)
@@ -204,9 +200,7 @@
 	economic_modifier = 15
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 150,
-		SPECIES_SKRELL_AXIORI = 150
+		SPECIES_HUMAN = 30
 	)
 
 	access = list(ACCESS_CONSULAR, ACCESS_MAINT_TUNNELS)
@@ -311,9 +305,7 @@
 	economic_modifier = 5
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_HUMAN = 18
 	)
 
 	access = list(ACCESS_CONSULAR, ACCESS_MAINT_TUNNELS)
@@ -357,9 +349,7 @@
 	economic_modifier = 5
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_HUMAN = 18
 	)
 
 	access = list(ACCESS_CONSULAR, ACCESS_MAINT_TUNNELS)
@@ -403,9 +393,7 @@
 	economic_modifier = 5
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 18,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_HUMAN = 18
 	)
 
 	access = list(ACCESS_LAWYER, ACCESS_MAINT_TUNNELS)

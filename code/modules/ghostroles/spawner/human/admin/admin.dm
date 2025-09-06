@@ -19,7 +19,7 @@
 
 	//Vars related to human mobs
 	outfit = /obj/outfit
-	possible_species = list(SPECIES_HUMAN,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI,SPECIES_IPC)
+	possible_species = list(SPECIES_HUMAN,SPECIES_IPC)
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
 	assigned_role = "Odin Security Officer"

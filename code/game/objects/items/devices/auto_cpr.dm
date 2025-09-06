@@ -31,7 +31,6 @@
 
 	var/list/mask_blacklist = list(
 		/obj/item/clothing/mask/gas/vaurca,
-		/obj/item/clothing/mask/breath/skrell,
 		/obj/item/clothing/mask/breath/lyodsuit,
 		/obj/item/clothing/mask/breath/infiltrator)
 
@@ -171,7 +170,7 @@
 		return
 	if(force || !istype(H) || slot != slot_wear_suit)
 		return
-	if(H.species.get_bodytype() in list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI)) //gtfo stinky bugs
+	if(H.species.get_bodytype() in list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)) //gtfo stinky bugs
 		return
 	else
 		return FALSE

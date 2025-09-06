@@ -13,7 +13,7 @@
 	helm_type = /obj/item/clothing/head/helmet/space/rig/ert
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/heavy
 	req_access = list(ACCESS_CENT_SPECOPS)
-	species_restricted = list(BODYTYPE_SKRELL,BODYTYPE_HUMAN)
+	species_restricted = list(BODYTYPE_HUMAN)
 	armor = list(
 		MELEE = ARMOR_MELEE_MAJOR,
 		BULLET = ARMOR_BALLISTIC_PISTOL,

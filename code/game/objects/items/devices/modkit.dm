@@ -87,10 +87,6 @@
 	name = "unathi voidsuit modification kit"
 	target_species = BODYTYPE_UNATHI
 
-/obj/item/device/modkit/skrell
-	name = "skrell voidsuit modification kit"
-	target_species = BODYTYPE_SKRELL
-
 /obj/item/device/modkit/ipc
 	name = "ipc voidsuit modification kit"
 	target_species = BODYTYPE_IPC

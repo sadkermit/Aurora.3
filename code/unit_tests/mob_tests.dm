@@ -345,38 +345,6 @@
 	damagetype = DAMAGE_PAIN
 
 // =================================================================
-// Skrell
-// =================================================================
-
-/datum/unit_test/mob_damage/skrell
-	name = "MOB: Skrell damage check template"
-	mob_type = /mob/living/carbon/human/skrell
-
-/datum/unit_test/mob_damage/skrell/brute
-	name = "MOB: Skrell Brute Damage Check"
-	damagetype = DAMAGE_BRUTE
-
-/datum/unit_test/mob_damage/skrell/fire
-	name = "MOB: Skrell Fire Damage Check"
-	damagetype = DAMAGE_BURN
-
-/datum/unit_test/mob_damage/skrell/tox
-	name = "MOB: Skrell Toxins Damage Check"
-	damagetype = DAMAGE_TOXIN
-
-/datum/unit_test/mob_damage/skrell/oxy
-	name = "MOB: Skrell Oxygen Damage Check"
-	damagetype = DAMAGE_OXY
-
-/datum/unit_test/mob_damage/skrell/clone
-	name = "MOB: Skrell Clone Damage Check"
-	damagetype = DAMAGE_CLONE
-
-/datum/unit_test/mob_damage/skrell/halloss
-	name = "MOB: Skrell Halloss Damage Check"
-	damagetype = DAMAGE_PAIN
-
-// =================================================================
 // Diona
 // =================================================================
 

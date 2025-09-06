@@ -146,8 +146,6 @@
 				bsd()
 			if(SPECIES_UNATHI)
 				bsu()
-			if(SPECIES_SKRELL)
-				bss()
 			if(SPECIES_VAURCA_WORKER)
 				bsv()
 		return
@@ -210,23 +208,6 @@
 		if(GetIdCard())
 			var/obj/item/card/id/id = GetIdCard()
 			id.registered_name = "Bluespace Lizard"
-		regenerate_icons()
-	else
-		ghostize(0)
-		key = null
-		suicide()
-
-/mob/living/carbon/human/bst/proc/bss()
-	if(set_species(SPECIES_SKRELL))
-		h_style = "Skrell Average Tentacles"
-		name = "Bluespace Squid"
-		voice_name = "Bluespace Squid"
-		real_name = "Bluespace Squid"
-		mind.name = "Bluespace Squid"
-		if(GetIdCard())
-			var/obj/item/card/id/id = GetIdCard()
-			id.registered_name = "Bluespace Squid"
-		gender = "female"
 		regenerate_icons()
 	else
 		ghostize(0)

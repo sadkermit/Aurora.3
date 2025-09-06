@@ -512,14 +512,6 @@
 		'sound/effects/bodyfall4.ogg'
 	)
 
-/singleton/sound_category/bodyfall_skrell_sound
-	sounds = list(
-		'sound/effects/bodyfall_skrell1.ogg',
-		'sound/effects/bodyfall_skrell2.ogg',
-		'sound/effects/bodyfall_skrell3.ogg',
-		'sound/effects/bodyfall_skrell4.ogg'
-	)
-
 /singleton/sound_category/bodyfall_machine_sound
 	sounds = list(
 		'sound/effects/bodyfall_machine1.ogg',
@@ -858,16 +850,6 @@
 		'sound/arcade/lose_fuel.ogg',
 		'sound/arcade/mana.ogg',
 		'sound/arcade/steal.ogg'
-	)
-
-/singleton/sound_category/footstep_skrell_sound
-	sounds = list(
-		'sound/effects/footstep_skrell1.ogg',
-		'sound/effects/footstep_skrell2.ogg',
-		'sound/effects/footstep_skrell3.ogg',
-		'sound/effects/footstep_skrell4.ogg',
-		'sound/effects/footstep_skrell5.ogg',
-		'sound/effects/footstep_skrell6.ogg'
 	)
 
 /singleton/sound_category/footstep_unathi_sound

@@ -18,8 +18,3 @@
 /obj/item/device/hearing_aid/white
 	icon_state = "hearing_aid-w"
 	item_state = "hearing_aid-w"
-
-/obj/item/device/hearing_aid/skrell
-	desc = "A device that allows the naturally deaf to hear, to an extent. It seems to be Skrellian in design."
-	icon_state = "hearing_aid_skrell"
-	item_state = "hearing_aid_skrell"

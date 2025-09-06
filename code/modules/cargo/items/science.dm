@@ -54,20 +54,6 @@
 	groupable = FALSE
 	spawn_amount = 1
 
-/singleton/cargo_item/proto_skrell
-	category = "science"
-	name = "Proto-Skrell"
-	supplier = "zeng_hu"
-	description = "A Skrell body, vat-grown and artificially raised without a functional brain. The everyman's relatively-ethical solution to organ harvesting."
-	price = 9100
-	items = list(
-		/mob/living/carbon/human/skrell
-	)
-	access = ACCESS_RESEARCH
-	container_type = "bodybag"
-	groupable = FALSE
-	spawn_amount = 1
-
 /singleton/cargo_item/proto_unathi
 	category = "science"
 	name = "Proto-Unathi"

@@ -68,13 +68,3 @@
 		list(/singleton/emote/audible/shriek, /singleton/emote/audible/hiss) = 40,
 		list(/singleton/emote/audible/hiss) = 10,
 	)
-
-/datum/species/skrell
-	default_emotes = list(
-		/singleton/emote/audible/warble,
-		/singleton/emote/audible/croon,
-		/singleton/emote/audible/lowarble,
-		/singleton/emote/audible/croak,
-		/singleton/emote/audible/peep,
-		/singleton/emote/audible/puff
-	)

@@ -120,7 +120,6 @@
 /// for organics with synthetic blood substitute
 #define COLOR_SYNTH_BLOOD      "#D9F9FF"
 #define COLOR_DIONA_BLOOD      "#97DD7C"
-#define COLOR_SKRELL_BLOOD     "#0081CD"
 #define COLOR_VAURCA_BLOOD     "#E6E600"
 
 

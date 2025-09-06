@@ -414,19 +414,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 		/singleton/reagent/mental/nicotine = 5
 	)
 
-/obj/item/clothing/mask/smokable/cigarette/dyn
-	name = "dyn cigarette"
-	desc = "A mentholated cigarette from Nralakk made with processed dyn."
-	reagents_to_add = list(
-		/singleton/reagent/toxin/tobacco/sweet = 5,
-		/singleton/reagent/mental/nicotine = 5
-	)
-
-/obj/item/clothing/mask/smokable/cigarette/wulu
-	name = "wulumunusha cigarette"
-	desc = "A wulumunusha cigarette commonly smoked by Skrell for religious purposes."
-	reagents_to_add = list(/singleton/reagent/wulumunusha = 15)
-
 /obj/item/clothing/mask/smokable/cigarette/oracle
 	name = "oracle cigarette"
 	desc = "A roll of oracle and caromeg."
@@ -873,21 +860,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 	desc_extended = "It's debated whether this (recently) discontinued line of cheap lighters was a money laundering scheme or a publicity stunt - extremely cheap, extremely flimsy, these Idris made lighters became an unintended social phenomenon among Callistean smokers; running competitions amongst them as to how long they can keep those lighters alive."
 	icon_state = "lightercallisto"
 	item_state = "lightercallisto"
-
-/obj/item/flame/lighter/zippo/nralakk
-	name = "\improper Nralakk Federation Zippo lighter"
-	desc = "An advanced zippo lighter depicting the flag of the Nralakk Federation."
-	desc_extended = "A stylish lighter using Skrell hover technology. Burns with a purple flame. With the growth of the Federation's tobacco industry, these lighters are a commonplace convenience for many Skrell both within Nralakk space and abroad.These lighters are also often carried by wulumunusha smokers, and are a particularly common sight among adherents of the Weishii faith."
-	icon_state = "nralakkzippo"
-	item_state = "nralakkzippo"
-	flame_light_color = LIGHT_COLOR_PURPLE
-
-/obj/item/flame/lighter/zippo/nralakk/update_icon()
-	if(lit)
-		flick("[base_state]_turnon", src)
-	else
-		flick("[base_state]_turnoff", src)
-	return ..()
 
 /obj/item/flame/lighter/random/Initialize()
 	. = ..()

@@ -56,7 +56,7 @@
 	var/allow_no_mob = FALSE                // This antagonist allows ghosts as antag, or other mobs that don't fill out the current var.
 
 	// Used for setting appearance.
-	var/list/valid_species =       list(SPECIES_UNATHI,SPECIES_SKRELL,SPECIES_SKRELL_AXIORI,SPECIES_HUMAN)
+	var/list/valid_species =       list(SPECIES_HUMAN)
 
 	// Runtime vars.
 	var/datum/mind/leader                   // Current leader, if any.

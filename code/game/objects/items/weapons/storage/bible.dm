@@ -61,7 +61,7 @@
 	if(user.mind && (user.mind.assigned_role == "Chaplain"))
 		SSticker.Bible_name = book_name
 
-	var/new_book_style = tgui_input_list(user, "Which holy book style would you like?", "Holy Book", list("Generic", "Bible", "White Bible", "Melted Bible", "Quran", "Torah", "Holy Light", "Tome", "Scroll", "Guru", "The King in Yellow", "Ithaqua", "Trinary", "Stars", "Scrapbook", "Atheist", "Necronomicon"))
+	var/new_book_style = tgui_input_list(user, "Which holy book style would you like?", "Holy Book", list("Generic", "Bible", "White Bible", "Melted Bible", "Quran", "Torah", "Holy Light", "Tome", "Scroll", "Guru", "The King in Yellow", "Ithaqua", "Trinary", "Scrapbook", "Atheist", "Necronomicon"))
 	switch(new_book_style)
 		if("Bible")
 			icon_state = "bible"
@@ -99,9 +99,6 @@
 		if("Guru")
 			icon_state = "guru"
 			item_state = "book"
-		if("Stars")
-			icon_state = "skrellbible"
-			item_state = "skrellbible"
 		if("Scrapbook")
 			icon_state = "scrapbook"
 			item_state = "scrapbook"
@@ -111,9 +108,6 @@
 		if("Necronomicon")
 			icon_state = "necronomicon"
 			item_state = "necronomicon"
-		if("Skrell")
-			icon_state = "skrellbible"
-			item_state = "skrellbible"
 		if("Diona Eternal")
 			icon_state = "eternal"
 			item_state = "eternal"

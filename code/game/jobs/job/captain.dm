@@ -17,9 +17,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	economic_modifier = 20
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 35,
-		SPECIES_SKRELL = 100,
-		SPECIES_SKRELL_AXIORI = 100
+		SPECIES_HUMAN = 35
 	)
 
 	outfit = /obj/outfit/job/captain
@@ -91,9 +89,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	economic_modifier = 10
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 30,
-		SPECIES_SKRELL = 80,
-		SPECIES_SKRELL_AXIORI = 80
+		SPECIES_HUMAN = 30
 	)
 
 	outfit = /obj/outfit/job/xo
@@ -154,9 +150,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	economic_modifier = 5
 
 	minimum_character_age = list(
-		SPECIES_HUMAN = 25,
-		SPECIES_SKRELL = 55,
-		SPECIES_SKRELL_AXIORI = 55
+		SPECIES_HUMAN = 25
 	)
 
 	outfit = /obj/outfit/job/bridge_crew

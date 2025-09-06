@@ -125,9 +125,6 @@
 		/obj/item/storage/box/fancy/cigarettes/dromedaryco = HELMET_GARB_PASS_ICON,
 		/obj/item/storage/box/fancy/cigarettes/nicotine = HELMET_GARB_PASS_ICON,
 		/obj/item/storage/box/fancy/cigarettes/rugged = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/federation = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/dyn = HELMET_GARB_PASS_ICON,
-		/obj/item/storage/box/fancy/cigarettes/wulu = HELMET_GARB_PASS_ICON,
 		/obj/item/clothing/head/hachimaki = HELMET_GARB_PASS_ICON,
 		/obj/item/clothing/head/leader_headband = HELMET_GARB_PASS_ICON
 	)

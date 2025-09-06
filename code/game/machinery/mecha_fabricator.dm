@@ -226,7 +226,7 @@
 	var/target_loc = target.loc
 
 	if(target != user && !user.restrained() && !user.stat && !user.weakened && !user.stunned && !user.paralysis)
-		if(isskrell(target) || isunathi(target))
+		if(isunathi(target))
 			return
 
 		for(var/obj/item/protection in list(target.head))

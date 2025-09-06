@@ -25,10 +25,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 	. = ..(mapload, SPECIES_HUMAN_VATGROWN)
 	mob_thinks = FALSE
 
-/mob/living/carbon/human/skrell/Initialize(mapload)
-	h_style = "Skrell Average Tentacles"
-	. = ..(mapload, SPECIES_SKRELL)
-
 /mob/living/carbon/human/unathi/Initialize(mapload)
 	h_style = "Unathi Horns"
 	. = ..(mapload, SPECIES_UNATHI)
@@ -47,9 +43,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 
 /mob/living/carbon/human/monkey/Initialize(mapload)
 	. = ..(mapload, SPECIES_MONKEY)
-
-/mob/living/carbon/human/neaera/Initialize(mapload)
-	. = ..(mapload, SPECIES_MONKEY_SKRELL)
 
 /mob/living/carbon/human/stok/Initialize(mapload)
 	. = ..(mapload, SPECIES_MONKEY_UNATHI)
@@ -111,10 +104,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 	. = ..(mapload, SPECIES_VAURCA_BULWARK)
 	species.before_equip(src)
 	species.after_equip(src)
-
-/mob/living/carbon/human/axiori_skrell/Initialize(mapload)
-	h_style = "Skrell Average Tentacles"
-	. = ..(mapload, SPECIES_SKRELL_AXIORI)
 
 /mob/living/carbon/human/industrial/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_G1)

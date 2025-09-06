@@ -171,10 +171,6 @@
 	name = "\improper Tuna Snax"
 	icon_state = "tuna"
 
-/obj/item/trash/skrellsnacks
-	name = "\improper SkrellSnax"
-	icon_state = "skrellsnacks"
-
 /obj/item/trash/space_twinkie
 	name = "\improper space twinkie"
 	icon_state = "space_twinkie"

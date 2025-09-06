@@ -10,8 +10,7 @@
 	allowed_role_types = ADMIN_ROLES
 
 	allowed_species_types = list(
-		/datum/species/human,
-		/datum/species/skrell
+		/datum/species/human
 	)
 
 /datum/faction/admin/is_visible(var/mob/user)

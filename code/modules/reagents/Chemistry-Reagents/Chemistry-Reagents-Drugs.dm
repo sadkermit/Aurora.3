@@ -303,13 +303,8 @@
 /singleton/reagent/drugs/colorspace/affect_blood(mob/living/carbon/M, alien, removed, datum/reagents/holder)
 	..()
 
-	var/drug_strength = 20 * power
-
-	if(alien == IS_SKRELL)
-		drug_strength *= 0.8
-
 	M.druggy = max(M.druggy, 15)
-	M.hallucination = max(M.hallucination, drug_strength)
+	M.hallucination = max(M.hallucination, 20*power)
 
 	if(prob(15))
 		to_chat(SPAN_GOOD(pick("The floor is melting...", "Everything is so much brighter! Wow!", "Everything is shifting around you.")))
@@ -464,14 +459,11 @@
 /singleton/reagent/wulumunusha/affect_blood(mob/living/carbon/M, alien, removed, datum/reagents/holder)
 	M.druggy = max(M.druggy, 100)
 	M.silent = max(M.silent, 5)
-	if(prob(3) && !isskrell(M))
+	if(prob(3))
 		to_chat(M, SPAN_GOOD(pick("You can almost see the currents of air as they dance around you.", "You see the colours around you beginning to bleed together.", "You feel safe and comfortable.")))
-	if(prob(3) && isskrell(M))
-		to_chat(M, SPAN_ALIEN(pick("You can see the thoughts of those around you dancing in the air.", "You feel as if your mind has opened even further, your thought-field expanding.", "It's difficult to contain your thoughts - but why hide them anyway?", "You feel safe and comfortable.")))
 
 /singleton/reagent/wulumunusha/overdose(mob/living/carbon/M, alien, removed = 0, scale = 1, datum/reagents/holder)
-	if(isskrell(M))
-		M.hallucination = max(M.hallucination, 10 * scale)	//light hallucinations that afflict skrell
+	M.hallucination = max(M.hallucination, 10 * scale)	//light hallucinations that afflict skrell
 
 /singleton/reagent/drugs/ambrosia_extract
 	name = "Ambrosia Extract"
@@ -566,11 +558,7 @@
 	M.add_chemical_effect(CE_PULSE, -1)
 	var/message_list = list("You feel soothed and at ease.", "You feel like sharing the wonderful memories and feelings you're experiencing.", "You feel like you're floating off the ground.", "You don't want this feeling to end.", "You wish to please all those around you.", "You feel particularly susceptible to persuasion.", "Everyone is so trustworthy nowadays.")
 	var/message_type = "good"
-	if(isskrell(M))
-		message_list += list("You can see the thoughts of those around you dancing in the air.", "You feel as if your mind has opened even further, your thought-field expanding.", "It's difficult to contain your thoughts - but why hide them anyway?")
-		message_type = "alium"
-	else
-		message_list += list("You can almost see the currents of air as they dance around you.", "You see the colours around you beginning to bleed together.", "You feel safe and comfortable.")
+	message_list += list("You can almost see the currents of air as they dance around you.", "You see the colours around you beginning to bleed together.", "You feel safe and comfortable.")
 
 	if(prob(5))
 		to_chat(M, span(message_type, pick(message_list)))

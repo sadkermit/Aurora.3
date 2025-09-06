@@ -9,9 +9,7 @@
 		/obj/item/storage/box/fancy/cigarettes/dromedaryco = 10,
 		/obj/item/storage/box/fancy/cigarettes/cigar = 9,
 		/obj/item/storage/box/fancy/cigarettes/nicotine = 10,
-		/obj/item/storage/box/fancy/cigarettes/rugged = 10,
-		/obj/item/storage/box/fancy/cigarettes/federation = 2,
-		/obj/item/storage/box/fancy/cigarettes/dyn = 2
+		/obj/item/storage/box/fancy/cigarettes/rugged = 10
 	)
 
 /obj/random/action_figure

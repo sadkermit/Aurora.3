@@ -87,33 +87,6 @@
 /datum/species/monkey/get_random_name()
 	return "[lowertext(name)] ([rand(100,999)])"
 
-/datum/species/monkey/skrell
-	name = SPECIES_MONKEY_SKRELL
-	short_name = "nea"
-	name_plural = "Neaera"
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/neaera
-
-	icobase = 'icons/mob/human_races/monkeys/r_neaera.dmi'
-	deform = 'icons/mob/human_races/monkeys/r_neaera.dmi'
-
-	greater_form = SPECIES_SKRELL
-	flesh_color = "#8CD7A3"
-	blood_color = "#1D2CBF"
-	reagent_tag = IS_SKRELL
-	tail = null
-	holder_type = /obj/item/holder/monkey/neaera
-	fall_mod = 0.25
-
-	has_organ = list(
-		BP_BRAIN =    /obj/item/organ/internal/brain/skrell/neaera,
-		BP_EYES =     /obj/item/organ/internal/eyes/skrell/neaera,
-		BP_HEART =    /obj/item/organ/internal/heart/skrell/neaera,
-		BP_LUNGS =    /obj/item/organ/internal/lungs/skrell/neaera,
-		BP_LIVER =    /obj/item/organ/internal/liver/skrell/neaera,
-		BP_KIDNEYS =  /obj/item/organ/internal/kidneys/skrell/neaera,
-		BP_STOMACH =  /obj/item/organ/internal/stomach
-		)
-
 /datum/species/monkey/unathi
 	name = SPECIES_MONKEY_UNATHI
 	short_name = "sto"

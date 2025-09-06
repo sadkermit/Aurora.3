@@ -11,7 +11,7 @@
 	landmark_name = "CCIAAgent"
 	req_perms = R_CCIAA
 
-	possible_species = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD, SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
+	possible_species = list(SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD)
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
 	respawn_flag = null

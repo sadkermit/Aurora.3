@@ -117,10 +117,6 @@
 	value = 0.02
 	scannable = TRUE
 
-/singleton/reagent/copper/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if (alien & IS_SKRELL)
-		M.add_chemical_effect(CE_BLOODRESTORE, 3 * removed)
-
 /**
  * #Alcoholic Reagents
  *
@@ -326,8 +322,7 @@ ABSTRACT_TYPE(/singleton/reagent/alcohol)
 	value = 0.01
 
 /singleton/reagent/iron/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if (!(alien & (IS_SKRELL | IS_VAURCA)))
-		M.add_chemical_effect(CE_BLOODRESTORE, 3 * removed)
+	M.add_chemical_effect(CE_BLOODRESTORE, 3 * removed)
 
 /singleton/reagent/lithium
 	name = "Lithium"

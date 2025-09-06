@@ -13,6 +13,5 @@
 	icon_state = "zenghu_mask"
 	sprite_sheets = list(
 		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/augments_external.dmi',
-		BODYTYPE_VAURCA = 'icons/mob/species/vaurca/augments_external.dmi',
-		BODYTYPE_SKRELL = 'icons/mob/species/skrell/augments_external.dmi'
+		BODYTYPE_VAURCA = 'icons/mob/species/vaurca/augments_external.dmi'
 	)

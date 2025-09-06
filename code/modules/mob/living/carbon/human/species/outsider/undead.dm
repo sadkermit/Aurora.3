@@ -271,31 +271,6 @@
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
-/datum/species/zombie/skrell
-	name = SPECIES_ZOMBIE_SKRELL
-	name_plural = "Skrell Zombies"
-	bodytype = BODYTYPE_SKRELL
-	icobase = 'icons/mob/human_races/zombie/r_zombie_skrell.dmi'
-	deform = 'icons/mob/human_races/zombie/r_zombie_skrell.dmi'
-
-	grab_mod = 1.25
-
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_SOCKS
-
-	inherent_verbs = list(
-	/mob/living/carbon/human/proc/commune,
-	/mob/living/carbon/human/proc/sonar_ping,
-	/mob/living/carbon/human/proc/darkness_eyes,
-	)
-
-	flesh_color = "#8CD7A3"
-	blood_color = "#1D2CBF"
-
-	remains_type = /obj/effect/decal/remains/xeno
-	dust_remains_type = /obj/effect/decal/remains/xeno/burned
-
-	default_h_style = "Skrell Short Tentacles"
-
 
 ///A zombie tuned for tankness
 /datum/species/zombie/bull

@@ -40,5 +40,3 @@
 		user.visible_message(SPAN_DANGER("[user] unleashes a psionic shock through [L]'s head!"),
 							SPAN_DANGER("You unleash a psionic shock through [L]'s head, targeting their Zona Bovinae and destroying it."))
 		to_chat(L, SPAN_HIGHDANGER("A large, painful shock courses through your head. Part of your brain feels like it's gone."))
-		if(isskrell(L))
-			to_chat(L, SPAN_CULT("You feel absolutely empty..."))

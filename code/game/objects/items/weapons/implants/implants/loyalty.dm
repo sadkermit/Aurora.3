@@ -54,11 +54,6 @@ This is the entity that the implantee will align their thoughts to benefit.<BR>
 	desc = "A device used by the Sol Alliance, to ensure loyalty to the only human government in the spur."
 	loyal_entity = "\improper Sol Alliance"
 
-/obj/item/implant/mindshield/loyalty/nralakk
-	name = "loyalty implant - Nralakk Federation"
-	desc = "A device used by the Nralakk Federation, to ensure loyalty to its ideals and to the best caretaker of the skrellian people."
-	loyal_entity = "\improper Nralakk Federation"
-
 /obj/item/implant/mindshield/loyalty/scc
 	name = "loyalty implant - Stellar Corporate Conglomerate"
 	desc = "A device that is allegedly used by the Stellar Corporate Conglomerate, which is allegedly used to enforce loyalty to the corporate agenda for its emergency response teams and high-ranking officers."
@@ -86,14 +81,6 @@ This is the entity that the implantee will align their thoughts to benefit.<BR>
 /obj/item/implanter/loyalty/sol
 	name = "implanter-loyalty - Sol Alliance"
 	imp = /obj/item/implant/mindshield/loyalty/sol
-
-/obj/item/implantcase/loyalty/nralakk
-	name = "glass case - 'loyalty - Nralakk Federation'"
-	imp = /obj/item/implant/mindshield/loyalty/nralakk
-
-/obj/item/implanter/loyalty/nralakk
-	name = "implanter-loyalty - Nralakk Federation"
-	imp = /obj/item/implant/mindshield/loyalty/nralakk
 
 /obj/item/implantcase/loyalty/scc
 	name = "glass case - 'loyalty - Stellar Corporate Conglomerate'"

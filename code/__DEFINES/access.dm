@@ -637,11 +637,6 @@
 	id = ACCESS_ELYRAN_NAVAL_INFANTRY_SHIP
 	access_type = ACCESS_TYPE_CENTCOM
 
-#define ACCESS_SKRELL 208
-/datum/access/skrell
-	id = ACCESS_SKRELL
-	access_type = ACCESS_TYPE_CENTCOM
-
 #define ACCESS_UNATHI_PIRATE 210
 /datum/access/unathi_pirate
 	id = ACCESS_UNATHI_PIRATE

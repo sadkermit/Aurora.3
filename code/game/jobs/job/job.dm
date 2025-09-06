@@ -38,9 +38,7 @@
 	var/minimal_player_age = 0
 	/// Age restriction, assoc list of species define -> age; if species isn't found, defaults to SPECIES_HUMAN entry.
 	var/list/minimum_character_age = list(
-		SPECIES_HUMAN = 17,
-		SPECIES_SKRELL = 50,
-		SPECIES_SKRELL_AXIORI = 50
+		SPECIES_HUMAN = 17
 	)
 	/// Assoc list of alt titles to minimum character ages assoc lists (see above -- yes this is slightly awful)
 	var/list/alt_ages = null

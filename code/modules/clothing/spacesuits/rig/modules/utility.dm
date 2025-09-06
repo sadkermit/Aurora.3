@@ -293,22 +293,6 @@
 
 	category = MODULE_LIGHT_COMBAT
 
-/obj/item/rig_module/chem_dispenser/vaurca
-	name = "vaurca combat chemical injector"
-	desc = "A complex web of tubing and needles suitable for vaurcan hardsuit use."
-
-	charges = list(
-		list("synaptizine",		"synaptizine",		/singleton/reagent/synaptizine,		30),
-		list("hyperzine",		"hyperzine",		/singleton/reagent/hyperzine,		30),
-		list("oxycomorphine",	"oxycomorphine",	/singleton/reagent/oxycomorphine,	30),
-		list("phoron",			"phoron",			/singleton/reagent/toxin/phoron,	60)
-		)
-
-	interface_name = "vaurca combat chem dispenser"
-	interface_desc = "Dispenses loaded chemicals directly into the bloodstream."
-
-	category = MODULE_VAURCA
-
 /obj/item/rig_module/chem_dispenser/offworlder
 	name = "chemical injector"
 	desc = "A complex web of tubing and needles suitable for hardsuit use."
@@ -782,8 +766,6 @@
 
 	usable = TRUE
 
-	category = MODULE_VAURCA
-
 /obj/item/rig_module/boring/engage(atom/target, mob/user)
 	if (!..())
 		return FALSE
@@ -810,8 +792,6 @@ GLOBAL_LIST_EMPTY(lattice_users)
 
 	toggleable = TRUE
 	confined_use = TRUE
-
-	category = MODULE_VAURCA
 
 /obj/item/rig_module/lattice/activate()
 	if (!..())

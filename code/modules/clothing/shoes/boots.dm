@@ -18,10 +18,6 @@
 	pickup_sound = 'sound/items/pickup/boots.ogg'
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/shoes.dmi' //depreceated, only used for bulwarks due to their size
-	)
-
 
 /obj/item/clothing/shoes/jackboots/cavalry
 	name = "cavalry jackboots"
@@ -74,9 +70,6 @@
 	build_from_parts = TRUE
 	drop_sound = 'sound/items/drop/boots.ogg'
 	pickup_sound = 'sound/items/pickup/boots.ogg'
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/shoes.dmi' //depreceated, only used for bulwarks due to their size
-	)
 
 /obj/item/clothing/shoes/workboots/toeless
 	name = "toe-less workboots"
@@ -170,9 +163,6 @@
 			)
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/shoes.dmi' //depreceated, only used for bulwarks due to their size
-	)
 
 	siemens_coefficient = 0.75
 	can_hold_knife = TRUE

@@ -335,9 +335,6 @@ BLIND     // can't see anything
 	desc = "Used to protect your eyes against harmful chemicals!"
 	icon_state = "purple"
 	item_state = "purple"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	toggleable = 1
 	unacidable = 1
 	item_flags = ITEM_FLAG_AIRTIGHT
@@ -517,9 +514,6 @@ BLIND     // can't see anything
 	desc = "Very confusing glasses."
 	icon_state = "material"
 	item_state = "material"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	action_button_name = "Toggle Goggles"
 	origin_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 3)
 	toggleable = 1
@@ -659,9 +653,6 @@ BLIND     // can't see anything
 	desc = "Strangely ancient technology used to help provide rudimentary eye cover."
 	icon_state = "sun"
 	item_state = "sun"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	darkness_view = -1
 	flash_protection = FLASH_PROTECTION_MODERATE
 
@@ -737,9 +728,6 @@ BLIND     // can't see anything
 	desc = "Protects the eyes from welders, approved by the mad scientist association."
 	icon_state = "welding-g"
 	item_state = "welding-g"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	action_button_name = "Flip Welding Goggles"
 
 	var/up = 0
@@ -804,9 +792,6 @@ BLIND     // can't see anything
 	desc = "Welding goggles made from more expensive materials, strangely smells like potatoes."
 	icon_state = "rwelding-g"
 	item_state = "rwelding-g"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	tint = TINT_MODERATE
 
 /obj/item/clothing/glasses/welding/emergency
@@ -835,20 +820,6 @@ BLIND     // can't see anything
 /obj/item/clothing/glasses/sunglasses/blindfold/white/seethrough
 	desc = "A blindfold that covers the eyes, this one seems to be made of thinner material."
 	tint = TINT_NONE // It's practically a fluff thing anyway, so.
-
-/obj/item/clothing/glasses/sunglasses/blinders
-	name = "vaurcae blinders"
-	desc = "Specially designed Vaurca blindfold, designed to let in just enough light to see."
-	icon = 'icons/obj/vaurca_items.dmi'
-	icon_state = "blinders"
-	item_state = "blinders"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
-	contained_sprite = TRUE
-	shatter_material = FALSE
-	drop_sound = 'sound/items/drop/gloves.ogg'
-	pickup_sound = 'sound/items/pickup/gloves.ogg'
 
 /obj/item/clothing/glasses/sunglasses/blindfold/tape
 	name = "length of tape"
@@ -1040,9 +1011,6 @@ BLIND     // can't see anything
 	desc = "Thermals in the shape of glasses."
 	icon_state = "thermal"
 	item_state = "thermal"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	action_button_name = "Toggle Goggles"
 	origin_tech = list(TECH_MAGNET = 3)
 	toggleable = 1
@@ -1076,9 +1044,6 @@ BLIND     // can't see anything
 	name = "optical meson scanner"
 	desc = "Used for seeing walls, floors, and stuff through anything."
 	icon_state = "meson"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/eyes.dmi'
-	)
 	origin_tech = list(TECH_MAGNET = 3, TECH_ILLEGAL = 4)
 
 /obj/item/clothing/glasses/thermal/plain

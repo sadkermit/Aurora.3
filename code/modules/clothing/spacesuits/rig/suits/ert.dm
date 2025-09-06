@@ -38,7 +38,7 @@
 		/obj/item/rig_module/recharger
 		)
 
-	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA
+	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY
 
 /obj/item/rig/ert/engineer
 	name = "ERT-E suit control module"
@@ -239,7 +239,7 @@
 		/obj/item/rig_module/recharger
 		)
 
-	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA // all modules
+	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY   // all modules
 
 /obj/item/rig/ert/assetprotection/empty
 	initial_modules = list()
@@ -281,7 +281,7 @@
 		/obj/item/rig_module/recharger
 		)
 
-	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA // all modules
+	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY   // all modules
 
 /obj/item/rig/ert/ntassetprotection/lead
 	icon = 'icons/obj/item/clothing/rig/nt_asset_protection_commander.dmi'

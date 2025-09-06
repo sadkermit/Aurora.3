@@ -4,4 +4,3 @@
 #define MODULE_UTILITY 		8
 #define MODULE_MEDICAL 		16
 #define MODULE_SPECIAL 		32
-#define MODULE_VAURCA 		64

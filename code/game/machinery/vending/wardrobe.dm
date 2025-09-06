@@ -645,7 +645,6 @@
 		/obj/item/clothing/under/rank/medical/paramedic/pmc/epmc = 2,
 		/obj/item/clothing/under/rank/medical/paramedic/pmc/nexus = 2,
 		/obj/item/clothing/under/rank/medical/paramedic/pmc/sekh = 2,
-		/obj/item/clothing/under/rank/medical/paramedic/pmc/vekatak_phalanx = 2,
 		/obj/item/clothing/under/rank/medical/paramedic/zeng = 2,
 		/obj/item/clothing/under/rank/medical/psych = 3,
 		/obj/item/clothing/under/rank/medical/psych/pmc/alt = 2,

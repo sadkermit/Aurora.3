@@ -155,9 +155,6 @@
 		L.adjust_fire_stacks(amount / 5)
 
 /singleton/reagent/toxin/phoron/affect_touch(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(istype(M, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = M
-
 	M.take_organ_damage(0, removed * 0.3) //being splashed directly with phoron causes minor chemical burns
 	if(prob(50))
 		M.pl_effects()

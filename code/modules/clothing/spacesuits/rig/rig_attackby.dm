@@ -245,5 +245,3 @@
 			return "medical"
 		if(MODULE_SPECIAL)
 			return "special"
-		if(MODULE_VAURCA)
-			return "vaurca"

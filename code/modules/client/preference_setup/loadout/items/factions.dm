@@ -419,7 +419,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	pmcg_sec_uniforms["EPMC detective uniform"] = /obj/item/clothing/under/det/pmc/alt
 	pmcg_sec_uniforms["wildlands squadron uniform"] = /obj/item/clothing/under/rank/security/pmc/wildlands_squadron
 	pmcg_sec_uniforms["Dagamuir Freewater uniform"] = /obj/item/clothing/under/rank/security/pmc/dagamuir_freewater
-	pmcg_sec_uniforms["Ve'katak Phalanx uniform"] = /obj/item/clothing/under/rank/security/pmc/vekatak_phalanx
 	pmcg_sec_uniforms["Grupo Amapola uniform"] = /obj/item/clothing/under/rank/security/pmc/grupo_amapola
 	pmcg_sec_uniforms["Nexus Corporate uniform"] = /obj/item/clothing/under/rank/security/pmc/nexus
 	gear_tweaks += new /datum/gear_tweak/path(pmcg_sec_uniforms)
@@ -507,7 +506,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	epmc_uniform_para_med["EPMC paramedic uniform"] = /obj/item/clothing/under/rank/medical/paramedic/pmc/epmc
 	epmc_uniform_para_med["PMCG paramedic uniform, alt"] = /obj/item/clothing/under/rank/medical/paramedic/pmc/alt
 	epmc_uniform_para_med["Sekhmet Intergalactic paramedic uniform"] = /obj/item/clothing/under/rank/medical/paramedic/pmc/sekh
-	epmc_uniform_para_med["Ve'katak Phalanx paramedic uniform"] = /obj/item/clothing/under/rank/medical/paramedic/pmc/vekatak_phalanx
 	epmc_uniform_para_med["Nexus Corporate Security paramedic uniform"] = /obj/item/clothing/under/rank/medical/paramedic/pmc/nexus
 	gear_tweaks += new /datum/gear_tweak/path(epmc_uniform_para_med)
 
@@ -527,22 +525,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	wildlands_flag_patches["flagpatch, solarian provisional government"] = /obj/item/clothing/accessory/flagpatch/spg
 	wildlands_flag_patches["flagpatch, southern solarian military district"] = /obj/item/clothing/accessory/flagpatch/ssmd
 	gear_tweaks += new /datum/gear_tweak/path(wildlands_flag_patches)
-
-/datum/gear/faction/vekatak_rep
-	display_name = "ve'katak phalanx representative uniform"
-	path = /obj/item/clothing/under/rank/pmc/vekatak_phalanx
-	flags = GEAR_HAS_DESC_SELECTION
-	allowed_roles = list("Corporate Liaison")
-	faction = "Private Military Contracting Group"
-	slot = slot_w_uniform
-
-/datum/gear/faction/vekatak_res
-	display_name = "ve'katak phalanx reserve uniform"
-	path = /obj/item/clothing/under/rank/pmc/vekatak_phalanx/reserve
-	flags = GEAR_HAS_DESC_SELECTION
-	allowed_roles = list("Assistant", "Off-Duty Crew Member")
-	faction = "Private Military Contracting Group"
-	slot = slot_w_uniform
 
 /datum/gear/faction/grupo_amapola_officer
 	display_name = "grupo amapola officer cap"

@@ -82,35 +82,6 @@
 	icon_state = "pmc_dpf"
 	item_state = "pmc_dpf"
 
-/obj/item/clothing/under/rank/security/pmc/vekatak_phalanx
-	name = "\improper Ve'katak Phalanx security uniform"
-	desc = "A uniform used by the forces of the Ve'katak Phalanx, a Vaurca-run private military company. This one has the standard red shoulder stripes, as well as pale blue ornamentation, identifying it as belonging to a Phalanx member in the employ of the Private Military Contracting Group."
-	desc_extended = "These uniforms are designed to fit under the combat hardsuits favored by the Phalanx. They are utilitarian in design, and reportedly somewhat uncomfortable - though few of the non-Vaurcae bold enough to join Ve'katak seem to complain."
-	icon_state = "phalanx-sec-jumpsuit"
-	item_state = "phalanx-sec-jumpsuit"
-
-/obj/item/clothing/under/rank/medical/paramedic/pmc/vekatak_phalanx
-	name = "\improper Ve'katak Phalanx medical uniform"
-	desc = "A uniform used by the forces of the Ve'katak Phalanx, a Vaurca-run private military company. This one has dark blue shoulder stripes and ornamentation, identifying it as belonging to a Phalanx medic in the employ of the Private Military Contracting Group."
-	desc_extended = "These uniforms are designed to fit under the combat hardsuits favored by the Phalanx. They are utilitarian in design, and reportedly somewhat uncomfortable - though few of the non-Vaurcae bold enough to join Ve'katak seem to complain."
-	icon_state = "phalanx-med_jumpsuit"
-	item_state = "phalanx-med_jumpsuit"
-
-/obj/item/clothing/under/rank/pmc/vekatak_phalanx
-	name = "\improper Ve'katak Phalanx representative uniform"
-	desc = "A uniform used by the forces of the Ve'katak Phalanx, a Vaurca-run private military company. This one has ice blue shoulder stripes, identifying it as belonging to a Phalanx member that is representing the direct interests of the Phalanx and their immediate employers."
-	desc_extended = "These uniforms are designed to fit under the combat hardsuits favored by the Phalanx. They are utilitarian in design, and reportedly somewhat uncomfortable - though few of the non-Vaurcae bold enough to join Ve'katak seem to complain."
-	icon = 'icons/obj/item/clothing/department_uniforms/service.dmi'
-	icon_state = "phalanx-rep_jumpsuit"
-	item_state = "phalanx-rep_jumpsuit"
-	contained_sprite = TRUE
-
-/obj/item/clothing/under/rank/pmc/vekatak_phalanx/reserve
-	name = "\improper Ve'katak Phalanx reserve uniform"
-	desc = "A uniform used by the forces of the Ve'katak Phalanx, a Vaurca-run private military company. This one has green shoulder stripes, identifying it as belonging to a Phalanx member that is not presently serving in an active combat role."
-	icon_state = "phalanx-res_jumpsuit"
-	item_state = "phalanx-res_jumpsuit"
-
 /obj/item/clothing/under/rank/security/pmc/grupo_amapola
 	name = "Grupo Amapola uniform"
 	desc = "A uniform used by the forces of the Grupo Amapola, a private military company originating out of Mictlan. It is based off the old uniforms of the Mictlan Defense Force, a once-Solarian planetary guard, with red poppy patches on the back and right arm."

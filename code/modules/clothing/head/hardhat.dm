@@ -53,9 +53,6 @@
 	desc = "An atmospheric firefighter's helmet, able to keep the user protected from heat and fire."
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE + 15000
 	icon = 'icons/obj/item/clothing/head/firefighter.dmi'
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/fire.dmi'
-	)
 	icon_state = "atmos_fire"
 	item_state = "atmos_fire"
 	light_overlay = "atmos_fire"
@@ -95,9 +92,6 @@
 	icon = 'icons/obj/item/clothing/head/firefighter.dmi'
 	icon_state = "helmet_firefighter"
 	item_state = "helmet_firefighter"
-	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/fire.dmi'
-	)
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("una", "taj")
 	item_flags = ITEM_FLAG_THICK_MATERIAL | ITEM_FLAG_AIRTIGHT

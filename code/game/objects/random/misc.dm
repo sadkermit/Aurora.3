@@ -268,8 +268,6 @@
 		/obj/item/flag/nanotrasen/l,
 		/obj/item/flag/sol,
 		/obj/item/flag/sol/l,
-		/obj/item/flag/sedantis,
-		/obj/item/flag/sedantis/l,
 		/obj/item/flag/zenghu,
 		/obj/item/flag/zenghu/l,
 		/obj/item/flag/coalition,

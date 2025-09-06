@@ -298,7 +298,7 @@
 
 	var/list/mob/living/carbon/human/choices = list()
 	for(var/mob/living/carbon/human/H in view(1, src))
-		if(!isSynthetic(H) && !isvaurca(H) && !H.is_diona())
+		if(!isSynthetic(H) && !H.is_diona())
 			choices += H
 
 	if(!choices.len)

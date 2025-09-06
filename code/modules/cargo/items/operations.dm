@@ -1,19 +1,3 @@
-/singleton/cargo_item/autakhlimbs
-	category = "operations"
-	name = "autakh limbs"
-	supplier = "hephaestus"
-	description = "A box with various autakh limbs."
-	price = 1000
-	items = list(
-		/obj/item/organ/external/hand/right/autakh/tool,
-		/obj/item/organ/external/hand/right/autakh/tool/mining,
-		/obj/item/organ/external/hand/right/autakh/medical
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 2
-
 /singleton/cargo_item/camera
 	category = "operations"
 	name = "camera"

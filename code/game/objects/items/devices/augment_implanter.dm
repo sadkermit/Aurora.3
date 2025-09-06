@@ -65,15 +65,6 @@
 /obj/item/device/augment_implanter/health_scanner
 	new_augment =	/obj/item/organ/internal/augment/health_scanner
 
-/obj/item/device/augment_implanter/hivenet_shield
-	new_augment =	/obj/item/organ/internal/augment/hiveshield
-
-/obj/item/device/augment_implanter/hivenet_advanced_shield
-	new_augment =	/obj/item/organ/internal/augment/hiveshield/advanced
-
-/obj/item/device/augment_implanter/hivenet_warfare
-	new_augment =	/obj/item/organ/internal/augment/hiveshield/warfare
-
 /obj/item/device/augment_implanter/auxiliary_heart
 	new_augment =	/obj/item/organ/internal/augment/bioaug/auxiliary_heart
 

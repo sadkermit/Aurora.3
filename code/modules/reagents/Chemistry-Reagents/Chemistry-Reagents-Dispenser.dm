@@ -169,10 +169,6 @@ ABSTRACT_TYPE(/singleton/reagent/alcohol)
 
 /singleton/reagent/alcohol/affect_ingest(mob/living/carbon/M, alien, removed, var/datum/reagents/holder)
 	if(alien != IS_DIONA && ishuman(M))
-		var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
-		if(alien == IS_VAURCA || (istype(P) && P.stage >= 3))//Vaurca are damaged instead of getting nutrients, but they can still get drunk
-			M.adjustToxLoss(3 * removed * (strength / 100))
-
 		M.intoxication += (strength / 100) * removed * 6
 		if (druggy != 0)
 			M.druggy = max(M.druggy, druggy)
@@ -584,8 +580,6 @@ ABSTRACT_TYPE(/singleton/reagent/alcohol)
 	value = 2
 
 /singleton/reagent/sulfur/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if (alien & IS_VAURCA)
-		M.add_chemical_effect(CE_BLOODRESTORE, 3 * removed)
 
 /singleton/reagent/tungsten
 	name = "Tungsten"

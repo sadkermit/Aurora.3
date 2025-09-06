@@ -23,7 +23,6 @@
 	alt_outfits = list("Freelance Journalist" = /obj/outfit/job/journalistf)
 	title_accesses = list("Corporate Reporter" = list(ACCESS_MEDICAL, ACCESS_SEC_DOORS, ACCESS_RESEARCH, ACCESS_ENGINE))
 	outfit = /obj/outfit/job/journalist
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
 
 /obj/outfit/job/journalist
 	name = "Corporate Reporter"
@@ -91,7 +90,6 @@
 		"Corporate Executive"
 		)
 	outfit = /obj/outfit/job/representative
-	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
 
 	aide_job = "Corporate Aide"
 
@@ -206,7 +204,6 @@
 	access = list(ACCESS_CONSULAR, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_CONSULAR)
 	outfit = /obj/outfit/job/representative/consular
-	blacklisted_species = list(SPECIES_VAURCA_BULWARK)
 	blacklisted_citizenship = list(CITIZENSHIP_ERIDANI, CITIZENSHIP_ELYRA_NCP, CITIZENSHIP_NONE)
 
 	aide_job = "Diplomatic Aide"

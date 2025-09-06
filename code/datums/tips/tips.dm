@@ -116,7 +116,6 @@ GLOBAL_LIST_EMPTY(tips_by_category)
 		"As a chef, you can oven when you of in the cold food of out hot eat the food!",
 		"As a Sturgeon, you are a fresh water fish.",
 		"As the Engineer, you can pick up your Sentry Gun, Dispenser, and Teleporters with right click.",
-		"As a Vaurca Consular, you're a big bug.",
 		"Would you like to sign my petition?",
 		"I bought WinRAR, did you?",
 		"Extended voters always win, the game was rigged from the start.",

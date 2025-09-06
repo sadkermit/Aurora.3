@@ -205,7 +205,6 @@
 	banners["banner, Elyra"] = /obj/item/flag/elyra
 	banners["banner, NanoTrasen"] = /obj/item/flag/nanotrasen
 	banners["banner, Eridani Fed"] = /obj/item/flag/eridani
-	banners["banner, Sedantis"] = /obj/item/flag/sedantis
 	banners["banner, Republic of Biesel"] = /obj/item/flag/biesel
 	banners["banner, Solarian Colonial Mandate of Tau Ceti"] = /obj/item/flag/biesel/antique
 	banners["banner, Trinary Perfection"] = /obj/item/flag/trinaryperfection
@@ -297,7 +296,6 @@
 	flags["flag, Elyra"] = /obj/item/flag/elyra/l
 	flags["flag, NanoTrasen"] = /obj/item/flag/nanotrasen/l
 	flags["flag, Eridani Fed"] = /obj/item/flag/eridani/l
-	flags["flag, Sedantis"] = /obj/item/flag/sedantis/l
 	flags["flag, Republic of Biesel"] = /obj/item/flag/biesel/l
 	flags["flag, Solarian Colonial Mandate of Tau Ceti"] = /obj/item/flag/biesel/antique/l
 	flags["flag, Trinary Perfection"] = /obj/item/flag/trinaryperfection/l

@@ -41,7 +41,6 @@
 					zone = pick(BP_L_FOOT, BP_R_FOOT)
 					if(!H.shoes)
 						H.apply_effect(400 / (target.mob_size * (target.mob_size * 0.25)), DAMAGE_PAIN)//Halloss instead of instant knockdown
-						//Mainly for the benefit of giant monsters like vaurca breeders
 				if(BP_L_HAND, BP_R_HAND)
 					zone = type
 					if(!H.gloves)

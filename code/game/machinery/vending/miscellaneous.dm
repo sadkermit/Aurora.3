@@ -77,7 +77,7 @@
 	icon_state = "lavatory"
 	icon_vend = "lavatory-vend"
 	icon_deny = "lavatory-deny"
-	product_ads = "Take a shower you hippie.;Get a haircut, hippie!;Reeking of Vaurca taint? Take a shower!;You reek! Freshen up!;Hey, you dropped something!;Cleansing the world, one person at a time!"
+	product_ads = "Take a shower you hippie.;Get a haircut, hippie!;You reek! Freshen up!;Hey, you dropped something!;Cleansing the world, one person at a time!"
 	prices = list(
 		/obj/item/soap = 3.50,
 		/obj/item/mirror = 7.00,

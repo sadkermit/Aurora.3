@@ -506,21 +506,6 @@
 
 	var/obj/machinery/machine
 
-/obj/item/neuralbroke
-	name = "fried neural socket"
-	desc = "A Vaurca neural socket subjected to extreme heat. It's security chip appears to be fried."
-	icon = 'icons/obj/stock_parts.dmi'
-	icon_state = "neuralbroke"
-
-/obj/item/neuralbroke/attackby(obj/item/attacking_item, mob/user)
-	if(attacking_item.isscrewdriver())
-		new /obj/item/device/encryptionkey/hivenet(user.loc)
-		attacking_item.play_tool_sound(get_turf(src), 50)
-		to_chat(user, "You bypass the fried security chip and extract the encryption key.")
-		to_chat(user, "The fried neural socket crumbles away like dust.")
-		qdel(src)
-		return TRUE
-
 /obj/item/storage/part_replacer
 	name = "rapid part exchange device"
 	desc = "Special mechanical module made to store, sort, and apply standard machine parts."

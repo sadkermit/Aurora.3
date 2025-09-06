@@ -41,6 +41,3 @@
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
 	)
-	species_shoes = list(
-		SPECIES_VAURCA_WORKER = /obj/item/clothing/shoes/jackboots/toeless
-	)

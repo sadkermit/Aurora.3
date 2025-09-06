@@ -42,7 +42,7 @@
 
 /obj/structure/attack_hand(mob/living/user)
 	if(breakable)
-		if((user.mutations & HULK) && !(user.isSynthetic()) && !(isvaurca(user)))
+		if((user.mutations & HULK) && !(user.isSynthetic()))
 			user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!" ))
 			attack_generic(user,1,"smashes")
 		else if(istype(user,/mob/living/carbon/human))

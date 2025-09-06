@@ -325,7 +325,6 @@ GLOBAL_LIST_EMPTY(additional_antag_types)
 		"suspected criminal operatives",
 		"malfunctioning von Neumann probe swarms",
 		"shadowy interlopers",
-		"a stranded Vaurcan hiveship",
 		"haywire IPC constructs",
 		"artifacts of eldritch horror",
 		"a brain slug infestation",

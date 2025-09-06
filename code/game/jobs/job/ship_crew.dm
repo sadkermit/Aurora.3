@@ -13,7 +13,6 @@
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	outfit = /obj/outfit/job/assistant
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
 	alt_ages = list(
 	"Lab Assistant" = list(
 		SPECIES_IPC = 0
@@ -121,7 +120,6 @@
 	access = list()
 	minimal_access = list()
 	outfit = /obj/outfit/job/visitor
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
 
 /obj/outfit/job/visitor
 	name = "Off-Duty Crew Member"
@@ -148,4 +146,4 @@
 	access = list()
 	minimal_access = list()
 	outfit = /obj/outfit/job/visitor/passenger
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
+

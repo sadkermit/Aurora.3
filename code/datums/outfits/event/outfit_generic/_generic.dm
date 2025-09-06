@@ -58,18 +58,9 @@
 	backpack_contents = list(
 		/obj/item/storage/box/survival = 1,
 	)
-	species_shoes = list(
-		SPECIES_VAURCA_WORKER = /obj/item/clothing/shoes/workboots/toeless
-	)
 
 /obj/outfit/admin/generic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
-	if(isvaurca(H))
-		H.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vaurca/filter(H), slot_wear_mask)
-		var/obj/item/organ/internal/vaurca/preserve/preserve = H.internal_organs_by_name[BP_PHORON_RESERVE]
-		H.internal = preserve
-		H.internals.icon_state = "internal1"
-		H.equip_or_collect(new /obj/item/reagent_containers/inhaler/phoron_special, slot_in_backpack)
 	if(isoffworlder(H))
 		H.equip_or_collect(new /obj/item/clothing/accessory/offworlder/bracer, slot_in_backpack)
 		H.equip_or_collect(new /obj/item/storage/pill_bottle/rmt, slot_in_backpack)

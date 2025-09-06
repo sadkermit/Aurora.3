@@ -54,20 +54,6 @@
 	groupable = FALSE
 	spawn_amount = 1
 
-/singleton/cargo_item/blankvaurcadrone
-	category = "science"
-	name = "Surplus Vaurca Drone"
-	supplier = "zora"
-	description = "A surplus Vaurca drone body with functioning organs but a defective brain. Thousands of these are thrown at the wayside every day. The everyman's relatively-ethical solution to organ harvesting."
-	price = 500
-	items = list(
-		/mob/living/carbon/human/type_a/cargo
-	)
-	access = ACCESS_RESEARCH
-	container_type = "bodybag"
-	groupable = FALSE
-	spawn_amount = 1
-
 /singleton/cargo_item/proximitysensor
 	category = "science"
 	name = "proximity sensor"

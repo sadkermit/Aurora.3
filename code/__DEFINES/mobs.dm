@@ -123,20 +123,6 @@
 #define BP_STOMACH  "stomach"
 #define BP_APPENDIX "appendix"
 
-//Vaurca organs
-#define BP_NEURAL_SOCKET "neural socket"
-#define BP_PHORON_RESERVE "phoron reserve tank"
-#define BP_FILTRATION_BIT "filtration bit"
-#define BP_PHORON_RESERVOIR "phoron reservoir"
-#define BP_VAURCA_LIVER "mechanical liver"
-#define BP_VAURCA_KIDNEYS "mechanical kidneys"
-#define BP_HIVENET_SHIELD "hivenet electronic defense suite"
-
-//Aut'akh organs
-#define BP_ANCHOR   "anchor"
-#define BP_HAEMO    "haemodynamic"
-#define BP_ADRENAL  "adrenal"
-
 //IPC organs
 #define BP_CELL     "cell"
 #define BP_OPTICS   "optics"
@@ -426,11 +412,6 @@
 #define PROSTHETIC_HI "Hephaestus Industries"
 #define PROSTHETIC_XMG "Xion Manufacturing Group"
 #define PROSTHETIC_DIONA "Unknown Model"
-#define PROSTHETIC_AUTAKH "Aut'akh Manufactured"
-#define PROSTHETIC_TESLA "Tesla Powered Prosthetics"
-#define PROSTHETIC_TESLA_BODY "Industrial Tesla Powered Prosthetics"
-#define PROSTHETIC_VAURCA "Vaurca Robotic Limb"
-#define PROSTHETIC_VAURCA_WARRIOR "Vaurca Warrior Robotic Limb"
 #define PROSTHETIC_UNBRANDED "Unbranded"
 #define PROSTHETIC_UNBRANDED_EMISSIVE "Unbranded Emissive"
 #define PROSTHETIC_HOPLAN "Hoplan Head"

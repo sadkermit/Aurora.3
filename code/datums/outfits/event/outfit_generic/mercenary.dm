@@ -68,6 +68,3 @@
 		/obj/item/clothing/head/helmet/security/generic = 1,
 		/obj/item/storage/box/zipties = 1,
 	)
-	species_shoes = list(
-		SPECIES_VAURCA_WORKER = /obj/item/clothing/shoes/jackboots/toeless
-	)

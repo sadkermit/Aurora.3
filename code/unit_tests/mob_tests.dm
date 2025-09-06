@@ -385,44 +385,6 @@
 	damagetype = DAMAGE_PAIN
 	expected_vulnerability = IMMUNE
 
-// =================================================================
-// Vaurca Worker
-// =================================================================
-
-/datum/unit_test/mob_damage/vaurca
-	name = "MOB: Vaurca damage check template"
-	mob_type = /mob/living/carbon/human/type_a
-
-/datum/unit_test/mob_damage/vaurca/brute
-	name = "MOB: Vaurca Brute Damage Check"
-	damagetype = DAMAGE_BRUTE
-	expected_vulnerability = ARMORED
-
-/datum/unit_test/mob_damage/vaurca/fire
-	name = "MOB: Vaurca Fire Damage Check"
-	damagetype = DAMAGE_BURN
-	expected_vulnerability = EXTRA_VULNERABLE
-
-/datum/unit_test/mob_damage/vaurca/tox
-	name = "MOB: Vaurca Toxins Damage Check"
-	damagetype = DAMAGE_TOXIN
-	expected_vulnerability = EXTRA_VULNERABLE
-
-/datum/unit_test/mob_damage/vaurca/oxy
-	name = "MOB: Vaurca Oxygen Damage Check"
-	damagetype = DAMAGE_OXY
-	expected_vulnerability = ARMORED
-
-/datum/unit_test/mob_damage/vaurca/clone
-	name = "MOB: Vaurca Clone Damage Check"
-	damagetype = DAMAGE_CLONE
-
-/datum/unit_test/mob_damage/vaurca/halloss
-	name = "MOB: Vaurca Halloss Damage Check"
-	damagetype = DAMAGE_PAIN
-
-// ==============================================================================
-
 
 /datum/unit_test/robot_module_icons
 	name = "MOB: Robot module icon check"

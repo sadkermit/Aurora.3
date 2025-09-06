@@ -484,14 +484,6 @@
 		for(var/obj/item/organ/I in H.internal_organs)
 			I.robotize(I.robotize_type)
 
-	if(isvaurca(H))
-		for (var/obj/item/organ/external/E in H.organs)
-			if ((E.status & ORGAN_CUT_AWAY) || (E.status & ORGAN_DESTROYED))
-				continue
-			E.status |= ORGAN_ADV_ROBOT
-		for(var/obj/item/organ/I in H.internal_organs)
-			I.status |= ORGAN_ADV_ROBOT
-
 	if(natural_armor)
 		H.AddComponent(/datum/component/armor, natural_armor)
 
@@ -676,12 +668,6 @@
 	if (H.stamina == -1)
 		stack_trace("Error: Species with special sprint mechanics has not overridden cost function.")
 		return 0
-
-	var/obj/item/organ/internal/augment/calf_override/C = H.internal_organs_by_name[BP_AUG_CALF_OVERRIDE]
-	if(C && !C.is_broken())
-		cost = 0
-		if(!pre_move)
-			C.do_run_act()
 
 	var/remainder = 0
 	if (H.stamina > cost)

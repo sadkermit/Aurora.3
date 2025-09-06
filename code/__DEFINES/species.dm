@@ -5,13 +5,6 @@
 #define SPECIES_DIONA				"Diona"
 #define SPECIES_DIONA_COEUS			"Coeus Diona"
 
-#define SPECIES_VAURCA_WORKER		"Vaurca Worker"
-#define SPECIES_VAURCA_WARRIOR		"Vaurca Myrmidon"
-#define SPECIES_VAURCA_ATTENDANT	"Vaurca Attendant"
-#define SPECIES_VAURCA_BREEDER		"Vaurca Breeder"
-#define SPECIES_VAURCA_WARFORM		"Vaurca Warform"
-#define SPECIES_VAURCA_BULWARK		"Vaurca Bulwark"
-
 #define SPECIES_IPC					"Baseline Frame"
 #define SPECIES_IPC_SHELL			"Shell Frame"
 #define SPECIES_IPC_G1				"Hephaestus G1 Industrial Frame"
@@ -37,7 +30,6 @@
 #define SPECIES_REVENANT			"Revenant"
 
 #define SPECIES_MONKEY				"Monkey"
-#define SPECIES_MONKEY_VAURCA		"V'krexi"
 
 #define SPECIES_GOLEM_COAL			"Coal Golem"
 #define SPECIES_GOLEM_IRON			"Iron Golem"
@@ -67,12 +59,6 @@
 #define BODYTYPE_DIONA				"Diona"
 #define BODYTYPE_TESLA_BODY			"Tesla Rejuvenation Suit"
 
-#define BODYTYPE_VAURCA				"Vaurca"
-#define BODYTYPE_VAURCA_BREEDER		"Vaurca Breeder"
-#define BODYTYPE_VAURCA_BULWARK		"Vaurca Bulwark"
-#define BODYTYPE_VAURCA_ATTENDANT 	"Vaurca Attendant"
-#define BODYTYPE_VAURCA_WARFORM		"Vaurca Warform"
-
 #define BODYTYPE_IPC				"Machine"
 #define BODYTYPE_IPC_INDUSTRIAL		"Heavy Machine"
 #define BODYTYPE_IPC_ZENGHU			"Zeng-Hu Mobility Frame"
@@ -88,7 +74,6 @@
 		SPECIES_HUMAN, SPECIES_HUMAN_OFFWORLD, \
 		SPECIES_IPC, SPECIES_IPC_BISHOP, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_SHELL, SPECIES_IPC_UNBRANDED, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, \
 		SPECIES_DIONA, SPECIES_DIONA_COEUS, \
-		SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_ATTENDANT, SPECIES_VAURCA_BREEDER, \
 	)
 
 #define ALL_HUMAN_SPECIES list(\
@@ -97,10 +82,6 @@
 
 #define ALL_DIONA_SPECIES list(\
 		SPECIES_DIONA, SPECIES_DIONA_COEUS, \
-	)
-
-#define ALL_VAURCA_SPECIES list(\
-		SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BREEDER, SPECIES_VAURCA_WARFORM, SPECIES_VAURCA_BULWARK, \
 	)
 
 #define ALL_IPC_SPECIES list(\

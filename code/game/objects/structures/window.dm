@@ -213,7 +213,7 @@
 
 /obj/structure/window/attack_hand(var/mob/living/user)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	if((user.mutations & HULK) && !(user.isSynthetic()) && !(isvaurca(user)))
+	if((user.mutations & HULK) && !(user.isSynthetic()))
 		user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!"))
 		user.visible_message(SPAN_DANGER("[user] smashes through [src]!"))
 		user.do_attack_animation(src)

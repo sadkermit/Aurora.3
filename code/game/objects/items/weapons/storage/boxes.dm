@@ -190,19 +190,13 @@
 				/obj/item/reagent_containers/hypospray/autoinjector/inaprovaline = 1
 				)
 
-/obj/item/storage/box/vaurca
-	icon_state = "redbox"
-	illustration = "survivalvox"
-	starts_with = list(/obj/item/clothing/mask/breath = 1, /obj/item/reagent_containers/inhaler/phoron_special = 1)
-
 /obj/item/storage/box/gloves
 	name = "box of sterile gloves"
 	desc = "Contains sterile gloves."
 	illustration = "latex"
 	max_storage_space = DEFAULT_BOX_STORAGE
 	starts_with = list(/obj/item/clothing/gloves/latex = 2,
-						/obj/item/clothing/gloves/latex/nitrile = 2,
-						/obj/item/clothing/gloves/latex/nitrile/vaurca = 1)
+						/obj/item/clothing/gloves/latex/nitrile = 2)
 /obj/item/storage/box/masks
 	name = "box of surgical masks"
 	desc = "This box contains masks of surgicality."
@@ -612,8 +606,7 @@
 		/obj/item/clothing/gloves/janitor
 	)
 	starts_with = list(
-		/obj/item/clothing/gloves/janitor = 1,
-		/obj/item/clothing/gloves/janitor/vaurca = 1
+		/obj/item/clothing/gloves/janitor = 1
 	)
 
 /obj/item/storage/box/ids
@@ -1105,20 +1098,6 @@
 		/obj/item/flag/ekane/l = 1,
 		/obj/item/flag/narrows = 2,
 		/obj/item/flag/narrows/l = 1
-	)
-
-/obj/item/storage/box/flags/vaurca
-	name = "Vaurca flag box"
-	desc = "A box filled to the brim with various hive flags."
-	starts_with = list(
-		/obj/item/flag/sedantis = 4,
-		/obj/item/flag/sedantis/l = 3,
-		/obj/item/flag/zora = 4,
-		/obj/item/flag/zora/l = 3,
-		/obj/item/flag/klax = 4,
-		/obj/item/flag/klax/l = 3,
-		/obj/item/flag/cthur = 4,
-		/obj/item/flag/cthur/l = 3
 	)
 
 /obj/item/storage/box/flags/goldendeep

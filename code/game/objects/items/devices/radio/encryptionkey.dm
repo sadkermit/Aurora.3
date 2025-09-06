@@ -110,13 +110,6 @@
 	translate_binary = TRUE
 	origin_tech = list(TECH_ILLEGAL = 3)
 
-/obj/item/device/encryptionkey/hivenet
-	name = "hivenet encryption chip"
-	desc = "It appears to be a Vaurca Hivenet encryption chip, for localized broadcasts."
-	translate_hivenet = TRUE
-	icon = 'icons/obj/stock_parts.dmi'
-	icon_state = "neuralchip"
-
 /obj/item/device/encryptionkey/headset_sec
 	name = "security radio encryption key"
 	icon_state = "sec_cypherkey"

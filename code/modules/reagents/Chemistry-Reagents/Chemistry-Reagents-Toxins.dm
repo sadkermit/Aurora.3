@@ -144,23 +144,6 @@
 			H.add_chemical_effect(CE_BLOODRESTORE, 8 * removed)
 			H.adjustToxLoss(-2 * removed)
 			return
-
-		if(alien == IS_VAURCA && H.species.has_organ[BP_FILTRATION_BIT])
-			metabolism = REM * 20 //vaurcae metabolise phoron faster than other species - good for them if their filter isn't broken.
-			var/obj/item/organ/internal/vaurca/filtrationbit/F = H.internal_organs_by_name[BP_FILTRATION_BIT]
-			if(isnull(F))
-				return
-			else if(F.is_broken())
-				return
-			else if(H.species.has_organ[BP_PHORON_RESERVE])
-				var/obj/item/organ/internal/vaurca/preserve/P = H.internal_organs_by_name[BP_PHORON_RESERVE]
-				if(isnull(P))
-					return
-				else if(P.is_broken())
-					return
-				else
-					P.air_contents.adjust_gas(GAS_PHORON, (0.5*removed))
-
 		else
 			..()
 	else
@@ -174,21 +157,12 @@
 /singleton/reagent/toxin/phoron/affect_touch(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
 	if(istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
-		var/obj/item/organ/internal/parasite/P = H.internal_organs_by_name["blackkois"]
-		if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
-			return
 
 	M.take_organ_damage(0, removed * 0.3) //being splashed directly with phoron causes minor chemical burns
 	if(prob(50))
 		M.pl_effects()
 
 /singleton/reagent/toxin/phoron/affect_breathe(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(istype(M, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = M
-		var/obj/item/organ/internal/parasite/P = H.internal_organs_by_name["blackkois"]
-		if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
-			return
-
 	M.take_organ_damage(0, removed * 0.6) //Breathing phoron? Oh hell no boy my boy.
 	if(prob(50))
 		M.pl_effects()
@@ -214,12 +188,7 @@
 /singleton/reagent/toxin/cardox/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed, var/datum/reagents/holder)
 	if(!istype(M))
 		return
-
-	var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
-	if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
-		M.add_chemical_effect(CE_TOXIN, removed * strength * 2)
-	else
-		M.add_chemical_effect(CE_TOXIN, removed * strength)
+	M.add_chemical_effect(CE_TOXIN, removed * strength)
 
 /singleton/reagent/toxin/cardox/affect_conflicting(var/mob/living/carbon/M, var/alien, var/removed, var/singleton/reagent/conflicting, var/datum/reagents/holder)
 	var/amount = min(removed, REAGENT_VOLUME(holder, conflicting.type))

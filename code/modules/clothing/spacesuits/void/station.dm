@@ -93,7 +93,7 @@
 		RAD = ARMOR_RAD_MINOR
 	)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/pickaxe, /obj/item/gun/energy/vaurca/thermaldrill)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 //Medical Rig
 /obj/item/clothing/head/helmet/space/void/medical
@@ -214,7 +214,7 @@
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	light_overlay = "helmet_light_dual_low"
 	brightness_on = 6
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/suit/space/void/atmos
 	name = "atmos voidsuit"
@@ -239,7 +239,7 @@
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/bag/ore,/obj/item/device/t_scanner,/obj/item/pickaxe,/obj/item/material/twohanded/fireaxe,/obj/item/storage/bag/inflatable)
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE + 10000 // It is a suit designed for fire, enclosed
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 //Head of Security
 /obj/item/clothing/head/helmet/space/void/hos
@@ -308,7 +308,7 @@
 		BIO = ARMOR_BIO_SHIELDED,
 		RAD = ARMOR_RAD_RESISTANT
 	)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/suit/space/void/sci
 	name = "research voidsuit"
@@ -330,4 +330,4 @@
 		BIO = ARMOR_BIO_SHIELDED,
 		RAD = ARMOR_RAD_RESISTANT
 	)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)

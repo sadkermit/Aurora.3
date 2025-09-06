@@ -70,10 +70,7 @@
 		/obj/item/storage/backpack/zavod = 4,
 		/obj/item/storage/backpack/duffel/eng = 6,
 		/obj/item/storage/backpack/duffel/heph = 4,
-		/obj/item/storage/backpack/duffel/zavod = 4,
-		/obj/item/storage/backpack/cloak/engi = 3,
-		/obj/item/storage/backpack/cloak/heph = 2,
-		/obj/item/storage/backpack/cloak/zavod = 2
+		/obj/item/storage/backpack/duffel/zavod = 4
 	)
 	premium = list(
 		/obj/item/toy/figure/engineer = 6,
@@ -145,10 +142,7 @@
 		/obj/item/storage/backpack/zavod = 4,
 		/obj/item/storage/backpack/duffel/eng = 6,
 		/obj/item/storage/backpack/duffel/heph = 4,
-		/obj/item/storage/backpack/duffel/zavod = 4,
-		/obj/item/storage/backpack/cloak/engi = 3,
-		/obj/item/storage/backpack/cloak/heph = 2,
-		/obj/item/storage/backpack/cloak/zavod = 2
+		/obj/item/storage/backpack/duffel/zavod = 4
 	)
 	premium = list(
 		/obj/item/toy/figure/atmos = 3,
@@ -268,10 +262,7 @@
 		/obj/item/storage/backpack/duffel/sec = 6,
 		/obj/item/storage/backpack/duffel/idris = 4,
 		/obj/item/storage/backpack/duffel/pmcg = 4,
-		/obj/item/storage/backpack/duffel/zavod = 4,
-		/obj/item/storage/backpack/cloak/phalanx = 2,
-		/obj/item/storage/backpack/cloak/sec = 2,
-		/obj/item/storage/backpack/cloak/zavod = 2
+		/obj/item/storage/backpack/duffel/zavod = 4
 	)
 	premium = list(
 		/obj/item/toy/figure/secofficer = 6,
@@ -340,8 +331,7 @@
 		/obj/item/storage/backpack/orion = 2,
 		/obj/item/storage/backpack/duffel/idris = 2,
 		/obj/item/storage/backpack/duffel/nt = 2,
-		/obj/item/storage/backpack/duffel/orion = 2,
-		/obj/item/storage/backpack/cloak/orion = 2
+		/obj/item/storage/backpack/duffel/orion = 2
 	)
 	premium = list(
 		/obj/item/toy/figure/bartender = 3,
@@ -398,9 +388,7 @@
 		/obj/item/storage/backpack/orion = 2,
 		/obj/item/storage/backpack/duffel/idris = 2,
 		/obj/item/storage/backpack/duffel/nt = 2,
-		/obj/item/storage/backpack/duffel/orion = 2,
-		/obj/item/storage/backpack/cloak/nt = 2,
-		/obj/item/storage/backpack/cloak/orion = 2
+		/obj/item/storage/backpack/duffel/orion = 2
 	)
 	premium = list(
 		/obj/item/toy/figure/chef = 3
@@ -457,7 +445,6 @@
 		/obj/item/clothing/head/wool/orion = 3,
 		/obj/item/clothing/head/wool/orion/alt = 3,
 		/obj/item/clothing/gloves/janitor = 4,
-		/obj/item/clothing/gloves/janitor/vaurca = 2,
 		/obj/item/clothing/glasses/safety/goggles = 6,
 		/obj/item/clothing/shoes/galoshes = 4,
 		/obj/item/storage/backpack/idris = 2,
@@ -465,9 +452,7 @@
 		/obj/item/storage/backpack/orion = 2,
 		/obj/item/storage/backpack/duffel/idris = 2,
 		/obj/item/storage/backpack/duffel/nt = 2,
-		/obj/item/storage/backpack/duffel/orion = 2,
-		/obj/item/storage/backpack/cloak/nt = 2,
-		/obj/item/storage/backpack/cloak/orion = 2
+		/obj/item/storage/backpack/duffel/orion = 2
 	)
 	premium = list(
 		/obj/item/toy/figure/janitor = 6
@@ -522,9 +507,7 @@
 		/obj/item/storage/backpack/duffel/hyd = 5,
 		/obj/item/storage/backpack/duffel/idris = 2,
 		/obj/item/storage/backpack/duffel/nt = 2,
-		/obj/item/storage/backpack/duffel/orion = 2,
-		/obj/item/storage/backpack/cloak/nt = 2,
-		/obj/item/storage/backpack/cloak/orion = 2
+		/obj/item/storage/backpack/duffel/orion = 2
 	)
 	premium = list(
 		/obj/item/toy/figure/gardener = 3
@@ -634,10 +617,7 @@
 		/obj/item/storage/backpack/duffel/tox = 8,
 		/obj/item/storage/backpack/duffel/nt = 4,
 		/obj/item/storage/backpack/duffel/zavod = 4,
-		/obj/item/storage/backpack/duffel/zeng = 4,
-		/obj/item/storage/backpack/cloak/sci = 4,
-		/obj/item/storage/backpack/cloak/nt = 2,
-		/obj/item/storage/backpack/cloak/zavod = 2
+		/obj/item/storage/backpack/duffel/zeng = 4
 	)
 	contraband = list(
 		/obj/item/clothing/under/rank/scientist/einstein = 4
@@ -733,10 +713,7 @@
 		/obj/item/storage/backpack/duffel/psych = 2,
 		/obj/item/storage/backpack/duffel/nt = 4,
 		/obj/item/storage/backpack/duffel/pmcg = 4,
-		/obj/item/storage/backpack/duffel/zeng = 4,
-		/obj/item/storage/backpack/cloak/medical = 4,
-		/obj/item/storage/backpack/cloak/nt = 2,
-		/obj/item/storage/backpack/cloak/phalanx = 2
+		/obj/item/storage/backpack/duffel/zeng = 4
 	)
 	premium = list(
 		/obj/item/toy/figure/md = 6,
@@ -799,10 +776,7 @@
 		/obj/item/storage/backpack/duffel/pharm = 3,
 		/obj/item/storage/backpack/duffel/nt = 3,
 		/obj/item/storage/backpack/duffel/pmcg = 3,
-		/obj/item/storage/backpack/duffel/zeng = 3,
-		/obj/item/storage/backpack/cloak/medical = 4,
-		/obj/item/storage/backpack/cloak/nt = 2,
-		/obj/item/storage/backpack/cloak/phalanx = 2
+		/obj/item/storage/backpack/duffel/zeng = 3
 	)
 	premium = list(
 		/obj/item/toy/figure/chemist = 3
@@ -852,8 +826,6 @@
 		/obj/item/storage/backpack/orion = 4,
 		/obj/item/storage/backpack/duffel/heph = 4,
 		/obj/item/storage/backpack/duffel/orion = 4,
-		/obj/item/storage/backpack/cloak/heph = 2,
-		/obj/item/storage/backpack/cloak/orion = 2,
 		/obj/item/device/flashlight/marshallingwand = 3
 	)
 	premium = list(
@@ -909,10 +881,7 @@
 		/obj/item/storage/backpack/heph = 4,
 		/obj/item/storage/backpack/orion = 4,
 		/obj/item/storage/backpack/duffel/heph = 4,
-		/obj/item/storage/backpack/duffel/orion = 4,
-		/obj/item/storage/backpack/cloak/cargo = 3,
-		/obj/item/storage/backpack/cloak/heph = 2,
-		/obj/item/storage/backpack/cloak/orion = 2
+		/obj/item/storage/backpack/duffel/orion = 4
 	)
 	premium = list(
 		/obj/item/toy/figure/roboticist = 3,

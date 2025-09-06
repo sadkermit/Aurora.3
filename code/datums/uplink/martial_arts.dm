@@ -21,9 +21,3 @@
 	desc = "A manual containing basic Gun-Kata instruction and techniques. This is for projectile weapons, allowing you to reload by using a gun on a magazine, and automatically ejecting the magazine when it's empty."
 	telecrystal_cost = 1
 	path = /obj/item/martial_manual/gun_kata
-
-/datum/uplink_item/item/martial_arts/vaurca
-	name = "Vk'utet"
-	desc = "A data disk containing instructions on the Vaurca martial art of Vk'utet. Only usable by Vaurca."
-	telecrystal_cost = 2
-	path = /obj/item/martial_manual/vaurca

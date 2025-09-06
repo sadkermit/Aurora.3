@@ -59,7 +59,6 @@
 	spawnlist = list(
 		/obj/item/clothing/gloves/black_leather,
 		/obj/item/clothing/gloves/botanic_leather,
-		/obj/item/clothing/gloves/botanic_leather/vaurca,
 		/obj/item/clothing/gloves/white,
 		/obj/item/clothing/gloves/blue,
 		/obj/item/clothing/gloves/orange,

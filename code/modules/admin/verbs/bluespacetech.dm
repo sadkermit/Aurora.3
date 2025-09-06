@@ -144,8 +144,6 @@
 				bsb()
 			if(SPECIES_DIONA)
 				bsd()
-			if(SPECIES_VAURCA_WORKER)
-				bsv()
 		return
 
 	src.custom_emote(VISIBLE_MESSAGE,"presses a button on their suit, followed by a polite bow.")
@@ -190,22 +188,6 @@
 		if(GetIdCard())
 			var/obj/item/card/id/id = GetIdCard()
 			id.registered_name = "Bluespace Tree"
-		regenerate_icons()
-	else
-		ghostize(0)
-		key = null
-		suicide()
-
-/mob/living/carbon/human/bst/proc/bsv()
-	if(set_species(SPECIES_VAURCA_WORKER))
-		h_style = "Bald"
-		name = "Bluespace Bug"
-		voice_name = "Bluespace Bug"
-		real_name = "Bluespace Bug"
-		mind.name = "Bluespace Bug"
-		if(GetIdCard())
-			var/obj/item/card/id/id = GetIdCard()
-			id.registered_name = "Bluespace Bug"
 		regenerate_icons()
 	else
 		ghostize(0)

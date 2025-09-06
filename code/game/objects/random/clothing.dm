@@ -26,7 +26,6 @@
 		/obj/item/storage/backpack/toxins = 3,
 		/obj/item/storage/backpack/hydroponics = 3,
 		/obj/item/storage/backpack/pharmacy = 3,
-		/obj/item/storage/backpack/cloak = 2,
 		/obj/item/storage/backpack/syndie = 1,
 		/obj/item/storage/backpack/satchel = 3,
 		/obj/item/storage/backpack/satchel/leather = 3,

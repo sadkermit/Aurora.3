@@ -46,11 +46,7 @@
 /singleton/reagent/nutriment/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
 	if(!istype(M))
 		return
-	var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
-	if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
-		M.adjustToxLoss(1.5 * removed)
-	else
-		digest(M,removed, holder = holder)
+	digest(M,removed, holder = holder)
 
 /singleton/reagent/nutriment/proc/digest(var/mob/living/carbon/M, var/removed, var/datum/reagents/holder)
 	M.heal_organ_damage(regen_factor * removed, 0)

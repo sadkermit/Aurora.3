@@ -922,9 +922,6 @@
 		if(!istype(H))
 			to_chat(usr, "This can only be used on instances of type /mob/living/carbon/human")
 			return
-		if(!isvaurca(H))
-			to_chat(usr, "This can only be used on Vaurca.")
-			return
 
 		var/input = sanitize(input(src.owner, "Please enter a message to reply to [key_name(H)] via the Hivenet.", "Outgoing transmission from the Hive...", ""))
 		if(!input)	return

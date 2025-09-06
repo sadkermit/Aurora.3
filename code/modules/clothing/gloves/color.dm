@@ -113,7 +113,6 @@
 	item_state = "fingerlessgloves"
 	fingerprint_chance = 100
 	clipped = TRUE
-	species_restricted = list("exclude",BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK)
 
 /obj/item/clothing/gloves/fingerless/colour
 	icon_state = "fingerlessgloves_colour"
@@ -128,7 +127,7 @@
 	desc = "A pair of cozy knitted gloves. They don't appear as restrictive as most other type of gloves"
 	icon_state = "full_leather_colour"
 	item_state = "full_leather_colour"
-	species_restricted = list("exclude",BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM)
+	species_restricted = list(BODYTYPE_GOLEM)
 
 /obj/item/clothing/gloves/kala
 	name = "skrell gloves"

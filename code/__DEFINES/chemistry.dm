@@ -37,7 +37,6 @@
 #define IS_DIONA   1
 #define IS_XENOS   16
 #define IS_MACHINE 32
-#define IS_VAURCA  64
 #define IS_UNDEAD  128
 
 // Apply status effects

@@ -40,7 +40,6 @@
 	desc = "Modified pair of boots, particularly friendly to those species whose toes hold claws."
 	icon_state = "jackboots_toeless"
 	item_state = "jackboots_toeless"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/jackboots/toeless/cavalry
 	name = "toe-less cavalry jackboots"
@@ -84,7 +83,6 @@
 	desc = "A pair of toeless work boots designed for use in industrial settings. Modified for species whose toes have claws."
 	icon_state = "workboots_toeless"
 	item_state = "workboots_toeless"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
 
@@ -149,7 +147,6 @@
 	build_from_parts = TRUE
 	drop_sound = 'sound/items/drop/boots.ogg'
 	pickup_sound = 'sound/items/pickup/boots.ogg'
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
@@ -188,7 +185,6 @@
 	desc = "A pair of toe-less heavy winter boots made out of animal furs, reaching up to the knee.  Modified for species whose toes have claws."
 	icon_state = "winterboots_toeless"
 	item_state = "winterboots_toeless"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/aerostatic
 	name = "aerostatic boots"
@@ -213,7 +209,6 @@
 	contained_sprite = TRUE
 	icon_state = "heeledboots_toeless"
 	item_state = "heeledboots_toeless"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/heeledboots
 	name = "heeled boots"
@@ -232,7 +227,6 @@
 	item_state = "thighboots"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/thighboots/toeless
 	name = "thigh-high toeless boots"
@@ -243,7 +237,6 @@
 	item_state = "thighboots_toeless"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/thighboots/heels
 	name = "thigh-high heeled boots"
@@ -260,7 +253,6 @@
 	contained_sprite = TRUE
 	icon_state = "thighboots_heels_toeless"
 	item_state = "thighboots_heels_toeless"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/fullboots
 	name = "full-length boots"
@@ -271,7 +263,6 @@
 	item_state = "fullboots"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/fullboots/toeless
 	name = "full-length toeless boots"
@@ -282,7 +273,6 @@
 	item_state = "fullboots_toeless"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/fullboots/heels
 	name = "full-length heeled boots"
@@ -299,7 +289,6 @@
 	contained_sprite = TRUE
 	icon_state = "fullboots_heels_toeless"
 	item_state = "fullboots_heels_toeless"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/mudboots
 	name = "mudboots"
@@ -310,7 +299,6 @@
 	item_state = "mudboots"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/mudboots/thigh
 	name = "thigh-high mudboots"
@@ -321,7 +309,6 @@
 	item_state = "thighmudboots"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/colorcombat
 	name = "combat boots"
@@ -340,7 +327,6 @@
 	item_state = "colorjackboots"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/jackboots/toeless/color
 	name = "toeless jackboots"
@@ -351,7 +337,6 @@
 	item_state = "colorjackboots_toeless"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 
 /obj/item/clothing/shoes/workboots/color
@@ -363,7 +348,6 @@
 	item_state = "colorworkboots"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/workboots/toeless/color
 	name = "toeless workboots"
@@ -374,7 +358,6 @@
 	item_state = "colorworkboots_toeless"
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("taj")
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 /obj/item/clothing/shoes/ankleboots
 	name = "ankle boots"
@@ -383,5 +366,3 @@
 	contained_sprite = TRUE
 	icon_state = "ankleboots"
 	item_state = "ankleboots"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
-

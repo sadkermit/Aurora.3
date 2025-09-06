@@ -197,7 +197,7 @@
 		/obj/item/material/twohanded/pike/flag
 	)
 
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY
 

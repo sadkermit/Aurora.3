@@ -120,8 +120,6 @@
 /// for organics with synthetic blood substitute
 #define COLOR_SYNTH_BLOOD      "#D9F9FF"
 #define COLOR_DIONA_BLOOD      "#97DD7C"
-#define COLOR_VAURCA_BLOOD     "#E6E600"
-
 
 // Wood Colours
 #define WOOD_COLOR_GENERIC     "#8f5847"

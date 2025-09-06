@@ -40,61 +40,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 /mob/living/carbon/human/monkey/Initialize(mapload)
 	. = ..(mapload, SPECIES_MONKEY)
 
-
-/mob/living/carbon/human/bug/Initialize(mapload)
-	. = ..(mapload, SPECIES_MONKEY_VAURCA)
-	src.gender = FEMALE
-
-/mob/living/carbon/human/type_a/Initialize(mapload)
-	h_style = "Classic Antennae"
-	. = ..(mapload, SPECIES_VAURCA_WORKER)
-	src.gender = NEUTER
-
-/mob/living/carbon/human/type_a/cargo/Initialize(mapload)
-	. = ..()
-	// Equip mask to allow the drone to breathe
-	equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vaurca/filter(src), slot_wear_mask)
-	// Set internals
-	var/obj/item/organ/internal/vaurca/preserve/P = internal_organs_by_name[BP_PHORON_RESERVE]
-	internal = P
-	// Set colour, default is grey, no biggie
-	var/list/hive = splittext(name, " ")
-	switch(hive[length(hive)])
-		if("K'lax")
-			change_skin_color(20, 170, 20) // Vedhra does bioresearch.
-		if("C'thur")
-			change_skin_color(10, 35, 55) // Vytel tolerates the SCC the most.
-		if("Zo'ra")
-			change_skin_color(71 ,11, 51) // Scay does bioresearch.
-
-/mob/living/carbon/human/type_b/Initialize(mapload)
-	h_style = "Classic Antennae"
-	. = ..(mapload, SPECIES_VAURCA_WARRIOR)
-	src.gender = NEUTER
-
-/mob/living/carbon/human/type_c/Initialize(mapload)
-	. = ..(mapload, SPECIES_VAURCA_BREEDER)
-	src.gender = FEMALE
-
-/mob/living/carbon/human/type_c
-	layer = 5
-
-/mob/living/carbon/human/type_big/Initialize(mapload)
-	. = ..(mapload, SPECIES_VAURCA_WARFORM)
-	src.gender = NEUTER
-	src.mutations |= HULK
-
-/mob/living/carbon/human/type_big
-	layer = 5
-
-/mob/living/carbon/human/type_e/Initialize(mapload)
-	. = ..(mapload, SPECIES_VAURCA_BULWARK)
-
-/mob/living/carbon/human/type_e/equipped/Initialize(mapload)
-	. = ..(mapload, SPECIES_VAURCA_BULWARK)
-	species.before_equip(src)
-	species.after_equip(src)
-
 /mob/living/carbon/human/industrial/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_G1)
 

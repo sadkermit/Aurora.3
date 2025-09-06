@@ -63,38 +63,6 @@
 			return TRUE
 	return FALSE
 
-/proc/isvaurca(A, var/isbreeder = FALSE)
-	if(istype(A, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = A
-		switch(H.get_species())
-			if(SPECIES_VAURCA_WORKER)
-				if(isbreeder)
-					return FALSE
-				return TRUE
-			if(SPECIES_VAURCA_WARRIOR)
-				if(isbreeder)
-					return FALSE
-				return TRUE
-			if(SPECIES_VAURCA_ATTENDANT)
-				if(isbreeder)
-					return FALSE
-				return TRUE
-			if(SPECIES_VAURCA_BREEDER)
-				return TRUE
-			if(SPECIES_VAURCA_BULWARK)
-				if(isbreeder)
-					return FALSE
-				return TRUE
-			if(SPECIES_VAURCA_WARFORM)
-				if(isbreeder)
-					return FALSE
-				return TRUE
-			if(SPECIES_MONKEY_VAURCA)
-				if(isbreeder)
-					return FALSE
-				return TRUE
-	return FALSE
-
 /proc/isipc(A)
 	. = 0
 	if(ishuman(A))
@@ -165,8 +133,6 @@
 		var/mob/living/carbon/human/H = A
 		switch(H.get_species())
 			if (SPECIES_MONKEY)
-				return 1
-			if (SPECIES_MONKEY_VAURCA)
 				return 1
 	return 0
 

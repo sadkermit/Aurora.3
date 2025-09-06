@@ -34,7 +34,6 @@ BLIND     // can't see anything
 	var/normal_layer = GLASSES_LAYER
 	var/shatter_material = /obj/item/material/shard
 	var/brand_name
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER)
 	drop_sound = 'sound/items/drop/accessory.ogg'
 	pickup_sound = 'sound/items/pickup/accessory.ogg'
 

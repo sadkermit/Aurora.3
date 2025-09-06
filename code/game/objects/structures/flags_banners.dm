@@ -637,47 +637,6 @@
 /obj/structure/sign/flag/xanu/large/west/Initialize(mapload)
 	. = ..(mapload, WEST)
 
-// Varuca/Sedantis
-
-/obj/item/flag/sedantis
-	name = "\improper Sedantis flag"
-	desc = "The emblem of Sedantis on a flag, emblematic of Vaurca longing."
-	flag_path = "sedantis"
-	flag_structure = /obj/structure/sign/flag/sedantis
-
-/obj/structure/sign/flag/sedantis
-	name = "\improper Sedantis flag"
-	desc = "The emblem of Sedantis on a flag, emblematic of Vaurca longing."
-	icon_state = "sedantis"
-	flag_path = "sedantis"
-	flag_item = /obj/item/flag/sedantis
-
-/obj/structure/sign/flag/sedantis/unmovable
-	unmovable = TRUE
-
-/obj/item/flag/sedantis/l
-	name = "large Sedantis flag"
-	flag_size = TRUE
-	flag_structure = /obj/structure/sign/flag/sedantis/large
-
-/obj/structure/sign/flag/sedantis/large
-	icon_state = "sedantis_l"
-	flag_path = "sedantis"
-	flag_size = TRUE
-	flag_item = /obj/item/flag/sedantis/l
-
-/obj/structure/sign/flag/sedantis/large/north/Initialize(mapload)
-	. = ..(mapload, NORTH)
-
-/obj/structure/sign/flag/sedantis/large/south/Initialize(mapload)
-	. = ..(mapload, SOUTH)
-
-/obj/structure/sign/flag/sedantis/large/east/Initialize(mapload)
-	. = ..(mapload, EAST)
-
-/obj/structure/sign/flag/sedantis/large/west/Initialize(mapload)
-	. = ..(mapload, WEST)
-
 // Red Coalition
 
 /obj/item/flag/red_coalition

@@ -182,9 +182,6 @@
 	if(check_min_dose(M, 0.5))
 		M.add_chemical_effect(CE_OXYGENATED, strength/6) // 1 for dexalin, 2 for dexplus
 	holder.remove_reagent(/singleton/reagent/lexorin, strength/3 * removed)
-	if(alien == IS_VAURCA) //Vaurca need a mixture of phoron and oxygen. Dexalin likely imbalances that.
-		M.adjustToxLoss(removed * strength / 2)
-		M.eye_blurry = max(M.eye_blurry, 5)
 
 //Hyperoxia causes brain and eye damage
 /singleton/reagent/dexalin/overdose(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
@@ -661,9 +658,6 @@
 		if(E && istype(E))
 			if(E.damage > 0)
 				E.damage = max(E.damage - 5 * removed, 0)
-		if(isvaurca(H))
-			if(E.damage < E.min_broken_damage && H.sdisabilities & BLIND)
-				H.sdisabilities -= BLIND
 
 /singleton/reagent/oculine/affect_chem_effect(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
 	. = ..()

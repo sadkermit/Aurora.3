@@ -17,9 +17,6 @@
 		siemens_coefficient += 0.25
 		name = "modified [name]"
 		desc = "[desc]<br>They have had the fingertips cut off of them."
-		if("exclude" in species_restricted)
-			species_restricted -= BODYTYPE_VAURCA
-		return
 
 	if(istype(src, /obj/item/clothing/gloves/boxing))			//quick fix for stunglove overlay not working nicely with boxing gloves.
 		to_chat(user, SPAN_NOTICE("That won't work."))	//i'm not putting my lips on that!)

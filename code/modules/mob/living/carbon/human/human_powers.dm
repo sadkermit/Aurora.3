@@ -310,10 +310,6 @@
 		to_chat(src,"<span class='alium'>The creature's mind is incompatible, formless.</span>")
 		return
 
-	if (isvaurca(target))
-		to_chat (src, SPAN_CULT("You feel your thoughts pass right through a mind empty of psychic energy."))
-		return
-
 	if(!(target in view(client.view, client.eye)))
 		to_chat(src,SPAN_WARNING("[target] is too far for your mind to grasp!"))
 		return
@@ -541,45 +537,6 @@
 	explosion(src, -1, 1, 5)
 	src.gib()
 
-/mob/living/carbon/human/proc/hivenet()
-	set category = "Abilities"
-	set name = "Hivenet Control"
-	set desc = "Issue an order over the hivenet."
-
-	var/list/targets = list()
-	var/target = null
-	var/text = null
-
-	targets += getmobs()
-	target = input("Select a pawn!", "Issue an order", null, null) as null|anything in targets
-
-	if(!target) return
-
-	text = input("What is your will?", "Issue an order", null, null)
-
-	text = sanitize(text)
-
-	if(!text) return
-
-	var/mob/M = targets[target]
-
-	if(isobserver(M) || M.stat == DEAD)
-		to_chat(src, SPAN_DANGER("[M]'s hivenet implant is inactive!"))
-		return
-
-	log_say("[key_name(src)] issued a hivenet order to [key_name(M)]: [text]")
-
-	if(ishuman(M) && isvaurca(M))
-		to_chat(M, SPAN_DANGER("You feel a buzzing in the back of your head, and your mind fills with the authority of [src.real_name], your ruler:"))
-		to_chat(M, SPAN_NOTICE(" [text]"))
-	else
-		to_chat(M, SPAN_DANGER("Like lead slabs crashing into the ocean, alien thoughts drop into your mind: [text]"))
-		if(ishuman(M))
-			var/mob/living/carbon/human/H = M
-			if(H.species.name == src.species.name)
-				return
-			to_chat(H, SPAN_DANGER("Your nose begins to bleed..."))
-			H.drip(1)
 
 /mob/living/carbon/human/proc/quillboar(mob/target as mob in oview())
 	set name = "Launch Quill"
@@ -995,10 +952,6 @@
 		to_chat(src,SPAN_WARNING("You can only detach robotic limbs."))
 		return
 
-	if(E.robotize_type != PROSTHETIC_AUTAKH)
-		to_chat(src,SPAN_WARNING("Your body fails to interface with this alien technology."))
-		return
-
 	if(E.is_stump() || (E.status & ORGAN_DESTROYED) || E.is_broken())
 		to_chat(src,SPAN_WARNING("The limb is too damaged to be removed manually!"))
 		return
@@ -1037,10 +990,6 @@
 
 		if(!O.robotic)
 			to_chat(src,SPAN_WARNING("You are unable to interface with organic matter."))
-			return
-
-		if(O.robotize_type != PROSTHETIC_AUTAKH)
-			to_chat(src,SPAN_WARNING("Your body fails to interface with this alien technology."))
 			return
 
 		if(organs_by_name[O.limb_name])
@@ -1140,7 +1089,7 @@
 	var/list/dirs = list()
 	for(var/mob/living/L in range(20))
 		var/turf/T = get_turf(L)
-		if(!T || L == src || L.stat == DEAD || L.isSynthetic() || L.is_diona() || isvaurca(L) || L.invisibility == INVISIBILITY_LEVEL_TWO)
+		if(!T || L == src || L.stat == DEAD || L.isSynthetic() || L.is_diona() || L.invisibility == INVISIBILITY_LEVEL_TWO)
 			continue
 		var/image/ping_image = image(icon = 'icons/effects/effects.dmi', icon_state = "sonar_ping", loc = src)
 		ping_image.plane = LIGHTING_LAYER+1
@@ -1330,168 +1279,3 @@
 		return
 
 	G.tail_storage.open(usr)
-
-//Hivenet Admin
-/mob/living/carbon/human/proc/hivenet_transmit()
-	set name = "Emergency Hivenet Transmission"
-	set desc = "Send a direct Hivenet transmission to your superiors in the Hive. Only to be used in dire circumstances, on pain of severe consequences.."
-	set category = "Hivenet"
-
-	var/hives = list("Zo'ra", "K'lax", "C'thur")
-	var/obj/item/organ/internal/vaurca/neuralsocket/S = src.internal_organs_by_name[BP_NEURAL_SOCKET]
-	if(!S.adminperms)
-		to_chat(src, SPAN_WARNING("You lack the authority to send such a message!"))
-		return
-	var/selected_hive = input(src, "Select a Hive to transmit your message to", "Hive Selection") as null|anything in hives
-
-	if(!selected_hive)
-		return
-	var/msg = sanitize(input(src, "Input your emergency transmission to the [selected_hive] Hive. This transmission is intensive and difficult, only intended for use in the most dire of circumstances. Frivolous use may be met with severe consequences.", "Emergency Hivenet Transmission", null) as text)
-	if(!msg)
-		return
-	if(within_jamming_range(src) || S.muted || S.disrupted)
-		to_chat(src, SPAN_WARNING("You are unable to transmit your message.</span>"))
-		return
-
-	say(",9!an enormous surge of encrypted data, surging out into the wider Hivenet.")
-
-	var/ccia_msg = SPAN_NOTICE("<b><font color=orange>[uppertext(selected_hive)]: </font>[key_name(src, 1)] (<A href='byond://?_src_=holder;CentcommHiveReply=[REF(src)]'>RPLY</A>):</b> [msg]")
-	var/admin_msg = SPAN_NOTICE("<b><font color=orange>[uppertext(selected_hive)]: </font>[key_name(src, 1)] (<A href='byond://?_src_=holder;adminplayeropts=[REF(src)]'>PP</A>) (<A href='byond://?_src_=vars;Vars=[REF(src)]'>VV</A>) (<A href='byond://?_src_=holder;subtlemessage=[REF(src)]'>SM</A>) ([admin_jump_link(src)]) (<A href='byond://?_src_=holder;secretsadmin=check_antagonist'>CA</A>) (<A href='byond://?_src_=holder;BlueSpaceArtillery=[REF(src)]'>BSA</A>) (<A href='byond://?_src_=holder;CentcommHiveReply=[REF(src)]'>RPLY</A>):</b> [msg]")
-
-	var/cciaa_present = 0
-	var/cciaa_afk = 0
-
-	for(var/s in GLOB.staff)
-		var/client/C = s
-		if(R_ADMIN & C.holder.rights)
-			to_chat(C, admin_msg)
-		else if (R_CCIAA & C.holder.rights)
-			cciaa_present++
-			if (C.is_afk())
-				cciaa_afk++
-
-			to_chat(C, ccia_msg)
-
-	SSdiscord.send_to_cciaa("Emergency message from the station: `[msg]`, sent by [src]! Gamemode: [SSticker.mode]")
-
-	var/discord_msg = "[cciaa_present] agents online."
-	if (cciaa_present)
-		if ((cciaa_present - cciaa_afk) <= 0)
-			discord_msg += " **All AFK!**"
-		else
-			discord_msg += " [cciaa_afk] AFK."
-
-	SSdiscord.send_to_cciaa(discord_msg)
-	SSdiscord.post_webhook_event(WEBHOOK_CCIAA_EMERGENCY_MESSAGE, list("message"=msg, "sender"="[src]", "cciaa_present"=cciaa_present, "cciaa_afk"=cciaa_afk))
-
-//Lii'dra Zombie Powers
-/mob/living/carbon/human/proc/kois_cough()
-	set category = "Abilities"
-	set name = "Exhale Spores"
-	set desc = "Exhale a cloud of black k'ois spores, to further spread the will of the Lii'dra."
-
-	if(src.stat != CONSCIOUS)
-		to_chat(src, SPAN_WARNING("You are incapable of that in your current state!"))
-		return
-	var/obj/item/organ/internal/parasite/blackkois/P = internal_organs_by_name["blackkois"]
-	if(!P)
-		to_chat(src, SPAN_WARNING("You don't have black k'ois mycosis!"))
-		return
-
-	if(P.stage < 5)
-		to_chat(src, SPAN_WARNING("Your mycosis has not grown enough to do this!"))
-		return
-
-	if(last_special > world.time)
-		to_chat(src, SPAN_WARNING("You need time to replenish your spores!"))
-		return
-
-	to_chat(usr, SPAN_GOOD("You feel Us within your lungs. Exhale. Let Our will be done."))
-
-	var/turf/T = get_turf(src)
-
-	var/datum/reagents/R = new/datum/reagents(20)
-	var/datum/effect/effect/system/smoke_spread/chem/spores/S = new("blackkois")
-
-	S.attach(T)
-	S.set_up(R, 20, 0, T, 40)
-	S.start()
-
-	last_special = world.time + 5 MINUTES //don't let them do this too often or it's gonna be a fucking nightmare
-
-/mob/living/carbon/human/proc/kois_infect()
-	set name = "Infect Creature"
-	set desc = "Infect another creature with black k'ois mycosis."
-	set category = "Abilities"
-
-	if(src.stat != CONSCIOUS)
-		to_chat(src, SPAN_WARNING("You are incapable of that in your current state!"))
-		return
-
-	if(last_special > world.time)
-		to_chat(src, SPAN_WARNING("You need time to replenish your spores!"))
-		return
-
-	if(wear_mask?.flags_inv & HIDEFACE)
-		to_chat(src, SPAN_WARNING("You have a mask covering your mouth!"))
-		return
-
-	if(head?.flags_inv & HIDEFACE)
-		to_chat(src, SPAN_WARNING("You have something on your head covering your mouth!"))
-		return
-
-	var/obj/item/grab/G = locate() in src
-	if(!G || !istype(G))
-		to_chat(src, SPAN_WARNING("You are not grabbing anyone."))
-		return
-
-	if(G.state < GRAB_KILL)
-		to_chat(src, SPAN_WARNING("You must have a strangling grip to infect!"))
-		return
-
-	if(ishuman(G.affecting))
-		var/mob/living/carbon/human/H = G.affecting
-		if(H.isSynthetic())
-			to_chat(src, SPAN_WARNING("\The [H] is not an organic being, and cannot be infected!"))
-			return
-		if(H.wear_mask?.flags_inv & HIDEFACE)
-			to_chat(src, SPAN_WARNING("\The [H] has something covering their face!"))
-			return
-		if(H.head?.flags_inv & HIDEFACE)
-			to_chat(src, SPAN_WARNING("\The [H] has something on their head covering their face!"))
-			return
-		if(H.internal_organs_by_name["blackkois"])
-			to_chat(src, SPAN_WARNING("\The [H] is already infected!"))
-			return
-
-		src.visible_message(SPAN_DANGER("[src] leans towards [H], exhaling a cloud of black spores into their face."), \
-		SPAN_GOOD("You lean towards [H], placing your face close to theirs, and exhale. They will become Us, soon."))
-		if(!do_after(src, 2 SECONDS))
-			src.visible_message(SPAN_DANGER("[src] is interrupted before their target can breathe in the spores!"), \
-			SPAN_WARNING("You are interrupted, unable to deliver [H] to Our embrace!"))
-		var/obj/item/organ/external/affected = H.get_organ(BP_HEAD)
-		var/obj/item/organ/internal/parasite/blackkois/infest = new()
-		infest.replaced(H, affected)
-
-		msg_admin_attack("[key_name_admin(src)] infected [key_name_admin(H)] with black k'ois! (<A href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[src.x];Y=[src.y];Z=[src.z]'>JMP</a>)",ckey=key_name(src),ckey_target=key_name(H))
-
-/mob/living/carbon/human/proc/phalanx_transmit()
-	set name = "Phalanx Hivenet Transmission"
-	set desc = "Make a preset transmission over the Hivenet."
-	set category = "Hivenet"
-
-	if(src.stat != CONSCIOUS)
-		to_chat(src, SPAN_WARNING("You are in no state to do that!"))
-		return
-
-/mob/living/carbon/human/proc/hivenet_manifest()
-	set name = "Hivenet Manifest"
-	set desc = "Get a list of all vaurca currently on the Hivenet."
-	set category = "Hivenet"
-
-	var/list/all_vaurca = list()
-	for(var/mob/living/carbon/human/vaurca in GLOB.human_mob_list)
-		if(!vaurca.stat && isvaurca(vaurca) && vaurca.internal_organs_by_name[BP_NEURAL_SOCKET])
-			all_vaurca += vaurca
-	var/datum/tgui_module/hivenet_manifest/HM = new /datum/tgui_module/hivenet_manifest(usr, all_vaurca)
-	HM.ui_interact(usr)

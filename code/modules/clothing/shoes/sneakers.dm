@@ -137,7 +137,6 @@
 	icon = 'icons/obj/item/clothing/shoes/flats.dmi'
 	icon_state = "blackdf"
 	item_state = "blackdf"
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 	icon_auto_adapt = TRUE
 	contained_sprite = TRUE
 	icon_supported_species_tags = list("taj")

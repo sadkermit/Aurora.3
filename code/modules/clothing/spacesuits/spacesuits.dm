@@ -22,7 +22,7 @@
 	min_pressure_protection = 0
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	siemens_coefficient = 0.5
-	species_restricted = list("exclude",BODYTYPE_DIONA,BODYTYPE_GOLEM,BODYTYPE_VAURCA_BULWARK)
+	species_restricted = list(BODYTYPE_DIONA, BODYTYPE_GOLEM)
 	flash_protection = FLASH_PROTECTION_MAJOR
 	allow_hair_covering = FALSE
 
@@ -64,7 +64,7 @@
 	min_pressure_protection = 0
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	siemens_coefficient = 0.5
-	species_restricted = list("exclude",BODYTYPE_DIONA,BODYTYPE_GOLEM,BODYTYPE_VAURCA_BULWARK)
+	species_restricted = list(BODYTYPE_DIONA,BODYTYPE_GOLEM)
 	protects_against_weather = TRUE
 
 	var/list/supporting_limbs //If not-null, automatically splints breaks. Checked when removing the suit.

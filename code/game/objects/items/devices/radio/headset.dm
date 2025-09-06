@@ -860,10 +860,6 @@
 	icon_state = "medsci_headset"
 	ks2type = /obj/item/device/encryptionkey/headset_medsci
 
-/obj/item/device/radio/headset/hivenet
-	translate_hivenet = 1
-	ks2type = /obj/item/device/encryptionkey/hivenet
-
 /obj/item/device/radio/headset/earmuff
 	name = "earmuffs"
 	desc = "Protects your hearing from loud noises, and quiet ones as well."

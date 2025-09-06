@@ -10,3 +10,24 @@
 /obj/item/organ/internal/augment/tool/combitool/left
 	parent_organ = BP_L_HAND
 	aug_slot = slot_l_hand
+
+/obj/item/combitool/robotic
+	name = "robotic combitool"
+	desc = "An integrated combitool module."
+	icon_state = "digitool"
+	item_state = "digitool"
+	w_class = WEIGHT_CLASS_BULKY
+	tools = list(
+		"crowbar",
+		"screwdriver",
+		"wrench",
+		"wirecutters"
+		)
+
+/obj/item/combitool/robotic/throw_at()
+	usr.drop_from_inventory(src)
+
+/obj/item/combitool/robotic/dropped()
+	. = ..()
+	loc = null
+	qdel(src)

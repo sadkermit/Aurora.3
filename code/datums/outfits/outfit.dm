@@ -285,10 +285,7 @@
 				B.alpha_mask = "normal"
 			if(OUTFIT_THICK)
 				B.alpha_mask = null
-		if(isvaurca(H, TRUE))
-			H.equip_or_collect(B, slot_r_hand)
-		else
-			H.equip_or_collect(B, slot_back)
+		H.equip_or_collect(B, slot_back)
 
 	var/datum/callback/radio_callback
 	if(allow_headset_choice)

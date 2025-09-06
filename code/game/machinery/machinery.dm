@@ -563,11 +563,6 @@ Class Procs:
 	if(!istype(H))
 		return
 
-	//horns would not get caught in the machine
-	//vaurca have fine control of their antennae
-	if(isvaurca(H))
-		return
-
 	var/datum/sprite_accessory/hair/hair_style = GLOB.hair_styles_list[H.h_style]
 	for(var/obj/item/protection in list(H.head))
 		if(protection && (protection.flags_inv & BLOCKHAIR|BLOCKHEADHAIR))

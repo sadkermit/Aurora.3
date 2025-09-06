@@ -216,8 +216,6 @@ ABSTRACT_TYPE(/singleton/state/weather)
 /singleton/state/weather/sandstorm/handle_exposure_effects(mob/living/M, obj/abstract/weather_system/weather)
 	if(M.resists_weather) //Not realistic that they're just immune, but we don't have AI for simplemobs seeking shelter from storms.
 		return
-	else if(isvaurca(M)) //Bugs have sealed carapaces
-		to_chat(M, SPAN_WARNING("Your carapace protects you from the stinging sand!"))
 	else if(isipc(M) || issilicon(M)) //Metal is more durable than meat
 		to_chat(M, SPAN_DANGER("Your chassis is scratched by a gust of stinging sand!"))
 		M.apply_damage(1, DAMAGE_BRUTE)

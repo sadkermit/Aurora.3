@@ -3,7 +3,7 @@
 	model_text = "Engineering"
 	req_access = list(ACCESS_CONSTRUCTION)
 	departments = list("Engineering", "Atmos")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_VAURCA, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/machinery/suit_cycler/engineering/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/engineering
@@ -20,7 +20,7 @@
 	model_text = "Mining"
 	req_access = list(ACCESS_MINING)
 	departments = list("Mining")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_VAURCA, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/machinery/suit_cycler/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
@@ -106,7 +106,7 @@
 	model_text = "Research"
 	req_access = list(ACCESS_RESEARCH)
 	departments = list("Research")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_VAURCA, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	can_repair = TRUE
 
 /obj/machinery/suit_cycler/science/prepared
@@ -136,7 +136,7 @@
 	departments = list("N/A")
 	can_repair = TRUE
 	rename_on_refit = FALSE
-	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	boots = /obj/item/clothing/shoes/magboots
 	mask = /obj/item/clothing/mask/breath
 

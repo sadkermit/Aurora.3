@@ -6,7 +6,7 @@
 	var/obj/outfit/bodyguard_outfit
 	var/demonym
 	var/list/job_species_blacklist = list()
-	var/linked_citizenship //a secondary citizenship tied to this one. only used for vaurca snowflake code.
+	var/linked_citizenship //a secondary citizenship tied to this one.
 
 /datum/citizenship/proc/get_objectives(mission_level, var/mob/living/carbon/human/H)
 	var/rep_objectives

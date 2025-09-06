@@ -965,7 +965,7 @@
 	species_restricted = list(BODYTYPE_HUMAN)
 	contained_sprite = TRUE
 	icon_supported_species_tags = list("ipc", "skr", "taj", "una", "vau", "vaw")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/head/helmet/space/void/tcaf
 	name = "tau ceti armed forces voidsuit helmet"
@@ -985,7 +985,7 @@
 	species_restricted = list(BODYTYPE_HUMAN)
 	contained_sprite = TRUE
 	icon_supported_species_tags = list("ipc", "skr", "taj", "una", "vau", "vaw")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	brightness_on = 6
 	siemens_coefficient = 0.35
 

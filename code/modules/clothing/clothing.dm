@@ -503,7 +503,6 @@
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",BODYTYPE_VAURCA, BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK,BODYTYPE_TESLA_BODY)
 	drop_sound = 'sound/items/drop/gloves.ogg'
 	pickup_sound = 'sound/items/pickup/gloves.ogg'
 
@@ -593,7 +592,6 @@
 	slot_flags = SLOT_HEAD
 	w_class = WEIGHT_CLASS_SMALL
 	uv_intensity = 50 //Light emitted by this object or creature has limited interaction with diona
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 	drop_sound = 'sound/items/drop/hat.ogg'
 	pickup_sound = 'sound/items/pickup/hat.ogg'
@@ -790,8 +788,6 @@
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/mask.dmi'
 		)
 
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK, BODYTYPE_TESLA_BODY)
-
 	var/voicechange = 0
 	var/list/say_messages
 	var/list/say_verbs
@@ -904,7 +900,6 @@
 	permeability_coefficient = 0.50
 	force = 0
 	var/overshoes = 0
-	species_restricted = list("exclude",BODYTYPE_VAURCA,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM, BODYTYPE_TESLA_BODY)
 	var/silent = 0
 	var/last_trip = 0
 
@@ -1049,7 +1044,6 @@
 	slot_flags = SLOT_OCLOTHING
 	siemens_coefficient = 0.9
 	w_class = WEIGHT_CLASS_NORMAL
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_GENERIC, ACCESSORY_SLOT_CAPE, ACCESSORY_SLOT_UTILITY_MINOR)
 
 	var/fire_resist = T0C+100
@@ -1130,8 +1124,6 @@
 
 	///If set, rolling up sleeves/rolling down will use this icon state instead of initial().
 	var/initial_icon_override
-
-	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_GOLEM, BODYTYPE_TESLA_BODY)
 
 	///Convenience var for defining the icon state for the overlay used when the clothing is worn. Also used by rolling/unrolling.
 	var/worn_state = null

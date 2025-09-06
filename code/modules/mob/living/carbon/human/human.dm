@@ -1684,9 +1684,7 @@
 		fail_msg = "That limb is robotic."
 	else if (handle_coverage)
 		. *= get_bp_coverage(target_zone)
-		if(isvaurca(src) && . == SUIT_INJECTION_MOD)
-			user.visible_message("<b>[user]</b> begins hunting for an injection port on \the [src]'s carapace.")
-		else if(. >= SUIT_INJECTION_MOD)
+		if(. >= SUIT_INJECTION_MOD)
 			user.visible_message("<b>[user]</b> begins hunting for \the [src]'s injection port.")
 	if(!. && error_msg && user)
 		if(!fail_msg)

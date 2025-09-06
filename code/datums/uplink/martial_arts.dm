@@ -22,12 +22,6 @@
 	telecrystal_cost = 1
 	path = /obj/item/martial_manual/gun_kata
 
-/datum/uplink_item/item/martial_arts/unathi
-	name = "Kis-Khan"
-	desc = "A manual containing instructions on the Unathi martial art of Kis-Khan. Only usable by Unathi."
-	telecrystal_cost = 2
-	path = /obj/item/martial_manual/unathi
-
 /datum/uplink_item/item/martial_arts/vaurca
 	name = "Vk'utet"
 	desc = "A data disk containing instructions on the Vaurca martial art of Vk'utet. Only usable by Vaurca."

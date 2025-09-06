@@ -852,15 +852,6 @@
 		'sound/arcade/steal.ogg'
 	)
 
-/singleton/sound_category/footstep_unathi_sound
-	sounds = list(
-		'sound/effects/footstep_unathi1.ogg',
-		'sound/effects/footstep_unathi2.ogg',
-		'sound/effects/footstep_unathi3.ogg',
-		'sound/effects/footstep_unathi4.ogg',
-		'sound/effects/footstep_unathi5.ogg'
-	)
-
 /singleton/sound_category/hammer_sound
 	sounds = list(
 		'sound/items/tools/hammer1.ogg',

@@ -30,7 +30,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	/// Which species can use this prosthetic type.
 	var/list/species_can_use = list(
 		SPECIES_HUMAN,
-		SPECIES_UNATHI,
 		SPECIES_VAURCA_WORKER,
 		SPECIES_VAURCA_WARRIOR,
 		SPECIES_VAURCA_ATTENDANT,
@@ -162,14 +161,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	fabricator_available = TRUE
 	paintable = TRUE
 	lifelike = TRUE
-	allows_internal = FALSE
-
-/datum/robolimb/autakh
-	company = PROSTHETIC_AUTAKH
-	desc = "This limb has been designed by the Aut'akh unathi sect."
-	icon = 'icons/mob/human_races/unathi/r_autakh.dmi'
-	species_can_use = list(SPECIES_UNATHI)
-	paintable = TRUE
 	allows_internal = FALSE
 
 /datum/robolimb/vaurca

@@ -49,8 +49,7 @@
 	icon = 'icons/obj/clothing/gloves.dmi'
 	icon_state = "yellow"
 	spawnlist = list(
-		/obj/item/clothing/gloves/black,
-		/obj/item/clothing/gloves/black/unathi,
+		/obj/item/clothing/gloves/black
 )
 
 /obj/random/biogenerator/gloves/random
@@ -59,27 +58,15 @@
 	icon_state = "yellow"
 	spawnlist = list(
 		/obj/item/clothing/gloves/black_leather,
-		/obj/item/clothing/gloves/black_leather/unathi,
 		/obj/item/clothing/gloves/botanic_leather,
-		/obj/item/clothing/gloves/botanic_leather/unathi,
 		/obj/item/clothing/gloves/botanic_leather/vaurca,
 		/obj/item/clothing/gloves/white,
-		/obj/item/clothing/gloves/white/unathi,
 		/obj/item/clothing/gloves/blue,
-		/obj/item/clothing/gloves/blue/unathi,
 		/obj/item/clothing/gloves/orange,
-		/obj/item/clothing/gloves/orange/unathi,
 		/obj/item/clothing/gloves/purple,
-		/obj/item/clothing/gloves/purple/unathi,
 		/obj/item/clothing/gloves/brown,
-		/obj/item/clothing/gloves/brown/unathi,
-		/obj/item/clothing/gloves/evening,
-		/obj/item/clothing/gloves/evening/unathi,
 		/obj/item/clothing/gloves/fingerless,
 		/obj/item/clothing/gloves/red,
-		/obj/item/clothing/gloves/red/unathi,
 		/obj/item/clothing/gloves/green,
-		/obj/item/clothing/gloves/green/unathi,
-		/obj/item/clothing/gloves/light_brown,
-		/obj/item/clothing/gloves/light_brown/unathi
+		/obj/item/clothing/gloves/light_brown
 	)

@@ -338,54 +338,6 @@
 	)
 	flags_inv = HIDEEARS
 
-/obj/item/clothing/head/helmet/unathi
-	name = "unathi helmet"
-	desc = "An outdated ceramic-metal helmet of Unathi design. Commonly seen on Moghes during the days of the Contact War, and now commonplace in the hands of raiders and pirates."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "unathi_helmet"
-	item_state = "unathi_helmet"
-	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_UNATHI)
-	armor = list(
-		MELEE = ARMOR_MELEE_MAJOR,
-		BULLET = ARMOR_BALLISTIC_PISTOL,
-		LASER = ARMOR_LASER_KEVLAR,
-		ENERGY = ARMOR_ENERGY_SMALL,
-		BOMB = ARMOR_BOMB_PADDED
-	)
-	siemens_coefficient = 0.35
-
-/obj/item/clothing/head/helmet/unathi/hegemony
-	name = "hegemony helmet"
-	desc = "A highly armored ceramic-metal composite helmet fitted for an Unathi. Commonly used by the military forces of the Izweski Hegemony."
-	icon_state = "hegemony_helmet"
-	item_state = "hegemony_helmet"
-	armor = list(
-		MELEE = ARMOR_MELEE_VERY_HIGH,
-		BULLET = ARMOR_BALLISTIC_MEDIUM,
-		LASER = ARMOR_LASER_RIFLE,
-		ENERGY = ARMOR_ENERGY_MINOR,
-		BOMB = ARMOR_BOMB_PADDED,
-		RAD = ARMOR_RAD_MINOR
-	)
-
-/obj/item/clothing/head/helmet/unathi/klax
-	name = "klaxan warrior helmet"
-	desc = "A helmet designated to be worn by a K'lax warrior. The retrofit features a modified shape and an extra two eye visors. Flash protection blocks many flashes, shielding sensitive Vaurca eyes."
-	icon = 'icons/obj/vaurca_items.dmi'
-	icon_state = "klax_hopeful_helmet"
-	item_state = "klax_hopeful_helmet"
-	species_restricted = list(BODYTYPE_VAURCA)
-	armor = list(
-		MELEE = ARMOR_MELEE_RESISTANT,
-		BULLET = ARMOR_BALLISTIC_PISTOL,
-		LASER = ARMOR_LASER_PISTOL,
-		ENERGY = ARMOR_ENERGY_RESISTANT,
-		BOMB = ARMOR_BOMB_PADDED,
-		RAD = ARMOR_RAD_RESISTANT
-	)
-	siemens_coefficient = 0.35
-	flash_protection = FLASH_PROTECTION_MODERATE
 
 /obj/item/clothing/head/helmet/tank
 	name = "padded cap"

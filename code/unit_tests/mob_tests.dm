@@ -312,39 +312,6 @@
 	damagetype = DAMAGE_PAIN
 
 // =================================================================
-// Unathi
-// =================================================================
-
-/datum/unit_test/mob_damage/unathi
-	name = "MOB: Unathi damage check template"
-	mob_type = /mob/living/carbon/human/unathi
-
-/datum/unit_test/mob_damage/unathi/brute
-	name = "MOB: Unathi Brute Damage Check"
-	damagetype = DAMAGE_BRUTE
-	expected_vulnerability = ARMORED
-
-/datum/unit_test/mob_damage/unathi/fire
-	name = "MOB: Unathi Fire Damage Check"
-	damagetype = DAMAGE_BURN
-
-/datum/unit_test/mob_damage/unathi/tox
-	name = "MOB: Unathi Toxins Damage Check"
-	damagetype = DAMAGE_TOXIN
-
-/datum/unit_test/mob_damage/unathi/oxy
-	name = "MOB: Unathi Oxygen Damage Check"
-	damagetype = DAMAGE_OXY
-
-/datum/unit_test/mob_damage/unathi/clone
-	name = "MOB: Unathi Clone Damage Check"
-	damagetype = DAMAGE_CLONE
-
-/datum/unit_test/mob_damage/unathi/halloss
-	name = "MOB: Unathi Halloss Damage Check"
-	damagetype = DAMAGE_PAIN
-
-// =================================================================
 // Diona
 // =================================================================
 

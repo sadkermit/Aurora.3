@@ -1452,14 +1452,6 @@
 /singleton/reagent/mental/kokoreed/overdose(var/mob/living/carbon/M, var/alien, var/removed, var/scale, var/datum/reagents/holder)
 	. = ..()
 
-	if(isunathi(M))
-		M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/kokoreed)
-
-/singleton/reagent/mental/kokoreed/final_effect(mob/living/carbon/M, alien, removed, datum/reagents/holder)
-	if(isunathi(M))
-		M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/kokoreed)
-
-	. = ..()
 
 /singleton/reagent/cataleptinol
 	name = "Cataleptinol"

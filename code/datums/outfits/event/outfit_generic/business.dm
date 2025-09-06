@@ -26,6 +26,3 @@
 		/obj/item/pen/fountain/black = 1,
 		/obj/item/folder/white = 1,
 	)
-	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/winter/toeless
-	)

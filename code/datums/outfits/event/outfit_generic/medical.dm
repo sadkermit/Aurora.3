@@ -53,6 +53,3 @@
 		/obj/item/storage/box/survival = 1,
 		/obj/random/firstaid = 1,
 	)
-	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/unathi
-	)

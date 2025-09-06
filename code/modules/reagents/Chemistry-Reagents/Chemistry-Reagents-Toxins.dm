@@ -70,11 +70,6 @@
 	target_organ = BP_BRAIN
 	value = 3
 
-/singleton/reagent/toxin/carpotoxin/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
-		return
-	..()
-
 /singleton/reagent/toxin/panotoxin
 	name = "Panotoxin"
 	description = "An insidious poison from the panocelium mushroom that causes mind-shattering pain. Known to cause fatal shock in small doses. Torturers dilute it."

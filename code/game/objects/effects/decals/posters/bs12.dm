@@ -24,16 +24,6 @@
 	name = "Pinup Girl Val"
 	desc = "Luscious Val McNeil, the vertically challenged Legal Extraordinaire, winner of Miss Space two years running and favoured pinup girl of Lawyers Weekly."
 
-/singleton/poster_design/civilian/bay_19
-	icon_state="bsposter19"
-	name = "Respect a Unathi"
-	desc = "This poster depicts a well dressed looking Unathi receiving a prestigious award. It appears to espouse greater co-operation and harmony between the two races."
-
-/singleton/poster_design/civilian/bay_20
-	icon_state="bsposter20"
-	name = "Skrell Twilight"
-	desc = "This poster depicts a mysteriously inscrutable, alien scene. Numerous Skrell can be seen conversing amidst great, crystalline towers rising above crashing waves"
-
 /singleton/poster_design/security/bay_21
 	icon_state="bsposter21"
 	name = "Join the Fuzz!"

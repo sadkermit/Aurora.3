@@ -63,16 +63,6 @@
 			return TRUE
 	return FALSE
 
-/proc/isunathi(A)
-	if(ishuman(A))
-		var/mob/living/carbon/human/H = A
-		switch(H.get_species())
-			if (SPECIES_UNATHI)
-				return 1
-			if (SPECIES_ZOMBIE_UNATHI)
-				return 1
-	return 0
-
 /proc/isvaurca(A, var/isbreeder = FALSE)
 	if(istype(A, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = A
@@ -175,8 +165,6 @@
 		var/mob/living/carbon/human/H = A
 		switch(H.get_species())
 			if (SPECIES_MONKEY)
-				return 1
-			if (SPECIES_MONKEY_UNATHI)
 				return 1
 			if (SPECIES_MONKEY_VAURCA)
 				return 1

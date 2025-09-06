@@ -247,31 +247,6 @@
 		to_chat(H, SPAN_DANGER("You're too exhausted to run anymore!"))
 		return FALSE
 
-/datum/species/zombie/unathi
-	name = SPECIES_ZOMBIE_UNATHI
-	name_plural = "Unathi Zombies"
-	bodytype = BODYTYPE_UNATHI
-	icobase = 'icons/mob/human_races/zombie/r_zombie_unathi.dmi'
-	deform = 'icons/mob/human_races/zombie/r_zombie_unathi.dmi'
-	tail = "sogtail"
-	tail_animation = 'icons/mob/species/unathi/tail.dmi'
-
-	slowdown = 0.5
-	brute_mod = 0.8
-	grab_mod = 0.75
-	fall_mod = 1.2
-
-	mob_size = 10
-	climb_coeff = 1.35
-
-	remains_type = /obj/effect/decal/remains/xeno
-	dust_remains_type = /obj/effect/decal/remains/xeno/burned
-
-	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
-
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
-
-
 ///A zombie tuned for tankness
 /datum/species/zombie/bull
 	name = SPECIES_ZOMBIE_BULL

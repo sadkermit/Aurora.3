@@ -87,24 +87,6 @@
 /datum/species/monkey/get_random_name()
 	return "[lowertext(name)] ([rand(100,999)])"
 
-/datum/species/monkey/unathi
-	name = SPECIES_MONKEY_UNATHI
-	short_name = "sto"
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/moghes
-
-	icobase = 'icons/mob/human_races/monkeys/r_stok.dmi'
-	deform = 'icons/mob/human_races/monkeys/r_stok.dmi'
-
-	tail = "stoktail"
-	greater_form = SPECIES_UNATHI
-	flesh_color = "#34AF10"
-	base_color = "#066000"
-	reagent_tag = IS_UNATHI
-	holder_type = /obj/item/holder/monkey/stok
-	fall_mod = 0.75
-
-	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
-
 /datum/species/monkey/bug
 	name = SPECIES_MONKEY_VAURCA
 	short_name = "kre"

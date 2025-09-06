@@ -97,24 +97,12 @@
 	icon_state = "zeng_gloves"
 	item_state = "zeng_gloves"
 
-/obj/item/clothing/gloves/latex/nitrile/unathi
-	name = "unathi nitrile gloves"
-	desc = "Sterile nitrile gloves. Designed for Unathi use."
-	icon_state = "nitrile"
-	item_state = "nitrile"
-	species_restricted = list(BODYTYPE_UNATHI)
-
 /obj/item/clothing/gloves/latex/nitrile/vaurca
 	name = "vaurca nitrile gloves"
 	desc = "Sterile nitrile gloves. Designed for Vaurca use."
 	icon_state = "nitrile"
 	item_state = "nitrile"
 	species_restricted = list(BODYTYPE_VAURCA)
-
-/obj/item/clothing/gloves/latex/unathi
-	name = "unathi latex gloves"
-	desc = "Sterile latex gloves. Designed for Unathi use."
-	species_restricted = list(BODYTYPE_UNATHI)
 
 /obj/item/clothing/gloves/latex/vaurca
 	name = "vaurca latex gloves"
@@ -131,10 +119,6 @@
 	drop_sound = 'sound/items/drop/leather.ogg'
 	pickup_sound = 'sound/items/pickup/leather.ogg'
 
-/obj/item/clothing/gloves/botanic_leather/unathi
-	name = "unathi leather gloves"
-	species_restricted = list(BODYTYPE_UNATHI)
-
 /obj/item/clothing/gloves/botanic_leather/vaurca
 	name = "vaurca leather gloves"
 	species_restricted = list(BODYTYPE_VAURCA)
@@ -148,10 +132,6 @@
 	siemens_coefficient = 0.50
 	drop_sound = 'sound/items/drop/rubber.ogg'
 	pickup_sound = 'sound/items/pickup/rubber.ogg'
-
-/obj/item/clothing/gloves/janitor/unathi
-	name = "unathi cleaning gloves"
-	species_restricted = list(BODYTYPE_UNATHI)
 
 /obj/item/clothing/gloves/janitor/vaurca
 	name = "vaurca cleaning gloves"

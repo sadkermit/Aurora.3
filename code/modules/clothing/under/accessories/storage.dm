@@ -185,15 +185,11 @@
 	. = ..()
 	hold.max_storage_space = BASE_STORAGE_COST(WEIGHT_CLASS_NORMAL)
 	hold.can_hold = list(
-		/obj/item/material/hatchet/unathiknife,
 		/obj/item/material/kitchen/utensil/knife,
 		/obj/item/material/kitchen/utensil/knife/plastic,
 		/obj/item/material/knife,
 		/obj/item/material/knife/ritual
 	)
-
-	new /obj/item/material/hatchet/unathiknife(hold)
-	new /obj/item/material/hatchet/unathiknife(hold)
 
 /obj/item/clothing/accessory/storage/bayonet
 	name = "bayonet sheath"

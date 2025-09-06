@@ -46,6 +46,3 @@
 		/obj/item/clothing/shoes/workboots,
 		/obj/item/clothing/shoes/workboots/dark,
 	)
-	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/yellow/specialu
-	)

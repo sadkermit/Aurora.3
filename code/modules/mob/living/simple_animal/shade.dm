@@ -171,29 +171,14 @@
 
 	else
 		heard_dying_message = 0
-		if(isunathi(L))
-			var/mob/living/carbon/human/H = L
-			H.stamina = min(H.max_stamina, H.stamina+(6 * H.stamina_recovery))
-			H.adjustBruteLoss(-1)
-			H.adjustFireLoss(-1)
-			H.adjustToxLoss(-1)
-			H.adjustOxyLoss(-1)
+		if(prob(20) || !possession_heard_message)
+			L.adjustCloneLoss(2)
 			adjustCloneLoss(-2)
-			var/list/nagging_doubts = list("You feel empowered by the ancestors!","You feel ancestral might flowing through your veins!","You feel the power of your forebears!", \
-											"You feel the blood of the warrior!", "You feel the glory of a warrior's death!", "You feel mighty!","You feel the strength of the spirits!")
+			var/list/nagging_doubts = list("You feel a nagging doubt in the back of your head.","You feel a vacancy in your thoughts.","You feel momentarily forgetful.", \
+											"You feel temporarily occupied.", "You feel a little worried.", "You feel a hostile presence.","You feel watched.")
 			if(prob(5) || !possession_heard_message)
-				to_chat(H, SPAN_DANGER("[pick(nagging_doubts)]"))
+				to_chat(L, SPAN_NOTICE("[pick(nagging_doubts)]"))
 				possession_heard_message = 1
-
-		else
-			if(prob(20) || !possession_heard_message)
-				L.adjustCloneLoss(2)
-				adjustCloneLoss(-2)
-				var/list/nagging_doubts = list("You feel a nagging doubt in the back of your head.","You feel a vacancy in your thoughts.","You feel momentarily forgetful.", \
-												"You feel temporarily occupied.", "You feel a little worried.", "You feel a hostile presence.","You feel watched.")
-				if(prob(5) || !possession_heard_message)
-					to_chat(L, SPAN_NOTICE("[pick(nagging_doubts)]"))
-					possession_heard_message = 1
 
 /mob/living/simple_animal/shade/bluespace/hear_say(var/message, var/verb = "says", var/datum/language/language = null, var/alt_name = "", var/italics = 0, var/mob/speaker = null, var/sound/speech_sound, var/sound_vol)
 	..()

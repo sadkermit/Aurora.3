@@ -49,7 +49,7 @@
 	var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
 	if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
 		M.adjustToxLoss(1.5 * removed)
-	else if(alien != IS_UNATHI)
+	else
 		digest(M,removed, holder = holder)
 
 /singleton/reagent/nutriment/proc/digest(var/mob/living/carbon/M, var/removed, var/datum/reagents/holder)
@@ -92,9 +92,6 @@
 	var/vegan = FALSE
 
 /singleton/reagent/nutriment/protein/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
-		digest(M,removed, holder = holder)
-		return
 	if(HAS_TRAIT(M, TRAIT_ORIGIN_NO_ANIMAL_PROTEIN) && !vegan)
 		if(prob(2))
 			var/list/uncomfortable_messages = list(
@@ -142,12 +139,6 @@
 	condiment_icon_state = "eggyolkcarton"
 	condiment_center_of_mass = list("x"=16, "y"=8)
 
-/singleton/reagent/nutriment/egg/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
-		digest(M, removed, holder = holder)
-		return
-	..()
-
 /singleton/reagent/nutriment/protein/cheese // Also bad for skrell.
 	name = "Cheese"
 	color = "#EDB91F"
@@ -168,13 +159,6 @@
 	condiment_desc = "A bottle full of Triglyceride. Feel the burn."
 	condiment_icon_state = "triglyceridebottle"
 	condiment_center_of_mass = list("x"=16, "y"=8)
-
-//Unathi can digest fats too
-/singleton/reagent/nutriment/triglyceride/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
-		digest(M, removed, holder = holder)
-		return
-	..()
 
 /singleton/reagent/nutriment/triglyceride/oil
 	//Having this base class in case we want to add more variants of oil

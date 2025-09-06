@@ -144,8 +144,6 @@
 				bsb()
 			if(SPECIES_DIONA)
 				bsd()
-			if(SPECIES_UNATHI)
-				bsu()
 			if(SPECIES_VAURCA_WORKER)
 				bsv()
 		return
@@ -192,22 +190,6 @@
 		if(GetIdCard())
 			var/obj/item/card/id/id = GetIdCard()
 			id.registered_name = "Bluespace Tree"
-		regenerate_icons()
-	else
-		ghostize(0)
-		key = null
-		suicide()
-
-/mob/living/carbon/human/bst/proc/bsu()
-	if(set_species(SPECIES_UNATHI))
-		h_style = "Unathi Horns"
-		name = "Bluespace Lizard"
-		voice_name = "Bluespace Lizard"
-		real_name = "Bluespace Lizard"
-		mind.name = "Bluespace Lizard"
-		if(GetIdCard())
-			var/obj/item/card/id/id = GetIdCard()
-			id.registered_name = "Bluespace Lizard"
 		regenerate_icons()
 	else
 		ghostize(0)

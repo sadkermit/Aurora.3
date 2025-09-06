@@ -115,23 +115,6 @@
 /obj/item/contraband/poster/pinup/bay_17
 	poster_type = /singleton/poster_design/pinup/bay_17
 
-
-/obj/structure/sign/poster/civilian/bay_19
-	icon_state = "bsposter19"
-	poster_type = /singleton/poster_design/civilian/bay_19
-
-/obj/item/contraband/poster/civilian/bay_19
-	poster_type = /singleton/poster_design/civilian/bay_19
-
-
-/obj/structure/sign/poster/civilian/bay_20
-	icon_state = "bsposter20"
-	poster_type = /singleton/poster_design/civilian/bay_20
-
-/obj/item/contraband/poster/civilian/bay_20
-	poster_type = /singleton/poster_design/civilian/bay_20
-
-
 /obj/structure/sign/poster/security/bay_21
 	icon_state = "bsposter21"
 	poster_type = /singleton/poster_design/security/bay_21

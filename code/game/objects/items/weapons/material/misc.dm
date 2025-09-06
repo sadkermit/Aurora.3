@@ -65,20 +65,6 @@
 /obj/item/material/hatchet/butch/can_woodcut()
 	return FALSE
 
-/obj/item/material/hatchet/unathiknife
-	name = "duelling knife"
-	desc = "A length of leather-bound wood studded with razor-sharp teeth. How crude."
-	icon = 'icons/obj/weapons.dmi'
-	item_icons = list(
-		slot_l_hand_str = 'icons/mob/items/weapons/lefthand_knives.dmi',
-		slot_r_hand_str = 'icons/mob/items/weapons/righthand_knives.dmi',
-		)
-	icon_state = "unathiknife"
-	attack_verb = list("ripped", "torn", "cut")
-
-/obj/item/material/hatchet/unathiknife/can_woodcut()
-	return FALSE
-
 /obj/item/material/hatchet/machete
 	name = "machete"
 	desc = "A long, sturdy blade with a rugged handle. Leading the way to cursed treasures since before space travel."
@@ -184,17 +170,3 @@
 	throw_range = 3
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/material/scythe/sickle/warsickle
-	name = "war sickle"
-	desc = "A short and wickedly curved blade, this sickle was often used as a melee weapon by ancient Unathi civilizations."
-	icon = 'icons/obj/unathi_ruins.dmi'
-	icon_state = "warsickle"
-	item_state = "warsickle"
-	contained_sprite = TRUE
-	slot_flags = SLOT_BELT
-	force_divisor = 0.7 // 42 when wielded with hardnes 60 (steel)
-	thrown_force_divisor = 0.5 // 10 when thrown with weight 20 (steel)
-	applies_material_colour = FALSE
-
-/obj/item/material/scythe/sickle/warsickle/bronze/Initialize(newloc, material_key)
-	. = ..(newloc, MATERIAL_BRONZE)

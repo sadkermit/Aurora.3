@@ -51,7 +51,7 @@
 	//Departments that the cycler can paint suits to look like.
 	var/list/departments = list("Engineering", "Mining", "Medical", "Security", "Atmos")
 	//Species that the suits can be configured to fit.
-	var/list/species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI, BODYTYPE_IPC)
+	var/list/species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 	var/target_department
 	var/target_species

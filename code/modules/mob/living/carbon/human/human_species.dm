@@ -25,10 +25,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 	. = ..(mapload, SPECIES_HUMAN_VATGROWN)
 	mob_thinks = FALSE
 
-/mob/living/carbon/human/unathi/Initialize(mapload)
-	h_style = "Unathi Horns"
-	. = ..(mapload, SPECIES_UNATHI)
-
 /mob/living/carbon/human/diona/Initialize(mapload, new_species = null)
 	. = ..(mapload, new_species || SPECIES_DIONA)
 	src.gender = NEUTER
@@ -44,12 +40,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 /mob/living/carbon/human/monkey/Initialize(mapload)
 	. = ..(mapload, SPECIES_MONKEY)
 
-/mob/living/carbon/human/stok/Initialize(mapload)
-	. = ..(mapload, SPECIES_MONKEY_UNATHI)
-
-/mob/living/carbon/human/stok/moghes
-	faction = "Moghes"
-	resists_weather = TRUE
 
 /mob/living/carbon/human/bug/Initialize(mapload)
 	. = ..(mapload, SPECIES_MONKEY_VAURCA)

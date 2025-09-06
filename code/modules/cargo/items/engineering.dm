@@ -516,20 +516,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/unathielectricalgloves
-	category = "engineering"
-	name = "unathi electrical gloves"
-	supplier = "hephaestus"
-	description = "These gloves will protect the wearer from electric shock. Made special for Unathi use."
-	price = 74
-	items = list(
-		/obj/item/clothing/gloves/yellow/specialu
-	)
-	access = ACCESS_ENGINE
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/packagedantimatterreactorsection
 	category = "engineering"
 	name = "packaged antimatter reactor section"

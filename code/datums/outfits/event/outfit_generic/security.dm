@@ -42,6 +42,5 @@
 		/obj/item/storage/box/survival = 1,
 	)
 	species_shoes = list(
-		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless,
 		SPECIES_VAURCA_WORKER = /obj/item/clothing/shoes/jackboots/toeless
 	)

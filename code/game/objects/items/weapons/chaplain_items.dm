@@ -68,60 +68,6 @@
 	icon_state = "nullathame"
 	item_state = "nullathame"
 
-/obj/item/nullrod/shaman
-	name = "shaman staff"
-	desc = "A seven foot staff traditionally carried by Unathi shamans both as a symbol of authority and to aid them in walking. It is made out of dark, polished wood and is curved at the end."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "shaman_staff"
-	item_state = "shaman_staff"
-	contained_sprite = TRUE
-	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = null
-
-/obj/item/nullrod/skakh_warrior
-	name = "\improper Sk'akh sword"
-	desc = "A silver-bladed ceremonial sword, made in the image of the Warrior Mukari's holy weapon. These blades are often carried by Sk'akh Priests of the Warrior in representation of His strength, though they are of little use in practical combat."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "skakh_sword"
-	item_state = "skakh_sword"
-	slot_flags = SLOT_BACK|SLOT_BELT
-	contained_sprite = TRUE
-	w_class = WEIGHT_CLASS_BULKY
-
-/obj/item/nullrod/skakh_healer
-	name = "\improper Sk'akh staff"
-	desc = "A long staff topped with a green gemstone set in silver, made in the image of the Healer Simi's holy item. These staves are often carried by Sk'akh Priestesses of the Healer, in representation of Her wisdom."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "skakh_staff"
-	item_state = "skakh_staff"
-	contained_sprite = TRUE
-	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = null
-
-/obj/item/nullrod/skakh_fisher
-	name = "\improper Sk'akh sickle"
-	desc = "A silver-bladed ceremonial sickle, made in the image of the Fisher Verrix's holy item. These sickles are often carried by Sk'akh Priests of the Fisher, in representation of Their benevolence."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "skakh_sickle"
-	item_state = "skakh_sickle"
-	contained_sprite = TRUE
-
-/obj/item/nullrod/autakh //not included in the list as it's meant to be an augment
-	name = "blessed cybernetic claw"
-	desc = "A prosthetic limb etched in Sinta'Mador runes and inlayed with obsidian."
-	icon = 'icons/obj/organs/augments.dmi'
-	icon_state = "anchor"
-	item_state = "anchor" //won't appear in-hand and looks suitably aut'akh spiritual
-	can_change_form = FALSE //this is integrated so we dont want anything silly with it
-
-/obj/item/nullrod/autakh/throw_at()
-	usr.drop_from_inventory(src)
-
-/obj/item/nullrod/autakh/dropped()
-	. = ..()
-	loc = null
-	qdel(src)
-
 /obj/item/nullrod/luceiansceptre
 	name = "\improper Luminous Sceptre"
 	desc = "The Luminous Sceptre is a ceremonial staff optionally carried by the ministerial clergy of Luceism. It is fashioned from cedar and 18-karat gold, wrapped in sacred luce vine, \

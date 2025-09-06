@@ -113,7 +113,7 @@
 	qdel(src)
 
 /obj/item/mollusc/attack_self(mob/user)
-	if(isvaurca(user) || isipc(user) || isunathi(user))
+	if(isvaurca(user) || isipc(user))
 		user.visible_message("<b>[user]</b> cracks open \the [src] with their hands.", SPAN_NOTICE("You crack open \the [src] with your hands."))
 		crack_shell(user)
 		return

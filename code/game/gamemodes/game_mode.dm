@@ -327,7 +327,6 @@ GLOBAL_LIST_EMPTY(additional_antag_types)
 		"shadowy interlopers",
 		"a stranded Vaurcan hiveship",
 		"haywire IPC constructs",
-		"rogue Unathi exiles",
 		"artifacts of eldritch horror",
 		"a brain slug infestation",
 		"killer bugs that lay eggs in the husks of the living",

@@ -689,17 +689,3 @@
 	container_type = "crate"
 	groupable = TRUE
 	spawn_amount = 1
-
-/singleton/cargo_item/unathilatexgloves
-	category = "medical"
-	name = "unathi latex gloves"
-	supplier = "arizi"
-	description = "Sterile latex gloves. Designed for Unathi use."
-	price = 8
-	items = list(
-		/obj/item/clothing/gloves/latex/unathi
-	)
-	access = ACCESS_MEDICAL
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1

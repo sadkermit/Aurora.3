@@ -637,11 +637,6 @@
 	id = ACCESS_ELYRAN_NAVAL_INFANTRY_SHIP
 	access_type = ACCESS_TYPE_CENTCOM
 
-#define ACCESS_UNATHI_PIRATE 210
-/datum/access/unathi_pirate
-	id = ACCESS_UNATHI_PIRATE
-	access_type = ACCESS_TYPE_CENTCOM
-
 #define ACCESS_IAC_RESCUE_SHIP 211
 /datum/access/iac_rescue_shit
 	id = ACCESS_IAC_RESCUE_SHIP

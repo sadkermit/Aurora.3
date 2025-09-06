@@ -202,7 +202,6 @@
 	max_storage_space = DEFAULT_BOX_STORAGE
 	starts_with = list(/obj/item/clothing/gloves/latex = 2,
 						/obj/item/clothing/gloves/latex/nitrile = 2,
-						/obj/item/clothing/gloves/latex/nitrile/unathi = 1,
 						/obj/item/clothing/gloves/latex/nitrile/vaurca = 1)
 /obj/item/storage/box/masks
 	name = "box of surgical masks"
@@ -614,7 +613,6 @@
 	)
 	starts_with = list(
 		/obj/item/clothing/gloves/janitor = 1,
-		/obj/item/clothing/gloves/janitor/unathi = 1,
 		/obj/item/clothing/gloves/janitor/vaurca = 1
 	)
 
@@ -1107,17 +1105,6 @@
 		/obj/item/flag/ekane/l = 1,
 		/obj/item/flag/narrows = 2,
 		/obj/item/flag/narrows/l = 1
-	)
-
-/obj/item/storage/box/flags/unathi
-	name = "Unathi flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/hegemony = 6,
-		/obj/item/flag/hegemony/l = 4,
-		/obj/item/flag/ouerea/old = 4,
-		/obj/item/flag/ouerea/old/l = 3,
-		/obj/item/flag/fishingleague = 2
 	)
 
 /obj/item/storage/box/flags/vaurca

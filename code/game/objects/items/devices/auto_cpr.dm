@@ -170,7 +170,7 @@
 		return
 	if(force || !istype(H) || slot != slot_wear_suit)
 		return
-	if(H.species.get_bodytype() in list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)) //gtfo stinky bugs
+	if(H.species.get_bodytype() in list(BODYTYPE_HUMAN))
 		return
 	else
 		return FALSE

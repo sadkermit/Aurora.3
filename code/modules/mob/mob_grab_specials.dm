@@ -97,9 +97,6 @@
 	if(attacker.mob_size >= 10)
 		damage += min(attacker.mob_size, 20)
 
-	if(isunathi(attacker))
-		damage += 5
-
 	target.apply_damage(damage, DAMAGE_BRUTE, BP_HEAD)
 	attacker.apply_damage(10, DAMAGE_BRUTE, BP_HEAD)
 

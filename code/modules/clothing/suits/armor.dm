@@ -452,59 +452,6 @@
 	icon_badge = "civilprotection_badge"
 	icon_nobadge = "civilprotection_nobadge"
 
-//unathi armor
-
-/obj/item/clothing/suit/armor/unathi
-	name = "unathi body armor"
-	desc = "An outdated set of ceramic-metal body armor of Unathi design. Commonly seen on Moghes during the days of the Contact War, and now commonplace in the hands of raiders and pirates."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "unathi_armor"
-	item_state = "unathi_armor"
-	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_UNATHI)
-	armor = list(
-		MELEE = ARMOR_MELEE_MAJOR,
-		BULLET = ARMOR_BALLISTIC_PISTOL,
-		LASER = ARMOR_LASER_KEVLAR,
-		ENERGY = ARMOR_ENERGY_SMALL,
-		BOMB = ARMOR_BOMB_PADDED
-	)
-	siemens_coefficient = 0.35
-
-/obj/item/clothing/suit/armor/unathi/hegemony
-	name = "hegemony body armor"
-	desc = "A highly armored ceramic-metal composite chestplate fitted for an Unathi. Commonly used by the military forces of the Izweski Hegemony."
-	icon_state = "hegemony_armor"
-	item_state = "hegemony_armor"
-	armor = list(
-		MELEE = ARMOR_MELEE_VERY_HIGH,
-		BULLET = ARMOR_BALLISTIC_MEDIUM,
-		LASER = ARMOR_LASER_RIFLE,
-		ENERGY = ARMOR_ENERGY_MINOR,
-		BOMB = ARMOR_BOMB_PADDED,
-		RAD = ARMOR_RAD_MINOR
-	)
-
-// Vaurca version of Unathi armor
-/obj/item/clothing/suit/armor/unathi/klax
-	name = "klaxan warrior body armor"
-	desc = "A highly armored ceramic-metal composite chestplate fitted for a Vaurca Warrior. Commonly used by the military forces of the Izweski Hegemony."
-	icon = 'icons/obj/vaurca_items.dmi'
-	icon_state = "klax_hopeful"
-	item_state = "klax_hopeful"
-	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_VAURCA)
-	armor = list(
-		MELEE = ARMOR_MELEE_VERY_HIGH,
-		BULLET = ARMOR_BALLISTIC_MEDIUM,
-		LASER = ARMOR_LASER_RIFLE,
-		ENERGY = ARMOR_ENERGY_MINOR,
-		BOMB = ARMOR_BOMB_PADDED,
-		RAD = ARMOR_RAD_MINOR
-	)
-	allowed = list(/obj/item/gun/projectile, /obj/item/gun/energy, /obj/item/gun/launcher, /obj/item/melee, /obj/item/reagent_containers/spray/pepper, /obj/item/ammo_magazine, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/handcuffs, /obj/item/device/flashlight)
-	siemens_coefficient = 0.35
-
 /obj/item/clothing/suit/storage/vest/legion
 	name = "foreign legion armored suit"
 	desc = "A set of cheap composite armor with elbow guards, shoulder and knee pads."

@@ -565,7 +565,7 @@ Class Procs:
 
 	//horns would not get caught in the machine
 	//vaurca have fine control of their antennae
-	if(isunathi(H) || isvaurca(H))
+	if(isvaurca(H))
 		return
 
 	var/datum/sprite_accessory/hair/hair_style = GLOB.hair_styles_list[H.h_style]

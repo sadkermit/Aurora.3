@@ -83,10 +83,6 @@
 		user.drop_from_inventory(src,O)
 		qdel(src)
 
-/obj/item/device/modkit/unathi
-	name = "unathi voidsuit modification kit"
-	target_species = BODYTYPE_UNATHI
-
 /obj/item/device/modkit/ipc
 	name = "ipc voidsuit modification kit"
 	target_species = BODYTYPE_IPC
@@ -185,16 +181,6 @@
 	. += ..()
 	. += "This modkit can be used to convert an industrial hardsuit assembly into a Himean variant."
 
-/obj/item/voidsuit_modkit/ceres_lance_unathi
-	name = "\improper Ceres' Lance voidsuit kit"
-	desc = "A highly complicated device that allows you to convert a Ceres' Lancer suit into its Unathi-fitted counterpart and vice versa. Practical!"
-	suit_options = list(
-		/obj/item/clothing/head/helmet/space/void/lancer = /obj/item/clothing/head/helmet/space/void/lancer/unathi,
-		/obj/item/clothing/suit/space/void/lancer = /obj/item/clothing/suit/space/void/lancer/unathi,
-		/obj/item/clothing/head/helmet/space/void/lancer/unathi = /obj/item/clothing/head/helmet/space/void/lancer,
-		/obj/item/clothing/suit/space/void/lancer/unathi = /obj/item/clothing/suit/space/void/lancer
-	)
-
 /obj/item/voidsuit_modkit/dominianvoid
 	name = "dominian voidsman's voidsuit kit"
 	desc = "A highly complicated device that allows you to convert a Dominian prejoroub combat suit into its voidsman counterpart. Practical!"
@@ -216,11 +202,6 @@
 	name = "multi-species modkit box"
 	desc = "Contains modkits to convert a voidsuit to a wide range of available species."
 	starts_with = list(/obj/item/device/modkit/multi_species = 4)
-
-/obj/item/storage/box/unathi_modkit
-	name = "multi-species modkit box"
-	desc = "Contains modkits to convert a voidsuit for an Unathi wearer."
-	starts_with = list(/obj/item/device/modkit/unathi = 4)
 
 /obj/item/storage/box/ipc_modkit
 	name = "ipc modkit box"

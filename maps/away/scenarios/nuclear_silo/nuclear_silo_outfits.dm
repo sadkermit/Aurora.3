@@ -63,9 +63,6 @@
 		/obj/item/clothing/shoes/winter,
 		/obj/item/clothing/shoes/workboots,
 	)
-	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi
-	)
 	species_shoes = list(
 		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless
 	)
@@ -142,9 +139,6 @@
 		/obj/item/clothing/shoes/sneakers/hitops/black,
 		/obj/item/clothing/shoes/sneakers/hitops/red,
 		/obj/item/clothing/shoes/workboots,
-	)
-	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi
 	)
 	species_shoes = list(
 		SPECIES_UNATHI = /obj/item/clothing/shoes/workboots/toeless
@@ -253,9 +247,6 @@
 	glasses = null
 	r_pocket = /obj/item/reagent_containers/hypospray
 	l_pocket = /obj/item/device/healthanalyzer
-	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/nitrile/unathi
-	)
 
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/high_sec/silo_researcher
 	name = "Nuclear Missile Silo Researcher"
@@ -349,9 +340,6 @@
 		/obj/item/clothing/accessory/holster/thigh/brown,
 		/obj/item/clothing/accessory/holster/waist,
 		/obj/item/clothing/accessory/holster/waist/brown,
-	)
-	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/black_leather/unathi
 	)
 	species_shoes = list(
 		SPECIES_UNATHI = /obj/item/clothing/shoes/jackboots/toeless

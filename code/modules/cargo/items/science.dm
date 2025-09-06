@@ -54,20 +54,6 @@
 	groupable = FALSE
 	spawn_amount = 1
 
-/singleton/cargo_item/proto_unathi
-	category = "science"
-	name = "Proto-Unathi"
-	supplier = "zeng_hu"
-	description = "An Unathi body, vat-grown and artificially raised without a functional brain. The everyman's relatively-ethical solution to organ harvesting."
-	price = 7800
-	items = list(
-		/mob/living/carbon/human/unathi
-	)
-	access = ACCESS_RESEARCH
-	container_type = "bodybag"
-	groupable = FALSE
-	spawn_amount = 1
-
 /singleton/cargo_item/blankvaurcadrone
 	category = "science"
 	name = "Surplus Vaurca Drone"

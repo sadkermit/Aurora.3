@@ -260,7 +260,6 @@ STOCK_ITEM_UNCOMMON(blade, 1.2)
 		/obj/item/material/knife/ritual = 1.5,
 		/obj/item/material/hatchet/butch = 1,
 		/obj/item/material/hatchet = 1.5,
-		/obj/item/material/hatchet/unathiknife = 0.75,
 		/obj/item/material/knife/tacknife = 1,
 		/obj/item/material/knife/bayonet = 0.5
 	)

@@ -299,7 +299,6 @@
 	new /obj/item/clothing/suit/space/void/hephaestus(src)
 	new /obj/item/tank/oxygen/red(src)
 	new /obj/item/clothing/shoes/magboots(src)
-	new /obj/item/device/modkit/unathi(src)
 
 /obj/structure/closet/crate/gear_loadout/einstein/suit/fill()
 	new /obj/item/clothing/head/helmet/space/void/einstein(src)
@@ -374,7 +373,6 @@
 	new /obj/item/shield/energy/dominia(src)
 	new /obj/item/shield/energy/dominia(src)
 	new /obj/item/storage/box/dominianvoid(src)
-	new /obj/item/storage/box/unathi_modkit(src)
 
 /obj/structure/closet/crate/secure/gear_loadout/dominia/single/fill()
 	new /obj/item/clothing/under/dominia/fleet(src)
@@ -390,7 +388,6 @@
 	new /obj/item/melee/energy/sword/pirate(src)
 	new /obj/item/shield/energy/dominia(src)
 	new /obj/item/voidsuit_modkit/dominianvoid(src)
-	new /obj/item/device/modkit/unathi(src)
 
 /obj/structure/closet/crate/secure/gear_loadout/legion/fill()
 	new /obj/item/clothing/under/legion(src)
@@ -555,7 +552,6 @@
 	new /obj/item/recharger_backpack/high(src)
 	new /obj/item/recharger_backpack/high(src)
 	new /obj/item/recharger_backpack/high(src)
-	new /obj/item/voidsuit_modkit/ceres_lance_unathi(src)
 
 /obj/structure/closet/crate/gear_loadout/ceres/single/fill()
 	new /obj/item/clothing/head/helmet/space/void/lancer(src)
@@ -565,7 +561,6 @@
 	new /obj/item/gun/energy/rifle/laser(src)
 	new /obj/item/gun/energy/repeater/pistol(src)
 	new /obj/item/recharger_backpack/high(src)
-	new /obj/item/voidsuit_modkit/ceres_lance_unathi(src)
 
 /obj/structure/closet/crate/gear_loadout/nanotrasen/fill()
 	new /obj/item/rig/nanotrasen(src)
@@ -619,8 +614,6 @@
 
 /obj/structure/closet/crate/secure/gear_loadout/hammertail/single/fill()
 	new /obj/item/clothing/under/syndicate/hammertail(src) //1 outfit
-	new /obj/item/clothing/head/helmet/space/void/merc/unathi(src) //1 voidsuit w/helmet
-	new /obj/item/clothing/suit/space/void/merc/unathi(src)
 	new /obj/item/melee/energy/sword(src) //1 e-sword
 	new /obj/item/gun/projectile/revolver(src) //1 .357 pistol w/spare speedloader
 	new /obj/item/ammo_magazine/a357(src)

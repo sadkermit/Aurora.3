@@ -642,11 +642,6 @@
 	id = ACCESS_SKRELL
 	access_type = ACCESS_TYPE_CENTCOM
 
-#define ACCESS_PRA 209
-/datum/access/pra
-	id = ACCESS_PRA
-	access_type = ACCESS_TYPE_CENTCOM
-
 #define ACCESS_UNATHI_PIRATE 210
 /datum/access/unathi_pirate
 	id = ACCESS_UNATHI_PIRATE

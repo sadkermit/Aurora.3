@@ -425,16 +425,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	gear_tweaks += new /datum/gear_tweak/path(pmcg_sec_uniforms)
 	gear_tweaks += list(GLOB.gear_tweak_uniform_rolled_state)
 
-
-
-/datum/gear/faction/kog_tabs/New()
-	..()
-	var/list/kog_tabs = list()
-	kog_tabs["Motorheads, PRA"] = /obj/item/clothing/accessory/sleevepatch/kog/pra
-	kog_tabs["Last Chancers, DPRA/ALA"] = /obj/item/clothing/accessory/sleevepatch/kog/ala
-	kog_tabs["Starry Knights, NKA"] = /obj/item/clothing/accessory/sleevepatch/kog/nka
-	gear_tweaks += new /datum/gear_tweak/path(kog_tabs)
-
 /datum/gear/faction/erisec_patch
 	display_name = "EPMC sleeve patch"
 	path = /obj/item/clothing/accessory/sleevepatch/erisec

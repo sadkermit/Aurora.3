@@ -635,16 +635,6 @@
 /obj/item/material/twohanded/pike/flag/ui_action_click()
 	plant()
 
-/obj/item/material/twohanded/pike/flag/hegemony
-	name = "izweski hegemony flag"
-	desc = "For the Hegemon!"
-	desc_extended = "\"Honor, Fire, Burn thy Fear\" - the famous motto of the Izweski, the clan that leads the largest nation of Unathi."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "flag_hegemony0"
-	base_icon = "flag_hegemony"
-	contained_sprite = TRUE
-	damtype = DAMAGE_BURN
-
 /obj/item/material/twohanded/pike/silver/Initialize(newloc, material_key)
 	. = ..(newloc, MATERIAL_SILVER)
 

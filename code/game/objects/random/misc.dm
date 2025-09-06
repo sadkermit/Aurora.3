@@ -262,8 +262,6 @@
 		/obj/item/flag/elyra/l,
 		/obj/item/flag/eridani,
 		/obj/item/flag/eridani/l,
-		/obj/item/flag/hegemony,
-		/obj/item/flag/hegemony/l,
 		/obj/item/flag/heph,
 		/obj/item/flag/heph/l,
 		/obj/item/flag/nanotrasen,

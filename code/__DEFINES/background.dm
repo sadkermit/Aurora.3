@@ -7,8 +7,6 @@
 #define CITIZENSHIP_ERIDANI "Eridani Federation"
 #define CITIZENSHIP_DOMINIA "Empire of Dominia"
 
-#define CITIZENSHIP_IZWESKI "Izweski Hegemony"
-
 #define CITIZENSHIP_CONSORTIUM "The Consortium of Hieroaetheria"
 #define CITIZENSHIP_GLAORR "The Union of Gla'orr"
 #define CITIZENSHIP_EKANE "The Eternal Republic of The Ekane"
@@ -38,11 +36,6 @@
 #define RELIGION_LUCEISM "Luceism"
 #define RELIGION_SIKHISM "Sikhism"
 #define RELIGION_STOLITISM "Vysokan Stolitism"
-
-#define RELIGION_THAKH "Th'akh"
-#define RELIGION_SKAKH "Sk'akh"
-#define RELIGION_AUTAKH "Aut'akh"
-#define RELIGION_SIAKH "Si'akh"
 
 #define RELIGION_HIVEPANTHEON "Hive Pantheon"
 #define RELIGION_PREIMMINENNCE "Preimminennce"
@@ -116,27 +109,6 @@
 #define ACCENT_MERCURY "Mercurian"
 #define ACCENT_ERIS "Erisian"
 
-#define ACCENT_HEARTLAND_NOBLE "Izweski Heartland Noble"
-#define ACCENT_HEARTLAND_PEASANT "Izweski Heartland Peasant"
-#define ACCENT_TRAD_NOBLE "Noble Traditional"
-#define ACCENT_TRAD_PEASANT "Peasant Traditional"
-#define ACCENT_WASTELAND "Deep Wastelander"
-#define ACCENT_AUTAKH "Aut'akh Dialect"
-#define ACCENT_QUEENDOM "Queendom Dialect"
-#define ACCENT_TZA_PEASANT "Tza Prairie Peasant"
-#define ACCENT_TZA_NOBLE "Tza Prairie Noble"
-#define ACCENT_SOUTHLANDS_PEASANT "Southlands Peasant"
-#define ACCENT_SOUTHLANDS_NOBLE "Southlands Noble"
-#define ACCENT_BROKEN_PEASANT "Broken Coalition Peasant"
-#define ACCENT_BROKEN_NOBLE "Broken Coalition Noble"
-#define ACCENT_UNATHI_SPACER "Spacer"
-#define ACCENT_HAZANA "Hazana"
-#define ACCENT_TORN "Torn Cities"
-#define ACCENT_ZAZ_LOW "Zazalai Mountains Peasant"
-#define ACCENT_ZAZ_HIGH "Zazalai Mountains Noble"
-#define ACCENT_OUEREA "Ouerea"
-#define ACCENT_UNATHI_MOROZI "Unathi Morozi"
-
 #define ACCENT_ROOTSONG "Rootsong"
 #define ACCENT_VOIDSONG "Voidsong"
 #define ACCENT_HIEROAETHERIAN "Hieroaetherian Old"
@@ -195,9 +167,7 @@
 
 #define CITIZENSHIPS_DOMINIA list(CITIZENSHIP_DOMINIA, CITIZENSHIP_COALITION, CITIZENSHIP_BIESEL)
 
-#define RELIGIONS_UNATHI list(RELIGION_THAKH, RELIGION_AUTAKH, RELIGION_SKAKH, RELIGION_SIAKH)
-
 #define ALL_CITIZENSHIPS list(CITIZENSHIP_BIESEL, CITIZENSHIP_SOL, CITIZENSHIP_COALITION, CITIZENSHIP_ELYRA, CITIZENSHIP_ELYRA,\
-CITIZENSHIP_ELYRA_NCP, CITIZENSHIP_ERIDANI, CITIZENSHIP_DOMINIA, CITIZENSHIP_IZWESKI,\
+CITIZENSHIP_ELYRA_NCP, CITIZENSHIP_ERIDANI, CITIZENSHIP_DOMINIA,\
 CITIZENSHIP_ZORA, CITIZENSHIP_KLAX, CITIZENSHIP_CTHUR,\
 CITIZENSHIP_NONE, CITIZENSHIP_GOLDEN, CITIZENSHIP_CONSORTIUM, CITIZENSHIP_GLAORR, CITIZENSHIP_EKANE, CITIZENSHIP_LIIKENKA)

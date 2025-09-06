@@ -488,20 +488,6 @@
 	icon_state = "passcard_konyang"
 	item_state = "passcard_konyang"
 
-/obj/item/clothing/accessory/badge/passcard/hegemony
-	name = "hegemony passcard"
-	desc = "A passcard issued to citizens of the Izweski Hegemony."
-	desc_extended = "As the feudal citizenship standards of the Hegemony have changed to deal with the realities of an interstellar empire, human-inspired passcards have become a quick and easy method of identification for Unathi travelling abroad. This passcard is the most common design, seen throughout Hegemony space."
-	icon_state = "passcard_hegemony"
-	item_state = "passcard_hegemony"
-
-/obj/item/clothing/accessory/badge/passcard/ouerea
-	name = "ouerean passcard"
-	desc = "A passcard issued to residents of the planet Ouerea."
-	desc_extended = "Though not a fully independent state, the people of Ouerea have managed to win a great deal of autonomy from the Izweski Hegemony, which is reflected in the passcards that citizens of the Confederation carry."
-	icon_state = "passcard_ouerea"
-	item_state = "passcard_ouerea"
-
 /obj/item/clothing/accessory/badge/passcard/tret
 	name = "tret passcard"
 	desc = "A passcard issued to residents of the planet Tret."

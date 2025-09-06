@@ -1177,8 +1177,6 @@
 		/obj/item/flag/exclusionist = 1,
 		/obj/item/flag/glaorr = 1,
 		/obj/item/flag/glaorr/l = 1,
-		/obj/item/flag/ouerea = rand(1,2),
-		/obj/item/flag/ouerea/l = 1,
 		/obj/item/flag/sol/old = rand(1,2),
 		/obj/item/flag/sol/old/l = 1,
 		/obj/item/flag/old_visegrad = rand(1,2),

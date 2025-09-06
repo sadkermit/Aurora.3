@@ -513,7 +513,6 @@ ABSTRACT_TYPE(/datum/gear/accessory)
 	flagpatch_national["flagpatch, assunzione"] = /obj/item/clothing/accessory/flagpatch/assunzione
 	flagpatch_national["flagpatch, dominia"] = /obj/item/clothing/accessory/flagpatch/dominia
 	flagpatch_national["flagpatch, fisanduh"] = /obj/item/clothing/accessory/flagpatch/fisanduh
-	flagpatch_national["flagpatch, hegemony"] = /obj/item/clothing/accessory/flagpatch/hegemony
 	flagpatch_national["flagpatch, port antillia"] = /obj/item/clothing/accessory/flagpatch/portantillia
 	flagpatch_national["flagpatch, sedantis"] = /obj/item/clothing/accessory/flagpatch/sedantis
 	flagpatch_national["flagpatch, zo'ra"] = /obj/item/clothing/accessory/flagpatch/zora

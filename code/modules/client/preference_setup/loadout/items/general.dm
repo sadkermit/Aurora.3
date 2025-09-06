@@ -205,9 +205,6 @@
 	banners["banner, Sol Alliance"] = /obj/item/flag/sol
 	banners["banner, Dominia"] = /obj/item/flag/dominia
 	banners["banner, Elyra"] = /obj/item/flag/elyra
-	banners["banner, Hegemony"] = /obj/item/flag/hegemony
-	banners["banner, Ouerea"] = /obj/item/flag/ouerea
-	banners["banner, Old Ouerea"] = /obj/item/flag/ouerea/old
 	banners["banner, NanoTrasen"] = /obj/item/flag/nanotrasen
 	banners["banner, Eridani Fed"] = /obj/item/flag/eridani
 	banners["banner, Sedantis"] = /obj/item/flag/sedantis
@@ -300,9 +297,6 @@
 	flags["flag, Sol Alliance"] = /obj/item/flag/sol/l
 	flags["flag, Dominia"] = /obj/item/flag/dominia/l
 	flags["flag, Elyra"] = /obj/item/flag/elyra/l
-	flags["flag, Hegemony"] = /obj/item/flag/hegemony/l
-	flags["flag, Ouerea"] = /obj/item/flag/ouerea/l
-	flags["flag, Old Ouerea"] = /obj/item/flag/ouerea/old/l
 	flags["flag, NanoTrasen"] = /obj/item/flag/nanotrasen/l
 	flags["flag, Eridani Fed"] = /obj/item/flag/eridani/l
 	flags["flag, Sedantis"] = /obj/item/flag/sedantis/l

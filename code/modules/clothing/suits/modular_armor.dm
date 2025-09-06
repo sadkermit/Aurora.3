@@ -729,13 +729,6 @@
 	icon_state = "flagpatch_fisanduh"
 	item_state = "flagpatch_fisanduh"
 
-/obj/item/clothing/accessory/flagpatch/hegemony
-	name = "hegemony flagpatch"
-	desc = "A patch bearing the flag of the Izweski Hegemony. It is high-quality and appears to have the \
-	insignia of a well known unathi drapers' guild stitched on the back."
-	icon_state = "flagpatch_hegemony"
-	item_state = "flagpatch_hegemony"
-
 /obj/item/clothing/accessory/flagpatch/portantillia
 	name = "port antillia flagpatch"
 	desc = "A patch bearing the flag of the Union of Port Antillia. Often associated with veterans of the \

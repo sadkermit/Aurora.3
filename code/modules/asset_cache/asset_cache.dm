@@ -520,8 +520,6 @@ GLOBAL_LIST_EMPTY(asset_datums)
 		"cocflag_small.png" = 'html/images/cocflag_small.png',
 		"domflag.png" = 'html/images/domflag.png',
 		"domflag_small.png" = 'html/images/domflag_small.png',
-		"izweskiflag.png" = 'html/images/izweskiflag.png',
-		"izweskiflag_small.png" = 'html/images/izweskiflag_small.png',
 		"goldenlogo.png" = 'html/images/factions/goldenlogo.png',
 		"goldenlogo_small.png" = 'html/images/factions/goldenlogo_small.png',
 		"pvpolicelogo.png" = 'html/images/pvpolicelogo.png',

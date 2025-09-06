@@ -426,26 +426,6 @@
 	desc = "The flag of the Imperial Frontier on a flagpole."
 	icon_state = "frontierpole"
 
-/obj/item/sticker/flagpole/nralakk
-	name = "nralakk federation flag sticker"
-	desc = "The flag of the Nralakk Federation on a flagpole."
-	icon_state = "nralakkfedpole"
-
-/obj/item/sticker/flagpole/nralakk/aweiji
-	name = "aweiji flag sticker"
-	desc = "The flag of Aweiji on a flagpole."
-	icon_state = "aweijipole"
-
-/obj/item/sticker/flagpole/nralakk/aloise
-	name = "aloise flag sticker"
-	desc = "The flag of Aloise on a flagpole."
-	icon_state = "aloisepole"
-
-/obj/item/sticker/flagpole/nralakk/xrim
-	name = "xrim flag sticker"
-	desc = "The flag of Xrim on a flagpole."
-	icon_state = "xrimpole"
-
 /obj/item/sticker/flagpole/hieroaetheria
 	name = "consortium flag sticker"
 	desc = "The flag of The Consortium of Hieroaetheria on a flagpole."

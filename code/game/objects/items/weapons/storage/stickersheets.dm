@@ -132,15 +132,6 @@
 		/obj/item/sticker/flagpole/dominia/frontier = 3
 	)
 
-/obj/item/storage/stickersheet/nralakk
-	name = "nralakk federation sticker sheet"
-	starts_with = list(
-		/obj/item/sticker/flagpole/nralakk = 3,
-		/obj/item/sticker/flagpole/nralakk/aweiji = 3,
-		/obj/item/sticker/flagpole/nralakk/aloise = 3,
-		/obj/item/sticker/flagpole/nralakk/xrim = 3
-	)
-
 /obj/item/storage/stickersheet/hieroaetheria
 	name = "hieroaetheria sticker sheet"
 	starts_with = list(

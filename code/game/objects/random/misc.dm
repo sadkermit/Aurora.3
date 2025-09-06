@@ -266,8 +266,6 @@
 		/obj/item/flag/hegemony/l,
 		/obj/item/flag/heph,
 		/obj/item/flag/heph/l,
-		/obj/item/flag/nralakk,
-		/obj/item/flag/nralakk/l,
 		/obj/item/flag/nanotrasen,
 		/obj/item/flag/nanotrasen/l,
 		/obj/item/flag/sol,

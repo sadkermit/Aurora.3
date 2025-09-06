@@ -1207,9 +1207,6 @@
 	 * goodmessage_species = list(
 	 * 	SPECIES_HUMAN = list("Damn you're high.","You're totally zooted!"),
 	 * 	SPECIES_HUMAN_OFFWORLD = list("Damn you're WAY higher than normal humans. Like, you might even say outside the gravity well high.", "Zooted bo booted boyyy."),
-	 * 	SPECIES_UNATHI = list("You feel like shit and want to die.","Why the fuck did you smoke that shitty human stuff."),
-	 * 	SPECIES_SKRELL = list("Aaaaaaaaaaaa!","Aaaauuuuaaaa!","Waaaoouuuuaaaaahhh!"),
-	 * 	SPECIES_SKRELL_AXIORI = list("If you weren't axiori you'd probably be having a bad time but you're pretty zooted.")
 	 * 	)
 	 *
 	 * No, there's not support right now for things like ALL_DIONA_SPECIES. Once somebody wants to make Vaurca-only drugs, they will probably

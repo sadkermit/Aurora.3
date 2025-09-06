@@ -62,8 +62,6 @@ Follow by example and make good judgement based on length which list to include 
 2- Average Hair
 3- Longish Hair
 4- Very long hair
-5- Unathi Horns
-6- Skrell Tentacles
 
 
 */

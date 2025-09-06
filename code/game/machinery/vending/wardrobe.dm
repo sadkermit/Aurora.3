@@ -553,8 +553,6 @@
 		/obj/item/storage/box/fancy/candle_box = 3,
 		/obj/item/storage/box/fancy/candle_box = 3,
 		/obj/item/deck/tarot = 3,
-		/obj/item/deck/tarot/nralakk = 2,
-		/obj/item/deck/tarot/nonnralakk = 2,
 		/obj/item/deck/lyodii = 2
 	)
 	contraband = list(

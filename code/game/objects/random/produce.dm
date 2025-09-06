@@ -63,16 +63,6 @@
 		"bellpepper" = 0.25
 	)
 
-/obj/random_produce/box/nralakk
-	produce_list = list(
-		"dyn" = 1,
-		"qlort" = 1,
-		"guami" = 1,
-		"eki" = 1,
-		"ylpha" = 1,
-		"fjylozyn" = 1
-	)
-
 /obj/random_produce/box/moghes
 	produce_list = list(
 		"xuizi" = 1,

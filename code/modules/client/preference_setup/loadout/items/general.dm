@@ -208,8 +208,6 @@
 	banners["banner, Hegemony"] = /obj/item/flag/hegemony
 	banners["banner, Ouerea"] = /obj/item/flag/ouerea
 	banners["banner, Old Ouerea"] = /obj/item/flag/ouerea/old
-	banners["banner, Nralakk"] = /obj/item/flag/nralakk
-	banners["banner, Traverse"] = /obj/item/flag/traverse
 	banners["banner, NanoTrasen"] = /obj/item/flag/nanotrasen
 	banners["banner, Eridani Fed"] = /obj/item/flag/eridani
 	banners["banner, Sedantis"] = /obj/item/flag/sedantis
@@ -305,8 +303,6 @@
 	flags["flag, Hegemony"] = /obj/item/flag/hegemony/l
 	flags["flag, Ouerea"] = /obj/item/flag/ouerea/l
 	flags["flag, Old Ouerea"] = /obj/item/flag/ouerea/old/l
-	flags["flag, Nralakk"] = /obj/item/flag/nralakk/l
-	flags["flag, Traverse"] = /obj/item/flag/traverse/l
 	flags["flag, NanoTrasen"] = /obj/item/flag/nanotrasen/l
 	flags["flag, Eridani Fed"] = /obj/item/flag/eridani/l
 	flags["flag, Sedantis"] = /obj/item/flag/sedantis/l

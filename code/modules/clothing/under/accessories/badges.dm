@@ -585,22 +585,6 @@
 	icon_state = "passport_dominia"
 	item_state = "passport_dominia"
 
-/obj/item/clothing/accessory/badge/passport/nralakk
-	name = "nralakk federation passport"
-	desc = "A passport issued to citizens of the Nralakk Federation. Shiny, and compact, it's perfect to use on the go."
-	icon_state = "passport_nralakk"
-	item_state = "passport_nralakk"
-	open = CLOSED
-	var/compat_index = 5
-	var/species_tag = ""
-
-/obj/item/clothing/accessory/badge/passport/nralakk/get_examine_text(mob/user, distance, is_adjacent, infix, suffix)
-	. = ..()
-	. +=  SPAN_NOTICE("The passport displays the owner's social compatibility index as: [compat_index].")
-
-/obj/item/clothing/accessory/badge/passport/nralakk/update_icon()
-	icon_state = "[initial(icon_state)][open ? "_o[species_tag]" : ""]"
-
 /obj/item/clothing/accessory/badge/passport/hegemony
 	name = "hegemony passport"
 	desc = "A passport issued to a citizen of the Izweski Hegemony."

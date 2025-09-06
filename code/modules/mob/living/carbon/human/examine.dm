@@ -449,7 +449,6 @@
 	var/static/list/color_map = list(
 					COLOR_HUMAN_BLOOD = "blood",
 					COLOR_DIONA_BLOOD = "blood",
-					COLOR_SKRELL_BLOOD = "blood",
 					COLOR_VAURCA_BLOOD = "blood",
 					COLOR_IPC_BLOOD = "oil",
 					COLOR_OIL = "oil",

@@ -54,6 +54,7 @@
 	cigarettes["Trans-Stellar Duty Free cigarette packet"] = /obj/item/storage/box/fancy/cigarettes
 	cigarettes["DromedaryCo cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/dromedaryco
 	cigarettes["Natural Vysokan Soothsayer oracle cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/oracle
+	cigarettes["Koko-Reed cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/koko
 	gear_tweaks += new /datum/gear_tweak/path(cigarettes)
 
 /datum/gear/drugs_meds/chew

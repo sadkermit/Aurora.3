@@ -147,17 +147,6 @@
 	item_state = "gladius"
 	slot_flags = SLOT_BELT
 
-/obj/item/material/sword/amohdan_sword
-	name = "amohdan blade"
-	desc = "A tajaran sword, commonly used by the swordsmen of the island of Amohda."
-	icon_state = "amohdan_sword"
-	item_state = "amohdan_sword"
-	slot_flags = SLOT_BELT
-	use_material_name = FALSE
-	applies_material_colour = FALSE
-	unbreakable = TRUE //amohdan steel is the finest in the spur
-
-
 // improvised sword
 /obj/item/material/sword/improvised_sword
 	name = "selfmade sword"

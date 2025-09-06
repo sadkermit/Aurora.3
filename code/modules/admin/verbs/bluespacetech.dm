@@ -140,8 +140,6 @@
 /mob/living/carbon/human/bst/proc/suicide()
 	if(key && species.name != SPECIES_HUMAN)
 		switch(species.name)
-			if(SPECIES_TAJARA)
-				bsc()
 			if(SPECIES_IPC)
 				bsb()
 			if(SPECIES_DIONA)
@@ -170,23 +168,6 @@
 			ghost.real_name = "[ghost.key] BSTech"
 			ghost.voice_name = "[ghost.key] BSTech"
 			ghost.client.init_verbs()
-
-/mob/living/carbon/human/bst/proc/bsc() //because we all have our unrealistic snowflakes right?
-	if(set_species(SPECIES_TAJARA))
-		h_style = "Tajaran Ears"
-		name = "Bluespace Cat"
-		voice_name = "Bluespace Cat"
-		real_name = "Bluespace Cat"
-		mind.name = "Bluespace Cat"
-		if(GetIdCard())
-			var/obj/item/card/id/id = GetIdCard()
-			id.registered_name = "Bluespace Cat"
-		gender = "female"
-		regenerate_icons()
-	else
-		ghostize(0)
-		key = null
-		suicide()
 
 /mob/living/carbon/human/bst/proc/bsb()
 	if(set_species(SPECIES_IPC))

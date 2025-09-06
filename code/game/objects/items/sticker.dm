@@ -510,12 +510,6 @@
 	desc = "The flag of the Confederated States of Fisanduh on a flagpole."
 	icon_state = "fisanduhpole"
 
-//Free Tajaran Council, exiled to Himeo
-/obj/item/sticker/flagpole/resistance/ftc
-	name = "free tajaran council sticker"
-	desc = "The flag of the Free Tajaran Council on a flagpole."
-	icon_state = "ftcpole"
-
 //Traverse Resistance, exiled to Biesel.
 /obj/item/sticker/flagpole/resistance/traverse
 	name = "traverse resistance flag sticker"

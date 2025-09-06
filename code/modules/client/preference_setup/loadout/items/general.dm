@@ -216,10 +216,6 @@
 	banners["banner, NanoTrasen"] = /obj/item/flag/nanotrasen
 	banners["banner, Eridani Fed"] = /obj/item/flag/eridani
 	banners["banner, Sedantis"] = /obj/item/flag/sedantis
-	banners["banner, People's Republic of Adhomai"] = /obj/item/flag/pra
-	banners["banner, Democratic People's Republic of Adhomai"] = /obj/item/flag/dpra
-	banners["banner, New Kingdom of Adhomai"] = /obj/item/flag/nka
-	banners["banner, Free Tajaran Council"] = /obj/item/flag/ftc
 	banners["banner, Republic of Biesel"] = /obj/item/flag/biesel
 	banners["banner, Solarian Colonial Mandate of Tau Ceti"] = /obj/item/flag/biesel/antique
 	banners["banner, Trinary Perfection"] = /obj/item/flag/trinaryperfection
@@ -317,10 +313,6 @@
 	flags["flag, NanoTrasen"] = /obj/item/flag/nanotrasen/l
 	flags["flag, Eridani Fed"] = /obj/item/flag/eridani/l
 	flags["flag, Sedantis"] = /obj/item/flag/sedantis/l
-	flags["flag, People's Republic of Adhomai"] = /obj/item/flag/pra/l
-	flags["flag, Democratic People's Republic of Adhomai"] = /obj/item/flag/dpra/l
-	flags["flag, New Kingdom of Adhomai"] = /obj/item/flag/nka/l
-	flags["flag, Free Tajaran Council"] = /obj/item/flag/ftc/l
 	flags["flag, Republic of Biesel"] = /obj/item/flag/biesel/l
 	flags["flag, Solarian Colonial Mandate of Tau Ceti"] = /obj/item/flag/biesel/antique/l
 	flags["flag, Trinary Perfection"] = /obj/item/flag/trinaryperfection/l
@@ -402,15 +394,6 @@
 	comics["comic book"] = /obj/item/toy/comic
 	comics["inspector 404 manga"] = /obj/item/toy/comic/inspector
 	comics["stormman manga"] = /obj/item/toy/comic/stormman
-	comics["outlandish tales magazine"] = /obj/item/toy/comic/outlandish_tales
-	comics["az'marian comic, issue 1"] = /obj/item/toy/comic/azmarian/issue_1
-	comics["az'marian comic, issue 2"] = /obj/item/toy/comic/azmarian/issue_2
-	comics["az'marian comic, issue 3"] = /obj/item/toy/comic/azmarian/issue_3
-	comics["az'marian comic, issue 4"] = /obj/item/toy/comic/azmarian/issue_4
-	comics["az'marian comic, issue 5"] = /obj/item/toy/comic/azmarian/issue_5
-	comics["az'marian comic, issue 6"] = /obj/item/toy/comic/azmarian/issue_6
-	comics["az'marian comic, issue 7"] = /obj/item/toy/comic/azmarian/issue_7
-	comics["az'marian comic, issue 8"] = /obj/item/toy/comic/azmarian/issue_8
 	comics["dominian witchfinder novel"] = /obj/item/toy/comic/witchfinder
 	gear_tweaks += new /datum/gear_tweak/path(comics)
 

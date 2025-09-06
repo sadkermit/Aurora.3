@@ -736,33 +736,6 @@
 	icon_state = "flagpatch_nralakk"
 	item_state = "flagpatch_nralakk"
 
-/obj/item/clothing/accessory/flagpatch/pra
-	name = "pra flagpatch"
-	desc = "A flagpatch representing the People's Republic of Adhomai. As tajara abroad find themselves increasingly exposed \
-	to human equipment, these patches have found themselves mass-produced by state-run corporations."
-	icon_state = "flagpatch_pra"
-	item_state = "flagpatch_pra"
-
-/obj/item/clothing/accessory/flagpatch/dpra
-	name = "dpra flagpatch"
-	desc = "A flagpatch representing the Democratic People's Republic of Adhomai. The craftsmanship appears \
-	excellent despite the materials appearing rudimentary."
-	icon_state = "flagpatch_dpra"
-	item_state = "flagpatch_dpra"
-
-/obj/item/clothing/accessory/flagpatch/nka
-	name = "nka flagpatch"
-	desc = "A flagpatch representing the New Kingdom of Adhomai. In an attempt to proudly display their allegiance to \
-	the monarchist state, these insignias are often marketed and cheaply sold to NKA tajara going abroad."
-	icon_state = "flagpatch_nka"
-	item_state = "flagpatch_nka"
-
-/obj/item/clothing/accessory/flagpatch/freecouncil
-	name = "free council flagpatch"
-	desc = "A patch bearing the flag of the Free Tajaran Council, imported straight from Himeo."
-	icon_state = "flagpatch_freecouncil"
-	item_state = "flagpatch_freecouncil"
-
 /obj/item/clothing/accessory/flagpatch/hegemony
 	name = "hegemony flagpatch"
 	desc = "A patch bearing the flag of the Izweski Hegemony. It is high-quality and appears to have the \

@@ -690,20 +690,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/tajaranlatexgloves
-	category = "medical"
-	name = "tajaran latex gloves"
-	supplier = "zharkov"
-	description = "Sterile latex gloves. Designed for Tajara use."
-	price = 8
-	items = list(
-		/obj/item/clothing/gloves/latex/tajara
-	)
-	access = ACCESS_MEDICAL
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/unathilatexgloves
 	category = "medical"
 	name = "unathi latex gloves"

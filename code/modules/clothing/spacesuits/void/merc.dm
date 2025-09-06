@@ -7,7 +7,7 @@
 	item_state = "syndie_helm"
 	contained_sprite = TRUE
 	icon_supported_species_tags = list("skr", "taj", "una", "ipc")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
 	armor = list(
 		MELEE = ARMOR_MELEE_RESISTANT,
 		BULLET = ARMOR_BALLISTIC_MEDIUM,
@@ -46,7 +46,7 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.35
 	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
 
 /obj/item/clothing/head/helmet/space/void/merc/unathi
 	refit_initialize = BODYTYPE_UNATHI

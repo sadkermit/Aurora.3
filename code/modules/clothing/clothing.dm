@@ -424,10 +424,6 @@
 	throwforce = 2
 	slot_flags = SLOT_EARS
 
-	sprite_sheets = list(
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/l_ear.dmi',
-		)
-
 /obj/item/clothing/ears/attack_hand(mob/user as mob)
 	if (!user) return
 
@@ -463,10 +459,6 @@
 	icon = 'icons/mob/screen/midnight.dmi'
 	icon_state = "blocked"
 	slot_flags = SLOT_EARS | SLOT_TWOEARS
-
-	sprite_sheets = list(
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/r_ear.dmi',
-		)
 
 /obj/item/clothing/ears/offear/proc/copy_ear(var/obj/O)
 	name = O.name
@@ -511,7 +503,7 @@
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA, BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK,BODYTYPE_TESLA_BODY)
+	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_VAURCA, BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK,BODYTYPE_TESLA_BODY)
 	drop_sound = 'sound/items/drop/gloves.ogg'
 	pickup_sound = 'sound/items/pickup/gloves.ogg'
 
@@ -795,7 +787,6 @@
 	pickup_sound = 'sound/items/pickup/hat.ogg'
 	body_parts_covered = FACE|EYES
 	sprite_sheets = list(
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/mask.dmi'
 		)
 
@@ -913,7 +904,7 @@
 	permeability_coefficient = 0.50
 	force = 0
 	var/overshoes = 0
-	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM, BODYTYPE_TESLA_BODY)
+	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_VAURCA,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM, BODYTYPE_TESLA_BODY)
 	var/silent = 0
 	var/last_trip = 0
 

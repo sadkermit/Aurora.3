@@ -351,33 +351,6 @@ GLOBAL_LIST_EMPTY(tips_by_category)
 		"As a Maintenance Drone, you cannot repair yourself but you can ask other maintenance drones to do it for you."
 	)
 
-
-/*
-	SPECIES TIPS
-*/
-
-/datum/tip/species
-	category = CATEGORY_SPECIES
-	messages = list(
-		"Unathi are the only species capable of wearing the rare Breacher hardsuits.",
-		"As an Unathi, you can devour small mobs after some time.",
-		"As a Tajara, you move pretty fast. Zoom zoom, kitty.",
-		"As a Tajara, your resistance to cold probably doesn't actually help you in space. Feel free to try, though.",
-		"As a Skrell, you can look pretty and...uhh...not slip?",
-		"As a Skrell, you have free reign to validhunt synthetics. (Not really, please don't do this oh God what have I done).",
-		"As a Human, you are the best. Why do you care about your mechanics?",
-		"As a Human, you are really very great.",
-		"Due to IPCs' synthetic nature, they're immune to most chemicals and gasses.",
-		"IPCs can survive longer than most species in space, despite their supposed \"weakness\".",
-		"As a Diona, you can survive pretty much anything.",
-		"Dionae die in darkness. Find the light at the end of the tunnel, and quick.",
-		"All Vaurca can remotely speak to any other Vaurca on board. Not that there are any.",
-		"Vaurca can wade freely through phoron gas. Avoid phoron fires though. Somehow a species that breathes phoron gas is really weak to fire.",
-		"Despite the name, Auto-Hiss can be used for Unathi, Tajara, Diona, and Vaurca.",
-		"As a Diona, you can store items in your stomach, including guns."
-	)
-
-
 /*
 	GHOST SPAWNER TIPS
 */

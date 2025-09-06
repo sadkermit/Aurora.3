@@ -28,12 +28,6 @@
 	telecrystal_cost = 2
 	path = /obj/item/martial_manual/skrell
 
-/datum/uplink_item/item/martial_arts/tajara
-	name = "Baghrar"
-	desc = "A manual containing instructions on the Tajaran martial art of Baghrar. Only usable by Tajara."
-	telecrystal_cost = 2
-	path = /obj/item/martial_manual/tajara
-
 /datum/uplink_item/item/martial_arts/unathi
 	name = "Kis-Khan"
 	desc = "A manual containing instructions on the Unathi martial art of Kis-Khan. Only usable by Unathi."

@@ -41,10 +41,6 @@
 	icon_state = "buckethat"
 	item_state = "buckethat"
 
-	sprite_sheets = list(
-		"Tajara" = 'icons/mob/species/tajaran/helmet.dmi'
-		)
-
 /obj/item/clothing/head/bucket/boonie
 	name = "boonie hat"
 	desc = "A floppy boonie hat with an attached string."

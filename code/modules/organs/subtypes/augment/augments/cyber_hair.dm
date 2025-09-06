@@ -8,10 +8,7 @@
 	species_restricted = list(
 		SPECIES_HUMAN_OFFWORLD,
 		SPECIES_HUMAN,
-		SPECIES_IPC_SHELL,
-		SPECIES_TAJARA_MSAI,
-		SPECIES_TAJARA_ZHAN,
-		SPECIES_TAJARA,
+		SPECIES_IPC_SHELL
 	)
 
 /obj/item/organ/internal/augment/cyber_hair/attack_self(var/mob/user)

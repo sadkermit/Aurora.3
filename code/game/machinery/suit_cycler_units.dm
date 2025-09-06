@@ -3,7 +3,7 @@
 	model_text = "Engineering"
 	req_access = list(ACCESS_CONSTRUCTION)
 	departments = list("Engineering", "Atmos")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_TAJARA, BODYTYPE_VAURCA, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_VAURCA, BODYTYPE_IPC)
 
 /obj/machinery/suit_cycler/engineering/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/engineering
@@ -20,7 +20,7 @@
 	model_text = "Mining"
 	req_access = list(ACCESS_MINING)
 	departments = list("Mining")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_TAJARA, BODYTYPE_VAURCA, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_VAURCA, BODYTYPE_IPC)
 
 /obj/machinery/suit_cycler/mining/prepared
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
@@ -70,7 +70,7 @@
 	model_text = "Wizardry"
 	req_access = null
 	departments = list("Wizardry")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
 	can_repair = TRUE
 
 /obj/machinery/suit_cycler/hos
@@ -78,7 +78,7 @@
 	model_text = "head of Security"
 	req_access = list(ACCESS_HOS)
 	departments = list("Head of Security") // ONE MAN DEPARTMENT HOO HA GIMME CRAYONS - Geeves
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
 	can_repair = TRUE
 
 /obj/machinery/suit_cycler/hos/prepared
@@ -92,7 +92,7 @@
 	model_text = "Captain"
 	req_access = list(ACCESS_CAPTAIN)
 	departments = list("Captain")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
 	can_repair = TRUE
 
 /obj/machinery/suit_cycler/captain/prepared
@@ -106,7 +106,7 @@
 	model_text = "Research"
 	req_access = list(ACCESS_RESEARCH)
 	departments = list("Research")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_TAJARA, BODYTYPE_VAURCA, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_VAURCA, BODYTYPE_IPC)
 	can_repair = TRUE
 
 /obj/machinery/suit_cycler/science/prepared
@@ -120,7 +120,7 @@
 	model_text = "Freelancers"
 	req_access = list(ACCESS_DISTRESS)
 	departments = list("Freelancers")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_IPC)
 	can_repair = TRUE
 
 /obj/machinery/suit_cycler/freelancer/prepared
@@ -136,7 +136,7 @@
 	departments = list("N/A")
 	can_repair = TRUE
 	rename_on_refit = FALSE
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_VAURCA)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_SKRELL, BODYTYPE_UNATHI, BODYTYPE_VAURCA)
 	boots = /obj/item/clothing/shoes/magboots
 	mask = /obj/item/clothing/mask/breath
 
@@ -151,7 +151,7 @@
 	model_text = "Coalition"
 	req_access = list(ACCESS_COALITION)
 	departments = list("Vulture")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_SKRELL)
+	species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_SKRELL)
 	suit = /obj/item/clothing/suit/space/void/coalition
 	helmet = /obj/item/clothing/head/helmet/space/void/coalition
 
@@ -271,7 +271,7 @@
 	model_text = "Himean Buzzard"
 	req_access = list(ACCESS_HIMEO_PATROL_SHIP)
 	departments = list("Himean Military")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA)
+	species = list(BODYTYPE_HUMAN)
 	suit = /obj/item/clothing/suit/space/void/coalition/himeo
 	helmet = /obj/item/clothing/head/helmet/space/void/coalition/himeo
 
@@ -279,6 +279,6 @@
 	model_text = "Type-78 Fish Fur"
 	req_access = list(ACCESS_HIMEO_PATROL_SHIP)
 	departments = list("Himean Military")
-	species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA)
+	species = list(BODYTYPE_HUMAN)
 	suit = /obj/item/clothing/suit/space/void/engineering/himeo
 	helmet = /obj/item/clothing/head/helmet/space/void/engineering/himeo

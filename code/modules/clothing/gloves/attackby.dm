@@ -19,7 +19,6 @@
 		desc = "[desc]<br>They have had the fingertips cut off of them."
 		if("exclude" in species_restricted)
 			species_restricted -= BODYTYPE_UNATHI
-			species_restricted -= BODYTYPE_TAJARA
 			species_restricted -= BODYTYPE_VAURCA
 		return
 

@@ -30,9 +30,6 @@
 	icon_state = "hairnet"
 	item_state = "hairnet"
 	flags_inv = BLOCKHEADHAIR
-	sprite_sheets = list(
-		"Tajara" = 'icons/mob/species/tajaran/helmet.dmi'
-		)
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/items/lefthand.dmi',
 		slot_r_hand_str = 'icons/mob/items/righthand.dmi',

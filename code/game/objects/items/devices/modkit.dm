@@ -83,11 +83,6 @@
 		user.drop_from_inventory(src,O)
 		qdel(src)
 
-/obj/item/device/modkit/tajaran
-	name = "tajaran voidsuit modification kit"
-	desc = "A kit containing all the needed tools and parts to modify a voidsuit for another user. This one looks like it's meant for tajara."
-	target_species = BODYTYPE_TAJARA
-
 /obj/item/device/modkit/unathi
 	name = "unathi voidsuit modification kit"
 	target_species = BODYTYPE_UNATHI
@@ -193,22 +188,6 @@
 /obj/item/voidsuit_modkit/himeo/mechanics_hints(mob/user, distance, is_adjacent)
 	. += ..()
 	. += "This modkit can be used to convert an industrial hardsuit assembly into a Himean variant."
-
-/obj/item/voidsuit_modkit/himeo/tajara
-	name = "tajaran himeo voidsuit kit"
-	desc = "A simple cardboard box containing the requisition forms, permits, and decal kits for a Himean voidsuit fitted for Tajara."
-	suit_options = list(
-		/obj/item/clothing/suit/space/void/mining = /obj/item/clothing/suit/space/void/mining/himeo/tajara,
-		/obj/item/clothing/head/helmet/space/void/mining = /obj/item/clothing/head/helmet/space/void/mining/himeo/tajara,
-
-		/obj/item/clothing/suit/space/void/engineering = /obj/item/clothing/suit/space/void/engineering/himeo/tajara,
-		/obj/item/clothing/head/helmet/space/void/engineering = /obj/item/clothing/head/helmet/space/void/engineering/himeo/tajara,
-
-		/obj/item/clothing/suit/space/void/atmos = /obj/item/clothing/suit/space/void/atmos/himeo/tajara,
-		/obj/item/clothing/head/helmet/space/void/atmos = /obj/item/clothing/head/helmet/space/void/atmos/himeo/tajara,
-
-		/obj/item/rig_assembly/industrial = /obj/item/rig_assembly/industrial/himeo
-	)
 
 /obj/item/voidsuit_modkit/ceres_lance_unathi
 	name = "\improper Ceres' Lance voidsuit kit"

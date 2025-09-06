@@ -104,13 +104,6 @@
 	item_state = "nitrile"
 	species_restricted = list(BODYTYPE_UNATHI)
 
-/obj/item/clothing/gloves/latex/nitrile/tajara
-	name = "tajaran nitrile gloves"
-	desc = "Sterile nitrile gloves. Designed for Tajara use."
-	icon_state = "nitrile"
-	item_state = "nitrile"
-	species_restricted = list(BODYTYPE_TAJARA)
-
 /obj/item/clothing/gloves/latex/nitrile/vaurca
 	name = "vaurca nitrile gloves"
 	desc = "Sterile nitrile gloves. Designed for Vaurca use."
@@ -122,11 +115,6 @@
 	name = "unathi latex gloves"
 	desc = "Sterile latex gloves. Designed for Unathi use."
 	species_restricted = list(BODYTYPE_UNATHI)
-
-/obj/item/clothing/gloves/latex/tajara
-	name = "tajaran latex gloves"
-	desc = "Sterile latex gloves. Designed for Tajara use."
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/gloves/latex/vaurca
 	name = "vaurca latex gloves"
@@ -147,10 +135,6 @@
 	name = "unathi leather gloves"
 	species_restricted = list(BODYTYPE_UNATHI)
 
-/obj/item/clothing/gloves/botanic_leather/tajara
-	name = "tajaran leather gloves"
-	species_restricted = list(BODYTYPE_TAJARA)
-
 /obj/item/clothing/gloves/botanic_leather/vaurca
 	name = "vaurca leather gloves"
 	species_restricted = list(BODYTYPE_VAURCA)
@@ -168,10 +152,6 @@
 /obj/item/clothing/gloves/janitor/unathi
 	name = "unathi cleaning gloves"
 	species_restricted = list(BODYTYPE_UNATHI)
-
-/obj/item/clothing/gloves/janitor/tajara
-	name = "tajaran cleaning gloves"
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/gloves/janitor/vaurca
 	name = "vaurca cleaning gloves"

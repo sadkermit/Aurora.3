@@ -26,6 +26,3 @@
 		take_damage(rand(10, 11))
 		if(damage > 12)
 			owner.eye_blurry += rand(3,6)
-
-/obj/item/organ/internal/eyes/night/vaurca/robotic_check()
-	return TRUE

@@ -34,7 +34,6 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	tint = TINT_HEAVY
 	sprite_sheets = list(
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/helmet.dmi'
 		)
 	drop_sound = 'sound/items/drop/helm.ogg'

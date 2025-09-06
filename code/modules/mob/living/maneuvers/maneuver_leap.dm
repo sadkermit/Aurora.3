@@ -103,20 +103,6 @@
 /singleton/maneuver/leap/bulwark
 	cooldown = 10 SECONDS //bigger than industrials = more cooldown
 
-/singleton/maneuver/leap/tajara
-	cooldown = 4 SECONDS
-	delay = 2 SECONDS
-	stamina_cost = 25
-
-/singleton/maneuver/leap/tajara/msai
-	delay = 1 SECOND
-	cooldown = 4 SECONDS
-
-/singleton/maneuver/leap/tesla_body
-	cooldown = 20 SECONDS
-	delay = 4 SECONDS
-	stamina_cost = 30
-
 /singleton/maneuver/leap/areagrab
 	cooldown = 5 MINUTES
 	delay = 3 SECONDS

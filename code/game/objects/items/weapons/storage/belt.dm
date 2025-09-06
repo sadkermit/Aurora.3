@@ -672,20 +672,6 @@
 	starts_with = list(/obj/item/toy/snappop/syndi = 3, /obj/item/reagent_containers/glass/beaker/vial/random/toxin = 2, /obj/item/storage/pill_bottle/dice = 1)
 	max_storage_space = DEFAULT_BOX_STORAGE
 
-/obj/item/storage/belt/shumaila_buckle
-	name = "hammer buckle belt"
-	desc = "A leather belt adorned by a hammer shaped buckle, worn by priesthood and worshippers of Shumaila."
-	icon = 'icons/obj/tajara_items.dmi'
-	icon_state = "hammerbelt"
-	item_state = "hammerbelt"
-	contained_sprite = TRUE
-	storage_slots = 1
-	max_w_class = WEIGHT_CLASS_SMALL
-	desc_extended = "Shumaila is the sister of Mata'ke and the goddess of fortification, chastity, and building. She is the head of the town watch and the architect for all of the \
-	Holy Village's most important buildings. When Mata'ke's original hunting party had done battle with the King of Rraknarr, her beloved was killed in the fighting. Ever since then \
-	she has resolved to be eternally chaste in dedication to him. She is an M'sai who is depicted wearing modest dresses and carrying a hammer on a belt. She is not known for having \
-	much combat prowess despite her position as head of the town watch but is a capable commander for defensive tactics."
-
 /obj/item/storage/belt/generic
 	name = "belt"
 	desc = "Only useful for holding up your pants." // Useless belt is useless.

@@ -457,7 +457,6 @@
 		/obj/item/clothing/head/wool/orion = 3,
 		/obj/item/clothing/head/wool/orion/alt = 3,
 		/obj/item/clothing/gloves/janitor = 4,
-		/obj/item/clothing/gloves/janitor/tajara = 2,
 		/obj/item/clothing/gloves/janitor/unathi = 2,
 		/obj/item/clothing/gloves/janitor/vaurca = 2,
 		/obj/item/clothing/glasses/safety/goggles = 6,
@@ -556,7 +555,6 @@
 		/obj/item/deck/tarot = 3,
 		/obj/item/deck/tarot/nralakk = 2,
 		/obj/item/deck/tarot/nonnralakk = 2,
-		/obj/item/deck/tarot/adhomai = 2,
 		/obj/item/deck/lyodii = 2
 	)
 	contraband = list(

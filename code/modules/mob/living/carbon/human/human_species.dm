@@ -29,10 +29,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 	h_style = "Skrell Average Tentacles"
 	. = ..(mapload, SPECIES_SKRELL)
 
-/mob/living/carbon/human/tajaran/Initialize(mapload)
-	h_style = "Tajaran Ears"
-	. = ..(mapload, SPECIES_TAJARA)
-
 /mob/living/carbon/human/unathi/Initialize(mapload)
 	h_style = "Unathi Horns"
 	. = ..(mapload, SPECIES_UNATHI)
@@ -51,9 +47,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 
 /mob/living/carbon/human/monkey/Initialize(mapload)
 	. = ..(mapload, SPECIES_MONKEY)
-
-/mob/living/carbon/human/farwa/Initialize(mapload)
-	. = ..(mapload, SPECIES_MONKEY_TAJARA)
 
 /mob/living/carbon/human/farwa/adhomai
 	faction = "Adhomai"
@@ -125,18 +118,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 /mob/living/carbon/human/axiori_skrell/Initialize(mapload)
 	h_style = "Skrell Average Tentacles"
 	. = ..(mapload, SPECIES_SKRELL_AXIORI)
-
-/mob/living/carbon/human/msai_tajara/Initialize(mapload)
-	h_style = "Tajaran Ears"
-	. = ..(mapload, SPECIES_TAJARA_MSAI)
-
-/mob/living/carbon/human/zhankhazan_tajara/Initialize(mapload)
-	h_style = "Tajaran Ears"
-	. = ..(mapload, SPECIES_TAJARA_ZHAN)
-
-/mob/living/carbon/human/tesla_body_tajara/Initialize(mapload)
-	h_style = "Tesla Rejuvenation Suit Ears"
-	. = ..(mapload, SPECIES_TAJARA_TESLA_BODY)
 
 /mob/living/carbon/human/industrial/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_G1)

@@ -54,8 +54,5 @@
 		/obj/random/firstaid = 1,
 	)
 	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/unathi,
-		SPECIES_TAJARA = /obj/item/clothing/gloves/latex/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/gloves/latex/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/gloves/latex/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/unathi
 	)

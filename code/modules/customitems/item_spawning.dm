@@ -205,8 +205,8 @@ GLOBAL_LIST_INIT(custom_items, list())
 			log_module_customitems("Bad variable name [var_name] in custom item with id [id]: [e]")
 
 	// for snowflake implants
-	if(istype(item, /obj/item/implanter/fluff))
-		var/obj/item/implanter/fluff/L = item
+	if(istype(item, /obj/item/implanter/custom_item))
+		var/obj/item/implanter/custom_item/L = item
 		L.allowed_ckey = usr_ckey
 		L.implant_type = text2path(additional_data)
 		L.create_implant()
@@ -289,8 +289,8 @@ GLOBAL_LIST_EMPTY(character_id_to_custom_items_mapping)
 			return FALSE
 
 	// Next two conditionals only proc if body_only is true, otherwise they do not. If body_only is true, only these proc.
-	if(body_only && ispath(citem.item_path, /obj/item/organ/internal/augment/fluff))
-		var/obj/item/organ/internal/augment/fluff/aug = citem.spawn_item(target_mob)
+	if(body_only && ispath(citem.item_path, /obj/item/organ/internal/augment/custom_item))
+		var/obj/item/organ/internal/augment/custom_item/aug = citem.spawn_item(target_mob)
 		var/obj/item/organ/external/affected = target_mob.get_organ(aug.parent_organ)
 		aug.replaced(target_mob, affected)
 		target_mob.update_body()
@@ -325,7 +325,7 @@ GLOBAL_LIST_EMPTY(character_id_to_custom_items_mapping)
 		existing_item = locate(/obj/item/modular_computer) in target_mob.contents
 
 	// So prosthetics or augments don't spawn in both variations of this proc.
-	if(ispath(citem.item_path, /obj/item/organ/external) || ispath(citem.item_path, /obj/item/organ/internal/augment/fluff))
+	if(ispath(citem.item_path, /obj/item/organ/external) || ispath(citem.item_path, /obj/item/organ/internal/augment/custom_item))
 		return FALSE
 
 	// Spawn and equip the item.

@@ -25,13 +25,11 @@
 	species_restricted = list(BODYTYPE_HUMAN)
 	sprite_sheets_refit = list(
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/helmet.dmi',
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		BODYTYPE_SKRELL = 'icons/mob/species/skrell/helmet.dmi',
 		BODYTYPE_IPC = 'icons/mob/species/machine/helmet.dmi'
 	)
 	sprite_sheets_obj = list(
 		BODYTYPE_UNATHI = 'icons/obj/clothing/species/unathi/hats.dmi',
-		BODYTYPE_TAJARA = 'icons/obj/clothing/species/tajaran/hats.dmi',
 		BODYTYPE_SKRELL = 'icons/obj/clothing/species/skrell/hats.dmi',
 		BODYTYPE_IPC = 'icons/obj/clothing/species/machine/hats.dmi'
 	)
@@ -63,13 +61,11 @@
 	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
 	sprite_sheets_refit = list(
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/suit.dmi',
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/suit.dmi',
 		BODYTYPE_SKRELL = 'icons/mob/species/skrell/suit.dmi',
 		BODYTYPE_IPC = 'icons/mob/species/machine/suit.dmi'
 	)
 	sprite_sheets_obj = list(
 		BODYTYPE_UNATHI = 'icons/obj/clothing/species/unathi/suits.dmi',
-		BODYTYPE_TAJARA = 'icons/obj/clothing/species/tajaran/suits.dmi',
 		BODYTYPE_SKRELL = 'icons/obj/clothing/species/skrell/suits.dmi',
 		BODYTYPE_IPC= 'icons/obj/clothing/species/machine/suits.dmi'
 	)

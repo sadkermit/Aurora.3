@@ -247,28 +247,6 @@
 		to_chat(H, SPAN_DANGER("You're too exhausted to run anymore!"))
 		return FALSE
 
-/datum/species/zombie/tajara
-	name = SPECIES_ZOMBIE_TAJARA
-	name_plural = "Tajara Zombies"
-	bodytype = BODYTYPE_TAJARA
-	icobase = 'icons/mob/human_races/zombie/r_zombie_tajara.dmi'
-	deform = 'icons/mob/human_races/zombie/r_zombie_tajara.dmi'
-	tail = "tajtail"
-	tail_animation = 'icons/mob/species/tajaran/tail.dmi'
-
-	slowdown = -1
-	brute_mod = 1.2
-	fall_mod = 0.5
-
-	remains_type = /obj/effect/decal/remains/xeno
-	dust_remains_type = /obj/effect/decal/remains/xeno/burned
-
-	move_trail = /obj/effect/decal/cleanable/blood/tracks/paw
-
-	default_h_style = "Tajaran Ears"
-
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
-
 /datum/species/zombie/unathi
 	name = SPECIES_ZOMBIE_UNATHI
 	name_plural = "Unathi Zombies"

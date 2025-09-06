@@ -137,20 +137,6 @@
 		return
 	..()
 
-/obj/machinery/appliance/cooker/oven/adhomai
-	name = "adhomian oven"
-	desc = "A heavy and rustic adhomian oven. Perfect for a Tajaran grandma."
-	icon_state = "adhomai_oven_open"
-
-/obj/machinery/appliance/cooker/oven/adhomai/update_icon()
-	if(!open)
-		if(!stat)
-			icon_state = "adhomai_ovenclosed_on"
-		else
-			icon_state = "adhomai_ovenclosed_off"
-	else
-		icon_state = "adhomai_oven_open"
-
 /obj/machinery/appliance/cooker/oven/small
 	name = "compact oven"
 	desc = "A lightweight, small oven. Doesn't hold much, but it cooks just fine."

@@ -282,14 +282,6 @@
 	icon_state = "forearm_crutch"
 	item_state = "forearm_crutch"
 
-/obj/item/cane/shillelagh
-	name = "adhomian shillelagh"
-	desc = "A sturdy walking stick made from adhomian wood."
-	icon = 'icons/obj/tajara_items.dmi'
-	icon_state = "shillelagh"
-	item_state = "shillelagh"
-	contained_sprite = TRUE
-
 /obj/item/cane/telecane
 	name = "telescopic cane"
 	desc = "A compact cane which can be collapsed for storage."

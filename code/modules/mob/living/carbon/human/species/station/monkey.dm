@@ -87,28 +87,6 @@
 /datum/species/monkey/get_random_name()
 	return "[lowertext(name)] ([rand(100,999)])"
 
-/datum/species/monkey/tajaran
-	name = SPECIES_MONKEY_TAJARA
-	short_name = "far"
-	name_plural = "Farwa"
-	fall_mod = 0.25
-
-	icobase = 'icons/mob/human_races/monkeys/r_farwa.dmi'
-	deform = 'icons/mob/human_races/monkeys/r_farwa.dmi'
-
-	greater_form = SPECIES_TAJARA
-	flesh_color = "#AFA59E"
-	base_color = "#333333"
-	tail = "farwatail"
-	holder_type = /obj/item/holder/monkey/farwa
-
-	move_trail = /obj/effect/decal/cleanable/blood/tracks/paw
-
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/adhomai
-
-/datum/species/monkey/tajaran/get_random_name()
-	return "farwa ([rand(100,999)])" // HACK HACK HACK, oh lords of coding please forgive me!
-
 /datum/species/monkey/skrell
 	name = SPECIES_MONKEY_SKRELL
 	short_name = "nea"

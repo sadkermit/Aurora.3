@@ -203,7 +203,6 @@
 	starts_with = list(/obj/item/clothing/gloves/latex = 2,
 						/obj/item/clothing/gloves/latex/nitrile = 2,
 						/obj/item/clothing/gloves/latex/nitrile/unathi = 1,
-						/obj/item/clothing/gloves/latex/nitrile/tajara = 1,
 						/obj/item/clothing/gloves/latex/nitrile/vaurca = 1)
 /obj/item/storage/box/masks
 	name = "box of surgical masks"
@@ -615,7 +614,6 @@
 	)
 	starts_with = list(
 		/obj/item/clothing/gloves/janitor = 1,
-		/obj/item/clothing/gloves/janitor/tajara = 1,
 		/obj/item/clothing/gloves/janitor/unathi = 1,
 		/obj/item/clothing/gloves/janitor/vaurca = 1
 	)
@@ -977,30 +975,6 @@
 	illustration = "paper"
 	starts_with = list(/obj/item/clothing/accessory/badge/tcaf_papers = 6)
 
-
-/obj/item/storage/box/suns_flags
-	name = "s'rand'marr Worship flag box"
-	desc = "A box filled with flags of the S'rend'marr faith."
-	illustration = "flags"
-	starts_with = list(
-		/obj/item/flag/srendarr = 1,
-		/obj/item/flag/messa = 1
-	)
-
-/obj/item/storage/box/matake_flags
-	name = "ma'ta'ke pantheon flag box"
-	desc = "A box filled to the brim with the various flags of the Ma'ta'ke Pantheon."
-	illustration = "flags"
-	starts_with = list(
-		/obj/item/flag/matake = 1,
-		/obj/item/flag/marryam = 1,
-		/obj/item/flag/rredouane = 1,
-		/obj/item/flag/shumaila = 1,
-		/obj/item/flag/kraszar = 1,
-		/obj/item/flag/dhrarmela = 1,
-		/obj/item/flag/azubarre = 1
-	)
-
 /// Parent object of various national flag boxes. Original intention for random cargo spawn.
 /obj/item/storage/box/flags
 	name = "national flag box - PARENT ITEM DO NOT USE"
@@ -1164,20 +1138,6 @@
 		/obj/item/flag/nralakk/l = 6,
 		/obj/item/flag/traverse = 2,
 		/obj/item/flag/traverse/l = 1
-	)
-
-/obj/item/storage/box/flags/tajara
-	name = "Tajaran collected flag box"
-	desc = "A box filled to the brim with various national flags. Whoever chose the selection for this one was either brave or stupid or both."
-	starts_with = list(
-		/obj/item/flag/dpra = 4,
-		/obj/item/flag/dpra/l = 3,
-		/obj/item/flag/pra = 4,
-		/obj/item/flag/pra/l = 3,
-		/obj/item/flag/nka = 4,
-		/obj/item/flag/nka/l = 3,
-		/obj/item/flag/ftc = 4,
-		/obj/item/flag/ftc/l = 3
 	)
 
 /obj/item/storage/box/flags/vaurca

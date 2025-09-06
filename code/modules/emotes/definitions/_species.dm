@@ -69,26 +69,6 @@
 		list(/singleton/emote/audible/hiss) = 10,
 	)
 
-/datum/species/tajaran
-	default_emotes = list(
-		/singleton/emote/audible/howl,
-		/singleton/emote/audible/hiss,
-		/singleton/emote/visible/flick,
-		/singleton/emote/visible/tflick,
-		/singleton/emote/human/swish,
-		/singleton/emote/human/wag,
-		/singleton/emote/human/sway,
-		/singleton/emote/human/qwag,
-		/singleton/emote/human/fastsway,
-		/singleton/emote/human/swag,
-		/singleton/emote/human/stopsway
-	)
-	pain_emotes_with_pain_level = list(
-		list(/singleton/emote/audible/scream, /singleton/emote/audible/whimper, /singleton/emote/audible/moan, /singleton/emote/audible/cry, /singleton/emote/audible/howl) = 70,
-		list(/singleton/emote/audible/grunt, /singleton/emote/audible/groan, /singleton/emote/audible/moan, /singleton/emote/audible/hiss) = 40,
-		list(/singleton/emote/audible/grunt, /singleton/emote/audible/groan, /singleton/emote/audible/hiss) = 10,
-	)
-
 /datum/species/skrell
 	default_emotes = list(
 		/singleton/emote/audible/warble,

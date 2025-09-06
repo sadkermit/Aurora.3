@@ -186,16 +186,12 @@
 		to_chat(user, SPAN_DANGER("They are missing that limb!"))
 		return FALSE
 
-	if(!ishuman_species(H) && !istajara(H))	//you can only shave humans and tajara for obvious reasons
-		return FALSE
-
-
 	if(target_zone == BP_HEAD)
 		if(H.head && (H.head.body_parts_covered & HEAD))
 			to_chat(user, SPAN_WARNING("\The [H.head] is in the way!"))
 			return FALSE
 
-		if(H.h_style == "Bald" || H.h_style == "Balding Hair" || H.h_style == "Skinhead" || H.h_style == "Tajaran Ears")
+		if(H.h_style == "Bald" || H.h_style == "Balding Hair" || H.h_style == "Skinhead")
 			to_chat(user, SPAN_WARNING("There is not enough hair left to shave!"))
 			return FALSE
 

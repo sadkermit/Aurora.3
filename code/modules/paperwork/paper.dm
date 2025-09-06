@@ -516,22 +516,11 @@
 
 		var/obj/item/i = usr.get_active_hand() // Check to see if he still got that darn pen, also check if he's using a crayon or pen.
 
-		if(!i && istype(loc, /obj/item/portable_typewriter))
-			var/obj/item/portable_typewriter/T = loc
-			if(T.pen)
-				i = T.pen
-
-		if(i && istype(i, /obj/item/portable_typewriter) || !i && istype(loc, /obj/item/portable_typewriter))
-			var/obj/item/portable_typewriter/T = i
-			if(T.pen)
-				i = T.pen
-
 		if(!i || !i.ispen())
 			i = usr.get_inactive_hand()
 		var/obj/item/clipboard/c
 		var/iscrayon = FALSE
 		var/isfountain = FALSE
-		var/istypewriter = FALSE
 		if(!i.ispen())
 			if(usr.back && istype(usr.back,/obj/item/rig))
 				var/obj/item/rig/r = usr.back
@@ -557,15 +546,12 @@
 			else
 				isfountain = FALSE
 
-		if(istype(i, /obj/item/pen/typewriter))
-			istypewriter = TRUE
-
 		if(!write_check(usr))
 			return
 
 		var/last_fields_value = fields
 
-		t = parsepencode(t, i, usr, iscrayon, isfountain, istypewriter) // Encode everything from pencode to html
+		t = parsepencode(t, i, usr, iscrayon, isfountain) // Encode everything from pencode to html
 
 		if(fields > 50)//large amount of fields creates a heavy load on the server, see updateinfolinks() and addtofield()
 			to_chat(usr, SPAN_WARNING("Too many fields. Sorry, you can't do this."))
@@ -585,12 +571,6 @@
 		paper_win.add_stylesheet("paper_languages", 'html/browser/paper_languages.css')
 		paper_win.open()
 
-		if(istype(i, /obj/item/pen/typewriter))
-			playsound(src, ('sound/machines/typewriter.ogg'), 40)
-		else
-			playsound(src, pick('sound/bureaucracy/pen1.ogg','sound/bureaucracy/pen2.ogg'), 20)
-
-		update_icon()
 		if(c)
 			c.update_icon()
 
@@ -606,10 +586,6 @@
 	if(!. && istype(loc, /obj/item/folder))
 		var/obj/item/folder/F = loc
 		if(F.loc_check(user) || F.Adjacent(user))
-			. = TRUE
-	if(!. && istype(loc, /obj/item/portable_typewriter))
-		var/obj/item/portable_typewriter/T = loc
-		if(T.loc == user || T.Adjacent(user))
 			. = TRUE
 
 /obj/item/paper/attackby(obj/item/attacking_item, mob/user)

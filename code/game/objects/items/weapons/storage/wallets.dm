@@ -34,7 +34,7 @@
 		/obj/item/stamp,
 		/obj/item/device/paicard,
 		/obj/item/device/encryptionkey,
-		/obj/item/fluff,
+		/obj/item/custom_item,
 		/obj/item/storage/business_card_holder,
 		/obj/item/sample,
 		/obj/item/key,

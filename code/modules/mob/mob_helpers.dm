@@ -73,22 +73,6 @@
 				return 1
 	return 0
 
-/proc/istajara(A)
-	if(istype(A, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = A
-		switch(H.get_species())
-			if (SPECIES_TAJARA)
-				return 1
-			if(SPECIES_TAJARA_ZHAN)
-				return 1
-			if(SPECIES_TAJARA_MSAI)
-				return 1
-			if (SPECIES_ZOMBIE_TAJARA)
-				return 1
-			if (SPECIES_TAJARA_TESLA_BODY)
-				return 1
-	return 0
-
 /proc/isskrell(A)
 	if(istype(A, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = A
@@ -203,8 +187,6 @@
 		var/mob/living/carbon/human/H = A
 		switch(H.get_species())
 			if (SPECIES_MONKEY)
-				return 1
-			if (SPECIES_MONKEY_TAJARA)
 				return 1
 			if (SPECIES_MONKEY_SKRELL)
 				return 1

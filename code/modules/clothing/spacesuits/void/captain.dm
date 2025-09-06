@@ -17,7 +17,7 @@
 		RAD = ARMOR_RAD_RESISTANT
 	)
 	siemens_coefficient = 0.35
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
 
 /obj/item/clothing/suit/space/void/captain
 	name = "captain voidsuit"
@@ -39,4 +39,4 @@
 		RAD = ARMOR_RAD_RESISTANT
 	)
 	siemens_coefficient = 0.35
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)

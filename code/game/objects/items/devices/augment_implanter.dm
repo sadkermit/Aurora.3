@@ -56,9 +56,6 @@
 
 	user.visible_message(SPAN_WARNING("\The [user] thrusts \the [src] deep into \the [H], injecting something!"))
 
-/obj/item/device/augment_implanter/advanced_tesla
-	new_augment = /obj/item/organ/internal/augment/tesla/advanced
-
 /obj/item/device/augment_implanter/advanced_suspension
 	new_augment =	/obj/item/organ/internal/augment/suspension/advanced
 

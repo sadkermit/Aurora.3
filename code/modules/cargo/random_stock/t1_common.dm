@@ -210,7 +210,7 @@ STOCK_ITEM_COMMON(gloves, 3.3)
 
 	var/list/exclusion = list(
 		/obj/item/clothing/gloves,
-		/obj/item/clothing/gloves/fluff,
+		/obj/item/clothing/gloves/custom_item,
 		/obj/item/clothing/gloves/swat/bst,
 		/obj/item/clothing/gloves/powerfist,
 		/obj/item/clothing/gloves/claws,
@@ -219,7 +219,7 @@ STOCK_ITEM_COMMON(gloves, 3.3)
 	exclusion += typesof(/obj/item/clothing/gloves/rig)
 	exclusion += typesof(/obj/item/clothing/gloves/lightrig)
 	exclusion += typesof(/obj/item/clothing/wrists/watch)
-	exclusion += typesof(/obj/item/clothing/gloves/fluff)
+	exclusion += typesof(/obj/item/clothing/gloves/custom_item)
 	exclusion += typesof(/obj/item/clothing/gloves/ballistic)
 	allgloves -= exclusion
 
@@ -530,7 +530,6 @@ STOCK_ITEM_COMMON(flagbox, 3)
 		/obj/item/storage/box/flags/diona,
 		/obj/item/storage/box/flags/unathi,
 		/obj/item/storage/box/flags/skrell,
-		/obj/item/storage/box/flags/tajara,
 		/obj/item/storage/box/flags/vaurca,
 		/obj/item/storage/box/flags/goldendeep,
 		/obj/item/storage/box/flags/corporate,

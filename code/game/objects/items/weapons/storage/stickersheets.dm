@@ -142,15 +142,6 @@
 		/obj/item/sticker/flagpole/nralakk/xrim = 3
 	)
 
-/obj/item/storage/stickersheet/adhomai
-	name = "tajaran governments sticker sheet"
-	starts_with = list(
-		/obj/item/sticker/flagpole/adhomai = 3,
-		/obj/item/sticker/flagpole/adhomai/dpra = 3,
-		/obj/item/sticker/flagpole/adhomai/nka = 3,
-		/obj/item/sticker/flagpole/adhomai/crevus = 3
-	)
-
 /obj/item/storage/stickersheet/hieroaetheria
 	name = "hieroaetheria sticker sheet"
 	starts_with = list(
@@ -171,7 +162,6 @@
 	name = "anti-establishment sticker sheet"
 	starts_with = list(
 		/obj/item/sticker/flagpole/resistance = 2,
-		/obj/item/sticker/flagpole/resistance/ftc = 2,
 		/obj/item/sticker/flagpole/resistance/traverse = 2,
 		/obj/item/sticker/flagpole/resistance/solkonyang = 2,
 		/obj/item/sticker/flagpole/resistance/newouerea = 2,

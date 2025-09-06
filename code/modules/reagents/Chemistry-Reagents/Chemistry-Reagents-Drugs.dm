@@ -402,9 +402,6 @@
 	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimm)
 
 /singleton/reagent/toxin/stimm/affect_blood(mob/living/carbon/M, alien, removed, datum/reagents/holder)
-	if(alien == IS_TAJARA)
-		removed *= 1.25
-	..()
 	if(prob(15))
 		M.emote(pick("twitch", "blink_r", "shiver"))
 	if(prob(3))

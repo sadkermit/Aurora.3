@@ -21,12 +21,10 @@ Do not use tabs/spaces for indentation in the middle of a code line. Not only is
 // Bad
 #define SPECIES_VAURCA			"vaurca"
 #define SPECIES_UNATHI			"unathi"
-#define SPECIES_TAJARA			"tajara"
 
 // Good
 #define SPECIES_VAURCA "vaurca"
 #define SPECIES_UNATHI "unathi"
-#define SPECIES_TAJARA "tajara"
 ```
 
 ### Control statements

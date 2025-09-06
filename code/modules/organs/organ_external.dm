@@ -733,17 +733,6 @@ This function completely restores a damaged organ to perfect condition.
 
 /obj/item/organ/external/process()
 	if(owner)
-		//Specialized handling for tesla limbs. Checks if the limb currently has an associated tesla spine. Else, will disable the emissive and active overlays
-		if(is_tesla)
-			var/obj/item/organ/internal/augment/tesla/T = owner.internal_organs_by_name[BP_AUG_TESLA]
-			if(T && !T.is_broken())
-				is_emissive = initial(is_emissive)
-				is_overlay = initial(is_overlay)
-			else
-				is_emissive = FALSE
-				is_overlay = FALSE
-			return
-
 		// Process wounds, doing healing etc. Only do this every few ticks to save processing power
 		if(owner.life_tick % wound_update_accuracy == 0)
 			update_wounds()

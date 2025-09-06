@@ -958,7 +958,6 @@
 
 /obj/structure/closet/crate/secure/gear_loadout/ninja/tesla/fill()
 	..()
-	new /obj/item/device/augment_implanter/advanced_tesla(src)
 	new /obj/item/clothing/accessory/holster/armpit/brown(src)
 	new /obj/item/gun/projectile/pistol/adhomai(src)
 	new /obj/item/ammo_magazine/mc9mm(src)

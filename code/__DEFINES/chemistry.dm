@@ -37,7 +37,6 @@
 #define IS_DIONA   1
 #define IS_SKRELL  2
 #define IS_UNATHI  4
-#define IS_TAJARA  8
 #define IS_XENOS   16
 #define IS_MACHINE 32
 #define IS_VAURCA  64

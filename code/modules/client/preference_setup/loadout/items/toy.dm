@@ -140,7 +140,6 @@
 	stickersheet["Coalition of Colonies sticker sheet"] = /obj/item/storage/stickersheet/coc
 	stickersheet["Empire of Dominia sticker sheet"] = /obj/item/storage/stickersheet/dominia
 	stickersheet["Nralakk Federation sticker sheet"] = /obj/item/storage/stickersheet/nralakk
-	stickersheet["Tajaran Governments sticker sheet"] = /obj/item/storage/stickersheet/adhomai
 	stickersheet["Hieroaetheria sticker sheet"] = /obj/item/storage/stickersheet/hieroaetheria
 	stickersheet["Uueoa-Esa sticker sheet"] = /obj/item/storage/stickersheet/hegemony
 	stickersheet["Anti-Establishment sticker sheet"] = /obj/item/storage/stickersheet/resistance

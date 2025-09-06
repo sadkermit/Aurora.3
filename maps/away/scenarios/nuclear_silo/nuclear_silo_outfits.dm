@@ -254,10 +254,7 @@
 	r_pocket = /obj/item/reagent_containers/hypospray
 	l_pocket = /obj/item/device/healthanalyzer
 	species_gloves = list(
-		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/nitrile/unathi,
-		SPECIES_TAJARA = /obj/item/clothing/gloves/latex/nitrile/tajara,
-		SPECIES_TAJARA_MSAI = /obj/item/clothing/gloves/latex/nitrile/tajara,
-		SPECIES_TAJARA_ZHAN = /obj/item/clothing/gloves/latex/nitrile/tajara,
+		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/nitrile/unathi
 	)
 
 /obj/outfit/admin/generic/nuclear_silo_crew/lower/high_sec/silo_researcher

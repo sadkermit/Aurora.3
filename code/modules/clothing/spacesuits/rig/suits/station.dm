@@ -128,7 +128,7 @@
 	icon_supported_species_tags = list("taj")
 	icon = 'icons/obj/item/clothing/rig/himeo_industrial.dmi'
 	icon_state = "himeo_rig"
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_TAJARA)
+	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 	helm_type = /obj/item/clothing/head/helmet/space/rig/industrial/himeo
 	chest_type = /obj/item/clothing/suit/space/rig/industrial/himeo

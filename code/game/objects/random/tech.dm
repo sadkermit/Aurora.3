@@ -91,7 +91,6 @@
 		/obj/item/aiModule/robocop = 0.5,
 		/obj/item/aiModule/tyrant = 0.5,
 		/obj/item/aiModule/paladin = 0.5,
-		/obj/item/aiModule/hadiist = 0.2,
 		/obj/item/aiModule/freeform = 1,
 		/obj/item/aiModule/oneHuman = 0.5,
 		/obj/item/aiModule/oxygen = 1

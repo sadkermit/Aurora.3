@@ -297,7 +297,6 @@
 	icon_state = "swathelm"
 	flags_inv = HIDEEARS|BLOCKHAIR
 	sprite_sheets = list(
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/helmet.dmi'
 	)
 	armor = list(
@@ -462,7 +461,6 @@
 	)
 	siemens_coefficient = 0.35
 	sprite_sheets = list(
-		"Tajara" = 'icons/mob/species/tajaran/helmet.dmi',
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Machine" = 'icons/mob/species/machine/helmet.dmi'
 	)

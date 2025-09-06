@@ -184,11 +184,6 @@ Plates that can hold your cooking stuff
 		LAZYADD(O, image(icon=holding.icon, icon_state=holding.icon_state))
 	SetOverlays(O)
 
-/obj/item/reagent_containers/bowl/zhukamir
-	name = "\improper Zhukamir cauldron"
-	desc = "A small ornamental cauldron used as an altar by the worshippers of Zhukamir, the Ma'ta'ke deity of agriculture and cooking."
-	icon = 'icons/obj/tajara_items.dmi'
-	icon_state = "zhukamir"
 
 /obj/item/reagent_containers/bowl/gravy_boat
 	name = "gravy boat"

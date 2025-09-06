@@ -120,7 +120,7 @@
 	emp_protection = 40
 	slowdown = 0
 
-	species_restricted = list(BODYTYPE_HUMAN,BODYTYPE_TAJARA,BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_IPC, BODYTYPE_VAURCA)
+	species_restricted = list(BODYTYPE_HUMAN,BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_IPC, BODYTYPE_VAURCA)
 
 	helm_type = /obj/item/clothing/head/helmet/space/rig/light/ninja
 	chest_type = /obj/item/clothing/suit/space/rig/light/ninja
@@ -326,7 +326,7 @@
 		ENERGY = ARMOR_ENERGY_SMALL,
 		BOMB = ARMOR_BOMB_PADDED,
 	)
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_VAURCA, BODYTYPE_IPC, BODYTYPE_TAJARA)
+	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_VAURCA, BODYTYPE_IPC)
 
 	seal_delay = 3 // Its only deploying the myomers and helmet.
 	offline_slowdown = 3

@@ -32,9 +32,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 		SPECIES_HUMAN,
 		SPECIES_SKRELL,
 		SPECIES_SKRELL_AXIORI,
-		SPECIES_TAJARA,
-		SPECIES_TAJARA_ZHAN,
-		SPECIES_TAJARA_MSAI,
 		SPECIES_UNATHI,
 		SPECIES_VAURCA_WORKER,
 		SPECIES_VAURCA_WARRIOR,
@@ -176,31 +173,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	species_can_use = list(SPECIES_UNATHI)
 	paintable = TRUE
 	allows_internal = FALSE
-
-/datum/robolimb/tesla
-	company = PROSTHETIC_TESLA
-	desc = "A limb designed to be used by the People's Republic of Adhomai Tesla Brigade. This civilian version is issued to disabled veterans and civilians."
-	icon = 'icons/mob/human_races/tajara/tesla_limbs.dmi'
-	species_can_use = list(SPECIES_TAJARA, SPECIES_TAJARA_ZHAN, SPECIES_TAJARA_MSAI)
-	internal_organ_suffix = "tesla"
-	allowed_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_LIVER, BP_KIDNEYS, BP_STOMACH, BP_APPENDIX)
-	overlay = TRUE
-	emissive = TRUE
-	is_tesla = TRUE
-
-/datum/robolimb/tesla/malfunctioning_check(var/mob/living/carbon/human/H)
-	var/obj/item/organ/internal/augment/tesla/T = H.internal_organs_by_name[BP_AUG_TESLA]
-	if(T && !T.is_broken())
-		return FALSE
-	else
-		return TRUE
-
-/datum/robolimb/tesla/industrial
-	company = PROSTHETIC_TESLA_BODY
-	desc = "A heavy version of the Tesla prosthetics created for the Tesla Rejuvenation Suit"
-	icon = 'icons/mob/human_races/tajara/industrial_tesla_limbs.dmi'
-	species_can_use = list(SPECIES_TAJARA_TESLA_BODY)
-	brute_mod = 0.7
 
 /datum/robolimb/vaurca
 	company = PROSTHETIC_VAURCA

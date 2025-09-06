@@ -571,12 +571,6 @@
 	icon_state = "passport_dominia"
 	item_state = "passport_dominia"
 
-/obj/item/clothing/accessory/badge/passport/hegemony
-	name = "hegemony passport"
-	desc = "A passport issued to a citizen of the Izweski Hegemony."
-	icon_state = "passport_hegemony"
-	item_state = "passport_hegemony"
-
 /obj/item/clothing/accessory/badge/passport/goldendeep
 	name = "golden deep passport"
 	desc = "An electronic passport issued to a member of the Golden Deep Collective. This device lists and updates the owner's net worth in real time."

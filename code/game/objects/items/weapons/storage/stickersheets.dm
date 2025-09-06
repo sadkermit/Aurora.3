@@ -140,14 +140,6 @@
 		/obj/item/sticker/flagpole/hieroaetheria/glaorr = 4
 	)
 
-/obj/item/storage/stickersheet/hegemony
-	name = "uueoa-esa sticker sheet"
-	starts_with = list(
-		/obj/item/sticker/flagpole/hegemony = 4,
-		/obj/item/sticker/flagpole/hegemony/ouerea = 4,
-		/obj/item/sticker/flagpole/hegemony/queendom = 4
-	)
-
 /obj/item/storage/stickersheet/resistance
 	name = "anti-establishment sticker sheet"
 	starts_with = list(

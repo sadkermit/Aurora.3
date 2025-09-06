@@ -58,16 +58,6 @@
 	desc = "A coffee cup bearing the flag of the Republic of Elyra."
 	icon_state = "coffeecup_elyra"
 
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/hegemony
-	name = "\improper Hegemony coffee cup"
-	desc = "A coffee cup bearing the flag of the Izweski Hegemony."
-	icon_state = "coffeecup_hegemony"
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/nralakk
-	name = "\improper Nralakk coffee cup"
-	desc = "A purple coffee cup emblazoned with the flag of the Nralakk Federation."
-	icon_state = "coffeecup_jarg"
-
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/sancolette
 	name = "\improper San Colette coffee cup"
 	desc = "A tricolor coffee cup bearing the flag of San Colette."

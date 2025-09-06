@@ -441,21 +441,6 @@
 	desc = "The flag of the Union of Gla'orr on a flagpole."
 	icon_state = "glaorrpole"
 
-/obj/item/sticker/flagpole/hegemony
-	name = "hegemony flag sticker"
-	desc = "The flag of the Hegemony on a flagpole."
-	icon_state = "hegemonypole"
-
-/obj/item/sticker/flagpole/hegemony/ouerea
-	name = "ouerea flag sticker"
-	desc = "The flag of Ouerea on a flagpole."
-	icon_state = "ouereapole"
-
-/obj/item/sticker/flagpole/hegemony/queendom
-	name = "sezk-hakh queendom flag sticker"
-	desc = "The flag of the Queendom of Sezk-Hakh on a flagpole."
-	icon_state = "queendompole"
-
 //
 //Anti Establishment flags, for the once were's and freedom fighters.
 //

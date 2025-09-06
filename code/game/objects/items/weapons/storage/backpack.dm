@@ -382,15 +382,6 @@
 	..()
 	new /obj/item/storage/wallet/random( src )
 
-/obj/item/storage/backpack/satchel/hegemony
-	name = "hegemony satchel"
-	desc = "A rugged satchel with many pouches, seen commonly within the Hegemony Levies."
-	icon = 'icons/obj/unathi_items.dmi'
-	icon_state = "hegemony_satchel"
-	item_state = "hegemony_satchel"
-	max_storage_space = DEFAULT_DUFFELBAG_STORAGE
-	allow_quick_empty = FALSE // Pouches 'n shit.
-
 /obj/item/storage/backpack/satchel/eng
 	name = "industrial satchel"
 	desc = "A tough satchel with extra pockets."

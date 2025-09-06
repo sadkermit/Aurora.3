@@ -113,13 +113,6 @@
 	if (.)
 		INVOKE_ASYNC(src, PROC_REF(update_wearer))
 
-/obj/item/clothing/shoes/magboots/hegemony
-	name = "hegemony magboots"
-	desc = "Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle. They're large enough to be worn over other footwear. This variant is frequently seen in the Hegemony Navy."
-	icon_state = "hegemony_magboots0"
-	item_state = "hegemony_magboots"
-	icon_base = "hegemony_magboots"
-
 /obj/item/clothing/shoes/magboots/advance
 	desc = "Advanced magnetic boots that have a lighter magnetic pull, placing less burden on the wearer."
 	name = "advanced magboots"

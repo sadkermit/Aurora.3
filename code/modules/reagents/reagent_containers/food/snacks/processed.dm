@@ -94,13 +94,6 @@
 	trash = /obj/item/trash/chips/chicken
 	reagent_data = list(/singleton/reagent/nutriment = list("unseasoned chicken flavoured chips" = 3))
 
-/obj/item/reagent_containers/food/snacks/chips/dirtberry
-	name = "\improper Getmore dirtberry potato chips"
-	desc = "Getmore dirtberry flavoured potato chips. Made in collaboration between Getmore and the People's Republic of Adhomai. Delicious! Doesn't actually contain dirtberries, though."
-	icon_state = "dirtberrychips"
-	trash = /obj/item/trash/chips/dirtberry
-	reagent_data = list(/singleton/reagent/nutriment = list("nutty flavoured chips" = 3))
-
 /obj/item/reagent_containers/food/snacks/chips/phoron
 	name = "\improper Getmore phoron potato chips"
 	desc = "Getmore 'phoron' flavoured potato chips. Delicious! Doesn't actually contain phoron, of course, and is really just a rebranding of their shrimp cocktail chips."

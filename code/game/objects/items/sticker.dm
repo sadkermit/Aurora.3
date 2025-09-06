@@ -207,11 +207,6 @@
 	desc = "A yellow star and crescent on a blue background. As generically islamic as possible."
 	icon_state = "islam"
 
-/obj/item/sticker/religious/twinsuns
-	name = "twin suns sticker"
-	desc = "A vinyl sticker of the Tajaran Twin Suns."
-	icon_state = "twinsuns"
-
 /obj/item/sticker/religious/luceism
 	name = "luceism sticker"
 	desc = "A vinyl sticker of the Luceian Square, a major holy symbol of Luceism."
@@ -450,26 +445,6 @@
 	name = "xrim flag sticker"
 	desc = "The flag of Xrim on a flagpole."
 	icon_state = "xrimpole"
-
-/obj/item/sticker/flagpole/adhomai
-	name = "pra flag sticker"
-	desc = "The flag of the People's Republic of Adhomai on a flagpole."
-	icon_state = "prapole"
-
-/obj/item/sticker/flagpole/adhomai/dpra
-	name = "dpra flag sticker"
-	desc = "The flag of the Democratic People's Republic of Adhomai on a flagpole."
-	icon_state = "dprapole"
-
-/obj/item/sticker/flagpole/adhomai/nka
-	name = "nka flag sticker"
-	desc = "The flag of the New Kingdom of Adhomai on a flagpole."
-	icon_state = "nkapole"
-
-/obj/item/sticker/flagpole/adhomai/crevus
-	name = "crevus flag sticker"
-	desc = "The flag of the Free City of Crevus on a flagpole."
-	icon_state = "crevuspole"
 
 /obj/item/sticker/flagpole/hieroaetheria
 	name = "consortium flag sticker"

@@ -4,12 +4,12 @@
 
 /datum/uplink_item/item/gear_loadout/coalition
 	name = "Coalition of Colonies Assets (Group)"
-	desc = "A crate containing gear for a group. The voidsuits and the hardsuit are only usable by humans, skrell, tajara, and IPCs."
+	desc = "A crate containing gear for a group. The voidsuits and the hardsuit are only usable by humans, skrell, and IPCs."
 	path = /obj/structure/closet/crate/secure/gear_loadout/coalition
 
 /datum/uplink_item/item/gear_loadout/coalition_single
 	name = "Coalition of Colonies Assets (Single)"
-	desc = "A crate containing gear for a single individual. The voidsuit is only usable by humans, skrell, tajara, and IPCs."
+	desc = "A crate containing gear for a single individual. The voidsuit is only usable by humans, skrell, and IPCs."
 	path = /obj/structure/closet/crate/secure/gear_loadout/coalition_single
 	telecrystal_cost = 10
 

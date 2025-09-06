@@ -549,10 +549,6 @@ GLOBAL_LIST_INIT(mineral_can_smooth_with, list(
 /turf/simulated/mineral/random/exoplanet
 	mined_turf = /turf/simulated/floor/exoplanet/mineral
 
-/turf/simulated/mineral/random/adhomai
-	color = "#97A7AA"
-	mined_turf = /turf/simulated/floor/exoplanet/mineral/adhomai
-
 /turf/simulated/mineral/random/high_chance
 	mineralSpawnChanceList = list(
 		ORE_URANIUM = 2,
@@ -582,9 +578,6 @@ GLOBAL_LIST_INIT(mineral_can_smooth_with, list(
 
 /turf/simulated/mineral/random/high_chance/exoplanet
 	mined_turf = /turf/simulated/floor/exoplanet/mineral
-
-/turf/simulated/mineral/random/high_chance/adhomai
-	mined_turf = /turf/simulated/floor/exoplanet/mineral/adhomai
 
 /turf/simulated/mineral/random/higher_chance
 	mineralSpawnChanceList = list(
@@ -689,9 +682,6 @@ GLOBAL_LIST_INIT(mineral_can_smooth_with, list(
 
 /turf/simulated/mineral/planet
 	mined_turf = /turf/simulated/floor/exoplanet/mineral
-
-/turf/simulated/mineral/adhomai
-	mined_turf = /turf/simulated/floor/exoplanet/mineral/adhomai
 
 /turf/simulated/mineral/crystal
 	color = "#6fb1b5"

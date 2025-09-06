@@ -63,16 +63,6 @@
 		"bellpepper" = 0.25
 	)
 
-/obj/random_produce/box/adhomai
-	produce_list = list(
-		"nfrihi" = 1,
-		"dirtberries" = 1,
-		"earthenroot" = 1,
-		"sugar tree" = 1,
-		"shand" = 1,
-		"mtear" = 1
-	)
-
 /obj/random_produce/box/nralakk
 	produce_list = list(
 		"dyn" = 1,

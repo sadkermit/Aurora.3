@@ -9,7 +9,7 @@
 
 /obj/item/spell/modifier/haste
 	name = "haste"
-	desc = "Now you can outrun a Tajara!"
+	desc = "Now you can outrun a cheetah!"
 	icon_state = "haste"
 	cast_methods = CAST_RANGED
 	aspect = ASPECT_FORCE

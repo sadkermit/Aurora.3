@@ -40,20 +40,6 @@
 	groupable = TRUE
 	spawn_amount = 5
 
-/singleton/cargo_item/adhomianmeat
-	category = "hospitality"
-	name = "adhomian meat (x5)"
-	supplier = "zharkov"
-	description = "A handful of meat slices from Adhomian animals. Freshly frozen."
-	price = 75
-	items = list(
-		/obj/item/reagent_containers/food/snacks/meat/adhomai
-	)
-	access = 0
-	container_type = "freezer"
-	groupable = TRUE
-	spawn_amount = 5
-
 /singleton/cargo_item/fishfillet
 	category = "hospitality"
 	name = "fish fillet (x5)"
@@ -596,7 +582,6 @@
 		/obj/item/storage/box/fancy/chips,
 		/obj/item/storage/box/fancy/chips/cucumber,
 		/obj/item/storage/box/fancy/chips/chicken,
-		/obj/item/storage/box/fancy/chips/dirtberry,
 		/obj/item/storage/box/fancy/chips/phoron,
 		/obj/item/storage/box/fancy/chips/variety
 	)

@@ -360,7 +360,7 @@ STARLIGHT 0
 TIME_TO_CALL_EMERGENCY_SHUTTLE 36000
 
 ## Defines which races are allowed to join as ERT, in singular form. If unset, defaults to only human. Casing matters, separate using ;
-## Example races include: Human, Tajara, Skrell, Unathi
+## Example races include: Human, Skrell, Unathi
 # ERT_SPECIES Human;Skrell;Unathi
 
 ## Defines how Law Zero is phrased. Primarily used in the Malfunction gamemode.

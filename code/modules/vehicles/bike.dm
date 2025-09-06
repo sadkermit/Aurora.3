@@ -347,52 +347,6 @@
 	health = 250
 	maxhealth = 250
 
-/obj/vehicle/bike/monowheel
-	name = "adhomian monowheel"
-	desc = "A one-wheeled vehicle, fairly popular with Little Adhomai's greasers."
-	icon_state = "monowheel_off"
-
-	health = 250
-	maxhealth = 250
-
-	fire_dam_coeff = 0.5
-	brute_dam_coeff = 0.4
-
-	mob_offset_y = 1
-
-	storage_type = /obj/item/storage/toolbox/bike_storage/monowheel
-	bike_icon = "monowheel"
-	dir = EAST
-
-	land_speed = 1
-	land_speed_careful = 4
-	space_speed = 0
-	space_speed_careful = 0
-
-	can_hover = FALSE
-
-/obj/vehicle/bike/monowheel/RunOver(var/mob/living/carbon/human/H)
-	var/mob/living/M
-	if(!buckled)
-		return
-	if(istype(buckled, /mob/living))
-		M = buckled
-	if(M.m_intent == M_RUN)
-		M.attack_log += "\[[time_stamp()]\]<font color='orange'> Was rammed by [src]</font>"
-		M.attack_log += "\[[time_stamp()]\] <span class='warning'>rammed[M.name] ([M.ckey]) rammed [H.name] ([H.ckey]) with the [src].</span>"
-		msg_admin_attack("[src] crashed into [key_name(H)] at (<A href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[H.x];Y=[H.y];Z=[H.z]'>JMP</a>)" )
-		src.visible_message(SPAN_DANGER("\The [src] runs over \the [H]!"))
-		H.apply_damage(30, DAMAGE_BRUTE)
-		H.apply_effect(4, WEAKEN)
-		return TRUE
-
-/obj/vehicle/bike/monowheel/check_destination(var/turf/destination)
-	var/static/list/types = typecacheof(list(/turf/space))
-	if((is_type_in_typecache(destination,types) && !locate(/obj/structure/lattice)) || pulledby)
-		return TRUE
-	else
-		return FALSE
-
 /obj/item/storage/toolbox/bike_storage
 	name = "bike storage"
 	max_w_class = WEIGHT_CLASS_BULKY

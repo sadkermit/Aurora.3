@@ -17,12 +17,6 @@
 	item_state = "electropack"
 	w_class = WEIGHT_CLASS_TINY
 
-/obj/item/device/camera_film/taj_film
-	name = "film canister"
-	icon = 'icons/obj/tajara_items.dmi'
-	desc = "A rolle of 35mm film intended for cameras of Tajaran make."
-	icon_state = "taj_film"
-
 /********
 * photo *
 ********/
@@ -313,18 +307,3 @@ GLOBAL_VAR_INIT(photo_count, 0)
 		p.id = id
 
 	return p
-
-/obj/item/device/camera/adhomai
-	name = "adhomian camera"
-	icon = 'icons/obj/tajara_items.dmi'
-	desc = "A slightly antiquated camera with a large flash bulb. Still popular with Tajara all over Adhomai."
-	icon_state = "taj_camera_on"
-	item_state = "taj_camera"
-	slot_flags = SLOT_MASK
-	black_white = TRUE
-	icon_on = "taj_camera_on"
-	icon_off = "taj_camera_off"
-
-/obj/item/device/camera/adhomai/do_photo_sound()
-	flick("taj_camera_flash", src)
-	playsound(loc, 'sound/items/camerabulb.ogg', 75, 1, -3)

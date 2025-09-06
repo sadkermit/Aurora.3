@@ -63,7 +63,6 @@
 		/obj/item/sticker/religious/cross = 1,
 		/obj/item/sticker/religious/crucifix = 1,
 		/obj/item/sticker/religious/islam = 1,
-		/obj/item/sticker/religious/twinsuns = 2,
 		/obj/item/sticker/religious/luceism = 2,
 		/obj/item/sticker/religious/tribunal = 2,
 		/obj/item/sticker/religious/trinary = 2

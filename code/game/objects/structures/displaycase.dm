@@ -120,6 +120,3 @@
 
 /obj/structure/displaycase/captain_revolver
 	spawn_contained_type = /obj/item/gun/projectile/revolver/mateba/captain
-
-/obj/structure/displaycase/adhomai_map
-	spawn_contained_type = /obj/item/toy/adhomian_map

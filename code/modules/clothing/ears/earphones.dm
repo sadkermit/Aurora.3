@@ -424,18 +424,6 @@ Earphone Variants
 		new/datum/track("Indulgence", 'sound/music/regional/xanu/xanu_rock_2.ogg')
 	)
 
-/obj/item/music_cartridge/adhomai_swing
-	name = "Electro-Swing of Adhomai"
-	desc = "A red music cartridge holding the most widely-known Adhomian electro-swing songs."
-	icon_state = "adhomai"
-
-	tracks = list(
-		new/datum/track("Boolean Sisters", 'sound/music/phonograph/boolean_sisters.ogg'),
-		new/datum/track("Electro Swing", 'sound/music/phonograph/electro_swing.ogg'),
-		new/datum/track("Le Swing", 'sound/music/phonograph/le_swing.ogg'),
-		new/datum/track("Posin", 'sound/music/phonograph/posin.ogg')
-	)
-
 /obj/item/music_cartridge/europa_various
 	name = "Europa: Best of the 50s"
 	desc = "A music cartridge storing the best tracks to listen to on a submarine dive."

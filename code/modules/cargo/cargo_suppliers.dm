@@ -153,12 +153,6 @@
 	description = "A trans-stellar medical, research, and pharmaceutical conglomerate who has a hand in almost every form of medicine and science throughout the Orion Spur."
 	tag_line = "Building a brighter future."
 
-/singleton/cargo_supplier/zharkov
-	short_name = "zharkov"
-	name = "Zharkov Shipping Company"
-	description = "One of the largest logistics companies native to Adhomai, Zharkov specializes in interstellar exports bringing Adhomian goods to alien worlds."
-	tag_line = "All around Adhomai in a day or less."
-
 /singleton/cargo_supplier/zora
 	short_name = "zora"
 	name = "Zo'ra Hive Logistics"

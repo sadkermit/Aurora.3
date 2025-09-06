@@ -68,24 +68,6 @@
 	icon_state = "nullathame"
 	item_state = "nullathame"
 
-/obj/item/nullrod/charm
-	name = "obsidian charm"
-	desc = "A tajaran charm created from obsidian created to ward off the supernatural and bring good fortune."
-	desc_extended = "Talismans and charms are common among religious and superstitious tajara, with many believing them to be able to bring good fortune or ward off Raskara and other evils."
-	icon = 'icons/obj/tajara_items.dmi'
-	contained_sprite = TRUE
-	item_icons = null
-	icon_state = "stone_talisman"
-	item_state = "stone_talisman"
-	force = 4
-	throw_range = 7
-	throwforce = 2
-	slot_flags = SLOT_MASK | SLOT_WRISTS | SLOT_EARS | SLOT_TIE
-	w_class = WEIGHT_CLASS_TINY
-
-/obj/item/nullrod/charm/get_mask_examine_text(mob/user)
-	return "around [user.get_pronoun("his")] neck"
-
 /obj/item/nullrod/shaman
 	name = "shaman staff"
 	desc = "A seven foot staff traditionally carried by Unathi shamans both as a symbol of authority and to aid them in walking. It is made out of dark, polished wood and is curved at the end."

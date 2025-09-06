@@ -130,11 +130,6 @@
 /obj/item/folder/proc/handle_post_remove()
 	return
 
-/obj/item/folder/blue/nka/Initialize()
-	. = ..()
-	for (var/I = 1 to 5)
-		new /obj/item/paper/nka_pledge(src)
-
 /obj/item/folder/filled/Initialize()
 	. = ..()
 	for (var/I = 1 to 10)

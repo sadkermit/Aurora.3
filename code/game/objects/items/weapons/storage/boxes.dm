@@ -878,11 +878,6 @@
 	starts_with = list(/obj/random_produce/box = 15)
 	make_exact_fit = TRUE
 
-/obj/item/storage/box/produce/adhomai
-	name = "adhomian produce box"
-	desc = "A large box of produce originating from the frigid world of Adhomai."
-	starts_with = list(/obj/random_produce/box/adhomai = 15)
-
 /obj/item/storage/box/produce/nralakk
 	name = "nralakk produce box"
 	desc = "A large box of produce originating from the Nralakk Federation."

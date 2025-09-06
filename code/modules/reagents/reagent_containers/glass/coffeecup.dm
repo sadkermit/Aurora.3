@@ -38,21 +38,6 @@
 	desc = "A coffee cup with Dominia's flag proudly displayed on it."
 	icon_state = "coffeecup_dom"
 
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/nka
-	name = "\improper NKA coffee cup"
-	desc = "A coffee cup imprinted with the tree symbolising the flag of the New Kingdom of Adhomai."
-	icon_state = "coffeecup_nka"
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/pra
-	name = "\improper PRA coffee cup"
-	desc = "A coffee cup bearing the flag of the People's Republic of Adhomai."
-	icon_state = "coffeecup_pra"
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/dpra
-	name = "\improper DPRA coffee cup"
-	desc = "A metal coffee cup bearing the flag of the Democratic People's Republic of Adhomai."
-	icon_state = "coffeecup_dpra"
-
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/sedantis
 	name = "\improper Sedantis coffee cup"
 	desc = "A metal coffee cup bearing the flag of Sedantis."

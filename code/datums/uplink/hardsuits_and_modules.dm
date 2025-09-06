@@ -86,7 +86,7 @@
 	telecrystal_cost = 8
 	bluecrystal_cost = 8
 	path = /obj/item/rig/gunslinger
-	desc = "A favorite of the Frontier Rangers, the Gunslinger suit is a Xanan-designed hardsuit meant to provide the user absolute situational awareness, while remaining sturdy under fire. Only wearable by humans, tajara, skrell and non-industrial IPCs."
+	desc = "A favorite of the Frontier Rangers, the Gunslinger suit is a Xanan-designed hardsuit meant to provide the user absolute situational awareness, while remaining sturdy under fire. Only wearable by humans, skrell and non-industrial IPCs."
 
 /datum/uplink_item/item/hardsuit_modules/suit/eridani
 	name = "Eridani Strike Hardsuit"
@@ -129,7 +129,7 @@
 	telecrystal_cost = 8
 	bluecrystal_cost = 8
 	path = /obj/item/rig/merc/trulyempty
-	desc = "A blood-red hardsuit featuring some fairly illegal technology. Made by Hammertail, and popular on the black market. Only wearable by humans, unathi, skrell, tajara and non-industrial IPCs."
+	desc = "A blood-red hardsuit featuring some fairly illegal technology. Made by Hammertail, and popular on the black market. Only wearable by humans, unathi, skrell, and non-industrial IPCs."
 
 /datum/uplink_item/item/hardsuit_modules/suit/einstein
 	name = "Einstein Engines Paragon Hardsuit"

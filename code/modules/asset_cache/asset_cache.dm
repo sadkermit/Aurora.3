@@ -569,7 +569,6 @@ GLOBAL_LIST_EMPTY(asset_datums)
 		"grove.png" = 'html/images/scans/exoplanets/grove.png',
 		"desert.png" = 'html/images/scans/exoplanets/desert.png',
 		"snow.png" = 'html/images/scans/exoplanets/snow.png',
-		"adhomai.png" = 'html/images/scans/exoplanets/adhomai.png',
 		"raskara.png" = 'html/images/scans/exoplanets/raskara.png',
 		"comet.png" = 'html/images/scans/exoplanets/comet.png',
 		"asteroid.png" = 'html/images/scans/exoplanets/asteroid.png',

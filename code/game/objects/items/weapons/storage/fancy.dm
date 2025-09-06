@@ -763,12 +763,6 @@
 	icon_state = "multichipschicken"
 	starts_with = list(/obj/item/reagent_containers/food/snacks/chips/chicken = 6)
 
-/obj/item/storage/box/fancy/chips/dirtberry
-	name = "\improper Getmore dirtberry chip multipack"
-	desc = "A six-pack bag of Getmore dirtberry potato chips!"
-	icon_state = "multichipsdirtberry"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/chips/dirtberry = 6)
-
 /obj/item/storage/box/fancy/chips/phoron
 	name = "\improper Getmore phoron chip multipack"
 	desc = "A six-pack bag of Getmore 'phoron' potato chips!"

@@ -159,11 +159,6 @@
 	telecrystal_cost = 2
 	path = /obj/item/gun/projectile/silenced
 
-/datum/uplink_item/item/visible_weapons/teslagauntlet
-	name = "Tesla Glove"
-	telecrystal_cost = 6
-	path = /obj/item/clothing/gloves/tesla
-
 /datum/uplink_item/item/visible_weapons/peac
 	name = "Point Entry Anti-materiel Cannon"
 	telecrystal_cost = 9

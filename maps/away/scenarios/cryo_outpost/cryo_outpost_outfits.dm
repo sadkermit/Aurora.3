@@ -145,7 +145,6 @@
 
 	uniform = /obj/item/clothing/under/rank/scientist/zeng
 	suit = /obj/item/clothing/suit/storage/toggle/longcoat/zeng
-	id = /obj/item/card/id/zeng_hu
 	shoes = /obj/item/clothing/shoes/sneakers/medsci/zeng
 
 	backpack_faction = /obj/item/storage/backpack/zeng
@@ -167,7 +166,6 @@
 
 	uniform = /obj/item/clothing/under/rank/scientist/zeng
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/zeng/alt
-	id = /obj/item/card/id/zeng_hu
 	shoes = /obj/item/clothing/shoes/sneakers/medsci/zeng
 
 	backpack_faction = /obj/item/storage/backpack/zeng

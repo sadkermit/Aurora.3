@@ -170,19 +170,6 @@
 	medical_outerwear["paramedic jacket"] = /obj/item/clothing/suit/storage/toggle/para_jacket
 	gear_tweaks += new /datum/gear_tweak/path(medical_outerwear)
 
-/datum/gear/suit/iac_outerwear
-	display_name = "IAC outerwear (jackets, vests, rigs)"
-	path = /obj/item/clothing/suit/storage/hazardvest/iac
-	allowed_roles = list("Chief Medical Officer", "Physician", "Surgeon", "Pharmacist", "Paramedic", "Medical Intern", "Medical Personnel")
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/suit/iac_outerwear/New()
-	..()
-	var/list/iac_outerwear = list()
-	iac_outerwear["IAC hazard vest"] = /obj/item/clothing/suit/storage/hazardvest/iac
-	iac_outerwear["IAC labcoat"] = /obj/item/clothing/suit/storage/toggle/labcoat/iac
-	gear_tweaks += new /datum/gear_tweak/path(iac_outerwear)
-
 /datum/gear/suit/poncho
 	display_name = "poncho selection"
 	path = /obj/item/clothing/accessory/poncho

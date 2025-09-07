@@ -20,10 +20,3 @@
 	telecrystal_cost = 3
 	bluecrystal_cost = 3
 	path = /obj/item/storage/box/encryption_key
-
-/datum/uplink_item/item/revolution/softsuits
-	name = "Crate of Softsuits"
-	desc = "A crate containing six softsuits, their helmets, and oxygen tanks. Useful for getting out of a pinch."
-	telecrystal_cost = 3
-	bluecrystal_cost = 3
-	path = /obj/structure/closet/crate/secure/gear_loadout/syndicate_softsuits

@@ -479,48 +479,6 @@ ABSTRACT_TYPE(/datum/gear/accessory)
 	flagpatch["square flagpatch"] =  /obj/item/clothing/accessory/flagpatch/square
 	gear_tweaks += new /datum/gear_tweak/path(flagpatch)
 
-/datum/gear/accessory/flagpatch_national
-	display_name = "flagpatch selection"
-	path = /obj/item/clothing/accessory/flagpatch/biesel
-	cost = 1
-
-/datum/gear/accessory/flagpatch_national/New()
-	..()
-	var/list/flagpatch_national = list()
-	flagpatch_national["flagpatch, biesel"] = /obj/item/clothing/accessory/flagpatch/biesel
-	flagpatch_national["flagpatch, mictlan"] = /obj/item/clothing/accessory/flagpatch/mictlan
-	flagpatch_national["flagpatch, new gibson"] = /obj/item/clothing/accessory/flagpatch/newgibson
-	flagpatch_national["flagpatch, valkyrie"] = /obj/item/clothing/accessory/flagpatch/valkyrie
-	flagpatch_national["flagpatch, sol"] = /obj/item/clothing/accessory/flagpatch/sol
-	flagpatch_national["flagpatch, mars"] = /obj/item/clothing/accessory/flagpatch/mars
-	flagpatch_national["flagpatch, gus"] = /obj/item/clothing/accessory/flagpatch/gus
-	flagpatch_national["flagpatch, eridani"] = /obj/item/clothing/accessory/flagpatch/eridani
-	flagpatch_national["flagpatch, europa"] = /obj/item/clothing/accessory/flagpatch/europa
-	flagpatch_national["flagpatch, new hai phong"] = /obj/item/clothing/accessory/flagpatch/newhaiphong
-	flagpatch_national["flagpatch, pluto"] = /obj/item/clothing/accessory/flagpatch/pluto
-	flagpatch_national["flagpatch, visegrad"] = /obj/item/clothing/accessory/flagpatch/visegrad
-	flagpatch_national["flagpatch, silversun"] = /obj/item/clothing/accessory/flagpatch/silversun
-	flagpatch_national["flagpatch, callisto"] = /obj/item/clothing/accessory/flagpatch/callisto
-	flagpatch_national["flagpatch, venus"] = /obj/item/clothing/accessory/flagpatch/venus
-	flagpatch_national["flagpatch, luna"] = /obj/item/clothing/accessory/flagpatch/luna
-	flagpatch_national["flagpatch, konyang"] = /obj/item/clothing/accessory/flagpatch/konyang
-	flagpatch_national["flagpatch, elyra"] = /obj/item/clothing/accessory/flagpatch/elyra
-	flagpatch_national["flagpatch, coalition"] = /obj/item/clothing/accessory/flagpatch/coalition
-	flagpatch_national["flagpatch, all xanu republic"] = /obj/item/clothing/accessory/flagpatch/all_xanu
-	flagpatch_national["flagpatch, himeo"] = /obj/item/clothing/accessory/flagpatch/himeo
-	flagpatch_national["flagpatch, vysoka"] = /obj/item/clothing/accessory/flagpatch/vysoka
-	flagpatch_national["flagpatch, gadpathur"] = /obj/item/clothing/accessory/flagpatch/gadpathur
-	flagpatch_national["flagpatch, assunzione"] = /obj/item/clothing/accessory/flagpatch/assunzione
-	flagpatch_national["flagpatch, dominia"] = /obj/item/clothing/accessory/flagpatch/dominia
-	flagpatch_national["flagpatch, fisanduh"] = /obj/item/clothing/accessory/flagpatch/fisanduh
-	flagpatch_national["flagpatch, port antillia"] = /obj/item/clothing/accessory/flagpatch/portantillia
-	flagpatch_national["flagpatch, sedantis"] = /obj/item/clothing/accessory/flagpatch/sedantis
-	flagpatch_national["flagpatch, zo'ra"] = /obj/item/clothing/accessory/flagpatch/zora
-	flagpatch_national["flagpatch, k'lax"] = /obj/item/clothing/accessory/flagpatch/klax
-	flagpatch_national["flagpatch, c'thur"] = /obj/item/clothing/accessory/flagpatch/cthur
-	flagpatch_national["flagpatch, burzsia"] = /obj/item/clothing/accessory/flagpatch/burzsia
-	gear_tweaks += new /datum/gear_tweak/path(flagpatch_national)
-
 /datum/gear/accessory/aodai
 	display_name = "ao dai"
 	description = "A long, split tunic worn over trousers. Traditional on New Hai Phong."
@@ -589,19 +547,3 @@ ABSTRACT_TYPE(/datum/gear/accessory)
 	display_name = "visegradi patterned sweater"
 	path = /obj/item/clothing/accessory/sweater/visegradi
 	flags = GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/accessory/sol_party_pin
-	display_name = "sol pin selection"
-	path = /obj/item/clothing/accessory/sol_pin
-	cost = 1
-
-/datum/gear/accessory/sol_party_pin/New()
-	..()
-	var/list/sol_party_pin = list()
-	sol_party_pin["sol pin"] = /obj/item/clothing/accessory/sol_pin
-	sol_party_pin["sol first party pin"] = /obj/item/clothing/accessory/sol_pin/sfp
-	sol_party_pin["sol socialist unity party pin"] = /obj/item/clothing/accessory/sol_pin/ssup
-	sol_party_pin["sol people's party pin"] = /obj/item/clothing/accessory/sol_pin/spp
-	sol_party_pin["sol popular democratic party pin"] = /obj/item/clothing/accessory/sol_pin/spdp
-	sol_party_pin["sol communist party pin"] = /obj/item/clothing/accessory/sol_pin/commie
-	gear_tweaks += new /datum/gear_tweak/path(sol_party_pin)

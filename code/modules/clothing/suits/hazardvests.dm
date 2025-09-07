@@ -86,25 +86,6 @@
 	icon_state = "hazard_ce"
 	item_state = "hazard_ce"
 
-
-// Misc
-
-/obj/item/clothing/suit/storage/hazardvest/fsf
-	name = "gunner's mate vest"
-	desc = "A high-visibility vest worn by a gunner's mate in the Solarian Navy. This one is green.";
-	icon_state = "hazard_fsf"
-	item_state = "hazard_fsf"
-
-/obj/item/clothing/suit/storage/hazardvest/iac
-	desc = "It's a lightweight vest. Made of a dark, navy mesh with highly-reflective white material, designed to be worn by the Interstellar Aid Corps as a high-visibility vest, over any other clothing. The I.A.C. logo is prominently  displayed on the back of the vest, between the shoulders."
-	name = "IAC hazard vest"
-	icon_state = "hazard_iac"
-	item_state = "hazard_iac"
-	permeability_coefficient = 0.50
-	armor = list(
-		BIO = ARMOR_BIO_MINOR
-	)
-
 /obj/item/clothing/suit/storage/hazardvest/colorable
 	icon_state = "hazard_colorable"
 	item_state = "hazard_colorable"

@@ -115,13 +115,6 @@ STOCK_ITEM_LARGE(pipemachine, 1.7)
 STOCK_ITEM_LARGE(bike, 0.3)
 	new /obj/vehicle/bike(L)
 
-
-STOCK_ITEM_LARGE(sol, 0.2)
-	if (prob(50))
-		new /obj/structure/closet/sol/navy(L)
-	else
-		new /obj/structure/closet/sol/marine(L)
-
 STOCK_ITEM_LARGE(dog, 0.2)
 	var/dog = pick( \
 		/obj/structure/largecrate/animal/dog, \

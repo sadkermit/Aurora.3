@@ -423,29 +423,6 @@
 	access = get_all_station_access() | get_all_centcom_access()
 	..()
 
-// SCC ID cards
-
-/obj/item/card/id/scc
-	desc = "A high-tech holocard displaying the credentials of a SCC employee."
-	icon_state = "bridge_card"
-	vertical_card = TRUE
-
-/obj/item/card/id/scc/bridge
-	desc = "A high-tech holocard displaying the lowly credentials of a SCC bridge crewman."
-	icon_state = "bridge_card"
-
-/obj/item/card/id/scc/silver
-	desc = "A high-tech holocard displaying the credentials of a SCC command member."
-	icon_state = "command_card"
-
-/obj/item/card/id/scc/gold
-	desc = "A high-tech holocard displaying the intimidating credentials of a SCC employee."
-	icon_state = "captain_card"
-
-/obj/item/card/id/scc/gold/captain
-	desc = "A high-tech holocard displaying the commanding credentials of a SCC captain."
-	icon_state = "captain_card"
-
 /obj/item/card/id/captains_spare
 	name = "captain's spare identification card"
 	desc = "A captain's spare identification card."
@@ -567,100 +544,6 @@
 /obj/item/card/id/all_access/New()
 	access = get_access_ids()
 	..()
-
-// Contractor cards
-/obj/item/card/id/idris
-	name = "\improper Idris Incorporated identification card"
-	desc = "A high-tech holocard, designed to project information about a sub-contractor from Idris Incorporated."
-	icon_state = "idris_card"
-	overlay_state = "idris_card"
-	vertical_card = TRUE
-
-/obj/item/card/id/idris/update_icon()
-	return
-
-/obj/item/card/id/idris/sec
-	icon_state = "idrissec_card"
-	overlay_state = "idrissec_card"
-
-/obj/item/card/id/iru
-	name = "\improper IRU identification card"
-	desc = "A high-tech holobadge, designed to project information about an asset reclamation synthetic at Idris Incorporated."
-	icon_state = "iru_card"
-	overlay_state = "iru_card"
-
-/obj/item/card/id/iru/update_icon()
-	return
-
-/obj/item/card/id/pmc
-	name = "\improper PMCG identification card"
-	desc = "A high-tech holobadge, identifying the owner as a contractor from one of the many PMCs from the Private Military Contracting Group."
-	icon_state = "pmc_card"
-	overlay_state = "pmc_card"
-	vertical_card = TRUE
-
-/obj/item/card/id/pmc/update_icon()
-	return
-
-/obj/item/card/id/zeng_hu
-	name = "\improper Zeng-Hu Pharmaceuticals identification card"
-	desc = "A synthleather card, belonging to one of the highly skilled members of Zeng-Hu."
-	icon_state = "zhu_card"
-	overlay_state = "zhu_card"
-	vertical_card = TRUE
-
-/obj/item/card/zeng_hu/update_icon()
-	return
-
-/obj/item/card/id/hephaestus
-	name = "\improper Hephaestus Industries identification card"
-	desc = "A metal-backed card, belonging to the powerful Hephaestus Industries."
-	icon_state = "heph_card"
-	overlay_state = "heph_card"
-
-/obj/item/card/id/zavodskoi
-	name = "\improper Zavodskoi Interstellar Incorporated identification card"
-	desc = "An old-fashioned, practical plastic card. Smells faintly of gunpowder."
-	icon_state = "necro_card"
-	overlay_state = "necro_card"
-
-/obj/item/card/id/zavodskoi/sec
-	desc = "An old-fashioned, practical plastic card. This one is of a higher rank, for Security personnel."
-	icon_state = "necrosec_card"
-	overlay_state = "necrosec_card"
-
-/obj/item/card/id/einstein
-	name = "\improper Einstein Engines identification card"
-	desc = "A stylized plastic card, belonging to one of the many specialists at Einstein Engines."
-	icon_state = "einstein_card"
-	overlay_state = "einstein_card"
-	iff_faction = IFF_EE
-
-/obj/item/card/id/orion
-	name = "\improper Orion Express identification card"
-	desc = "A well-worn identification pass, retrofitted with wireless transmission technology."
-	icon_state = "orion_card"
-	overlay_state = "orion_card"
-	vertical_card = TRUE
-
-/obj/item/card/id/coalition
-	name = "\improper coalition identification card"
-	desc = "A rugged ID card denoting the wearer as a member of a Coalition of Colonies government organization."
-	icon_state = "coalition_card"
-	overlay_state = "nothing"
-
-/obj/item/card/id/generic
-	name = "identification card"
-	desc = "A card with a soft metallic sheen, used to identify people and determine access."
-	icon_state = "data"
-	overlay_state = "data"
-
-/obj/item/card/id/tcaf // For ghostroles, rather than ERTs.
-	name = "\improper Tau Ceti Armed Forces identification card"
-	desc = "An old-fashioned, practical plastic card. Cheaply produced for Tau Ceti's finest."
-	icon_state = "legion"
-	overlay_state = "nothing"
-	vertical_card = TRUE
 
 /obj/item/card/id/bluespace
 	name = "bluespace identification card"

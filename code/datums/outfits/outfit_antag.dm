@@ -290,7 +290,6 @@
 		/obj/item/clothing/head/hijab,
 		/obj/item/clothing/head/hijab/grey,
 		/obj/item/clothing/head/hijab/red,
-		/obj/item/clothing/head/sol/garrison,
 		/obj/item/clothing/head/nonla,
 		/obj/item/clothing/head/helmet/bucket,
 		/obj/item/clothing/head/helmet/material/makeshift/plasteel,

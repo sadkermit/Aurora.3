@@ -95,18 +95,6 @@
 	sort_category = "Xenowear - Human"
 	path = /obj/item/clothing/head/nonla
 
-/datum/gear/head/human/konyanger
-	display_name = "konyanger hat selection"
-	sort_category = "Xenowear - Human"
-	path = /obj/item/clothing/head/konyang
-
-/datum/gear/head/human/konyanger/New()
-	..()
-	var/list/hats = list()
-	hats["hat, gat"] = /obj/item/clothing/head/konyang
-	hats["hat, konyanger hachimaki"] = /obj/item/clothing/head/hachimaki
-	gear_tweaks += new /datum/gear_tweak/path(hats)
-
 /datum/gear/head/human/fisanduhian_ushanka
 	display_name = "fisanduhian ushanka"
 	sort_category = "Xenowear - Human"

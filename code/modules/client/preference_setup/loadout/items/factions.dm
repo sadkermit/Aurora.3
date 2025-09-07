@@ -18,8 +18,6 @@
 	var/list/idris_headwear = list()
 	idris_headwear["idris cap"] = /obj/item/clothing/head/softcap/idris
 	idris_headwear["idris cap, alt"] = /obj/item/clothing/head/softcap/idris/alt
-	idris_headwear["idris beret"] = /obj/item/clothing/head/beret/corporate/idris
-	idris_headwear["idris beret, alt"] = /obj/item/clothing/head/beret/corporate/idris/alt
 	idris_headwear["idris woolen hat"] = /obj/item/clothing/head/wool/idris
 	idris_headwear["idris woolen hat, alt"] = /obj/item/clothing/head/wool/idris/alt
 	gear_tweaks += new /datum/gear_tweak/path(idris_headwear)
@@ -138,8 +136,6 @@
 /datum/gear/faction/zavodskoi_headwear/New()
 	..()
 	var/list/zavodskoi_headwear = list()
-	zavodskoi_headwear["zavodskoi beret"] = /obj/item/clothing/head/beret/corporate/zavod
-	zavodskoi_headwear["zavodskoi beret, alt"] = /obj/item/clothing/head/beret/corporate/zavod/alt
 	zavodskoi_headwear["zavodskoi cap"] = /obj/item/clothing/head/softcap/zavod
 	zavodskoi_headwear["zavodskoi cap, alt"] = /obj/item/clothing/head/softcap/zavod/alt
 	zavodskoi_headwear["zavodskoi woolen hat"] = /obj/item/clothing/head/wool/zavod
@@ -329,15 +325,12 @@
 /datum/gear/faction/pmcg_headwear/New()
 	..()
 	var/list/pmcg_headwear = list()
-	pmcg_headwear["PMCG beret"] = /obj/item/clothing/head/beret/corporate/pmc
 	pmcg_headwear["PMCG softcap"] = /obj/item/clothing/head/softcap/pmc
 	pmcg_headwear["PMCG softcap, alt"] = /obj/item/clothing/head/softcap/pmc/alt
-	pmcg_headwear["EPMC beret"] = /obj/item/clothing/head/beret/corporate/pmc/epmc
 	pmcg_headwear["EPMC softcap"] = /obj/item/clothing/head/softcap/pmc/epmc
 	pmcg_headwear["PMCG woolen hat"] = /obj/item/clothing/head/wool/pmc
 	pmcg_headwear["EPMC woolen hat"] = /obj/item/clothing/head/wool/pmc/alt
 	pmcg_headwear["PMCG side cap"] = /obj/item/clothing/head/sidecap/pmcg
-	pmcg_headwear["Grupo Amapola utility cover"] = /obj/item/clothing/head/grupo_amapola/ute
 	gear_tweaks += new /datum/gear_tweak/path(pmcg_headwear)
 
 // START: PMCG MODSUIT
@@ -509,49 +502,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	epmc_uniform_para_med["Nexus Corporate Security paramedic uniform"] = /obj/item/clothing/under/rank/medical/paramedic/pmc/nexus
 	gear_tweaks += new /datum/gear_tweak/path(epmc_uniform_para_med)
 
-/datum/gear/faction/wildlands_flagpatches
-	display_name = "wildlands flagpatch selection"
-	description = "A selection of flagpatches from the now defunct groups of the Human Wildlands."
-	path = /obj/item/clothing/accessory/flagpatch/fsf
-	slot = slot_tie
-	faction = "Private Military Contracting Group"
-	flags = null
-
-/datum/gear/faction/wildlands_flagpatches/New()
-	..()
-	var/list/wildlands_flag_patches = list()
-	wildlands_flag_patches["flagpatch, free solarian fleets"] = /obj/item/clothing/accessory/flagpatch/fsf
-	wildlands_flag_patches["flagpatch, middle ring shield pact"] = /obj/item/clothing/accessory/flagpatch/pact
-	wildlands_flag_patches["flagpatch, solarian provisional government"] = /obj/item/clothing/accessory/flagpatch/spg
-	wildlands_flag_patches["flagpatch, southern solarian military district"] = /obj/item/clothing/accessory/flagpatch/ssmd
-	gear_tweaks += new /datum/gear_tweak/path(wildlands_flag_patches)
-
-/datum/gear/faction/grupo_amapola_officer
-	display_name = "grupo amapola officer cap"
-	path = /obj/item/clothing/head/grupo_amapola
-	flags = GEAR_HAS_DESC_SELECTION
-	allowed_roles = list("Head of Security")
-	faction = "Private Military Contracting Group"
-	slot = slot_head
-
-//Zeng-Hu
-/datum/gear/faction/zenghu_beret
-	display_name = "zeng-hu headwear selection"
-	description = "A selection of Zeng-Hu headwear."
-	path = /obj/item/clothing/head/beret/corporate/zeng
-	slot = slot_head
-	faction = "Zeng-Hu Pharmaceuticals"
-
-/datum/gear/faction/zenghu_beret/New()
-	..()
-	var/list/zenghu_headwear = list()
-	zenghu_headwear["beret, zeng-hu"] = /obj/item/clothing/head/beret/corporate/zeng
-	zenghu_headwear["beret alt, zeng-hu"] = /obj/item/clothing/head/beret/corporate/zeng/alt
-	zenghu_headwear["cap, zeng-hu"] = /obj/item/clothing/head/softcap/zeng
-	zenghu_headwear["cap alt, zeng-hu"] = /obj/item/clothing/head/softcap/zeng/alt
-	zenghu_headwear["zeng-hu woolen hat"] = /obj/item/clothing/head/wool/zeng
-	zenghu_headwear["zeng-hu woolen hat, alt"] = /obj/item/clothing/head/wool/zeng/alt
-	gear_tweaks += new /datum/gear_tweak/path(zenghu_headwear)
 
 /datum/gear/faction/zenghu_labcoat
 	display_name = "zeng-hu coat selection"
@@ -621,21 +571,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	heph_labcoats["hephaestus winter coat"] = /obj/item/clothing/suit/storage/hooded/wintercoat/heph
 	gear_tweaks += new /datum/gear_tweak/path(heph_labcoats)
 
-/datum/gear/faction/heph_beret
-	display_name = "hephaestus headwear selection"
-	description = "A selection of Hephaestus headwear"
-	path = /obj/item/clothing/head/beret/corporate/heph
-	slot = slot_head
-	faction = "Hephaestus Industries"
-
-/datum/gear/faction/heph_beret/New()
-	..()
-	var/list/heph_headwear = list()
-	heph_headwear["beret, hephaestus"] = /obj/item/clothing/head/beret/corporate/heph
-	heph_headwear["hephaestus woolen hat"] = /obj/item/clothing/head/wool/heph
-	heph_headwear["hephaestus side cap"] = /obj/item/clothing/head/sidecap/heph
-	gear_tweaks += new /datum/gear_tweak/path(heph_headwear)
-
 /datum/gear/faction/heph_passcard
 	display_name = "hephaestus burzsia passcard"
 	path = /obj/item/clothing/accessory/badge/passcard/burzsia
@@ -667,20 +602,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	cost = 1
 	faction = "NanoTrasen"
 	allowed_roles = list("Janitor", "Service Personnel")
-
-/datum/gear/faction/nt_headwear
-	display_name = "nanotrasen headwear selection"
-	description = "A selection of NanoTrasen headwear"
-	path = /obj/item/clothing/head/beret/corporate
-	slot = slot_head
-	faction = "NanoTrasen"
-
-/datum/gear/faction/nt_headwear/New()
-	..()
-	var/list/nt_headwear = list()
-	nt_headwear["beret, nanotrasen"] = /obj/item/clothing/head/beret/corporate
-	nt_headwear["nanotrasen woolen hat"] = /obj/item/clothing/head/wool/nt
-	gear_tweaks += new /datum/gear_tweak/path(nt_headwear)
 
 /datum/gear/faction/nt_medglasses
 	display_name = "NanoTrasen medical HUD selection"
@@ -717,22 +638,6 @@ GLOBAL_DATUM_INIT(gear_tweak_modsuit_configuration, /datum/gear_tweak/modsuit_co
 	orion_labcoats["orion winter coat, alt"] = /obj/item/clothing/suit/storage/hooded/wintercoat/orion/alt
 	gear_tweaks += new /datum/gear_tweak/path(orion_labcoats)
 
-/datum/gear/faction/orion_headwear
-	display_name = "orion headwear selection"
-	description = "A selection of Orion headwear"
-	path = /obj/item/clothing/head/beret/corporate/orion
-	slot = slot_head
-	faction = "Orion Express"
-
-/datum/gear/faction/orion_headwear/New()
-	..()
-	var/list/orion_headwear = list()
-	orion_headwear["beret, orion"] = /obj/item/clothing/head/beret/corporate/orion
-	orion_headwear["orion woolen hat"] = /obj/item/clothing/head/wool/orion
-	orion_headwear["orion woolen hat, alt"] = /obj/item/clothing/head/wool/orion/alt
-	orion_headwear["orion softcap"] = /obj/item/clothing/head/softcap/orion
-	orion_headwear["Quick-E-Burger visor"] = /obj/item/clothing/head/qeburger_visor
-	gear_tweaks += new /datum/gear_tweak/path(orion_headwear)
 
 /datum/gear/faction/orion_qeburger_apron
 	display_name = "Quick-E-Burger apron"

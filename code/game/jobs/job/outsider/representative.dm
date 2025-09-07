@@ -128,7 +128,6 @@
 	var/fax_department = "Representative's Office"
 	jobtype = /datum/job/representative
 
-	head = /obj/item/clothing/head/beret/corporate
 	uniform = /obj/item/clothing/under/rank/liaison
 	suit = /obj/item/clothing/suit/storage/liaison
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/lawyer

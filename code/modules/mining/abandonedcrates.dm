@@ -95,11 +95,8 @@
 			new /obj/item/poppet(src)
 		if(92)
 			new /obj/item/material/sword/katana(src)
-		if(93)
+		if(93 to 95)
 			new /obj/item/dnainjector/xraymut(src) // Probably the least OP
-		if(94)
-			new /obj/item/clothing/suit/space/void/zavodskoi(src)
-			new /obj/item/clothing/head/helmet/space/void/zavodskoi(src)
 		if(95)
 			new /obj/item/reagent_containers/food/drinks/bottle/bottleofnothing(src)
 		if(96)

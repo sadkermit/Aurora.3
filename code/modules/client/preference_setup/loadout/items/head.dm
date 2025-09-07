@@ -175,56 +175,6 @@
 	surgical["surgical cap, idris green"] = /obj/item/clothing/head/surgery/idris
 	gear_tweaks += new /datum/gear_tweak/path(surgical)
 
-/datum/gear/head/iac
-	display_name = "IAC headgear selection"
-	description = "A selection of hats worn by Interstellar Aid Corps volunteers."
-	path = /obj/item/clothing/head/softcap/iac
-	allowed_roles = list("Chief Medical Officer", "Physician", "Surgeon", "Pharmacist", "Paramedic", "Medical Intern", "Medical Personnel")
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/head/iac/New()
-	..()
-	var/list/iac = list()
-	iac["IAC cap"] = /obj/item/clothing/head/softcap/iac
-	iac["IAC beret"] = /obj/item/clothing/head/beret/iac
-	gear_tweaks += new /datum/gear_tweak/path(iac)
-
-/datum/gear/head/tcaf
-	display_name = "tcaf hat selection"
-	path = /obj/item/clothing/head/beret/legion
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/head/tcaf/New()
-	..()
-	var/list/tcaf = list()
-	tcaf["tcaf beret, dress"] = /obj/item/clothing/head/beret/legion/tcaf
-	tcaf["tcaf beret, field"] = /obj/item/clothing/head/beret/legion/tcaf/tcaf_field
-	tcaf["tcfl beret, dress"] = /obj/item/clothing/head/beret/legion
-	tcaf["tcfl beret, field"] = /obj/item/clothing/head/beret/legion/field
-	tcaf["tcfl softcap"] = /obj/item/clothing/head/softcap/tcfl
-	gear_tweaks += new /datum/gear_tweak/path(tcaf)
-
-/datum/gear/head/peakedcap
-	display_name = "corporate peaked cap selection"
-	description = "A selection of corporate-colored peaked caps. Note that the cap should align with your character's chosen faction."
-	path = /obj/item/clothing/head/peaked_cap
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION
-	allowed_roles = list("Head of Security", "Security Officer", "Warden", "Investigator", "Security Personnel",
-	"Captain", "Executive Officer")
-
-/datum/gear/head/peakedcap/New()
-	..()
-	var/list/caps = list()
-	caps["peaked cap, Zavodskoi Interstellar"] = /obj/item/clothing/head/peaked_cap/zavodskoi
-	caps["peaked cap, Zavodskoi Interstellar, no logo"] = /obj/item/clothing/head/peaked_cap/zavodskoi/no_logo
-	caps["peaked cap, Zavodskoi Interstellar, alt"] = /obj/item/clothing/head/peaked_cap/zavodskoi/alt
-	caps["peaked cap, Zavodskoi Interstellar, alt, no logo"] = /obj/item/clothing/head/peaked_cap/zavodskoi/alt/no_logo
-	caps["peaked cap, Idris Incorporated"] = /obj/item/clothing/head/peaked_cap/idris
-	caps["peaked cap, Idris Incorporated, no logo"] = /obj/item/clothing/head/peaked_cap/idris/no_logo
-	caps["peaked cap, Private Military Contracting Group"] = /obj/item/clothing/head/peaked_cap/pmcg
-	caps["peaked cap, Private Military Contracting Group, no logo"] = /obj/item/clothing/head/peaked_cap/pmcg/no_logo
-	gear_tweaks += new /datum/gear_tweak/path(caps)
-
 /datum/gear/head/warden
 	display_name = "headwear, security (warden)"
 	description = "A selection of warden headwear."

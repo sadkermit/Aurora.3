@@ -2,60 +2,6 @@ ABSTRACT_TYPE(/datum/gear/religion)
 	sort_category = "Religion"
 	flags = GEAR_HAS_DESC_SELECTION
 
-ABSTRACT_TYPE(/datum/gear/religion/trinary)
-	religion = RELIGION_TRINARY
-
-/datum/gear/religion/trinary/mask
-	display_name = "trinary perfection mask"
-	path = /obj/item/clothing/mask/trinary_mask
-	slot = slot_wear_mask
-
-/datum/gear/religion/trinary/coif
-	display_name = "trinary perfection coif"
-	path = /obj/item/clothing/head/trinary
-	slot = slot_head
-
-/datum/gear/religion/trinary/robe
-	display_name = "trinary perfection robes selection"
-	description = "A selection of robes worn by adherents of the Trinary Perfection."
-	path = /obj/item/clothing/suit/trinary_robes
-	slot = slot_wear_suit
-
-/datum/gear/religion/trinary/robe/New()
-	..()
-	var/list/trinaryrobe = list()
-	trinaryrobe["trinary perfection robes"] = /obj/item/clothing/suit/trinary_robes
-	trinaryrobe["trinary perfection habit"] = /obj/item/clothing/suit/trinary_robes/habit
-	trinaryrobe["templeist robes"] = /obj/item/clothing/suit/trinary_robes/templeist
-	gear_tweaks += new /datum/gear_tweak/path(trinaryrobe)
-
-/datum/gear/religion/trinary/cape
-	display_name = "trinary perfection cape selection"
-	description = "A selection of capes worn by adherents to the Trinary Perfection."
-	path = /obj/item/clothing/accessory/poncho/trinary
-	slot = slot_wear_suit
-
-/datum/gear/religion/trinary/cape/New()
-	..()
-	var/list/trinarycape = list()
-	trinarycape["trinary perfection cape"] = /obj/item/clothing/accessory/poncho/trinary
-	trinarycape["trinary perfection shoulder cape"] = /obj/item/clothing/accessory/poncho/trinary/shouldercape
-	trinarycape["trinary perfection pellegrina"] = /obj/item/clothing/accessory/poncho/trinary/pellegrina
-	gear_tweaks += new /datum/gear_tweak/path(trinarycape)
-
-/datum/gear/religion/trinary/badge
-	display_name = "trinary perfection brooch"
-	path = /obj/item/clothing/accessory/badge/trinary
-	slot = slot_tie
-
-/datum/gear/religion/trinary/book
-	display_name = "The Order"
-	description = "The holy text of the Trinary Perfection."
-
-/datum/gear/religion/trinary/book/temple
-	display_name = "The Voice of Temple"
-	description = "A supplementary holy text belonging to the Lodge of Temple Architect, an order within the Trinary Perfection."
-
 /datum/gear/religion/rosary
 	display_name = "rosary"
 	path = /obj/item/clothing/accessory/rosary

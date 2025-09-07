@@ -98,4 +98,4 @@
 	if(istype(tag))
 		tag.serial_number = uppertext(dd_limittext(md5(M.real_name), 12))
 		tag.ownership_info = IPC_OWNERSHIP_SELF
-		tag.citizenship_info = CITIZENSHIP_COALITION
+		tag.citizenship_info = CITIZENSHIP_BIESEL

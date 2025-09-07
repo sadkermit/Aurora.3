@@ -204,7 +204,7 @@
 	access = list(ACCESS_CONSULAR, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_CONSULAR)
 	outfit = /obj/outfit/job/representative/consular
-	blacklisted_citizenship = list(CITIZENSHIP_ERIDANI, CITIZENSHIP_ELYRA_NCP, CITIZENSHIP_NONE)
+	blacklisted_citizenship = list(CITIZENSHIP_NONE)
 
 	aide_job = "Diplomatic Aide"
 	bodyguard_job = "Diplomatic Bodyguard"

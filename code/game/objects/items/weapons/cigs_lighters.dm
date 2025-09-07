@@ -414,19 +414,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 		/singleton/reagent/mental/nicotine = 5
 	)
 
-/obj/item/clothing/mask/smokable/cigarette/oracle
-	name = "oracle cigarette"
-	desc = "A roll of oracle and caromeg."
-	reagents_to_add = list(
-		/singleton/reagent/toxin/oracle = 10,
-		/singleton/reagent/mental/caromeg = 5
-	)
-
-/obj/item/clothing/mask/smokable/cigarette/koko
-	name = "unathi cigarette"
-	desc = "An Unathi cigarette made with koko reed."
-	reagents_to_add = list(/singleton/reagent/mental/kokoreed = 15)
-
 ////////////
 // CIGARS //
 ////////////
@@ -652,16 +639,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 	icon_off = "cobpipeoff"
 	chem_volume = 30
 
-/obj/item/clothing/mask/smokable/pipe/bonepipe
-	name = "Europan bone pipe"
-	desc = "A smoking pipe made out of the bones of the Europan bone whale."
-	desc_extended = "While most commonly associated with bone charms, bones from various sea creatures on Europa are used in a variety of goods, such as this smoking pipe. While smoking in submarines is often an uncommon occurrence, due to a lack of available air or space, these pipes are a common sight in the many stations of Europa. Higher-quality pipes typically have scenes etched into their bones, and can tell the story of their owner's time on Europa."
-	icon_state = "bonepipeoff"
-	item_state = "bonepipeoff"
-	icon_on = "bonepipeon"
-	icon_off = "bonepipeoff"
-	chem_volume = 30
-
 /////////
 //ZIPPO//
 /////////
@@ -732,27 +709,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 	loc = null
 	qdel(src)
 
-/obj/item/flame/lighter/zippo/dominia
-	name = "\improper Dominian Zippo lighter"
-	desc = "A zippo lighter with a depiction of the Imperial standard of Dominia."
-	desc_extended = "While never officially endorsed by the Emperor, lighters featuring a stylized Imperial standard are a common sight throughout the Empire. Due to the simplicity with which the standard can be recreated, these lighters are found even in the poorer frontier regions in the Empire and are commonly seen as a sign of patriotism."
-	icon_state = "dominiazippo"
-	item_state = "dominiazippo"
-
-/obj/item/flame/lighter/zippo/sol
-	name = "\improper Solarian Zippo lighter"
-	desc = "A zippo lighter with a depiction of the flag of the Sol Alliance."
-	desc_extended = "Zippo lighters with the flag of the Sol Alliance continue a long-standing tradition of Earth. While originally proclaiming patriotism to the nation, in the face of movements for more colonial self-determination, these lighters now push forward a message of unity."
-	icon_state = "solzippo"
-	item_state = "solzippo"
-
-/obj/item/flame/lighter/zippo/tcfl
-	name = "\improper Biesellite Zippo lighter"
-	desc = "A zippo lighter with a depiction of the Biesellite flag."
-	desc_extended = "In their rush to expand the Tau Ceti Foreign Legion, the Republic of Biesel manufactured thousands of Biesel-patterned zippo lighters to compliment the jackets and berets that were so often touted by recruiters. In the wake of Frost's Invasion, the popularity of such lighters has only increased and they serve as a small show of patriotism. A small NanoTrasen logo is stenciled on the base."
-	icon_state = "tcflzippo"
-	item_state = "tcflzippo"
-
 /obj/item/flame/lighter/zippo/royal
 	name = "royal Zippo lighter"
 	desc = "A gold-plated zippo with a two-piece cover. A small chemical resevoir in the lighter allows for purple flames that burn with greater intensity."
@@ -772,44 +728,12 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 	icon_state = "blackcrosszippo"
 	item_state = "blackzippo"
 
-/obj/item/flame/lighter/zippo/himeo
-	name = "\improper Himean Zippo lighter"
-	desc = "A zippo with the symbol of the United Syndicates of Himeo on it. This seems to be a model of exceptional make and excessive fuel consumption and temperature."
-	desc_extended = "Lighters of all kinds are a common sight in the United Syndicates of Himeo, where light sources are required for daily life in its dark tunnels, and its lighters are prized throughout the Coalition for their quality. The common emblem of the planet - a white circle surrounded by red triangles - is often featured on lighters originating from the planet."
-	icon_state = "himeozippo"
-	item_state = "himeozippo"
-	flame_light_range = 2
-
-/obj/item/flame/lighter/zippo/coalition
-	name = "\improper Coalition Zippo lighter"
-	desc = "A zippo lighter with a depiction of the Coalition of Colonies flag. This lighter utilizes advanced fuel from Xanu Prime which burns hotter, causing a blue flame."
-	desc_extended = "As there are hundreds of cultures in the Coalition of Colonies, so too are there hundreds of local variations of zippo lighters. The most prized zippos tend to be those from the industrial colony of Himeo, where a strong work ethic and technological advancements combine to produce high-quality lighters that ignite through the harshest of conditions. Most exported Himean lighters have their logos scratched off, rebranded, and given a fresh coat of paint, much to the chagrin of their manufacturers."
-	icon_state = "coalitionzippo"
-	item_state = "coalitionzippo"
-	flame_light_color = LIGHT_COLOR_BLUE
-
 /obj/item/flame/lighter/zippo/gold
 	name = "golden Zippo lighter"
 	desc = "A golden zippo lighter. Badasses and chainsmokers might settle for a zippo, no sir - you can do better with this solid, 24-karat golden piece!"
 	icon_state = "goldzippo"
 	item_state = "goldzippo"
 	flame_light_color = LIGHT_COLOR_BLUE
-
-/obj/item/flame/lighter/zippo/europa
-	name = "\improper Europan Zippo lighter"
-	desc = "A smokeless electrical coil lighter in the style of a zippo with the tricolour of the Jovian moon Europa on the side. Even its outside feels somewhat hot to the touch when it is turned on."
-	desc_extended = "Traditional lighters are often frowned upon in the various submarines and underwater bases of Europa for the fumes their open flames produce. As a result, flameless lighters using heated metal coils that ignite flammable material upon contact are employed instead. These lighters are often prized personal possessions of those who own them, as with living space, privacy and individual possessions are a luxury in the cramped quarters of Europan vessels and stations. A side effect of having lighters that use electrically heated metal coils as opposed to flames however, is that the exteriors of the lighters themselves can become heated to a point of inflicting superficial burns if left on for relatively short periods of time."
-	icon_state = "europazippo"
-	item_state = "europazippo"
-	flame_light_power = 1
-
-/obj/item/flame/lighter/zippo/gadpathur
-	name = "\improper Gadpathurian Zippo lighter"
-	desc = "A zippo lighter with a depiction of the flag of the United Planetary Defense Council of Gadpathur. The nozzle seems to be especially small in order to produce a weaker and dimmer flame."
-	desc_extended = "Owing to the relative poverty of Gadpathur and the ever-present need for gasmasks, smoking is a rare habit on the planet. Still, Gadpathurians who choose to smoke typically keep lighters with smaller nozzles, both to reduce light and thus attention in the confines of a bunker and to conserve on fuel which too is hoarded for their endless war preparations. The Gadpathurian flag emblazoned on the side of the lighter is not a common feature, with most Gadpathurians who stay on the planet preferring to place a symbol of their cadre in its stead."
-	icon_state = "gadpathurzippo"
-	item_state = "gadpathurzippo"
-	flame_light_power = 1
 
 /obj/item/flame/lighter/zippo/asoral
 	name = "\improper Asoral jet lighter"
@@ -819,52 +743,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 	item_state = "lighter-asoral"
 	flame_light_color = LIGHT_COLOR_BLUE
 	flame_light_range = 2
-
-/obj/item/flame/lighter/zippo/nt
-	name = "\improper NanoTrasen Zippo lighter"
-	desc = "A zippo lighter with a depiction of NanoTrasen's iconic logo."
-	icon_state = "ntzippo"
-	item_state = "ntzippo"
-
-/obj/item/flame/lighter/zippo/fisanduh
-	name = "\improper Fisanduhian Zippo lighter"
-	desc = "A zippo with a depiction of the flag of the Confederate States of Fisanduh. This is a well crafted model that burns brighter and hotter than \
-	the usual lighter."
-	desc_extended = "On Moroz it's rather hard to find a Confederate without at least some manner of lighter on their person. Fisanduhians don't \
-	smoke anymore than the rest of Moroz does, instead they prize these lighters for their utility. From burning loose thread to lighting a \
-	molotov and more. A common adage is that the fire of Fisanduh burns brighter than Dominia's, which seems to be true for their lighters at least. \
-	These have found purchase throughout the Spur due to their reliability and impressive capability to light up various things, causing a \
-	competition of sorts to arise with Fisanduhian and Himean producers over the best quality lighter."
-	icon_state = "fisanduhzippo"
-	item_state = "fisanduhzippo"
-	flame_light_range = 2
-
-/obj/item/flame/lighter/zippo/luceian
-	name = "\improper Luceian Zippo lighter"
-	desc = "A bright zippo lighter with the all-seeing eye of Ennoia on its front. Clearly Luceian."
-	desc_extended = "Luceian lighters, sometimes referred to as \"Ennoic Fires,\" are commonly carried by Assunzionii as an emergency light \
-	source. A genuine lighter in the Luceian tradition will have a proving mark stamped upon its base that shows when and where it was \
-	blessed following its construction."
-	icon_state = "luceianzippo"
-	item_state = "luceianzippo"
-	flame_light_color = LIGHT_COLOR_WHITE
-	flame_light_range = 2
-
-/obj/item/flame/lighter/zippo/sancolette
-	name = "\improper San Colette Zippo lighter"
-	desc = "A tricolor zippo lighter depicting the flag of San Colette."
-	desc_extended = "Among Solarian nations, it's popular to carry a lighter depicting the flag of the Sol Alliance as a proclaimation of \
-	one's patriotism. After being recognised as the Sovereign Solarian Republic of San Colette, this tradition continued on with the Colettish, \
-	now opting to pridefully bare their own tricolor flag instead."
-	icon_state = "sancolettezippo"
-	item_state = "sancolettezippo"
-
-/obj/item/flame/lighter/callisto
-	name = "\improper Callistean lighter"
-	desc = "A cheap plastic lighter bearing the flag of Callisto."
-	desc_extended = "It's debated whether this (recently) discontinued line of cheap lighters was a money laundering scheme or a publicity stunt - extremely cheap, extremely flimsy, these Idris made lighters became an unintended social phenomenon among Callistean smokers; running competitions amongst them as to how long they can keep those lighters alive."
-	icon_state = "lightercallisto"
-	item_state = "lightercallisto"
 
 /obj/item/flame/lighter/random/Initialize()
 	. = ..()
@@ -1075,20 +953,6 @@ ABSTRACT_TYPE(/obj/item/clothing/mask/smokable)
 
 /obj/item/reagent_containers/food/snacks/grown/dried_tobacco/pure
 	plantname = "puretobacco"
-
-//oracle sold seperately if you're too snobby to grow it yourself.
-/obj/item/reagent_containers/food/snacks/grown/dried_oracle
-	plantname = "oracle"
-	w_class = WEIGHT_CLASS_TINY
-
-/obj/item/reagent_containers/food/snacks/grown/dried_oracle/Initialize()
-	. = ..()
-	dry = TRUE
-	name = "dried [name]"
-	color = "#ff6f6f"
-
-/obj/item/reagent_containers/food/snacks/grown/dried_oracle/fine
-	plantname = "vedamororacle"
 
 /obj/item/clothing/mask/smokable/cigarette/rolled/attackby(obj/item/attacking_item, mob/user)
 	if(istype(attacking_item, /obj/item/cigarette_filter))

@@ -420,19 +420,6 @@
 /obj/item/storage/box/fancy/cigarettes/cigar/prank
 	cigarette_to_spawn = /obj/item/clothing/mask/smokable/cigarette/cigar/prank
 
-/obj/item/storage/box/fancy/cigarettes/oracle
-	name = "\improper Natural Vysokan Soothsayer oracle cigarette packet"
-	desc = "Featuring an illustration of a soothsayer from Vysoka on its packaging, these cigarettes are advertised as containing oracle instead of the normal tobacco. A warning box stating \"These oracle cigarettes are not healthier than tobacco alternatives\" appears to have been haphazardly placed on the packet."
-	icon_state = "Opacket"
-	item_state = "Fpacket"
-	cigarette_to_spawn = /obj/item/clothing/mask/smokable/cigarette/oracle
-
-/obj/item/storage/box/fancy/cigarettes/koko
-	name = "\improper Ha'zana Corsair Afterburners cigarette packet"
-	desc = "Made exclusively on the Compact ruled world of Ha'zana, these cigarettes are made using koko reed instead of tobacco; a good pick-me-up for Unathi, but has no effect on other species."
-	icon_state = "kokopacket"
-	item_state = "kokopacket"
-	cigarette_to_spawn = /obj/item/clothing/mask/smokable/cigarette/koko
 
 /obj/item/storage/box/fancy/cigarettes/case
 	name = "cigarette case"
@@ -464,12 +451,6 @@
 	name = "sol cigarette case"
 	desc = "A fancy cigarette case with the Solarian emblem on its cover."
 	icon_state = "cigarettecase_sol"
-	item_state = "cigarettecase"
-
-/obj/item/storage/box/fancy/cigarettes/case/tc
-	name = "biesel cigarette case"
-	desc = "A simple cigarette case with the symbol of the Republic of Biesel on its cover."
-	icon_state = "cigarettecase_tc"
 	item_state = "cigarettecase"
 
 /*

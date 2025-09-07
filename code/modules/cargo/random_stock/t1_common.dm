@@ -519,21 +519,5 @@ STOCK_ITEM_COMMON(camera, 1)
 	if(prob(60))
 		new /obj/item/device/camera_film(L)
 
-STOCK_ITEM_COMMON(flagbox, 3)
-	var/list/flagbox_type = list(
-		/obj/item/storage/box/flags/sol,
-		/obj/item/storage/box/flags/biesel,
-		/obj/item/storage/box/flags/coc,
-		/obj/item/storage/box/flags/galataea,
-		/obj/item/storage/box/flags/dominia,
-		/obj/item/storage/box/flags/elyra,
-		/obj/item/storage/box/flags/diona,
-		/obj/item/storage/box/flags/goldendeep,
-		/obj/item/storage/box/flags/corporate,
-		/obj/item/storage/box/flags/misc
-	)
-	var/type = pick(flagbox_type)
-	new type(L)
-
 STOCK_ITEM_COMMON(nothing, 0)
 	// do nothing

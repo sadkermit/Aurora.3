@@ -249,31 +249,6 @@
 		/obj/structure/largecrate/animal/chick = 4
 	)
 
-/obj/random/random_flag
-	name = "random flag"
-	desc = "Contains a random boxed flag or banner."
-	icon_state = "flagbox"
-	spawnlist = list(
-		/obj/item/flag/biesel,
-		/obj/item/flag/biesel/l,
-		/obj/item/flag/dominia,
-		/obj/item/flag/dominia/l,
-		/obj/item/flag/elyra,
-		/obj/item/flag/elyra/l,
-		/obj/item/flag/eridani,
-		/obj/item/flag/eridani/l,
-		/obj/item/flag/heph,
-		/obj/item/flag/heph/l,
-		/obj/item/flag/nanotrasen,
-		/obj/item/flag/nanotrasen/l,
-		/obj/item/flag/sol,
-		/obj/item/flag/sol/l,
-		/obj/item/flag/zenghu,
-		/obj/item/flag/zenghu/l,
-		/obj/item/flag/coalition,
-		/obj/item/flag/coalition/l
-	)
-
 /obj/random/gift
 	name = "random gift"
 	desc = "Contains a randomly sized gift."

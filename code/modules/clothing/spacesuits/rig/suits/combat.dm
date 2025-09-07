@@ -193,8 +193,7 @@
 		/obj/item/melee/baton,
 		/obj/item/melee/energy/sword,
 		/obj/item/handcuffs,
-		/obj/item/material/twohanded/fireaxe,
-		/obj/item/material/twohanded/pike/flag
+		/obj/item/material/twohanded/fireaxe
 	)
 
 	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
@@ -607,8 +606,7 @@
 		/obj/item/melee/baton,
 		/obj/item/melee/energy/sword,
 		/obj/item/handcuffs,
-		/obj/item/material/twohanded/fireaxe,
-		/obj/item/material/twohanded/pike/flag
+		/obj/item/material/twohanded/fireaxe
 	)
 
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY

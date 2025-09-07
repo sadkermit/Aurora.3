@@ -451,7 +451,6 @@
 	new /obj/item/melee/energy/sword/knife(src)
 	new /obj/item/melee/energy/sword/knife(src)
 	new /obj/item/melee/energy/sword/knife(src)
-	new /obj/item/material/twohanded/pike/flag(src)
 
 /obj/structure/closet/crate/secure/gear_loadout/legion/single/fill()
 	new /obj/item/clothing/under/legion(src)
@@ -718,7 +717,6 @@
 	new /obj/item/clothing/head/helmet/tcaf/tcaf_visor(src)
 	new /obj/item/clothing/head/helmet/tcaf/tcaf_visor(src)
 	new /obj/item/clothing/head/helmet/tcaf/tcaf_visor(src)
-	new /obj/item/material/twohanded/pike/flag(src)
 	new /obj/item/clothing/accessory/tcaf_prefect_pauldron(src)
 	new /obj/item/shield/energy/legion(src)
 	new /obj/item/shield/energy/legion(src)

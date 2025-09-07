@@ -100,7 +100,6 @@
 		if(94)
 			new /obj/item/clothing/suit/space/void/zavodskoi(src)
 			new /obj/item/clothing/head/helmet/space/void/zavodskoi(src)
-			new /obj/item/flag/zavodskoi/l(src)
 		if(95)
 			new /obj/item/reagent_containers/food/drinks/bottle/bottleofnothing(src)
 		if(96)

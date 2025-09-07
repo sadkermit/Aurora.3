@@ -520,12 +520,6 @@
 	var/blind_add_text = "Done with prejudice and professionalism, you mean business."
 	return ..(user, add_text, blind_add_text)
 
-/obj/item/card/id/ccia/bssb
-	name = "\improper Biesel Security Services Bureau identification card"
-	desc = "A synthleather ID straight from the Biesel Security Services Bureau."
-	icon_state = "bssb"
-	vertical_card = FALSE
-
 /obj/item/card/id/ert
 	name = "\improper NanoTrasen Emergency Response Team identification card"
 	icon_state = "centcom"

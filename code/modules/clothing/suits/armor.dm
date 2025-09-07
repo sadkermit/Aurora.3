@@ -465,8 +465,7 @@
 		/obj/item/ammo_casing,
 		/obj/item/melee/baton,
 		/obj/item/handcuffs,
-		/obj/item/device/flashlight,
-		/obj/item/material/twohanded/pike/flag
+		/obj/item/device/flashlight
 	)
 	armor = list(
 		MELEE = ARMOR_MELEE_MAJOR,

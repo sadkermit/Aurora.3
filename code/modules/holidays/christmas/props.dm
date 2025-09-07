@@ -269,7 +269,6 @@
 /obj/item/xmasgift/medium/get_gift_type()
 	var/picked_gift_type = pick(
 		/obj/random/booze,
-		/obj/random/random_flag,
 		/obj/item/storage/belt/champion,
 		/obj/item/grenade/smokebomb,
 		/obj/item/contraband/poster,

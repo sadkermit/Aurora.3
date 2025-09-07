@@ -11,23 +11,11 @@
 	..()
 	var/list/zippolighters = list()
 	zippolighters["regular zippo"] = /obj/item/flame/lighter/zippo
-	zippolighters["nanotrasen zippo"] = /obj/item/flame/lighter/zippo/nt
 	zippolighters["black zippo"] = /obj/item/flame/lighter/zippo/black
 	zippolighters["black cross zippo"] = /obj/item/flame/lighter/zippo/black/cross
 	zippolighters["golden zippo"] = /obj/item/flame/lighter/zippo/gold
 	zippolighters["royal zippo"] = /obj/item/flame/lighter/zippo/royal
-	zippolighters["dominian zippo"] = /obj/item/flame/lighter/zippo/dominia
-	zippolighters["fisanduhian zippo"] = /obj/item/flame/lighter/zippo/fisanduh
-	zippolighters["coalition zippo"] = /obj/item/flame/lighter/zippo/coalition
-	zippolighters["solarian zippo"] = /obj/item/flame/lighter/zippo/sol
-	zippolighters["biesellite zippo"] = /obj/item/flame/lighter/zippo/tcfl
-	zippolighters["himeo zippo"] = /obj/item/flame/lighter/zippo/himeo
-	zippolighters["san colettish zippo"] = /obj/item/flame/lighter/zippo/sancolette
-	zippolighters["europan zippo"] = /obj/item/flame/lighter/zippo/europa
-	zippolighters["gadpathurian zippo"] = /obj/item/flame/lighter/zippo/gadpathur
-	zippolighters["luceian zippo"] = /obj/item/flame/lighter/zippo/luceian
 	zippolighters["asoral jet lighter"] = /obj/item/flame/lighter/zippo/asoral
-	zippolighters["callistean lighter"] = /obj/item/flame/lighter/callisto
 	gear_tweaks += new /datum/gear_tweak/path(zippolighters)
 
 /datum/gear/drugs_meds/lighter
@@ -53,8 +41,6 @@
 	cigarettes["Laissez-Faires cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/rugged
 	cigarettes["Trans-Stellar Duty Free cigarette packet"] = /obj/item/storage/box/fancy/cigarettes
 	cigarettes["DromedaryCo cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/dromedaryco
-	cigarettes["Natural Vysokan Soothsayer oracle cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/oracle
-	cigarettes["Koko-Reed cigarette packet"] = /obj/item/storage/box/fancy/cigarettes/koko
 	gear_tweaks += new /datum/gear_tweak/path(cigarettes)
 
 /datum/gear/drugs_meds/chew
@@ -85,8 +71,6 @@
 	leaves["Agyre Lake tobacco leaves"] = /obj/item/storage/chewables/rollable
 	leaves["Excelsior Epsilon tobacco leaves"] = /obj/item/storage/chewables/rollable/fine
 	leaves["Golden Sol tobacco leaves"] = /obj/item/storage/chewables/rollable/nico
-	leaves["Vysokan Plains oracle leaves"] = /obj/item/storage/chewables/rollable/oracle
-	leaves["Velhalktai Marathon oracle leaves"] = /obj/item/storage/chewables/rollable/vedamor
 	gear_tweaks += new /datum/gear_tweak/path(leaves)
 
 /datum/gear/drugs_meds/pipe
@@ -99,11 +83,6 @@
 	pipe["smoking pipe"] = /obj/item/clothing/mask/smokable/pipe
 	pipe["smoking pipe, corn"] = /obj/item/clothing/mask/smokable/pipe/cobpipe
 	gear_tweaks += new /datum/gear_tweak/path(pipe)
-
-/datum/gear/drugs_meds/bonepipe
-	display_name = "Europan bone pipe"
-	path = /obj/item/clothing/mask/smokable/pipe/bonepipe
-	flags = GEAR_HAS_DESC_SELECTION
 
 /datum/gear/drugs_meds/cigfilters
 	display_name = "cigarette filters"
@@ -144,8 +123,6 @@
 	var/list/cigarettecase = list()
 	cigarettecase["cigarette case"] = /obj/item/storage/box/fancy/cigarettes/case
 	cigarettecase["cigarette case, decorated"] = /obj/item/storage/box/fancy/cigarettes/case/mus
-	cigarettecase["cigarette case, sol"] = /obj/item/storage/box/fancy/cigarettes/case/sol
-	cigarettecase["cigarette case, biesel"] = /obj/item/storage/box/fancy/cigarettes/case/tc
 	gear_tweaks += new /datum/gear_tweak/path(cigarettecase)
 
 /datum/gear/drugs_meds/psych_meds

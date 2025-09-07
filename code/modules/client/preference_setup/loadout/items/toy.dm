@@ -133,13 +133,6 @@
 	stickersheet["Generic sticker sheet"] = /obj/item/storage/stickersheet/generic
 	stickersheet["Heart sticker sheet"] = /obj/item/storage/stickersheet/hearts
 	stickersheet["Religious sticker sheet"] = /obj/item/storage/stickersheet/religion
-	stickersheet["Domadice sticker sheet"] = /obj/item/storage/stickersheet/domadice
-	stickersheet["Republic of Biesel sticker sheet"] = /obj/item/storage/stickersheet/biesel
-	stickersheet["Republic of Elyra sticker sheet"] = /obj/item/storage/stickersheet/elyra
-	stickersheet["Solarian Alliance sticker sheet"] = /obj/item/storage/stickersheet/sol
-	stickersheet["Coalition of Colonies sticker sheet"] = /obj/item/storage/stickersheet/coc
-	stickersheet["Empire of Dominia sticker sheet"] = /obj/item/storage/stickersheet/dominia
-	stickersheet["Hieroaetheria sticker sheet"] = /obj/item/storage/stickersheet/hieroaetheria
 	stickersheet["Anti-Establishment sticker sheet"] = /obj/item/storage/stickersheet/resistance
 	gear_tweaks += new /datum/gear_tweak/path(stickersheet)
 

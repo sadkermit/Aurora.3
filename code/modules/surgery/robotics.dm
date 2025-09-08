@@ -26,7 +26,6 @@
 	name = "Unscrew Hatch"
 	allowed_tools = list(
 		SCREWDRIVER = 100,
-		/obj/item/coin = 50,
 		/obj/item/material/kitchen/utensil/knife = 50
 	)
 
@@ -68,7 +67,6 @@
 	name = "Screw Hatch"
 	allowed_tools = list(
 		SCREWDRIVER = 100,
-		/obj/item/coin = 50,
 		/obj/item/material/kitchen/utensil/knife = 50
 	)
 

@@ -949,10 +949,8 @@ GLOBAL_LIST_INIT(asteroid_floor_smooth, list(
 						switch(rand(1,5))
 							if(1)
 								ore += /obj/random/junk
-							if(2)
+							if(2 to 3)
 								ore += /obj/random/powercell
-							if(3)
-								ore += /obj/random/coin
 							if(4)
 								ore += /obj/random/loot
 							if(5)

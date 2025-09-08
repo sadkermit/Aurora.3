@@ -222,7 +222,6 @@ STOCK_ITEM_UNCOMMON(laserpoint, 0.75)
 STOCK_ITEM_UNCOMMON(manual, 2)
 	var/list/booklist = subtypesof(/obj/item/book/manual)
 	booklist -= /obj/item/book/manual/wiki //just this one. we want to keep the subtypes.
-	booklist -= /obj/item/book/manual/nuclear //yeah no
 	var/type = pick(booklist)
 	new type(L)
 
@@ -292,11 +291,6 @@ STOCK_ITEM_UNCOMMON(cookingoil, 1)
 				T = U
 				break
 	new /obj/structure/reagent_dispensers/cookingoil(T)
-
-STOCK_ITEM_UNCOMMON(coin, 1.3)
-	new /obj/random/coin(L)
-	if(prob(20))
-		new /obj/random/coin(L)
 
 STOCK_ITEM_UNCOMMON(plushie, 1)
 	new /obj/random/plushie(L)

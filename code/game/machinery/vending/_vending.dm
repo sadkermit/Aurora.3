@@ -160,7 +160,6 @@
 
 	/// If `TRUE`, this vendor checks IDs.
 	var/scan_id = TRUE
-	var/obj/item/coin/coin
 	var/datum/wires/vending/wires = null
 
 	/// If you can wrench the machine out of place
@@ -335,8 +334,6 @@
 /obj/machinery/vending/Destroy()
 	qdel(wires)
 	wires = null
-	qdel(coin)
-	coin = null
 	return ..()
 
 /obj/machinery/vending/ex_act(severity)
@@ -424,16 +421,6 @@
 	else if(attacking_item.ismultitool()||attacking_item.iswirecutter())
 		if(src.panel_open)
 			return attack_hand(user)
-		return TRUE
-	else if(istype(attacking_item, /obj/item/coin) && premium.len > 0)
-		user.drop_from_inventory(attacking_item,src)
-		coin = attacking_item
-		categories |= CAT_COIN
-		if(coin.string_attached)
-			to_chat(user, SPAN_NOTICE("You insert \the [attacking_item] into \the [src], but with the attached string hanging outside the vendor ready to be pulled out!"))
-		else
-			to_chat(user, SPAN_NOTICE("You insert \the [attacking_item] into \the [src]."))
-		SStgui.update_uis(src)
 		return TRUE
 	else if(attacking_item.iswrench())
 		if(!can_move)
@@ -707,11 +694,6 @@
 		var/datum/data/vending_product/V = product_records[text2num(sel_key)]
 		data["products"] = list("sel_key" = sel_key, "amount" = V.amount)
 
-	if(coin)
-		data["coin"] = coin.name
-	else
-		data["coin"] = null
-
 	return data
 
 /obj/machinery/vending/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
@@ -720,17 +702,6 @@
 		return
 
 	var/datum/money_account/vendor_account = SSeconomy.get_department_account("Vendor")
-
-	if(action == "remove_coin" && !issilicon(usr))
-		if(!coin)
-			to_chat(usr, SPAN_WARNING("There is no coin in this machine."))
-			return
-
-		usr.put_in_hands(coin)
-		to_chat(usr, SPAN_NOTICE("You remove the [coin] from the [src]."))
-		coin = null
-		categories &= ~CAT_COIN
-		. = TRUE
 
 	if (usr.contents.Find(src) || (in_range(src, usr) && isturf(loc)))
 		if (action == "vendItem" && vend_ready && !currently_vending)
@@ -796,29 +767,11 @@
 	src.status_error = 0
 
 	if (R.category & CAT_COIN)
-		if(!coin)
-			to_chat(user, SPAN_NOTICE("You need a coin to vend this item."))
-			return
-
-		if(coin.string_attached)
-			if(prob(50))
-				to_chat(user, SPAN_NOTICE("You successfully pull the coin out before \the [src] could swallow it!"))
-				coin.forceMove(src.loc)
-				user.put_in_hands(coin)
-				coin = null
-			else
-				to_chat(user, SPAN_WARNING("You weren't able to pull the coin out fast enough, and the machine ate it!"))
-		QDEL_NULL(coin)
-
 		visible_message(SPAN_NOTICE("\The [src] putters to life, coughing out its 'premium' item after a moment."))
 		playsound(loc, 'sound/items/poster_being_created.ogg', 50, 1)
 
 		R.amount--
 		SStgui.update_uis(src)
-
-		if(!coin)
-			categories &= ~CAT_COIN
-
 	else
 		R.amount--
 		SStgui.update_uis(src)

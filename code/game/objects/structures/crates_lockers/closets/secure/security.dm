@@ -75,7 +75,6 @@
 	new /obj/item/gun/projectile/sec/flash(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/device/eftpos(src)
-	new /obj/item/book/manual/wiki/security_space_law(src)
 	new /obj/item/device/radio/off(src)
 
 /obj/structure/closet/secure_closet/xo2

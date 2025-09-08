@@ -26,7 +26,7 @@
 	var/balance = 0 //How much money is in the machine, ready to be CONSUMED.
 	var/jackpots = 0
 	var/paymode = CREDITCHIP //toggles between CREDITCHIP/COIN, defined above
-	var/cointype = /obj/item/coin/iron //default cointype
+	var/cointype = /obj/item/spacecash
 	var/list/coinvalues = list()
 	var/list/reels = list(list("", "", "") = 0, list("", "", "") = 0, list("", "", "") = 0, list("", "", "") = 0, list("", "", "") = 0)
 	var/list/symbols = list(SEVEN = 1, "<font color='orange'>&</font>" = 2, "<font color='yellow'>@</font>" = 2, "<font color='green'>$</font>" = 2, "<font color='blue'>?</font>" = 2, "<font color='grey'>#</font>" = 2, "<font color='white'>!</font>" = 2, "<font color='fuchsia'>%</font>" = 2) //if people are winning too much, multiply every number in this list by 2 and see if they are still winning too much.
@@ -45,9 +45,6 @@
 		randomize_reels()
 
 	toggle_reel_spin(FALSE)
-
-	for(cointype in typesof(/obj/item/coin))
-		coinvalues["[cointype]"] = get_value(cointype)
 
 /obj/machinery/computer/slot_machine/Destroy()
 	return ..()
@@ -77,26 +74,7 @@
 	update_icon()
 
 /obj/machinery/computer/slot_machine/attackby(obj/item/attacking_item, mob/user, params)
-	if(istype(attacking_item, /obj/item/coin))
-		var/obj/item/coin/C = attacking_item
-		if(paymode == COIN)
-			if(prob(2))
-				if(!user.drop_from_inventory(C, user.loc))
-					return TRUE
-				C.throw_at(user, 3, 10)
-				if(prob(10))
-					balance = max(balance - SPIN_PRICE, 0)
-				to_chat(user, SPAN_WARNING("[src] spits your coin back out!"))
-			else
-				to_chat(user, SPAN_NOTICE("You insert [C] into [src]'s slot!"))
-				playsound(loc, 'sound/arcade/sloto_token.ogg', 10, 1, extrarange = -3, falloff_distance = 10, required_asfx_toggles = ASFX_ARCADE)
-				balance += get_value(C)
-				updateUsrDialog()
-				qdel(C)
-		else
-			to_chat(user, SPAN_WARNING("This machine is only accepting credit chips!"))
-		return TRUE
-	else if(istype(attacking_item, /obj/item/spacecash))
+	if(istype(attacking_item, /obj/item/spacecash))
 		if(paymode == CREDITCHIP)
 			var/obj/item/spacecash/H = attacking_item
 			to_chat(user, SPAN_NOTICE("You insert [H.worth] credits into [src]'s slot!"))
@@ -275,11 +253,6 @@
 		money = 0
 		if(paymode == CREDITCHIP)
 			spawn_money(JACKPOT, get_turf(user), user)
-		else
-			for(var/i in 1 to 5)
-				cointype = pick(subtypesof(/obj/item/coin))
-				var/obj/item/coin/C = new cointype(loc)
-				C.forceMove(get_turf(src))
 
 	else if(linelength == 5)
 		visible_message("<b>[src]</b> says, 'Big Winner! You win a thousand credits!'")
@@ -327,8 +300,6 @@
 /obj/machinery/computer/slot_machine/proc/give_payout(amount, user)
 	if(paymode == CREDITCHIP)
 		cointype = /obj/item/spacecash
-	else
-		cointype = emagged ? /obj/item/coin/iron : /obj/item/coin/silver
 
 	if(!(emagged))
 		amount = dispense(amount, cointype, user, 0)
@@ -340,22 +311,12 @@
 
 	return amount
 
-/obj/machinery/computer/slot_machine/proc/dispense(amount = 0, cointype = /obj/item/coin/silver, mob/living/target, throwit = 0)
+/obj/machinery/computer/slot_machine/proc/dispense(amount = 0, cointype = /obj/item/spacecash, mob/living/target, throwit = 0)
 	if(paymode == CREDITCHIP)
 		spawn_money(amount, src.loc, target)
 		if(throwit && target)
 			for(var/obj/item/spacecash/S in loc)
 				S.throw_at(target, 3, 10)
-	else
-		var/value = coinvalues["[cointype]"]
-		if(value <= 0)
-			CRASH("Coin value of zero, refusing to payout in dispenser")
-		while(amount >= value)
-			var/obj/item/coin/C = new cointype(loc) //DOUBLE THE PAIN
-			amount -= value
-			if(throwit && target)
-				C.throw_at(target, 3, 10)
-
 	return amount
 
 #undef SEVEN

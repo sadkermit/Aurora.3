@@ -151,6 +151,3 @@
 /obj/structure/closet/secure_closet/freezer/money/fill()
 	for(var/i = 0, i < rand(15, 25), i++)
 		new /obj/random/spacecash(src)
-
-	for(var/i = 0, i < rand(6, 9), i++)
-		new /obj/random/coin(src)

@@ -381,7 +381,6 @@ STOCK_ITEM_COMMON(bag, 2)
 		/obj/item/storage/bag/ore, \
 		/obj/item/storage/bag/plants, \
 		/obj/item/storage/bag/sheetsnatcher, \
-		/obj/item/storage/bag/money, \
 		/obj/item/storage/bag/books \
 	)
 	new type(L)

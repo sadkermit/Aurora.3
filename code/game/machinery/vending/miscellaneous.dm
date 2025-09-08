@@ -1,6 +1,5 @@
 /**
  *	Toximate 3000
- *	Battlemonsters vendor
  *	GwokBuzz vendor
  *	Lavatory Essentials
  *		Low Supply

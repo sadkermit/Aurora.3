@@ -148,40 +148,6 @@
 	name = "bookcase" //Because SDMM doesn't recognise the name otherwise, for some reason
 	spawn_category = "Religion"
 
-/obj/structure/bookcase/manuals/medical
-	name = "Medical Manuals bookcase"
-
-/obj/structure/bookcase/manuals/medical/New()
-	..()
-	new /obj/item/book/manual/medical_diagnostics_manual(src)
-	new /obj/item/book/manual/medical_diagnostics_manual(src)
-	new /obj/item/book/manual/medical_diagnostics_manual(src)
-	new /obj/item/book/manual/medical_diagnostics_manual(src)
-	update_icon()
-
-
-/obj/structure/bookcase/manuals/engineering
-	name = "Engineering Manuals bookcase"
-
-/obj/structure/bookcase/manuals/engineering/New()
-	..()
-	new /obj/item/book/manual/wiki/engineering_construction(src)
-	new /obj/item/book/manual/engineering_particle_accelerator(src)
-	new /obj/item/book/manual/wiki/engineering_hacking(src)
-	new /obj/item/book/manual/wiki/engineering_guide(src)
-	new /obj/item/book/manual/atmospipes(src)
-	new /obj/item/book/manual/engineering_singularity_safety(src)
-	new /obj/item/book/manual/evaguide(src)
-	update_icon()
-
-/obj/structure/bookcase/manuals/research_and_development
-	name = "R&D Manuals bookcase"
-
-/obj/structure/bookcase/manuals/research_and_development/New()
-	..()
-	new /obj/item/book/manual/research_and_development(src)
-	update_icon()
-
 
 /*
  * Book

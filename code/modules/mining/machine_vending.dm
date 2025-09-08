@@ -148,22 +148,6 @@ GLOBAL_LIST_INIT(minevendor_list, list(
 		return TRUE
 
 /obj/machinery/mineral/equipment_vendor/attackby(obj/item/attacking_item, mob/user, params)
-	if(istype(attacking_item, /obj/item/coin/mining))
-		var/list/equipment_choices = list(
-			"Industrial Drilling Kit" = /obj/item/storage/toolbox/drill,
-			"Autonomous Mining Drone" = /mob/living/silicon/robot/drone/mining
-		)
-		var/choice = input(user, "Which special equipment would you like to dispense from \the [src]?", capitalize_first_letters(name)) as null|anything in equipment_choices
-		if(!choice || QDELETED(attacking_item) || !Adjacent(user))
-			return
-		var/equipment_path = equipment_choices[choice]
-		var/obj/dispensed_equipment = new equipment_path(get_turf(src))
-		if(dispensed_equipment)
-			to_chat(user, SPAN_NOTICE("\The [src] accepts your coin and dispenses \a [dispensed_equipment]."))
-			qdel(attacking_item)
-			if(dispensed_equipment && isobj(dispensed_equipment))
-				user.put_in_hands(dispensed_equipment)
-		return
 	if(default_deconstruction_screwdriver(user, "mining-open", "mining", attacking_item))
 		updateUsrDialog()
 		return

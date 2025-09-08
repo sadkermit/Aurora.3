@@ -18,7 +18,6 @@
 		/obj/item/clothing/ring,
 		/obj/item/device/flashlight/pen,
 		/obj/item/seeds,
-		/obj/item/coin,
 		/obj/item/stack/dice,
 		/obj/item/disk,
 		/obj/item/implanter,
@@ -219,21 +218,11 @@
 			/obj/item/spacecash/c50,   \
 			/obj/item/spacecash/c500   \
 		)
-	var/item3_type = pick(            \
-		/obj/item/coin/silver, \
-		/obj/item/coin/silver, \
-		/obj/item/coin/gold,   \
-		/obj/item/coin/iron,   \
-		/obj/item/coin/iron,   \
-		/obj/item/coin/iron    \
-	)
 
 	if(item1_type)
 		new item1_type(src)
 	if(item2_type)
 		new item2_type(src)
-	if(item3_type)
-		new item3_type(src)
 
 /obj/item/storage/wallet/rich/fill()
 	..()
@@ -249,12 +238,6 @@
 		/obj/item/spacecash/ewallet/c2000,
 		/obj/item/spacecash/c500,
 	)
-	var/item3_type = pick(
-		/obj/item/coin/silver,
-		/obj/item/coin/silver,
-		/obj/item/coin/gold,
-	)
 
 	new item1_type(src)
 	new item2_type(src)
-	new item3_type(src)

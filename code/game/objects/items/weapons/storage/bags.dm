@@ -272,34 +272,6 @@
 	capacity = 500//Borgs get more because >specialization
 
 // -----------------------------
-//           Cash Bag
-// -----------------------------
-
-/obj/item/storage/bag/money
-	name = "money bag"
-	desc = "A bag for carrying lots of money. It's got a big dollar sign printed on the front."
-	icon_state = "moneybag"
-	item_state = "moneybag"
-	obj_flags = OBJ_FLAG_CONDUCTABLE
-	max_storage_space = 100
-	w_class = WEIGHT_CLASS_BULKY
-	can_hold = list(/obj/item/coin,/obj/item/spacecash)
-
-/obj/item/storage/bag/money/Initialize(mapload)
-	. = ..()
-	if(prob(20))
-		icon_state = "moneybagalt"
-
-/obj/item/storage/bag/money/vault/New()
-	..()
-	new /obj/item/coin/silver(src)
-	new /obj/item/coin/silver(src)
-	new /obj/item/coin/silver(src)
-	new /obj/item/coin/silver(src)
-	new /obj/item/coin/gold(src)
-	new /obj/item/coin/gold(src)
-
-// -----------------------------
 //           Book bag
 // -----------------------------
 

@@ -167,25 +167,12 @@
 				"You wonder how many mouths the creator had",\
 				"You wonder what it sounds like",\
 				"You wonder what kind of music was made with it")]."
-		if(6)
+		if(6 to 7)
 			item_type = "[pick("bladed knife","serrated blade","sharp cutting implement")]"
 			new_item = new /obj/item/material/knife(src.loc)
 			additional_desc = "[pick("It doesn't look safe.",\
 			"It looks wickedly jagged",\
 			"There appear to be [pick("dark red","dark purple","dark green","dark blue")] stains along the edges")]."
-		if(7)
-			//assuming there are 10 types of coins
-			var/chance = 10
-			for(var/type in typesof(/obj/item/coin))
-				if(prob(chance))
-					new_item = new type(src.loc)
-					break
-				chance += 10
-
-			item_type = new_item.name
-			apply_prefix = 0
-			apply_material_decorations = 0
-			apply_image_decorations = 1
 		if(8)
 			item_type = "handcuffs"
 			new_item = new /obj/item/handcuffs(src.loc)

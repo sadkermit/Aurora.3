@@ -132,7 +132,6 @@
 		/obj/random/belt = 0.9,
 		/obj/random/booze = 1.1,
 		/obj/random/chameleon = 0.5,
-		/obj/random/coin = 1.2,
 		/obj/random/colored_jumpsuit = 0.7,
 		/obj/random/contraband = 0.9,
 		/obj/random/firstaid = 0.4,
@@ -307,19 +306,6 @@
 		/obj/item/storage/pill_bottle/spotlight = 1,
 		/obj/item/storage/pill_bottle/heroin = 1,
 		/obj/item/storage/pill_bottle/joy = 1
-	)
-/obj/random/coin
-	name = "random coin"
-	desc = "This is a random coin."
-	icon_state = "coin"
-	problist = list(
-		/obj/item/coin/iron = 5,
-		/obj/item/coin/silver = 3,
-		/obj/item/coin/gold = 0.7,
-		/obj/item/coin/phoron = 0.5,
-		/obj/item/coin/uranium = 0.5,
-		/obj/item/coin/platinum = 0.2,
-		/obj/item/coin/diamond = 0.1
 	)
 
 /obj/random/spacecash

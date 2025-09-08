@@ -113,8 +113,6 @@
 		/obj/item/grenade/smokebomb,
 		/obj/item/corncob,
 		/obj/item/contraband/poster,
-		/obj/item/book/manual/barman_recipes,
-		/obj/item/book/manual/chef_recipes,
 		/obj/item/bikehorn,
 		/obj/item/beach_ball,
 		/obj/item/beach_ball/holoball,
@@ -191,7 +189,6 @@
 /obj/item/xmasgift/proc/get_gift_type()
 	var/picked_gift_type = pick(
 		/obj/random/action_figure,
-		/obj/random/coin,
 		/obj/random/spacecash,
 		/obj/random/glowstick,
 		/obj/random/gloves,
@@ -272,8 +269,6 @@
 		/obj/item/storage/belt/champion,
 		/obj/item/grenade/smokebomb,
 		/obj/item/contraband/poster,
-		/obj/item/book/manual/barman_recipes,
-		/obj/item/book/manual/chef_recipes,
 		/obj/item/banhammer,
 		/obj/item/clothing/shoes/cowboy,
 		/obj/item/toy/crossbow,

@@ -1516,7 +1516,7 @@ GLOBAL_LIST_INIT(robot_modules, list(
 	max_shots = 100
 	firemodes = list(
 		list(mode_name="Rocket (Low Power) - Acceptable Targets: <span class = 'danger'>ANYONE EXCEPT IPCS</span>", projectile_type = /obj/projectile/bullet/peac, fire_sound='sound/weapons/rocketlaunch.ogg', fire_delay = 50),
-		list(mode_name="Rocket (Fragmentation) - Acceptable Targets: Armoured", projectile_type = /obj/projectile/bullet/peac/shrapnel, fire_sound='sound/weapons/rocketlaunch.ogg', fire_delay = 50),
+		list(mode_name="Rocket (Fragmentation) - Acceptable Targets: <span class = 'danger'>Rambos Only</span>", projectile_type = /obj/projectile/bullet/peac/shrapnel, fire_sound='sound/weapons/rocketlaunch.ogg', fire_delay = 50),
 		list(mode_name="Spikethrower (Extra Sharp) - Acceptable Targets: <span class = 'warning'>Armoured</span>", projectile_type = /obj/projectile/bullet/pistol/hivebotspike/spikier, fire_sound='sound/weapons/gunshot/gunshot_suppressed.ogg'),
 		list(mode_name="<span class = 'danger'>Plasma (Extra Lethal) - Acceptable Targets: Heavily Armoured</span>", projectile_type = /obj/projectile/beam/plasmacutter/plasma_extralethal, fire_sound='sound/weapons/plasma_cutter.ogg', fire_delay = 50),
 		)

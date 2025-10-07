@@ -954,10 +954,6 @@
 /obj/random/coin,
 /turf/template_noop,
 /area/template_noop)
-"vG" = (
-/obj/structure/cart/storage/janitorialcart/full,
-/turf/template_noop,
-/area/template_noop)
 "wa" = (
 /obj/effect/map_effect/marker/mapmanip/submap/extract/sccv_horizon/ops_warehouse_small_storage,
 /obj/structure/closet/emcloset,
@@ -3643,7 +3639,7 @@ zw
 Gz
 Gz
 Gz
-vG
+bv
 nn
 Gz
 Gz

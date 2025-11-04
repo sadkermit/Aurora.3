@@ -170,8 +170,8 @@
 
 	//Set species_restricted list
 	switch(target_species)
-		if(BODYTYPE_HUMAN) // Humans and Skrell can share!
-			species_restricted = list(BODYTYPE_HUMAN)
+		if(BODYTYPE_HUMAN, BODYTYPE_SKRELL) // Humans and Skrell can share!
+			species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
 
 		if(BODYTYPE_IPC, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_ZENGHU, BODYTYPE_IPC_INDUSTRIAL) // All non-shell IPCs use Machine refittings.
 			species_restricted = list(BODYTYPE_IPC, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_ZENGHU, BODYTYPE_IPC_INDUSTRIAL)
@@ -222,8 +222,8 @@
 		return
 
 	switch(target_species)
-		if(BODYTYPE_HUMAN) //humanoid bodies
-			species_restricted = list(BODYTYPE_HUMAN)
+		if(BODYTYPE_HUMAN, BODYTYPE_SKRELL) //humanoid bodies
+			species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
 
 		if(BODYTYPE_IPC, BODYTYPE_IPC_ZENGHU, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_INDUSTRIAL) // All non-shell IPCs use Machine refittings.
 			species_restricted = list(BODYTYPE_IPC, BODYTYPE_IPC_BISHOP, BODYTYPE_IPC_INDUSTRIAL, BODYTYPE_IPC_ZENGHU)
@@ -424,6 +424,10 @@
 	throwforce = 2
 	slot_flags = SLOT_EARS
 
+	sprite_sheets = list(
+		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/l_ear.dmi',
+		)
+
 /obj/item/clothing/ears/attack_hand(mob/user as mob)
 	if (!user) return
 
@@ -459,6 +463,10 @@
 	icon = 'icons/mob/screen/midnight.dmi'
 	icon_state = "blocked"
 	slot_flags = SLOT_EARS | SLOT_TWOEARS
+
+	sprite_sheets = list(
+		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/r_ear.dmi',
+		)
 
 /obj/item/clothing/ears/offear/proc/copy_ear(var/obj/O)
 	name = O.name
@@ -503,6 +511,7 @@
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
+	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA, BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK,BODYTYPE_TESLA_BODY)
 	drop_sound = 'sound/items/drop/gloves.ogg'
 	pickup_sound = 'sound/items/pickup/gloves.ogg'
 
@@ -591,19 +600,21 @@
 	body_parts_covered = HEAD
 	slot_flags = SLOT_HEAD
 	w_class = WEIGHT_CLASS_SMALL
+	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 
 	drop_sound = 'sound/items/drop/hat.ogg'
 	pickup_sound = 'sound/items/pickup/hat.ogg'
 
 	valid_accessory_slots = list(ACCESSORY_SLOT_HEAD)
 
+	light_system = DIRECTIONAL_LIGHT
+
 	/// In case if you want to allow someone to switch the BLOCKHEADHAIR var from the helmet or not
 	var/allow_hair_covering = TRUE
 
 	var/light_overlay = "helmet_light"
 	var/light_applied
-	var/brightness_on
-	var/on = 0
+	var/on = FALSE
 	var/protects_against_weather = FALSE
 
 /obj/item/clothing/head/Initialize(mapload, material_key)
@@ -627,22 +638,22 @@
 	return on
 
 /obj/item/clothing/head/attack_self(mob/user)
-	if(brightness_on)
+	if(light_range)
 		if(!isturf(user.loc))
 			to_chat(user, "You cannot turn the light on while in this [user.loc]")
 			return
 		on = !on
-		to_chat(user, "You [on ? "enable" : "disable"] the helmet light.")
+		to_chat(user, SPAN_NOTICE("You [on ? "enable" : "disable"] the helmet light."))
 		update_flashlight(user)
 	else
 		return ..(user)
 
 /obj/item/clothing/head/proc/update_flashlight(var/mob/user = null)
 	if(on && !light_applied)
-		set_light(brightness_on)
+		set_light_on(on)
 		light_applied = 1
 	else if(!on && light_applied)
-		set_light(0)
+		set_light_on(on)
 		light_applied = 0
 	update_icon(user)
 	user.update_action_buttons()
@@ -784,8 +795,11 @@
 	pickup_sound = 'sound/items/pickup/hat.ogg'
 	body_parts_covered = FACE|EYES
 	sprite_sheets = list(
+		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/mask.dmi'
 		)
+
+	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK, BODYTYPE_TESLA_BODY)
 
 	var/voicechange = 0
 	var/list/say_messages
@@ -899,6 +913,7 @@
 	permeability_coefficient = 0.50
 	force = 0
 	var/overshoes = 0
+	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM, BODYTYPE_TESLA_BODY)
 	var/silent = 0
 	var/last_trip = 0
 
@@ -1043,6 +1058,7 @@
 	slot_flags = SLOT_OCLOTHING
 	siemens_coefficient = 0.9
 	w_class = WEIGHT_CLASS_NORMAL
+	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESLA_BODY)
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_GENERIC, ACCESSORY_SLOT_CAPE, ACCESSORY_SLOT_UTILITY_MINOR)
 
 	var/fire_resist = T0C+100
@@ -1123,6 +1139,8 @@
 
 	///If set, rolling up sleeves/rolling down will use this icon state instead of initial().
 	var/initial_icon_override
+
+	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_GOLEM, BODYTYPE_TESLA_BODY)
 
 	///Convenience var for defining the icon state for the overlay used when the clothing is worn. Also used by rolling/unrolling.
 	var/worn_state = null

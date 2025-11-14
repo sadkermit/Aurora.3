@@ -522,10 +522,6 @@
 	products = list(
 		/obj/item/clothing/under/rank/chaplain = 3,
 		/obj/item/clothing/suit/nun = 3,
-		/obj/item/clothing/suit/storage/hooded/tajaran/priest = 2,
-		/obj/item/clothing/suit/storage/tajaran/messa = 3,
-		/obj/item/clothing/suit/storage/tajaran/matake = 2,
-		/obj/item/clothing/suit/storage/tajaran/azubarre = 2,
 		/obj/item/clothing/head/chaplain_hood = 3,
 		/obj/item/clothing/head/nun_hood = 3,
 		/obj/item/clothing/head/hijab = 3,

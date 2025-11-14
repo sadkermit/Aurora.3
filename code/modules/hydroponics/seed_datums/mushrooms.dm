@@ -16,16 +16,16 @@
 
 /datum/seed/mushroom/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,7)
-	set_trait(TRAIT_PRODUCTION,1)
-	set_trait(TRAIT_YIELD,5)
-	set_trait(TRAIT_POTENCY,1)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom4")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#DBDA72")
-	set_trait(TRAIT_PLANT_COLOUR,"#D9C94E")
-	set_trait(TRAIT_PLANT_ICON,"mushroom")
-	set_trait(TRAIT_WATER_CONSUMPTION, 6)
-	set_trait(TRAIT_IDEAL_HEAT, IDEAL_HEAT_COLD)
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,7)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCTION,1)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,5)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,1)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom4")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#DBDA72")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#D9C94E")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom")
+	SET_SEED_TRAIT(src, TRAIT_WATER_CONSUMPTION, 6)
+	SET_SEED_TRAIT(src, TRAIT_IDEAL_HEAT, IDEAL_HEAT_COLD)
 
 /datum/seed/mushroom/mold
 	name = "mold"
@@ -35,13 +35,13 @@
 
 /datum/seed/mushroom/mold/setup_traits()
 	..()
-	set_trait(TRAIT_SPREAD,1)
-	set_trait(TRAIT_MATURATION,10)
-	set_trait(TRAIT_YIELD,-1)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom5")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#7A5F20")
-	set_trait(TRAIT_PLANT_COLOUR,"#7A5F20")
-	set_trait(TRAIT_PLANT_ICON,"mushroom9")
+	SET_SEED_TRAIT(src, TRAIT_SPREAD,1)
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,10)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,-1)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom5")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#7A5F20")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#7A5F20")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom9")
 
 /obj/item/seeds/brownmold
 	seed_type = "mold"
@@ -55,14 +55,14 @@
 
 /datum/seed/mushroom/hallucinogenic/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,10)
-	set_trait(TRAIT_PRODUCTION,5)
-	set_trait(TRAIT_YIELD,4)
-	set_trait(TRAIT_POTENCY,15)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom11")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#FFB70F")
-	set_trait(TRAIT_PLANT_COLOUR,"#F58A18")
-	set_trait(TRAIT_PLANT_ICON,"mushroom6")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,10)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCTION,5)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,4)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,15)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom11")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#FFB70F")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#F58A18")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom6")
 
 /obj/item/seeds/reishimycelium
 	seed_type = "reishi"
@@ -76,12 +76,12 @@
 
 /datum/seed/mushroom/hallucinogenic/strong/setup_traits()
 	..()
-	set_trait(TRAIT_PRODUCTION,1)
-	set_trait(TRAIT_POTENCY,15)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom8")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#F2E550")
-	set_trait(TRAIT_PLANT_COLOUR,"#D1CA82")
-	set_trait(TRAIT_PLANT_ICON,"mushroom3")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCTION,1)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,15)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom8")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#F2E550")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#D1CA82")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom3")
 
 /obj/item/seeds/libertymycelium
 	seed_type = "libertycap"
@@ -95,14 +95,14 @@
 
 /datum/seed/mushroom/poison/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,10)
-	set_trait(TRAIT_PRODUCTION,5)
-	set_trait(TRAIT_YIELD,4)
-	set_trait(TRAIT_POTENCY,10)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#FF4545")
-	set_trait(TRAIT_PLANT_COLOUR,"#E0DDBA")
-	set_trait(TRAIT_PLANT_ICON,"mushroom4")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,10)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCTION,5)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,4)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,10)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#FF4545")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#E0DDBA")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom4")
 
 /obj/item/seeds/amanitamycelium
 	seed_type = "amanita"
@@ -116,13 +116,13 @@
 
 /datum/seed/mushroom/poison/death/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,12)
-	set_trait(TRAIT_YIELD,2)
-	set_trait(TRAIT_POTENCY,35)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom3")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#EDE8EA")
-	set_trait(TRAIT_PLANT_COLOUR,"#E6D8DD")
-	set_trait(TRAIT_PLANT_ICON,"mushroom5")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,12)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,2)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,35)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom3")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#EDE8EA")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#E6D8DD")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom5")
 
 /obj/item/seeds/angelmycelium
 	seed_type = "destroyingangel"
@@ -136,13 +136,13 @@
 
 /datum/seed/mushroom/poison/panocelium/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,12)
-	set_trait(TRAIT_YIELD,4)
-	set_trait(TRAIT_POTENCY,20)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom6")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#88FFFF")
-	set_trait(TRAIT_PLANT_COLOUR,"#88FFFF")
-	set_trait(TRAIT_PLANT_ICON,"mushroom6")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,12)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,4)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,20)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom6")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#88FFFF")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#88FFFF")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom6")
 
 /obj/item/seeds/panocelium
 	seed_type = "panocelium"
@@ -156,11 +156,11 @@
 
 /datum/seed/mushroom/towercap/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,15)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom7")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#79A36D")
-	set_trait(TRAIT_PLANT_COLOUR,"#857F41")
-	set_trait(TRAIT_PLANT_ICON,"mushroom8")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,15)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom7")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#79A36D")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#857F41")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom8")
 
 /obj/item/seeds/towermycelium
 	seed_type = "towercap"
@@ -174,16 +174,16 @@
 
 /datum/seed/mushroom/glowshroom/setup_traits()
 	..()
-	set_trait(TRAIT_SPREAD,1)
-	set_trait(TRAIT_MATURATION,15)
-	set_trait(TRAIT_YIELD,3)
-	set_trait(TRAIT_POTENCY,30)
-	set_trait(TRAIT_BIOLUM,1)
-	set_trait(TRAIT_BIOLUM_COLOUR,"#006622")
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom2")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#DDFAB6")
-	set_trait(TRAIT_PLANT_COLOUR,"#EFFF8A")
-	set_trait(TRAIT_PLANT_ICON,"mushroom7")
+	SET_SEED_TRAIT(src, TRAIT_SPREAD,1)
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,15)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,3)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,30)
+	SET_SEED_TRAIT(src, TRAIT_BIOLUM,1)
+	SET_SEED_TRAIT(src, TRAIT_BIOLUM_COLOUR,"#006622")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom2")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#DDFAB6")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#EFFF8A")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom7")
 
 /obj/item/seeds/glowshroom
 	seed_type = "glowshroom"
@@ -197,14 +197,14 @@
 
 /datum/seed/mushroom/plastic/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,5)
-	set_trait(TRAIT_PRODUCTION,6)
-	set_trait(TRAIT_YIELD,6)
-	set_trait(TRAIT_POTENCY,20)
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom6")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#E6E6E6")
-	set_trait(TRAIT_PLANT_COLOUR,"#E6E6E6")
-	set_trait(TRAIT_PLANT_ICON,"mushroom10")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,5)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCTION,6)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,6)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,20)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom6")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#E6E6E6")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#E6E6E6")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom10")
 
 /obj/item/seeds/plastiseed
 	seed_type = "plastic"
@@ -218,16 +218,16 @@
 
 /datum/seed/mushroom/ghost/setup_traits()
 	..()
-	set_trait(TRAIT_MATURATION,5)
-	set_trait(TRAIT_PRODUCTION,4)
-	set_trait(TRAIT_YIELD,2)
-	set_trait(TRAIT_POTENCY,8)
-	set_trait(TRAIT_BIOLUM,1)
-	set_trait(TRAIT_BIOLUM_COLOUR,"#64B8C9")
-	set_trait(TRAIT_PRODUCT_ICON,"mushroom8")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#64B8C9")
-	set_trait(TRAIT_PLANT_COLOUR,"#64B8C9")
-	set_trait(TRAIT_PLANT_ICON,"mushroom3")
+	SET_SEED_TRAIT(src, TRAIT_MATURATION,5)
+	SET_SEED_TRAIT(src, TRAIT_PRODUCTION,4)
+	SET_SEED_TRAIT(src, TRAIT_YIELD,2)
+	SET_SEED_TRAIT(src, TRAIT_POTENCY,8)
+	SET_SEED_TRAIT(src, TRAIT_BIOLUM,1)
+	SET_SEED_TRAIT(src, TRAIT_BIOLUM_COLOUR,"#64B8C9")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_ICON,"mushroom8")
+	SET_SEED_TRAIT(src, TRAIT_PRODUCT_COLOUR,"#64B8C9")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_COLOUR,"#64B8C9")
+	SET_SEED_TRAIT(src, TRAIT_PLANT_ICON,"mushroom3")
 
 /obj/item/seeds/ghostmushroomseed
 	seed_type = "ghostmushroom"

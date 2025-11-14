@@ -40,6 +40,3 @@
 
 /obj/item/storage/hearing_aid_case/white
 	starts_with = list(/obj/item/device/hearing_aid/white = 2)
-
-/obj/item/storage/hearing_aid_case/skrell
-	starts_with = list(/obj/item/device/hearing_aid/skrell = 2)

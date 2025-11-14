@@ -27,7 +27,7 @@
 #define MATERIAL_DIONA                      "biomass"
 #define MATERIAL_VAURCA                     "alien biomass"
 #define MATERIAL_TRITIUM                    "tritium"
-#define MATERIAL_HYDROGEN_METALLIC          "mhydrogen"
+#define MATERIAL_HYDROGEN_METALLIC          "metallic hydrogen"
 #define MATERIAL_ELEVATOR                   "elevatorium"
 #define MATERIAL_SHUTTLE                    "shuttle"
 #define MATERIAL_SHUTTLE_SKRELL             "skrell"
@@ -37,6 +37,7 @@
 #define MATERIAL_DEUTERIUM					"deuterium"
 #define MATERIAL_ALUMINIUM					"aluminium"
 #define MATERIAL_LEAD						"lead"
+#define MATERIAL_BORON						"boron"
 
 // Leathers and related.
 #define MATERIAL_RESIN                   "resin"

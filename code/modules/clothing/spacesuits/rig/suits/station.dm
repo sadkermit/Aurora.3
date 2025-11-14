@@ -115,6 +115,10 @@
 		/obj/item/rig_module/actuators
 		)
 
+/obj/item/rig/industrial/dequipped
+	cell_type = null
+	air_type = null
+
 /obj/item/rig/industrial/syndicate
 
 	helm_type = /obj/item/clothing/head/helmet/space/rig
@@ -141,6 +145,11 @@
 		/obj/item/rig_module/actuators,
 		/obj/item/rig_module/maneuvering_jets
 	)
+
+/obj/item/rig/industrial/himeo/dequipped
+	cell_type = null
+	air_type = null
+
 /obj/item/rig/eva
 	name = "EVA suit control module"
 	suit_type = "EVA hardsuit"

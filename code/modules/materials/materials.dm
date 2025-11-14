@@ -1208,3 +1208,12 @@
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 	is_fusion_fuel = TRUE
+
+/material/boron
+	name = MATERIAL_BORON
+	stack_type = /obj/item/stack/material/boron
+	icon_colour = "#bbbbbb"
+	stack_origin_tech = list(TECH_MATERIAL = 3)
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+	is_fusion_fuel = TRUE

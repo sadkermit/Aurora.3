@@ -77,8 +77,6 @@
 	new /obj/item/device/flashlight/heavy(src)
 	new /obj/item/grenade/chem_grenade/antifuel(src)
 	new /obj/item/clothing/gloves/yellow(src)
-	new /obj/item/clothing/gloves/yellow/specialu(src)
-	new /obj/item/clothing/gloves/yellow/specialt(src)
 
 	// Painters
 	new /obj/item/device/paint_sprayer(src)

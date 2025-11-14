@@ -92,8 +92,7 @@
  * Boron has very little affect on mammals, but is moderately toxic to arthopods and commonly used in insecticides. Hi Vaurca.
  */
 /singleton/reagent/boron/affect_blood(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if (alien == IS_VAURCA)
-		M.adjustToxLoss(2 * removed)
+	M.adjustToxLoss(2 * removed)
 
 /singleton/reagent/carbon
 	name = "Carbon"

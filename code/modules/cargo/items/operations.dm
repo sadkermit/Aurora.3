@@ -169,7 +169,7 @@
 	description = "A set of items to restock the janitors closet."
 	price = 2000
 	items = list(
-		/obj/structure/janitorialcart,
+		/obj/structure/cart/storage/janitorialcart,
 		/obj/structure/mopbucket,
 		/obj/item/mop,
 		/obj/item/storage/bag/trash,

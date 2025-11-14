@@ -32,6 +32,7 @@
 
 /datum/gear/ears/hearing_aid
 	display_name = "hearing aid selection"
+	description = "A selection of hearing aids. If you select a pair, you should pick a wristbound or clip-on radio to keep both ears free for the hearing aids."
 	path = /obj/item/device/hearing_aid
 	cost = 1
 

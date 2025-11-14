@@ -1,6 +1,6 @@
 /obj/structure/coatrack
 	name = "coat rack"
-	desc = "Rack that holds coats, or hats, if you're so inclined."
+	desc = "Rack that holds coats, or hats, if you're so inclined. Well, exactly one coat and one hat, at least."
 	icon = 'icons/obj/coatrack.dmi'
 	icon_state = "coatrack"
 	layer = ABOVE_HUMAN_LAYER

@@ -115,7 +115,11 @@
 		/obj/item/device/eftpos,
 		/obj/item/tape_roll,
 		/obj/item/device/geiger,
-		/obj/item/clothing/gloves/yellow
+		/obj/item/clothing/gloves/yellow,
+		/obj/item/export_scanner,
+		/obj/item/device/price_scanner,
+		/obj/item/device/cratescanner,
+		/obj/item/device/quikpay
 	)
 	content_overlays = TRUE
 

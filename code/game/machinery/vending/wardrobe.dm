@@ -5,6 +5,7 @@
 /obj/machinery/vending/wardrobe
 	name = "Drobe - PARENT DO NOT USE"
 	random_itemcount = FALSE
+	restock_items = TRUE
 
 /obj/machinery/vending/wardrobe/engi_wardrobe
 	name = "\improper EngiDrobe"
@@ -55,6 +56,7 @@
 		/obj/item/clothing/head/wool/heph = 4,
 		/obj/item/clothing/head/wool/zavod = 2,
 		/obj/item/clothing/head/wool/zavod/alt = 2,
+		/obj/item/clothing/accessory/storage/overalls/engineer = 4,
 		/obj/item/clothing/pants/highvis = 5,
 		/obj/item/clothing/pants/highvis_alt = 5,
 		/obj/item/clothing/pants/highvis_orange = 5,
@@ -128,6 +130,7 @@
 		/obj/item/clothing/head/wool/heph = 4,
 		/obj/item/clothing/head/wool/zavod = 2,
 		/obj/item/clothing/head/wool/zavod/alt = 2,
+		/obj/item/clothing/accessory/storage/overalls/engineer = 3,
 		/obj/item/clothing/shoes/sneakers/orange = 4,
 		/obj/item/clothing/shoes/workboots/dark = 4,
 		/obj/item/clothing/shoes/workboots/toeless = 2,
@@ -241,6 +244,7 @@
 		/obj/item/clothing/head/wool/pmc = 4,
 		/obj/item/clothing/head/wool/zavod = 4,
 		/obj/item/clothing/head/wool/zavod/alt = 4,
+		/obj/item/clothing/shoes/laceup = 2,
 		/obj/item/clothing/shoes/jackboots = 8,
 		/obj/item/clothing/shoes/jackboots/toeless = 6,
 		/obj/item/storage/backpack/security = 6,
@@ -456,6 +460,9 @@
 	product_ads = "Do you love soil? Then buy our clothes!;Get outfits to match your green thumb here!;Soil resistant! Or absorbant! Who cares!;Guaranteed-ish to make plants grow faster if you wear it!;Can you hear them speaking too?"
 	vend_reply = "Thank you for using HyDrobe!"
 	products = list(
+		/obj/item/clothing/under/rank/hydroponics = 4,
+		/obj/item/clothing/under/rank/hydroponics/idris = 2,
+		/obj/item/clothing/under/rank/hydroponics/orion = 2,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/hydro = 4,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/idris = 2,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/idris/alt = 2,
@@ -488,6 +495,8 @@
 		/obj/item/clothing/head/wool/nt = 3,
 		/obj/item/clothing/head/wool/orion = 3,
 		/obj/item/clothing/head/wool/orion/alt = 3,
+		/obj/item/clothing/accessory/apron/blue = 3,
+		/obj/item/clothing/accessory/overalls/blue = 3,
 		/obj/item/storage/backpack/hydroponics = 5,
 		/obj/item/storage/backpack/idris = 2,
 		/obj/item/storage/backpack/nt = 2,
@@ -513,6 +522,10 @@
 	products = list(
 		/obj/item/clothing/under/rank/chaplain = 3,
 		/obj/item/clothing/suit/nun = 3,
+		/obj/item/clothing/suit/storage/hooded/tajaran/priest = 2,
+		/obj/item/clothing/suit/storage/tajaran/messa = 3,
+		/obj/item/clothing/suit/storage/tajaran/matake = 2,
+		/obj/item/clothing/suit/storage/tajaran/azubarre = 2,
 		/obj/item/clothing/head/chaplain_hood = 3,
 		/obj/item/clothing/head/nun_hood = 3,
 		/obj/item/clothing/head/hijab = 3,
@@ -625,6 +638,9 @@
 		/obj/item/clothing/under/rank/medical/pmc/alt = 3,
 		/obj/item/clothing/under/rank/medical/pmc/nexus = 3,
 		/obj/item/clothing/under/rank/medical/zeng = 3,
+		/obj/item/clothing/under/rank/medical/paramedic = 2,
+		/obj/item/clothing/under/rank/medical/paramedic/zeng = 2,
+		/obj/item/clothing/under/rank/medical/paramedic/pmc = 2,
 		/obj/item/clothing/under/rank/medical/paramedic/pmc/alt = 2,
 		/obj/item/clothing/under/rank/medical/paramedic/pmc/epmc = 2,
 		/obj/item/clothing/under/rank/medical/paramedic/pmc/nexus = 2,
@@ -682,6 +698,7 @@
 		/obj/item/clothing/shoes/sneakers/medsci = 6,
 		/obj/item/clothing/shoes/sneakers/medsci/pmc = 4,
 		/obj/item/clothing/shoes/sneakers/medsci/zeng = 4,
+		/obj/item/clothing/shoes/jackboots = 4,
 		/obj/item/storage/backpack/medic = 8,
 		/obj/item/storage/backpack/emt = 4,
 		/obj/item/storage/backpack/psychiatrist = 2,
@@ -770,6 +787,9 @@
 		/obj/item/clothing/under/rank/hangar_technician = 3,
 		/obj/item/clothing/under/rank/hangar_technician/heph = 3,
 		/obj/item/clothing/under/rank/hangar_technician/orion = 3,
+		/obj/item/clothing/under/rank/miner = 4,
+		/obj/item/clothing/under/rank/miner/heph = 4,
+		/obj/item/clothing/under/rank/miner/orion = 4,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/cargo = 4,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/heph = 4,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/orion = 4,
@@ -785,12 +805,15 @@
 		/obj/item/clothing/pants/highvis_orange = 3,
 		/obj/item/clothing/pants/highvis_red = 3,
 		/obj/item/clothing/head/bandana/cargo = 3,
+		/obj/item/clothing/head/bandana/miner = 4,
 		/obj/item/clothing/head/beret/cargo = 3,
 		/obj/item/clothing/head/softcap/cargo = 3,
 		/obj/item/clothing/head/softcap/orion = 3,
 		/obj/item/clothing/head/wool/heph = 4,
 		/obj/item/clothing/head/wool/orion = 4,
+		/obj/item/clothing/head/hardhat/orange = 4,
 		/obj/item/clothing/accessory/poncho/roles/cargo = 4,
+		/obj/item/clothing/accessory/storage/overalls/mining = 4,
 		/obj/item/clothing/glasses/safety/goggles = 3,
 		/obj/item/clothing/gloves/black = 3,
 		/obj/item/clothing/gloves/yellow = 3,

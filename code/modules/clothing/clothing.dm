@@ -591,7 +591,6 @@
 	body_parts_covered = HEAD
 	slot_flags = SLOT_HEAD
 	w_class = WEIGHT_CLASS_SMALL
-	uv_intensity = 50 //Light emitted by this object or creature has limited interaction with diona
 
 	drop_sound = 'sound/items/drop/hat.ogg'
 	pickup_sound = 'sound/items/pickup/hat.ogg'

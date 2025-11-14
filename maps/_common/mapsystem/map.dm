@@ -119,7 +119,7 @@
 	/// A list of all our shuttles.
 	var/list/map_shuttles = list()
 	/// What is the default space sector for this map
-	var/default_sector = SECTOR_ROMANOVICH
+	var/default_sector = SECTOR_GENERIC
 
 	//event messages
 

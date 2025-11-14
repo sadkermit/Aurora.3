@@ -131,8 +131,6 @@
 		/obj/random/backpack = 0.7,
 		/obj/random/belt = 0.9,
 		/obj/random/booze = 1.1,
-		/obj/random/yoke/soda = 1.1,
-		/obj/random/yoke/energy = 1.1,
 		/obj/random/chameleon = 0.5,
 		/obj/random/colored_jumpsuit = 0.7,
 		/obj/random/contraband = 0.9,

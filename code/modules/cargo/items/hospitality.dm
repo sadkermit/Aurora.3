@@ -124,48 +124,6 @@
 	groupable = TRUE
 	spawn_amount = 1
 
-/singleton/cargo_item/producebox_adhomai
-	category = "hospitality"
-	name = "adhomian produce box"
-	supplier = "zharkov"
-	description = "A large box of random, leftover produce from Adhomai."
-	price = 45
-	items = list(
-		/obj/item/storage/box/large/produce/adhomai
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/producebox_moghes
-	category = "hospitality"
-	name = "moghresian produce box"
-	supplier = "hephaestus"
-	description = "A large box of random, leftover produce from Moghes."
-	price = 45
-	items = list(
-		/obj/item/storage/box/large/produce/moghes
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
-/singleton/cargo_item/producebox_nralakk
-	category = "hospitality"
-	name = "skrellian produce box"
-	supplier = "hephaestus"
-	description = "A large box of random, leftover produce from various Skrellian worlds."
-	price = 50
-	items = list(
-		/obj/item/storage/box/large/produce/nralakk
-	)
-	access = 0
-	container_type = "crate"
-	groupable = TRUE
-	spawn_amount = 1
-
 /singleton/cargo_item/spacespices
 	category = "hospitality"
 	name = "space spices (x2)"

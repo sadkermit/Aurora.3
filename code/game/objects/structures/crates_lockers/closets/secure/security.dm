@@ -104,9 +104,9 @@
 /obj/structure/closet/secure_closet/hos/fill()
 	..()
 	//Supply
-	new /obj/item/storage/box/flashbangs(src)
+	new /obj/item/storage/box/tactical/flashbangs(src)
 	new /obj/item/storage/box/ids(src)
-	new /obj/item/storage/box/stingers(src)
+	new /obj/item/storage/box/tactical/stingers(src)
 	//Appearance
 	if(prob(50))
 		new /obj/item/storage/backpack/security(src)
@@ -178,9 +178,9 @@
 /obj/structure/closet/secure_closet/warden/fill()
 	//Supply
 	new /obj/item/storage/box/ids(src)
-	new /obj/item/storage/box/flashbangs(src)
-	new /obj/item/storage/box/teargas(src)
-	new /obj/item/storage/box/stingers(src)
+	new /obj/item/storage/box/tactical/flashbangs(src)
+	new /obj/item/storage/box/tactical/teargas(src)
+	new /obj/item/storage/box/tactical/stingers(src)
 	//Appearance
 	if(prob(50))
 		new /obj/item/storage/backpack/security(src)

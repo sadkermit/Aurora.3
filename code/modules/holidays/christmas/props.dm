@@ -104,7 +104,7 @@
 	var/gift_type = pick(
 		/obj/item/storage/wallet,
 		/obj/item/storage/photo_album,
-		/obj/item/storage/box/snappops,
+		/obj/item/storage/box/unique/snappops,
 		/obj/item/storage/box/fancy/crayons,
 		/obj/item/storage/belt/champion,
 		/obj/item/soap/deluxe,
@@ -195,7 +195,7 @@
 		/obj/random/wizard_dressup,
 		/obj/item/storage/wallet,
 		/obj/item/storage/photo_album,
-		/obj/item/storage/box/snappops,
+		/obj/item/storage/box/unique/snappops,
 		/obj/item/storage/box/fancy/crayons,
 		/obj/item/soap/deluxe,
 		/obj/item/pen/invisible,
@@ -280,7 +280,7 @@
 		/obj/item/device/paicard,
 		/obj/item/clothing/accessory/horrible,
 		/obj/item/clothing/shoes/heels,
-		/obj/item/storage/box/donkpockets,
+		/obj/item/storage/box/unique/donkpockets,
 		/obj/item/reagent_containers/glass/beaker/teapot,
 		/obj/item/device/flashlight/lantern,
 		/obj/item/clothing/mask/balaclava,
@@ -348,7 +348,7 @@
 		/mob/living/simple_animal/parrot,
 		/mob/living/simple_animal/hostile/commanded/dog/pug,
 		/obj/item/target/alien,
-		/obj/item/storage/box/candy)
+		/obj/item/storage/box/large/candy)
 
 	return picked_gift_type
 

@@ -304,7 +304,7 @@ STOCK_ITEM_COMMON(rollerbed, 2.2)
 	new /obj/item/roller(L)
 
 STOCK_ITEM_COMMON(smokebombs, 1.1)
-	new /obj/item/storage/box/smokebombs(L)
+	new /obj/item/storage/box/tactical/smokebombs(L)
 
 STOCK_ITEM_COMMON(jar, 2)
 	new /obj/item/glass_jar(L)
@@ -425,10 +425,10 @@ STOCK_ITEM_COMMON(snacks, 4)
 			L = get_turf(pick(CS.tables))
 
 	var/list/snacks = list(
-		/obj/item/storage/box/donkpockets = 10,
-		/obj/item/storage/box/sinpockets = 5,
+		/obj/item/storage/box/unique/donkpockets = 10,
+		/obj/item/storage/box/unique/donkpockets/sinpockets = 5,
 		/obj/item/storage/box/snack = 10,
-		/obj/item/storage/box/produce = 8
+		/obj/item/storage/box/large/produce = 8
 	)
 
 	var/type = pickweight(snacks)
@@ -499,7 +499,7 @@ STOCK_ITEM_COMMON(gasmask, 2)
 	new type(L)
 
 STOCK_ITEM_COMMON(mining, 2)
-	var/list/mine_items = list(/obj/item/shovel, /obj/item/device/flashlight/lantern, /obj/item/mining_scanner, /obj/item/storage/box/excavation)
+	var/list/mine_items = list(/obj/item/shovel, /obj/item/device/flashlight/lantern, /obj/item/mining_scanner, /obj/item/storage/box/unique/excavation)
 	for(var/i in 1 to rand(1, 2))
 		var/to_spawn = pick(mine_items)
 		new to_spawn(L)

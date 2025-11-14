@@ -1,3 +1,17 @@
+/singleton/cargo_item/monkeycubebox
+	category = "science"
+	name = "monkey cube box"
+	supplier = "nanotrasen"
+	description = "Drymate brand monkey cubes. Just add water!"
+	price = 250
+	items = list(
+		/obj/item/storage/box/monkeycubes
+	)
+	access = 0
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
 /singleton/cargo_item/hazmathood
 	category = "science"
 	name = "hazmat hood"

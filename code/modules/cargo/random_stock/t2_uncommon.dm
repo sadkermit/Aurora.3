@@ -43,13 +43,13 @@ STOCK_ITEM_UNCOMMON(implants, 1)
 	if(prob(50))
 		new /obj/item/storage/box/cdeathalarm_kit(L)
 	else
-		new /obj/item/storage/box/trackimp(L)
+		new /obj/item/storage/box/tactical/trackimp(L)
 
 STOCK_ITEM_UNCOMMON(flashbang, 0.75)
-	new /obj/item/storage/box/flashbangs(L)
+	new /obj/item/storage/box/tactical/flashbangs(L)
 
 STOCK_ITEM_UNCOMMON(stinger, 0.75)
-	new /obj/item/storage/box/stingers(L)
+	new /obj/item/storage/box/tactical/stingers(L)
 
 STOCK_ITEM_UNCOMMON(arrest, 1)
 	if(prob(60))
@@ -316,9 +316,9 @@ STOCK_ITEM_UNCOMMON(wristbound, 0.5)
 
 STOCK_ITEM_UNCOMMON(pops, 0.5)
 	if(prob(85))
-		new /obj/item/storage/box/snappops(L)
+		new /obj/item/storage/box/unique/snappops(L)
 	else if (prob(25))
-		new /obj/item/storage/box/snappops/syndi(L)
+		new /obj/item/storage/box/unique/snappops/syndi(L)
 	else
 		new /obj/item/storage/box/partypopper(L)
 

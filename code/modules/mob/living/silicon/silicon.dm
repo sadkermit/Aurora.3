@@ -51,7 +51,6 @@
 	var/can_hear_hivenet = TRUE
 
 	// Misc
-	uv_intensity = 175 //Lights cast by robots have reduced effect on diona
 	mob_thinks = FALSE
 
 	var/can_speak_basic = TRUE

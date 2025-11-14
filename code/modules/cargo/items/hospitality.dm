@@ -124,9 +124,51 @@
 	groupable = TRUE
 	spawn_amount = 1
 
+/singleton/cargo_item/producebox_adhomai
+	category = "hospitality"
+	name = "adhomian produce box"
+	supplier = "zharkov"
+	description = "A large box of random, leftover produce from Adhomai."
+	price = 45
+	items = list(
+		/obj/item/storage/box/large/produce/adhomai
+	)
+	access = 0
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
+/singleton/cargo_item/producebox_moghes
+	category = "hospitality"
+	name = "moghresian produce box"
+	supplier = "hephaestus"
+	description = "A large box of random, leftover produce from Moghes."
+	price = 45
+	items = list(
+		/obj/item/storage/box/large/produce/moghes
+	)
+	access = 0
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
+/singleton/cargo_item/producebox_nralakk
+	category = "hospitality"
+	name = "skrellian produce box"
+	supplier = "hephaestus"
+	description = "A large box of random, leftover produce from various Skrellian worlds."
+	price = 50
+	items = list(
+		/obj/item/storage/box/large/produce/nralakk
+	)
+	access = 0
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
 /singleton/cargo_item/spacespices
 	category = "hospitality"
-	name = "space spices"
+	name = "space spices (x2)"
 	supplier = "getmore"
 	description = "An exotic blend of spices for cooking. It must flow."
 	price = 15
@@ -136,7 +178,7 @@
 	access = 0
 	container_type = "freezer"
 	groupable = TRUE
-	spawn_amount = 1
+	spawn_amount = 2
 
 /singleton/cargo_item/sliced_bread
 	category = "hospitality"
@@ -482,6 +524,20 @@
 	price = 3.50
 	items = list(
 		/obj/item/reagent_containers/food/drinks/carton/cream
+	)
+	access = 0
+	container_type = "freezer"
+	groupable = TRUE
+	spawn_amount = 1
+
+/singleton/cargo_item/cream_cheese
+	category = "hospitality"
+	name = "cream cheese container"
+	supplier = "getmore"
+	description = "A single container of cheese, it seems to be of the creamed variety."
+	price = 4.50
+	items = list(
+		/obj/item/reagent_containers/food/condiment/cream_cheese
 	)
 	access = 0
 	container_type = "freezer"

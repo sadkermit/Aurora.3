@@ -65,9 +65,6 @@
 	for(var/i = 0 to 2)
 		new /obj/item/reagent_containers/food/condiment/flour(src)
 		new /obj/item/reagent_containers/food/condiment/rice(src)
-	new /obj/item/storage/box/large/produce/adhomai(src)
-	new /obj/item/storage/box/large/produce/moghes(src)
-	new /obj/item/storage/box/large/produce/nralakk(src)
 
 //
 // Freezers

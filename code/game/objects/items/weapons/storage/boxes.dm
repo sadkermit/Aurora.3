@@ -224,10 +224,7 @@
 	illustration = "latex"
 	max_storage_space = DEFAULT_BOX_STORAGE
 	starts_with = list(/obj/item/clothing/gloves/latex = 2,
-						/obj/item/clothing/gloves/latex/nitrile = 2,
-						/obj/item/clothing/gloves/latex/nitrile/unathi = 1,
-						/obj/item/clothing/gloves/latex/nitrile/tajara = 1,
-						/obj/item/clothing/gloves/latex/nitrile/vaurca = 1)
+						/obj/item/clothing/gloves/latex/nitrile = 2)
 
 /obj/item/storage/box/masks
 	name = "box of surgical masks"
@@ -564,11 +561,7 @@
 		/obj/item/clothing/gloves/janitor
 	)
 	starts_with = list(
-		/obj/item/clothing/gloves/janitor = 1,
-		/obj/item/clothing/gloves/janitor/tajara = 1,
-		/obj/item/clothing/gloves/janitor/unathi = 1,
-		/obj/item/clothing/gloves/janitor/vaurca = 1
-	)
+		/obj/item/clothing/gloves/janitor = 1)
 
 /obj/item/storage/box/unique //unique sprite/properties
 	name = "unique box"
@@ -576,35 +569,6 @@
 	color = COLOR_WHITE
 	illustration = null
 	chewable = FALSE
-
-/obj/item/storage/box/unique/monkeycubes
-	name = "monkey cube box"
-	desc = "Drymate brand monkey cubes. Just add water!"
-	desc_extended = "The manufacture of a cubed animal produces subjects that are similar but have marked differences compared to their ordinary cousins. Higher brain functions are all but destroyed \
-	and the life expectancy of the cubed animal is greatly reduced, with most expiring only a few days after introduction with water."
-	icon_state = "monkeycubebox"
-	can_hold = list(/obj/item/reagent_containers/food/snacks/monkeycube)
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped = 5)
-
-/obj/item/storage/box/unique/monkeycubes/farwacubes
-	name = "farwa cube box"
-	desc = "Drymate brand farwa cubes, shipped from Adhomai. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/farwacube = 5)
-
-/obj/item/storage/box/unique/monkeycubes/stokcubes
-	name = "stok cube box"
-	desc = "Drymate brand stok cubes, shipped from Moghes. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/stokcube = 5)
-
-/obj/item/storage/box/unique/monkeycubes/neaeracubes
-	name = "neaera cube box"
-	desc = "Drymate brand neaera cubes, shipped from Nralakk IV. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube = 5)
-
-/obj/item/storage/box/unique/monkeycubes/vkrexicubes
-	name = "vkrexi cube box"
-	desc = "Drymate brand vkrexi cubes. Just add water!"
-	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/vkrexicube = 5)
 
 /obj/item/storage/box/unique/sharps
 	name = "sharps disposal box"
@@ -838,9 +802,7 @@
 
 /obj/item/storage/box/snack/fill()
 	var/list/snacks = list(
-			/obj/item/reagent_containers/food/snacks/koisbar_clean,
 			/obj/item/reagent_containers/food/snacks/candy,
-			/obj/item/reagent_containers/food/snacks/candy/koko,
 			/obj/item/reagent_containers/food/snacks/candy_corn,
 			/obj/item/reagent_containers/food/snacks/chips,
 			/obj/item/reagent_containers/food/snacks/chocolatebar,
@@ -855,17 +817,14 @@
 			/obj/item/reagent_containers/food/snacks/poppypretzel,
 			/obj/item/reagent_containers/food/snacks/cracker,
 			/obj/item/reagent_containers/food/snacks/liquidfood,
-			/obj/item/reagent_containers/food/snacks/skrellsnacks,
 			/obj/item/reagent_containers/food/snacks/tastybread,
 			/obj/item/reagent_containers/food/snacks/meatsnack,
 			/obj/item/reagent_containers/food/snacks/maps,
 			/obj/item/reagent_containers/food/snacks/nathisnack,
-			/obj/item/reagent_containers/food/snacks/adhomian_can,
 			/obj/item/reagent_containers/food/snacks/tuna,
 			/obj/item/storage/box/fancy/gum,
 			/obj/item/storage/box/fancy/cookiesnack,
-			/obj/item/storage/box/fancy/admints,
-			/obj/item/storage/box/fancy/vkrexitaffy
+			/obj/item/storage/box/fancy/admints
 	)
 	for (var/i = 0,i<7,i++)
 		var/type = pick(snacks)
@@ -895,11 +854,6 @@
 	illustration = "inhalers"
 	starts_with = list(/obj/item/reagent_containers/inhaler = 8)
 
-/obj/item/storage/box/clams
-	name = "box of Ras'val clam"
-	desc = "A box filled with clams from the Ras'val sea, imported by Njadra'Akhar Enterprises."
-	starts_with = list(/obj/item/reagent_containers/food/snacks/clam = 5)
-
 /obj/item/storage/box/large/produce
 	name = "produce box"
 	desc = "A large box of random, leftover produce."
@@ -907,16 +861,6 @@
 	illustration = "fruit"
 	starts_with = list(/obj/random_produce/box = 15)
 	make_exact_fit = TRUE
-
-/obj/item/storage/box/large/produce/adhomai
-	name = "adhomian produce box"
-	desc = "A large box of produce originating from the frigid world of Adhomai."
-	starts_with = list(/obj/random_produce/box/adhomai = 15)
-
-/obj/item/storage/box/large/produce/nralakk
-	name = "nralakk produce box"
-	desc = "A large box of produce originating from the Nralakk Federation."
-	starts_with = list(/obj/random_produce/box/nralakk = 15)
 
 /obj/item/storage/box/large/produce/moghes
 	name = "moghresian produce box"
@@ -995,53 +939,6 @@
 	illustration = "paper"
 	starts_with = list(/obj/item/clothing/accessory/badge/tcaf_papers = 6)
 
-/obj/item/storage/box/hadii_card
-	name = "honorary party member card box"
-	desc = "A box full of Hadiist party member cards."
-	illustration = "paper"
-	starts_with = list(/obj/item/clothing/accessory/badge/hadii_card = 6)
-
-/obj/item/storage/box/hadii_manifesto
-	name = "hadiist manifesto box"
-	desc = "A box filled with copies of the Hadiist Manifesto"
-	illustration = "paper"
-	starts_with = list(/obj/item/device/versebook/pra = 6)
-
-/obj/item/storage/box/dpra_manifesto
-	name = "al'mariist manifesto box"
-	desc = "A box filled with copies of 'In Defense of Al'mari's Legacy'."
-	illustration = "paper"
-	starts_with = list(/obj/item/device/versebook/dpra = 6)
-
-/obj/item/storage/box/nka_manifesto
-	name = "royalist manifesto card box"
-	desc = "A box filled with copies of 'The New Kingdom'."
-	illustration = "paper"
-	starts_with = list(/obj/item/device/versebook/nka = 6)
-
-/obj/item/storage/box/suns_flags
-	name = "s'rand'marr Worship flag box"
-	desc = "A box filled with flags of the S'rend'marr faith."
-	illustration = "flags"
-	starts_with = list(
-		/obj/item/flag/srendarr = 1,
-		/obj/item/flag/messa = 1
-	)
-
-/obj/item/storage/box/matake_flags
-	name = "ma'ta'ke pantheon flag box"
-	desc = "A box filled to the brim with the various flags of the Ma'ta'ke Pantheon."
-	illustration = "flags"
-	starts_with = list(
-		/obj/item/flag/matake = 1,
-		/obj/item/flag/marryam = 1,
-		/obj/item/flag/rredouane = 1,
-		/obj/item/flag/shumaila = 1,
-		/obj/item/flag/kraszar = 1,
-		/obj/item/flag/dhrarmela = 1,
-		/obj/item/flag/azubarre = 1
-	)
-
 /// Parent object of various national flag boxes. Original intention for random cargo spawn.
 /obj/item/storage/box/large/flags
 	name = "national flag box - PARENT ITEM DO NOT USE"
@@ -1051,271 +948,6 @@
 	can_hold = list(
 		/obj/item/flag
 	)
-
-/obj/item/storage/box/large/flags/sol
-	name = "Solarian Alliance flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/sol = 6,
-		/obj/item/flag/sol/l = 4,
-		/obj/item/flag/venus = 2,
-		/obj/item/flag/venus/l = 1,
-		/obj/item/flag/luna = 2,
-		/obj/item/flag/luna/l = 1,
-		/obj/item/flag/callisto = 2,
-		/obj/item/flag/callisto/l = 1,
-		/obj/item/flag/mars = 2,
-		/obj/item/flag/mars/l = 1,
-		/obj/item/flag/pluto = 2,
-		/obj/item/flag/pluto/l = 1,
-		/obj/item/flag/visegrad = 2,
-		/obj/item/flag/visegrad/l = 1,
-		/obj/item/flag/nhp = 2,
-		/obj/item/flag/nhp/l = 1,
-		/obj/item/flag/silversun = 2,
-		/obj/item/flag/silversun/l = 1,
-		/obj/item/flag/sancolette = 2,
-		/obj/item/flag/sancolette/l = 1,
-		/obj/item/flag/nsrm = 2,
-		/obj/item/flag/nsrm/l = 1,
-		/obj/item/flag/ssrm = 2,
-		/obj/item/flag/ssrm/l = 1
-	)
-
-/obj/item/storage/box/large/flags/biesel
-	name = "Republic of Biesel flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/biesel = 6,
-		/obj/item/flag/biesel/l = 4,
-		/obj/item/flag/valkyrie = 2,
-		/obj/item/flag/valkyrie/l = 1,
-		/obj/item/flag/portantillia = 2,
-		/obj/item/flag/portantillia/l = 1,
-		/obj/item/flag/mictlan = 2,
-		/obj/item/flag/mictlan/l = 1,
-		/obj/item/flag/newgibson = 2,
-		/obj/item/flag/newgibson/l = 1
-	)
-
-/obj/item/storage/box/large/flags/coc
-	name = "Coalition of Colonies flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/coalition = 6,
-		/obj/item/flag/coalition/l = 4,
-		/obj/item/flag/xanu = 2,
-		/obj/item/flag/xanu/l = 1,
-		/obj/item/flag/gadpathur = 2,
-		/obj/item/flag/gadpathur/l = 1,
-		/obj/item/flag/vysoka = 2,
-		/obj/item/flag/vysoka/l = 1,
-		/obj/item/flag/himeo = 2,
-		/obj/item/flag/himeo/l = 1,
-		/obj/item/flag/konyang = 2,
-		/obj/item/flag/konyang/l = 1,
-		/obj/item/flag/assunzione = 2,
-		/obj/item/flag/assunzione/l = 1,
-		/obj/item/flag/burzsia = 2,
-		/obj/item/flag/burzsia/l = 1,
-		/obj/item/flag/scarab = 3,
-		/obj/item/flag/scarab/l = 2
-	)
-
-/obj/item/storage/box/large/flags/galataea
-	name = "Technocracy of Galatea flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/galatea_government = 4,
-		/obj/item/flag/galatea_government/l = 3,
-		/obj/item/flag/galatea = 2,
-		/obj/item/flag/galatea/l = 1,
-		/obj/item/flag/tsukuyomi = 2,
-		/obj/item/flag/tsukuyomi/l = 1,
-		/obj/item/flag/svarog = 2,
-		/obj/item/flag/svarog/l = 1,
-		/obj/item/flag/empyrean = 2,
-		/obj/item/flag/empyrean/l = 1
-	)
-
-/obj/item/storage/box/large/flags/dominia
-	name = "Empire of Dominia flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/dominia = 8,
-		/obj/item/flag/dominia/l = 6,
-		/obj/item/flag/strelitz = 4,
-		/obj/item/flag/volvalaad = 4,
-		/obj/item/flag/caladius = 2,
-		/obj/item/flag/zhao = 4,
-		/obj/item/flag/zhurong = 3,
-		/obj/item/flag/zhurong/l = 2,
-		/obj/item/flag/imperial_frontier = 3,
-		/obj/item/flag/imperial_frontier/l = 2
-	)
-
-/obj/item/storage/box/large/flags/elyra
-	name = "Serene Republic of Elyra flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/elyra = 6,
-		/obj/item/flag/elyra/l = 4,
-		/obj/item/flag/persepolis = 2,
-		/obj/item/flag/persepolis/l = 1,
-		/obj/item/flag/damascus = 2,
-		/obj/item/flag/damascus/l = 1,
-		/obj/item/flag/medina = 2,
-		/obj/item/flag/medina/l = 1,
-		/obj/item/flag/newsuez = 2,
-		/obj/item/flag/newsuez/l = 1,
-		/obj/item/flag/aemaq = 2,
-		/obj/item/flag/aemaq/l = 1
-	)
-
-/obj/item/storage/box/large/flags/diona
-	name = "Diona flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/consortium = 6,
-		/obj/item/flag/consortium/l = 4,
-		/obj/item/flag/ekane = 2,
-		/obj/item/flag/ekane/l = 1,
-		/obj/item/flag/narrows = 2,
-		/obj/item/flag/narrows/l = 1
-	)
-
-/obj/item/storage/box/large/flags/unathi
-	name = "Unathi flag box"
-	desc = "A box filled to the brim with various national flags."
-	starts_with = list(
-		/obj/item/flag/hegemony = 6,
-		/obj/item/flag/hegemony/l = 4,
-		/obj/item/flag/ouerea/old = 4,
-		/obj/item/flag/ouerea/old/l = 3,
-		/obj/item/flag/fishingleague = 2
-	)
-
-/obj/item/storage/box/large/flags/skrell
-	name = "Skrell flag box"
-	desc = "A box filled to the brim with various waterproof national flags."
-	starts_with = list(
-		/obj/item/flag/nralakk = 8,
-		/obj/item/flag/nralakk/l = 6,
-		/obj/item/flag/traverse = 2,
-		/obj/item/flag/traverse/l = 1
-	)
-
-/obj/item/storage/box/large/flags/tajara
-	name = "Tajaran collected flag box"
-	desc = "A box filled to the brim with various national flags. Whoever chose the selection for this one was either brave or stupid or both."
-	starts_with = list(
-		/obj/item/flag/dpra = 4,
-		/obj/item/flag/dpra/l = 3,
-		/obj/item/flag/pra = 4,
-		/obj/item/flag/pra/l = 3,
-		/obj/item/flag/nka = 4,
-		/obj/item/flag/nka/l = 3,
-		/obj/item/flag/ftc = 4,
-		/obj/item/flag/ftc/l = 3
-	)
-
-/obj/item/storage/box/large/flags/vaurca
-	name = "Vaurca flag box"
-	desc = "A box filled to the brim with various hive flags."
-	starts_with = list(
-		/obj/item/flag/sedantis = 4,
-		/obj/item/flag/sedantis/l = 3,
-		/obj/item/flag/zora = 4,
-		/obj/item/flag/zora/l = 3,
-		/obj/item/flag/klax = 4,
-		/obj/item/flag/klax/l = 3,
-		/obj/item/flag/cthur = 4,
-		/obj/item/flag/cthur/l = 3
-	)
-
-/obj/item/storage/box/large/flags/goldendeep
-	name = "Golden Deep flag box"
-	desc = "A box filled to the brim with various national flags. It's made from a bit sturdier board than most boxes."
-	starts_with = list(
-		/obj/item/flag/goldendeep = 8,
-		/obj/item/flag/goldendeep/l = 6,
-		// GD might not have a lot of flags but a single gold ingot included to broadcast their flagrant absurd wealth is kind of funny.
-		/obj/item/stack/material/gold
-	)
-
-/obj/item/storage/box/large/flags/corporate
-	name = "Corporate flag box"
-	desc = "A box filled to the brim with various corporate flags, flying in service to the almighty credit."
-	starts_with = list(
-		/obj/item/flag/scc = 4,
-		/obj/item/flag/scc/l = 3,
-		/obj/item/flag/heph = 4,
-		/obj/item/flag/heph/l = 3,
-		/obj/item/flag/idris = 4,
-		/obj/item/flag/idris/l = 3,
-		/obj/item/flag/heph = 4,
-		/obj/item/flag/heph/l = 3,
-		/obj/item/flag/nanotrasen = 4,
-		/obj/item/flag/nanotrasen/l = 3,
-		/obj/item/flag/orion_express = 4,
-		/obj/item/flag/orion_express/l = 3,
-		/obj/item/flag/pmcg = 4,
-		/obj/item/flag/pmcg/l = 3,
-		/obj/item/flag/zavodskoi = 4,
-		/obj/item/flag/zavodskoi/l = 3,
-		/obj/item/flag/zenghu = 4,
-		/obj/item/flag/zenghu/l = 3,
-		/obj/item/flag/eridani = 4,
-		/obj/item/flag/eridani/l = 3
-	)
-
-/// Random misc flags- either non-national or no longer in use or controversial or straight-up contraband. Randomized contents from Initialize().
-/obj/item/storage/box/large/flags/misc
-	name = "miscellaneous flag box"
-	desc = "A box filled to the brim with various disorganized flags that might provoke a variety of reactions."
-
-/**
- * We don't want this box to always have every possible misc flag every time it spawns. Mix it up each time.
- */
-
-/obj/item/storage/box/large/flags/misc/fill()
-	..()
-	var/list/flag_options = list(
-		/obj/item/flag/red_coalition = 1,
-		/obj/item/flag/trinaryperfection = 2,
-		/obj/item/flag/trinaryperfection/l = 1,
-		/obj/item/flag/traditionalist = rand(1,2),
-		/obj/item/flag/traditionalist/l = 1,
-		/obj/item/flag/exclusionist = 1,
-		/obj/item/flag/glaorr = 1,
-		/obj/item/flag/glaorr/l = 1,
-		/obj/item/flag/ouerea = rand(1,2),
-		/obj/item/flag/ouerea/l = 1,
-		/obj/item/flag/sol/old = rand(1,2),
-		/obj/item/flag/sol/old/l = 1,
-		/obj/item/flag/old_visegrad = rand(1,2),
-		/obj/item/flag/old_visegrad/l = 1,
-		/obj/item/flag/fisanduh = rand(1,2),
-		/obj/item/flag/fisanduh/l = 1,
-		/obj/item/flag/hiskyn = rand(1,2),
-		/obj/item/flag/tarwa = rand(1,2),
-		/obj/item/flag/izharshan = rand(1,2)
-		)
-	for(var/i in 1 to rand(5,8))
-		var/flag = pickweight(flag_options)
-		new flag(src)
-
-/obj/item/storage/box/dominia_honor
-	name = "dominian honor codex box"
-	desc = "A box full of dominian honor codices."
-	illustration = "paper"
-	starts_with = list(/obj/item/book/manual/dominia_honor = 6)
-
-/obj/item/storage/box/tcaf_pamphlet
-	name = "tau ceti armed forces pamphlets box"
-	desc = "A box full of tau ceti armed forces pamphlets."
-	illustration = "paper"
-	starts_with = list(/obj/item/book/manual/tcaf_pamphlet = 6)
 
 /obj/item/storage/box/fountainpens
 	name = "box of fountain pens"
@@ -1598,18 +1230,6 @@
 		/obj/item/reagent_containers/food/snacks/grown/konyang_tea/jaekseol = 7
 	)
 
-/obj/item/storage/box/telefreedom_kit
-	name = "telefreedom kit"
-	desc = "A box containing a telefreedom full kit."
-	starts_with = list(/obj/item/implant/telefreedom = 4,
-					/obj/item/implanter = 1,
-					//Telepad construction items
-					/obj/item/circuitboard/telesci_pad = 1,
-					/obj/item/bluespace_crystal/artificial = 2,
-					/obj/item/stock_parts/capacitor = 1,
-					/obj/item/stock_parts/console_screen = 1,
-					)
-
 /obj/item/storage/box/telefreedom_kit/fill()
 	. = ..()
 	new /obj/item/stack/cable_coil(src, 6)
@@ -1671,30 +1291,6 @@
 		/obj/item/reagent_containers/food/drinks/bottle/small/beer = 6
 	)
 
-/obj/item/storage/box/skrellbeerdyn
-	name = "pack of dyn beer"
-	desc = "A box containing a six pack of dyn beer."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/skrellbeerdyn = 6
-	)
-
-/obj/item/storage/box/xuizijuice
-	name = "pack of xuizi juice"
-	desc = "A box containing a six pack of xuizi juice."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/xuizijuice = 6
-	)
-
-/obj/item/storage/box/khlibnyz
-	name = "pack of khlibnyz"
-	desc = "A box containing a six pack of khlibnyz."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/khlibnyz = 6
-	)
-
 /obj/item/storage/box/cola
 	name = "pack of cola"
 	desc = "A box containing a six pack of cola."
@@ -1717,22 +1313,6 @@
 	illustration = "soda"
 	starts_with = list(
 		/obj/item/reagent_containers/food/drinks/bottle/space_up = 6
-	)
-
-/obj/item/storage/box/hrozamal_soda
-	name = "pack of hrozamal soda"
-	desc = "A box containing a six pack of hrozamal soda."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/hrozamal_soda = 6
-	)
-
-/obj/item/storage/box/midynhr_water
-	name = "pack of midynhr water"
-	desc = "A box containing a six pack of midynhr water."
-	illustration = "soda"
-	starts_with = list(
-		/obj/item/reagent_containers/food/drinks/bottle/small/midynhr_water = 6
 	)
 
 /obj/item/storage/box/burukutu

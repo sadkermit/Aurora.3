@@ -62,7 +62,7 @@
 	siemens_coefficient = 0.35
 	species_restricted = list(BODYTYPE_HUMAN)
 	icon_supported_species_tags = list("ipc", "skr", "taj")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 
 	light_range = 6
@@ -87,9 +87,9 @@
 	)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.35
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN)
 	icon_supported_species_tags = list("ipc", "skr", "taj")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/head/helmet/space/void/coalition/xanu
 	name = "\improper Xanan eagle voidsuit helmet"
@@ -125,7 +125,7 @@
 	item_state = "himeo_voidsuit"
 
 	species_restricted = list(BODYTYPE_HUMAN)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	icon_supported_species_tags = list("taj")
 
 /obj/item/clothing/head/helmet/space/void/coalition/himeo
@@ -137,7 +137,7 @@
 	icon_state = "himeo_void_helmet"
 	item_state = "himeo_void_helmet"
 
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	icon_supported_species_tags = list("taj")
 	light_range = 6
 	light_color = "#ffce01"
@@ -275,11 +275,7 @@
 	)
 	siemens_coefficient = 0.35
 	species_restricted = list(BODYTYPE_HUMAN)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
-
-/obj/item/clothing/head/helmet/space/void/lancer/unathi
-	desc = "A sleek helmet with a bright yellow visor, expertly made in and colored in the iconic branding of Ceres' Lance. This one is fitted to Unathi."
-	refit_initialize = BODYTYPE_UNATHI
+	refittable_species = list(BODYTYPE_HUMAN)
 
 /obj/item/clothing/suit/space/void/lancer
 	name = "lancer voidsuit"
@@ -303,11 +299,7 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.35
 	species_restricted = list(BODYTYPE_HUMAN)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
-
-/obj/item/clothing/suit/space/void/lancer/unathi
-	desc = "A bulky void suit with heavy plating. Looks to be colored in the branding of Ceres' Lance. This one is fitted to Unathi."
-	refit_initialize = BODYTYPE_UNATHI
+	refittable_species = list(BODYTYPE_HUMAN)
 
 //Einstein Engines espionage voidsuit
 /obj/item/clothing/head/helmet/space/void/einstein
@@ -334,7 +326,7 @@
 	light_color = "#7ffbf7"
 	desc_extended = "An easily recognized Einstein Engines-made PMC voidsuit piece. It is a telltale mark of corporate espionage and more often than not ends up buried with its user."
 	icon_supported_species_tags = list("skr", "ipc")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/suit/space/void/einstein
 	name = "banshee infiltration suit"
@@ -359,7 +351,7 @@
 	species_restricted = list(BODYTYPE_HUMAN)
 	desc_extended = "An easily recognized Einstein Engines-made PMC voidsuit piece. It is a telltale mark of corporate espionage and more often than not ends up buried with its user."
 	icon_supported_species_tags = list("skr", "ipc")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 //Zeng-Hu Pharmaceuticals espionage voidsuit
 /obj/item/clothing/head/helmet/space/void/zenghu
@@ -386,7 +378,7 @@
 	light_color = "#7ffbf7"
 	desc_extended = "An easily recognized Zeng-Hu Pharmaceuticals biohazard control suit helmet. Its bug-eyed goggle visor design is unique among its class, alongside cutting-edge radiation protection."
 	icon_supported_species_tags = list("skr", "ipc")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_IPC)
+	refittable_species = list(BODYTYPE_HUMAN , BODYTYPE_IPC)
 
 /obj/item/clothing/suit/space/void/zenghu
 	name = "dragon biohazard control suit"
@@ -408,10 +400,10 @@
 	)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.35
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN )
 	desc_extended = "An easily recognized Zeng-Hu Pharmaceuticals biohazard control suit. It is relatively fragile but has very apparent radiation shielding. Most often seen in the hands of post-disaster cleanup teams and private military contractors."
 	icon_supported_species_tags = list("skr", "ipc")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL, BODYTYPE_IPC)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 //Hephaestus Industries espionage voidsuit
 /obj/item/clothing/head/helmet/space/void/hephaestus
@@ -438,7 +430,7 @@
 	light_color = "#ffce01"
 	desc_extended = "An easily recognized Hephaestus terraforming suit helmet. Its low, protruding brow and heavy plating is useful in the event you happen to be cutting down things. Mostly trees. Hopefully trees."
 	icon_supported_species_tags = list("una")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
+	refittable_species = list(BODYTYPE_HUMAN)
 
 /obj/item/clothing/suit/space/void/hephaestus
 	name = "caiman drop suit"
@@ -463,7 +455,7 @@
 	species_restricted = list(BODYTYPE_HUMAN)
 	desc_extended = "An easily recognized Hephaestus terraforming suit. Used often on jungle worlds to handle local wildlife and safely deforest areas in hostile environments. It found recent popularity due to its combat effectiveness that resulted in its proliferation in the hands of Hephaestus private military."
 	icon_supported_species_tags = list("una")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
+	refittable_species = list(BODYTYPE_HUMAN)
 
 //Zavodskoi Interstellar espionage voidsuit
 /obj/item/clothing/head/helmet/space/void/zavodskoi
@@ -537,7 +529,7 @@
 	light_overlay = "freelancer_light"
 	light_range = 6
 	light_color = "#7ffbf7"
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/suit/space/void/freelancer
 	name = "armored voidsuit"
@@ -560,8 +552,8 @@
 	)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.35
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_TAJARA, BODYTYPE_IPC, BODYTYPE_UNATHI, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/head/helmet/space/void/dominia
 	name = "dominian prejoroub combat helmet"
@@ -581,10 +573,10 @@
 		RAD = ARMOR_RAD_SMALL
 	)
 	siemens_coefficient = 0.35
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
+	species_restricted = list(BODYTYPE_HUMAN)
 	light_range = 6
 	icon_supported_species_tags = list("una")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
+	refittable_species = list(BODYTYPE_HUMAN)
 
 /obj/item/clothing/head/helmet/space/void/dominia/voidsman
 	name = "dominian voidsman helmet"
@@ -617,7 +609,7 @@
 	siemens_coefficient = 0.35
 	species_restricted = list(BODYTYPE_HUMAN)
 	icon_supported_species_tags = list("una")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_UNATHI)
+	refittable_species = list(BODYTYPE_HUMAN)
 
 /obj/item/clothing/suit/space/void/dominia/voidsman
 	name = "dominian voidsman suit"
@@ -826,7 +818,6 @@
 		slot_r_hand_str = "mining_helm"
 		)
 	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/suit/space/void/mining/himeo/tajara
 	name = "himeo mining voidsuit"
@@ -843,7 +834,6 @@
 		slot_r_hand_str = "mining_hardsuit"
 	)
 	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/head/helmet/space/void/engineering/himeo/tajara
 	name = "himeo engineering voidsuit helmet"
@@ -860,7 +850,6 @@
 		)
 
 	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/suit/space/void/engineering/himeo/tajara
 	name = "himeo engineering voidsuit"
@@ -877,7 +866,6 @@
 		slot_r_hand_str = "engineering_hardsuit"
 	)
 	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/head/helmet/space/void/atmos/himeo/tajara
 	name = "himeo atmospherics voidsuit helmet"
@@ -894,7 +882,6 @@
 		)
 
 	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/suit/space/void/atmos/himeo/tajara
 	name = "himeo atmospherics voidsuit"
@@ -911,7 +898,6 @@
 		slot_r_hand_str = "atmos_hardsuit"
 	)
 	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_TAJARA)
 
 /obj/item/clothing/head/helmet/space/void/sol/srf
 	name = "solarian restoration front voidsuit helmet"
@@ -1029,7 +1015,7 @@
 	desc = "An iconic voidsuit of Xanan make, designed after the Interstellar War. This one has been modified for usage with Gadpathur's navy."
 	icon_state = "gadpathur_vulture"
 	item_state = "gadpathur_vulture"
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN )
 
 /obj/item/clothing/head/helmet/space/void/sol/konyang
 	name = "konyang aerospace forces voidsuit helmet"
@@ -1071,10 +1057,10 @@
 	slowdown = 1
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.35
-	species_restricted = list(BODYTYPE_HUMAN, BODYTYPE_SKRELL)
+	species_restricted = list(BODYTYPE_HUMAN )
 	contained_sprite = TRUE
 	icon_supported_species_tags = list("ipc", "skr", "taj", "una", "vau", "vaw")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_TAJARA, BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 
 /obj/item/clothing/head/helmet/space/void/tcaf
 	name = "tau ceti armed forces voidsuit helmet"
@@ -1094,7 +1080,7 @@
 	species_restricted = list(BODYTYPE_HUMAN)
 	contained_sprite = TRUE
 	icon_supported_species_tags = list("ipc", "skr", "taj", "una", "vau", "vaw")
-	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC, BODYTYPE_TAJARA, BODYTYPE_UNATHI, BODYTYPE_SKRELL, BODYTYPE_VAURCA)
+	refittable_species = list(BODYTYPE_HUMAN, BODYTYPE_IPC)
 	light_range = 6
 	siemens_coefficient = 0.35
 

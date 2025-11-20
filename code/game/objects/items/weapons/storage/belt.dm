@@ -119,6 +119,7 @@
 		/obj/item/export_scanner,
 		/obj/item/device/price_scanner,
 		/obj/item/device/cratescanner,
+		/obj/item/device/destTagger,
 		/obj/item/device/quikpay
 	)
 	content_overlays = TRUE

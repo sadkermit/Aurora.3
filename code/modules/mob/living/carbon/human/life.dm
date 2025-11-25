@@ -1207,13 +1207,12 @@
 		if(HAS_TRAIT(src, TRAIT_ORIGIN_DARK_AFRAID))
 			if(T.get_lumcount() < 0.1)
 				if(prob(2))
-					var/list/assunzione_messages = list(
+					var/list/dark_afraid_messages = list(
 						"You feel a bit afraid...",
 						"You feel somewhat nervous...",
 						"You could use a little light here...",
-						"Ennoia be with you, it's a bit too dark..."
 					)
-					to_chat(src, SPAN_WARNING(pick(assunzione_messages)))
+					to_chat(src, SPAN_WARNING(pick(dark_afraid_messages)))
 
 		if(HAS_TRAIT(src, TRAIT_ORIGIN_LIGHT_SENSITIVE))
 			if(T.get_lumcount() > 0.8)

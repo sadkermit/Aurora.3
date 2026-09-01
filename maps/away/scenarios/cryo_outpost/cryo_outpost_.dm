@@ -2,8 +2,8 @@
 // --------------------------------------------------- template
 
 /datum/map_template/ruin/away_site/cryo_outpost
-	name = "Desert Oasis Planet"
-	description = "Desert Oasis Planet."
+	name = "Tatooine"
+	description = "Dune Planet."
 	id = "cryo_outpost"
 
 	prefix = "scenarios/cryo_outpost/"
@@ -16,8 +16,8 @@
 		/turf/unsimulated/marker/green = /datum/exoplanet_theme/grass/cryo_outpost
 	)
 	exoplanet_atmospheres = list(/datum/gas_mixture/earth_hot)
-	exoplanet_lightlevel = list(1, 2, 5)
-	exoplanet_lightcolor = list("#ffffd4") // light white-yellowish
+	exoplanet_lightlevel = list(5)
+	exoplanet_lightcolor = list("#dcebc1") // icky yellow-green
 
 	spawn_weight = 0 // so it does not spawn as ordinary away site
 	spawn_cost = 1
@@ -28,17 +28,38 @@
 	unit_test_groups = list(3)
 
 /singleton/submap_archetype/cryo_outpost
-	map = "Desert Oasis Planet"
-	descriptor = "Desert Oasis Planet."
+	map = "Dune Planet"
+	descriptor = "Dune Planet."
 
 // --------------------------------------------------- sector
 
 /obj/effect/overmap/visitable/sector/cryo_outpost
-	name = "Juliett-Enderly, Desert Oasis Planet"
+	name = "OS/A-622c, Dune Planet"
 	desc = "\
-		Temperate planet, mostly dry and covered in sand dunes, but with river and lake oases scattered around the equator. \
-		Scans show a somewhat rich biosphere with flora and fauna, and the planet holds a standard breathable atmosphere. \
-		Landing site is in a small valley with a small river running through it.\
+		<center><large><b>Scan Details</b></large>\
+		<br><large><b>Exoplanet OS/A-622 b</b></center>\
+		<br><b>Estimated Mass:</b> 0.39 Biesel Masses\
+		<br><b>Surface Gravity:</b> 0.60 Gs\
+		<br><b>Governing Body:</b> None\
+		<br><b>Charted:</b> 2254 (ASSN)\
+		<b>Geological Specifics:</b> Mineral-rich crust.\
+		<b>Surface Water Coverage:</b> No measured surface liquid area.\
+		<b>Apparent Weather Data:</b> High pressure atmosphere, minimal moisture; frequent sandstorms.\
+		<hr>\
+		<br><center><b>Visible Light Viewport Magnified</b>\
+		<br><img src = desert.png>\
+		<br><small>High-Fidelity Image Capture of Exoplanet OS/A-622 b</small></center>\
+		<hr>\
+		<br><center><b>Native Database Notes</b></center>\
+		A temperate planet covered in sand dunes, devoid of surface moisture and macroscopic life. \
+		<br>Surveyed in 2254 by the Alliance of Sovereign Solarian Nations. Designated a Class III hazardous near-habitable exoplanet. \
+		3 further scientific surveying attempts between 2264—2276 have been registered, all abandoned during the Solarian Great Depression. \
+		The planet remains unowned and uninhabited by any permanent populace. \
+		<br>Hazardous gases in notable quantity detected in atmosphere (chlorine, sulphur dioxide).\
+ 		Internals are strongly advised to avoid long-term health impacts associated with SO2 and Cl exposure. However, there is minimal risk to short-term health.\
+		<br>The Republic of Biesel has raised a 1,000,000电 reward for the complete scientific survey of the exoplanet. \
+		<br><br>The flagged away site, Site Oscar, is at the foot of a large, mineral-rich mesa. \
+		A Republic of Biesel—chartered Einstein Engines surveying outpost is registered within the area, as of 2452.\
 		"
 	icon_state = "globe1"
 	color = "#f1c86f"
@@ -66,26 +87,44 @@
 		"nav_cryo_outpost_surface_far_3d",
 	)
 
+	soil_data = list(
+		"Iron oxide rich",
+		"Aluminium rich",
+		"Significant concentration of perchlorates.",
+		"Trace caesium-137.")
+
+///Sets the given weather state to our planet replacing the old one, and trigger updates. Can be a type path or instance.
+/obj/effect/overmap/visitable/sector/cryo_outpost/Initialize()
+	. = ..()
+	var/initial_weather_state = /singleton/state/weather/calm/desert_planet
+	//Tells all our levels exposed to the sky to force change the weather.
+	var/obj/abstract/weather_system/new_weather_system = SSweather.setup_weather_system(map_z[length(map_z)], initial_weather_state)
+	new_weather_system.has_water_weather = FALSE
+	new_weather_system.has_icy_weather = FALSE
+
 /obj/effect/overmap/visitable/sector/cryo_outpost/generate_ground_survey_result()
 	..()
-	if(prob(60))
-		ground_survey_result += "<br>Analysis indicates sands rich in silica and oxygen"
-	if(prob(40))
-		ground_survey_result += "<br>High nitrogen and phosphorus contents of the soil"
-	if(prob(40))
-		ground_survey_result += "<br>Chemical extraction indicates soil is rich in major and secondary nutrients for agriculture"
-	if(prob(40))
-		ground_survey_result += "<br>Analysis indicates low contaminants of the soil"
-	if(prob(40))
-		ground_survey_result += "<br>Soft clays detected, composed of quartz and calcites"
-	if(prob(40))
-		ground_survey_result += "<br>Muddy dirt rich in organic material"
-	if(prob(40))
-		ground_survey_result += "<br>Stratigraphy indicates low risk of tectonic activity in this region"
-	if(prob(60))
-		ground_survey_result += "<br>Fossilized organic material found settled in sedimentary rock"
-	if(prob(10))
-		ground_survey_result += "<br>Traces of fissile material"
+	if(prob(50))
+		ground_survey_result += "<br>Infertile Regolith — low nitrogen and phosphorus content"
+	if(prob(50))
+		ground_survey_result += "<br>Minor Radioactive Contamination — trace amounts of caesium-137 and strontium-90 fission products leeched into surface regolith layer"
+	if(prob(50))
+		ground_survey_result += "<br>Minimal Tectonic Activity — stratigraphy indicates singular tectonic plate spanning planet"
+	if(prob(50))
+		ground_survey_result += "<br>Microscopic Life Present — non-native but adapted bacterial organisms identified in regolith; no evidence of fossilised macroscopic organisms"
+	if(prob(50))
+		ground_survey_result += "<br>Mineral Rich — high concentrations of iron, magnesium, aluminum, and titanium in crust layer"
+	if(prob(50))
+		ground_survey_result += "<br>Toxic Regolith — various perchlorates present in regolith surface layer, deposited by dust storms and ozone interactions; minor to moderate contamination risk"
+
+/obj/effect/overmap/visitable/sector/cryo_outpost/generate_magnet_survey_result()
+	..()
+	magnet_survey_result += "<br><b>Magnetic Field Strength:</b> Low \
+	<br><b>Planetary Cycle Period:</b> ~0.34 Biesel Cycles \
+	<br><b>Other Magnetic Specifics:</b> \
+	<br>- Magnetic field interacting with strong solar winds originating from red dwarf star. \
+	<br>- Weak dipolar magnetic field generated by core dynamo process. \
+	<br>- Iron planetary core present."
 
 // --------------------------------------------------- mapmanip
 
@@ -139,3 +178,43 @@
 	desc = "A small slip of plastic with an embedded chip. It is commonly used to store small amounts of research data. This one is covered in Zeng-Hu Pharmaceuticals logos."
 	icon_state = "slip_zeng"
 	origin_tech = list(TECH_BIO = 8, TECH_MATERIAL = 7, TECH_MAGNET = 7, TECH_DATA = 7)
+
+/// event fluff
+/obj/item/paper/fluff/pirate_treasure_note
+
+	name = "laminated note"
+	desc = "A dusty, laminated note that has been left here for who knows how long."
+	info = "\
+		<br>\
+		IF YOU ARE READING THIS, I AM PROBABLY DEAD, SO MY TREASURE IS NOW YOURS I SUPPOSE. \
+		<br>\
+		<br>\
+		But if I am not dead, you are in a world of hurt. I will hunt you from one side of the \
+		Alliance to the other. You can't even run because I have one of those new-fangled bluespace drives now. \
+		And even if you succeed to hide, my reputation is gargantuan - rivalled only by Lincoln Crumm - and \
+		you will never be able to trust on anyone to not snitch on you to me. \
+		<br>\
+		<br>OLD PETE YAPPIN' \
+		2414."
+
+/obj/item/paper/fluff/contamination_memo
+	name = "EVA contamination risks memo"
+	desc = "A memo concerning EVA contamination risks."
+	info = "\
+		<br>\
+		please remember to make sure all entrants are properly decontaminating.\
+		the full mile: showering, shedding outer layers, etc. \
+		<br>trampling in regolith from outside is a serious contamination risk with long-term health impacts! \
+		<br>\
+		all EVA requires gas filtration at the VERY LEAST!"
+
+/obj/item/paper/fluff/spacecraft_maintenance_memo
+	name = "gunship maintenance memo"
+	desc = "A memo concerning a spacecraft awaiting maintenance."
+	info = "\
+		<br>\
+		Passed this onto your shift, sorry! \
+		<br>\
+		There is 1x Gunship awaiting maintenance on Pad 2. Superficial damage after skirmish with pirate craft. \
+		<br> It is also reported to be under-served power? Perhaps buff up PSU with additional coil."
+

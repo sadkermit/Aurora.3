@@ -239,6 +239,36 @@
 	else
 		owner.phoron_alert = 0
 
+	// just a quick, snowflake poisoning mechanic for SO2 for the event, so masks need to be worn planet-side.
+	// rn it looks like the lungs are hard-coded to have only 1 toxin (phoron) and i cba to overhaul the poison_type variable for a minievent
+	// i got no doubt whoever added SO2 and NO2 (both poisonous) also couldnt be bothered
+	if(breath.gas[GAS_SULFUR])
+		var/so2_pp = (breath.gas[GAS_SULFUR] / breath.total_moles) * breath_pressure
+
+		// enough to be noticed and do damage
+		if(so2_pp > safe_toxins_max)
+			owner.phoron_alert = max(owner.phoron_alert, 1)
+
+			var/ratio = (breath.gas[GAS_SULFUR]/safe_toxins_max) * 10
+			if(reagents)
+				reagents.add_reagent(/singleton/reagent/toxin, clamp(ratio, MIN_TOXIN_DAMAGE, MAX_TOXIN_DAMAGE)) // im pretty sure this just doesnt work :shrug: for the better
+			if(prob(10))
+				to_chat(owner, SPAN_WARNING(pick("Your chest stings!", "Your throat burns!", "You are overwhelmed by an acidic stench of rotten eggs!", "You feel a burning sensation in your lungs!")))
+			if(prob(5))
+				owner.emote("cough")
+
+		// not enough to cause alarm
+		else if(so2_pp > 0.15)
+			if(prob(20))
+				to_chat(owner, SPAN_WARNING(pick("The back of your throat hurts a little...", "You feel a little short of breath...")))
+			if(prob(2))
+				owner.emote("cough")
+
+		else
+			owner.phoron_alert = 0
+
+	breath.adjust_gas(GAS_NO2, -breath.gas[GAS_NO2]/6, update = 0) //update after
+
 	// If there's some other shit in the air lets deal with it here.
 	if(breath.gas[GAS_N2O])
 		var/SA_pp = (breath.gas[GAS_N2O] / breath.total_moles) * breath_pressure

@@ -365,6 +365,7 @@
 	icon_state = "basalt"
 	anchored = TRUE
 	invisibility = 0
+	var/damage_amount = 50
 
 /obj/item/trap/jagged_rock/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	if(isliving(arrived))
@@ -382,7 +383,7 @@
 		target_zone = pick(BP_L_FOOT, BP_R_FOOT, BP_L_LEG, BP_R_LEG)
 
 	//Try to apply the damage
-	var/success = L.apply_damage(50, DAMAGE_BRUTE, target_zone, used_weapon = src, armor_pen = activated_armor_penetration)
+	var/success = L.apply_damage(damage_amount, DAMAGE_BRUTE, target_zone, used_weapon = src, armor_pen = activated_armor_penetration)
 	//Apply weakness, so the victim doesn't walk immediately back out of the trap
 	L.Weaken(10)
 
@@ -405,6 +406,18 @@
 		human.visible_message(SPAN_DANGER("\The [human] slams into \the [src]!"),
 								SPAN_WARNING(FONT_LARGE(SPAN_DANGER("You crash on \the [src], feel your body crumble, and something sharp penetrate your [organ.name]!"))),
 								SPAN_WARNING("<b>You feel your body crumble, and something sharp penetrate your [organ.name]!</b>"))
+
+/obj/item/trap/jagged_rock/weaker_and_random
+	damage_amount = 20
+
+/obj/item/trap/jagged_rock/weaker_and_random/Initialize()
+	. = ..()
+	damage_amount = rand(10, 25)
+
+	if(prob(30))
+		icon_state = "basalt"
+	else
+		icon_state = "lavarocks[rand(1,3)]"
 
 /**
  * # Animal trap

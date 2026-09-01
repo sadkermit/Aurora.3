@@ -429,3 +429,25 @@
 
 	M.revive()
 	message_admins(SPAN_DANGER("Storyteller [key_name_admin(usr)] healed / revived [key_name_admin(M)]!"), 1)
+
+/// snowflake verb for the event so i can control away site alarms
+/// plus the supporting global list for all the alarms to target
+GLOBAL_LIST_INIT_TYPED(all_spinny_alarms, /obj/structure/machinery/rotating_alarm, list())
+
+/obj/structure/machinery/rotating_alarm/Initialize()
+	. = ..()
+	GLOB.all_spinny_alarms += src
+
+/obj/structure/machinery/rotating_alarm/Destroy()
+	GLOB.all_spinny_alarms -= src
+	. = ..()
+
+/mob/abstract/ghost/storyteller/verb/spin_the_alarms()
+	set name = "Spin the Spinny Alarms"
+	set category = "Storyteller"
+
+	if(SSodyssey.scenario_zlevels)
+		for(var/obj/structure/machinery/rotating_alarm/spinny_alarm in GLOB.all_spinny_alarms)
+			if(spinny_alarm.z in SSodyssey.scenario_zlevels)
+				spinny_alarm.toggle_state()
+				playsound(spinny_alarm, 'sound/effects/crusher_alarm.ogg', 50, TRUE)

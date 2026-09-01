@@ -13,7 +13,8 @@
 // ------------------------- outside
 
 /area/cryo_outpost/outside
-	area_blurb = "An oasis in the middle of a desert. Red rocks mar a fairly scenic environment. In the distance is a large, red cave, with an ominous entrance."
+	area_blurb = "A desolate and dry dune, flanked by steep mesa. The sky above is a sickly yellow-green, with red, wispy clouds. \
+				In the hazy distance, the sand is being kicked up by what must be a sandstorm, and little dust devils are already dancing over the sloped desert."
 	is_outside = OUTSIDE_YES
 
 /area/cryo_outpost/outside/landing
@@ -33,11 +34,22 @@
 	name = "Building"
 	is_outside = OUTSIDE_NO
 
+/area/cryo_outpost/outside/colonist_shuttle
+	name = "Colonist Transport Shuttle"
+
+/area/cryo_outpost/outside/ee_gunship
+	name = "EE Asset Protection Gunship"
+
+/area/cryo_outpost/outside/pirate_hoard
+	name = "Modular Countainer Powernet"
+	is_outside = OUTSIDE_NO
+	requires_power = FALSE
+
 // ------------------------- inside
 
 /area/cryo_outpost/inside
-	area_blurb = "The cold, distasteful smell of a sterile environment hits your nostrils. The temperature seems to be a perfectly cool twenty degrees. \
-				You get an ominous feeling just by being here."
+	area_blurb = "Air conditioning, what a relief! \
+				It is so much cooler in here and the air much more breathable."
 	is_outside = OUTSIDE_NO
 	holomap_color = "#777777"
 
@@ -101,7 +113,7 @@
 	holomap_color = "#8daf6a"
 
 /area/cryo_outpost/inside/comms
-	name = "Communications"
+	name = "Command & Communications"
 	icon_state = "bridge"
 	holomap_color = "#708997"
 
@@ -113,50 +125,50 @@
 // ------------- labs
 
 /area/cryo_outpost/inside/labs_hallway
-	name = "Labs, Hallway"
+	name = "Command, Hallway"
 	icon_state = "hallC"
 	holomap_color = "#8a7387"
 
 /area/cryo_outpost/inside/labs_cryo_n
-	name = "Labs, Cryo North"
+	name = "Command, Cryo North"
 	icon_state = "cryo"
 	holomap_color = "#8a7387"
 
 /area/cryo_outpost/inside/labs_cryo_s
-	name = "Labs, Cryo South"
+	name = "Command, Cryo South"
 	icon_state = "cryo"
 	holomap_color = "#8a7387"
 
 /area/cryo_outpost/inside/labs_cryo_pods
-	name = "Labs, Cryo Pods"
+	name = "Command, Heavy Asset Protection Armoury"
 	icon_state = "cryo"
 	holomap_color = "#8a7387"
 
 /area/cryo_outpost/inside/labs_offices
-	name = "Labs, Offices"
+	name = "Command, Offices"
 	icon_state = "research"
 	holomap_color = "#8a7387"
 
 /area/cryo_outpost/inside/labs_surgery
-	name = "Labs, Surgery"
+	name = "Command, Surgery"
 	icon_state = "surgery"
 	holomap_color = "#cc9090"
 
 /area/cryo_outpost/inside/labs_rnd
-	name = "Labs, RnD"
+	name = "Command, RnD"
 	icon_state = "research"
 	holomap_color = "#cc9090"
 
 /area/cryo_outpost/inside/labs_maint_w
-	name = "Labs, Maint, West"
+	name = "Command, Maint, West"
 	icon_state = "maintenance"
 
 /area/cryo_outpost/inside/labs_maint_e
-	name = "Labs, Maint, East"
+	name = "Command, Maint, East"
 	icon_state = "maintenance"
 
 /area/cryo_outpost/inside/labs_pharmacy
-	name = "Labs, Pharmacy"
+	name = "Command, Pharmacy"
 	icon_state = "phar"
 	holomap_color = "#cc9090"
 
@@ -188,7 +200,7 @@
 	holomap_color = "#ceb689"
 
 /area/cryo_outpost/inside/eva
-	name = "EVA"
+	name = "Synthetic Storage"
 	icon_state = "engineering"
 
 // ------------------------- maint
@@ -202,7 +214,7 @@
 	icon_state = "maintenance"
 
 /area/cryo_outpost/inside/maint_warehouse
-	name = "Maint, Warehouse"
+	name = "Maint, Security"
 	icon_state = "maintenance"
 
 /area/cryo_outpost/inside/maint_botany

@@ -101,3 +101,8 @@
 			/mob/living/simple_animal/threshbeast = 1
 		)
 	)
+
+/singleton/biome/desert/event
+	turf_type = /turf/simulated/floor/exoplanet/desert/event
+	generators = list()
+	spawn_types = list()

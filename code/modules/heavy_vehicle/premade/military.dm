@@ -67,3 +67,19 @@
 
 	h_r_shoulder = /obj/item/mecha_equipment/mounted_system/combat/pulse
 	h_l_shoulder = /obj/item/mecha_equipment/mounted_system/combat/pulse
+
+/mob/living/heavy_vehicle/premade/superheavy/event // my contingency for if the horizon ignores all of the centcomm guidance/instructions given to them; FAFO.
+	name = "EE asset protection heavy exosuit"
+	desc = "A heavy-duty combat exosuit in Einstein Engines Asset Protection livery."
+	icon_state = "darkgygax"
+
+	e_head = /obj/item/mech_component/sensors/superheavy
+	e_body = /obj/item/mech_component/chassis/superheavy
+	e_arms = /obj/item/mech_component/manipulators/superheavy
+	e_legs = /obj/item/mech_component/propulsion/superheavy
+	e_color = "#DFE4ED"
+
+	h_back = /obj/item/mecha_equipment/quick_enter
+	h_head = /obj/item/mecha_equipment/light
+	h_l_shoulder = /obj/item/mecha_equipment/mounted_system/combat/grenadefrag
+	h_r_shoulder = /obj/item/mecha_equipment/mounted_system/combat/pulse

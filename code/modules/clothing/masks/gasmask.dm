@@ -11,7 +11,7 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	var/gas_filter_strength = 1			//For gas mask filters
-	var/list/filtered_gases = list(GAS_PHORON, GAS_N2O, GAS_CHLORINE, GAS_ALIEN)
+	var/list/filtered_gases = list(GAS_PHORON, GAS_N2O, GAS_SULFUR, GAS_CHLORINE, GAS_ALIEN)
 	armor = list(
 		BIO = ARMOR_BIO_STRONG
 	)
@@ -48,7 +48,7 @@
 
 /obj/item/clothing/mask/gas/old
 	desc = "A face-covering mask that can be connected to an air supply. Seems to be an old, outdated design."
-	filtered_gases = list(GAS_N2O)
+	filtered_gases = list(GAS_N2O, GAS_SULFUR)
 	item_state = "gas_mask"
 	icon_state = "gas_mask"
 

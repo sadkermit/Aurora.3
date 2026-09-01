@@ -866,7 +866,12 @@
 #define ACCESS_CRYO_OUTPOST 244
 /datum/access/cryo_outpost_access
 	id = ACCESS_CRYO_OUTPOST
-	desc = "Outpost #187-D Access"
+	desc = "EE Oscar Outpost Access"
+
+#define ACCESS_CRYO_OUTPOST_HIGHSEC 244.1 // only a little bit cursed
+/datum/access/cryo_outpost_access_high
+	id = ACCESS_CRYO_OUTPOST_HIGHSEC
+	desc = "EE Oscar Outpost High Security Access"
 
 #define ACCESS_RUINED_PROPELLANT_DEPOT 245
 /datum/access/ruined_propellant_depot_access

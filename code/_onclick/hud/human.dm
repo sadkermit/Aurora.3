@@ -491,7 +491,7 @@
 		if(icon_state == "tox0")
 			to_chat(usr, SPAN_NOTICE("The air is clear of toxins."))
 		else
-			to_chat(usr, SPAN_DANGER("The air is eating away at your skin!"))
+			to_chat(usr, SPAN_DANGER("The air is poisonous!"))
 
 /atom/movable/screen/oxygen/Click(var/location, var/control, var/params)
 	if(istype(usr) && usr.oxygen == src)

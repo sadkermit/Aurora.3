@@ -719,7 +719,7 @@
 /area/cryo_outpost/inside/habitation_west)
 "aLs" = (
 /obj/random/dirt_75,
-/obj/structure/machinery/light/colored/decayed{
+/obj/structure/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/lino,
@@ -2460,6 +2460,11 @@
 /obj/item/material/ashtray/plastic,
 /turf/simulated/floor/concrete,
 /area/cryo_outpost/outside/surface)
+"coY" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/machinery/light,
+/turf/simulated/floor/plating,
+/area/cryo_outpost/inside/entrance_aux_east)
 "cpj" = (
 /obj/structure/machinery/atmospherics/pipe/simple/hidden/yellow{
 	dir = 8
@@ -3424,7 +3429,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/machinery/light/colored/decayed{
+/obj/structure/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -3820,7 +3825,10 @@
 /turf/simulated/floor/exoplanet/desert/event,
 /area/cryo_outpost/outside/surface)
 "dDj" = (
-/obj/structure/machinery/power/portgen/basic/fusion,
+/obj/structure/machinery/power/portgen/basic/fusion{
+	name = "minature fission reactor";
+	desc = "The EE-R833, an industrial all-in-one nuclear fission reactor created by Einstein Engines. It uses tritium as a fuel source and relies on coolant to keep the reactor cool. Rated for 500 kW max safe output."
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -4983,11 +4991,11 @@
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/habitation_west)
 "eLO" = (
-/obj/structure/machinery/light/colored/decayed{
-	dir = 4
-	},
 /obj/random/dirt_75,
 /obj/effect/floor_decal/industrial/outline_straight/red{
+	dir = 4
+	},
+/obj/structure/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
@@ -5017,6 +5025,14 @@
 /obj/effect/decal/cleanable/floor_damage/random_tiled_broken,
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/labs_maint_w)
+"eNM" = (
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 1
+	},
+/obj/random/dirt_75,
+/obj/structure/machinery/light,
+/turf/simulated/floor/tiled/white,
+/area/cryo_outpost/inside/medical)
 "eNS" = (
 /obj/structure/machinery/rotating_alarm{
 	desc = "An rotating alarm light.";
@@ -5483,6 +5499,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/engineering)
+"fkI" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid/server,
+/area/cryo_outpost/inside/comms)
 "fkL" = (
 /obj/item/card/id/einstein{
 	name = "\improper site director's spare identification card";
@@ -5915,6 +5937,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/floor_decal/industrial/outline_straight/red,
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/canteen)
 "fBi" = (
@@ -7266,6 +7289,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/cryo_outpost/outside/surface)
+"hdk" = (
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 5
+	},
+/obj/structure/machinery/light,
+/turf/simulated/floor/tiled/white,
+/area/cryo_outpost/inside/medical)
 "hdB" = (
 /obj/structure/table/steel,
 /obj/structure/bedsheetbin{
@@ -7387,15 +7417,6 @@
 /obj/structure/machinery/light/small,
 /turf/simulated/floor/concrete,
 /area/cryo_outpost/inside/entrance_main)
-"hkA" = (
-/obj/effect/floor_decal/corner/dark_green{
-	dir = 5
-	},
-/obj/structure/machinery/light/colored/decayed/dimmed{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/cryo_outpost/inside/habitation_west)
 "hla" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -7616,6 +7637,13 @@
 /obj/random/dirt_75,
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/botany)
+"hAf" = (
+/obj/random/dirt_75,
+/obj/random/dirt_75,
+/obj/random/dirt_75,
+/obj/structure/machinery/door/blast/shutters/open,
+/turf/simulated/floor/exoplanet/barren,
+/area/cryo_outpost/outside/surface)
 "hAh" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/reagent_dispensers/fueltank,
@@ -7798,6 +7826,7 @@
 /obj/random/dirt_75,
 /obj/random/dirt_75,
 /obj/effect/floor_decal/industrial/outline_door/red,
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/habitation_west)
 "hHV" = (
@@ -8718,6 +8747,7 @@
 /area/cryo_outpost/outside/surface)
 "iIp" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled/freezer{
 	name = "cold storage tiles";
 	temperature = 278
@@ -10538,6 +10568,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/cryo_outpost/inside/medical)
+"kwJ" = (
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/cryo_outpost/inside/comms)
 "kxd" = (
 /obj/random/dirt_75,
 /obj/random/dirt_75,
@@ -10642,6 +10678,7 @@
 	pixel_x = -8;
 	pixel_y = 5
 	},
+/obj/structure/machinery/light,
 /turf/simulated/floor/plating,
 /area/cryo_outpost/inside/engi_powergen)
 "kCV" = (
@@ -10798,6 +10835,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch_small/yellow,
+/obj/structure/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/cryo_outpost/inside/engi_atmos)
 "kMF" = (
@@ -10990,14 +11030,14 @@
 /obj/effect/floor_decal/industrial/outline_straight/red{
 	dir = 4
 	},
-/obj/structure/machinery/light/colored/decayed{
+/obj/structure/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/habitation_west)
 "kUi" = (
 /obj/effect/floor_decal/industrial/outline/engineering,
-/obj/structure/machinery/light/colored/decayed{
+/obj/structure/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -11925,12 +11965,12 @@
 /obj/item/pen{
 	pixel_y = 4
 	},
-/obj/structure/machinery/light{
-	dir = 8
-	},
 /obj/item/paper/fluff/spacecraft_maintenance_memo{
 	pixel_x = 7;
 	pixel_y = 3
+	},
+/obj/structure/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/engineering)
@@ -12452,7 +12492,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/habitation_west)
 "mpN" = (
-/obj/structure/machinery/light/colored/decayed/dimmed{
+/obj/structure/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/lino,
@@ -12530,7 +12570,7 @@
 "mwS" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/random/dirt_75,
-/obj/structure/machinery/light/broken{
+/obj/structure/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -12804,8 +12844,8 @@
 /area/cryo_outpost/inside/maint_warehouse)
 "mOn" = (
 /obj/effect/floor_decal/industrial/outline/engineering,
-/obj/structure/machinery/light/colored/decayed/dimmed,
 /obj/random/dirt_75,
+/obj/structure/machinery/light,
 /turf/simulated/floor/plating,
 /area/cryo_outpost/inside/engineering)
 "mOW" = (
@@ -13406,11 +13446,11 @@
 /turf/simulated/floor/tiled/white,
 /area/cryo_outpost/inside/labs_offices)
 "nwQ" = (
-/obj/structure/machinery/light/colored/decayed{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
+	},
+/obj/structure/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/labs_offices)
@@ -13422,11 +13462,11 @@
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/entrance_main)
 "nxi" = (
-/obj/structure/machinery/light/colored/decayed,
 /obj/random/dirt_75,
 /obj/effect/floor_decal/corner/beige/full{
 	dir = 4
 	},
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/engineering)
 "nxw" = (
@@ -14370,12 +14410,6 @@
 /obj/structure/machinery/mining/drill,
 /turf/simulated/floor/plating,
 /area/cryo_outpost/outside/colonist_shuttle)
-"ovP" = (
-/obj/structure/machinery/light/broken,
-/obj/random/dirt_75,
-/obj/random/dirt_75,
-/turf/simulated/floor/tiled/dark,
-/area/cryo_outpost/inside/botany)
 "owr" = (
 /obj/effect/floor_decal/corner/paleblue,
 /turf/simulated/floor/tiled,
@@ -15326,6 +15360,9 @@
 /area/cryo_outpost/inside/botany)
 "pok" = (
 /obj/structure/cryofeed/pipes,
+/obj/structure/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/bluegrid/server,
 /area/cryo_outpost/inside/comms)
 "poK" = (
@@ -15694,6 +15731,12 @@
 /obj/random/dirt_75,
 /turf/simulated/floor/plating,
 /area/cryo_outpost/outside/colonist_shuttle)
+"pNi" = (
+/obj/random/dirt_75,
+/obj/random/dirt_75,
+/obj/structure/machinery/door/blast/shutters/open,
+/turf/simulated/floor/exoplanet/barren,
+/area/cryo_outpost/outside/surface)
 "pNl" = (
 /obj/effect/floor_decal/corner/dark_green{
 	dir = 5
@@ -15916,6 +15959,9 @@
 	dir = 5
 	},
 /obj/structure/machinery/portable_atmospherics/powered/scrubber/huge,
+/obj/structure/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/entrance_aux_east)
 "pXz" = (
@@ -16748,6 +16794,11 @@
 	},
 /turf/simulated/floor/concrete,
 /area/cryo_outpost/outside/landing)
+"qJe" = (
+/obj/random/dirt_75,
+/obj/structure/machinery/door/blast/shutters/open,
+/turf/simulated/floor/exoplanet/barren,
+/area/cryo_outpost/outside/surface)
 "qKK" = (
 /obj/random/dirt_75,
 /obj/structure/machinery/light{
@@ -17618,6 +17669,9 @@
 "rHL" = (
 /obj/random/dirt_75,
 /obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer{
 	name = "cold storage tiles";
 	temperature = 278
@@ -17745,6 +17799,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/entrance_main)
+"rNq" = (
+/obj/structure/machinery/light,
+/turf/simulated/floor/plating,
+/area/cryo_outpost/inside/entrance_aux_east)
 "rNB" = (
 /obj/item/tent/mining{
 	pixel_y = 13
@@ -18011,11 +18069,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/botany)
-"scC" = (
-/obj/structure/machinery/light,
-/obj/structure/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/tiled/dark,
-/area/cryo_outpost/inside/entrance_main)
 "scV" = (
 /obj/effect/floor_decal/industrial/hatch_door/red{
 	dir = 4
@@ -18594,11 +18647,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/engineering)
 "sAv" = (
-/obj/structure/machinery/light/broken{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
+	},
+/obj/structure/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/habitation_west)
@@ -18797,10 +18850,10 @@
 /turf/simulated/wall,
 /area/cryo_outpost/inside/maint_medbay)
 "sTs" = (
-/obj/structure/machinery/light/colored/decayed/dimmed,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/engi_atmos)
 "sTx" = (
@@ -18892,6 +18945,9 @@
 "taD" = (
 /obj/structure/bed/stool/chair/padded/red{
 	dir = 8
+	},
+/obj/structure/machinery/light{
+	dir = 4
 	},
 /turf/simulated/floor/wood,
 /area/cryo_outpost/inside/habitation_west)
@@ -19829,6 +19885,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/outline_straight/red,
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/canteen)
 "tWd" = (
@@ -20298,6 +20355,9 @@
 	pixel_x = -11;
 	pixel_y = -2
 	},
+/obj/structure/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/cryo_outpost/inside/engineering)
 "uzr" = (
@@ -20758,6 +20818,11 @@
 "uZt" = (
 /turf/simulated/wall,
 /area/cryo_outpost/inside/botany)
+"uZw" = (
+/obj/structure/machinery/suit_storage_unit/standard_unit,
+/obj/structure/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/cryo_outpost/inside/entrance_main)
 "vaP" = (
 /obj/random/junk{
 	pixel_x = 15;
@@ -20925,6 +20990,12 @@
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/plating,
 /area/cryo_outpost/outside/cave)
+"vhH" = (
+/obj/structure/machinery/portable_atmospherics/hydroponics,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/cryo_outpost/inside/botany)
 "via" = (
 /obj/structure/machinery/atmospherics/pipe/tank/carbon_dioxide{
 	dir = 8
@@ -22902,12 +22973,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/outside/colonist_shuttle)
-"xdZ" = (
-/obj/structure/machinery/light/colored/decayed{
-	dir = 4
-	},
-/turf/simulated/floor/lino,
-/area/cryo_outpost/inside/canteen)
 "xea" = (
 /obj/structure/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -22927,7 +22992,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/machinery/light/broken{
+/obj/structure/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -23012,11 +23077,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/maint_entrance)
 "xjQ" = (
-/obj/structure/machinery/light/colored/decayed{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
+	},
+/obj/structure/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/cryo_outpost/inside/habitation_east)
@@ -23281,9 +23346,9 @@
 /turf/simulated/floor/exoplanet/barren/cave,
 /area/cryo_outpost/outside/pirate_hoard)
 "xyh" = (
-/obj/structure/machinery/light/colored/decayed,
 /obj/random/dirt_75,
 /obj/random/dirt_75,
+/obj/structure/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/cryo_outpost/inside/botany)
 "xym" = (
@@ -23740,12 +23805,6 @@
 	},
 /turf/simulated/floor/exoplanet/barren,
 /area/cryo_outpost/outside/surface)
-"xTn" = (
-/obj/structure/machinery/light/colored/decayed{
-	dir = 4
-	},
-/turf/simulated/floor/wood/walnut,
-/area/cryo_outpost/inside/habitation_west)
 "xTA" = (
 /obj/effect/floor_decal/industrial/outline_straight/red{
 	dir = 8
@@ -47887,7 +47946,7 @@ ejq
 ejq
 ejq
 abK
-hkA
+iFN
 tdY
 abK
 oSF
@@ -49191,7 +49250,7 @@ fvU
 vJJ
 hIZ
 kJN
-xdZ
+fmK
 uJQ
 xbh
 kJN
@@ -52292,7 +52351,7 @@ lrp
 viQ
 lrp
 viQ
-viQ
+pNi
 lrp
 lrp
 tqr
@@ -52510,7 +52569,7 @@ pgW
 dqr
 jIJ
 xZi
-xZi
+eNM
 abK
 mwl
 orC
@@ -52549,7 +52608,7 @@ dkR
 viQ
 xkE
 dkR
-lrp
+qJe
 dkR
 dkR
 dkR
@@ -52806,7 +52865,7 @@ lrp
 jvL
 dkR
 lXv
-lXv
+hAf
 lrp
 lrp
 lrp
@@ -53541,7 +53600,7 @@ eTA
 wPz
 abK
 qDV
-xTn
+orC
 taD
 cdg
 xQe
@@ -55106,7 +55165,7 @@ kQJ
 fAE
 gJU
 jdx
-oap
+vhH
 uZt
 uZt
 loA
@@ -55338,7 +55397,7 @@ pbm
 dEJ
 nMD
 pkO
-mTx
+hdk
 dqr
 crk
 lAY
@@ -55363,7 +55422,7 @@ bKZ
 fAE
 gJU
 jdx
-oap
+vhH
 uZt
 uZt
 tqr
@@ -55869,7 +55928,7 @@ uZt
 lMX
 axz
 sHr
-ovP
+xyh
 uZt
 uxC
 oap
@@ -62809,7 +62868,7 @@ lml
 blF
 kdd
 kgj
-oUw
+uZw
 jjp
 pgW
 pgW
@@ -63066,7 +63125,7 @@ pau
 ufl
 tsO
 nin
-scC
+oUw
 jjp
 pgW
 pgW
@@ -63323,7 +63382,7 @@ glc
 pKg
 dTY
 blF
-oUw
+uZw
 jjp
 pgW
 pgW
@@ -63521,7 +63580,7 @@ pok
 xvB
 aGb
 lmF
-mQn
+kwJ
 mQn
 aGb
 pgW
@@ -64031,7 +64090,7 @@ pgW
 pgW
 aGb
 wnJ
-ppV
+fkI
 ukB
 aGb
 jCR
@@ -66917,7 +66976,7 @@ qXz
 qMx
 oHk
 mKy
-iTx
+rNq
 qXz
 qXz
 qXz
@@ -68973,7 +69032,7 @@ qXz
 nuA
 qGr
 iYF
-dZs
+coY
 qXz
 qXz
 qXz

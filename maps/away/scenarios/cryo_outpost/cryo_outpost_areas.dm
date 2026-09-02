@@ -13,8 +13,8 @@
 // ------------------------- outside
 
 /area/cryo_outpost/outside
-	area_blurb = "A desolate and dry dune, flanked by steep mesa. The sky above is a sickly yellow-green, with red, wispy clouds. \
-				In the hazy distance, the sand is being kicked up by what must be a sandstorm, and little dust devils are already dancing over the sloped desert."
+	area_blurb = "A desolate and dry dune, flanked by steep mesa. The sky above is a sickly yellow-green, with muddy brown, wispy clouds. \
+				In the hazed distance, the sand is being kicked up by what must be a sandstorm, and little dust devils are already dancing over the sloped desert."
 	is_outside = OUTSIDE_YES
 
 /area/cryo_outpost/outside/landing

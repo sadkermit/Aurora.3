@@ -91,7 +91,7 @@
 		"Iron oxide rich",
 		"Aluminium rich",
 		"Significant concentration of perchlorates.",
-		"Trace caesium-137.")
+		"Trace tritium contamination")
 
 ///Sets the given weather state to our planet replacing the old one, and trigger updates. Can be a type path or instance.
 /obj/effect/overmap/visitable/sector/cryo_outpost/Initialize()
@@ -107,7 +107,7 @@
 	if(prob(50))
 		ground_survey_result += "<br>Infertile Regolith — low nitrogen and phosphorus content"
 	if(prob(50))
-		ground_survey_result += "<br>Minor Radioactive Contamination — trace amounts of caesium-137 and strontium-90 fission products leeched into surface regolith layer"
+		ground_survey_result += "<br>Minor Radioactive Contamination — trace amounts of tritium and neutron activated fusion byproducts leeched into surface regolith layer"
 	if(prob(50))
 		ground_survey_result += "<br>Minimal Tectonic Activity — stratigraphy indicates singular tectonic plate spanning planet"
 	if(prob(50))

@@ -218,3 +218,53 @@
 		There is 1x Gunship awaiting maintenance on Pad 2. Superficial damage after skirmish with pirate craft. \
 		<br> It is also reported to be under-served power? Perhaps buff up PSU with additional coil."
 
+/obj/effect/overmap/scannable_prop
+	generic_object = FALSE
+	static_vessel = TRUE
+	scannable = TRUE
+	sensor_range_override = TRUE
+
+/obj/effect/overmap/scannable_prop/ee_station_prop
+	icon = 'icons/obj/overmap/overmap_stationary.dmi'
+	icon_state = "ox_auto_station"
+	color = "#DFE4ED"
+
+	name = "EE Orbital Logistics Station OS-022"
+	designer = "Einstein Engines"
+	weapons = "4x 20mm Ballistic Point Defence Cannons"
+	sizeclass = "EE-MOD93 Small Station"
+	shiptype = "Orbital Logistics"
+	alignment = "Einstein Engines"
+
+	desc = "A small space station in geostationary orbit acting as a logistics hub for facilities on the planet below or in orbit. \
+			It is outfitted with a variety of habitaton modules, logistic container ports, as well as a fewed armoured modules mounted with point defence turrets."
+
+/obj/effect/overmap/scannable_prop/ee_ap_patrol
+	icon = 'icons/obj/overmap/overmap_ships.dmi'
+	icon_state = "himeo_patrol"
+	color = "#777700"
+
+	name = "EEPMV Fast Neutron"
+	designer = "Einstein Engines"
+	weapons = "4x Guided Drone Launchers; 2x 50MW 3mm Long-range Coilgun; 8x 20mm Ballistic Point Defence Cannons; 2x 200MW Decoy Blast Launcher"
+	sizeclass = "Becquerel-class Drone Carrier"
+	shiptype = "Corporate Asset Protection"
+	alignment = "Einstein Engines"
+
+	desc = "A EE asset protection drone carrier, brimming with fly-by-wire drone launchers and long-range coilguns. The design sees use in a variety of roles, from orbital defence to escorts. \
+			It's high delta-V drones are capable of creating interception windows with vessels across entire systems, and so it relies on engaging from a distance. It would be unwise to test its capabilities."
+
+/obj/effect/overmap/scannable_prop/colonist_mothership
+	icon = 'icons/obj/overmap/overmap_ships.dmi'
+	icon_state = "freighter_large"
+	color = "#FFAC1C"
+
+	name = "ICV tbd"
+	designer = "Hephaestus Industries"
+	weapons = "2x Large Mining Blaster"
+	sizeclass = "Shepherd-class Class II Vessel"
+	shiptype = "Civilian Exploration"
+	alignment = "Independent"
+
+	desc = "A medium-sized exploration vessel manufacted by Hephaestus Industries. \
+	It is highly modular, fitted with cargo containers, a simple and low-tech sensors array, and a few mining drone bays."

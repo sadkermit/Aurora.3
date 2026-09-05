@@ -41,7 +41,7 @@
 	name = "EE Asset Protection Gunship"
 
 /area/cryo_outpost/outside/pirate_hoard
-	name = "Modular Countainer Powernet"
+	name = "Modular Container Powernet"
 	is_outside = OUTSIDE_NO
 	requires_power = FALSE
 
